@@ -371,11 +371,11 @@ function initExamUI() {
       timerCircle.style.strokeDashoffset = offset;
 
       if (state.timeLeft <= 5) {
-        timerCircle.className = "timer-circle-progress red";
+        timerCircle.setAttribute("class", "timer-circle-progress red");
       } else if (state.timeLeft <= 15) {
-        timerCircle.className = "timer-circle-progress amber";
+        timerCircle.setAttribute("class", "timer-circle-progress amber");
       } else {
-        timerCircle.className = "timer-circle-progress";
+        timerCircle.setAttribute("class", "timer-circle-progress");
       }
     }
 
@@ -793,7 +793,7 @@ function renderRtoGuide() {
       <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px;">
         <h3 style="font-size: 1.05rem; color: var(--secondary-blue); margin-bottom: 10px; font-weight: 700;">📋 What to Carry</h3>
         <ul style="padding-left: 18px; font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px;">
-          ${rtoGuide.checklist.map(item => `<li>${item}</li>`).join("")}
+          ${(rtoGuide.checklist || []).map(item => `<li>${item}</li>`).join("")}
         </ul>
       </div>
 
@@ -801,7 +801,7 @@ function renderRtoGuide() {
       <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px;">
         <h3 style="font-size: 1.05rem; color: var(--secondary-blue); margin-bottom: 10px; font-weight: 700;">🏛️ Testing Room Workflow</h3>
         <ol style="padding-left: 18px; font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px;">
-          ${rtoGuide.workflow.map(step => `<li>${step}</li>`).join("")}
+          ${(rtoGuide.steps || rtoGuide.workflow || []).map(step => `<li>${step}</li>`).join("")}
         </ol>
       </div>
 
@@ -809,7 +809,7 @@ function renderRtoGuide() {
       <div style="background: #FFFBEB; border: 1px solid #FDE68A; border-radius: var(--radius-md); padding: 16px;">
         <h3 style="font-size: 1.05rem; color: #92400E; margin-bottom: 10px; font-weight: 700;">⚠️ Common Pitfalls to Avoid</h3>
         <ul style="padding-left: 18px; font-size: 0.88rem; color: #78350F; display: flex; flex-direction: column; gap: 6px;">
-          ${rtoGuide.commonPitfalls.map(item => `<li>${item}</li>`).join("")}
+          ${(rtoGuide.topTips || rtoGuide.commonPitfalls || []).map(item => `<li>${item}</li>`).join("")}
         </ul>
       </div>
     </div>
