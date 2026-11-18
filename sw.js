@@ -1,72 +1,30 @@
-// sw.js - Service Worker for Offline Practice Resilience (v3)
-const CACHE_NAME = "ts-llr-practice-v4";
-const ASSETS_TO_CACHE = [
-  "./",
-  "./index.html",
-  "./manifest.json",
-  "./css/styles.css",
-  "./css/exam-stall.css",
-  "./js/app.js",
-  "./js/i18n.js",
-  "./js/storage-engine.js",
-  "./js/coverage-engine.js",
-  "./js/exam-engine.js",
-  "./js/practice-engine.js",
-  "./js/flashcards-engine.js",
-  "./js/tricky-twins-engine.js",
-  "./js/cheatsheet-engine.js",
-  "./js/sync-engine.js",
-  "./js/qrcode-generator.js",
-  "./js/speech-engine.js",
-  "./js/sound-effects.js",
-  "./data/i18n/en.json",
-  "./data/i18n/te.json",
-  "./data/i18n/hi.json",
-  "./data/states.json",
-  "./data/rto-guide.json",
-  "./data/tricky-twins.json",
-  "./data/last-minute-cheatsheet.json",
-  "./data/questions/telangana/road-signs.json",
-  "./data/questions/telangana/rules-of-road.json",
-  "./data/questions/telangana/general-principles.json"
-];
+// sw.js - Service Worker SELF-DESTRUCT
+// The SW was causing stale JS module caching (exam-engine.js, coverage-engine.js etc.
+// loaded from old cache while app.js was fresh). Disabling SW entirely for reliability.
+// This SW immediately unregisters itself and wipes all caches on install + activate.
 
 self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(ASSETS_TO_CACHE).catch(err => {
-        console.warn("Some assets failed to cache initially:", err);
-      });
-    })
-  );
+  console.log("[SW v5-unregister] install: will unregister on activate");
   self.skipWaiting();
 });
 
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
-      return Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => {
-          console.log("SW activating: deleting obsolete cache", k);
-          return caches.delete(k);
-        })
-      );
+      return Promise.all(keys.map(k => {
+        console.log("[SW v5-unregister] deleting cache:", k);
+        return caches.delete(k);
+      }));
+    }).then(() => {
+      console.log("[SW v5-unregister] all caches cleared, unregistering SW");
+      return self.registration.unregister();
+    }).then(() => {
+      return self.clients.claim();
     })
   );
-  self.clients.claim();
 });
 
-// Network-First strategy for all assets (HTML, JS, CSS, JSON) with offline fallback
+// Pass all fetches through to network (no caching)
 self.addEventListener("fetch", event => {
-  event.respondWith(
-    fetch(event.request)
-      .then(response => {
-        if (response && response.status === 200 && event.request.method === "GET") {
-          const respClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, respClone));
-        }
-        return response;
-      })
-      .catch(() => caches.match(event.request))
-  );
+  event.respondWith(fetch(event.request));
 });

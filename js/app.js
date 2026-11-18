@@ -40,23 +40,22 @@ window.addEventListener("DOMContentLoaded", async () => {
   renderRtoGuide();
   updateReadinessMeter();
 
-  // Register / update Service Worker
+  // UNREGISTER all Service Workers and wipe ALL caches to fix stale module serving.
+  // The SW was cache-busting HTML/CSS/app.js but sub-modules (exam-engine.js, etc.)
+  // loaded from the old SW cache, breaking the exam. SW is disabled for stability.
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./sw.js").then(reg => {
-      reg.update();
-    }).catch(err => {
-      console.warn("Service worker registration:", err);
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(reg => {
+        console.log("[SW] Unregistering:", reg.scope);
+        reg.unregister();
+      });
     });
   }
-
-  // Purge obsolete caches
   if ("caches" in window) {
     caches.keys().then(keys => {
       keys.forEach(k => {
-        if (k !== "ts-llr-practice-v4") {
-          console.log("Deleting legacy cache:", k);
-          caches.delete(k);
-        }
+        console.log("[Cache] Deleting:", k);
+        caches.delete(k);
       });
     });
   }
