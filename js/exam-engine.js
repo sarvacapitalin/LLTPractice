@@ -53,9 +53,8 @@ export class ExamEngine {
 
     this.selectedOption = null;
     this.timeLeft = 30;
-    this.notifyUpdate();
 
-    // Start 30s countdown timer
+    // Start 30s countdown timer FIRST to guarantee ticking even if UI render encounters an edge case
     clearInterval(this.timer);
     this.timer = setInterval(() => {
       this.timeLeft -= 1;
@@ -67,13 +66,28 @@ export class ExamEngine {
         clearInterval(this.timer);
         this.handleTimeout();
       } else {
-        this.notifyUpdate();
+        try {
+          this.notifyUpdate();
+        } catch (err) {
+          console.error("Error in timer notifyUpdate:", err);
+        }
       }
     }, 1000);
 
+    // Initial UI render notification
+    try {
+      this.notifyUpdate();
+    } catch (err) {
+      console.error("Error in startQuestion notifyUpdate:", err);
+    }
+
     // Auto-read if user enabled voice
     if (storage.getPreference("autoSpeech", false)) {
-      this.readCurrentQuestion();
+      try {
+        this.readCurrentQuestion();
+      } catch (e) {
+        console.warn("Speech reader:", e);
+      }
     }
   }
 

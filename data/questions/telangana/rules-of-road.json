@@ -4604,9 +4604,9 @@
     "questionNumber": 122,
     "image": null,
     "text": {
-      "en": "WHEN APPROACHING A VEHICLE TURNING RIGHT, YOU MAY",
-      "te": "WHEN APPROACHING A వాహనం TURNING కుడి YOU MAY",
-      "hi": "WHEN APPROACHING A वाहन TURNING दायां YOU MAY"
+      "en": "THERE IS A SLOW-MOVING MOTORCYCLIST AHEAD OF YOU. YOU ARE UNSURE WHAT THE RIDER IS GOING TO DO. YOU SHOULD",
+      "te": "THERE IS A SLOW-MOVING MOTORCYCLIST ముందు OF YOU. YOU ARE UNSURE WHAT THE RIDER IS GOING TO DO. YOU చేయాలి",
+      "hi": "THERE IS A SLOW-MOVING MOTORCYCLIST आगे OF YOU. YOU ARE UNSURE WHAT THE RIDER IS GOING TO DO. YOU चाहिए"
     },
     "options": {
       "en": [
@@ -4628,11 +4628,11 @@
         "अधिक करीब जाएं"
       ]
     },
-    "answerIndex": 0,
+    "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: PASS ON THE LEFT. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: ఎడమ వైపు నుంచి దాటాలి. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: बाईं ओर से निकलें. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: STAY BEHIND. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: వెనుకే వేచి ఉండాలి. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: पीछे ही रहें. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {

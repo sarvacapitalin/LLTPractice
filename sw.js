@@ -1,5 +1,5 @@
 // sw.js - Service Worker for Offline Practice Resilience
-const CACHE_NAME = "ts-llr-practice-v1";
+const CACHE_NAME = "ts-llr-practice-v2";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
@@ -53,23 +53,41 @@ self.addEventListener("activate", event => {
   self.clients.claim();
 });
 
+// Network-first for JSON data; Cache-first with background revalidation for static assets
 self.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request).then(cached => {
-      return (
-        cached ||
-        fetch(event.request).then(response => {
-          if (response && response.status === 200 && event.request.method === "GET") {
+  const url = new URL(event.request.url);
+  const isDataRequest = url.pathname.endsWith(".json");
+
+  if (isDataRequest) {
+    // Network-first strategy for data
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          if (response && response.status === 200) {
             const respClone = response.clone();
-            caches.open(CACHE_NAME).then(cache => {
-              cache.put(event.request, respClone);
-            });
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, respClone));
           }
           return response;
-        }).catch(() => {
-          return cached;
         })
-      );
-    })
-  );
+        .catch(() => caches.match(event.request))
+    );
+  } else {
+    // Cache-first strategy for static shell
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        return (
+          cached ||
+          fetch(event.request).then(response => {
+            if (response && response.status === 200 && event.request.method === "GET") {
+              const respClone = response.clone();
+              caches.open(CACHE_NAME).then(cache => {
+                cache.put(event.request, respClone);
+              });
+            }
+            return response;
+          }).catch(() => cached)
+        );
+      })
+    );
+  }
 });

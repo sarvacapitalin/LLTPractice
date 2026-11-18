@@ -39,34 +39,19 @@ def build_road_signs():
     cat = "road_signs"
     total = 94
     qs = get_segmented_questions(cat, "road-signs-english.pdf", 299, total)
-    
-    # Load curated sign definitions from assemble_all_questions.py if available
-    curated_defs = {}
-    try:
-        from scripts.assemble_all_questions import build_road_signs as get_old_signs
-        old_list = get_old_signs()
-        for item in old_list:
-            curated_defs[item["questionNumber"]] = (
-                item["text"]["en"],
-                item["options"]["en"],
-                item["answerIndex"],
-                item["explanation"]["en"]
-            )
-    except Exception as e:
-        print("Note: Using raw extracted definitions:", e)
 
     signs = []
     for q_num in range(1, total + 1):
         p, toks = qs[q_num]
         raw_q_text, opt_toks, raw_ans_idx = extract_qa(q_num, p, toks, cat)
         
-        if q_num in curated_defs:
-            q_text_en, opts_en, ans_idx, exp_en = curated_defs[q_num]
+        q_text_en = raw_q_text if raw_q_text else "WHAT DOES THIS SIGN MEAN?"
+        if q_num == 68:
+            opts_en = ["ZIG ZAG ROAD", "FERRY", "HUMP OR ROUGH ROAD", "STRAIGHT ROAD"]
         else:
-            q_text_en = raw_q_text if raw_q_text else "WHAT DOES THIS SIGN MEAN?"
             opts_en = cluster_tokens_into_4_options(opt_toks)
-            ans_idx = raw_ans_idx
-            exp_en = get_explanation(q_num, cat, opts_en[ans_idx], "en")
+        ans_idx = raw_ans_idx
+        exp_en = get_explanation(q_num, cat, opts_en[ans_idx], "en")
             
         sign_type = get_sign_type(q_num)
         img_path = f"assets/signs/sign_{q_num:03d}.png"
@@ -159,9 +144,9 @@ def build_rules_of_road():
             3
         ),
         122: (
-            "WHEN APPROACHING A VEHICLE TURNING RIGHT, YOU MAY",
+            "THERE IS A SLOW-MOVING MOTORCYCLIST AHEAD OF YOU. YOU ARE UNSURE WHAT THE RIDER IS GOING TO DO. YOU SHOULD",
             ["PASS ON THE LEFT", "PASS ON THE RIGHT", "STAY BEHIND", "MOVE CLOSER"],
-            0
+            2
         ),
         124: (
             "WHEN ANOTHER VEHICLE IS OVERTAKING YOU, YOU SHOULD",

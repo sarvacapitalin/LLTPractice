@@ -1,7 +1,7 @@
 {
-  "report_id": "QA_RUN_1795035100",
-  "generated_at": "2026-11-18T20:51:40.559399Z",
-  "duration_seconds": 0.089,
+  "report_id": "QA_RUN_1795036768",
+  "generated_at": "2026-11-18T21:19:28.378599Z",
+  "duration_seconds": 0.034,
   "overall_status": "PASSED",
   "summary": {
     "total_suites": 8,
@@ -384,7 +384,7 @@
           "test": "css_file_exists_exam-stall.css",
           "status": "PASSED",
           "details": {
-            "size": 7438
+            "size": 7744
           }
         },
         {
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 29229
+            "bytes_served": 29878
           }
         },
         {

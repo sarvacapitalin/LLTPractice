@@ -378,12 +378,25 @@ function initExamUI() {
     // Populate options
     if (optionsContainer) {
       optionsContainer.innerHTML = "";
-      const opts = q.options[lang] || q.options.en || [];
+      let opts = [];
+      if (q && q.options) {
+        if (Array.isArray(q.options)) {
+          opts = q.options;
+        } else if (typeof q.options === "object") {
+          opts = q.options[lang] || q.options.en || q.options.te || q.options.hi || [];
+        }
+      }
+
+      if (!opts || opts.length === 0) {
+        console.warn("No options found for question:", q);
+      }
+
       opts.forEach((optText, idx) => {
         const card = document.createElement("div");
         card.className = "option-card" + (state.selectedOption === idx ? " selected" : "");
         card.setAttribute("role", "button");
         card.setAttribute("tabindex", "0");
+        card.setAttribute("data-option-index", idx);
 
         const badge = document.createElement("div");
         badge.className = "option-badge";
@@ -396,8 +409,17 @@ function initExamUI() {
         card.appendChild(badge);
         card.appendChild(textSpan);
 
-        card.addEventListener("click", () => {
+        const handleSelect = (e) => {
+          e.stopPropagation();
           exam.selectOption(idx);
+        };
+
+        card.addEventListener("click", handleSelect);
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            exam.selectOption(idx);
+          }
         });
 
         optionsContainer.appendChild(card);
