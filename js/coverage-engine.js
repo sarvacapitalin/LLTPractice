@@ -139,8 +139,9 @@ export class CoverageEngine {
     const examRules = sampleCategory(rules, 8);
     const examPrinciples = sampleCategory(principles, 4);
 
-    // Combine in stratified order or interleaved
-    const fullExam = [...examSigns, ...examRules, ...examPrinciples];
+    // Combine and shuffle so questions appear jumbled across all 3 sections
+    // exactly like the real Telangana STALL Computerized Exam
+    const fullExam = shuffle([...examSigns, ...examRules, ...examPrinciples]);
     return fullExam;
   }
 }
