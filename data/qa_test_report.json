@@ -1,7 +1,7 @@
 {
-  "report_id": "QA_RUN_1795034744",
-  "generated_at": "2026-11-18T20:45:44.693275Z",
-  "duration_seconds": 0.025,
+  "report_id": "QA_RUN_1795035100",
+  "generated_at": "2026-11-18T20:51:40.559399Z",
+  "duration_seconds": 0.089,
   "overall_status": "PASSED",
   "summary": {
     "total_suites": 8,
