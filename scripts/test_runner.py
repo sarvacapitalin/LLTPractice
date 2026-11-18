@@ -920,8 +920,8 @@ def run_web_server_accessibility_suite():
                     ("title_telangana_rta", "<title>Telangana RTA Learner's Licence Practice" in html_text),
                     ("viewport_meta", "name=\"viewport\"" in html_text),
                     ("main_container_element", "class=\"main-container\"" in html_text),
-                    ("script_app_js", "src=\"js/app.js\"" in html_text),
-                    ("link_styles_css", "href=\"css/styles.css\"" in html_text)
+                    ("script_app_js", ("src=\"js/app.js\"" in html_text or "src=\"js/app.js?" in html_text)),
+                    ("link_styles_css", ("href=\"css/styles.css\"" in html_text or "href=\"css/styles.css?" in html_text))
                 ]
                 for check_name, passed in dom_checks:
                     if passed:

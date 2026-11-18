@@ -1,5 +1,5 @@
-// sw.js - Service Worker for Offline Practice Resilience
-const CACHE_NAME = "ts-llr-practice-v2";
+// sw.js - Service Worker for Offline Practice Resilience (v3)
+const CACHE_NAME = "ts-llr-practice-v3";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
@@ -46,48 +46,27 @@ self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys => {
       return Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
+        keys.filter(k => k !== CACHE_NAME).map(k => {
+          console.log("SW activating: deleting obsolete cache", k);
+          return caches.delete(k);
+        })
       );
     })
   );
   self.clients.claim();
 });
 
-// Network-first for JSON data; Cache-first with background revalidation for static assets
+// Network-First strategy for all assets (HTML, JS, CSS, JSON) with offline fallback
 self.addEventListener("fetch", event => {
-  const url = new URL(event.request.url);
-  const isDataRequest = url.pathname.endsWith(".json");
-
-  if (isDataRequest) {
-    // Network-first strategy for data
-    event.respondWith(
-      fetch(event.request)
-        .then(response => {
-          if (response && response.status === 200) {
-            const respClone = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(event.request, respClone));
-          }
-          return response;
-        })
-        .catch(() => caches.match(event.request))
-    );
-  } else {
-    // Cache-first strategy for static shell
-    event.respondWith(
-      caches.match(event.request).then(cached => {
-        return (
-          cached ||
-          fetch(event.request).then(response => {
-            if (response && response.status === 200 && event.request.method === "GET") {
-              const respClone = response.clone();
-              caches.open(CACHE_NAME).then(cache => {
-                cache.put(event.request, respClone);
-              });
-            }
-            return response;
-          }).catch(() => cached)
-        );
+  event.respondWith(
+    fetch(event.request)
+      .then(response => {
+        if (response && response.status === 200 && event.request.method === "GET") {
+          const respClone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, respClone));
+        }
+        return response;
       })
-    );
-  }
+      .catch(() => caches.match(event.request))
+  );
 });

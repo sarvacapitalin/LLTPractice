@@ -16,6 +16,7 @@ let generalPrinciples = [];
 let trickyTwins = [];
 let cheatsheet = null;
 let rtoGuide = null;
+let currentRenderedQId = null;
 
 // Initialize on DOM load
 window.addEventListener("DOMContentLoaded", async () => {
@@ -38,10 +39,24 @@ window.addEventListener("DOMContentLoaded", async () => {
   renderRtoGuide();
   updateReadinessMeter();
 
-  // Register Service Worker for PWA
+  // Register / update Service Worker
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./sw.js").catch(err => {
+    navigator.serviceWorker.register("./sw.js").then(reg => {
+      reg.update();
+    }).catch(err => {
       console.warn("Service worker registration:", err);
+    });
+  }
+
+  // Purge obsolete caches
+  if ("caches" in window) {
+    caches.keys().then(keys => {
+      keys.forEach(k => {
+        if (k !== "ts-llr-practice-v3") {
+          console.log("Deleting legacy cache:", k);
+          caches.delete(k);
+        }
+      });
     });
   }
 });
@@ -87,6 +102,7 @@ function setupLanguageSelector() {
 
   window.addEventListener("languageChanged", () => {
     updateReadinessMeter();
+    currentRenderedQId = null;
     if (exam.isActive) exam.notifyUpdate();
     practice.notifyUpdate();
     flashcards.notifyUpdate();
@@ -240,23 +256,38 @@ function initExamUI() {
   const btnConfirm = document.getElementById("btn-confirm-next");
   const btnRead = document.getElementById("btn-read-question");
   const guessCheckbox = document.getElementById("exam-guess-checkbox");
+  const optionsContainer = document.getElementById("exam-options-container");
 
   btnStart?.addEventListener("click", () => {
+    currentRenderedQId = null;
     exam.startNewExam();
   });
 
   btnRetake?.addEventListener("click", () => {
+    currentRenderedQId = null;
     exam.startNewExam();
   });
 
   btnConfirm?.addEventListener("click", () => {
     const isGuessed = guessCheckbox ? guessCheckbox.checked : false;
+    currentRenderedQId = null;
     exam.confirmAndSubmit(isGuessed);
     if (guessCheckbox) guessCheckbox.checked = false;
   });
 
   btnRead?.addEventListener("click", () => {
     exam.readCurrentQuestion();
+  });
+
+  // Event delegation on options container for fast, reliable click handling
+  optionsContainer?.addEventListener("click", (e) => {
+    const card = e.target.closest(".option-card");
+    if (card) {
+      const idx = parseInt(card.getAttribute("data-option-index"), 10);
+      if (!isNaN(idx)) {
+        exam.selectOption(idx);
+      }
+    }
   });
 
   speech.onStateChange = isReading => {
@@ -270,15 +301,15 @@ function initExamUI() {
     updateReadinessMeter();
 
     if (!state.isActive && !state.isFinished) {
-      // Intro screen
       if (introCard) introCard.style.display = "block";
       if (activeCard) activeCard.style.display = "none";
       if (resultCard) resultCard.style.display = "none";
+      currentRenderedQId = null;
       return;
     }
 
     if (state.isFinished) {
-      // Show Result screen
+      currentRenderedQId = null;
       if (introCard) introCard.style.display = "none";
       if (activeCard) activeCard.style.display = "none";
       if (resultCard) resultCard.style.display = "block";
@@ -318,50 +349,13 @@ function initExamUI() {
     if (!q) return;
 
     const lang = getCurrentLang();
-    const qBadge = document.getElementById("exam-q-badge");
-    const qText = document.getElementById("exam-q-text");
-    const visualBox = document.getElementById("exam-q-visual");
-    const qImg = document.getElementById("exam-q-img");
-    const optionsContainer = document.getElementById("exam-options-container");
     const timerDisplay = document.getElementById("timer-seconds-display");
     const timerCircle = document.getElementById("timer-progress-circle");
 
-    // Header badge
-    if (qBadge) qBadge.textContent = `Question ${state.currentIndex + 1} of 20`;
-
-    // Category counters
-    const countSigns = document.getElementById("count-signs");
-    const countRules = document.getElementById("count-rules");
-    const countPrinciples = document.getElementById("count-principles");
-
-    let sSeen = 0, rSeen = 0, pSeen = 0;
-    for (let i = 0; i <= state.currentIndex; i++) {
-      const item = exam.questions[i];
-      if (item) {
-        if (item.category === "road_signs") sSeen++;
-        else if (item.category === "rules_of_road") rSeen++;
-        else if (item.category === "general_principles") pSeen++;
-      }
-    }
-    if (countSigns) countSigns.textContent = `${Math.min(sSeen, 8)}/8`;
-    if (countRules) countRules.textContent = `${Math.min(rSeen, 8)}/8`;
-    if (countPrinciples) countPrinciples.textContent = `${Math.min(pSeen, 4)}/4`;
-
-    // Question text
-    if (qText) qText.textContent = q.text[lang] || q.text.en;
-
-    // Image
-    if (q.image) {
-      if (qImg) qImg.src = q.image;
-      if (visualBox) visualBox.style.display = "flex";
-    } else {
-      if (visualBox) visualBox.style.display = "none";
-    }
-
-    // Timer display & circle progress
+    // 1. Always update 30s countdown timer on every tick
     if (timerDisplay) timerDisplay.textContent = state.timeLeft;
     if (timerCircle) {
-      const totalCircumference = 144.5; // 2 * pi * 23
+      const totalCircumference = 144.5;
       const fraction = state.timeLeft / 30;
       const offset = totalCircumference * (1 - fraction);
       timerCircle.style.strokeDashoffset = offset;
@@ -375,60 +369,92 @@ function initExamUI() {
       }
     }
 
-    // Populate options
-    if (optionsContainer) {
-      optionsContainer.innerHTML = "";
-      let opts = [];
-      if (q && q.options) {
-        if (Array.isArray(q.options)) {
-          opts = q.options;
-        } else if (typeof q.options === "object") {
-          opts = q.options[lang] || q.options.en || q.options.te || q.options.hi || [];
+    // 2. Only re-render question header, image, and options when question changes
+    const isNewQuestion = (currentRenderedQId !== q.id);
+    if (isNewQuestion) {
+      currentRenderedQId = q.id;
+
+      const qBadge = document.getElementById("exam-q-badge");
+      const qText = document.getElementById("exam-q-text");
+      const visualBox = document.getElementById("exam-q-visual");
+      const qImg = document.getElementById("exam-q-img");
+      const countSigns = document.getElementById("count-signs");
+      const countRules = document.getElementById("count-rules");
+      const countPrinciples = document.getElementById("count-principles");
+
+      // Header badge
+      if (qBadge) qBadge.textContent = `Question ${state.currentIndex + 1} of 20`;
+
+      // Category quota counters
+      let sSeen = 0, rSeen = 0, pSeen = 0;
+      for (let i = 0; i <= state.currentIndex; i++) {
+        const item = exam.questions[i];
+        if (item) {
+          if (item.category === "road_signs") sSeen++;
+          else if (item.category === "rules_of_road") rSeen++;
+          else if (item.category === "general_principles") pSeen++;
         }
       }
+      if (countSigns) countSigns.textContent = `${Math.min(sSeen, 8)}/8`;
+      if (countRules) countRules.textContent = `${Math.min(rSeen, 8)}/8`;
+      if (countPrinciples) countPrinciples.textContent = `${Math.min(pSeen, 4)}/4`;
 
-      if (!opts || opts.length === 0) {
-        console.warn("No options found for question:", q);
+      // Question text
+      if (qText) qText.textContent = (q.text && q.text[lang]) || (q.text && q.text.en) || "";
+
+      // Image
+      if (q.image) {
+        if (qImg) qImg.src = q.image;
+        if (visualBox) visualBox.style.display = "flex";
+      } else {
+        if (visualBox) visualBox.style.display = "none";
       }
 
-      opts.forEach((optText, idx) => {
-        const card = document.createElement("div");
-        card.className = "option-card" + (state.selectedOption === idx ? " selected" : "");
-        card.setAttribute("role", "button");
-        card.setAttribute("tabindex", "0");
-        card.setAttribute("data-option-index", idx);
+      // Populate options
+      if (optionsContainer) {
+        let opts = [];
+        if (q && q.options) {
+          if (Array.isArray(q.options)) {
+            opts = q.options;
+          } else if (typeof q.options === "object") {
+            opts = q.options[lang] || q.options.en || q.options.te || q.options.hi || [];
+          }
+        }
 
-        const badge = document.createElement("div");
-        badge.className = "option-badge";
-        badge.textContent = idx + 1;
-
-        const textSpan = document.createElement("div");
-        textSpan.className = "option-text";
-        textSpan.textContent = optText;
-
-        card.appendChild(badge);
-        card.appendChild(textSpan);
-
-        const handleSelect = (e) => {
-          e.stopPropagation();
-          exam.selectOption(idx);
-        };
-
-        card.addEventListener("click", handleSelect);
-        card.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            exam.selectOption(idx);
+        if (!opts || opts.length === 0) {
+          console.warn("No options found for question:", q);
+          optionsContainer.innerHTML = `<div style="color: #EF4444; padding: 12px; font-weight: 700;">No options available for this question.</div>`;
+        } else {
+          let html = "";
+          opts.forEach((optText, idx) => {
+            const isSelected = (state.selectedOption === idx);
+            html += `
+              <div class="option-card ${isSelected ? 'selected' : ''}" role="button" tabindex="0" data-option-index="${idx}">
+                <div class="option-badge">${idx + 1}</div>
+                <div class="option-text">${optText}</div>
+              </div>
+            `;
+          });
+          optionsContainer.innerHTML = html;
+        }
+      }
+    } else {
+      // Existing question: simply update the selected class without rebuilding the DOM
+      if (optionsContainer) {
+        optionsContainer.querySelectorAll(".option-card").forEach((card) => {
+          const idx = parseInt(card.getAttribute("data-option-index"), 10);
+          if (idx === state.selectedOption) {
+            card.classList.add("selected");
+          } else {
+            card.classList.remove("selected");
           }
         });
-
-        optionsContainer.appendChild(card);
-      });
+      }
     }
 
-    // Update Confirm button status
+    // 3. Update Confirm button status
     if (btnConfirm) {
-      btnConfirm.disabled = state.selectedOption === null;
+      btnConfirm.disabled = (state.selectedOption === null);
     }
   };
 }

@@ -244,6 +244,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -264,6 +266,8 @@
   gap: 12px;
   transition: all 0.2s ease;
   min-height: 52px;
+  width: 100%;
+  box-sizing: border-box;
   user-select: none;
 }
 
