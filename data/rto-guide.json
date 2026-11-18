@@ -1,0 +1,192 @@
+{
+  "title": {
+    "en": "Hyderabad RTA Learner's Licence (LLR) Test Day Guide",
+    "te": "హైదరాబాద్ RTA లెర్నర్స్ లైసెన్స్ (LLR) టెస్ట్ డే గైడ్",
+    "hi": "हैदराबाद आरटीए लर्नर लाइसेंस (एलएलआर) परीक्षा दिवस गाइड"
+  },
+  "checklist": [
+    {
+      "item": {
+        "en": "Application Form Printout (Form 2)",
+        "te": "దరఖాస్తు ఫారం ప్రింటౌట్ (ఫారం 2)",
+        "hi": "आवेदन पत्र का प्रिंटआउट (फॉर्म 2)"
+      },
+      "desc": {
+        "en": "Printed copy of the online application form submitted on transport.telangana.gov.in or Parivahan portal.",
+        "te": "ఆన్‌లైన్ పోర్టల్‌లో సమర్పించిన అప్లికేషన్ ప్రింటౌట్.",
+        "hi": "ऑनलाइन जमा किए गए आवेदन पत्र की मुद्रित प्रति।"
+      },
+      "mandatory": true
+    },
+    {
+      "item": {
+        "en": "Slot Booking Appointment Slip",
+        "te": "స్లాట్ బుకింగ్ అపాయింట్‌మెంట్ స్లిప్",
+        "hi": "स्लॉट बुकिंग अपॉइंटमेंट पर्ची"
+      },
+      "desc": {
+        "en": "Shows your designated RTO office (e.g. Khairatabad, Kondapur, Uppal) and time slot.",
+        "te": "మీ నిర్దేశిత RTO కార్యాలయం మరియు సమయ స్లాట్ వివరాలు.",
+        "hi": "आपके निर्दिष्ट आरटीओ कार्यालय और समय स्लॉट को दर्शाता है।"
+      },
+      "mandatory": true
+    },
+    {
+      "item": {
+        "en": "Original Aadhaar Card + 1 Photocopy",
+        "te": "ఒరిజినల్ ఆధార్ కార్డు + 1 జిరాక్స్ కాపీ",
+        "hi": "मूल आधार कार्ड + 1 फोटोकॉपी"
+      },
+      "desc": {
+        "en": "Primary identity and address proof required at verification counter.",
+        "te": "ధృవీకరణ కౌంటర్ వద్ద అవసరమైన ప్రాథమిక గుర్తింపు మరియు చిరునామా రుజువు.",
+        "hi": "सत्यापन काउंटर पर आवश्यक प्राथमिक पहचान और पते का प्रमाण।"
+      },
+      "mandatory": true
+    },
+    {
+      "item": {
+        "en": "Age & Address Proof (SSC Certificate / Passport / Voter ID)",
+        "te": "వయస్సు & చిరునామా రుజువు (SSC సర్టిఫికేట్ / పాస్‌పోర్ట్)",
+        "hi": "आयु और पते का प्रमाण (एसएससी प्रमाणपत्र / पासपोर्ट)"
+      },
+      "desc": {
+        "en": "Date of birth proof (minimum age 18 for LMV car/motorcycle with gear).",
+        "te": "పుట్టిన తేదీ రుజువు (కార్/గేర్ వాహనాలకు కనీస వయస్సు 18 సంవత్సరాలు).",
+        "hi": "जन्म तिथि का प्रमाण (कार/गियर वाहन के लिए न्यूनतम 18 वर्ष)।"
+      },
+      "mandatory": true
+    },
+    {
+      "item": {
+        "en": "Passport Size Photographs (2 copies)",
+        "te": "పాస్‌పోర్ట్ సైజు ఫోటోలు (2 కాపీలు)",
+        "hi": "पासपोर्ट साइज फोटो (2 प्रतियां)"
+      },
+      "desc": {
+        "en": "Recent color photographs with white background (as backup).",
+        "te": "తెల్లటి నేపథ్యంతో ఇటీవల తీసిన రంగు ఫోటోలు.",
+        "hi": "सफेद पृष्ठभूमि वाले हाल के रंगीन फोटो।"
+      },
+      "mandatory": false
+    },
+    {
+      "item": {
+        "en": "Medical Certificate (Form 1 / Form 1A)",
+        "te": "మెడికల్ సర్టిఫికేట్ (ఫారం 1 / ఫారం 1A)",
+        "hi": "मेडिकल सर्टिफिकेट (फॉर्म 1 / 1ए)"
+      },
+      "desc": {
+        "en": "Self-declaration Form 1 is standard. Form 1A signed by a registered doctor is needed if applicant is over 40.",
+        "te": "40 ఏళ్లు పైబడిన వారికి డాక్టర్ సంతకం చేసిన ఫారం 1A అవసరం.",
+        "hi": "40 वर्ष से अधिक आयु वालों के लिए डॉक्टर द्वारा हस्ताक्षरित फॉर्म 1ए आवश्यक है।"
+      },
+      "mandatory": false
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "title": {
+        "en": "Arrival & Token Counter",
+        "te": "కార్యాలయానికి చేరుకోవడం & టోకెన్ తీసుకోవడం",
+        "hi": "आगमन और टोकन काउंटर"
+      },
+      "detail": {
+        "en": "Reach the RTO office 15-20 minutes before your slot. Show your slot booking slip at the entrance token counter to receive a queue token.",
+        "te": "మీ స్లాట్ సమయానికి 15-20 నిమిషాల ముందు RTO కి చేరుకోండి. క్యూ టోకెన్ పొందండి.",
+        "hi": "अपने स्लॉट समय से 15-20 मिनट पहले पहुंचें और कतार टोकन प्राप्त करें।"
+      }
+    },
+    {
+      "step": 2,
+      "title": {
+        "en": "Document Verification Counter",
+        "te": "డాక్యుమెంట్ వెరిఫికేషన్ కౌంటర్",
+        "hi": "दस्तावेज़ सत्यापन काउंटर"
+      },
+      "detail": {
+        "en": "The Motor Vehicle Inspector (MVI) verifies your original Aadhaar and uploaded certificates. They stamp and approve your application.",
+        "te": "MVI మీ ఒరిజినల్ ఆధార్ మరియు అప్‌లోడ్ చేసిన సర్టిఫికెట్లను తనిఖీ చేసి స్టాంప్ వేస్తారు.",
+        "hi": "एमवीआई आपके मूल आधार और दस्तावेजों की जांच करके आवेदन को स्वीकृत करते हैं।"
+      }
+    },
+    {
+      "step": 3,
+      "title": {
+        "en": "Biometric & Photo Capture",
+        "te": "బయోమెట్రిక్ & ఫోటో క్యాప్చర్",
+        "hi": "बायोमेट्रिक और फोटो कैप्चर"
+      },
+      "detail": {
+        "en": "Your digital photograph, digital signature on pad, and thumbprint are captured. This photo will appear on your permanent Driving Licence!",
+        "te": "డిజిటల్ ఫోటో, సంతకం మరియు వేలిముద్ర నమోదు చేస్తారు. ఇదే ఫోటో మీ డ్రైవింగ్ లైసెన్స్‌పై వస్తుంది.",
+        "hi": "आपकी डिजिटल फोटो, डिजिटल हस्ताक्षर और अंगूठे का निशान लिया जाएगा।"
+      }
+    },
+    {
+      "step": 4,
+      "title": {
+        "en": "Computer Lab (STALL Test)",
+        "te": "కంప్యూటర్ టెస్ట్ హాల్ (STALL టెస్ట్)",
+        "hi": "कंप्यूटर टेस्ट हॉल (STALL परीक्षा)"
+      },
+      "detail": {
+        "en": "You are allocated a computer booth with a touch monitor or mouse. Put on the headphones if you wish to hear audio prompts. Enter your Roll/Token No., select your language (English/Telugu/Hindi), and begin the 20-question test.",
+        "te": "కంప్యూటర్ బూత్‌లో మీ భాషను (ఇంగ్లీష్/తెలుగు/హిందీ) ఎంచుకుని 20 ప్రశ్నల పరీక్షను ప్రారంభించండి.",
+        "hi": "कंप्यूटर बूथ पर अपनी भाषा (अंग्रेजी/तेलुगु/हिंदी) चुनें और 20 प्रश्नों की परीक्षा शुरू करें।"
+      }
+    },
+    {
+      "step": 5,
+      "title": {
+        "en": "Instant Result & LLR Download",
+        "te": "తక్షణ ఫలితం & LLR డౌన్‌లోడ్",
+        "hi": "तत्काल परिणाम और एलएलआर डाउनलोड"
+      },
+      "detail": {
+        "en": "As soon as you score 12 correct answers, the screen displays PASS! An SMS with the LLR download link is sent to your registered mobile number within a few minutes.",
+        "te": "12 సరైన సమాధానాలు రాగానే 'పాస్' అని కనిపిస్తుంది. LLR డౌన్‌లోడ్ లింక్ SMS ద్వారా వస్తుంది.",
+        "hi": "12 सही उत्तर मिलते ही स्क्रीन पर 'पास' दिखेगा और मोबाइल पर एलएलआर डाउनलोड लिंक आ जाएगा।"
+      }
+    }
+  ],
+  "topTips": [
+    {
+      "title": {
+        "en": "Don't Rush at 10 Seconds",
+        "te": "టైమర్ చూసి కంగారు పడవద్దు",
+        "hi": "टाइमर देखकर घबराएं नहीं"
+      },
+      "desc": {
+        "en": "30 seconds is more than enough time to read 1 question and 4 short options. Take 10 seconds to read carefully before tapping an option.",
+        "te": "30 సెకన్లు ఒక ప్రశ్న చదవడానికి సరిపోతుంది. కంగారు పడకుండా ప్రశ్నను పూర్తిగా చదవండి.",
+        "hi": "30 सेकंड का समय पर्याप्त होता है। विकल्प चुनने से पहले प्रश्न को ध्यान से पढ़ें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Watch out for Negative Words",
+        "te": "'కానిది' / 'చేయకూడనిది' పదాలను గమనించండి",
+        "hi": "'नहीं' वाले प्रश्नों पर विशेष ध्यान दें"
+      },
+      "desc": {
+        "en": "Many candidates fail on questions asking 'Which of these is NOT allowed?' or 'When should you NOT overtake?'. Look out for the word NOT.",
+        "te": "'ఏది తప్పు', 'ఎప్పుడు ఓవర్‌టేక్ చేయకూడదు' వంటి వ్యతిరేక ప్రశ్నలను జాగ్రత్తగా చదవండి.",
+        "hi": "'इनमें से क्या नहीं करना चाहिए' जैसे नकारात्मक शब्दों पर विशेष ध्यान दें।"
+      }
+    },
+    {
+      "title": {
+        "en": "Remember the Shape Rules",
+        "te": "ట్రాఫిక్ సంకేతాల ఆకారాల నియమం",
+        "hi": "संकेतों के आकार का नियम"
+      },
+      "desc": {
+        "en": "Circles = Mandatory / Order (Must obey). Triangles = Cautionary / Warning (Be careful). Rectangles = Informatory (Information & facilities).",
+        "te": "వృత్తాకారం (సర్కిల్) = తప్పనిసరి. త్రిభుజాకారం = హెచ్చరిక. చతురస్రం/దీర్ఘచతురస్రం = సమాచారం.",
+        "hi": "गोलाकार = अनिवार्य आदेश। त्रिकोण = चेतावनी/सावधानी। आयताकार = सूचनात्मक।"
+      }
+    }
+  ]
+}

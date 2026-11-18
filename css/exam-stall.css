@@ -1,0 +1,424 @@
+/* css/exam-stall.css - Authentic RTO STALL Computerized Exam Simulator */
+
+.stall-exam-wrapper {
+  background: #FFFFFF;
+  border: 2px solid #CBD5E1;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* STALL Top Status Banner */
+.stall-top-bar {
+  background: #1E293B;
+  color: #FFFFFF;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 2px solid #334155;
+}
+
+.applicant-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.applicant-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #3B82F6;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.applicant-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.applicant-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.applicant-meta {
+  font-size: 0.72rem;
+  color: #94A3B8;
+}
+
+/* Circular 30s Countdown Timer */
+.stall-timer-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.timer-box {
+  position: relative;
+  width: 54px;
+  height: 54px;
+}
+
+.timer-svg {
+  transform: rotate(-90deg);
+  width: 54px;
+  height: 54px;
+}
+
+.timer-circle-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 5;
+}
+
+.timer-circle-progress {
+  fill: none;
+  stroke: #22C55E;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 144.5; /* 2 * pi * 23 */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+}
+
+.timer-circle-progress.amber {
+  stroke: #F59E0B;
+}
+
+.timer-circle-progress.red {
+  stroke: #EF4444;
+}
+
+.timer-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+/* Category Quota Tracker */
+.quota-tracker {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.78rem;
+}
+
+.quota-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #CBD5E1;
+}
+
+.quota-item.active {
+  color: #60A5FA;
+  font-weight: 700;
+}
+
+.quota-count {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+}
+
+/* Main Exam Body */
+.stall-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.question-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--secondary-blue);
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.speech-read-btn {
+  background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  color: #334155;
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.speech-read-btn:hover {
+  background: #E2E8F0;
+}
+
+.speech-read-btn.reading {
+  background: #FEF3C7;
+  color: #B45309;
+  border-color: #FCD34D;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* Question Visual Box (Image) */
+.question-visual-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  min-height: 140px;
+}
+
+.question-image {
+  max-height: 180px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Options Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.option-card {
+  background: #FFFFFF;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+  min-height: 60px;
+  user-select: none;
+}
+
+.option-card:hover {
+  border-color: #94A3B8;
+  background: #F8FAFC;
+}
+
+.option-card.selected {
+  border-color: var(--secondary-blue);
+  background: #EFF6FF;
+  box-shadow: 0 0 0 1px var(--secondary-blue);
+}
+
+.option-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.option-card.selected .option-badge {
+  background: var(--secondary-blue);
+  color: #FFFFFF;
+  border-color: var(--secondary-blue);
+}
+
+.option-text {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+/* STALL Bottom Action Bar */
+.stall-footer {
+  background: #F8FAFC;
+  border-top: 1px solid var(--border-color);
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.guess-flag-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.guess-flag-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.guess-flag-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #64748B;
+}
+
+.guess-flag-container:hover .guess-flag-label {
+  color: var(--text-primary);
+}
+
+.confirm-next-btn {
+  background: var(--success-green);
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s;
+  min-height: 48px;
+}
+
+.confirm-next-btn:hover:not(:disabled) {
+  background: #1B5E20;
+  transform: translateY(-1px);
+}
+
+.confirm-next-btn:disabled {
+  background: #94A3B8;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+/* Result Modal / Screen */
+.result-screen {
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.result-badge-big {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.result-badge-big.pass {
+  background: var(--success-bg);
+  color: var(--success-green);
+  border: 3px solid var(--success-green);
+}
+
+.result-badge-big.fail {
+  background: var(--danger-bg);
+  color: var(--danger-red);
+  border: 3px solid var(--danger-red);
+}
+
+.result-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.result-title.pass {
+  color: var(--success-green);
+}
+
+.result-title.fail {
+  color: var(--danger-red);
+}
+
+.score-display {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.score-display strong {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+.share-whatsapp-btn {
+  background: #25D366;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.share-whatsapp-btn:hover {
+  background: #1EBE5D;
+}

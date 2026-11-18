@@ -1,0 +1,2900 @@
+{
+  "1": [
+    1,
+    [
+      "YOU WANT TO TURN RIGHT AT A",
+      "JUNCTION.  BUT YOU THINK THAT",
+      "YOUR INDICATORS CAN NOT BE SEEN",
+      "CLEARLY.  WHAT SHOULD YOU DO?",
+      "0",
+      "GET OUT AND CHECK IF",
+      "YOUR INDICATORS CAN",
+      "BE SEEN",
+      "STAY IN THE LEFT HAND",
+      "LANE",
+      "KEEP WELL OVER TO THE",
+      "RIGHT",
+      "GIVE  ARM SIGNAL AND",
+      "INDICATOR  SIGNAL"
+    ]
+  ],
+  "4": [
+    1,
+    [
+      "2",
+      "YOU HAVE TO MAKE A JOURNEY IN",
+      "FOGGY CONDITIONS.  YOU SHOULD",
+      "0",
+      "FOLLOW CLOSELY",
+      "OTHER VEHICLE'S TAIL",
+      "LIGHTS",
+      "NEVER USE DEMISTERS",
+      "AND WINDSCREEN",
+      "WIPERS",
+      "LEAVE PLENTY OF TIME",
+      "FOR YOUR JOURNEY",
+      "KEEP SAFE DISTANCE OF",
+      "TWO SECONDS",
+      "3",
+      "3",
+      "YOUR ARE DRIVING A VEHICLE. YOU",
+      "NOTICE ANIMALS IN FRONT.  WHAT",
+      "SHOULD YOU DO FIRST?",
+      "0",
+      "PULL OUT TO THE",
+      "MIDDLE OF THE ROAD",
+      "BE PREPARED TO SLOW",
+      "DOWN",
+      "ACCELERATE AROUND",
+      "THEM",
+      "SIGNAL RIGHT2",
+      "4",
+      "YOU ARE DRIVING PAST A LANE OF",
+      "PARKED CARS. YOU NOTICE BALL",
+      "BOUNCING OUT INTO THE ROAD",
+      "AHEAD.  WHAT SHOULD YOU DO?",
+      "0",
+      "CONTINUE DRIVING AT",
+      "THE SAME SPEED AND",
+      "SOUND YOUR HORN",
+      "CONTINUE DRIVING AT",
+      "THE SAME SPEED AND",
+      "FLASH YOUR",
+      "HEADLIGHTS",
+      "SLOW DOWN AND BE",
+      "PREPARED TO STOP FOR",
+      "CHILDREN",
+      "STOP AND WAVE THE",
+      "CHILDREN ACROSS TO",
+      "FETCH THEIR BALL.",
+      "3"
+    ]
+  ],
+  "5": [
+    1,
+    [
+      "WHAT IS THE MAIN HAZARD YOU",
+      "SHOULD BE AWARE OF WHEN",
+      "FOLLOWING A CYCLIST?",
+      "0",
+      "THE CYCLIST MAY MOVE",
+      "INTO THE LEFT AND",
+      "DISMOUNT",
+      "THE CYCLIST MAY TURN",
+      "EITHER WAY INTO THE",
+      "ROAD",
+      "THE CONTENTS OF THE",
+      "CYCLIST'S CARRIER MAY",
+      "FALL ONTO THE ROAD",
+      "THE CYCLIST MAY WISH",
+      "TO TURN RIGHT AT THE",
+      "END OF THE ROAD",
+      "2"
+    ]
+  ],
+  "6": [
+    1,
+    [
+      "BE EXTRA CAUTIOUS WHILE",
+      "OVERTAKING",
+      "0`L'  MARK VEHICLES.SLOW SPEED VEHICLES.OLD VEHICLE",
+      "S.LIGHT VEHICLES.1"
+    ]
+  ],
+  "7": [
+    2,
+    [
+      "BE CAREFUL WHILE OVERTAKING `L'",
+      "MARK (LEARNER DRIVER) VEHICLE",
+      "BECAUSE",
+      "0",
+      "THEIR INTENTION IS",
+      "ALWAYS TO DRIVE IN",
+      "RIGHT HAND LANE.",
+      "THIS WILL REDUCE",
+      "THEIR CONFIDENCE.",
+      "THEY MAY GET",
+      "NERVOUS AND IT MAY",
+      "LEAD TO AN ACCIDENT.",
+      "GENERALLY THEY ARE",
+      "NOT MEDICALLY FIT.",
+      "3"
+    ]
+  ],
+  "8": [
+    2,
+    [
+      "YOU ARE FOLLOWING A TWO",
+      "WHEELER ON A POOR ROAD",
+      "SURFACE.  YOU SHOULD",
+      "0",
+      "MAKE SURE YOU STAY",
+      "WELL BACK",
+      "LOOK OUT AS THEY MAY",
+      "WOBBLE",
+      "BE AWARE THEY MAY",
+      "SUDDENLY TURN",
+      "EITHERWAY",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "9": [
+    2,
+    [
+      "YOU SHOULD NOT OVERTAKE",
+      "WHEN?",
+      "0",
+      "INTENDING TO TURN",
+      "LEFT SHORTLY",
+      "AFTERWARDS",
+      "APPROACHING A",
+      "JUNCTION",
+      "THE VIEW AHEAD IS",
+      "BLOCKED",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "10": [
+    2,
+    [
+      "YOU SHOULD NEVER ATTEMPT TO",
+      "OVERTAKE A CYCLIST!",
+      "0",
+      "WHEN APPROACHING A",
+      "ROUNDABOUT",
+      "ON A NARROW ROAD",
+      "JUST BEFORE YOU TURN",
+      "LEFT",
+      "ON A RIGHT HAND BEND3"
+    ]
+  ],
+  "11": [
+    2,
+    [
+      "WHEN YOU APPROACH A BUS",
+      "SIGNALLING TO MOVE OFF FROM A",
+      "BUS STOP, YOU SHOULD",
+      "0",
+      "GET PAST BEFORE IT",
+      "MOVES",
+      "ALLOW IT TO PULL",
+      "AWAY, IF IT IS SAFE TO",
+      "DO SO",
+      "FLASH YOUR",
+      "HEADLIGHTS AS YOU",
+      "APPROACH",
+      "SIGNAL LEFT AND WAVE",
+      "THE BUS TO MOVE ON",
+      "2",
+      "YOU HAVE JUST BEEN OVERTAKEN",
+      "BY A MOTORCYCLIST WHO IS",
+      "CUTTING IN SHARPLY.  YOU SHOULD",
+      "0SOUND THE HORNBRAKE FIRMLYKEEP A SAFE GAPFLASH YOU",
+      "R LIGHTS3"
+    ]
+  ],
+  "13": [
+    3,
+    [
+      "YOU ARE DRIVING A TWO WHEELER",
+      "ON THE MOTORWAY IN WINDY",
+      "CONDITIONS.  WHEN PASSING HIGH-",
+      "SIDED VEHICLES YOU SHOULD",
+      "INCREASE YOUR SPEED.",
+      "BEAWARE OF SUDDEN",
+      "BLAST OF WIND.",
+      "DRIVE ALONGSIDE VERY",
+      "CLOSELY.",
+      "EXPECT NORMAL",
+      "CONDITIONS.",
+      "2"
+    ]
+  ],
+  "14": [
+    3,
+    [
+      "YOU ARE DRIVING UPTO AN",
+      "INTERSECTION WHERE THERE IS NO",
+      "SIGNAL.  PEOPLE ARE CROSSING IN",
+      "FRONT OF YOUR CAR.  YOU SHOULD",
+      "0",
+      "CONTINUE DRIVING",
+      "INTO THE INTERSECTION",
+      "WITHOUT REDUCING",
+      "SPEED.",
+      "SLOW DOWN AND BE",
+      "CAREFUL",
+      "STOP AND ALLOW",
+      "PEDESTRIANS TO CROSS",
+      "SOUND YOUR HORN",
+      "REPEATEDLY",
+      "3"
+    ]
+  ],
+  "15": [
+    3,
+    [
+      "YOU WISH TO TAKE A \"U\" TURN.  IF",
+      "THERE IS A POLICEMAN AT THE",
+      "INTERSECTION CONTROLLED BY A",
+      "TRAFFIC LIGHT, YOU SHOULD",
+      "0",
+      "DRIVE TO ANOTHER",
+      "INTERSECTION THAT",
+      "HAS NO TRAFFIC LIGHT",
+      "WAIT UNTIL THE LIGHT",
+      "TURNS GREEN BEFORE",
+      "MAKING THE \"U\" TURN",
+      "MAKE THE \"U\" TURN IF",
+      "THERE IS A POLICEMAN",
+      "AT THE INTERSECTION.",
+      "AVOID MAKING A 'U'",
+      "TURN",
+      "2",
+      "TRAFFIC LIGHT, YOU SHOULD"
+    ]
+  ],
+  "16": [
+    3,
+    [
+      "YOU ARE DRIVING ON A TWO-LANE",
+      "STREET.   THE VEHICLE IN FRONT OF",
+      "YOU IS MOVING VERY SLOWLY,  AND",
+      "THE ROAD AHEAD IS CLEAR FOR",
+      "OVERTAKING, YOU SHOULD",
+      "0",
+      "PASS THE VEHICLE",
+      "FROM LEFT HAND SIDE",
+      "PASS THE VEHICLE",
+      "FROM RIGHT HAND SIDE",
+      "PASS THE VEHICLE",
+      "FROM ANY CONVENIENT",
+      "SIDE",
+      "NEVER OVERTAKE AT",
+      "ALL.",
+      "2"
+    ]
+  ],
+  "17": [
+    3,
+    [
+      "AS YOU APPROACH AN",
+      "INTERSECTION, YOU SHOULD CHECK",
+      "FOR TRAFFIC ON YOUR LEFT AND",
+      "RIGHT.",
+      "0",
+      "AT ALL TIMES BEFORE",
+      "ENTERING THE",
+      "INTERSECTION.",
+      "ONLY WHEN THE",
+      "TRAFFIC IS HEAVY",
+      "ONLY WHEN YOU",
+      "APPROACH A STOP",
+      "SIGN.",
+      "NONE OF THE ABOVE1"
+    ]
+  ],
+  "18": [
+    3,
+    [
+      "WHILE DRIVING ON THE MOTORWAY",
+      "YOU HAVE TO SLOW DOWN QUICKLY",
+      "DUE TO A HAZARD.  WHAT SHOULD",
+      "YOU DO?",
+      "0SOUND YOUR HORN",
+      "SWITCH ON YOUR",
+      "HAZARD LIGHT",
+      "SWITCH ON YOUR FOG",
+      "LIGHT",
+      "SWITCH ON YOUR",
+      "HEADLIGHT TO FULL",
+      "BEAM",
+      "2"
+    ]
+  ],
+  "19": [
+    4,
+    [
+      "YOU DRIVE UP TO A CORNER WHERE",
+      "YOU SEE SOME LOOSE GRAVEL ON",
+      "THE ROAD.  YOU SHOULD",
+      "0",
+      "CHECK THE MIRRORS",
+      "AND CHANGE LANES",
+      "SPEED UP AND DRIVE",
+      "OVER THE GRAVEL AS",
+      "QUICKLY AS POSSIBLE.",
+      "SLOW DOWNNONE OF THE ABOVE3"
+    ]
+  ],
+  "20": [
+    4,
+    [
+      "WHEN YOU HAVE STARTED TO",
+      "OVERTAKE THE CAR AHEAD, YOU",
+      "NOTICE THAT ITS RIGHT INDICATOR",
+      "IS FLASHING.  YOU SHOULD",
+      "0",
+      "ACCELERATE QUICKLY",
+      "TO GET PASS",
+      "IMMEDIATELY BRAKE TO",
+      "A STOP",
+      "FLASH YOUR",
+      "HEADLIGHTS AND",
+      "ACCELERATE PASS.",
+      "CHECK YOUR MIRROR",
+      "AND MOVE BACK",
+      "BEHIND THE CAR.",
+      "4"
+    ]
+  ],
+  "21": [
+    4,
+    [
+      "A DOTTED WHITE CENTRAL LINE ON",
+      "THE ROAD MEANS THAT YOU MAY",
+      "0",
+      "CROSS IT WHENEVER",
+      "YOU FEEL",
+      "CROSS IT WHEN THERE",
+      "IS NO TRAFFIC COMING",
+      "FROM THE OPPOSITE",
+      "DIRECTION",
+      "NEVER CROSS IT UNDER",
+      "ANY CIRCUMSTANCES",
+      "CROSS IT WHEN IT IS",
+      "SAFE TO DO SO BUT",
+      "SHOULD COME BACK TO",
+      "YOUR LANE AFTER",
+      "OVERTAKING",
+      "4",
+      "A CONTINUOUS YELLOW OR WHITE",
+      "WHEN THERE IS NO"
+    ]
+  ],
+  "22": [
+    4,
+    [
+      "A CONTINUOUS YELLOW OR WHITE",
+      "LINE IN THE CENTER OF THE ROAD",
+      "INDICATES THAT YOU MAY CROSS IT",
+      "0",
+      "WHENEVER YOU FEEL IT",
+      "IS SAFE TO DO SO",
+      "WHEN THERE IS NO",
+      "TRAFFIC COMING FROM",
+      "THE OPPOSITE",
+      "DIRECTION",
+      "UNDER NO",
+      "CIRCUMSTANCES",
+      "BUT AVOID AS FAR AS",
+      "POSSIBLE",
+      "3"
+    ]
+  ],
+  "23": [
+    4,
+    [
+      "TWO CONTINUOUS YELLOW LINES IN",
+      "THE MIDDLE OF THE ROAD INDICATE",
+      "THAT",
+      "0",
+      "OVERTAKING",
+      "PERMITTED",
+      "OVERTAKING NOT",
+      "PERMITTED",
+      "OVERTAKING AND",
+      "RIGHT TURNING BOTH",
+      "ARE NOT PERMITTED",
+      "OVERTAKING NOT",
+      "PERMITTED BUT RIGHT",
+      "TURN PERMITTED.",
+      "3"
+    ]
+  ],
+  "24": [
+    4,
+    [
+      "SPEED LIMIT SIGNS INDICATE THE",
+      "MAXIMUM SPEED DURING IDEAL",
+      "CONDITIONS.",
+      "0TRUEFALSEBOTH  NONE1"
+    ]
+  ],
+  "25": [
+    4,
+    [
+      "WHILE APPROACHING A PEDESTRIAN",
+      "CROSSING WHICH IS CONTROLLED BY",
+      "A TRAFFIC SIGNAL, THE SIGNAL HAS",
+      "TURNED GREEN FOR YOU.   BUT THE",
+      "PEDESTRIANS ARE STILL CROSSING.",
+      "YOU SHOULD",
+      "0",
+      "SLOW DOWN AND GIVE",
+      "WAY TO PEDESTRIANS",
+      "SPEED UP SINCE THE",
+      "SIGNAL IS IN YOUR",
+      "FAVOUR",
+      "SPEED UP BUT TAKE",
+      "CARE OF THE",
+      "PEDESTRIANS",
+      "NONE OF THE ABOVE1"
+    ]
+  ],
+  "26": [
+    5,
+    [
+      "UNDER WHAT CIRCUMSTANCES YOU",
+      "WILL NOT GO FORWARD WHEN THE",
+      "SIGNAL LIGHTS ARE IN YOUR",
+      "FAVOUR?",
+      "0",
+      "IF ROAD REPAIR WORK",
+      "IS IN PROGRESS NEAR",
+      "THE INTERSECTION",
+      "IF YOU WANT TO GIVE",
+      "COIN TO A BEGGAR",
+      "WHO IS A LITTLE AWAY",
+      "FROM YOU",
+      "IF BY DOING SO, YOU",
+      "WILL BE BLOCKING THE",
+      "INTERSECTION",
+      "IF A POLICEMAN ON",
+      "DUTY HAS SIGNALLED",
+      "YOU TO STOP",
+      "4"
+    ]
+  ],
+  "27": [
+    5,
+    [
+      "A FLASHING RED LIGHT AT AN INTER",
+      "SECTION MEANS",
+      "0",
+      "YOU SHOULD SLOW",
+      "DOWN AND DRIVE WITH",
+      "INCREASED CAUTION.",
+      "YOU SHOULD SLOW",
+      "DOWN, AND GIVE RIGHT",
+      "WAY TO VEHICLES",
+      "APPROACHING FROM",
+      "LEFT OR RIGHT SIDE",
+      "SIGNAL LIGHT IS OUT OF",
+      "ORDER AND AS SUCH",
+      "YOU SHOULD PROCEED",
+      "WITH CAUTION.",
+      "YOU SHOULD STOP,",
+      "GIVE WAY TO VEHICLES",
+      "IN THE PRIORITY ROAD",
+      "AND PROCEED ONLY",
+      "WHEN THE WAY IS",
+      "CLEAR",
+      "4"
+    ]
+  ],
+  "28": [
+    5,
+    [
+      "WHEN YOU APPROACH AN",
+      "INTERSECTION, THE GREEN SIGNAL",
+      "HAS JUST CHANGED INTO AMBER,",
+      "YOU SHOULD",
+      "HURRY UP AND CROSS",
+      "APPLY BRAKES AND",
+      "CROSS",
+      "SEE, IF YOU HAVE",
+      "CROSSED THE STOP LINE",
+      "OR ARE SO CLOSE TO IT",
+      "THAT YOU CANNOT",
+      "STOP SAFELY, CROSS",
+      "THE INTERSECTION",
+      "WITH CAUTION",
+      "SEE, IF THERE IS NO",
+      "POLICEMAN, CROSS,",
+      "OTHERWISE STOP.",
+      "3"
+    ]
+  ],
+  "29": [
+    5,
+    [
+      "WHICH OF THESE LIGHTS WILL COME",
+      "AFTER AMBER AT A TRAFFIC LIGHT?",
+      "0REDGREENBLUE NONE OF THE ABOVE1"
+    ]
+  ],
+  "30": [
+    5,
+    [
+      "AS YOU APPROACH THE STOP LINE",
+      "AT AN INTERSECTION YOU SEE THE",
+      "LIGHT TURN AMBER.  YOU SHOULD",
+      "PREPARE TO GOGO IF THE WAY IS CLEAR",
+      "GO IF NO PEDESTRIANS",
+      "ARE CROSSING",
+      "GET READY TO STOP",
+      "BEFORE THE STOP LINE",
+      "4"
+    ]
+  ],
+  "31": [
+    5,
+    [
+      "WHILE DRIVING YOU DECIDED TO",
+      "STOP IMMEDIATELY                     THE",
+      "CORRECT HAND SIGNAL IS",
+      "0",
+      "EXTEND RIGHT ARM",
+      "HORIZONTAL TO THE",
+      "GROUND WITH PALM",
+      "DOWNWARDS",
+      "EXTEND THE RIGHT ARM",
+      "& BEND THE ELBOW AT",
+      "RIGHT ANGLES AND",
+      "TURNING PALM TO THE",
+      "FRONT.",
+      "NO SIGNAL REQUIREDNONE OF THE ABOVE2"
+    ]
+  ],
+  "32": [
+    6,
+    [
+      "YOU ARE DRIVING TOWARDS AN",
+      "INTERSECTION WHERE THERE IS A",
+      "FLASHING YELLOW TRAFFIC LIGHT.",
+      "YOU SHOULD",
+      "0",
+      "SLOW DOWN AND",
+      "PROCEED WITH",
+      "CAUTION",
+      "STOP, IF POSSIBLE TO",
+      "DO SO, SAFELY",
+      "CONTINUE AT THE SAME",
+      "SPEED",
+      "RUSH PAST THE SIGNAL1"
+    ]
+  ],
+  "33": [
+    6,
+    [
+      "BEFORE TURNING YOUR VEHICLE ON",
+      "THE ROAD YOU SHOULD",
+      "0",
+      "CHECK ALL AROUND FOR",
+      "OTHER ROAD USERS",
+      "USE A DRIVEWAY IF",
+      "POSSIBLE",
+      "KEEP YOUR HAND ON",
+      "THE HANDBRAKE",
+      "THROUGHOUT",
+      "SWITCH ON YOUR",
+      "HEADLIGHTS",
+      "1"
+    ]
+  ],
+  "34": [
+    6,
+    [
+      "YOUR MOBILE PHONE RINGS WHILE",
+      "YOU ARE DRIVING.         YOU SHOULD",
+      "0STOP IMMEDIATELY",
+      "ANSWER IT",
+      "IMMEDIATELY",
+      "STOP AT A SUITABLE",
+      "PLACE AND ATTEND",
+      "PHONE",
+      "STOP AT THE NEAREST",
+      "KERB",
+      "3",
+      "YOU ARE MOST LIKELY TO LOSE"
+    ]
+  ],
+  "35": [
+    6,
+    [
+      "YOU ARE MOST LIKELY TO LOSE",
+      "CONCENTRATION WHILE DRIVING IF",
+      "YOU",
+      "0SWITCH ON THE A.CUSE A MOBILE PHONE",
+      "LOOK AT THE REAR",
+      "VIEW MIRRORS",
+      "ALL OF THE ABOVE2"
+    ]
+  ],
+  "36": [
+    6,
+    [
+      "YOU ARE APPROACHING A ZEBRA",
+      "CROSSING.  PEDESTRIANS ARE",
+      "WAITING TO CROSS.  YOU SHOULD",
+      "0",
+      "GIVE WAY TO THE",
+      "ELDERLY AND DISABLED",
+      "ONLY",
+      "SLOW DOWN AND BE",
+      "PREPARED TO STOP",
+      "USE YOUR HEADLIGHTS",
+      "TO INDICATE THAT THEY",
+      "CAN CROSS",
+      "WAVE AT THEM TO",
+      "CROSS THE ROAD.",
+      "2"
+    ]
+  ],
+  "37": [
+    6,
+    [
+      "WHICH OF THE FOLLOWING SHOULD",
+      "YOU DO BEFORE STOPPING?",
+      "0SOUND THE HORNUSE THE MIRRORSSELECT A HIGHER GEAR",
+      "FLASH YOUR",
+      "HEADLIGHTS",
+      "2"
+    ]
+  ],
+  "38": [
+    7,
+    [
+      "WHEN YOU ARE MOVING OFF FROM",
+      "BEHIND A PARKED CAR YOU SHOULD",
+      "LOOK AROUND BEFORE",
+      "YOU MOVE OFF",
+      "USE ALL THE MIRRORS",
+      "ON THE VEHICLE",
+      "GIVE A SIGNALALL OF THE ABOVE4"
+    ]
+  ],
+  "39": [
+    7,
+    [
+      "WHEN BEING FOLLOWED BY AN",
+      "AMBULANCE SHOWING A FLASHING",
+      "BLUE LIGHT YOU SHOULD",
+      "0",
+      "STOP SAFELY AND AS",
+      "SOON AS POSSIBLE TO",
+      "LET IT PASS",
+      "ACCELERATE HARD TO",
+      "GET AWAY FROM IT",
+      "MAINTAIN YOUR SPEED",
+      "AND COURSE",
+      "BRAKE HARSHLY AND",
+      "IMMEDIATELY STOP ON",
+      "THE ROAD.",
+      "1"
+    ]
+  ],
+  "40": [
+    7,
+    [
+      "WHEN PARKING AND LEAVING YOUR",
+      "VEHICLE YOU SHOULD",
+      "0",
+      "PARK UNDER A SHADY",
+      "TREE",
+      "PARK UNDER THE SUNPARK ON A QUIET ROAD",
+      "ENGAGE THE STEERING",
+      "LOCK",
+      "4"
+    ]
+  ],
+  "41": [
+    7,
+    [
+      "WHICH OF THE FOLLOWING SHOULD",
+      "BE ALLOWED EXTRA ROOM WHEN",
+      "OVERTAKING?",
+      "0",
+      "MOTORCYCLES &",
+      "BICYCLES",
+      "TRACTORTRAILERSNONE OF THE ABOVE1"
+    ]
+  ],
+  "42": [
+    7,
+    [
+      "WHEN MAY YOU STOP ON A",
+      "MOTORWAY?",
+      "0",
+      "IF TRAFFIC SIGNAL IS",
+      "RED",
+      "WHEN TOLD BY THE",
+      "POLICE",
+      "IN AN EMERGENCY",
+      "OR A BREAKDOWN",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "43": [
+    7,
+    [
+      "IN WHICH OF THESE PLACES YOU",
+      "MUST NOT PARK OR WAIT?",
+      "0AT A BUS STOP",
+      "OPPOSITE A TRAFFIC",
+      "ISLAND",
+      "IN FRONT OF SOMEONE",
+      "ELSE'S GATE",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "44": [
+    8,
+    [
+      "WHEN LEAVING YOUR VEHICLE",
+      "WHERE SHOULD YOU PARK IF",
+      "POSSIBLE?",
+      "0",
+      "OPPOSITE A TRAFFIC",
+      "ISLAND",
+      "IN A SECURE PARKING",
+      "PLACE",
+      "ON A BENDNEAR A TUNNEL2"
+    ]
+  ],
+  "45": [
+    8,
+    [
+      "WHICH OF THESE PLACES YOU MUST",
+      "NOT PARK?",
+      "0NEAR A SHOPPING MALLAT OR NEAR A BUS STOP",
+      "WITHIN 10 METRES",
+      "(32FEET) OF A JUNCTION",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "46": [
+    8,
+    [
+      "IN WHICH OF THESE PLACE YOU",
+      "MUST NOT PARK?",
+      "0",
+      "NEAR A SCHOOL",
+      "ENTRANCE",
+      "NEAR A POLICE STATIONON A SIDE ROADALL OF THE ABOVE",
+      "4",
+      "WHEN LEAVING YOUR VEHICLE",
+      "SWITCH THE ENGINE"
+    ]
+  ],
+  "47": [
+    8,
+    [
+      "WHEN LEAVING YOUR VEHICLE",
+      "UNATTENDED FOR A FEW MINUTES",
+      "YOU SHOULD",
+      "0",
+      "LOCK IT AND REMOVE",
+      "THE KEY",
+      "LEAVE THE ENGINE",
+      "RUNNING",
+      "SWITCH THE ENGINE",
+      "OFF BUT LEAVE THE KEY",
+      "IN",
+      "PARK NEAR A TRAFFIC",
+      "POLICEMAN",
+      "1"
+    ]
+  ],
+  "48": [
+    8,
+    [
+      "AT A TWO ROAD JUNCTION THERE",
+      "ARE NO ROAD SIGNS.  TWO VEHICLES",
+      "APPROACH.  WHICH HAS PRIORITY?",
+      "NEITHER VEHICLE",
+      "THE VEHICLE",
+      "TRAVELLING THE",
+      "FASTEST",
+      "THE VEHICLE ON THE",
+      "WIDEST ROAD",
+      "VEHICLE APPROACHING",
+      "FROM THE RIGHT",
+      "4"
+    ]
+  ],
+  "49": [
+    8,
+    [
+      "PEDESTRIANS ARE WAITING TO",
+      "CROSS AT A ZEBRA CROSSING.  THEY",
+      "ARE STANDING ON THE PAVEMENT",
+      "YOU SHOULD NORMALLY",
+      "0",
+      "GO ON QUICKLY BEFORE",
+      "THEY STEP ONTO THE",
+      "CROSSING",
+      "STOP ON THE ZEBRA",
+      "CROSSING AND LET",
+      "THEM CROSS",
+      "STOP BEFORE THE STOP",
+      "LINE, LET THEM CROSS,",
+      "WAIT PATIENTLY",
+      "IGNORE THEM AS THEY",
+      "ARE STILL ON THE",
+      "PAVEMENT",
+      "3"
+    ]
+  ],
+  "50": [
+    9,
+    [
+      "YOU MUST NOT REVERSE0ON A BUSY ROADON A ONE WAY R",
+      "OADON A ROUND ABOUTALL OF THE ABOVE4"
+    ]
+  ],
+  "51": [
+    9,
+    [
+      "WHEN YOU ARE NOT SURE THAT IT IS",
+      "SAFE TO REVERSE YOUR VEHICLE",
+      "YOU SHOULD",
+      "0USE YOUR HORNRAISE YOUR ENGINE GET OUT AND CHECKRE",
+      "VERSE SLOWLY3"
+    ]
+  ],
+  "52": [
+    9,
+    [
+      "WHEN MAY YOU REVERSE FROM A",
+      "SIDE ROAD INTO A MAIN ROAD?",
+      "0",
+      "ONLY IF BOTH ROADS",
+      "ARE CLEAR OF TRAFFIC",
+      "NOT AT ANY TIMEAT ANY TIME",
+      "ONLY IF THE MAIN",
+      "ROAD IS CLEAR OF",
+      "TRAFFIC",
+      "2",
+      "YOUR ARE SIGNALLING TO TURN"
+    ]
+  ],
+  "53": [
+    9,
+    [
+      "YOUR ARE SIGNALLING TO TURN",
+      "RIGHT IN BUSY TRAFFIC.  HOW",
+      "WOULD YOU CONFIRM YOUR",
+      "INTENTION SAFELY?",
+      "0SOUND THE HORNGIVE AN ARM SIGNAL",
+      "FLASH YOUR",
+      "HEADLIGHTS",
+      "POSITION OVER THE",
+      "CENTRE LINE",
+      "2"
+    ]
+  ],
+  "54": [
+    9,
+    [
+      "WHEN TRAFFIC LIGHTS ARE OUT OF",
+      "ORDER, WHAT PRECAUTION SHOULD",
+      "YOU TAKE?",
+      "0",
+      "SLOW DOWN AND",
+      "MOVE",
+      "STOP, LOOK RIGHT AND",
+      "LEFT AND PROCEED",
+      "CAUTIOUSLY.",
+      "NO PRECAUTION IS",
+      "NECESSARY",
+      "MOVE AT THE SAME",
+      "SPEED",
+      "2"
+    ]
+  ],
+  "55": [
+    9,
+    [
+      "THERE IS A POLICE CAR FOLLOWING",
+      "YOU, THE POLICE OFFICER FLASHES",
+      "THE HEADLIGHTS AND POINTS TO",
+      "THE LEFT.  WHAT SHOULD YOU DO?",
+      "0TURN AT THE NEXT LEFTSTOP ON THE LEFTSTOP IMMEDIAT",
+      "ELY",
+      "MOVE OVER TO THE",
+      "RIGHT",
+      "2"
+    ]
+  ],
+  "56": [
+    10,
+    [
+      "WHEN APPROACHING A",
+      "ROUNDABOUT GIVE WAY TO",
+      "0CYCLISTS",
+      "SLOW-MOVING",
+      "VEHICLES",
+      "TRAFFIC ON YOUR RIGHTTRAFFIC ON YOUR LEFT3"
+    ]
+  ],
+  "57": [
+    10,
+    [
+      "YOU ARE REVERSING A CAR INTO A",
+      "SIDE ROAD.  WHILE REVERSING YOU",
+      "SHOULD MAINLY LOOK",
+      "0",
+      "IN THE REAR VIEW",
+      "MIRROR",
+      "THROUGH THE REAR",
+      "WINDSCREEN",
+      "IN THE SIDE VIEW",
+      "MIRROR NEAREST THE",
+      "KERB",
+      "IN THE SIDE VIEW",
+      "MIRROR AWAY FROM",
+      "THE KERB",
+      "2"
+    ]
+  ],
+  "58": [
+    10,
+    [
+      "TO MOVE OFF SAFELY FROM A",
+      "PARKED POSITION YOU SHOULD",
+      "0",
+      "USE YOUR MIRRORS",
+      "AND LOOK AROUND FOR",
+      "A FINAL CHECK",
+      "SIGNAL FOR OTHER",
+      "DRIVERS TO SLOW",
+      "DOWN",
+      "NOT LOOK AROUND IF",
+      "THERE IS A PARKED",
+      "VEHICLE CLOSE IN",
+      "FRONT OF YOU",
+      "GIVE A HAND SIGNAL AS",
+      "WELL AS USE YOUR",
+      "INDICATOR",
+      "1",
+      "FRONT OF YOU"
+    ]
+  ],
+  "59": [
+    10,
+    [
+      "WHEN APPROACHING ROAD WORKS,",
+      "YOU SHOULD NOT",
+      "0",
+      "START TO OVERTAKE &",
+      "INCREASE SPEED",
+      "FLASH YOUR",
+      "HEADLIGHTS",
+      "GIVE ANY SIGNALSNONE OF THE ABOVE1"
+    ]
+  ],
+  "60": [
+    10,
+    [
+      "WHICH IS THE BEST REASON FOR",
+      "NOT FOLLOWING OTHER VEHICLES",
+      "TOO CLOSELY?",
+      "0",
+      "TO AVOID EXHAUST",
+      "FUMES",
+      "TO AVOID GETTING",
+      "DIRTY FROM WHEEL",
+      "SPRAY",
+      "TO GET INCREASED",
+      "ANGLE OF VISION OF",
+      "TRAFFIC CONDITIONS",
+      "AHEAD AND TO AVOID",
+      "HITTING VEHICLES IN",
+      "FRONT, IF THEY STOP",
+      "SUDDENLY",
+      "AS IT WILL REQUIRE LESS",
+      "ATTENTION FOR THE",
+      "OPERATION OF YOUR",
+      "VEHICLE",
+      "3"
+    ]
+  ],
+  "61": [
+    10,
+    [
+      "WHEN APPROACHING FROM THE",
+      "REAR, WHERE TWO LANES OF",
+      "TRAFFIC HAVE STOPPED AT A",
+      "SIGNAL, YOU SHOULD?",
+      "0",
+      "PASS ALL THE VEHICLES",
+      "AND STOP IN FRONT OF",
+      "THEM",
+      "PASS BETWEEN ALL THE",
+      "VEHICLES STANDING IN",
+      "THE TWO LANES",
+      "STOP BEHIND THE LAST",
+      "VEHICLE IN THE",
+      "APPROPRIATE LANE",
+      "STOP ANYWHERE3"
+    ]
+  ],
+  "62": [
+    11,
+    [
+      "A PEDESTRIAN IS CROSSING THE",
+      "STREET AT AN UNMARKED CROSS-",
+      "WALK, YOU SHOULD",
+      "0",
+      "YIELD TO THE",
+      "PEDESTRIAN THE \"RIGHT",
+      "OF WAY\"",
+      "PROCEED WITH CARE",
+      "REDUCE SPEED AND",
+      "WARN PEDESTRIAN.",
+      "WAVE TO THE",
+      "PEDESTRIAN TO CROSS",
+      "QUICKLY",
+      "1"
+    ]
+  ],
+  "63": [
+    11,
+    [
+      "WHILE DRIVING, YOU WISH TO",
+      "CHANGE FROM ONE LANE TO",
+      "ANOTHER, YOU SHOULD",
+      "0",
+      "GIVE THE PROPER TURN",
+      "SIGNAL",
+      "CHANGE LANES ONLY",
+      "WHEN IT IS SAFE TO DO",
+      "SO BY GIVING THE",
+      "PROPER TURN SIGNAL",
+      "NEVER CHANGE LANES",
+      "AS IT IS AGAINST THE",
+      "LAW",
+      "LANE SHOULD NOT BE",
+      "CHANGED",
+      "2"
+    ]
+  ],
+  "64": [
+    11,
+    [
+      "YOU APPROACH AN INTERSECTION",
+      "THAT DOES NOT HAVE TRAFFIC",
+      "LIGHTS, A POLICEMAN OR TRAFFIC",
+      "SIGNS, YOU SHOULD",
+      "0",
+      "SLOW DOWN AND",
+      "MOVE WITH CAUTION",
+      "COME TO A FULL STOP",
+      "DONT CHANGE SPEED IF",
+      "THE WAY IS CLEAR.",
+      "WAIT FOR THE",
+      "POLICEMAN TO ARRIVE",
+      "1",
+      "CONTINUE UNTIL YOU",
+      "STOP AND REVERSE",
+      "LOOK INTO THE REAR"
+    ]
+  ],
+  "65": [
+    11,
+    [
+      "WHAT MUST YOU DO IF YOU MISS",
+      "YOUR EXIT ON A FREEWAY?",
+      "0",
+      "CONTINUE UNTIL YOU",
+      "REACH THE NEXT",
+      "APPROPRIATE EXIT.",
+      "STOP AND REVERSE",
+      "BACK ALONG THE FREE",
+      "WAY TO THE EXIT YOU",
+      "MISSED.",
+      "STOP IMMEDIATELY",
+      "AND TURN AROUND",
+      "LOOK INTO THE REAR",
+      "VIEW MIRROR AND",
+      "REVERSE.",
+      "1"
+    ]
+  ],
+  "66": [
+    11,
+    [
+      "YOU ARE ABOUT TO TAKE A RIGHT",
+      "TURN AT AN INTERSECTION.   THE",
+      "SIGNAL IS GREEN FOR YOU. YOU",
+      "HEAR A SIREN AND SEE A FIRE",
+      "BRIGADE ABOUT TO OVERTAKE YOU.",
+      "YOU SHOULD",
+      "0",
+      "CONTINUE TO MAKE",
+      "THE TURN SINCE YOU",
+      "HAVE THE RIGHT OF",
+      "WAY.",
+      "STOP AND LET THE FIRE",
+      "BRIGADE OVERTAKE",
+      "YOU.",
+      "SPEED UP AND BEAT",
+      "THE FIRE BRIGADE.",
+      "ANY OF THE ABOVE.2"
+    ]
+  ],
+  "67": [
+    11,
+    [
+      "WHILE DRIVING YOU APPROACH A",
+      "LARGE PUDDLE THAT IS CLOSE TO",
+      "THE LEFT-HAND KERB.  PEDESTRIANS",
+      "ARE CLOSE TO THE WATER. YOU",
+      "SHOULD",
+      "0IGNORE THE PUDDLE",
+      "BRAKE SUDDENLY AND",
+      "SOUND YOUR HORN",
+      "SLOW DOWN BEFORE",
+      "THE PUDDLE & TRY TO",
+      "AVOID SPLASHING THE",
+      "PEDESTRIANS",
+      "WAVE AT THE",
+      "PEDESTRIANS TO KEEP",
+      "BACK",
+      "3"
+    ]
+  ],
+  "68": [
+    11,
+    [
+      "WHAT ACTION WOULD YOU TAKE",
+      "WHEN ELDERLY PEOPLE ARE",
+      "CROSSING THE ROAD?",
+      "0",
+      "WAVE THEM ACROSS SO",
+      "THEY KNOW THAT YOU",
+      "HAVE SEEN THEM.",
+      "BE PATIENT AND GIVE",
+      "THEM SUFFICIENT TIME",
+      "TO CROSS.",
+      "SPEED UP THE ENGINE",
+      "TO LET THEM KNOW",
+      "THAT YOU ARE",
+      "WAITING.",
+      "TAP THE HORN IN CASE",
+      "THEY ARE HARD OF",
+      "HEARING.",
+      "2"
+    ]
+  ],
+  "69": [
+    12,
+    [
+      "YOU SEE A PEDESTRIAN WITH A",
+      "STICK AND DARK GLASSES TRYING TO",
+      "CROSS THE ROAD.  WHAT DO YOU",
+      "INTERPRET?",
+      "0THE PERSON IS DUMBTHE PERSON IS DEAF",
+      "THE PERSON IN",
+      "NORMAL",
+      "THE PERSON IS BLIND4"
+    ]
+  ],
+  "70": [
+    12,
+    [
+      "WHEN DRIVING NEAR CHILDREN",
+      "PLAYING OR WALKING NEAR THE",
+      "EDGE OF THE ROAD, YOU SHOULD",
+      "0",
+      "WAIT FOR THEM TO",
+      "FINISH THEIR GAME",
+      "SOUND YOUR HORN TO",
+      "WARN THEM OF YOUR",
+      "PRESENCE.",
+      "SLOW DOWN, AND BE",
+      "READY TO MAKE A SAFE",
+      "STOP.",
+      "CONTINUE AT THE SAME",
+      "SPEED AND DRIVE",
+      "AROUND THEM.",
+      "3"
+    ]
+  ],
+  "71": [
+    12,
+    [
+      "WHEN DRIVING IN AN AREA WHERE",
+      "THERE ARE MANY PEDESTRIANS",
+      "(E.G.A BUS STOP) IT IS IMPORTANT",
+      "TO",
+      "0",
+      "SOUND YOUR HORN",
+      "REPEATEDLY",
+      "PUT YOUR HEADLIGHTS",
+      "ON HIGH BEAM SO THEY",
+      "CAN SEE YOU BETTER.",
+      "INCREASE YOUR SPEED",
+      "TO AVOID THE CHANGE",
+      "OF HITTING THEM.",
+      "SLOW DOWN AND",
+      "WATCH FOR AN",
+      "INDICATION THAT THEY",
+      "WILL ENTER THE ROAD.",
+      "4",
+      "A VEHICLE AHEAD OF YOU HAS",
+      "MAY OVERTAKE THE",
+      "MAY OVERTAKE THE",
+      "VEHICLE IF THERE ARE"
+    ]
+  ],
+  "72": [
+    12,
+    [
+      "A VEHICLE AHEAD OF YOU HAS",
+      "STOPPED AT A PEDESTRIAN",
+      "CROSSING.  YOU",
+      "0",
+      "MUST NOT OVERTAKE",
+      "THE VEHICLE",
+      "MAY OVERTAKE THE",
+      "VEHICLE IF THERE ARE",
+      "NO PEDESTRIANS ON",
+      "THE CROSSING",
+      "VEHICLE IF THERE ARE",
+      "NO OTHER VEHICLES",
+      "COMING THE OTHER",
+      "WAY.",
+      "NONE OF THE ABOVE1"
+    ]
+  ],
+  "73": [
+    12,
+    [
+      "WHILE DRIVING MOTOR VEHICLE ON",
+      "THE ROAD",
+      "0",
+      "YOU SHOULD DRIVE THE",
+      "VEHICLE CLOSE TO THE",
+      "LEFT HAND SIDE OF THE",
+      "ROAD",
+      "YOU SHOULD DRIVE THE",
+      "VEHICLE CLOSE TO THE",
+      "RIGHT HAND SIDE OF",
+      "THE ROAD",
+      "YOU HAVE CAREFULLY",
+      "KEEP TO THE MIDDLE OF",
+      "THE ROAD",
+      "YOU CAN DRIVE EITHER",
+      "TO THE RIGHT OR THE",
+      "LEFT AS PER",
+      "CONVENIENCE",
+      "1"
+    ]
+  ],
+  "74": [
+    12,
+    [
+      "WHILE DRIVING MOTOR VEHICLE ON",
+      "THE ROAD YOU SHOULD ALLOW THE",
+      "TRAFFIC COMING FROM THE",
+      "OPPOSITE DIRECTION",
+      "0",
+      "TO PASS TO THE RIGHT",
+      "HAND SIDE",
+      "TO PASS TO THE LEFT",
+      "HAND SIDE",
+      "TO PASS AT THE CENTRE",
+      "OF THE ROAD",
+      "TO PASS FROM EITHER",
+      "LEFT OR RIGHT HAND",
+      "SIDE AS PER",
+      "CONVENIENCE",
+      "1"
+    ]
+  ],
+  "75": [
+    12,
+    [
+      "WHEN YOU WANT TO TURN INTO",
+      "THE ROAD ON THE LEFT SIDE, YOU",
+      "HAVE TO DRIVE",
+      "0",
+      "AS CLOSE AS MAYBE TO",
+      "THE LEFT SIDE OF THE",
+      "ROAD",
+      "AS CLOSE AS MAYBE TO",
+      "THE RIGHT SIDE OF THE",
+      "ROAD",
+      "AT THE CENTRE OF THE",
+      "ROAD TO FACILITATE",
+      "EASY TURNING OF THE",
+      "VEHICLE",
+      "TO THE RIGHT SIDE OR",
+      "LEFT SIDE OF THE ROAD",
+      "AS PER CONVENIENCE",
+      "1"
+    ]
+  ],
+  "76": [
+    13,
+    [
+      "WHEN YOU WANT TO TURN INTO",
+      "THE ROAD ON THE RIGHT SIDE, YOU",
+      "HAVE TO DRIVE",
+      "0",
+      "WITH SIGNAL",
+      "INDICATOR TO THE",
+      "RIGHT",
+      "AS NEAR AS MAYBE TO",
+      "THE CENTRE OF ROAD",
+      "ALONG WHICH YOU ARE",
+      "TRAVELLING",
+      "ARRIVE AS NEAR AS",
+      "MAYBE TO LEFT OF THE",
+      "ROAD WHICH YOU ARE",
+      "ENTERING",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "77": [
+    13,
+    [
+      "WHEN YOU WANT TO OVERTAKE A",
+      "VEHICLE IN FRONT OF YOU, YOU CAN",
+      "OVERTAKE",
+      "0",
+      "ONLY FROM THE RIGHT",
+      "HAND SIDE OF THAT",
+      "VEHICLE",
+      "ONLY FROM THE LEFT",
+      "HAND SIDE OF THAT",
+      "VEHICLE",
+      "EITHER FROM RIGHT OR",
+      "LEFT HAND SIDE OF THE",
+      "VEHICLE",
+      "NONE OF THE ABOVE1"
+    ]
+  ],
+  "78": [
+    13,
+    [
+      "YOU CAN OVERTAKE A VEHICLE IN",
+      "FRONT OF YOU FROM THE LEFT",
+      "HAND SIDE",
+      "0",
+      "WHEN THE DRIVER OF",
+      "THAT VEHICLE",
+      "INDICATES INTENTION",
+      "TO TURN TO THE RIGHT",
+      "AND HAS DRAWN HIS",
+      "VEHICLE TO THE CENTRE",
+      "OF THE ROAD",
+      "WHEN THE DRIVER OF",
+      "THAT VEHICLE IS NOT",
+      "RESPONDING TO YOUR",
+      "SIGNALS",
+      "WHEN YOU ARE IN A",
+      "HURRY TO REACH YOUR",
+      "DESTINATION",
+      "ON THE NATIONAL",
+      "HIGHWAYS",
+      "1"
+    ]
+  ],
+  "79": [
+    13,
+    [
+      "YOU WANT TO OVERTAKE A VEHICLE",
+      "IN FRONT OF YOU. YOU SUDDENLY",
+      "FIND THAT THE VEHICLE COMING",
+      "BEHIND YOU HAS BEGUN TO",
+      "OVERTAKE YOU. WHAT SHOULD YOU",
+      "DO.?",
+      "0",
+      "OVERTAKE THE FRONT",
+      "VEHICLE WITH HIGHER",
+      "SPEED",
+      "CONTINUE DRIVING",
+      "WITHOUT GIVING WAY",
+      "TO THE VEHICLE BEHIND",
+      "STOP OVERTAKING THE",
+      "VEHICLE IN FRONT AS IT",
+      "IS NOT SAFE TO DO SO",
+      "NONE OF THE ABOVE3"
+    ]
+  ],
+  "80": [
+    13,
+    [
+      "OVERTAKING IS PROHIBITED IN",
+      "WHICH OF THE FOLLOWING CASES",
+      "0",
+      "IF OVERTAKING IS LIKELY",
+      "TO CAUSE",
+      "INCONVENIENCE OR",
+      "DANGER TO OTHER",
+      "TRAFFIC PROCEEDING IN",
+      "ANY DIRECTION",
+      "IF THE VEHICLE IS NEAR",
+      "A BEND, CORNER OR",
+      "HILL MAKING THE ROAD",
+      "AHEAD NOT CLEARLY",
+      "VISIBLE",
+      "IF THE DRIVER OF THE",
+      "VEHICLE IN FRONT OF",
+      "YOU HAS NOT",
+      "SIGNALLED THAT YOU",
+      "MAY OVERTAKE HIM",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "81": [
+    13,
+    [
+      "YOU ARE DRIVING A VEHICLE.",
+      "ANOTHER VEHICLE FROM BEHIND",
+      "WANTS TO OVERTAKE YOU. WHAT",
+      "SHOULD YOU DO.?",
+      "0",
+      "INCREASE THE SPEED OF",
+      "YOUR VEHICLE",
+      "GO WITH YOUR OWN",
+      "SPEED WITHOUT",
+      "BOTHERING ABOUT",
+      "THAT VEHICLE",
+      "SLOW DOWN AND",
+      "ALLOW THE VEHICLE TO",
+      "OVERTAKE",
+      "NONE OF THE ABOVE3"
+    ]
+  ],
+  "82": [
+    14,
+    [
+      "YOU SHALL SLOW DOWN THE",
+      "VEHICLE",
+      "0",
+      "WHEN APPROACHING A",
+      "ROAD INTERSECTION",
+      "WHEN APPROACHING A",
+      "ROAD JUNCTION",
+      "WHEN APPROACHING A",
+      "PEDESTRIAN CROSSING",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "83": [
+    14,
+    [
+      "WHEN YOU ARE ENTERING INTO A",
+      "MAIN ROAD AT A ROAD JUNCTION",
+      "0",
+      "YOU SHOULD GIVE WAY",
+      "TO THE VEHICLES",
+      "PROCEEDING ALONG",
+      "THAT ROAD",
+      "YOU CAN SPEED UP",
+      "INTO THE MAIN ROAD",
+      "YOU CAN OBSTRUCT ALL",
+      "THE VEHICLES COMING",
+      "FROM YOUR RIGHT",
+      "HAND SIDE",
+      "YOU SIGNAL THAT THE",
+      "TRAFFIC ON THE MAIN",
+      "ROAD SHALL STOP FOR",
+      "YOU",
+      "1"
+    ]
+  ],
+  "84": [
+    14,
+    [
+      "WHEN YOU ARE DRIVING ON THE",
+      "ROAD, YOU SHALL GIVE FREE",
+      "PASSAGE TO",
+      "0FIRE SERVICE VEHICLESAMBULANCESHEAVY VEHICLESONLY",
+      "1 & 24",
+      "AT A TRAFFIC JUNCTION, YOU GOT A",
+      "GREEN SIGNAL TO MOVE ON. BUT",
+      "PATIENTLY WAIT AND"
+    ]
+  ],
+  "85": [
+    14,
+    [
+      "GREEN SIGNAL TO MOVE ON. BUT",
+      "THE PEDESTRIANS ARE STILL ON THE",
+      "ZEBRA CROSSING. WHAT SHOULD",
+      "YOU DO.?",
+      "0",
+      "MOVE YOUR VEHICLE BY",
+      "BLOWING HORN",
+      "PATIENTLY WAIT AND",
+      "ALLOW PEDESTRIANS TO",
+      "PASS",
+      "SIGNAL THE",
+      "PEDESTRIANS TO STOP",
+      "TURN YOUR VEHICLE TO",
+      "THE RIGHT AND GO",
+      "2"
+    ]
+  ],
+  "86": [
+    14,
+    [
+      "WHEN YOU WANT TO TAKE A U-",
+      "TURN AT A TRAFFIC JUNCTION",
+      "0",
+      "YOU SHOULD FIRST",
+      "SIGNAL FOR A RIGHT",
+      "TURN AND WATCH THE",
+      "REAR VIEW MIRROR",
+      "AND TURN",
+      "YOU SHOULD TAKE U-",
+      "TURN VERY FAST",
+      "YOU SHOULD BRING",
+      "YOUR VEHICLE TO THE",
+      "LEFT MOST SIDE OF THE",
+      "ROAD",
+      "BLOW THE HORN AND",
+      "TAKE U-TURN",
+      "1"
+    ]
+  ],
+  "87": [
+    14,
+    [
+      "IF YOU WANT TO SLOW DOWN",
+      "WHILE DRIVING, THE HAND SIGNAL",
+      "YOU SHOULD GIVE IS",
+      "0",
+      "EXTEND THE RIGHT",
+      "ARM, PALM DOWN, TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND MOVE THE",
+      "EXTENDED ARM UP AND",
+      "DOWN SEVERAL TIMES",
+      "RAISE THE RIGHT FORE",
+      "ARM VERTICALLY OUT",
+      "SIDE TO THE RIGHT OF",
+      "THE VEHICLE, PALM TO",
+      "THE FRONT",
+      "EXTEND RIGHT ARM IN",
+      "HORIZONTAL POSITION",
+      "TO THE RIGHT OF THE",
+      "VEHICLE WITH PALM OF",
+      "THE HAND TURNED TO",
+      "THE FRONT",
+      "EXTEND RIGHT ARM TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND ROTATE IT",
+      "IN AN ANTI CLOCK WISE",
+      "DIRECTION",
+      "1"
+    ]
+  ],
+  "88": [
+    15,
+    [
+      "IF YOU ARE ABOUT TO STOP THE",
+      "VEHICLE ON THE ROAD, THE HAND",
+      "SIGNAL YOU SHOULD GIVE IS",
+      "0",
+      "EXTEND THE RIGHT",
+      "ARM, PALM DOWN, TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND MOVE THE",
+      "EXTENDED ARM UP AND",
+      "DOWN SEVERAL TIMES",
+      "RAISE THE RIGHT FORE",
+      "ARM VERTICALLY OUT",
+      "SIDE TO THE RIGHT OF",
+      "THE VEHICLE, PALM TO",
+      "THE FRONT",
+      "EXTEND RIGHT ARM IN",
+      "HORIZONTAL POSITION",
+      "TO THE RIGHT OF THE",
+      "VEHICLE WITH PALM OF",
+      "THE HAND TURNED TO",
+      "THE FRONT",
+      "EXTEND RIGHT ARM TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND ROTATE IT",
+      "IN AN ANTI CLOCK WISE",
+      "DIRECTION",
+      "2"
+    ]
+  ],
+  "89": [
+    15,
+    [
+      "IF YOU ARE ABOUT TO TURN TO THE",
+      "RIGHT, THE HAND SIGNAL YOU",
+      "SHOULD GIVE IS",
+      "0",
+      "EXTEND THE RIGHT",
+      "ARM, PALM DOWN, TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND MOVE THE",
+      "EXTENDED ARM UP AND",
+      "DOWN SEVERAL TIMES",
+      "RAISE THE RIGHT FORE",
+      "ARM VERTICALLY OUT",
+      "SIDE TO THE RIGHT OF",
+      "THE VEHICLE, PALM TO",
+      "THE FRONT",
+      "EXTEND RIGHT ARM IN",
+      "HORIZONTAL POSITION",
+      "TO THE RIGHT OF THE",
+      "VEHICLE WITH PALM OF",
+      "THE HAND TURNED TO",
+      "THE FRONT",
+      "EXTEND RIGHT ARM TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND ROTATE IT",
+      "IN AN ANTI CLOCK WISE",
+      "DIRECTION",
+      "3"
+    ]
+  ],
+  "90": [
+    15,
+    [
+      "IF YOU ARE ABOUT TO TURN TO THE",
+      "LEFT, THE HAND SIGNAL YOU",
+      "SHOULD GIVE IS",
+      "0",
+      "EXTEND THE RIGHT",
+      "ARM, PALM DOWN, TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND MOVE THE",
+      "EXTENDED ARM UP AND",
+      "DOWN SEVERAL TIMES",
+      "RAISE THE RIGHT FORE",
+      "ARM VERTICALLY OUT",
+      "SIDE TO THE RIGHT OF",
+      "THE VEHICLE, PALM TO",
+      "THE FRONT",
+      "EXTEND RIGHT ARM IN",
+      "HORIZONTAL POSITION",
+      "TO THE RIGHT OF THE",
+      "VEHICLE WITH PALM OF",
+      "THE HAND TURNED TO",
+      "EXTEND RIGHT ARM TO",
+      "THE RIGHT OF THE",
+      "VEHICLE AND ROTATE IT",
+      "IN AN ANTI CLOCK WISE",
+      "DIRECTION",
+      "4",
+      "DOWN SEVERAL TIMES",
+      "\"",
+      "THE FRONT",
+      "THE HAND TURNED TO",
+      "THE FRONT",
+      "DIRECTION"
+    ]
+  ],
+  "91": [
+    15,
+    [
+      "IN WHICH OF THE FOLLOWING",
+      "PLACES CAN YOU PARK YOUR",
+      "VEHICLE",
+      "0NEAR A ROAD CROSSING",
+      "NEAR A BEND ON THE",
+      "ROAD",
+      "ON A FOOT PATHNONE OF THESE4"
+    ]
+  ],
+  "92": [
+    15,
+    [
+      "IN WHICH OF THE FOLLOWING",
+      "PLACES CAN YOU PARK YOUR",
+      "VEHICLE",
+      "0NEAR TRAFFIC LIGHT",
+      "NEAR PEDESTRIANS",
+      "CROSSING",
+      "ON A MAIN ROAD WITH",
+      "HEAVY TRAFFIC",
+      "NONE OF THESE4"
+    ]
+  ],
+  "93": [
+    15,
+    [
+      "IN WHICH OF THE FOLLOWING",
+      "PLACES CAN YOU PARK YOUR",
+      "VEHICLE",
+      "0",
+      "OPPOSITE ANOTHER",
+      "PARKED VEHICLE ON",
+      "THE ROAD",
+      "ALONG SIDE ANOTHER",
+      "PARKED VEHICLE ON",
+      "THE ROAD",
+      "WHERE THERE IS A",
+      "CONTINUOUS WHITE",
+      "LINE ON THE ROAD",
+      "IN A PLACE, OFF THE",
+      "ROAD",
+      "4"
+    ]
+  ],
+  "94": [
+    16,
+    [
+      "WHILE DRIVING ON A ROAD WHICH",
+      "IS MARKED INTO LANES",
+      "0",
+      "YOU CAN CHANGE",
+      "LANES WHEN THERE IS",
+      "NO TRAFFIC",
+      "YOU CAN CHANGE",
+      "LANES FREELY IF YOU",
+      "ARE MOVING SLOWLY",
+      "YOU CAN CHANGE THE",
+      "LANE ONLY AFTER",
+      "GIVING PROPER SIGNAL",
+      "THERE ARE NO",
+      "RESTRICTIONS FOR TWO",
+      "WHEELERS",
+      "3"
+    ]
+  ],
+  "95": [
+    16,
+    [
+      "WHEN A ROAD IS MARKED WITH A",
+      "YELLOW LINE DIVIDING THE ROAD",
+      "0",
+      "YOU CAN OVERTAKE",
+      "THE VEHICLE IN FRONT,",
+      "WITH OUT CROSSING",
+      "THE YELLOW LINE",
+      "YOU CAN NOT",
+      "OVERTAKE THE VEHICLE",
+      "IN FRONT OF YOU",
+      "YOU HAVE TO",
+      "OVERTAKE THE VEHICLE",
+      "ONLY BY CROSSING THE",
+      "YELLOW LINE",
+      "YOU HAVE TO SIGNAL",
+      "THE VEHICLE IN FRONT",
+      "OF YOU TO CROSS THE",
+      "YELLOW LINE AND THEN",
+      "OVERTAKE",
+      "1"
+    ]
+  ],
+  "96": [
+    16,
+    [
+      "YOU ARE DRIVING BEHIND ANOTHER",
+      "VEHICLE IN A BUSY TRAFFIC, YOU",
+      "SHOULD",
+      "0",
+      "FOLLOW THE FRONT",
+      "VEHICLE CLOSE BEHIND",
+      "KEEP SUFFICIENT",
+      "DISTANCE FROM THE",
+      "FRONT VEHICLE TO",
+      "AVOID COLLISSION",
+      "KEEP A VERY LONG",
+      "DISTANCE FROM THE",
+      "FRONT VEHICLE",
+      "NONE OF THESE2",
+      "YOU ARE GOING DOWN A NARROW",
+      "YOU ASK THE",
+      "YOU ALLOW THE",
+      "YOU OBSTRUCT THE"
+    ]
+  ],
+  "97": [
+    16,
+    [
+      "YOU ARE GOING DOWN A NARROW",
+      "MOUNTAIN ROAD AND YOU FACE",
+      "ANOTHER VEHICLE IN OPPOSITE",
+      "DIRECTION. WHAT SHOULD YOU DO",
+      "0",
+      "YOU ASK THE",
+      "UPCOMING VEHICLE TO",
+      "STOP TO ALLOW YOU TO",
+      "PROCEED",
+      "YOU ALLOW THE",
+      "UPCOMING VEHICLE TO",
+      "PASS FIRST",
+      "YOU OBSTRUCT THE",
+      "UPCOMING VEHICLE BY",
+      "KEEPING YOUR VEHICLE",
+      "ACROSS",
+      "YOU RAISE THE SPEED",
+      "OF YOUR VEHICLE",
+      "2"
+    ]
+  ],
+  "98": [
+    16,
+    [
+      "A BUS IS STOPPED AT A BUS STOP",
+      "AHEAD OF YOU. ITS RIGHT",
+      "INDICATOR IS FLASHING. YOU",
+      "SHOULD-",
+      "0",
+      "FLASH YOUR",
+      "HEADLIGHTS AND SLOW",
+      "DOWN",
+      "SLOW DOWN AND GIVE",
+      "WAY IF IT IS SAFE TO DO",
+      "SO",
+      "SOUND YOUR HORN",
+      "AND KEEP GOING",
+      "SLOW DOWN AND THEN",
+      "SOUND YOUR HORN",
+      "2"
+    ]
+  ],
+  "99": [
+    16,
+    [
+      "YOU ARE APPROACHING THE",
+      "TRAFFIC LIGHTS THAT HAVE BEEN",
+      "GREEN FOR SOME TIME. YOU",
+      "SHOULD",
+      "0ACCELERATE HARDMAINTAIN YOUR SPEEDBE READY TO STOP",
+      "BRAKE HARD3"
+    ]
+  ],
+  "100": [
+    17,
+    [
+      "YOU ARE DRIVING BEHIND A LARGE",
+      "GOODS VEHICLE. IT SIGNALS LEFT",
+      "BUT STEERS TO THE RIGHT. YOU",
+      "SHOULD",
+      "0",
+      "SLOW DOWN AND LET",
+      "THE VEHICLE TURN",
+      "DRIVE ON, KEEPING TO",
+      "THE LEFT",
+      "OVERTAKE ON THE",
+      "RIGHT OF IT",
+      "HOLD YOUR SPEED AND",
+      "SOUND YOUR HORN",
+      "1"
+    ]
+  ],
+  "101": [
+    17,
+    [
+      "A PERSON HERDING SHEEP ASKS YOU",
+      "TO STOP. YOU SHOULD-",
+      "0",
+      "IGNORE THEM AS THEY",
+      "HAVE NO AUTHORITY",
+      "STOP AND SWITCH OFF",
+      "YOUR ENGINE",
+      "CONTINUE ON BUT",
+      "DRIVE SLOWLY",
+      "TRY AND GET PAST",
+      "QUICKLY",
+      "2"
+    ]
+  ],
+  "102": [
+    17,
+    [
+      "YOU CANNOT SEE CLEARLY BEHIND",
+      "WHEN REVERSING. WHAT SHOULD",
+      "YOU DO?",
+      "0",
+      "OPEN YOUR WINDOW",
+      "TO LOOK BEHIND",
+      "OPEN THE DOOR AND",
+      "LOOK BEHIND",
+      "LOOK IN THE SIDE",
+      "MIRROR",
+      "ASK SOMEONE TO",
+      "GUIDE YOU",
+      "4"
+    ]
+  ],
+  "103": [
+    17,
+    [
+      "YOU ARE FOLLOWING TWO",
+      "CYCLISTS. THEY APPROACH A",
+      "ROUNDABOUT IN THE LEFT-HAND",
+      "LANE. IN WHICH DIRECTION SHOULD",
+      "YOU EXPECT THE CYCLISTS TO GO?",
+      "0LEFTRIGHTANY DIRECTIONSTRAIGHT AHEAD3"
+    ]
+  ],
+  "104": [
+    17,
+    [
+      "YOU ARE ON A NARROW ROAD AT",
+      "NIGHT. A SLOWER MOVING VEHICLE",
+      "AHEAD HAS BEEN SIGNALLING RIGHT",
+      "FOR SOME TIME. WHAT SHOULD",
+      "YOU DO?",
+      "0OVERTAKE ON THE LEFT",
+      "FLASH YOUR",
+      "HEADLIGHTS BEFORE",
+      "OVERTAKING",
+      "SIGNAL RIGHT AND",
+      "SOUND YOUR HORN",
+      "WAIT FOR THE SIGNAL",
+      "TO BE CANCELLED",
+      "BEFORE OVERTAKING",
+      "4"
+    ]
+  ],
+  "105": [
+    17,
+    [
+      "WHEN  JOINING A MOTORWAY YOU",
+      "MUST ALWAYS",
+      "0",
+      "USE THE HARD",
+      "SHOULDER",
+      "STOP AT THE END OF",
+      "THE ACCELERATION",
+      "LANE",
+      "COME TO A STOP",
+      "BEFORE JOINING THE",
+      "MOTORWAY",
+      "GIVE WAY TO TRAFFIC",
+      "ALREADY ON THE",
+      "MOTORWAY",
+      "4"
+    ]
+  ],
+  "106": [
+    18,
+    [
+      "YOU ARE DRIVING ON A",
+      "MOTORWAY. BY MISTAKE YOU GO",
+      "PAST THE EXIT THAT YOU WANTED",
+      "TO TAKE. YOU SHOULD",
+      "0",
+      "CAREFULLY REVERSE ON",
+      "THE HARD SHOULDER",
+      "CARRY ON TO THE NEXT",
+      "EXIT",
+      "CAREFULLY REVERSE IN",
+      "THE LEFT-HAND LANE",
+      "MAKE A U-TURN AT THE",
+      "NEXT GAP",
+      "2"
+    ]
+  ],
+  "107": [
+    18,
+    [
+      "YOU ARE LEAVING YOUR VEHICLE",
+      "PARKED ON A ROAD. WHEN MAY",
+      "YOU LEAVE THE ENGINE RUNNING?",
+      "IF YOUR VEHICLE  WILL",
+      "BE PARKED FOR LESS",
+      "THAN FIVE MINUTES",
+      "IF THE BATTERY IS FLAT",
+      "WHEN IN A 20 KMPH",
+      "ZONE",
+      "NOT ON ANY OCCASION4"
+    ]
+  ],
+  "108": [
+    18,
+    [
+      "WHEN GOING STRAIGHT AHEAD AT A",
+      "ROUNDABOUT YOU SHOULD",
+      "0",
+      "INDICATE LEFT BEFORE",
+      "LEAVING THE",
+      "ROUNDABOUT",
+      "DONT INDICATE AT ANY",
+      "TIME",
+      "INDICATE RIGHT WHEN",
+      "APPROACHING THE",
+      "ROUNDABOUT",
+      "INDICATE LEFT WHEN",
+      "APPROACHING THE",
+      "ROUNDABOUT",
+      "1",
+      "DEPENDS ON THE"
+    ]
+  ],
+  "109": [
+    18,
+    [
+      "WHILE DRIVING ON A HILL, WHO",
+      "SHOULD BE GIVEN RIGHT OF WAY?",
+      "0",
+      "VEHICLES TRAVELLING",
+      "DOWNHILL",
+      "VEHICLES TRAVELLING",
+      "UPHILL",
+      "NO PRECEDENCE TO",
+      "ANYONE",
+      "DEPENDS ON THE",
+      "CONDITIONS OF THE",
+      "ROAD",
+      "2"
+    ]
+  ],
+  "110": [
+    18,
+    [
+      "WHAT MUST YOU DO WHEN",
+      "APPROACHING AN INTERSECTION IF",
+      "THE TRAFFIC LIGHTS CHANGE FROM",
+      "GREEN TO AMBER?",
+      "0",
+      "SPEED UP TO REACH",
+      "THE INTERSECTION",
+      "BEFORE LIGHTS",
+      "CHANGES TO RED.",
+      "STOP IF YOU CAN DO",
+      "SAFELY BEFORE THE",
+      "INTERSECTION.",
+      "STOP IMMEDIATELY.",
+      "SWING HARD AND STOP",
+      "IMMEDIATELY AROUND",
+      "THE CORNER.",
+      "2"
+    ]
+  ],
+  "111": [
+    18,
+    [
+      "WHAT MUST YOU DO WHEN YOU",
+      "INTEND TO TURN RIGHT FROM A",
+      "ROAD INTO A DRIVEWAY OR",
+      "INTERSECTION?",
+      "0",
+      "SIGNAL IMMEDIATELY",
+      "BEFORE YOU TURN",
+      "DO NOT SIGNAL UNLESS",
+      "TRAFFIC IS",
+      "APPROACHING YOU",
+      "NO SIGNAL IS",
+      "NECESSARY",
+      "GIVE A RIGHT TURN",
+      "SIGNAL AT LEAST THREE",
+      "SECONDS BEFORE YOU",
+      "INTEND TO TURN",
+      "4"
+    ]
+  ],
+  "112": [
+    18,
+    [
+      "WHILE DRIVING A VEHICLE, IF YOU",
+      "FIND AN ANIMAL RUNNING ACROSS",
+      "THE ROAD SUDDENLY IN FRONT OF",
+      "YOU,",
+      "0",
+      "YOU SHOULD APPLY",
+      "BRAKES IMMEDIATELY",
+      "YOU SHOULD BLOW THE",
+      "HORN AND OVERTAKE",
+      "THE ANIMAL FROM ANY",
+      "SIDE YOU FIND",
+      "CONVENIENT",
+      "YOU SHOULD SPEED UP",
+      "AND MOVE IN FRONT OF",
+      "THE ANIMAL",
+      "YOU SHOULD CHECK",
+      "TRAFFIC FROM BEHIND,",
+      "SLOW DOWN OR STOP",
+      "TO ENABLE THE ANIMAL",
+      "TO CROSS",
+      "4"
+    ]
+  ],
+  "113": [
+    19,
+    [
+      "WHILE BRAKING IN RAINY AND WET",
+      "CONDITIONS, YOU SHOULD",
+      "0APPLY FULL FORCE",
+      "APPLY BRAKES",
+      "FREQUENTLY",
+      "TRY TO LOCK THE",
+      "WHEELS",
+      "NONE OF THE ABOVE2"
+    ]
+  ],
+  "114": [
+    19,
+    [
+      "YOU ARE DRIVING DOWN A STEEP",
+      "HILL. TO CONTROL THE SPEED OF",
+      "YOUR VEHICLE YOU MUST",
+      "0",
+      "SELECT LOW GEAR AND",
+      "USE THE BRAKES",
+      "CAREFULLY",
+      "SELECT A HIGH GEAR",
+      "AND USE THE BRAKES",
+      "CAREFULLY",
+      "SELECT A HIGH GEAR",
+      "AND AVOID USING THE",
+      "BRAKES",
+      "KEEP THE GEAR IN",
+      "NEUTRAL AND USE",
+      "BRAKES FIRMLY",
+      "1"
+    ]
+  ],
+  "115": [
+    19,
+    [
+      "WHILE DRIVING DOWNHILL....0",
+      "USE TOP GEAR FOR",
+      "OPTIMUM",
+      "PERFORMANCE",
+      "USE NEUTRAL GEAR TO",
+      "REDUCE ENGINE NOISE",
+      "DRIVE WITH IGNITION",
+      "OFF AND NEUTRAL GEAR",
+      "TO SAVE FUEL",
+      "USE SAME GEAR",
+      "SELECTION AS DRIVING",
+      "UPHILL",
+      "4"
+    ]
+  ],
+  "116": [
+    19,
+    [
+      "YOU STOP FOR PEDESTRIANS",
+      "WAITING TO CROSS AT A ZEBRA",
+      "CROSSING. THEY DO NOT START TO",
+      "CROSS. WHAT SHOULD YOU DO?",
+      "0BE PATIENT AND WAIT.SOUND YOUR HORN.DRIVE ON.WAVE",
+      "THEM TO CROSS.1"
+    ]
+  ],
+  "117": [
+    19,
+    [
+      "YOU SHOULD NEVER ATTEMPT TO",
+      "OVERTAKE A CYCLIST",
+      "0",
+      "JUST BEFORE YOU TURN",
+      "LEFT",
+      "JUST BEFORE YOU TURN",
+      "RIGHT",
+      "ON A ONE-WAY STREET",
+      "ON A DUAL",
+      "CARRIAGEWAY.",
+      "1"
+    ]
+  ],
+  "118": [
+    20,
+    [
+      "IT IS VERY WINDY. YOU ARE BEHIND",
+      "A MOTORCYCLIST WHO IS",
+      "OVERTAKING A HIGH-SIDED VEHICLE.",
+      "WHAT SHOULD YOU DO?",
+      "0",
+      "OVERTAKE THE",
+      "MOTORCYCLIST",
+      "IMMEDIATELY.",
+      "KEEP WELL BACK.",
+      "STAY LEVEL WITH THE",
+      "MOTORCYCLIST.",
+      "KEEP CLOSE TO THE",
+      "MOTORCYCLIST.",
+      "2"
+    ]
+  ],
+  "119": [
+    20,
+    [
+      "YOU INTEND TO TURN RIGHT INTO A",
+      "SIDE ROAD. JUST BEFORE TURNING",
+      "YOU SHOULD CHECK FOR",
+      "MOTORCYCLISTS WHO MIGHT BE",
+      "0",
+      "OVERTAKING ON YOUR",
+      "LEFT",
+      "FOLLOWING YOU",
+      "CLOSELY",
+      "EMERGING FROM THE",
+      "SIDE ROAD",
+      "OVERTAKING ON YOUR",
+      "RIGHT.",
+      "4"
+    ]
+  ],
+  "120": [
+    20,
+    [
+      "YOU KEEP WELL BACK WHILE",
+      "WAITING TO OVERTAKE A LARGE",
+      "VEHICLE. ANOTHER CAR FILLS THE",
+      "GAP. YOU SHOULD",
+      "0SOUND YOUR HORNDROP BACK FURTHER",
+      "FLASH YOUR",
+      "HEADLIGHTS",
+      "START TO OVERTAKE.2",
+      "GAP. YOU SHOULD"
+    ]
+  ],
+  "121": [
+    20,
+    [
+      "WHEN SHOULD YOU DIRECT",
+      "PEDESTRIANS TO CROSS THE ROAD?",
+      "0",
+      "AT PEDESTRIAN",
+      "CROSSINGS.",
+      "AT NO TIME.AT JUNCTIONS.AT SCHOOL CROSSINGS.2"
+    ]
+  ],
+  "122": [
+    20,
+    [
+      "THERE IS A SLOW-MOVING",
+      "MOTORCYCLIST AHEAD OF YOU. YOU",
+      "ARE UNSURE WHAT THE RIDER IS",
+      "GOING TO DO. YOU SHOULD",
+      "0PASS ON THE LEFTPASS ON THE RIGHTSTAY BEHINDMOVE C",
+      "LOSER3"
+    ]
+  ],
+  "123": [
+    20,
+    [
+      "BRAKING HARD AT SPEED ON A",
+      "SHARP BEND CAN MAKE YOUR",
+      "VEHICLE",
+      "0MORE STABLEUNSTABLESTALLCORNER SAFELY2"
+    ]
+  ],
+  "124": [
+    21,
+    [
+      "A LONG, HEAVILY LOADED LORRY IS",
+      "TAKING A LONG TIME TO OVERTAKE",
+      "YOU. WHAT SHOULD YOU DO?",
+      "0SPEED UP.SLOW DOWN.HOLD YOUR SPEED.CHANGE DIRECTIO",
+      "N.2"
+    ]
+  ],
+  "125": [
+    21,
+    [
+      "WHAT IS THE MAIN HAZARD A",
+      "DRIVER SHOULD BE AWARE OF",
+      "WHEN FOLLOWING A CYCLIST?",
+      "0",
+      "THE CYCLIST MAY MOVE",
+      "INTO THE LEFT AND",
+      "DISMOUNT",
+      "THE CYCLIST MAY",
+      "SWERVE OUT INTO THE",
+      "ROAD.",
+      "THE CONTENTS OF THE",
+      "CYCLIST'S CARRIER MAY",
+      "FALL ONTO THE ROAD.",
+      "THE CYCLIST MAY WISH",
+      "TO TURN RIGHT AT THE",
+      "END OF THE ROAD.",
+      "2"
+    ]
+  ],
+  "126": [
+    21,
+    [
+      "YOU ARE DRIVING ON A WELL-LIT",
+      "MOTORWAY AT NIGHT. YOU MUST",
+      "0",
+      "USE ONLY YOUR",
+      "SIDELIGHTS",
+      "ALWAYS USE YOUR",
+      "HEADLIGHTS",
+      "ALWAYS USE REAR FOG",
+      "LIGHTS",
+      "USE HEADLIGHTS ONLY",
+      "IN BAD WEATHER",
+      "2"
+    ]
+  ],
+  "127": [
+    21,
+    [
+      "YOU ARE DRIVING BEHIND A CYCLIST.",
+      "YOU WISH TO TURN LEFT JUST",
+      "AHEAD. YOU SHOULD",
+      "0",
+      "OVERTAKE THE CYCLIST",
+      "BEFORE THE JUNCTION",
+      "PULL ALONGSIDE THE",
+      "CYCLIST AND STAY LEVEL",
+      "UNTIL AFTER THE",
+      "JUNCTION",
+      "HOLD BACK UNTIL THE",
+      "CYCLIST HAS PASSED",
+      "THE JUNCTION",
+      "GO AROUND THE",
+      "CYCLIST ON THE",
+      "JUNCTION.",
+      "3"
+    ]
+  ],
+  "128": [
+    21,
+    [
+      "THE FIRST THING YOU SHOULD DO",
+      "WHEN YOU WANT TO OVERTAKE A",
+      "LARGE LORRY IS",
+      "0",
+      "MOVE CLOSE BEHIND SO",
+      "THAT YOU CAN PASS",
+      "QUICKLY",
+      "KEEP IN CLOSE TO THE",
+      "LEFT-HAND SIDE",
+      "FLASH YOUR",
+      "HEADLIGHTS AND WAIT",
+      "FOR THE DRIVER TO",
+      "WAVE YOU ON",
+      "STAY WELL BACK TO GET",
+      "A BETTER VIEW.",
+      "4"
+    ]
+  ],
+  "129": [
+    21,
+    [
+      "YOU HAVE STOPPED AT A",
+      "PEDESTRIAN CROSSING. TO ALLOW",
+      "PEDESTRIANS TO CROSS, YOU",
+      "SHOULD",
+      "0",
+      "WAIT UNTIL THEY HAVE",
+      "CROSSED",
+      "EDGE YOUR VEHICLE",
+      "FORWARD SLOWLY",
+      "WAIT, STOP YOUR",
+      "ENGINE",
+      "SIGNAL PEDESTRIANS TO",
+      "CROSS.",
+      "1"
+    ]
+  ],
+  "130": [
+    22,
+    [
+      "YOU ARE TURNING LEFT AT A",
+      "JUNCTION. PEDESTRIANS HAVE",
+      "STARTED TO CROSS THE ROAD. YOU",
+      "SHOULD",
+      "0",
+      "GO ON, GIVING THEM",
+      "PLENTY OF ROOM",
+      "STOP AND WAVE AT",
+      "THEM TO CROSS",
+      "BLOW YOUR HORN AND",
+      "PROCEED",
+      "GIVE WAY TO THEM4"
+    ]
+  ],
+  "131": [
+    22,
+    [
+      "A PEDESTRIAN STEPS OUT INTO THE",
+      "ROAD JUST AHEAD OF YOU. WHAT",
+      "SHOULD YOU DO FIRST?",
+      "0SOUND YOUR HORN.CHECK YOUR MIRROR",
+      "FLASH YOUR",
+      "HEADLIGHTS",
+      "PRESS THE BRAKE4"
+    ]
+  ],
+  "132": [
+    22,
+    [
+      "YOU ARE COMING UP TO A",
+      "ROUNDABOUT. A CYCLIST IS",
+      "SIGNALLING TO TURN RIGHT. WHAT",
+      "SHOULD YOU DO?",
+      "0",
+      "OVERTAKE ON THE",
+      "RIGHT.",
+      "GIVE A HORN WARNING",
+      "SIGNAL THE CYCLIST TO",
+      "MOVE ACROSS",
+      "GIVE THE CYCLIST",
+      "PLENTY OF ROOM",
+      "4",
+      "SHOULD YOU DO?"
+    ]
+  ],
+  "133": [
+    22,
+    [
+      "EVEN IF YOUR TRAFFIC SIGNAL GIVES",
+      "YOU A CLEARWAY, YOU SHOULD-",
+      "BE READY TO STOP.",
+      "DONT OBEY THEM IN",
+      "EMERGENCY.",
+      "BE OBSERVANT FOR",
+      "DRIVERS WHO DO NOT",
+      "RESPECT TRAFFIC",
+      "SIGNALS.",
+      "DONT GO IN FOGGY",
+      "CONDITIONS.",
+      "3"
+    ]
+  ],
+  "134": [
+    22,
+    [
+      "YOU MEET AN OBSTRUCTION ON",
+      "YOUR SIDE OF THE ROAD-YOU",
+      "SHOULD",
+      "0",
+      "CARRY ON, YOU HAVE",
+      "PRIORITY.",
+      "YOU SHOULD WAVE",
+      "ONCOMING VEHICLES",
+      "THROUGH.",
+      "GIVE WAY TO",
+      "ONCOMING TRAFFIC.",
+      "ACCELERATE TO GET",
+      "PAST FIRST.",
+      "3"
+    ]
+  ],
+  "135": [
+    22,
+    [
+      "WHEN MAKING A SHORT STOP,",
+      "FACING UPHILL, YOU SHOULD",
+      "0",
+      "HOLD THE VEHICLE ON",
+      "THE CLUTCH",
+      "HOLD THE VEHICLE ON",
+      "THE FOOTBRAKE",
+      "SELECT NEUTRAL AND",
+      "APPLY THE PARKING",
+      "BRAKE",
+      "APPLY THE PARKING",
+      "BRAKE AFTER STOPPING",
+      "4"
+    ]
+  ],
+  "136": [
+    23,
+    [
+      "IF A PERSON CARRYING A WHITE",
+      "STICK WITH RED RING IS CROSSING",
+      "THE ROAD, WHAT SHOULD YOU DO?",
+      "0",
+      "WAIT UNTIL HE CROSS",
+      "THE ROAD",
+      "MAN HANDLE HIMGIVE HIM LIFTLET HIM GO UNNOTICED1"
+    ]
+  ],
+  "137": [
+    23,
+    [
+      "YOU ARE WAITING AT A T-JUNCTION.",
+      "A VEHICLE IS COMING FROM THE",
+      "RIGHT WITH THE LEFT SIGNAL",
+      "FLASHING. WHAT SHOULD YOU DO?",
+      "0",
+      "MOVE OUT AND",
+      "ACCELERATE HARD",
+      "WAIT UNTIL THE",
+      "VEHICLE STARTS TO",
+      "TURN IN",
+      "PULL OUT BEFORE THE",
+      "VEHICLE REACHES THE",
+      "JUNCTION",
+      "MOVE OUT SLOWLY2"
+    ]
+  ],
+  "138": [
+    23,
+    [
+      "YOU ENTER A ROAD WHERE THERE",
+      "ARE ROAD HUMPS. WHAT SHOULD",
+      "YOU DO?",
+      "0",
+      "MAINTAIN A REDUCED",
+      "SPEED THROUGHOUT",
+      "ACCELERATE QUICKLY",
+      "BETWEEN EACH ONE",
+      "ALWAYS KEEP TO THE",
+      "MAXIMUM LEGAL SPEED",
+      "DRIVE SLOWLY AT",
+      "SCHOOL TIMINGS ONLY",
+      "1",
+      "WHEN APPROACHING A RIGHT-",
+      "TO OVERCOME THE",
+      "TO LET FASTER TRAFFIC"
+    ]
+  ],
+  "139": [
+    23,
+    [
+      "WHEN APPROACHING A RIGHT-",
+      "HAND CURVE YOU SHOULD KEEP",
+      "WELL TO THE LEFT. WHY IS THIS?",
+      "0",
+      "TO IMPROVE YOUR",
+      "VIEW OF THE ROAD",
+      "TO OVERCOME THE",
+      "EFFECT OF THE ROAD'S",
+      "SLOPE",
+      "TO LET FASTER TRAFFIC",
+      "FROM BEHIND",
+      "OVERTAKE",
+      "TO BE POSITIONED",
+      "SAFELY IF YOU SKID",
+      "1"
+    ]
+  ],
+  "140": [
+    23,
+    [
+      "YOU ARE ON A LONG, DOWNHILL",
+      "SLOPE. WHAT SHOULD YOU DO TO",
+      "HELP CONTROL THE SPEED OF YOUR",
+      "VEHICLE?",
+      "0SELECT NEUTRALSELECT A LOWER GEAR",
+      "GRIP THE HANDBRAKE",
+      "FIRMLY",
+      "APPLY THE PARKING",
+      "BRAKE GENTLY",
+      "2"
+    ]
+  ],
+  "141": [
+    23,
+    [
+      "WHAT SHOULD THE DRIVER OF THE",
+      "CAR APPROACHING THE CROSSING",
+      "DO?",
+      "CONTINUE AT THE SAME",
+      "SPEED",
+      "SOUND THE HORN",
+      "DRIVE THROUGH",
+      "QUICKLY",
+      "SLOW DOWN AND GET",
+      "READY TO STOP",
+      "4"
+    ]
+  ],
+  "142": [
+    23,
+    [
+      "YOU ARE BEHIND THE CYCLIST.",
+      "WHEN THE TRAFFIC LIGHTS CHANGE,",
+      "WHAT SHOULD YOU DO?",
+      "TRY TO MOVE OFF",
+      "BEFORE THE CYCLIST",
+      "ALLOW THE CYCLIST",
+      "TIME AND ROOM",
+      "TURN RIGHT BUT GIVE",
+      "THE CYCLIST ROOM",
+      "TAP YOUR HORN AND",
+      "DRIVE THROUGH FIRST",
+      "2"
+    ]
+  ],
+  "143": [
+    24,
+    [
+      "YOU INTEND TO TURN LEFT AT THE",
+      "TRAFFIC LIGHTS. JUST BEFORE",
+      "TURNING YOU SHOULD",
+      "0",
+      "CHECK YOUR RIGHT",
+      "MIRROR",
+      "MOVE CLOSE UP TO THE",
+      "WHITE CAR",
+      "STRADDLE THE LANES",
+      "CHECK FOR BICYCLES ON",
+      "YOUR LEFT",
+      "4"
+    ]
+  ],
+  "144": [
+    24,
+    [
+      "YOU ARE FOLLOWING A CYCLIST.",
+      "YOU WISH TO TURN LEFT JUST",
+      "AHEAD. YOU SHOULD-",
+      "0",
+      "OVERTAKE THE CYCLIST",
+      "BEFORE THE JUNCTION",
+      "PULL ALONGSIDE THE",
+      "CYCLIST AND STAY LEVEL",
+      "UNTIL AFTER THE",
+      "JUNCTION",
+      "HOLD BACK UNTIL THE",
+      "CYCLIST HAS PASSED",
+      "THE JUNCTION",
+      "GO AROUND THE",
+      "CYCLIST ON THE",
+      "JUNCTION",
+      "3"
+    ]
+  ],
+  "145": [
+    24,
+    [
+      "YOU ARE DRIVING IN TOWN. THERE",
+      "IS A BUS AT THE BUS STOP ON THE",
+      "OTHER SIDE OF THE ROAD. WHY",
+      "SHOULD YOU BE CAREFUL?",
+      "0",
+      "THE BUS MAY HAVE",
+      "BROKEN DOWN",
+      "PEDESTRIANS MAY",
+      "COME FROM BEHIND",
+      "THE BUS",
+      "THE BUS MAY MOVE",
+      "OFF SUDDENLY",
+      "THE BUS MAY REMAIN",
+      "STATIONARY",
+      "2",
+      "YOU ARE APPROACHING A MINI-",
+      "ROUNDABOUT. THE LONG VEHICLE"
+    ]
+  ],
+  "146": [
+    24,
+    [
+      "ROUNDABOUT. THE LONG VEHICLE",
+      "IN FRONT IS SIGNALLING LEFT BUT",
+      "POSITIONED OVER TO THE RIGHT.",
+      "YOU SHOULD-",
+      "0SOUND YOUR HORNOVERTAKE ON THE LEFT",
+      "FOLLOW THE SAME",
+      "COURSE AS THE LORRY",
+      "KEEP WELL BACK4"
+    ]
+  ],
+  "147": [
+    24,
+    [
+      "YOU MEET AN OBSTRUCTION ON",
+      "YOUR SIDE OF THE ROAD. YOU",
+      "SHOULD-",
+      "0",
+      "CARRY ON .YOU HAVE",
+      "PRIORITY",
+      "GIVE WAY TO",
+      "ONCOMING TRAFFIC",
+      "WAVE ONCOMING",
+      "VEHICLES THROUGH",
+      "ACCELERATE TO GET",
+      "PAST FIRST",
+      "2"
+    ]
+  ],
+  "148": [
+    24,
+    [
+      "THE WHITE LINE ALONG THE SIDE OF",
+      "THE ROAD",
+      "SHOWS THE EDGE OF",
+      "THE CARRIAGEWAY",
+      "SHOWS THE APPROACH",
+      "TO A HAZARD",
+      "MEANS NO PARKINGMEANS NO OVERTAKING1"
+    ]
+  ],
+  "149": [
+    25,
+    [
+      "YOU ARE WAITING AT A T-JUNCTION.",
+      "A VEHICLE IS COMING FROM THE",
+      "RIGHT WITH THE LEFT SIGNAL",
+      "FLASHING. WHAT SHOULD YOU DO?",
+      "0",
+      "MOVE OUT AND",
+      "ACCELERATE HARD",
+      "WAIT UNTIL THE",
+      "VEHICLE STARTS TO",
+      "TURN IN",
+      "PULL OUT BEFORE THE",
+      "VEHICLE REACHES THE",
+      "JUNCTION",
+      "MOVE OUT SLOWLY2"
+    ]
+  ],
+  "150": [
+    25,
+    [
+      "HOW SHOULD YOU STOP WHEN",
+      "GOING UP THE GRADIENT?",
+      "0",
+      "USING CLUTCH &",
+      "FOOTBRAKE",
+      "USING ONLY GEARS",
+      "SWITCHING OFF THE",
+      "ENGINE",
+      "USING THE HAND BRAKE4"
+    ]
+  ],
+  "151": [
+    25,
+    [
+      "WHICH OF THESE SHOULD YOU DO",
+      "WHEN PASSING SHEEP ON A ROAD?",
+      "0DRIVE VERY SLOWLY.",
+      "ALLOW PLENTY OF",
+      "ROOM.",
+      "BE READY TO STOP.ALL OF THE ABOVE.4"
+    ]
+  ],
+  "152": [
+    25,
+    [
+      "WHICH HAND SIGNAL IS USED FOR",
+      "'U' TURN",
+      "LEFT TURN SIGNALSLOW DOWN SIGNALRIGHT TURN SIGNAL",
+      "SPECIAL 'U' TURN",
+      "SIGNAL",
+      "3"
+    ]
+  ],
+  "153": [
+    25,
+    [
+      "WHEN YOUR VEHICLE IS BEING",
+      "OVERTAKEN",
+      "0",
+      "YOU CAN INCREASE",
+      "SPEED WITH CARE",
+      "YOU CAN CHANGE",
+      "LANES",
+      "YOU SHOULD MOVE TO",
+      "OVERTAKING LANE",
+      "DO NOT INCREASE",
+      "SPEED",
+      "4"
+    ]
+  ],
+  "154": [
+    25,
+    [
+      "YOU ARE APPROACHING A NARROW",
+      "BRIDGE. ANOTHER VEHICLE FROM",
+      "THE OPPOSITE DIRECTION IS",
+      "ALREADY ON THE BRIDGE. YOU",
+      "SHOULD",
+      "0",
+      "INCREASE OUR SPEED",
+      "AND TRY TO CROSS THE",
+      "BRIDGE QUICKLY",
+      "SWITCH ON YOUR",
+      "HEADLIGHTS",
+      "WAIT TILL THE OTHER",
+      "VEHICLE HAS CROSSED",
+      "THE BRIDGE AND THEN",
+      "PROCEED",
+      "SOUND HORN AND",
+      "DRIVE THROUGH",
+      "3"
+    ]
+  ],
+  "155": [
+    26,
+    [
+      "WHEN A VEHICLE ARRIVES AT AN",
+      "UNGUARDED RAILWAY CROSSING",
+      "THE DRIVER MUST",
+      "SOUND HORN AND",
+      "DRIVE THROUGH",
+      "THE DRIVER MUST",
+      "SWITCH ON THE",
+      "HEADLIGHTS AND DRIVE",
+      "THE DRIVER MUST GET",
+      "OUT OF THE VEHICLE",
+      "AND CHECK FOR ANY",
+      "APPROACHING TRAIN",
+      "AND THEN PASS.",
+      "THE DRIVER MUST",
+      "CHECK WITH THE",
+      "RAILWAY AUTHORITIES",
+      "ABOUT TRAIN TIMINGS",
+      "3"
+    ]
+  ],
+  "156": [
+    26,
+    [
+      "YOU WISH TO PARK FACING DOWN",
+      "HILL.  WHICH OF THE FOLLOWING",
+      "SHOULD YOU DO?",
+      "TURN THE STEERING",
+      "WHEEL TOWARDS THE",
+      "KERB AND PUT THE",
+      "HAND BRAKE FIRMLY",
+      "PARK CLOSE TO THE",
+      "BUMPER OF THE",
+      "ANOTHER CAR",
+      "PARK WITH TWO",
+      "WHEELS ON THE KERB",
+      "TURN THE STEERING",
+      "WHEEL AWAY FROM",
+      "THE KERB",
+      "1"
+    ]
+  ],
+  "157": [
+    26,
+    [
+      "LENDING OF A MOTOR VEHICLE TO A",
+      "PERSON FOR DRIVING, WHO IS NOT",
+      "HOLDING A VALID LICENCE IS:-",
+      "NOT AN OFFENCE SINCE",
+      "THE BORROWER IS",
+      "SOLELY RESPONSIBLE.",
+      "A SERIOUS OFFENCE.",
+      "AN OFFENCE ONLY",
+      "WHEN VEHICLE IS",
+      "INVOLVED IN AN",
+      "ACCIDENT.",
+      "NONE OF THE ABOVE2"
+    ]
+  ],
+  "158": [
+    26,
+    [
+      "U TURN IS PROHIBITED ON",
+      "A ROAD WITH A \"NO U",
+      "TURN\" SIGN",
+      "A BUSY ROAD",
+      "A ROAD WHERE SAFETY",
+      "MAY BE COMPROMISED",
+      "ALL OF THE ABOVE4"
+    ]
+  ],
+  "159": [
+    26,
+    [
+      "PEDESTRIANS MUST NOT CROSS THE",
+      "ROAD, FROM BEHIND A VEHICLE OR",
+      "NEAR TO A BEND, BECAUSE",
+      "THEY MAY NOT BE ABLE",
+      "TO RUN ACROSS THE",
+      "ROAD",
+      "THEY MAY CAUSE",
+      "INCONVENIENCE TO THE",
+      "PEDESTRIANS",
+      "CHILDREN MAY FEEL",
+      "SCARED",
+      "DRIVERS OF THE OTHER",
+      "VEHICLES MAY NOT BE",
+      "ABLE TO SEE THE",
+      "PERSON CROSSING THE",
+      "ROAD",
+      "4"
+    ]
+  ]
+}

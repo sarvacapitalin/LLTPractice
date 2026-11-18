@@ -1,0 +1,21 @@
+{
+  "name": "Telangana RTA Learner's Licence Practice",
+  "short_name": "TS LLR Prep",
+  "description": "Authentic Telangana RTA LLR STALL computerized exam preparation and 95% readiness tracker",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B2545",
+  "theme_color": "#0B2545",
+  "icons": [
+    {
+      "src": "assets/signs/sign_001.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/signs/sign_001.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

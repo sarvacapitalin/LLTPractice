@@ -1,0 +1,42 @@
+{
+  "telangana": {
+    "id": "telangana",
+    "name": "Telangana (Hyderabad RTA)",
+    "rtoPrefix": "TS",
+    "authority": "Transport Department, Government of Telangana",
+    "totalQuestions": 20,
+    "timePerQuestionSeconds": 30,
+    "passMarks": 12,
+    "passPercentage": 60,
+    "earlyPassThreshold": 12,
+    "earlyFailThreshold": 9,
+    "readinessThreshold": 95,
+    "quota": {
+      "road_signs": 8,
+      "rules_of_road": 8,
+      "general_principles": 4
+    },
+    "languages": ["en", "te", "hi"],
+    "defaultLanguage": "en"
+  },
+  "andhra_pradesh": {
+    "id": "andhra_pradesh",
+    "name": "Andhra Pradesh (AP RTO)",
+    "rtoPrefix": "AP",
+    "authority": "Transport Department, Government of Andhra Pradesh",
+    "totalQuestions": 20,
+    "timePerQuestionSeconds": 30,
+    "passMarks": 12,
+    "passPercentage": 60,
+    "earlyPassThreshold": 12,
+    "earlyFailThreshold": 9,
+    "readinessThreshold": 95,
+    "quota": {
+      "road_signs": 8,
+      "rules_of_road": 8,
+      "general_principles": 4
+    },
+    "languages": ["en", "te", "hi"],
+    "defaultLanguage": "en"
+  }
+}

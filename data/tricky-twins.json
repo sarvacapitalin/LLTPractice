@@ -1,0 +1,197 @@
+[
+  {
+    "id": "twin_01",
+    "title": {
+      "en": "No Parking vs No Stopping / Standing",
+      "te": "నో పార్కింగ్ vs నో స్టాపింగ్ లేదా స్టాండింగ్",
+      "hi": "पार्किंग मना है बनाम रुकना व ठहरना मना है"
+    },
+    "signA": {
+      "name": {
+        "en": "No Parking (1 Diagonal Slash)",
+        "te": "నో పార్కింగ్ (ఒక క్రాస్ గీత)",
+        "hi": "पार्किंग नहीं (1 तिरछी रेखा)"
+      },
+      "image": "assets/signs/rs_12.png",
+      "rule": {
+        "en": "You cannot leave your vehicle unattended. However, momentarily picking up or dropping off a passenger is allowed.",
+        "te": "వాహనాన్ని పార్క్ చేసి వదిలి వెళ్లకూడదు. ప్రయాణికులను దించడానికి కొద్దిసేపు ఆగవచ్చు.",
+        "hi": "वाहन पार्क नहीं कर सकते। केवल सवारी उतारने या चढ़ाने के लिए क्षण भर रुक सकते हैं।"
+      }
+    },
+    "signB": {
+      "name": {
+        "en": "No Stopping or Standing (Crossed 'X' Slashes)",
+        "te": "నో స్టాపింగ్ లేదా స్టాండింగ్ (రెండు క్రాస్ 'X' గీతలు)",
+        "hi": "रुकना व ठहरना सख्त मना है ('X' क्रॉस रेखा)"
+      },
+      "image": "assets/signs/rs_13.png",
+      "rule": {
+        "en": "STRICTEST BAN: You cannot even pause, idle, or drop someone off for a single second. Common on flyovers and busy intersections.",
+        "te": "అత్యంత కఠినమైన నిషేధం: ఒక్క సెకను కూడా వాహనాన్ని ఆపకూడదు. ఫ్లైఓవర్లు మరియు రద్దీ జంక్షన్ల వద్ద ఉంటుంది.",
+        "hi": "सख्त मनाही: एक सेकंड के लिए भी गाड़ी नहीं रोक सकते। ओवरब्रिज और व्यस्त चौराहों पर उपयोग होता है।"
+      }
+    },
+    "memoryHook": {
+      "en": "1 Slash = No Parking. Cross 'X' = Nothing allowed (No Stop, No Stand).",
+      "te": "ఒక గీత = పార్కింగ్ వద్దు. 'X' క్రాస్ = ఆగడం కూడా వద్దు.",
+      "hi": "1 लकीर = केवल पार्किंग मना। 'X' क्रॉस = रुकना भी मना।"
+    }
+  },
+  {
+    "id": "twin_02",
+    "title": {
+      "en": "Guarded vs Unguarded Level Crossing",
+      "te": "కాపలా ఉన్న రైల్వే క్రాసింగ్ vs కాపలా లేని క్రాసింగ్",
+      "hi": "सुरक्षित (फाटक वाली) बनाम असुरक्षित (बिना फाटक) रेलवे क्रॉसिंग"
+    },
+    "signA": {
+      "name": {
+        "en": "Guarded Level Crossing (Fence Symbol)",
+        "te": "కాపలా ఉన్న రైల్వే క్రాసింగ్ (కంచె/గేట్ గుర్తు)",
+        "hi": "सुरक्षित क्रॉसिंग (फाटक/बाड़ का निशान)"
+      },
+      "image": "assets/signs/rs_72.png",
+      "rule": {
+        "en": "Has a railway gate and watchman. Wait for the gate to open safely.",
+        "te": "గేటు మరియు కాపలాదారు ఉంటారు. గేటు తెరిచే వరకు వేచి ఉండాలి.",
+        "hi": "गेट और गार्ड मौजूद हैं। गेट खुलने की प्रतीक्षा करें।"
+      }
+    },
+    "signB": {
+      "name": {
+        "en": "Unguarded Level Crossing (Steam Engine Symbol)",
+        "te": "కాపలా లేని రైల్వే క్రాసింగ్ (రైలు ఇంజిన్ గుర్తు)",
+        "hi": "असुरक्षित क्रॉसिंग (ट्रेन इंजन का निशान)"
+      },
+      "image": "assets/signs/rs_70.png",
+      "rule": {
+        "en": "NO GATE OR WATCHMAN! Driver must mandatory stop, look both directions, listen, and proceed only when 100% clear.",
+        "te": "గేటు లేదా కాపలాదారు ఉండరు! డ్రైవర్ స్వయంగా ఆగి, రెండు వైపులా చూసి సురక్షితంగా వెళ్లాలి.",
+        "hi": "कोई गेट या गार्ड नहीं! चालक को अनिवार्य रूप से रुककर, दोनों तरफ देखकर ही आगे बढ़ना होगा।"
+      }
+    },
+    "memoryHook": {
+      "en": "Fence = Gate exists (Guarded). Train engine = No gate (Watch out yourself!).",
+      "te": "కంచె ఉంటే గేటు ఉన్నట్లు. రైలు బొమ్మ ఉంటే గేటు లేనట్లు.",
+      "hi": "बाड़/कटीली तार = फाटक है। रेल इंजन = फाटक नहीं है (स्वयं सतर्क रहें)।"
+    }
+  },
+  {
+    "id": "twin_03",
+    "title": {
+      "en": "Railway Crossing Distance Bars: 1 Bar vs 2 Bars",
+      "te": "రైల్వే క్రాసింగ్ దూరం గీతలు: 1 గీత vs 2 గీతలు",
+      "hi": "रेलवे क्रॉसिंग दूरी पट्टी: 1 पट्टी बनाम 2 पट्टी"
+    },
+    "signA": {
+      "name": {
+        "en": "1 Red Bar (50 - 100 Meters)",
+        "te": "1 ఎరుపు గీత (50 - 100 మీటర్లు)",
+        "hi": "1 लाल पट्टी (50 - 100 मीटर)"
+      },
+      "image": "assets/signs/rs_70.png",
+      "rule": {
+        "en": "The railway track is very close: 50 to 100 meters ahead. Prepare to slow down or stop immediately.",
+        "te": "రైల్వే ట్రాక్ చాలా దగ్గరగా 50-100 మీటర్లలో ఉంది.",
+        "hi": "रेलवे ट्रैक बहुत नजदीक 50-100 मीटर आगे है।"
+      }
+    },
+    "signB": {
+      "name": {
+        "en": "2 Red Bars (200 Meters)",
+        "te": "2 ఎరుపు గీతలు (200 మీటర్లు)",
+        "hi": "2 लाल पट्टियाँ (200 मीटर)"
+      },
+      "image": "assets/signs/rs_71.png",
+      "rule": {
+        "en": "The railway track is 200 meters ahead. Early warning to reduce speed.",
+        "te": "రైల్వే ట్రాక్ 200 మీటర్ల దూరంలో ఉంది. వేగం తగ్గించండి.",
+        "hi": "रेलवे ट्रैक 200 मीटर की दूरी पर है। पहले से गति धीमी करें।"
+      }
+    },
+    "memoryHook": {
+      "en": "1 Bar = 100m. 2 Bars = 200m.",
+      "te": "1 గీత = 50-100 మీటర్లు. 2 గీతలు = 200 మీటర్లు.",
+      "hi": "1 पट्टी = 50-100 मीटर। 2 पट्टी = 200 मीटर।"
+    }
+  },
+  {
+    "id": "twin_04",
+    "title": {
+      "en": "Flashing Yellow Light vs Flashing Red Light",
+      "te": "మెరిసే పసుపు లైట్ vs మెరిసే ఎరుపు లైట్",
+      "hi": "चमकती पीली बत्ती बनाम चमकती लाल बत्ती"
+    },
+    "signA": {
+      "name": {
+        "en": "Flashing Yellow Light",
+        "te": "మెరిసే పసుపు లైట్ (ఫ్లాషింగ్ ఎల్లో)",
+        "hi": "चमकती पीली बत्ती"
+      },
+      "image": "assets/signs/rs_19.png",
+      "rule": {
+        "en": "Slow down and proceed with caution. No need to bring vehicle to a dead stop unless traffic is crossing.",
+        "te": "వేగం తగ్గించి, జాగ్రత్తగా గమనిస్తూ ముందుకు వెళ్లండి. వాహనాన్ని పూర్తిగా ఆపనవసరం లేదు.",
+        "hi": "गति धीमी करें और सावधानी से आगे बढ़ें। पूर्णतः रुकना अनिवार्य नहीं।"
+      }
+    },
+    "signB": {
+      "name": {
+        "en": "Flashing Red Light",
+        "te": "మెరిసే ఎరుపు లైట్ (ఫ్లాషింగ్ రెడ్)",
+        "hi": "चमकती लाल बत्ती"
+      },
+      "image": "assets/signs/rs_16.png",
+      "rule": {
+        "en": "TREAT AS A FULL STOP SIGN! You must stop completely, yield right of way to priority traffic, and proceed only when clear.",
+        "te": "స్టాప్ సైన్ లాంటిది! వాహనాన్ని పూర్తిగా ఆపి, రోడ్డు ఖాళీగా ఉందని నిర్ధారించుకున్నాకే వెళ్లాలి.",
+        "hi": "स्टॉप साइन की तरह व्यवहार करें! वाहन को पूरी तरह रोकें और रास्ता साफ होने पर ही आगे बढ़ें।"
+      }
+    },
+    "memoryHook": {
+      "en": "Flashing Yellow = Caution. Flashing Red = Stop First, Then Go.",
+      "te": "పసుపు = జాగ్రత్తగా వెళ్లు. ఎరుపు = మొదట ఆగు, తర్వాత వెళ్లు.",
+      "hi": "पीली = सावधानी से आगे बढ़ें। लाल = पहले पूरा रुकें, फिर जाएं।"
+    }
+  },
+  {
+    "id": "twin_05",
+    "title": {
+      "en": "Height Limit vs Width Limit",
+      "te": "ఎత్తు పరిమితి vs వెడల్పు పరిమితి",
+      "hi": "ऊंचाई सीमा बनाम चौड़ाई सीमा"
+    },
+    "signA": {
+      "name": {
+        "en": "Height Limit (3.5M with Vertical Arrows)",
+        "te": "ఎత్తు పరిమితి (పైకి, కిందికి బాణాలు)",
+        "hi": "ऊंचाई सीमा (ऊपर-नीचे तीर)"
+      },
+      "image": "assets/signs/rs_27.png",
+      "rule": {
+        "en": "Vehicle height must not exceed 3.5 meters (for underpasses and low bridges). Notice the arrows point UP and DOWN.",
+        "te": "వాహనం ఎత్తు 3.5 మీటర్లు మించకూడదు (వంతెనల కింద). బాణాలు పైకి, కిందికి ఉంటాయి.",
+        "hi": "वाहन की ऊंचाई 3.5 मीटर से अधिक न हो। तीर ऊपर और नीचे होते हैं।"
+      }
+    },
+    "signB": {
+      "name": {
+        "en": "Width Limit (2M with Horizontal Arrows)",
+        "te": "వెడల్పు పరిమితి (ఎడమ, కుడి బాణాలు)",
+        "hi": "चौड़ाई सीमा (दाएं-बाएं तीर)"
+      },
+      "image": "assets/signs/rs_28.png",
+      "rule": {
+        "en": "Vehicle width must not exceed 2 meters (for narrow lanes). Notice the arrows point LEFT and RIGHT.",
+        "te": "వాహనం వెడల్పు 2 మీటర్లు మించకూడదు (ఇరుకైన దారులలో). బాణాలు పక్కలకు ఉంటాయి.",
+        "hi": "वाहन की चौड़ाई 2 मीटर से अधिक न हो। तीर दाएं और बाएं होते हैं।"
+      }
+    },
+    "memoryHook": {
+      "en": "Vertical arrows = Height. Horizontal arrows = Width.",
+      "te": "నిలువు బాణాలు = ఎత్తు. అడ్డ బాణాలు = వెడల్పు.",
+      "hi": "खड़े तीर = ऊंचाई। आड़े तीर = चौड़ाई।"
+    }
+  }
+]

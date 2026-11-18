@@ -1,0 +1,3702 @@
+{
+  "1": {
+    "page": 1,
+    "elements": [
+      [
+        -223.41,
+        338.4,
+        "A  RED TRAFFIC LIGHT MEANS"
+      ],
+      [
+        38.94,
+        343.44,
+        "MUST STOP BEHIND"
+      ],
+      [
+        38.94,
+        343.44,
+        "WHITE STOP LINE"
+      ],
+      [
+        121.15,
+        358.56,
+        "YOU MAY GO STRAIGHT"
+      ],
+      [
+        121.15,
+        358.56,
+        "IF THERE IS NO OTHER"
+      ],
+      [
+        121.15,
+        358.56,
+        "TRAFFIC"
+      ],
+      [
+        203.35,
+        373.68,
+        "YOU MAY TURN LEFT IF"
+      ],
+      [
+        203.35,
+        373.68,
+        "IT IS SAFE TO DO SO"
+      ],
+      [
+        285.56,
+        393.84,
+        "YOU MUST SLOW"
+      ],
+      [
+        285.56,
+        393.84,
+        "DOWN AND PREPARE"
+      ],
+      [
+        285.56,
+        393.84,
+        "TO STOP IF TRAFFIC HAS"
+      ],
+      [
+        285.56,
+        393.84,
+        "STARTED TO CROSS."
+      ],
+      [
+        381.7,
+        408.96,
+        "1"
+      ]
+    ]
+  },
+  "2": {
+    "page": 1,
+    "elements": [
+      [
+        -204.78,
+        333.6,
+        "A FLASHING YELLOW LIGHT"
+      ],
+      [
+        -204.78,
+        333.6,
+        "INDICATES"
+      ],
+      [
+        38.94,
+        348.72,
+        "SLOW DOWN AND"
+      ],
+      [
+        38.94,
+        348.72,
+        "PROCEED WITH"
+      ],
+      [
+        38.94,
+        348.72,
+        "CAUTION"
+      ],
+      [
+        121.15,
+        358.8,
+        "NO ENTRYSTOP HERENONE OF THE ABOVE1"
+      ]
+    ]
+  },
+  "3": {
+    "page": 1,
+    "elements": [
+      [
+        -223.41,
+        291.72,
+        "A FLASHING RED LIGHT INDICATES"
+      ],
+      [
+        38.94,
+        291.72,
+        "STOPBRIGHT SUN"
+      ],
+      [
+        203.35,
+        301.8,
+        "STOP, OBSERVE AND"
+      ],
+      [
+        203.35,
+        301.8,
+        "PROCEED WITH"
+      ],
+      [
+        286.08,
+        516.72,
+        "CAUTION"
+      ],
+      [
+        276.0,
+        598.8,
+        "NONE OF THE ABOVE3"
+      ],
+      [
+        286.08,
+        516.72,
+        "CAUTION"
+      ]
+    ]
+  },
+  "4": {
+    "page": 1,
+    "elements": [
+      [
+        361.71,
+        95.64,
+        "THE SIGNS MARKED  IN THIS CIRCLE"
+      ],
+      [
+        361.71,
+        95.64,
+        "ARE.."
+      ],
+      [
+        605.44,
+        100.68,
+        "MANDATORYCAUTIONARYINFORMATORYALL OF THE ABOVE1"
+      ]
+    ]
+  },
+  "5": {
+    "page": 1,
+    "elements": [
+      [
+        361.71,
+        38.64,
+        "THE SIGNS MARKED  IN THIS"
+      ],
+      [
+        361.71,
+        38.64,
+        "TRIANGLE ARE.."
+      ],
+      [
+        605.43,
+        43.68,
+        "MANDATORYCAUTIONARYINFORMATORYALL OF THE ABOVE2"
+      ]
+    ]
+  },
+  "6": {
+    "page": 1,
+    "elements": [
+      [
+        361.71,
+        -18.36,
+        "THE SIGNS MARKED IN THIS"
+      ],
+      [
+        361.71,
+        -18.36,
+        "RECTANGLE ARE.."
+      ],
+      [
+        605.43,
+        -13.32,
+        "MANDATORYCAUTIONARYINFORMATORYALL OF THE ABOVE3"
+      ]
+    ]
+  },
+  "7": {
+    "page": 2,
+    "elements": [
+      [
+        84.96,
+        90.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        347.32,
+        90.6,
+        "STOPONE WAY SIGNNO PARKINGNO STOPPING1"
+      ]
+    ]
+  },
+  "8": {
+    "page": 2,
+    "elements": [
+      [
+        84.96,
+        23.52,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        347.32,
+        23.52,
+        "LEFT HAND CURVEINFORMATORYWARNING SIGNGIVE WAY4"
+      ]
+    ]
+  },
+  "9": {
+    "page": 2,
+    "elements": [
+      [
+        103.59,
+        -33.48,
+        "YOU MISSED YOUR WAY AND FIND"
+      ],
+      [
+        103.59,
+        -33.48,
+        "YOU ARE ON A ONE-WAY STREET."
+      ],
+      [
+        103.59,
+        -33.48,
+        "YOU SHOULD"
+      ],
+      [
+        347.31,
+        -18.36,
+        "REVERSE OUT OF THE"
+      ],
+      [
+        347.31,
+        -18.36,
+        "ROAD"
+      ],
+      [
+        429.52,
+        -8.28,
+        "BLOW YOUR HORN AND"
+      ],
+      [
+        429.52,
+        -8.28,
+        "DRIVE"
+      ],
+      [
+        511.72,
+        1.8,
+        "CONTINUE TO THE END"
+      ],
+      [
+        511.72,
+        1.8,
+        "OF THE ROAD"
+      ],
+      [
+        593.93,
+        11.88,
+        "REVERSE INTO A"
+      ],
+      [
+        593.93,
+        11.88,
+        "DRIVEWAY"
+      ],
+      [
+        690.07,
+        16.92,
+        "3"
+      ]
+    ]
+  },
+  "10": {
+    "page": 2,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "ONE WAY"
+      ],
+      [
+        281.16,
+        434.64,
+        "BOTH WAYS"
+      ],
+      [
+        291.24,
+        434.64,
+        "PROHIBITED"
+      ],
+      [
+        281.16,
+        516.72,
+        "RIGHT TURN"
+      ],
+      [
+        291.24,
+        516.72,
+        "PROHIBITED"
+      ],
+      [
+        286.2,
+        598.8,
+        "NONE OF THE ABOVE"
+      ],
+      [
+        286.2,
+        694.8,
+        "1"
+      ],
+      [
+        286.2,
+        88.56,
+        "10"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "ONE WAY"
+      ],
+      [
+        291.24,
+        434.64,
+        "PROHIBITED"
+      ],
+      [
+        291.24,
+        516.72,
+        "PROHIBITED"
+      ],
+      [
+        286.2,
+        598.8,
+        "NONE OF THE ABOVE"
+      ],
+      [
+        286.2,
+        694.8,
+        "1"
+      ]
+    ]
+  },
+  "11": {
+    "page": 2,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        88.56,
+        "NO ENTRYONE WAY SIGN"
+      ],
+      [
+        348.24,
+        516.72,
+        "COMPULSORY STRAIGHT"
+      ],
+      [
+        358.32,
+        516.72,
+        "AHEAD"
+      ],
+      [
+        440.52,
+        521.76,
+        "LEFT TURN PROHIBITED1"
+      ]
+    ]
+  },
+  "12": {
+    "page": 2,
+    "elements": [
+      [
+        -70.49,
+        454.68,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        193.91,
+        459.72,
+        "VEHICLE PROHIBITED IN"
+      ],
+      [
+        193.91,
+        459.72,
+        "BOTH DIRECTION"
+      ],
+      [
+        276.12,
+        464.76,
+        "LEFT TURN PROHIBITED"
+      ],
+      [
+        358.32,
+        469.8,
+        "OVERTAKING"
+      ],
+      [
+        358.32,
+        469.8,
+        "PROHIBITED"
+      ],
+      [
+        440.52,
+        479.88,
+        "RIGHT TURN"
+      ],
+      [
+        440.52,
+        479.88,
+        "PROHIBITED"
+      ],
+      [
+        536.67,
+        484.92,
+        "1"
+      ]
+    ]
+  },
+  "13": {
+    "page": 2,
+    "elements": [
+      [
+        -70.49,
+        417.84,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        193.91,
+        417.84,
+        "CYCLE PROHIBITEDTRUCK PROHIBITED"
+      ],
+      [
+        358.32,
+        422.88,
+        "RIGHT TURN"
+      ],
+      [
+        358.32,
+        422.88,
+        "PROHIBITED"
+      ],
+      [
+        440.53,
+        427.92,
+        "LEFT TURN PROHIBITED3"
+      ]
+    ]
+  },
+  "14": {
+    "page": 3,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "LEFT TURN PROHIBITED"
+      ],
+      [
+        431.56,
+        93.6,
+        "RIGHT TURN"
+      ],
+      [
+        431.56,
+        93.6,
+        "PROHIBITED"
+      ],
+      [
+        513.77,
+        98.64,
+        "U-TURN PROHIBITED"
+      ],
+      [
+        595.97,
+        103.68,
+        "OVERTAKING"
+      ],
+      [
+        595.97,
+        103.68,
+        "PROHIBITED"
+      ],
+      [
+        692.12,
+        108.72,
+        "3"
+      ]
+    ]
+  },
+  "15": {
+    "page": 3,
+    "elements": [
+      [
+        84.96,
+        41.64,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        41.64,
+        "TRUCK PROHIBITED"
+      ],
+      [
+        431.56,
+        46.68,
+        "ALL MOTOR VEHICLES"
+      ],
+      [
+        431.56,
+        46.68,
+        "PROHIBITED"
+      ],
+      [
+        513.77,
+        56.76,
+        "BULLOCK CART"
+      ],
+      [
+        513.77,
+        56.76,
+        "PROHIBITED"
+      ],
+      [
+        595.97,
+        61.8,
+        "CYCLE PROHIBITED2"
+      ]
+    ]
+  },
+  "16": {
+    "page": 3,
+    "elements": [
+      [
+        84.96,
+        -5.28,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -0.24,
+        "OVERTAKING"
+      ],
+      [
+        349.36,
+        -0.24,
+        "PROHIBITED"
+      ],
+      [
+        431.56,
+        4.8,
+        "LEFT TURN PROHIBITED"
+      ],
+      [
+        513.77,
+        9.84,
+        "RIGHT TURN"
+      ],
+      [
+        513.77,
+        9.84,
+        "PROHIBITED"
+      ],
+      [
+        595.97,
+        19.92,
+        "VEHICLE PROHIBITED IN"
+      ],
+      [
+        595.97,
+        19.92,
+        "BOTH DIRECTION"
+      ],
+      [
+        692.12,
+        24.96,
+        "1"
+      ]
+    ]
+  },
+  "17": {
+    "page": 3,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "NO SMOKING"
+      ],
+      [
+        281.16,
+        434.64,
+        "RIGHT TURN"
+      ],
+      [
+        291.24,
+        434.64,
+        "PROHIBITED"
+      ],
+      [
+        286.2,
+        516.72,
+        "CYCLE PROHIBITED"
+      ],
+      [
+        286.2,
+        598.8,
+        "HORN PROHIBITED"
+      ],
+      [
+        286.2,
+        694.8,
+        "4"
+      ],
+      [
+        286.2,
+        88.56,
+        "17"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "NO SMOKING"
+      ],
+      [
+        291.24,
+        434.64,
+        "PROHIBITED"
+      ],
+      [
+        286.2,
+        516.72,
+        "CYCLE PROHIBITED"
+      ],
+      [
+        286.2,
+        598.8,
+        "HORN PROHIBITED"
+      ],
+      [
+        286.2,
+        694.8,
+        "4"
+      ]
+    ]
+  },
+  "18": {
+    "page": 3,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        93.6,
+        "PEDESTRIANS"
+      ],
+      [
+        617.68,
+        93.6,
+        "PROHIBITED"
+      ],
+      [
+        699.88,
+        98.64,
+        "SCHOOL ZONEPLAY ZONENONE OF THE ABOVE1"
+      ]
+    ]
+  },
+  "19": {
+    "page": 3,
+    "elements": [
+      [
+        353.28,
+        31.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        31.56,
+        "CYCLE TRACKCYCLES PROHIBITEDCYCLE PARKINGNONE OF TH"
+      ],
+      [
+        904.55,
+        31.56,
+        "E ABOVE2"
+      ]
+    ]
+  },
+  "20": {
+    "page": 3,
+    "elements": [
+      [
+        353.28,
+        -35.52,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        -30.48,
+        "ALL VEHICLES"
+      ],
+      [
+        617.68,
+        -30.48,
+        "PROHIBITED"
+      ],
+      [
+        699.88,
+        -25.44,
+        "TRUCKS PARKINGGHAT ROADTRUCKS PROHIBITED4"
+      ]
+    ]
+  },
+  "21": {
+    "page": 4,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "NO STOPPINGRESTRICTION ENDS SIGNNO PARKINGSPEED LIM"
+      ],
+      [
+        629.86,
+        88.56,
+        "IT3"
+      ]
+    ]
+  },
+  "22": {
+    "page": 4,
+    "elements": [
+      [
+        84.96,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        21.48,
+        "NO PARKING"
+      ],
+      [
+        431.56,
+        26.52,
+        "NO STOPPING OR"
+      ],
+      [
+        431.56,
+        26.52,
+        "STANDING"
+      ],
+      [
+        513.77,
+        31.56,
+        "LENGTH LIMITSPEED LIMIT2"
+      ]
+    ]
+  },
+  "23": {
+    "page": 4,
+    "elements": [
+      [
+        84.96,
+        -35.52,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -35.52,
+        "STOPRESTRICTION ENDS SIGNNO ENTRYNO PARKING2"
+      ]
+    ]
+  },
+  "24": {
+    "page": 4,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "LENGTH LIMIT"
+      ],
+      [
+        286.2,
+        434.64,
+        "SPEED LIMIT"
+      ],
+      [
+        286.2,
+        516.72,
+        "LOAD LIMIT"
+      ],
+      [
+        286.2,
+        598.8,
+        "HEIGHT LIMIT"
+      ],
+      [
+        286.2,
+        694.8,
+        "1"
+      ],
+      [
+        286.2,
+        88.56,
+        "24"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "LENGTH LIMIT"
+      ],
+      [
+        286.2,
+        434.64,
+        "SPEED LIMIT"
+      ],
+      [
+        286.2,
+        516.72,
+        "LOAD LIMIT"
+      ],
+      [
+        286.2,
+        598.8,
+        "HEIGHT LIMIT"
+      ],
+      [
+        286.2,
+        694.8,
+        "1"
+      ]
+    ]
+  },
+  "25": {
+    "page": 4,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        88.56,
+        "LOAD LIMITSPEED LIMITWIDTH LIMITHEIGHT LIMIT2"
+      ]
+    ]
+  },
+  "26": {
+    "page": 4,
+    "elements": [
+      [
+        353.28,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        21.48,
+        "AXLE LOAD LIMITHEIGHT LIMITWIDTH LIMITLOAD LIMIT4"
+      ]
+    ]
+  },
+  "27": {
+    "page": 4,
+    "elements": [
+      [
+        353.28,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        -45.6,
+        "LENGTH LIMITSPEED LIMITLOAD LIMITHEIGHT LIMIT4"
+      ]
+    ]
+  },
+  "28": {
+    "page": 5,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "HEIGHT LIMITSPEED LIMITWIDTH LIMITLENGTH LIMIT3"
+      ]
+    ]
+  },
+  "29": {
+    "page": 5,
+    "elements": [
+      [
+        84.96,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        21.48,
+        "AXLE LOAD LIMITWIDTH LIMITLOAD LIMITHEIGHT LIMIT1"
+      ]
+    ]
+  },
+  "30": {
+    "page": 5,
+    "elements": [
+      [
+        84.96,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -45.6,
+        "ONE WAYLEFT TURN PROHIBITED"
+      ],
+      [
+        513.77,
+        -40.56,
+        "COMPULSORY KEEP"
+      ],
+      [
+        513.77,
+        -40.56,
+        "LEFT"
+      ],
+      [
+        595.97,
+        -35.52,
+        "NONE OF THE ABOVE3"
+      ]
+    ]
+  },
+  "31": {
+    "page": 5,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "COMPULSORY KEEP LEFT"
+      ],
+      [
+        281.16,
+        434.64,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        291.24,
+        434.64,
+        "ONLY"
+      ],
+      [
+        281.16,
+        516.72,
+        "COMPULSORY TURN"
+      ],
+      [
+        291.24,
+        516.72,
+        "LEFT"
+      ],
+      [
+        286.2,
+        598.8,
+        "COMPULSORY RIGHT"
+      ],
+      [
+        286.2,
+        694.8,
+        "2"
+      ],
+      [
+        286.2,
+        88.56,
+        "31"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "COMPULSORY KEEP LEFT"
+      ],
+      [
+        291.24,
+        434.64,
+        "ONLY"
+      ],
+      [
+        291.24,
+        516.72,
+        "LEFT"
+      ],
+      [
+        286.2,
+        598.8,
+        "COMPULSORY RIGHT"
+      ],
+      [
+        286.2,
+        694.8,
+        "2"
+      ]
+    ]
+  },
+  "32": {
+    "page": 5,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        93.6,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        617.68,
+        93.6,
+        "ONLY"
+      ],
+      [
+        699.88,
+        103.68,
+        "COMPULSORY TURN"
+      ],
+      [
+        699.88,
+        103.68,
+        "LEFT AHEAD"
+      ],
+      [
+        782.09,
+        113.76,
+        "COMPULSORY TURN"
+      ],
+      [
+        782.09,
+        113.76,
+        "RIGHT AHEAD"
+      ],
+      [
+        864.29,
+        123.84,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        864.29,
+        123.84,
+        "OR TURN LEFT."
+      ],
+      [
+        960.44,
+        128.88,
+        "3"
+      ]
+    ]
+  },
+  "33": {
+    "page": 5,
+    "elements": [
+      [
+        353.28,
+        61.8,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        61.8,
+        "RIGHT HAND CURVE"
+      ],
+      [
+        699.88,
+        66.84,
+        "COMPULSORY RIGHT"
+      ],
+      [
+        699.88,
+        66.84,
+        "TURN"
+      ],
+      [
+        782.09,
+        76.92,
+        "COMPULSORY TURN"
+      ],
+      [
+        782.09,
+        76.92,
+        "LEFT AHEAD"
+      ],
+      [
+        864.29,
+        81.96,
+        "NONE OF THE ABOVE3"
+      ]
+    ]
+  },
+  "34": {
+    "page": 5,
+    "elements": [
+      [
+        353.28,
+        14.88,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        19.92,
+        "COMPULSORY TURN"
+      ],
+      [
+        617.68,
+        19.92,
+        "LEFT"
+      ],
+      [
+        699.88,
+        24.96,
+        "COMPULSORY RIGHT"
+      ],
+      [
+        782.09,
+        30.0,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        782.09,
+        30.0,
+        "OR TURN LEFT"
+      ],
+      [
+        864.29,
+        40.08,
+        "COMPULSORY A HEAD"
+      ],
+      [
+        864.29,
+        40.08,
+        "OR TURN RIGHT"
+      ],
+      [
+        960.44,
+        45.12,
+        "1"
+      ]
+    ]
+  },
+  "35": {
+    "page": 6,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "RIGHT HAND CURVE"
+      ],
+      [
+        431.56,
+        93.6,
+        "COMPULSORY TURN"
+      ],
+      [
+        431.56,
+        93.6,
+        "RIGHT"
+      ],
+      [
+        513.77,
+        103.68,
+        "COMPULSORY LEFT"
+      ],
+      [
+        513.77,
+        103.68,
+        "TURN"
+      ],
+      [
+        595.97,
+        108.72,
+        "NONE OF THE ABOVE2"
+      ]
+    ]
+  },
+  "36": {
+    "page": 6,
+    "elements": [
+      [
+        84.96,
+        41.64,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        46.68,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        349.36,
+        46.68,
+        "OR TURN LEFT"
+      ],
+      [
+        431.56,
+        56.76,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        431.56,
+        56.76,
+        "OR TURN RIGHT"
+      ],
+      [
+        513.77,
+        66.84,
+        "COMPULSORY TURN"
+      ],
+      [
+        513.77,
+        66.84,
+        "RIGHT"
+      ],
+      [
+        595.97,
+        76.92,
+        "COMPULSORY TURN"
+      ],
+      [
+        595.97,
+        76.92,
+        "LEFT."
+      ],
+      [
+        692.12,
+        81.96,
+        "1"
+      ]
+    ]
+  },
+  "37": {
+    "page": 6,
+    "elements": [
+      [
+        84.96,
+        14.88,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        19.92,
+        "COMPULSORY TURN"
+      ],
+      [
+        349.36,
+        19.92,
+        "LEFT"
+      ],
+      [
+        431.56,
+        30.0,
+        "COMPULSORY TURN"
+      ],
+      [
+        431.56,
+        30.0,
+        "RIGHT"
+      ],
+      [
+        513.77,
+        40.08,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        513.77,
+        40.08,
+        "OR TURN LEFT"
+      ],
+      [
+        595.97,
+        50.16,
+        "COMPULSORY AHEAD"
+      ],
+      [
+        595.97,
+        50.16,
+        "OR TURN RIGHT"
+      ],
+      [
+        692.12,
+        55.2,
+        "4"
+      ]
+    ]
+  },
+  "38": {
+    "page": 6,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        281.16,
+        352.56,
+        "COMPULSORY SOUND"
+      ],
+      [
+        291.24,
+        352.56,
+        "HORN"
+      ],
+      [
+        286.2,
+        434.64,
+        "HORN PROHIBITED"
+      ],
+      [
+        286.2,
+        516.72,
+        "NO SMOKING"
+      ],
+      [
+        286.2,
+        598.8,
+        "NONE OF THE ABOVE"
+      ],
+      [
+        286.2,
+        694.8,
+        "1"
+      ],
+      [
+        286.2,
+        88.56,
+        "38"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        291.24,
+        352.56,
+        "HORN"
+      ],
+      [
+        286.2,
+        434.64,
+        "HORN PROHIBITED"
+      ],
+      [
+        286.2,
+        516.72,
+        "NO SMOKING"
+      ],
+      [
+        286.2,
+        598.8,
+        "NONE OF THE ABOVE"
+      ],
+      [
+        286.2,
+        694.8,
+        "1"
+      ]
+    ]
+  },
+  "39": {
+    "page": 6,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        93.6,
+        "COMPULSORY CYCLE"
+      ],
+      [
+        617.68,
+        93.6,
+        "TRACK"
+      ],
+      [
+        699.88,
+        98.64,
+        "SCHOOL AREACYCLE PROHIBITEDNONE OF THE ABOVE1"
+      ]
+    ]
+  },
+  "40": {
+    "page": 6,
+    "elements": [
+      [
+        353.28,
+        31.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        36.6,
+        "COMPULSORY CYCLE"
+      ],
+      [
+        617.68,
+        36.6,
+        "TRACK"
+      ],
+      [
+        699.88,
+        41.64,
+        "CYCLE PROHIBITEDCYCLE TRACKCYCLE CROSSING4"
+      ]
+    ]
+  },
+  "41": {
+    "page": 6,
+    "elements": [
+      [
+        353.28,
+        -25.44,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        -25.44,
+        "RIGHT HAND CURVELEFT HAND CURVEHAIR PIN BEND RIGHTH"
+      ],
+      [
+        869.22,
+        -25.44,
+        "AIR PIN BEND LEFT1"
+      ]
+    ]
+  },
+  "42": {
+    "page": 7,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "RIGHT HAND CURVELEFT HAND CURVERIGHT REVERSE BENDLE"
+      ],
+      [
+        603.06,
+        88.56,
+        "FT REVERSE BEND2"
+      ]
+    ]
+  },
+  "43": {
+    "page": 7,
+    "elements": [
+      [
+        84.96,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        21.48,
+        "RIGHT HAIR PIN BEND HAIR PIN BEND LEFTRIGHT REVERSE"
+      ],
+      [
+        563.4,
+        21.48,
+        "BENDLEFT REVERSE BEND1"
+      ]
+    ]
+  },
+  "44": {
+    "page": 7,
+    "elements": [
+      [
+        84.96,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -45.6,
+        "LEFT HAIR PIN BEND HAIR PIN BEND RIGHTLEFT HAND CUR"
+      ],
+      [
+        564.73,
+        -45.6,
+        "VERIGHT HAND CURVE1"
+      ]
+    ]
+  },
+  "45": {
+    "page": 7,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "RIGHT HAND CURVE"
+      ],
+      [
+        286.2,
+        434.64,
+        "LEFT REVERSE BEND"
+      ],
+      [
+        286.2,
+        516.72,
+        "RIGHT REVERSE BEND"
+      ],
+      [
+        286.2,
+        598.8,
+        "HAIR PIN BEND RIGHT"
+      ],
+      [
+        286.2,
+        694.8,
+        "3"
+      ],
+      [
+        286.2,
+        88.56,
+        "45"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "RIGHT HAND CURVE"
+      ],
+      [
+        286.2,
+        434.64,
+        "LEFT REVERSE BEND"
+      ],
+      [
+        286.2,
+        516.72,
+        "RIGHT REVERSE BEND"
+      ],
+      [
+        286.2,
+        598.8,
+        "HAIR PIN BEND RIGHT"
+      ],
+      [
+        286.2,
+        694.8,
+        "3"
+      ]
+    ]
+  },
+  "46": {
+    "page": 7,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        88.56,
+        "STEEP DESCENTSTEEP ASCENTSLIPPERY ROADHUMP OR ROUGH"
+      ],
+      [
+        922.34,
+        88.56,
+        "ROAD2"
+      ]
+    ]
+  },
+  "47": {
+    "page": 7,
+    "elements": [
+      [
+        353.28,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        21.48,
+        "STEEP ASCENTSTEEP DESCENTNARROW ROAD AHEADNARROW BR"
+      ],
+      [
+        904.67,
+        21.48,
+        "IDGE2"
+      ]
+    ]
+  },
+  "48": {
+    "page": 7,
+    "elements": [
+      [
+        353.28,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        -45.6,
+        "NARROW ROAD AHEAD ROAD WIDENS AHEADNARROW BRIDGESLI"
+      ],
+      [
+        873.07,
+        -45.6,
+        "PPERY ROAD1"
+      ]
+    ]
+  },
+  "49": {
+    "page": 8,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "NARROW ROAD AHEAD ROAD WIDENS AHEADNARROW BRIDGESLI"
+      ],
+      [
+        604.74,
+        88.56,
+        "PPERY ROAD2"
+      ]
+    ]
+  },
+  "50": {
+    "page": 8,
+    "elements": [
+      [
+        84.96,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        21.48,
+        "NARROW ROAD AHEAD ROAD WIDENS AHEADNARROW BRIDGESLI"
+      ],
+      [
+        604.74,
+        21.48,
+        "PPERY ROAD3"
+      ]
+    ]
+  },
+  "51": {
+    "page": 8,
+    "elements": [
+      [
+        84.96,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -45.6,
+        "SLIPPERY ROADLOOSE GRAVEL"
+      ],
+      [
+        513.77,
+        -40.56,
+        "STAGGERED"
+      ],
+      [
+        513.77,
+        -40.56,
+        "INTERSECTION"
+      ],
+      [
+        595.97,
+        -35.52,
+        "HUMP OR ROUGH ROAD1"
+      ]
+    ]
+  },
+  "52": {
+    "page": 8,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "NARROW BRIDGE"
+      ],
+      [
+        286.2,
+        434.64,
+        "SLIPPERY ROAD"
+      ],
+      [
+        286.2,
+        516.72,
+        "LOOSE GRAVEL"
+      ],
+      [
+        286.2,
+        598.8,
+        "STEEP DESCENT"
+      ],
+      [
+        286.2,
+        694.8,
+        "3"
+      ],
+      [
+        286.2,
+        88.56,
+        "52"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "NARROW BRIDGE"
+      ],
+      [
+        286.2,
+        434.64,
+        "SLIPPERY ROAD"
+      ],
+      [
+        286.2,
+        516.72,
+        "LOOSE GRAVEL"
+      ],
+      [
+        286.2,
+        598.8,
+        "STEEP DESCENT"
+      ],
+      [
+        286.2,
+        694.8,
+        "3"
+      ]
+    ]
+  },
+  "53": {
+    "page": 8,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        88.56,
+        "SCHOOL AHEADMEN AT WORKCYCLE CROSSINGPEDESTRIAN CRO"
+      ],
+      [
+        919.45,
+        88.56,
+        "SSING4"
+      ]
+    ]
+  },
+  "54": {
+    "page": 8,
+    "elements": [
+      [
+        353.28,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        21.48,
+        "CYCLE CROSSINGSCHOOL AHEADLOOSE GRAVELPEDESTRIAN CR"
+      ],
+      [
+        914.29,
+        21.48,
+        "OSSING2"
+      ]
+    ]
+  },
+  "55": {
+    "page": 8,
+    "elements": [
+      [
+        353.28,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        -45.6,
+        "BARRIER AHEADDANGEROUS DIPMEN AT WORKMAJOR ROAD AHE"
+      ],
+      [
+        923.18,
+        -45.6,
+        "AD3"
+      ]
+    ]
+  },
+  "56": {
+    "page": 9,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "FALLING ROCKSSTEEP ASCENTHUMP OR ROUGH ROADLOOSE GR"
+      ],
+      [
+        627.94,
+        88.56,
+        "AVEL1"
+      ]
+    ]
+  },
+  "57": {
+    "page": 9,
+    "elements": [
+      [
+        84.96,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        21.48,
+        "BARRIER AHEADROUND ABOUTCROSS ROAD"
+      ],
+      [
+        595.97,
+        26.52,
+        "RAILWAY CROSSING"
+      ],
+      [
+        595.97,
+        26.52,
+        "AHEAD"
+      ],
+      [
+        692.12,
+        31.56,
+        "3"
+      ]
+    ]
+  },
+  "58": {
+    "page": 9,
+    "elements": [
+      [
+        84.96,
+        -35.52,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -35.52,
+        "GAP IN MEDIANSIDE ROAD RIGHTSIDE ROAD LEFT"
+      ],
+      [
+        595.97,
+        -30.48,
+        "STAGGERED"
+      ],
+      [
+        595.97,
+        -30.48,
+        "INTERSECTION"
+      ],
+      [
+        692.12,
+        -25.44,
+        "1"
+      ]
+    ]
+  },
+  "59": {
+    "page": 9,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        281.16,
+        352.56,
+        "STAGGERED"
+      ],
+      [
+        291.24,
+        352.56,
+        "INTERSECTION"
+      ],
+      [
+        286.2,
+        434.64,
+        "ROUND ABOUT"
+      ],
+      [
+        286.2,
+        516.72,
+        "CROSS ROAD"
+      ],
+      [
+        286.2,
+        598.8,
+        "SIDE ROAD LEFT"
+      ],
+      [
+        286.2,
+        694.8,
+        "2"
+      ],
+      [
+        286.2,
+        88.56,
+        "59"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        291.24,
+        352.56,
+        "INTERSECTION"
+      ],
+      [
+        286.2,
+        434.64,
+        "ROUND ABOUT"
+      ],
+      [
+        286.2,
+        516.72,
+        "CROSS ROAD"
+      ],
+      [
+        286.2,
+        598.8,
+        "SIDE ROAD LEFT"
+      ],
+      [
+        286.2,
+        694.8,
+        "2"
+      ]
+    ]
+  },
+  "60": {
+    "page": 9,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        88.56,
+        "DANGEROUS DIP"
+      ],
+      [
+        699.88,
+        93.6,
+        "STAGGERED"
+      ],
+      [
+        699.88,
+        93.6,
+        "INTERSECTION"
+      ],
+      [
+        782.09,
+        98.64,
+        "Y-INTERSECTIONMAJOR ROAD AHEAD4"
+      ]
+    ]
+  },
+  "61": {
+    "page": 9,
+    "elements": [
+      [
+        353.28,
+        31.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        31.56,
+        "DANGEROUS DIPMAJOR ROAD AHEADY-INTERSECTION"
+      ],
+      [
+        864.29,
+        36.6,
+        "STAGGERED"
+      ],
+      [
+        864.29,
+        36.6,
+        "INTERSECTION"
+      ],
+      [
+        960.44,
+        41.64,
+        "1"
+      ]
+    ]
+  },
+  "62": {
+    "page": 9,
+    "elements": [
+      [
+        353.28,
+        -25.44,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        -25.44,
+        "BARRIER AHEADHUMP OR ROUGH ROADMAJOR ROAD AHEAD"
+      ],
+      [
+        864.29,
+        -20.4,
+        "STAGGERED"
+      ],
+      [
+        864.29,
+        -20.4,
+        "INTERSECTION"
+      ],
+      [
+        960.44,
+        -15.36,
+        "2"
+      ]
+    ]
+  },
+  "63": {
+    "page": 10,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "RAILWAY CROSSINGBARRIER AHEADMEN AT WORKNONE OF THE"
+      ],
+      [
+        640.08,
+        88.56,
+        "ABOVE2"
+      ]
+    ]
+  },
+  "64": {
+    "page": 10,
+    "elements": [
+      [
+        84.96,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        21.48,
+        "RIGHT HAND CURVELEFT HAND CURVE"
+      ],
+      [
+        513.77,
+        26.52,
+        "STAGGERED"
+      ],
+      [
+        513.77,
+        26.52,
+        "INTERSECTION"
+      ],
+      [
+        595.97,
+        31.56,
+        "ZIG ZAG RIGHT3"
+      ]
+    ]
+  },
+  "65": {
+    "page": 10,
+    "elements": [
+      [
+        84.96,
+        -35.52,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -35.52,
+        "ROUND ABOUTCROSS ROADSROAD OPENY-INTERSECTION4"
+      ]
+    ]
+  },
+  "66": {
+    "page": 10,
+    "elements": [
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "ROUND ABOUT"
+      ],
+      [
+        286.2,
+        434.64,
+        "CROSS ROADS"
+      ],
+      [
+        286.2,
+        516.72,
+        "Y-INTERSECTION"
+      ],
+      [
+        286.2,
+        598.8,
+        "ROAD OPEN"
+      ],
+      [
+        286.2,
+        694.8,
+        "3"
+      ],
+      [
+        286.2,
+        88.56,
+        "66"
+      ],
+      [
+        286.2,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.2,
+        352.56,
+        "ROUND ABOUT"
+      ],
+      [
+        286.2,
+        434.64,
+        "CROSS ROADS"
+      ],
+      [
+        286.2,
+        516.72,
+        "Y-INTERSECTION"
+      ],
+      [
+        286.2,
+        598.8,
+        "ROAD OPEN"
+      ],
+      [
+        286.2,
+        694.8,
+        "3"
+      ]
+    ]
+  },
+  "67": {
+    "page": 10,
+    "elements": [
+      [
+        353.28,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        88.56,
+        "SIDE ROAD LEFTONE WAY SIGNT-ROADWIDE ROAD1"
+      ]
+    ]
+  },
+  "68": {
+    "page": 10,
+    "elements": [
+      [
+        353.28,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        21.48,
+        "ZIG ZAG ROADFERRYHUMP OR ROUGH ROADSTRAIGHT ROAD2"
+      ]
+    ]
+  },
+  "69": {
+    "page": 10,
+    "elements": [
+      [
+        353.28,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.68,
+        -45.6,
+        "CATTLEBULLOCK CARTTONGANONE OF THE ABOVE1"
+      ]
+    ]
+  },
+  "70": {
+    "page": 11,
+    "elements": [
+      [
+        118.68,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        383.08,
+        98.64,
+        "GUARDED LEVEL"
+      ],
+      [
+        383.08,
+        98.64,
+        "CROSSING (50-100"
+      ],
+      [
+        383.08,
+        98.64,
+        "METERS)"
+      ],
+      [
+        465.28,
+        118.8,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        465.28,
+        118.8,
+        "CROSSING (50-100"
+      ],
+      [
+        465.28,
+        118.8,
+        "METERS)"
+      ],
+      [
+        547.49,
+        133.92,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        547.49,
+        133.92,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        629.69,
+        144.0,
+        "GUARDED LEVEL"
+      ],
+      [
+        629.69,
+        144.0,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        725.84,
+        149.04,
+        "2"
+      ]
+    ]
+  },
+  "71": {
+    "page": 11,
+    "elements": [
+      [
+        118.68,
+        14.64,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        383.08,
+        24.72,
+        "GUARDED LEVEL"
+      ],
+      [
+        383.08,
+        24.72,
+        "CROSSING (50-100"
+      ],
+      [
+        383.08,
+        24.72,
+        "METERS)"
+      ],
+      [
+        465.28,
+        44.88,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        465.28,
+        44.88,
+        "CROSSING (50-100"
+      ],
+      [
+        465.28,
+        44.88,
+        "METERS)"
+      ],
+      [
+        547.49,
+        60.0,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        547.49,
+        60.0,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        629.69,
+        70.08,
+        "GUARDED LEVEL"
+      ],
+      [
+        629.69,
+        70.08,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        725.84,
+        75.12,
+        "3"
+      ]
+    ]
+  },
+  "72": {
+    "page": 11,
+    "elements": [
+      [
+        387.48,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        651.88,
+        98.64,
+        "GUARDED LEVEL"
+      ],
+      [
+        651.88,
+        98.64,
+        "CROSSING (50-100"
+      ],
+      [
+        651.88,
+        98.64,
+        "METERS)"
+      ],
+      [
+        734.08,
+        118.8,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        734.08,
+        118.8,
+        "CROSSING (50-100"
+      ],
+      [
+        734.08,
+        118.8,
+        "METERS)"
+      ],
+      [
+        816.29,
+        133.92,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        816.29,
+        133.92,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        898.49,
+        144.0,
+        "GUARDED LEVEL"
+      ],
+      [
+        898.49,
+        144.0,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        994.64,
+        149.04,
+        "1"
+      ]
+    ]
+  },
+  "73": {
+    "page": 12,
+    "elements": [
+      [
+        118.68,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        383.08,
+        98.64,
+        "GUARDED LEVEL"
+      ],
+      [
+        383.08,
+        98.64,
+        "CROSSING (50-100"
+      ],
+      [
+        383.08,
+        98.64,
+        "METERS)"
+      ],
+      [
+        465.28,
+        118.8,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        465.28,
+        118.8,
+        "CROSSING (50-100"
+      ],
+      [
+        465.28,
+        118.8,
+        "METERS)"
+      ],
+      [
+        547.49,
+        133.92,
+        "UNGUARDED LEVEL"
+      ],
+      [
+        547.49,
+        133.92,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        629.69,
+        144.0,
+        "GUARDED LEVEL"
+      ],
+      [
+        629.69,
+        144.0,
+        "CROSSING (200 METERS)"
+      ],
+      [
+        725.84,
+        149.04,
+        "4"
+      ]
+    ]
+  },
+  "74": {
+    "page": 12,
+    "elements": [
+      [
+        118.68,
+        48.36,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        383.08,
+        48.36,
+        "ATMHOTELPETROL PUMPAIR FILLING3"
+      ]
+    ]
+  },
+  "75": {
+    "page": 12,
+    "elements": [
+      [
+        286.44,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.44,
+        352.56,
+        "EATING PLACE"
+      ],
+      [
+        286.44,
+        434.64,
+        "LIGHT REFRESHMENT"
+      ],
+      [
+        286.44,
+        516.72,
+        "RESTING PLACE"
+      ],
+      [
+        286.44,
+        598.8,
+        "ALL OF THE ABOVE"
+      ],
+      [
+        286.44,
+        694.8,
+        "1"
+      ],
+      [
+        286.44,
+        88.56,
+        "75"
+      ],
+      [
+        286.44,
+        109.2,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        286.44,
+        352.56,
+        "EATING PLACE"
+      ],
+      [
+        286.44,
+        434.64,
+        "LIGHT REFRESHMENT"
+      ],
+      [
+        286.44,
+        516.72,
+        "RESTING PLACE"
+      ],
+      [
+        286.44,
+        598.8,
+        "ALL OF THE ABOVE"
+      ],
+      [
+        286.44,
+        694.8,
+        "1"
+      ]
+    ]
+  },
+  "76": {
+    "page": 12,
+    "elements": [
+      [
+        353.52,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.92,
+        88.56,
+        "HOSPITALRESTING PLACELIGHT REFRESHMENTALL OF THE AB"
+      ],
+      [
+        911.16,
+        88.56,
+        "OVE2"
+      ]
+    ]
+  },
+  "77": {
+    "page": 12,
+    "elements": [
+      [
+        353.52,
+        21.48,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.92,
+        21.48,
+        "RESTING PLACEHOSPITALFIRST AID POSTALL OF THE ABOVE"
+      ],
+      [
+        960.68,
+        21.48,
+        "2"
+      ]
+    ]
+  },
+  "78": {
+    "page": 12,
+    "elements": [
+      [
+        353.52,
+        -45.6,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        617.92,
+        -45.6,
+        "HOSPITALCROSS ROADSFIRST AID POSTNO PARKING3"
+      ]
+    ]
+  },
+  "79": {
+    "page": 13,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        88.56,
+        "FIRST AID POST"
+      ],
+      [
+        431.56,
+        93.6,
+        "NO THROUGH SIDE"
+      ],
+      [
+        431.56,
+        93.6,
+        "ROAD"
+      ],
+      [
+        513.77,
+        98.64,
+        "MAJOR ROAD AHEADNO THROUGH ROAD4"
+      ]
+    ]
+  },
+  "80": {
+    "page": 13,
+    "elements": [
+      [
+        84.96,
+        31.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        31.56,
+        "H-INTERSECTIONNO THROUGH ROADPARALLEL ROAD"
+      ],
+      [
+        595.97,
+        36.6,
+        "NO THROUGH SIDE"
+      ],
+      [
+        595.97,
+        36.6,
+        "ROAD"
+      ],
+      [
+        692.12,
+        41.64,
+        "4"
+      ]
+    ]
+  },
+  "81": {
+    "page": 13,
+    "elements": [
+      [
+        84.96,
+        -59.16,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        349.36,
+        -59.16,
+        "POST OFFICENO PARKINGPARK  THIS SIDENONE OF THE ABO"
+      ],
+      [
+        655.82,
+        -59.16,
+        "VE3"
+      ]
+    ]
+  },
+  "82": {
+    "page": 13,
+    "elements": [
+      [
+        387.24,
+        88.56,
+        "WHAT DOES THIS SIGN MEAN?"
+      ],
+      [
+        651.64,
+        88.56,
+        "POST OFFICENO PARKINGPARK  THIS SIDE"
+      ],
+      [
+        382.2,
+        598.8,
+        "PARKING FOR SCOOTERS"
+      ],
+      [
+        392.28,
+        598.8,
+        "AND MOTOR CYCLES"
+      ],
+      [
+        488.42,
+        603.84,
+        "4"
+      ]
+    ]
+  },
+  "83": {
+    "page": 13,
+    "elements": [
+      [
+        -98.06,
+        513.24,
+        "WHAT DOES THIS SIGNAL FROM A"
+      ],
+      [
+        -98.06,
+        513.24,
+        "POLICE OFFICER, MEAN TO"
+      ],
+      [
+        -98.06,
+        513.24,
+        "ONCOMING TRAFFIC?"
+      ],
+      [
+        487.68,
+        230.76,
+        "0"
+      ],
+      [
+        487.92,
+        352.56,
+        "GO AHEADSTOPTURN LEFTTURN RIGHT2"
+      ]
+    ]
+  },
+  "84": {
+    "page": 14,
+    "elements": [
+      [
+        105.63,
+        103.68,
+        "YOU APPROACH A JUNCTION.  THE"
+      ],
+      [
+        105.63,
+        103.68,
+        "TRAFFIC LIGHTS ARE NOT WORKING."
+      ],
+      [
+        105.63,
+        103.68,
+        "A POLICE OFFICER GIVES THIS"
+      ],
+      [
+        105.63,
+        103.68,
+        "SIGNAL. YOU SHOULD"
+      ],
+      [
+        349.36,
+        118.8,
+        "TURN LEFT ONLYTURN RIGHT ONLY"
+      ],
+      [
+        513.77,
+        123.84,
+        "STOP LEVEL WITH THE"
+      ],
+      [
+        513.77,
+        123.84,
+        "OFFICER'S ARM"
+      ],
+      [
+        595.97,
+        133.92,
+        "STOP BEFORE THE STOP"
+      ],
+      [
+        595.97,
+        133.92,
+        "LINE"
+      ],
+      [
+        692.11,
+        138.96,
+        "4"
+      ]
+    ]
+  },
+  "85": {
+    "page": 14,
+    "elements": [
+      [
+        105.63,
+        73.44,
+        "WHILE DRIVING TO MAKE A RIGHT"
+      ],
+      [
+        105.63,
+        73.44,
+        "TURN, THE PROPER HAND SIGNAL IS"
+      ],
+      [
+        155.16,
+        230.76,
+        "0"
+      ],
+      [
+        125.28,
+        352.56,
+        "EXTEND RIGHT PALM IN"
+      ],
+      [
+        125.28,
+        352.56,
+        "A HORIZONTAL"
+      ],
+      [
+        125.28,
+        352.56,
+        "POSITION OUTSIDE TO"
+      ],
+      [
+        125.28,
+        352.56,
+        "THE RIGHT OF VEHICLE"
+      ],
+      [
+        125.28,
+        352.56,
+        "WITH PALM OF THE"
+      ],
+      [
+        125.28,
+        352.56,
+        "HAND TURNED TO THE"
+      ],
+      [
+        125.28,
+        352.56,
+        "FRONT."
+      ],
+      [
+        207.48,
+        392.88,
+        "EXTEND RIGHT ARM"
+      ],
+      [
+        207.48,
+        392.88,
+        "AND ROTATE IN ANT-"
+      ],
+      [
+        207.48,
+        392.88,
+        "CLOCKWISE DIRECTION"
+      ],
+      [
+        289.69,
+        423.12,
+        "EXTEND RIGHT ARM"
+      ],
+      [
+        289.69,
+        423.12,
+        "WITH PALM"
+      ],
+      [
+        289.69,
+        423.12,
+        "DOWNWARD AND"
+      ],
+      [
+        289.69,
+        423.12,
+        "MOVE UP AND DOWN"
+      ],
+      [
+        289.69,
+        423.12,
+        "SEVERAL TIMES."
+      ],
+      [
+        371.89,
+        448.32,
+        "SOUND YOUR HORN"
+      ],
+      [
+        371.89,
+        448.32,
+        "REPEATEDLY"
+      ],
+      [
+        468.04,
+        453.36,
+        "1"
+      ]
+    ]
+  },
+  "86": {
+    "page": 14,
+    "elements": [
+      [
+        -118.45,
+        387.96,
+        "IF THE DRIVER IS GIVING THIS HAND"
+      ],
+      [
+        -118.45,
+        387.96,
+        "SIGNAL, WHAT DOES HE MEAN?"
+      ],
+      [
+        125.28,
+        403.08,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        125.28,
+        403.08,
+        "TO THE LEFT OR TO"
+      ],
+      [
+        125.28,
+        403.08,
+        "TURN LEFT"
+      ],
+      [
+        207.48,
+        423.24,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        207.48,
+        423.24,
+        "OUT TO THE RIGHT  OR"
+      ],
+      [
+        207.48,
+        423.24,
+        "TURN RIGHT"
+      ],
+      [
+        289.69,
+        433.32,
+        "HE INTENDS TO STOP"
+      ],
+      [
+        371.89,
+        438.36,
+        "HE INTENDS TO SLOW"
+      ],
+      [
+        371.89,
+        438.36,
+        "DOWN"
+      ],
+      [
+        468.04,
+        443.4,
+        "1"
+      ]
+    ]
+  },
+  "87": {
+    "page": 14,
+    "elements": [
+      [
+        288.0,
+        109.2,
+        "IF THE DRIVER IS GIVING THIS HAND"
+      ],
+      [
+        282.96,
+        352.56,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        293.04,
+        352.56,
+        "TO THE LEFT OR TO"
+      ],
+      [
+        282.96,
+        434.64,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        293.04,
+        434.64,
+        "OUT TO THE RIGHT  OR"
+      ],
+      [
+        293.04,
+        516.72,
+        "HE INTENDS TO STOP"
+      ],
+      [
+        288.0,
+        598.8,
+        "HE INTENDS TO SLOW"
+      ],
+      [
+        293.04,
+        694.8,
+        "2"
+      ],
+      [
+        293.04,
+        88.56,
+        "87"
+      ],
+      [
+        288.0,
+        109.2,
+        "IF THE DRIVER IS GIVING THIS HAND"
+      ],
+      [
+        298.08,
+        109.2,
+        "SIGNAL, WHAT DOES HE MEAN?"
+      ],
+      [
+        293.04,
+        352.56,
+        "TO THE LEFT OR TO"
+      ],
+      [
+        303.12,
+        352.56,
+        "TURN LEFT"
+      ],
+      [
+        293.04,
+        434.64,
+        "OUT TO THE RIGHT  OR"
+      ],
+      [
+        303.12,
+        434.64,
+        "TURN RIGHT"
+      ],
+      [
+        293.04,
+        516.72,
+        "HE INTENDS TO STOP"
+      ],
+      [
+        288.0,
+        598.8,
+        "HE INTENDS TO SLOW"
+      ],
+      [
+        298.08,
+        598.8,
+        "DOWN"
+      ],
+      [
+        293.04,
+        694.8,
+        "2"
+      ]
+    ]
+  },
+  "88": {
+    "page": 14,
+    "elements": [
+      [
+        380.79,
+        93.6,
+        "IF THE DRIVER IS GIVING THIS HAND"
+      ],
+      [
+        380.79,
+        93.6,
+        "SIGNAL, WHAT DOES HE MEAN?"
+      ],
+      [
+        624.52,
+        108.72,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        624.52,
+        108.72,
+        "TO THE LEFT OR TO"
+      ],
+      [
+        624.52,
+        108.72,
+        "TURN LEFT"
+      ],
+      [
+        706.72,
+        128.88,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        706.72,
+        128.88,
+        "OUT TO THE RIGHT  OR"
+      ],
+      [
+        706.72,
+        128.88,
+        "TURN RIGHT"
+      ],
+      [
+        788.93,
+        138.96,
+        "HE INTENDS TO STOP"
+      ],
+      [
+        871.13,
+        144.0,
+        "HE INTENDS TO SLOW"
+      ],
+      [
+        871.13,
+        144.0,
+        "DOWN"
+      ],
+      [
+        967.27,
+        149.04,
+        "3"
+      ]
+    ]
+  },
+  "89": {
+    "page": 14,
+    "elements": [
+      [
+        380.79,
+        87.0,
+        "IF THE DRIVER IS GIVING THIS HAND"
+      ],
+      [
+        380.79,
+        87.0,
+        "SIGNAL, WHAT DOES HE MEAN?"
+      ],
+      [
+        624.52,
+        102.12,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        624.52,
+        102.12,
+        "TO THE LEFT OR TO"
+      ],
+      [
+        624.52,
+        102.12,
+        "TURN LEFT"
+      ],
+      [
+        706.72,
+        122.28,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        706.72,
+        122.28,
+        "OUT TO THE RIGHT  OR"
+      ],
+      [
+        706.72,
+        122.28,
+        "TURN RIGHT"
+      ],
+      [
+        788.93,
+        132.36,
+        "HE INTENDS TO STOP"
+      ],
+      [
+        871.13,
+        137.4,
+        "HE INTENDS TO SLOW"
+      ],
+      [
+        871.13,
+        137.4,
+        "DOWN"
+      ],
+      [
+        967.27,
+        142.44,
+        "4"
+      ]
+    ]
+  },
+  "90": {
+    "page": 14,
+    "elements": [
+      [
+        380.79,
+        80.4,
+        "IF THE DRIVER IS GIVING THIS HAND"
+      ],
+      [
+        380.79,
+        80.4,
+        "SIGNAL, WHAT DOES HE MEAN?"
+      ],
+      [
+        624.52,
+        95.52,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        624.52,
+        95.52,
+        "TO THE LEFT OR TO"
+      ],
+      [
+        624.52,
+        95.52,
+        "TURN LEFT"
+      ],
+      [
+        706.72,
+        115.68,
+        "HE INTENDS TO MOVE"
+      ],
+      [
+        706.72,
+        115.68,
+        "OUT TO THE RIGHT  OR"
+      ],
+      [
+        706.72,
+        115.68,
+        "TURN RIGHT"
+      ],
+      [
+        788.93,
+        125.76,
+        "HE INTENDS TO STOP"
+      ],
+      [
+        871.13,
+        130.8,
+        "HE INTENDS TO GIVE"
+      ],
+      [
+        871.13,
+        130.8,
+        "WAY, TO BE OVERTAKEN"
+      ],
+      [
+        967.27,
+        135.84,
+        "4"
+      ]
+    ]
+  },
+  "91": {
+    "page": 15,
+    "elements": [
+      [
+        84.96,
+        88.56,
+        "BROKEN WHITE LINE INDICATES.."
+      ],
+      [
+        349.36,
+        93.6,
+        "CAN CHANGE LANE"
+      ],
+      [
+        349.36,
+        93.6,
+        "WITH CAUTION"
+      ],
+      [
+        431.56,
+        103.68,
+        "OVERTAKING"
+      ],
+      [
+        431.56,
+        103.68,
+        "PROHIBITED"
+      ],
+      [
+        513.77,
+        113.76,
+        "CHANGING OF LANE"
+      ],
+      [
+        513.77,
+        113.76,
+        "PROHIBITED"
+      ],
+      [
+        595.97,
+        118.8,
+        "NONE OF THE ABOVE1"
+      ]
+    ]
+  },
+  "92": {
+    "page": 15,
+    "elements": [
+      [
+        105.63,
+        56.76,
+        "CONTINUES WHITE OR YELLOW LINE"
+      ],
+      [
+        105.63,
+        56.76,
+        "INDICATES"
+      ],
+      [
+        349.36,
+        66.84,
+        "CAN CHANGE LANE"
+      ],
+      [
+        349.36,
+        66.84,
+        "WITH CAUTION"
+      ],
+      [
+        431.56,
+        81.96,
+        "LEFT SIDE VEHICLES CAN"
+      ],
+      [
+        431.56,
+        81.96,
+        "CHANGE  LANE WITH"
+      ],
+      [
+        431.56,
+        81.96,
+        "CAUTION"
+      ],
+      [
+        513.77,
+        97.08,
+        "CHANGING OF LANE"
+      ],
+      [
+        513.77,
+        97.08,
+        "PROHIBITED"
+      ],
+      [
+        595.97,
+        102.12,
+        "ALL OF THE ABOVE3"
+      ]
+    ]
+  },
+  "93": {
+    "page": 15,
+    "elements": [
+      [
+        105.63,
+        36.6,
+        "LEFT SIDE BROKEN LINE AND"
+      ],
+      [
+        105.63,
+        36.6,
+        "ADJACENT SOLID LINE MEANS"
+      ],
+      [
+        349.36,
+        71.88,
+        "OVERTAKING IS"
+      ],
+      [
+        349.36,
+        71.88,
+        "PERMITTED WITH CARE"
+      ],
+      [
+        349.36,
+        71.88,
+        "OF TRAFFIC ADJACENT"
+      ],
+      [
+        349.36,
+        71.88,
+        "TO THE SOLID LINE, BUT"
+      ],
+      [
+        349.36,
+        71.88,
+        "PROHIBITED FOR"
+      ],
+      [
+        349.36,
+        71.88,
+        "TRAFFIC ADJACENT TO"
+      ],
+      [
+        349.36,
+        71.88,
+        "BROKEN LINE"
+      ],
+      [
+        431.56,
+        132.36,
+        "OVERTAKING IS"
+      ],
+      [
+        431.56,
+        132.36,
+        "PERMITTED WITH CARE"
+      ],
+      [
+        431.56,
+        132.36,
+        "OF TRAFFIC ADJACENT"
+      ],
+      [
+        431.56,
+        132.36,
+        "TO THE BROKEN LINE,"
+      ],
+      [
+        431.56,
+        132.36,
+        "BUT PROHIBITED FOR"
+      ],
+      [
+        431.56,
+        132.36,
+        "TRAFFIC ADJACENT TO"
+      ],
+      [
+        431.56,
+        132.36,
+        "SOLID LINE"
+      ],
+      [
+        513.77,
+        167.64,
+        "CHANGING OF LANE"
+      ],
+      [
+        513.77,
+        167.64,
+        "PROHIBITED"
+      ],
+      [
+        595.97,
+        172.68,
+        "ALL OF THE ABOVE2"
+      ]
+    ]
+  },
+  "94": {
+    "page": 15,
+    "elements": [
+      [
+        293.04,
+        109.2,
+        "TWO SOLID YELLOW LINES MEANS"
+      ],
+      [
+        277.92,
+        352.56,
+        "YOU MUST NOT CROSS"
+      ],
+      [
+        288.0,
+        352.56,
+        "THESE LINES TO"
+      ],
+      [
+        293.04,
+        434.64,
+        "ONE WAY ROAD"
+      ],
+      [
+        288.0,
+        516.72,
+        "CAN CHANGE LANE"
+      ],
+      [
+        293.04,
+        598.8,
+        "NONE OF THE ABOVE"
+      ],
+      [
+        293.04,
+        694.8,
+        "1"
+      ],
+      [
+        293.04,
+        88.56,
+        "94"
+      ],
+      [
+        293.04,
+        109.2,
+        "TWO SOLID YELLOW LINES MEANS"
+      ],
+      [
+        288.0,
+        352.56,
+        "THESE LINES TO"
+      ],
+      [
+        298.08,
+        352.56,
+        "OVERTAKE OR MAKE A U-"
+      ],
+      [
+        308.16,
+        352.56,
+        "TURN"
+      ],
+      [
+        293.04,
+        434.64,
+        "ONE WAY ROAD"
+      ],
+      [
+        288.0,
+        516.72,
+        "CAN CHANGE LANE"
+      ],
+      [
+        298.08,
+        516.72,
+        "WITH CAUTION"
+      ],
+      [
+        293.04,
+        598.8,
+        "NONE OF THE ABOVE"
+      ],
+      [
+        293.04,
+        694.8,
+        "1"
+      ]
+    ]
+  }
+}

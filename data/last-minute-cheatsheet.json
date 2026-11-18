@@ -1,0 +1,89 @@
+{
+  "title": {
+    "en": "Morning-of-the-Test 10-Minute Rapid Revision",
+    "te": "పరీక్ష రోజు ఉదయం 10 నిమిషాల శీఘ్ర రివిజన్",
+    "hi": "परीक्षा के दिन सुबह 10 मिनट का त्वरित रिवीजन"
+  },
+  "goldenRules": [
+    {
+      "id": "gr_1",
+      "rule": {
+        "en": "Pass mark is 12 out of 20 (60%). As soon as you hit 12 correct, you pass immediately!",
+        "te": "పాస్ మార్కు 20కి 12 (60%). 12 సరైన సమాధానాలు రాగానే పరీక్ష పాస్ అయిపోతారు!",
+        "hi": "पास होने के लिए 20 में से 12 (60%) अंक चाहिए। 12 सही होते ही आप तुरंत पास हो जाएंगे!"
+      }
+    },
+    {
+      "id": "gr_2",
+      "rule": {
+        "en": "Circles = Mandatory Orders (Red border = Stop/No, Blue background = Must do). Triangles = Warnings (Caution). Rectangles = Information.",
+        "te": "సర్కిల్ = తప్పనిసరి ఆర్డర్లు (ఎరుపు సరిహద్దు = వద్దు, నీలం = తప్పక చేయాలి). త్రిభుజం = హెచ్చరికలు. దీర్ఘచతురస్రం = సమాచారం.",
+        "hi": "गोला = अनिवार्य आदेश (लाल बॉर्डर = निषेध, नीला = अवश्य करें)। त्रिकोण = चेतावनी। आयत = जानकारी।"
+      }
+    },
+    {
+      "id": "gr_3",
+      "rule": {
+        "en": "Pedestrians ALWAYS have the right of way at uncontrolled pedestrian / zebra crossings.",
+        "te": "పాదచారులకు జీబ్రా క్రాసింగ్ వద్ద ఎల్లప్పుడూ మొదటి ప్రాధాన్యత (Right of Way) ఉంటుంది.",
+        "hi": "जेब्रा क्रॉसिंग पर पैदल यात्रियों को हमेशा पहला अधिकार (Right of Way) होता है।"
+      }
+    },
+    {
+      "id": "gr_4",
+      "rule": {
+        "en": "Overtaking must ALWAYS be done from the RIGHT side. Overtaking from the left is only permitted if the vehicle ahead signals a right turn and moves to the road center.",
+        "te": "ఓవర్‌టేకింగ్ ఎల్లప్పుడూ కుడి వైపు నుంచే చేయాలి. ముందు వాహనం కుడి వైపు తిరిగే సంకేతం ఇచ్చి రోడ్డు మధ్యలోకి వస్తేనే ఎడమ నుండి ఓవర్‌టేక్ చేయవచ్చు.",
+        "hi": "ओवरटेकिंग हमेशा दाईं ओर से ही की जानी चाहिए। केवल तभी बाईं ओर से कर सकते हैं जब आगे वाला वाहन दाईं ओर मुड़ने का संकेत दे रहा हो।"
+      }
+    },
+    {
+      "id": "gr_5",
+      "rule": {
+        "en": "On steep hills / slopes, vehicles travelling UPHILL have priority over vehicles travelling downhill.",
+        "te": "కొండ ప్రాంతాల్లో పైకి ఎక్కే వాహనాలకు మొదటి ప్రాధాన్యత ఇవ్వాలి (కిందికి దిగే వాహనాలు ఆగాలి).",
+        "hi": "पहाड़ी ढलानों पर ऊपर चढ़ने वाले वाहनों को नीचे उतरने वाले वाहनों पर प्राथमिकता होती है।"
+      }
+    },
+    {
+      "id": "gr_6",
+      "rule": {
+        "en": "Emergency Phone Numbers: Police = 100, Ambulance = 108, Fire = 101.",
+        "te": "అత్యవసర ఫోన్ నంబర్లు: పోలీస్ = 100, అంబులెన్స్ = 108, ఫైర్ = 101.",
+        "hi": "आपातकालीन नंबर: पुलिस = 100, एम्बुलेंस = 108, फायर = 101।"
+      }
+    },
+    {
+      "id": "gr_7",
+      "rule": {
+        "en": "Valid Learner's Licence is valid for 6 months (180 days). You can apply for a permanent licence after 30 days.",
+        "te": "లెర్నర్స్ లైసెన్స్ (LLR) కాలపరిమితి 6 నెలలు (180 రోజులు). 30 రోజుల తర్వాత శాశ్వత డ్రైవింగ్ లైసెన్స్ కోసం దరఖాస్తు చేసుకోవచ్చు.",
+        "hi": "लर्नर लाइसेंस (LLR) 6 महीने (180 दिन) के लिए वैध होता है। 30 दिन बाद पक्के लाइसेंस के लिए आवेदन कर सकते हैं।"
+      }
+    },
+    {
+      "id": "gr_8",
+      "rule": {
+        "en": "White Stick carried by a pedestrian indicates that the person is BLIND.",
+        "te": "చేతిలో తెల్లటి కర్ర పట్టుకుని రోడ్డు దాటే వ్యక్తి అంధుడు (Blind) అని అర్థం.",
+        "hi": "सफेद छड़ी लेकर चलने वाला व्यक्ति दृष्टिहीन (नेत्रहीन) होता है।"
+      }
+    },
+    {
+      "id": "gr_9",
+      "rule": {
+        "en": "Solid Yellow/White Lines: You MUST NOT cross to overtake or make a U-turn. Stay strictly in your lane.",
+        "te": "రోడ్డుపై నిరంతర పసుపు/తెల్లటి గీత ఉంటే ఎట్టి పరిస్థితుల్లోనూ ఓవర్‌టేక్ లేదా యూ-టర్న్ చేయకూడదు.",
+        "hi": "सड़क पर लगातार पीली/सफेद लाइन को ओवरटेक या यू-टर्न के लिए पार नहीं कर सकते।"
+      }
+    },
+    {
+      "id": "gr_10",
+      "rule": {
+        "en": "Amber light at a traffic signal: Stop before the stop line unless you are so close that stopping suddenly would cause an accident.",
+        "te": "పసుపు (ఆంబర్) లైట్: స్టాప్ లైన్ వద్ద ఆగడానికి సిద్ధం కావాలి. అప్పటికే లైన్ దాటి ఉంటేనే సురక్షితంగా వెళ్లాలి.",
+        "hi": "पीली (एम्बर) बत्ती: स्टॉप लाइन से पहले रुकें, जब तक कि अचानक रुकने से दुर्घटना का खतरा न हो।"
+      }
+    }
+  ]
+}

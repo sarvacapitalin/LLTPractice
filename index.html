@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Telangana RTA Learner's Licence Practice • Official STALL Test</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/exam-stall.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0B2545">
+  <meta name="description" content="Prepare for Telangana RTA Learner's Licence Test (LLR / STALL) in Hyderabad with authentic 20-question computerized mock exams, 95% readiness tracking, and trilingual support.">
+</head>
+<body>
+  <!-- Application Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-section">
+        <div class="gov-emblem" aria-hidden="true">🏛️</div>
+        <div class="brand-titles">
+          <h1 data-i18n="app_title">Telangana RTA Learner's Licence Practice</h1>
+          <span class="subtitle" data-i18n="app_subtitle">Official STALL Computerized Test Simulator • Hyderabad RTO</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Readiness Meter -->
+        <div class="readiness-badge" id="btn-readiness-badge" title="Click to view readiness breakdown">
+          <div class="readiness-info">
+            <span class="readiness-label" data-i18n="readiness_label">Exam Readiness</span>
+            <span class="readiness-percent" id="header-readiness-val">0%</span>
+          </div>
+          <div class="readiness-bar-mini">
+            <div class="readiness-fill-mini" id="header-readiness-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Sync Button -->
+        <button class="control-btn" id="btn-sync-modal" title="Sync progress between Phone and Laptop">
+          <span>📲</span> <span data-i18n="sync_devices">Sync</span>
+        </button>
+
+        <!-- Sound Toggle -->
+        <button class="control-btn" id="btn-sound-toggle" title="Toggle Sound Effects">
+          <span id="sound-icon">🔔</span>
+        </button>
+
+        <!-- Language Selector -->
+        <select class="lang-select" id="select-language" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="te">తెలుగు</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-bar" aria-label="Main Navigation">
+    <div class="nav-tabs" role="tablist">
+      <button class="nav-tab active" role="tab" data-tab="tab-exam" aria-selected="true">
+        <span>🚦</span> <span data-i18n="tab_mock_test">Mock Test (STALL)</span>
+      </button>
+      <button class="nav-tab" role="tab" data-tab="tab-practice" aria-selected="false">
+        <span>📚</span> <span data-i18n="tab_topic_practice">Topic Practice</span>
+      </button>
+      <button class="nav-tab" role="tab" data-tab="tab-flashcards" aria-selected="false">
+        <span>🗂️</span> <span data-i18n="tab_flashcards">Sign Flashcards</span>
+      </button>
+      <button class="nav-tab" role="tab" data-tab="tab-twins" aria-selected="false">
+        <span>🔍</span> <span data-i18n="tab_tricky_twins">Tricky Twins</span>
+      </button>
+      <button class="nav-tab" role="tab" data-tab="tab-cheatsheet" aria-selected="false">
+        <span>⚡</span> <span data-i18n="tab_cheatsheet">Rapid Cheatsheet</span>
+      </button>
+      <button class="nav-tab" role="tab" data-tab="tab-guide" aria-selected="false">
+        <span>🏢</span> <span data-i18n="tab_rto_guide">Hyderabad RTO Guide</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+    <!-- TAB 1: STALL EXAM SIMULATOR -->
+    <section id="tab-exam" class="tab-pane active" role="tabpanel">
+      <div id="exam-intro-card" class="stall-exam-wrapper" style="padding: 24px;">
+        <h2 style="font-size: 1.4rem; color: var(--primary-navy); margin-bottom: 8px;" data-i18n="tab_mock_test">Mock Test (STALL)</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 16px;" data-i18n="exam_rule_banner">
+          Telangana STALL Exam: 20 Questions (8 Signs + 8 Rules + 4 Principles). Pass: 12 Correct. 30 seconds per question.
+        </p>
+
+        <!-- Readiness Gate Notice -->
+        <div id="readiness-gate-card" style="background: var(--accent-gold-light); border: 1px solid #FCD34D; border-radius: var(--radius-md); padding: 14px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <strong style="color: #92400E; display: block; font-size: 0.95rem;">95% Exam Readiness Tracker</strong>
+            <span style="font-size: 0.82rem; color: #78350F;">Master at least 391 of 412 questions (2 correct streaks required) to guarantee passing on test day.</span>
+          </div>
+          <button id="btn-reset-readiness-mini" style="background: none; border: 1px solid #B45309; color: #B45309; padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.78rem; font-weight: 600; cursor: pointer;">
+            🔄 Reset Progress to 0%
+          </button>
+        </div>
+
+        <button id="btn-start-exam-main" class="confirm-next-btn" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 16px;">
+          🚦 <span data-i18n="btn_start_exam">START NEW MOCK TEST</span>
+        </button>
+      </div>
+
+      <!-- Active STALL Workstation Screen -->
+      <div id="exam-active-card" class="stall-exam-wrapper" style="display: none;">
+        <!-- Top Status Bar -->
+        <div class="stall-top-bar">
+          <div class="applicant-card">
+            <div class="applicant-avatar">A</div>
+            <div class="applicant-details">
+              <span class="applicant-name" data-i18n="applicant_name">Applicant: LLR Candidate</span>
+              <span class="applicant-meta" data-i18n="applicant_token">Token: STALL-HYD-042</span>
+            </div>
+          </div>
+
+          <!-- Quota Tracker -->
+          <div class="quota-tracker">
+            <div class="quota-item" id="quota-signs">
+              <span>🚸 Signs:</span> <span class="quota-count" id="count-signs">0/8</span>
+            </div>
+            <div class="quota-item" id="quota-rules">
+              <span>🛑 Rules:</span> <span class="quota-count" id="count-rules">0/8</span>
+            </div>
+            <div class="quota-item" id="quota-principles">
+              <span>🚗 Principles:</span> <span class="quota-count" id="count-principles">0/4</span>
+            </div>
+          </div>
+
+          <!-- Circular 30s Timer -->
+          <div class="stall-timer-container">
+            <div class="timer-box">
+              <svg class="timer-svg" viewBox="0 0 54 54">
+                <circle class="timer-circle-bg" cx="27" cy="27" r="23"></circle>
+                <circle class="timer-circle-progress" id="timer-progress-circle" cx="27" cy="27" r="23"></circle>
+              </svg>
+              <div class="timer-number" id="timer-seconds-display">30</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question Body -->
+        <div class="stall-body">
+          <div class="question-header">
+            <span class="question-badge" id="exam-q-badge">Question 1 of 20</span>
+            <button class="speech-read-btn" id="btn-read-question" title="Read Question Aloud">
+              <span>🔊</span> <span data-i18n="voice_read">Read Aloud</span>
+            </button>
+          </div>
+
+          <h3 class="question-text" id="exam-q-text">Loading question text...</h3>
+
+          <!-- Visual Image Box (for Signs and Scenarios) -->
+          <div class="question-visual-box" id="exam-q-visual" style="display: none;">
+            <img id="exam-q-img" class="question-image" src="" alt="Traffic Sign / Scenario">
+          </div>
+
+          <!-- 4 Options Grid -->
+          <div class="options-grid" id="exam-options-container">
+            <!-- Dynamically populated option cards -->
+          </div>
+        </div>
+
+        <!-- STALL Bottom Footer -->
+        <div class="stall-footer">
+          <label class="guess-flag-container">
+            <input type="checkbox" id="exam-guess-checkbox">
+            <span class="guess-flag-label" data-i18n="guess_checkbox">🤔 I guessed this answer (keep on probation)</span>
+          </label>
+
+          <button class="confirm-next-btn" id="btn-confirm-next" disabled>
+            <span data-i18n="btn_confirm_next">CONFIRM & NEXT</span> ➔
+          </button>
+        </div>
+      </div>
+
+      <!-- Result Screen (Early Stop / Finish) -->
+      <div id="exam-result-card" class="stall-exam-wrapper" style="display: none;">
+        <div class="result-screen">
+          <div id="result-badge" class="result-badge-big pass">✓</div>
+          <h2 id="result-heading" class="result-title pass" data-i18n="result_pass">CONGRATULATIONS! YOU PASSED</h2>
+          <div class="score-display">
+            <span id="result-score-text">Score: 12 out of 15 (80%)</span>
+          </div>
+          <p id="result-explanation" style="max-width: 500px; color: var(--text-secondary);" data-i18n="result_pass_desc">
+            You reached the passing mark of 12 correct! You are well prepared for the real RTA exam.
+          </p>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 10px;">
+            <button id="btn-retake-exam" class="confirm-next-btn">
+              🔄 <span data-i18n="btn_restart_exam">TAKE ANOTHER TEST</span>
+            </button>
+            <a id="btn-share-whatsapp" class="share-whatsapp-btn" target="_blank" rel="noopener">
+              <span>💬</span> <span data-i18n="whatsapp_share">Share Score on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: TOPIC PRACTICE (412 QUESTIONS) -->
+    <section id="tab-practice" class="tab-pane" role="tabpanel">
+      <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 20px; box-shadow: var(--shadow-md);">
+        <!-- Filter Controls -->
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; justify-content: space-between;">
+          <!-- Category Tabs -->
+          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            <button class="control-btn active-filter" data-practice-cat="all" style="background: var(--secondary-blue); color: #fff;">All (412)</button>
+            <button class="control-btn" data-practice-cat="road_signs" style="background: #F1F5F9; color: #334155;">Road Signs (94)</button>
+            <button class="control-btn" data-practice-cat="rules_of_road" style="background: #F1F5F9; color: #334155;">Traffic Rules (159)</button>
+            <button class="control-btn" data-practice-cat="general_principles" style="background: #F1F5F9; color: #334155;">Driving Principles (159)</button>
+          </div>
+
+          <!-- Status Filters -->
+          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            <select id="practice-status-filter" class="lang-select" style="background: #F8FAFC; color: #1E293B; border-color: #CBD5E1;">
+              <option value="all">All Statuses</option>
+              <option value="unseen">Unseen Only</option>
+              <option value="probation">Needs Practice (Streak &lt; 2)</option>
+              <option value="mastered">Mastered (Streak ≥ 2)</option>
+              <option value="guessed">Guessed Questions</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div style="margin-bottom: 16px;">
+          <input type="text" id="practice-search-input" placeholder="Search questions by keyword or number..." data-i18n="search_placeholder" style="width: 100%; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: var(--radius-md); font-size: 0.95rem; outline: none;">
+        </div>
+
+        <!-- Question Detail / Practice Viewer -->
+        <div id="practice-active-q-view" style="border: 2px solid var(--border-color); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px; background: #FAFBFD;">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- 412 Question Number Matrix -->
+        <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 10px;">Question Navigator</h4>
+        <div id="practice-matrix" style="display: flex; flex-wrap: wrap; gap: 6px; max-height: 220px; overflow-y: auto; padding: 10px; background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+          <!-- Matrix chips -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: SIGN FLASHCARDS (94 SIGNS) -->
+    <section id="tab-flashcards" class="tab-pane" role="tabpanel">
+      <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <!-- Filter chips -->
+        <div style="display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap;">
+          <button class="control-btn" data-fc-filter="all" style="background: var(--secondary-blue); color: #fff;">All (94)</button>
+          <button class="control-btn" data-fc-filter="mandatory" style="background: #F1F5F9; color: #334155;">Mandatory</button>
+          <button class="control-btn" data-fc-filter="cautionary" style="background: #F1F5F9; color: #334155;">Cautionary</button>
+          <button class="control-btn" data-fc-filter="informatory" style="background: #F1F5F9; color: #334155;">Informatory</button>
+          <button class="control-btn" data-fc-filter="unmastered" style="background: #F1F5F9; color: #334155;">Unmastered Only</button>
+        </div>
+
+        <!-- Flashcard View -->
+        <div id="flashcard-box" style="background: #FFFFFF; border: 2px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px 20px; min-height: 320px; box-shadow: var(--shadow-lg); cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; transition: transform 0.2s;">
+          <div id="fc-front-view" style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+            <img id="fc-image" src="" alt="Road Sign" style="max-height: 160px; object-fit: contain;">
+            <span id="fc-type-badge" style="background: #EFF6FF; color: var(--secondary-blue); font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: 4px;">MANDATORY</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="fc_flip">Tap to Flip Card</span>
+          </div>
+
+          <div id="fc-back-view" style="display: none; flex-direction: column; align-items: center; gap: 12px; padding: 10px;">
+            <h3 id="fc-sign-name" style="font-size: 1.3rem; color: var(--text-primary); font-weight: 800;">SIGN NAME</h3>
+            <p id="fc-sign-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.4; max-width: 440px;">Official meaning...</p>
+          </div>
+        </div>
+
+        <!-- Flashcard Controls -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 18px;">
+          <button id="btn-fc-prev" class="control-btn" style="background: #E2E8F0; color: #1E293B;">← Previous</button>
+          <div style="display: flex; gap: 10px;">
+            <button id="btn-fc-study-again" class="control-btn" style="background: var(--danger-bg); color: var(--danger-red); border-color: #FECACA;">Study Again</button>
+            <button id="btn-fc-mastered" class="control-btn" style="background: var(--success-bg); color: var(--success-green); border-color: #BBF7D0;">I Know This</button>
+          </div>
+          <button id="btn-fc-next" class="control-btn" style="background: #E2E8F0; color: #1E293B;">Next →</button>
+        </div>
+        <div id="fc-counter" style="margin-top: 10px; font-size: 0.82rem; color: var(--text-muted);">Card 1 of 94</div>
+      </div>
+    </section>
+
+    <!-- TAB 4: TRICKY TWINS -->
+    <section id="tab-twins" class="tab-pane" role="tabpanel">
+      <div id="twins-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
+        <!-- Populated dynamically from data/tricky-twins.json -->
+      </div>
+    </section>
+
+    <!-- TAB 5: RAPID CHEATSHEET -->
+    <section id="tab-cheatsheet" class="tab-pane" role="tabpanel">
+      <div id="cheatsheet-container" style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-md);">
+        <!-- Populated dynamically from data/last-minute-cheatsheet.json -->
+      </div>
+    </section>
+
+    <!-- TAB 6: HYDERABAD RTO GUIDE -->
+    <section id="tab-guide" class="tab-pane" role="tabpanel">
+      <div id="rto-guide-container" style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-md);">
+        <!-- Populated dynamically from data/rto-guide.json -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Sync Modal -->
+  <div id="modal-sync" style="display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 200; align-items: center; justify-content: center; padding: 16px;">
+    <div style="background: #FFFFFF; border-radius: var(--radius-lg); max-width: 480px; width: 100%; padding: 24px; box-shadow: var(--shadow-lg); text-align: center;">
+      <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 8px;" data-i18n="sync_title">Cross-Device Practice Sync</h3>
+      <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;" data-i18n="sync_desc">
+        Scan this QR code with your mobile phone to instantly import your progress from this laptop.
+      </p>
+
+      <div id="sync-qr-container" style="display: flex; justify-content: center; margin-bottom: 16px;">
+        <!-- QR SVG -->
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px;">
+        <button id="btn-export-backup" class="control-btn" style="background: var(--secondary-blue); color: #fff; justify-content: center;">
+          💾 <span data-i18n="sync_export_file">Download Backup File (.json)</span>
+        </button>
+        <label class="control-btn" style="background: #F1F5F9; color: #334155; justify-content: center; cursor: pointer;">
+          📂 <span data-i18n="sync_import_file">Import Backup File</span>
+          <input type="file" id="input-sync-file" accept=".json" style="display: none;">
+        </label>
+      </div>
+
+      <button id="btn-close-sync" style="margin-top: 18px; background: none; border: none; color: var(--text-muted); font-weight: 600; cursor: pointer;">Close</button>
+    </div>
+  </div>
+
+  <!-- Reset Confirmation Modal -->
+  <div id="modal-reset" style="display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 200; align-items: center; justify-content: center; padding: 16px;">
+    <div style="background: #FFFFFF; border-radius: var(--radius-lg); max-width: 420px; width: 100%; padding: 24px; box-shadow: var(--shadow-lg); text-align: center;">
+      <div style="font-size: 36px; margin-bottom: 8px;">⚠️</div>
+      <h3 style="font-size: 1.2rem; color: var(--danger-red); margin-bottom: 8px;" data-i18n="reset_progress">Reset Progress</h3>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px;" data-i18n="reset_confirm">
+        Are you sure you want to reset all practice progress back to 0%? This cannot be undone.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <button id="btn-cancel-reset" class="control-btn" style="background: #E2E8F0; color: #1E293B;">Cancel</button>
+        <button id="btn-confirm-reset" class="control-btn" style="background: var(--danger-red); color: #FFFFFF;">Yes, Reset to 0%</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript App Controller -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

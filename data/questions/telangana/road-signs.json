@@ -1,0 +1,3574 @@
+[
+  {
+    "id": "TS_RS_001",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 1,
+    "image": "assets/signs/sign_001.png",
+    "text": {
+      "en": "A RED TRAFFIC LIGHT MEANS",
+      "te": "ఎరుపు రంగు (రెడ్) ట్రాఫిక్ సిగ్నల్ పడినప్పుడు ఏమిటి అర్ధం ?",
+      "hi": "यातायात की लालबत्ती का मतलब"
+    },
+    "options": {
+      "en": [
+        "MUST STOP BEHIND WHITE STOP LINE",
+        "YOU MAY GO STRAIGHT IF NO TRAFFIC",
+        "YOU MAY TURN LEFT IF SAFE",
+        "SLOW DOWN AND PREPARE TO STOP"
+      ],
+      "te": [
+        "తెల్లటి స్టాప్లైన్ దాటకుండా ఆగాలని అర్ధం",
+        "ట్రాఫిక్ లేనప్పుడు ముందుకు వెళ్లమని అర్ధం",
+        "సురక్షితమైతే ఎడమ వైపు తిరగవచ్చు",
+        "ట్రాఫిక్ ప్రారంభమైతే వేగం తగ్గించాలి"
+      ],
+      "hi": [
+        "सफेद लाइन के पीछे रुकें",
+        "ट्रैफिक न हो तो सीधे चले जाएं",
+        "सुरक्षित महसूस होने पर बाएं मुड़ें",
+        "यदि यातायात शुरू हो तो धीमे चलें"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "A red traffic light requires a complete stop behind the stop line. No movement is permitted until the signal turns green.",
+      "te": "సరైన సమాధానం: MUST STOP BEHIND WHITE STOP LINE. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: MUST STOP BEHIND WHITE STOP LINE. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_002",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 2,
+    "image": "assets/signs/sign_002.png",
+    "text": {
+      "en": "A FLASHING YELLOW LIGHT INDICATES",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 2)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 2)"
+    },
+    "options": {
+      "en": [
+        "SLOW DOWN AND PROCEED WITH CAUTION",
+        "NO ENTRY",
+        "STOP HERE",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: SLOW DOWN AND PROCEED WITH CAUTION",
+        "ఆప్షన్ 2: NO ENTRY",
+        "ఆప్షన్ 3: STOP HERE",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: SLOW DOWN AND PROCEED WITH CAUTION",
+        "विकल्प 2: NO ENTRY",
+        "विकल्प 3: STOP HERE",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "A flashing amber/yellow signal indicates hazard. Slow down, check both directions, and proceed with caution.",
+      "te": "సరైన సమాధానం: SLOW DOWN AND PROCEED WITH CAUTION. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: SLOW DOWN AND PROCEED WITH CAUTION. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_003",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 3,
+    "image": "assets/signs/sign_003.png",
+    "text": {
+      "en": "A FLASHING RED LIGHT INDICATES",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 3)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 3)"
+    },
+    "options": {
+      "en": [
+        "STOP",
+        "BRIGHT SUN",
+        "STOP, OBSERVE AND PROCEED WITH CAUTION",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: STOP",
+        "ఆప్షన్ 2: BRIGHT SUN",
+        "ఆప్షన్ 3: STOP, OBSERVE AND PROCEED WITH CAUTION",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: STOP",
+        "विकल्प 2: BRIGHT SUN",
+        "विकल्प 3: STOP, OBSERVE AND PROCEED WITH CAUTION",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 2,
+    "explanation": {
+      "en": "A flashing red light acts like a STOP sign. Come to a complete standstill, ensure the intersection is clear, then proceed.",
+      "te": "సరైన సమాధానం: STOP, OBSERVE AND PROCEED WITH CAUTION. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: STOP, OBSERVE AND PROCEED WITH CAUTION. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_004",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 4,
+    "image": "assets/signs/sign_004.png",
+    "text": {
+      "en": "THE SIGNS MARKED IN THIS OCTAGON ARE",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 4)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 4)"
+    },
+    "options": {
+      "en": [
+        "STOP",
+        "GIVE WAY",
+        "NO ENTRY",
+        "RESTRICTION ENDS"
+      ],
+      "te": [
+        "ఆప్షన్ 1: STOP",
+        "ఆప్షన్ 2: GIVE WAY",
+        "ఆప్షన్ 3: NO ENTRY",
+        "ఆప్షన్ 4: RESTRICTION ENDS"
+      ],
+      "hi": [
+        "विकल्प 1: STOP",
+        "विकल्प 2: GIVE WAY",
+        "विकल्प 3: NO ENTRY",
+        "विकल्प 4: RESTRICTION ENDS"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The 8-sided octagon STOP sign is mandatory. Every driver must bring their vehicle to a complete stop.",
+      "te": "సరైన సమాధానం: STOP. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: STOP. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_005",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 5,
+    "image": "assets/signs/sign_005.png",
+    "text": {
+      "en": "THE SIGNS MARKED IN AN INVERTED TRIANGLE ARE",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 5)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 5)"
+    },
+    "options": {
+      "en": [
+        "GIVE WAY",
+        "STOP",
+        "NO ENTRY",
+        "PEDESTRIAN CROSSING"
+      ],
+      "te": [
+        "ఆప్షన్ 1: GIVE WAY",
+        "ఆప్షన్ 2: STOP",
+        "ఆప్షన్ 3: NO ENTRY",
+        "ఆప్షన్ 4: PEDESTRIAN CROSSING"
+      ],
+      "hi": [
+        "विकल्प 1: GIVE WAY",
+        "विकल्प 2: STOP",
+        "विकल्प 3: NO ENTRY",
+        "विकल्प 4: PEDESTRIAN CROSSING"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "An inverted equilateral triangle means GIVE WAY. Yield to circulating or cross traffic on the main road.",
+      "te": "సరైన సమాధానం: GIVE WAY. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: GIVE WAY. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_006",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 6,
+    "image": "assets/signs/sign_006.png",
+    "text": {
+      "en": "THE SIGNS MARKED IN THIS CIRCLE ARE",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 6)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 6)"
+    },
+    "options": {
+      "en": [
+        "MANDATORY / REGULATORY",
+        "CAUTIONARY / WARNING",
+        "INFORMATORY",
+        "ALL OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: MANDATORY / REGULATORY",
+        "ఆప్షన్ 2: CAUTIONARY / WARNING",
+        "ఆప్షన్ 3: INFORMATORY",
+        "ఆప్షన్ 4: ALL OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: MANDATORY / REGULATORY",
+        "विकल्प 2: CAUTIONARY / WARNING",
+        "विकल्प 3: INFORMATORY",
+        "विकल्प 4: ALL OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Circular signs with red borders are Mandatory (Regulatory) signs. Violating them is a penal offense.",
+      "te": "సరైన సమాధానం: MANDATORY / REGULATORY. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: MANDATORY / REGULATORY. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_007",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 7,
+    "image": "assets/signs/sign_007.png",
+    "text": {
+      "en": "THE SIGNS MARKED IN THIS TRIANGLE ARE",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 7)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 7)"
+    },
+    "options": {
+      "en": [
+        "MANDATORY",
+        "CAUTIONARY / WARNING",
+        "INFORMATORY",
+        "ALL OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: MANDATORY",
+        "ఆప్షన్ 2: CAUTIONARY / WARNING",
+        "ఆప్షన్ 3: INFORMATORY",
+        "ఆప్షన్ 4: ALL OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: MANDATORY",
+        "विकल्प 2: CAUTIONARY / WARNING",
+        "विकल्प 3: INFORMATORY",
+        "विकल्प 4: ALL OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 1,
+    "explanation": {
+      "en": "Triangular signs with red borders are Cautionary (Warning) signs that alert drivers to upcoming road hazards.",
+      "te": "సరైన సమాధానం: CAUTIONARY / WARNING. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: CAUTIONARY / WARNING. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_008",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 8,
+    "image": "assets/signs/sign_008.png",
+    "text": {
+      "en": "THE SIGNS MARKED IN THIS RECTANGLE ARE",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 8)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 8)"
+    },
+    "options": {
+      "en": [
+        "MANDATORY",
+        "CAUTIONARY",
+        "INFORMATORY",
+        "ALL OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: MANDATORY",
+        "ఆప్షన్ 2: CAUTIONARY",
+        "ఆప్షన్ 3: INFORMATORY",
+        "ఆప్షన్ 4: ALL OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: MANDATORY",
+        "विकल्प 2: CAUTIONARY",
+        "विकल्प 3: INFORMATORY",
+        "विकल्प 4: ALL OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 2,
+    "explanation": {
+      "en": "Rectangular or square blue signs are Informatory signs that provide directions, distances, and facility locations.",
+      "te": "సరైన సమాధానం: INFORMATORY. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: INFORMATORY. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_009",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 9,
+    "image": "assets/signs/sign_009.png",
+    "text": {
+      "en": "ON A ONE WAY ROAD, YOU REALISED THAT YOU ARE TRAVELLING AGAINST DIRECTION, YOU SHOULD",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 9)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 9)"
+    },
+    "options": {
+      "en": [
+        "REVERSE OUT OF THE ROAD",
+        "DRIVE WITH BLOWING HORN",
+        "CONTINUE TO THE END OF THE ROAD",
+        "CONTINUE TO DRIVE IN REVERSE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: REVERSE OUT OF THE ROAD",
+        "ఆప్షన్ 2: DRIVE WITH BLOWING HORN",
+        "ఆప్షన్ 3: CONTINUE TO THE END OF THE ROAD",
+        "ఆప్షన్ 4: CONTINUE TO DRIVE IN REVERSE"
+      ],
+      "hi": [
+        "विकल्प 1: REVERSE OUT OF THE ROAD",
+        "विकल्प 2: DRIVE WITH BLOWING HORN",
+        "विकल्प 3: CONTINUE TO THE END OF THE ROAD",
+        "विकल्प 4: CONTINUE TO DRIVE IN REVERSE"
+      ]
+    },
+    "answerIndex": 2,
+    "explanation": {
+      "en": "Never reverse on a one-way road. Safely continue to the road exit and turn onto a permitted route.",
+      "te": "సరైన సమాధానం: CONTINUE TO THE END OF THE ROAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: CONTINUE TO THE END OF THE ROAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_010",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 10,
+    "image": "assets/signs/sign_010.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (ONE WAY)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 10)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 10)"
+    },
+    "options": {
+      "en": [
+        "ONE WAY (TRAFFIC FLOW PERMITTED IN ARROW DIRECTION)",
+        "BOTH WAYS PROHIBITED",
+        "RIGHT TURN PROHIBITED",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: ONE WAY (TRAFFIC FLOW PERMITTED IN ARROW DIRECTION)",
+        "ఆప్షన్ 2: BOTH WAYS PROHIBITED",
+        "ఆప్షన్ 3: RIGHT TURN PROHIBITED",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: ONE WAY (TRAFFIC FLOW PERMITTED IN ARROW DIRECTION)",
+        "विकल्प 2: BOTH WAYS PROHIBITED",
+        "विकल्प 3: RIGHT TURN PROHIBITED",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "One-way street: Traffic movement is permitted only in the direction of the open arrow.",
+      "te": "సరైన సమాధానం: ONE WAY (TRAFFIC FLOW PERMITTED IN ARROW DIRECTION). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: ONE WAY (TRAFFIC FLOW PERMITTED IN ARROW DIRECTION). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_011",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 11,
+    "image": "assets/signs/sign_011.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (ONE WAY OPPOSITE)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 11)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 11)"
+    },
+    "options": {
+      "en": [
+        "ONE WAY TRAFFIC ONLY",
+        "BOTH WAYS PROHIBITED",
+        "NO ENTRY",
+        "OVERTAKING PROHIBITED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: ONE WAY TRAFFIC ONLY",
+        "ఆప్షన్ 2: BOTH WAYS PROHIBITED",
+        "ఆప్షన్ 3: NO ENTRY",
+        "ఆప్షన్ 4: OVERTAKING PROHIBITED"
+      ],
+      "hi": [
+        "विकल्प 1: ONE WAY TRAFFIC ONLY",
+        "विकल्प 2: BOTH WAYS PROHIBITED",
+        "विकल्प 3: NO ENTRY",
+        "विकल्प 4: OVERTAKING PROHIBITED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "One-way street: Entry allowed only in the designated single direction.",
+      "te": "సరైన సమాధానం: ONE WAY TRAFFIC ONLY. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: ONE WAY TRAFFIC ONLY. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_012",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 12,
+    "image": "assets/signs/sign_012.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (VEHICLES PROHIBITED IN BOTH DIRECTIONS)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 12)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 12)"
+    },
+    "options": {
+      "en": [
+        "ALL MOTOR VEHICLES PROHIBITED",
+        "ONE WAY ROAD",
+        "NO PARKING",
+        "NO STOPPING"
+      ],
+      "te": [
+        "ఆప్షన్ 1: ALL MOTOR VEHICLES PROHIBITED",
+        "ఆప్షన్ 2: ONE WAY ROAD",
+        "ఆప్షన్ 3: NO PARKING",
+        "ఆప్షన్ 4: NO STOPPING"
+      ],
+      "hi": [
+        "विकल्प 1: ALL MOTOR VEHICLES PROHIBITED",
+        "विकल्प 2: ONE WAY ROAD",
+        "विकल्प 3: NO PARKING",
+        "विकल्प 4: NO STOPPING"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Both directions closed: No vehicles are permitted to enter or travel on this stretch.",
+      "te": "సరైన సమాధానం: ALL MOTOR VEHICLES PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: ALL MOTOR VEHICLES PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_013",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 13,
+    "image": "assets/signs/sign_013.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (TRUCK PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 13)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 13)"
+    },
+    "options": {
+      "en": [
+        "HEAVY GOODS VEHICLES PROHIBITED",
+        "BUSES PROHIBITED",
+        "LOAD LIMIT 5T",
+        "ALL VEHICLES PROHIBITED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: HEAVY GOODS VEHICLES PROHIBITED",
+        "ఆప్షన్ 2: BUSES PROHIBITED",
+        "ఆప్షన్ 3: LOAD LIMIT 5T",
+        "ఆప్షన్ 4: ALL VEHICLES PROHIBITED"
+      ],
+      "hi": [
+        "विकल्प 1: HEAVY GOODS VEHICLES PROHIBITED",
+        "विकल्प 2: BUSES PROHIBITED",
+        "विकल्प 3: LOAD LIMIT 5T",
+        "विकल्प 4: ALL VEHICLES PROHIBITED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Commercial trucks and heavy goods vehicles are prohibited from entering this road.",
+      "te": "సరైన సమాధానం: HEAVY GOODS VEHICLES PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: HEAVY GOODS VEHICLES PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_014",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 14,
+    "image": "assets/signs/sign_014.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (BULLOCK CART PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 14)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 14)"
+    },
+    "options": {
+      "en": [
+        "BULLOCK CARTS PROHIBITED",
+        "ALL CARTS ALLOWED",
+        "ANIMAL DRAWN VEHICLES ONLY",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: BULLOCK CARTS PROHIBITED",
+        "ఆప్షన్ 2: ALL CARTS ALLOWED",
+        "ఆప్షన్ 3: ANIMAL DRAWN VEHICLES ONLY",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: BULLOCK CARTS PROHIBITED",
+        "विकल्प 2: ALL CARTS ALLOWED",
+        "विकल्प 3: ANIMAL DRAWN VEHICLES ONLY",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Bullock carts and hand-driven animal carts are not allowed on this road.",
+      "te": "సరైన సమాధానం: BULLOCK CARTS PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: BULLOCK CARTS PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_015",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 15,
+    "image": "assets/signs/sign_015.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (TONGA PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 15)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 15)"
+    },
+    "options": {
+      "en": [
+        "TONGAS PROHIBITED",
+        "HORSES PERMITTED",
+        "CART PROHIBITED",
+        "CYCLE PROHIBITED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: TONGAS PROHIBITED",
+        "ఆప్షన్ 2: HORSES PERMITTED",
+        "ఆప్షన్ 3: CART PROHIBITED",
+        "ఆప్షన్ 4: CYCLE PROHIBITED"
+      ],
+      "hi": [
+        "विकल्प 1: TONGAS PROHIBITED",
+        "विकल्प 2: HORSES PERMITTED",
+        "विकल्प 3: CART PROHIBITED",
+        "विकल्प 4: CYCLE PROHIBITED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Horse-drawn tongas are strictly prohibited on this road.",
+      "te": "సరైన సమాధానం: TONGAS PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: TONGAS PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_016",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 16,
+    "image": "assets/signs/sign_016.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (HAND CART PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 16)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 16)"
+    },
+    "options": {
+      "en": [
+        "HAND CARTS PROHIBITED",
+        "CYCLES PROHIBITED",
+        "PEDESTRIANS ONLY",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: HAND CARTS PROHIBITED",
+        "ఆప్షన్ 2: CYCLES PROHIBITED",
+        "ఆప్షన్ 3: PEDESTRIANS ONLY",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: HAND CARTS PROHIBITED",
+        "विकल्प 2: CYCLES PROHIBITED",
+        "विकल्प 3: PEDESTRIANS ONLY",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Hand-pushed carts and wheelbarrows are prohibited from entering this road.",
+      "te": "సరైన సమాధానం: HAND CARTS PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: HAND CARTS PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_017",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 17,
+    "image": "assets/signs/sign_017.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (CYCLE PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 17)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 17)"
+    },
+    "options": {
+      "en": [
+        "CYCLES PROHIBITED",
+        "MOTORCYCLES ONLY",
+        "CYCLE TRACK",
+        "MOPEDS PERMITTED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: CYCLES PROHIBITED",
+        "ఆప్షన్ 2: MOTORCYCLES ONLY",
+        "ఆప్షన్ 3: CYCLE TRACK",
+        "ఆప్షన్ 4: MOPEDS PERMITTED"
+      ],
+      "hi": [
+        "विकल्प 1: CYCLES PROHIBITED",
+        "विकल्प 2: MOTORCYCLES ONLY",
+        "विकल्प 3: CYCLE TRACK",
+        "विकल्प 4: MOPEDS PERMITTED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Bicycles and pedal cycles are prohibited on this expressway/road.",
+      "te": "సరైన సమాధానం: CYCLES PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: CYCLES PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_018",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 18,
+    "image": "assets/signs/sign_018.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (PEDESTRIANS PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 18)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 18)"
+    },
+    "options": {
+      "en": [
+        "PEDESTRIANS PROHIBITED",
+        "PEDESTRIAN CROSSING",
+        "WALK ON LEFT",
+        "ZEBRA CROSSING"
+      ],
+      "te": [
+        "ఆప్షన్ 1: PEDESTRIANS PROHIBITED",
+        "ఆప్షన్ 2: PEDESTRIAN CROSSING",
+        "ఆప్షన్ 3: WALK ON LEFT",
+        "ఆప్షన్ 4: ZEBRA CROSSING"
+      ],
+      "hi": [
+        "विकल्प 1: PEDESTRIANS PROHIBITED",
+        "विकल्प 2: PEDESTRIAN CROSSING",
+        "विकल्प 3: WALK ON LEFT",
+        "विकल्प 4: ZEBRA CROSSING"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Pedestrians are prohibited from walking along or crossing this road (e.g. flyovers/highways).",
+      "te": "సరైన సమాధానం: PEDESTRIANS PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: PEDESTRIANS PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_019",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 19,
+    "image": "assets/signs/sign_019.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (RIGHT TURN PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 19)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 19)"
+    },
+    "options": {
+      "en": [
+        "RIGHT TURN PROHIBITED",
+        "LEFT TURN PROHIBITED",
+        "U-TURN PROHIBITED",
+        "ONE WAY RIGHT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: RIGHT TURN PROHIBITED",
+        "ఆప్షన్ 2: LEFT TURN PROHIBITED",
+        "ఆప్షన్ 3: U-TURN PROHIBITED",
+        "ఆప్షన్ 4: ONE WAY RIGHT"
+      ],
+      "hi": [
+        "विकल्प 1: RIGHT TURN PROHIBITED",
+        "विकल्प 2: LEFT TURN PROHIBITED",
+        "विकल्प 3: U-TURN PROHIBITED",
+        "विकल्प 4: ONE WAY RIGHT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Turning right at this intersection is prohibited.",
+      "te": "సరైన సమాధానం: RIGHT TURN PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: RIGHT TURN PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_020",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 20,
+    "image": "assets/signs/sign_020.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LEFT TURN PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 20)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 20)"
+    },
+    "options": {
+      "en": [
+        "LEFT TURN PROHIBITED",
+        "RIGHT TURN PROHIBITED",
+        "U-TURN PROHIBITED",
+        "KEEP LEFT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: LEFT TURN PROHIBITED",
+        "ఆప్షన్ 2: RIGHT TURN PROHIBITED",
+        "ఆప్షన్ 3: U-TURN PROHIBITED",
+        "ఆప్షన్ 4: KEEP LEFT"
+      ],
+      "hi": [
+        "विकल्प 1: LEFT TURN PROHIBITED",
+        "विकल्प 2: RIGHT TURN PROHIBITED",
+        "विकल्प 3: U-TURN PROHIBITED",
+        "विकल्प 4: KEEP LEFT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Turning left at this intersection is prohibited.",
+      "te": "సరైన సమాధానం: LEFT TURN PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: LEFT TURN PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_021",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 21,
+    "image": "assets/signs/sign_021.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (U-TURN PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 21)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 21)"
+    },
+    "options": {
+      "en": [
+        "U-TURN PROHIBITED",
+        "RIGHT TURN PROHIBITED",
+        "OVERTAKING PROHIBITED",
+        "REVERSE PROHIBITED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: U-TURN PROHIBITED",
+        "ఆప్షన్ 2: RIGHT TURN PROHIBITED",
+        "ఆప్షన్ 3: OVERTAKING PROHIBITED",
+        "ఆప్షన్ 4: REVERSE PROHIBITED"
+      ],
+      "hi": [
+        "विकल्प 1: U-TURN PROHIBITED",
+        "विकल्प 2: RIGHT TURN PROHIBITED",
+        "विकल्प 3: OVERTAKING PROHIBITED",
+        "विकल्प 4: REVERSE PROHIBITED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Making a U-turn (180-degree turn) is strictly forbidden.",
+      "te": "సరైన సమాధానం: U-TURN PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: U-TURN PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_022",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 22,
+    "image": "assets/signs/sign_022.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (OVERTAKING PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 22)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 22)"
+    },
+    "options": {
+      "en": [
+        "OVERTAKING PROHIBITED",
+        "ONE WAY ROAD",
+        "SPEED LIMIT",
+        "NARROW ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: OVERTAKING PROHIBITED",
+        "ఆప్షన్ 2: ONE WAY ROAD",
+        "ఆప్షన్ 3: SPEED LIMIT",
+        "ఆప్షన్ 4: NARROW ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: OVERTAKING PROHIBITED",
+        "विकल्प 2: ONE WAY ROAD",
+        "विकल्प 3: SPEED LIMIT",
+        "विकल्प 4: NARROW ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Overtaking any moving vehicle is strictly prohibited on this road segment.",
+      "te": "సరైన సమాధానం: OVERTAKING PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: OVERTAKING PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_023",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 23,
+    "image": "assets/signs/sign_023.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (HORN PROHIBITED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 23)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 23)"
+    },
+    "options": {
+      "en": [
+        "HORN PROHIBITED (SILENCE ZONE)",
+        "SOUND HORN COMPULSORY",
+        "NO NOISE BARRIER",
+        "HOSPITAL ENTRANCE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: HORN PROHIBITED (SILENCE ZONE)",
+        "ఆప్షన్ 2: SOUND HORN COMPULSORY",
+        "ఆప్షన్ 3: NO NOISE BARRIER",
+        "ఆప్షన్ 4: HOSPITAL ENTRANCE"
+      ],
+      "hi": [
+        "विकल्प 1: HORN PROHIBITED (SILENCE ZONE)",
+        "विकल्प 2: SOUND HORN COMPULSORY",
+        "विकल्प 3: NO NOISE BARRIER",
+        "विकल्प 4: HOSPITAL ENTRANCE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Sounding horn is forbidden. Commonly placed near hospitals, courts, and schools (silence zones).",
+      "te": "సరైన సమాధానం: HORN PROHIBITED (SILENCE ZONE). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: HORN PROHIBITED (SILENCE ZONE). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_024",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 24,
+    "image": "assets/signs/sign_024.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (NO PARKING)",
+      "te": "ఈ చిహ్నం అర్థమేమిటి ? (నో పార్కింగ్)",
+      "hi": "इस चिन्ह का मतलब (नो पार्किंग)"
+    },
+    "options": {
+      "en": [
+        "NO PARKING (WAITING ALLOWED TO DROP PASSENGERS)",
+        "NO STOPPING",
+        "PARKING LOT",
+        "RESTRICTED ROAD"
+      ],
+      "te": [
+        "నో పార్కింగ్ (ప్రయాణికులను దించడానికి కొద్దిసేపు ఆగవచ్చు)",
+        "నో స్టాపింగ్",
+        "పార్కింగ్ ప్రదేశం",
+        "ప్రవేశం లేదు"
+      ],
+      "hi": [
+        "नो पार्किंग (सवारी उतारने हेतु क्षणिक रुकावट मान्य)",
+        "रुकना मना है",
+        "पार्किंग स्थल",
+        "प्रवेश निषेध"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue circle with 1 red diagonal line: Parking is prohibited. Picking up or dropping passengers is permitted.",
+      "te": "సరైన సమాధానం: NO PARKING (WAITING ALLOWED TO DROP PASSENGERS). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: NO PARKING (WAITING ALLOWED TO DROP PASSENGERS). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_025",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 25,
+    "image": "assets/signs/sign_025.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (NO STOPPING OR STANDING)",
+      "te": "ఈ చిహ్నం అర్థమేమిటి ? (నో స్టాపింగ్ లేదా స్టాండింగ్)",
+      "hi": "इस चिन्ह का मतलब (नो स्टॉपिंग)"
+    },
+    "options": {
+      "en": [
+        "NO STOPPING OR STANDING (CLEARWAY)",
+        "NO PARKING",
+        "ENTRY PERMITTED",
+        "SPEED BREAKER"
+      ],
+      "te": [
+        "నో స్టాపింగ్ లేదా స్టాండింగ్ (వాహనం అస్సలు ఆపరాదు)",
+        "నో పార్కింగ్",
+        "ప్రవేశం అనుమతించబడింది",
+        "స్పీడ్ బ్రేకర్"
+      ],
+      "hi": [
+        "रुकना व ठहरना सख्त मना है",
+        "नो पार्किंग",
+        "प्रवेश मान्य",
+        "गति अवरोधक"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue circle with crossed red 'X': Neither stopping nor parking is permitted for any reason.",
+      "te": "సరైన సమాధానం: NO STOPPING OR STANDING (CLEARWAY). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: NO STOPPING OR STANDING (CLEARWAY). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_026",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 26,
+    "image": "assets/signs/sign_026.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (SPEED LIMIT 50)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 26)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 26)"
+    },
+    "options": {
+      "en": [
+        "MAXIMUM SPEED LIMIT 50 KM/H",
+        "MINIMUM SPEED 50 KM/H",
+        "DISTANCE TO NEXT TOWN 50 KM",
+        "LOAD LIMIT 50 QUINTALS"
+      ],
+      "te": [
+        "ఆప్షన్ 1: MAXIMUM SPEED LIMIT 50 KM/H",
+        "ఆప్షన్ 2: MINIMUM SPEED 50 KM/H",
+        "ఆప్షన్ 3: DISTANCE TO NEXT TOWN 50 KM",
+        "ఆప్షన్ 4: LOAD LIMIT 50 QUINTALS"
+      ],
+      "hi": [
+        "विकल्प 1: MAXIMUM SPEED LIMIT 50 KM/H",
+        "विकल्प 2: MINIMUM SPEED 50 KM/H",
+        "विकल्प 3: DISTANCE TO NEXT TOWN 50 KM",
+        "विकल्प 4: LOAD LIMIT 50 QUINTALS"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Maximum permissible vehicular speed is 50 km/h.",
+      "te": "సరైన సమాధానం: MAXIMUM SPEED LIMIT 50 KM/H. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: MAXIMUM SPEED LIMIT 50 KM/H. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_027",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 27,
+    "image": "assets/signs/sign_027.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (WIDTH LIMIT 2M)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 27)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 27)"
+    },
+    "options": {
+      "en": [
+        "VEHICLES EXCEEDING 2 METRES WIDTH PROHIBITED",
+        "LENGTH LIMIT 2M",
+        "2-LANE ROAD",
+        "MINIMUM GAP 2M"
+      ],
+      "te": [
+        "ఆప్షన్ 1: VEHICLES EXCEEDING 2 METRES WIDTH PROHIBITED",
+        "ఆప్షన్ 2: LENGTH LIMIT 2M",
+        "ఆప్షన్ 3: 2-LANE ROAD",
+        "ఆప్షన్ 4: MINIMUM GAP 2M"
+      ],
+      "hi": [
+        "विकल्प 1: VEHICLES EXCEEDING 2 METRES WIDTH PROHIBITED",
+        "विकल्प 2: LENGTH LIMIT 2M",
+        "विकल्प 3: 2-LANE ROAD",
+        "विकल्प 4: MINIMUM GAP 2M"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Vehicles wider than 2.0 metres cannot enter due to road or bridge width constraints.",
+      "te": "సరైన సమాధానం: VEHICLES EXCEEDING 2 METRES WIDTH PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: VEHICLES EXCEEDING 2 METRES WIDTH PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_028",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 28,
+    "image": "assets/signs/sign_028.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (HEIGHT LIMIT 3.5M)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 28)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 28)"
+    },
+    "options": {
+      "en": [
+        "VEHICLES EXCEEDING 3.5 METRES HEIGHT PROHIBITED",
+        "CLEARANCE AHEAD",
+        "WIDTH LIMIT 3.5M",
+        "LOAD LIMIT 3.5T"
+      ],
+      "te": [
+        "ఆప్షన్ 1: VEHICLES EXCEEDING 3.5 METRES HEIGHT PROHIBITED",
+        "ఆప్షన్ 2: CLEARANCE AHEAD",
+        "ఆప్షన్ 3: WIDTH LIMIT 3.5M",
+        "ఆప్షన్ 4: LOAD LIMIT 3.5T"
+      ],
+      "hi": [
+        "विकल्प 1: VEHICLES EXCEEDING 3.5 METRES HEIGHT PROHIBITED",
+        "विकल्प 2: CLEARANCE AHEAD",
+        "विकल्प 3: WIDTH LIMIT 3.5M",
+        "विकल्प 4: LOAD LIMIT 3.5T"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Overhead clearance restriction (e.g. underpass or low railway bridge) of 3.5 metres.",
+      "te": "సరైన సమాధానం: VEHICLES EXCEEDING 3.5 METRES HEIGHT PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: VEHICLES EXCEEDING 3.5 METRES HEIGHT PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_029",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 29,
+    "image": "assets/signs/sign_029.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LENGTH LIMIT 10M)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 29)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 29)"
+    },
+    "options": {
+      "en": [
+        "VEHICLES EXCEEDING 10 METRES LENGTH PROHIBITED",
+        "DISTANCE 10 METRES",
+        "WIDTH LIMIT 10M",
+        "SPEED LIMIT 10"
+      ],
+      "te": [
+        "ఆప్షన్ 1: VEHICLES EXCEEDING 10 METRES LENGTH PROHIBITED",
+        "ఆప్షన్ 2: DISTANCE 10 METRES",
+        "ఆప్షన్ 3: WIDTH LIMIT 10M",
+        "ఆప్షన్ 4: SPEED LIMIT 10"
+      ],
+      "hi": [
+        "विकल्प 1: VEHICLES EXCEEDING 10 METRES LENGTH PROHIBITED",
+        "विकल्प 2: DISTANCE 10 METRES",
+        "विकल्प 3: WIDTH LIMIT 10M",
+        "विकल्प 4: SPEED LIMIT 10"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Long vehicles (buses/articulated trucks) over 10m cannot negotiate sharp bends ahead.",
+      "te": "సరైన సమాధానం: VEHICLES EXCEEDING 10 METRES LENGTH PROHIBITED. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: VEHICLES EXCEEDING 10 METRES LENGTH PROHIBITED. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_030",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 30,
+    "image": "assets/signs/sign_030.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LOAD LIMIT 5T)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 30)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 30)"
+    },
+    "options": {
+      "en": [
+        "MAXIMUM GROSS VEHICLE WEIGHT LIMIT 5 TONNES",
+        "AXLE LOAD 5T",
+        "SPEED 50",
+        "MINIMUM WEIGHT 5T"
+      ],
+      "te": [
+        "ఆప్షన్ 1: MAXIMUM GROSS VEHICLE WEIGHT LIMIT 5 TONNES",
+        "ఆప్షన్ 2: AXLE LOAD 5T",
+        "ఆప్షన్ 3: SPEED 50",
+        "ఆప్షన్ 4: MINIMUM WEIGHT 5T"
+      ],
+      "hi": [
+        "विकल्प 1: MAXIMUM GROSS VEHICLE WEIGHT LIMIT 5 TONNES",
+        "विकल्प 2: AXLE LOAD 5T",
+        "विकल्प 3: SPEED 50",
+        "विकल्प 4: MINIMUM WEIGHT 5T"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Vehicles whose laden weight exceeds 5 tonnes cannot pass over this bridge or road.",
+      "te": "సరైన సమాధానం: MAXIMUM GROSS VEHICLE WEIGHT LIMIT 5 TONNES. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: MAXIMUM GROSS VEHICLE WEIGHT LIMIT 5 TONNES. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_031",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 31,
+    "image": "assets/signs/sign_031.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (AXLE LOAD LIMIT 4T)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 31)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 31)"
+    },
+    "options": {
+      "en": [
+        "MAXIMUM LOAD PER AXLE 4 TONNES",
+        "GROSS WEIGHT 4T",
+        "SPEED 40",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: MAXIMUM LOAD PER AXLE 4 TONNES",
+        "ఆప్షన్ 2: GROSS WEIGHT 4T",
+        "ఆప్షన్ 3: SPEED 40",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: MAXIMUM LOAD PER AXLE 4 TONNES",
+        "विकल्प 2: GROSS WEIGHT 4T",
+        "विकल्प 3: SPEED 40",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Limits weight transmitted to the road surface by any single axle to 4 tonnes.",
+      "te": "సరైన సమాధానం: MAXIMUM LOAD PER AXLE 4 TONNES. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: MAXIMUM LOAD PER AXLE 4 TONNES. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_032",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 32,
+    "image": "assets/signs/sign_032.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY TURN LEFT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 32)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 32)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY TURN LEFT AHEAD",
+        "LEFT TURN PROHIBITED",
+        "SIDE ROAD LEFT",
+        "KEEP LEFT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY TURN LEFT AHEAD",
+        "ఆప్షన్ 2: LEFT TURN PROHIBITED",
+        "ఆప్షన్ 3: SIDE ROAD LEFT",
+        "ఆప్షన్ 4: KEEP LEFT"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY TURN LEFT AHEAD",
+        "विकल्प 2: LEFT TURN PROHIBITED",
+        "विकल्प 3: SIDE ROAD LEFT",
+        "विकल्प 4: KEEP LEFT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue circle with white arrow: Driver must turn left at the approaching junction.",
+      "te": "సరైన సమాధానం: COMPULSORY TURN LEFT AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY TURN LEFT AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_033",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 33,
+    "image": "assets/signs/sign_033.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY AHEAD ONLY)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 33)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 33)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY AHEAD ONLY (NO TURNS)",
+        "ONE WAY ROAD",
+        "NO ENTRY",
+        "STRAIGHT PROHIBITED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY AHEAD ONLY (NO TURNS)",
+        "ఆప్షన్ 2: ONE WAY ROAD",
+        "ఆప్షన్ 3: NO ENTRY",
+        "ఆప్షన్ 4: STRAIGHT PROHIBITED"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY AHEAD ONLY (NO TURNS)",
+        "विकल्प 2: ONE WAY ROAD",
+        "विकल्प 3: NO ENTRY",
+        "विकल्प 4: STRAIGHT PROHIBITED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue circle with arrow pointing forward: Vehicles must proceed straight only; no turning allowed.",
+      "te": "సరైన సమాధానం: COMPULSORY AHEAD ONLY (NO TURNS). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY AHEAD ONLY (NO TURNS). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_034",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 34,
+    "image": "assets/signs/sign_034.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY TURN RIGHT AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 34)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 34)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY TURN RIGHT AHEAD",
+        "RIGHT TURN PROHIBITED",
+        "KEEP RIGHT",
+        "SIDE ROAD RIGHT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY TURN RIGHT AHEAD",
+        "ఆప్షన్ 2: RIGHT TURN PROHIBITED",
+        "ఆప్షన్ 3: KEEP RIGHT",
+        "ఆప్షన్ 4: SIDE ROAD RIGHT"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY TURN RIGHT AHEAD",
+        "विकल्प 2: RIGHT TURN PROHIBITED",
+        "विकल्प 3: KEEP RIGHT",
+        "विकल्प 4: SIDE ROAD RIGHT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue circle with white right arrow: Vehicles must turn right ahead.",
+      "te": "సరైన సమాధానం: COMPULSORY TURN RIGHT AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY TURN RIGHT AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_035",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 35,
+    "image": "assets/signs/sign_035.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY AHEAD OR TURN RIGHT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 35)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 35)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY AHEAD OR TURN RIGHT",
+        "RIGHT TURN PROHIBITED",
+        "STRAIGHT PROHIBITED",
+        "U-TURN OR RIGHT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY AHEAD OR TURN RIGHT",
+        "ఆప్షన్ 2: RIGHT TURN PROHIBITED",
+        "ఆప్షన్ 3: STRAIGHT PROHIBITED",
+        "ఆప్షన్ 4: U-TURN OR RIGHT"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY AHEAD OR TURN RIGHT",
+        "विकल्प 2: RIGHT TURN PROHIBITED",
+        "विकल्प 3: STRAIGHT PROHIBITED",
+        "विकल्प 4: U-TURN OR RIGHT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Driver may either proceed straight or make a right turn; left turn is not permitted.",
+      "te": "సరైన సమాధానం: COMPULSORY AHEAD OR TURN RIGHT. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY AHEAD OR TURN RIGHT. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_036",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 36,
+    "image": "assets/signs/sign_036.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY AHEAD OR TURN LEFT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 36)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 36)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY AHEAD OR TURN LEFT",
+        "LEFT TURN PROHIBITED",
+        "STRAIGHT PROHIBITED",
+        "U-TURN OR LEFT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY AHEAD OR TURN LEFT",
+        "ఆప్షన్ 2: LEFT TURN PROHIBITED",
+        "ఆప్షన్ 3: STRAIGHT PROHIBITED",
+        "ఆప్షన్ 4: U-TURN OR LEFT"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY AHEAD OR TURN LEFT",
+        "विकल्प 2: LEFT TURN PROHIBITED",
+        "विकल्प 3: STRAIGHT PROHIBITED",
+        "विकल्प 4: U-TURN OR LEFT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Driver may either proceed straight or make a left turn; right turn is not permitted.",
+      "te": "సరైన సమాధానం: COMPULSORY AHEAD OR TURN LEFT. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY AHEAD OR TURN LEFT. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_037",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 37,
+    "image": "assets/signs/sign_037.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY KEEP LEFT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 37)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 37)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY KEEP LEFT (PASS ON LEFT OF ISLAND)",
+        "TURN LEFT",
+        "LEFT CURVE",
+        "ONE WAY LEFT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY KEEP LEFT (PASS ON LEFT OF ISLAND)",
+        "ఆప్షన్ 2: TURN LEFT",
+        "ఆప్షన్ 3: LEFT CURVE",
+        "ఆప్షన్ 4: ONE WAY LEFT"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY KEEP LEFT (PASS ON LEFT OF ISLAND)",
+        "विकल्प 2: TURN LEFT",
+        "विकल्प 3: LEFT CURVE",
+        "विकल्प 4: ONE WAY LEFT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Vehicles must pass to the left of the traffic island, bollard, or road divider.",
+      "te": "సరైన సమాధానం: COMPULSORY KEEP LEFT (PASS ON LEFT OF ISLAND). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY KEEP LEFT (PASS ON LEFT OF ISLAND). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_038",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 38,
+    "image": "assets/signs/sign_038.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY CYCLE TRACK)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 38)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 38)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY CYCLE TRACK",
+        "CYCLES PROHIBITED",
+        "MOTORCYCLES ONLY",
+        "PEDESTRIANS ONLY"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY CYCLE TRACK",
+        "ఆప్షన్ 2: CYCLES PROHIBITED",
+        "ఆప్షన్ 3: MOTORCYCLES ONLY",
+        "ఆప్షన్ 4: PEDESTRIANS ONLY"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY CYCLE TRACK",
+        "विकल्प 2: CYCLES PROHIBITED",
+        "विकल्प 3: MOTORCYCLES ONLY",
+        "विकल्प 4: PEDESTRIANS ONLY"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Segregated track reserved exclusively for bicycles and pedal cycles.",
+      "te": "సరైన సమాధానం: COMPULSORY CYCLE TRACK. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY CYCLE TRACK. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_039",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 39,
+    "image": "assets/signs/sign_039.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY SOUND HORN)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 39)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 39)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY SOUND HORN",
+        "HORN PROHIBITED",
+        "SILENCE ZONE",
+        "SPEED BREAKER"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY SOUND HORN",
+        "ఆప్షన్ 2: HORN PROHIBITED",
+        "ఆప్షన్ 3: SILENCE ZONE",
+        "ఆప్షన్ 4: SPEED BREAKER"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY SOUND HORN",
+        "विकल्प 2: HORN PROHIBITED",
+        "विकल्प 3: SILENCE ZONE",
+        "विकल्प 4: SPEED BREAKER"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Driver must sound horn before entering blind corners or mountain curves.",
+      "te": "సరైన సమాధానం: COMPULSORY SOUND HORN. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY SOUND HORN. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_040",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 40,
+    "image": "assets/signs/sign_040.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY MINIMUM SPEED 30)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 40)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 40)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY MINIMUM SPEED 30 KM/H",
+        "MAXIMUM SPEED LIMIT 30 KM/H",
+        "DISTANCE 30 KM",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY MINIMUM SPEED 30 KM/H",
+        "ఆప్షన్ 2: MAXIMUM SPEED LIMIT 30 KM/H",
+        "ఆప్షన్ 3: DISTANCE 30 KM",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY MINIMUM SPEED 30 KM/H",
+        "विकल्प 2: MAXIMUM SPEED LIMIT 30 KM/H",
+        "विकल्प 3: DISTANCE 30 KM",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue circle with 30: Driving slower than 30 km/h is prohibited unless safety dictates.",
+      "te": "సరైన సమాధానం: COMPULSORY MINIMUM SPEED 30 KM/H. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY MINIMUM SPEED 30 KM/H. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_041",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 41,
+    "image": "assets/signs/sign_041.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (RESTRICTION ENDS)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 41)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 41)"
+    },
+    "options": {
+      "en": [
+        "RESTRICTION ENDS (SPEED / OVERTAKING LIMITS CEASE)",
+        "NO STOPPING",
+        "NO ENTRY",
+        "ALL RESTRICTIONS APPLY"
+      ],
+      "te": [
+        "ఆప్షన్ 1: RESTRICTION ENDS (SPEED / OVERTAKING LIMITS CEASE)",
+        "ఆప్షన్ 2: NO STOPPING",
+        "ఆప్షన్ 3: NO ENTRY",
+        "ఆప్షన్ 4: ALL RESTRICTIONS APPLY"
+      ],
+      "hi": [
+        "विकल्प 1: RESTRICTION ENDS (SPEED / OVERTAKING LIMITS CEASE)",
+        "विकल्प 2: NO STOPPING",
+        "विकल्प 3: NO ENTRY",
+        "विकल्प 4: ALL RESTRICTIONS APPLY"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "White disc with diagonal grey/black slashes: Previous speed limits and overtaking restrictions end.",
+      "te": "సరైన సమాధానం: RESTRICTION ENDS (SPEED / OVERTAKING LIMITS CEASE). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: RESTRICTION ENDS (SPEED / OVERTAKING LIMITS CEASE). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_042",
+    "category": "road_signs",
+    "signType": "mandatory",
+    "questionNumber": 42,
+    "image": "assets/signs/sign_042.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (COMPULSORY RIGHT TURN)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 42)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 42)"
+    },
+    "options": {
+      "en": [
+        "COMPULSORY RIGHT TURN",
+        "RIGHT HAND CURVE",
+        "KEEP RIGHT",
+        "RIGHT REVERSE BEND"
+      ],
+      "te": [
+        "ఆప్షన్ 1: COMPULSORY RIGHT TURN",
+        "ఆప్షన్ 2: RIGHT HAND CURVE",
+        "ఆప్షన్ 3: KEEP RIGHT",
+        "ఆప్షన్ 4: RIGHT REVERSE BEND"
+      ],
+      "hi": [
+        "विकल्प 1: COMPULSORY RIGHT TURN",
+        "विकल्प 2: RIGHT HAND CURVE",
+        "विकल्प 3: KEEP RIGHT",
+        "विकल्प 4: RIGHT REVERSE BEND"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue circle: Mandatory order to execute a right turn.",
+      "te": "సరైన సమాధానం: COMPULSORY RIGHT TURN. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: COMPULSORY RIGHT TURN. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_043",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 43,
+    "image": "assets/signs/sign_043.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (RIGHT HAND CURVE)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 43)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 43)"
+    },
+    "options": {
+      "en": [
+        "RIGHT HAND CURVE AHEAD",
+        "COMPULSORY RIGHT TURN",
+        "RIGHT REVERSE BEND",
+        "SIDE ROAD RIGHT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: RIGHT HAND CURVE AHEAD",
+        "ఆప్షన్ 2: COMPULSORY RIGHT TURN",
+        "ఆప్షన్ 3: RIGHT REVERSE BEND",
+        "ఆప్షన్ 4: SIDE ROAD RIGHT"
+      ],
+      "hi": [
+        "विकल्प 1: RIGHT HAND CURVE AHEAD",
+        "विकल्प 2: COMPULSORY RIGHT TURN",
+        "विकल्प 3: RIGHT REVERSE BEND",
+        "विकल्प 4: SIDE ROAD RIGHT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Cautionary triangular warning: The road bends sharply to the right ahead.",
+      "te": "సరైన సమాధానం: RIGHT HAND CURVE AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: RIGHT HAND CURVE AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_044",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 44,
+    "image": "assets/signs/sign_044.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LEFT HAND CURVE)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 44)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 44)"
+    },
+    "options": {
+      "en": [
+        "LEFT HAND CURVE AHEAD",
+        "COMPULSORY LEFT TURN",
+        "LEFT REVERSE BEND",
+        "SIDE ROAD LEFT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: LEFT HAND CURVE AHEAD",
+        "ఆప్షన్ 2: COMPULSORY LEFT TURN",
+        "ఆప్షన్ 3: LEFT REVERSE BEND",
+        "ఆప్షన్ 4: SIDE ROAD LEFT"
+      ],
+      "hi": [
+        "विकल्प 1: LEFT HAND CURVE AHEAD",
+        "विकल्प 2: COMPULSORY LEFT TURN",
+        "विकल्प 3: LEFT REVERSE BEND",
+        "विकल्प 4: SIDE ROAD LEFT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Cautionary triangular warning: The road bends sharply to the left ahead.",
+      "te": "సరైన సమాధానం: LEFT HAND CURVE AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: LEFT HAND CURVE AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_045",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 45,
+    "image": "assets/signs/sign_045.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (RIGHT REVERSE BEND)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 45)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 45)"
+    },
+    "options": {
+      "en": [
+        "RIGHT REVERSE BEND (Z-CURVE RIGHT THEN LEFT)",
+        "LEFT REVERSE BEND",
+        "DOUBLE HAIRPIN BEND",
+        "ZIGZAG ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: RIGHT REVERSE BEND (Z-CURVE RIGHT THEN LEFT)",
+        "ఆప్షన్ 2: LEFT REVERSE BEND",
+        "ఆప్షన్ 3: DOUBLE HAIRPIN BEND",
+        "ఆప్షన్ 4: ZIGZAG ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: RIGHT REVERSE BEND (Z-CURVE RIGHT THEN LEFT)",
+        "विकल्प 2: LEFT REVERSE BEND",
+        "विकल्प 3: DOUBLE HAIRPIN BEND",
+        "विकल्प 4: ZIGZAG ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Road curves first to the right and then immediately to the left. Reduce speed.",
+      "te": "సరైన సమాధానం: RIGHT REVERSE BEND (Z-CURVE RIGHT THEN LEFT). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: RIGHT REVERSE BEND (Z-CURVE RIGHT THEN LEFT). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_046",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 46,
+    "image": "assets/signs/sign_046.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LEFT REVERSE BEND)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 46)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 46)"
+    },
+    "options": {
+      "en": [
+        "LEFT REVERSE BEND (Z-CURVE LEFT THEN RIGHT)",
+        "RIGHT REVERSE BEND",
+        "HAIRPIN BEND",
+        "NARROW ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: LEFT REVERSE BEND (Z-CURVE LEFT THEN RIGHT)",
+        "ఆప్షన్ 2: RIGHT REVERSE BEND",
+        "ఆప్షన్ 3: HAIRPIN BEND",
+        "ఆప్షన్ 4: NARROW ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: LEFT REVERSE BEND (Z-CURVE LEFT THEN RIGHT)",
+        "विकल्प 2: RIGHT REVERSE BEND",
+        "विकल्प 3: HAIRPIN BEND",
+        "विकल्प 4: NARROW ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Road curves first to the left and then immediately to the right.",
+      "te": "సరైన సమాధానం: LEFT REVERSE BEND (Z-CURVE LEFT THEN RIGHT). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: LEFT REVERSE BEND (Z-CURVE LEFT THEN RIGHT). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_047",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 47,
+    "image": "assets/signs/sign_047.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (STEEP ASCENT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 47)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 47)"
+    },
+    "options": {
+      "en": [
+        "STEEP ASCENT (UPHILL GRADIENT AHEAD)",
+        "STEEP DESCENT",
+        "DANGEROUS DIP",
+        "SPEED BREAKER"
+      ],
+      "te": [
+        "ఆప్షన్ 1: STEEP ASCENT (UPHILL GRADIENT AHEAD)",
+        "ఆప్షన్ 2: STEEP DESCENT",
+        "ఆప్షన్ 3: DANGEROUS DIP",
+        "ఆప్షన్ 4: SPEED BREAKER"
+      ],
+      "hi": [
+        "विकल्प 1: STEEP ASCENT (UPHILL GRADIENT AHEAD)",
+        "विकल्प 2: STEEP DESCENT",
+        "विकल्प 3: DANGEROUS DIP",
+        "विकल्प 4: SPEED BREAKER"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Steep incline ahead. Shift to a lower gear to maintain engine pulling power.",
+      "te": "సరైన సమాధానం: STEEP ASCENT (UPHILL GRADIENT AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: STEEP ASCENT (UPHILL GRADIENT AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_048",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 48,
+    "image": "assets/signs/sign_048.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (STEEP DESCENT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 48)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 48)"
+    },
+    "options": {
+      "en": [
+        "STEEP DESCENT (DOWNHILL GRADIENT AHEAD)",
+        "STEEP ASCENT",
+        "DANGEROUS DIP",
+        "FERRY"
+      ],
+      "te": [
+        "ఆప్షన్ 1: STEEP DESCENT (DOWNHILL GRADIENT AHEAD)",
+        "ఆప్షన్ 2: STEEP ASCENT",
+        "ఆప్షన్ 3: DANGEROUS DIP",
+        "ఆప్షన్ 4: FERRY"
+      ],
+      "hi": [
+        "विकल्प 1: STEEP DESCENT (DOWNHILL GRADIENT AHEAD)",
+        "विकल्प 2: STEEP ASCENT",
+        "विकल्प 3: DANGEROUS DIP",
+        "विकल्प 4: FERRY"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Steep downgrade ahead. Use engine braking in lower gear; avoid continuous brake riding.",
+      "te": "సరైన సమాధానం: STEEP DESCENT (DOWNHILL GRADIENT AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: STEEP DESCENT (DOWNHILL GRADIENT AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_049",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 49,
+    "image": "assets/signs/sign_049.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (NARROW ROAD AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 49)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 49)"
+    },
+    "options": {
+      "en": [
+        "NARROW ROAD AHEAD (BOTH SIDES TAPER)",
+        "ROAD WIDENS AHEAD",
+        "NARROW BRIDGE",
+        "ONE WAY ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: NARROW ROAD AHEAD (BOTH SIDES TAPER)",
+        "ఆప్షన్ 2: ROAD WIDENS AHEAD",
+        "ఆప్షన్ 3: NARROW BRIDGE",
+        "ఆప్షన్ 4: ONE WAY ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: NARROW ROAD AHEAD (BOTH SIDES TAPER)",
+        "विकल्प 2: ROAD WIDENS AHEAD",
+        "विकल्प 3: NARROW BRIDGE",
+        "विकल्प 4: ONE WAY ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The carriageway narrows from both sides ahead. Prepare to give way.",
+      "te": "సరైన సమాధానం: NARROW ROAD AHEAD (BOTH SIDES TAPER). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: NARROW ROAD AHEAD (BOTH SIDES TAPER). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_050",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 50,
+    "image": "assets/signs/sign_050.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (ROAD WIDENS AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 50)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 50)"
+    },
+    "options": {
+      "en": [
+        "ROAD WIDENS AHEAD",
+        "NARROW ROAD",
+        "DUAL CARRIAGEWAY ENDS",
+        "ROUNDABOUT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: ROAD WIDENS AHEAD",
+        "ఆప్షన్ 2: NARROW ROAD",
+        "ఆప్షన్ 3: DUAL CARRIAGEWAY ENDS",
+        "ఆప్షన్ 4: ROUNDABOUT"
+      ],
+      "hi": [
+        "विकल्प 1: ROAD WIDENS AHEAD",
+        "विकल्प 2: NARROW ROAD",
+        "विकल्प 3: DUAL CARRIAGEWAY ENDS",
+        "विकल्प 4: ROUNDABOUT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The narrow roadway opens into a wider multi-lane carriageway ahead.",
+      "te": "సరైన సమాధానం: ROAD WIDENS AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: ROAD WIDENS AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_051",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 51,
+    "image": "assets/signs/sign_051.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (NARROW BRIDGE AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 51)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 51)"
+    },
+    "options": {
+      "en": [
+        "NARROW BRIDGE AHEAD",
+        "NARROW ROAD",
+        "RIVER BANK",
+        "QUAYSIDE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: NARROW BRIDGE AHEAD",
+        "ఆప్షన్ 2: NARROW ROAD",
+        "ఆప్షన్ 3: RIVER BANK",
+        "ఆప్షన్ 4: QUAYSIDE"
+      ],
+      "hi": [
+        "विकल्प 1: NARROW BRIDGE AHEAD",
+        "विकल्प 2: NARROW ROAD",
+        "विकल्प 3: RIVER BANK",
+        "विकल्प 4: QUAYSIDE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "A bridge narrower than the approach road is ahead. Only one vehicle can cross at a time.",
+      "te": "సరైన సమాధానం: NARROW BRIDGE AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: NARROW BRIDGE AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_052",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 52,
+    "image": "assets/signs/sign_052.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (SLIPPERY ROAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 52)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 52)"
+    },
+    "options": {
+      "en": [
+        "SLIPPERY ROAD CONDITIONS AHEAD",
+        "LOOSE GRAVEL",
+        "STEEP DESCENT",
+        "WINDING ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: SLIPPERY ROAD CONDITIONS AHEAD",
+        "ఆప్షన్ 2: LOOSE GRAVEL",
+        "ఆప్షన్ 3: STEEP DESCENT",
+        "ఆప్షన్ 4: WINDING ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: SLIPPERY ROAD CONDITIONS AHEAD",
+        "विकल्प 2: LOOSE GRAVEL",
+        "विकल्प 3: STEEP DESCENT",
+        "विकल्प 4: WINDING ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Road surface may be wet, oily, or icy. Avoid harsh acceleration, steering, or braking.",
+      "te": "సరైన సమాధానం: SLIPPERY ROAD CONDITIONS AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: SLIPPERY ROAD CONDITIONS AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_053",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 53,
+    "image": "assets/signs/sign_053.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LOOSE GRAVEL)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 53)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 53)"
+    },
+    "options": {
+      "en": [
+        "LOOSE GRAVEL / CHIPPINGS AHEAD",
+        "FALLING ROCKS",
+        "SLIPPERY ROAD",
+        "ROUGH ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: LOOSE GRAVEL / CHIPPINGS AHEAD",
+        "ఆప్షన్ 2: FALLING ROCKS",
+        "ఆప్షన్ 3: SLIPPERY ROAD",
+        "ఆప్షన్ 4: ROUGH ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: LOOSE GRAVEL / CHIPPINGS AHEAD",
+        "विकल्प 2: FALLING ROCKS",
+        "विकल्प 3: SLIPPERY ROAD",
+        "विकल्प 4: ROUGH ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Small stones or gravel may fly up from vehicle tyres or cause skidding. Slow down.",
+      "te": "సరైన సమాధానం: LOOSE GRAVEL / CHIPPINGS AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: LOOSE GRAVEL / CHIPPINGS AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_054",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 54,
+    "image": "assets/signs/sign_054.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (CYCLE CROSSING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 54)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 54)"
+    },
+    "options": {
+      "en": [
+        "CYCLE CROSSING AHEAD",
+        "CYCLES PROHIBITED",
+        "CYCLE TRACK",
+        "PEDESTRIAN CROSSING"
+      ],
+      "te": [
+        "ఆప్షన్ 1: CYCLE CROSSING AHEAD",
+        "ఆప్షన్ 2: CYCLES PROHIBITED",
+        "ఆప్షన్ 3: CYCLE TRACK",
+        "ఆప్షన్ 4: PEDESTRIAN CROSSING"
+      ],
+      "hi": [
+        "विकल्प 1: CYCLE CROSSING AHEAD",
+        "विकल्प 2: CYCLES PROHIBITED",
+        "विकल्प 3: CYCLE TRACK",
+        "विकल्प 4: PEDESTRIAN CROSSING"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Cyclists frequently enter or cross the road ahead. Watch for pedal cycles.",
+      "te": "సరైన సమాధానం: CYCLE CROSSING AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: CYCLE CROSSING AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_055",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 55,
+    "image": "assets/signs/sign_055.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (PEDESTRIAN CROSSING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 55)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 55)"
+    },
+    "options": {
+      "en": [
+        "PEDESTRIAN CROSSING (ZEBRA CROSSING) AHEAD",
+        "PEDESTRIANS PROHIBITED",
+        "SCHOOL AHEAD",
+        "MEN AT WORK"
+      ],
+      "te": [
+        "ఆప్షన్ 1: PEDESTRIAN CROSSING (ZEBRA CROSSING) AHEAD",
+        "ఆప్షన్ 2: PEDESTRIANS PROHIBITED",
+        "ఆప్షన్ 3: SCHOOL AHEAD",
+        "ఆప్షన్ 4: MEN AT WORK"
+      ],
+      "hi": [
+        "विकल्प 1: PEDESTRIAN CROSSING (ZEBRA CROSSING) AHEAD",
+        "विकल्प 2: PEDESTRIANS PROHIBITED",
+        "विकल्प 3: SCHOOL AHEAD",
+        "विकल्प 4: MEN AT WORK"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Zebra crossing ahead. Slow down and give precedence to pedestrians on the crosswalk.",
+      "te": "సరైన సమాధానం: PEDESTRIAN CROSSING (ZEBRA CROSSING) AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: PEDESTRIAN CROSSING (ZEBRA CROSSING) AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_056",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 56,
+    "image": "assets/signs/sign_056.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (SCHOOL AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 56)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 56)"
+    },
+    "options": {
+      "en": [
+        "SCHOOL AHEAD (CHILDREN CROSSING)",
+        "PEDESTRIAN CROSSING",
+        "PLAYGROUND",
+        "HOSPITAL AHEAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: SCHOOL AHEAD (CHILDREN CROSSING)",
+        "ఆప్షన్ 2: PEDESTRIAN CROSSING",
+        "ఆప్షన్ 3: PLAYGROUND",
+        "ఆప్షన్ 4: HOSPITAL AHEAD"
+      ],
+      "hi": [
+        "विकल्प 1: SCHOOL AHEAD (CHILDREN CROSSING)",
+        "विकल्प 2: PEDESTRIAN CROSSING",
+        "विकल्प 3: PLAYGROUND",
+        "विकल्प 4: HOSPITAL AHEAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Children may run into the road. Drive slowly and be prepared to stop instantly.",
+      "te": "సరైన సమాధానం: SCHOOL AHEAD (CHILDREN CROSSING). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: SCHOOL AHEAD (CHILDREN CROSSING). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_057",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 57,
+    "image": "assets/signs/sign_057.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (TRAFFIC SIGNALS AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 57)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 57)"
+    },
+    "options": {
+      "en": [
+        "TRAFFIC SIGNALS AHEAD",
+        "STOP SIGN AHEAD",
+        "ROUNDABOUT AHEAD",
+        "DANGEROUS INTERSECTION"
+      ],
+      "te": [
+        "ఆప్షన్ 1: TRAFFIC SIGNALS AHEAD",
+        "ఆప్షన్ 2: STOP SIGN AHEAD",
+        "ఆప్షన్ 3: ROUNDABOUT AHEAD",
+        "ఆప్షన్ 4: DANGEROUS INTERSECTION"
+      ],
+      "hi": [
+        "विकल्प 1: TRAFFIC SIGNALS AHEAD",
+        "विकल्प 2: STOP SIGN AHEAD",
+        "विकल्प 3: ROUNDABOUT AHEAD",
+        "विकल्प 4: DANGEROUS INTERSECTION"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Traffic light junction ahead. Be prepared to stop if the light turns red.",
+      "te": "సరైన సమాధానం: TRAFFIC SIGNALS AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: TRAFFIC SIGNALS AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_058",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 58,
+    "image": "assets/signs/sign_058.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (CATTLE / ANIMAL CROSSING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 58)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 58)"
+    },
+    "options": {
+      "en": [
+        "CATTLE / ANIMAL CROSSING AHEAD",
+        "BULLOCK CART TRACK",
+        "FARM ENTRANCE",
+        "WILDLIFE SANCTUARY"
+      ],
+      "te": [
+        "ఆప్షన్ 1: CATTLE / ANIMAL CROSSING AHEAD",
+        "ఆప్షన్ 2: BULLOCK CART TRACK",
+        "ఆప్షన్ 3: FARM ENTRANCE",
+        "ఆప్షన్ 4: WILDLIFE SANCTUARY"
+      ],
+      "hi": [
+        "विकल्प 1: CATTLE / ANIMAL CROSSING AHEAD",
+        "विकल्प 2: BULLOCK CART TRACK",
+        "विकल्प 3: FARM ENTRANCE",
+        "विकल्प 4: WILDLIFE SANCTUARY"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Cattle or farm animals frequently graze near or cross the carriageway.",
+      "te": "సరైన సమాధానం: CATTLE / ANIMAL CROSSING AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: CATTLE / ANIMAL CROSSING AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_059",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 59,
+    "image": "assets/signs/sign_059.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (FALLING ROCKS)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 59)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 59)"
+    },
+    "options": {
+      "en": [
+        "FALLING ROCKS OR DEBRIS ON ROAD",
+        "LOOSE GRAVEL",
+        "STEEP DESCENT",
+        "LANDSLIDE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: FALLING ROCKS OR DEBRIS ON ROAD",
+        "ఆప్షన్ 2: LOOSE GRAVEL",
+        "ఆప్షన్ 3: STEEP DESCENT",
+        "ఆప్షన్ 4: LANDSLIDE"
+      ],
+      "hi": [
+        "विकल्प 1: FALLING ROCKS OR DEBRIS ON ROAD",
+        "विकल्प 2: LOOSE GRAVEL",
+        "विकल्प 3: STEEP DESCENT",
+        "विकल्प 4: LANDSLIDE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Hilly road subject to rockfalls or boulders on the roadway. Avoid stopping under cliffs.",
+      "te": "సరైన సమాధానం: FALLING ROCKS OR DEBRIS ON ROAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: FALLING ROCKS OR DEBRIS ON ROAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_060",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 60,
+    "image": "assets/signs/sign_060.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (FERRY)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 60)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 60)"
+    },
+    "options": {
+      "en": [
+        "FERRY SERVICE CROSSING AHEAD",
+        "QUAYSIDE OR RIVER BANK",
+        "FLOODED CAUSEWAY",
+        "DANGEROUS DIP"
+      ],
+      "te": [
+        "ఆప్షన్ 1: FERRY SERVICE CROSSING AHEAD",
+        "ఆప్షన్ 2: QUAYSIDE OR RIVER BANK",
+        "ఆప్షన్ 3: FLOODED CAUSEWAY",
+        "ఆప్షన్ 4: DANGEROUS DIP"
+      ],
+      "hi": [
+        "विकल्प 1: FERRY SERVICE CROSSING AHEAD",
+        "विकल्प 2: QUAYSIDE OR RIVER BANK",
+        "विकल्प 3: FLOODED CAUSEWAY",
+        "विकल्प 4: DANGEROUS DIP"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The road terminates at a river/lake ferry point. Approach with caution.",
+      "te": "సరైన సమాధానం: FERRY SERVICE CROSSING AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: FERRY SERVICE CROSSING AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_061",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 61,
+    "image": "assets/signs/sign_061.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (ROUNDABOUT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 61)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 61)"
+    },
+    "options": {
+      "en": [
+        "ROUNDABOUT (TRAFFIC CIRCLE) AHEAD",
+        "COMPULSORY KEEP LEFT",
+        "U-TURN AHEAD",
+        "INTERSECTION"
+      ],
+      "te": [
+        "ఆప్షన్ 1: ROUNDABOUT (TRAFFIC CIRCLE) AHEAD",
+        "ఆప్షన్ 2: COMPULSORY KEEP LEFT",
+        "ఆప్షన్ 3: U-TURN AHEAD",
+        "ఆప్షన్ 4: INTERSECTION"
+      ],
+      "hi": [
+        "विकल्प 1: ROUNDABOUT (TRAFFIC CIRCLE) AHEAD",
+        "विकल्प 2: COMPULSORY KEEP LEFT",
+        "विकल्प 3: U-TURN AHEAD",
+        "विकल्प 4: INTERSECTION"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Traffic circle ahead. Give way to vehicles approaching from your right on the roundabout.",
+      "te": "సరైన సమాధానం: ROUNDABOUT (TRAFFIC CIRCLE) AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: ROUNDABOUT (TRAFFIC CIRCLE) AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_062",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 62,
+    "image": "assets/signs/sign_062.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (DANGEROUS DIP)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 62)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 62)"
+    },
+    "options": {
+      "en": [
+        "DANGEROUS DIP / CAUSEWAY AHEAD",
+        "SPEED BREAKER",
+        "HUMP BRIDGE",
+        "STEEP DESCENT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: DANGEROUS DIP / CAUSEWAY AHEAD",
+        "ఆప్షన్ 2: SPEED BREAKER",
+        "ఆప్షన్ 3: HUMP BRIDGE",
+        "ఆప్షన్ 4: STEEP DESCENT"
+      ],
+      "hi": [
+        "विकल्प 1: DANGEROUS DIP / CAUSEWAY AHEAD",
+        "विकल्प 2: SPEED BREAKER",
+        "विकल्प 3: HUMP BRIDGE",
+        "विकल्प 4: STEEP DESCENT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Sudden depression or dip in the road that can damage vehicle suspension if taken fast.",
+      "te": "సరైన సమాధానం: DANGEROUS DIP / CAUSEWAY AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: DANGEROUS DIP / CAUSEWAY AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_063",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 63,
+    "image": "assets/signs/sign_063.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (SPEED BREAKER / HUMP)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 63)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 63)"
+    },
+    "options": {
+      "en": [
+        "SPEED BREAKER (ROAD HUMP) AHEAD",
+        "DANGEROUS DIP",
+        "ROUGH ROAD",
+        "BRIDGE AHEAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: SPEED BREAKER (ROAD HUMP) AHEAD",
+        "ఆప్షన్ 2: DANGEROUS DIP",
+        "ఆప్షన్ 3: ROUGH ROAD",
+        "ఆప్షన్ 4: BRIDGE AHEAD"
+      ],
+      "hi": [
+        "विकल्प 1: SPEED BREAKER (ROAD HUMP) AHEAD",
+        "विकल्प 2: DANGEROUS DIP",
+        "विकल्प 3: ROUGH ROAD",
+        "विकल्प 4: BRIDGE AHEAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Raised speed bump ahead to calm traffic. Slow down to prevent vehicle damage.",
+      "te": "సరైన సమాధానం: SPEED BREAKER (ROAD HUMP) AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: SPEED BREAKER (ROAD HUMP) AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_064",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 64,
+    "image": "assets/signs/sign_064.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (BARRIER AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 64)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 64)"
+    },
+    "options": {
+      "en": [
+        "BARRIER / CHECKPOINT AHEAD",
+        "TOLL GATE",
+        "RAILWAY CROSSING",
+        "ROAD CLOSED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: BARRIER / CHECKPOINT AHEAD",
+        "ఆప్షన్ 2: TOLL GATE",
+        "ఆప్షన్ 3: RAILWAY CROSSING",
+        "ఆప్షన్ 4: ROAD CLOSED"
+      ],
+      "hi": [
+        "विकल्प 1: BARRIER / CHECKPOINT AHEAD",
+        "विकल्प 2: TOLL GATE",
+        "विकल्प 3: RAILWAY CROSSING",
+        "विकल्प 4: ROAD CLOSED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Toll gate, police checkpoint, or border barrier across the carriageway.",
+      "te": "సరైన సమాధానం: BARRIER / CHECKPOINT AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: BARRIER / CHECKPOINT AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_065",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 65,
+    "image": "assets/signs/sign_065.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (GAP IN MEDIAN)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 65)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 65)"
+    },
+    "options": {
+      "en": [
+        "GAP IN MEDIAN (U-TURN OPENING AHEAD)",
+        "SIDE ROAD RIGHT",
+        "INTERSECTION",
+        "DIVIDED ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: GAP IN MEDIAN (U-TURN OPENING AHEAD)",
+        "ఆప్షన్ 2: SIDE ROAD RIGHT",
+        "ఆప్షన్ 3: INTERSECTION",
+        "ఆప్షన్ 4: DIVIDED ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: GAP IN MEDIAN (U-TURN OPENING AHEAD)",
+        "विकल्प 2: SIDE ROAD RIGHT",
+        "विकल्प 3: INTERSECTION",
+        "विकल्प 4: DIVIDED ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Opening in the central divider where vehicles may be slowing down to execute a U-turn.",
+      "te": "సరైన సమాధానం: GAP IN MEDIAN (U-TURN OPENING AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: GAP IN MEDIAN (U-TURN OPENING AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_066",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 66,
+    "image": "assets/signs/sign_066.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (SIDE ROAD RIGHT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 66)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 66)"
+    },
+    "options": {
+      "en": [
+        "SIDE ROAD JOINING FROM RIGHT",
+        "SIDE ROAD LEFT",
+        "RIGHT TURN COMPULSORY",
+        "CROSS ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: SIDE ROAD JOINING FROM RIGHT",
+        "ఆప్షన్ 2: SIDE ROAD LEFT",
+        "ఆప్షన్ 3: RIGHT TURN COMPULSORY",
+        "ఆప్షన్ 4: CROSS ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: SIDE ROAD JOINING FROM RIGHT",
+        "विकल्प 2: SIDE ROAD LEFT",
+        "विकल्प 3: RIGHT TURN COMPULSORY",
+        "विकल्प 4: CROSS ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "A minor road joins the main carriageway from the right side ahead.",
+      "te": "సరైన సమాధానం: SIDE ROAD JOINING FROM RIGHT. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: SIDE ROAD JOINING FROM RIGHT. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_067",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 67,
+    "image": "assets/signs/sign_067.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (SIDE ROAD LEFT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 67)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 67)"
+    },
+    "options": {
+      "en": [
+        "SIDE ROAD JOINING FROM LEFT",
+        "SIDE ROAD RIGHT",
+        "LEFT TURN COMPULSORY",
+        "T-JUNCTION"
+      ],
+      "te": [
+        "ఆప్షన్ 1: SIDE ROAD JOINING FROM LEFT",
+        "ఆప్షన్ 2: SIDE ROAD RIGHT",
+        "ఆప్షన్ 3: LEFT TURN COMPULSORY",
+        "ఆప్షన్ 4: T-JUNCTION"
+      ],
+      "hi": [
+        "विकल्प 1: SIDE ROAD JOINING FROM LEFT",
+        "विकल्प 2: SIDE ROAD RIGHT",
+        "विकल्प 3: LEFT TURN COMPULSORY",
+        "विकल्प 4: T-JUNCTION"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "A minor road joins the main carriageway from the left side ahead.",
+      "te": "సరైన సమాధానం: SIDE ROAD JOINING FROM LEFT. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: SIDE ROAD JOINING FROM LEFT. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_068",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 68,
+    "image": "assets/signs/sign_068.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (T-INTERSECTION)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 68)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 68)"
+    },
+    "options": {
+      "en": [
+        "T-INTERSECTION (ROAD TERMINATES AHEAD)",
+        "SIDE ROAD",
+        "CROSS ROAD",
+        "Y-JUNCTION"
+      ],
+      "te": [
+        "ఆప్షన్ 1: T-INTERSECTION (ROAD TERMINATES AHEAD)",
+        "ఆప్షన్ 2: SIDE ROAD",
+        "ఆప్షన్ 3: CROSS ROAD",
+        "ఆప్షన్ 4: Y-JUNCTION"
+      ],
+      "hi": [
+        "विकल्प 1: T-INTERSECTION (ROAD TERMINATES AHEAD)",
+        "विकल्प 2: SIDE ROAD",
+        "विकल्प 3: CROSS ROAD",
+        "विकल्प 4: Y-JUNCTION"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The road does not continue straight; driver must turn either left or right.",
+      "te": "సరైన సమాధానం: T-INTERSECTION (ROAD TERMINATES AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: T-INTERSECTION (ROAD TERMINATES AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_069",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 69,
+    "image": "assets/signs/sign_069.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (Y-INTERSECTION)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 69)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 69)"
+    },
+    "options": {
+      "en": [
+        "Y-INTERSECTION (ROAD FORKS AHEAD)",
+        "T-INTERSECTION",
+        "SIDE ROAD",
+        "ROUNDABOUT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: Y-INTERSECTION (ROAD FORKS AHEAD)",
+        "ఆప్షన్ 2: T-INTERSECTION",
+        "ఆప్షన్ 3: SIDE ROAD",
+        "ఆప్షన్ 4: ROUNDABOUT"
+      ],
+      "hi": [
+        "विकल्प 1: Y-INTERSECTION (ROAD FORKS AHEAD)",
+        "विकल्प 2: T-INTERSECTION",
+        "विकल्प 3: SIDE ROAD",
+        "विकल्प 4: ROUNDABOUT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Carriageway divides into two diverging branches ahead.",
+      "te": "సరైన సమాధానం: Y-INTERSECTION (ROAD FORKS AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: Y-INTERSECTION (ROAD FORKS AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_070",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 70,
+    "image": "assets/signs/sign_070.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (STAGGERED INTERSECTION)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 70)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 70)"
+    },
+    "options": {
+      "en": [
+        "STAGGERED INTERSECTION (OFFSET JUNCTIONS)",
+        "CROSS ROAD",
+        "T-JUNCTION",
+        "ROUNDABOUT"
+      ],
+      "te": [
+        "ఆప్షన్ 1: STAGGERED INTERSECTION (OFFSET JUNCTIONS)",
+        "ఆప్షన్ 2: CROSS ROAD",
+        "ఆప్షన్ 3: T-JUNCTION",
+        "ఆప్షన్ 4: ROUNDABOUT"
+      ],
+      "hi": [
+        "विकल्प 1: STAGGERED INTERSECTION (OFFSET JUNCTIONS)",
+        "विकल्प 2: CROSS ROAD",
+        "विकल्प 3: T-JUNCTION",
+        "विकल्प 4: ROUNDABOUT"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Two side junctions joining the main road from opposite sides at short distance from each other.",
+      "te": "సరైన సమాధానం: STAGGERED INTERSECTION (OFFSET JUNCTIONS). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: STAGGERED INTERSECTION (OFFSET JUNCTIONS). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_071",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 71,
+    "image": "assets/signs/sign_071.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (MAJOR ROAD AHEAD / CROSS ROAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 71)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 71)"
+    },
+    "options": {
+      "en": [
+        "CROSS ROAD (4-WAY INTERSECTION AHEAD)",
+        "T-INTERSECTION",
+        "FIRST AID POST",
+        "SIDE ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: CROSS ROAD (4-WAY INTERSECTION AHEAD)",
+        "ఆప్షన్ 2: T-INTERSECTION",
+        "ఆప్షన్ 3: FIRST AID POST",
+        "ఆప్షన్ 4: SIDE ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: CROSS ROAD (4-WAY INTERSECTION AHEAD)",
+        "विकल्प 2: T-INTERSECTION",
+        "विकल्प 3: FIRST AID POST",
+        "विकल्प 4: SIDE ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Four-arm crossroad ahead. Watch for cross-traffic entering from left and right.",
+      "te": "సరైన సమాధానం: CROSS ROAD (4-WAY INTERSECTION AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: CROSS ROAD (4-WAY INTERSECTION AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_072",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 72,
+    "image": "assets/signs/sign_072.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (ROUNDABOUT JUNCTION)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 72)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 72)"
+    },
+    "options": {
+      "en": [
+        "ROUNDABOUT INTERSECTION",
+        "ONE WAY",
+        "KEEP RIGHT",
+        "U-TURN"
+      ],
+      "te": [
+        "ఆప్షన్ 1: ROUNDABOUT INTERSECTION",
+        "ఆప్షన్ 2: ONE WAY",
+        "ఆప్షన్ 3: KEEP RIGHT",
+        "ఆప్షన్ 4: U-TURN"
+      ],
+      "hi": [
+        "विकल्प 1: ROUNDABOUT INTERSECTION",
+        "विकल्प 2: ONE WAY",
+        "विकल्प 3: KEEP RIGHT",
+        "विकल्प 4: U-TURN"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Rotary traffic circulation ahead. Yield to traffic already inside the circle.",
+      "te": "సరైన సమాధానం: ROUNDABOUT INTERSECTION. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: ROUNDABOUT INTERSECTION. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_073",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 73,
+    "image": "assets/signs/sign_073.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (QUAYSIDE OR RIVER BANK)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 73)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 73)"
+    },
+    "options": {
+      "en": [
+        "QUAYSIDE OR RIVER BANK (OPEN WATER AHEAD)",
+        "FERRY POINT",
+        "DANGEROUS DIP",
+        "NARROW BRIDGE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: QUAYSIDE OR RIVER BANK (OPEN WATER AHEAD)",
+        "ఆప్షన్ 2: FERRY POINT",
+        "ఆప్షన్ 3: DANGEROUS DIP",
+        "ఆప్షన్ 4: NARROW BRIDGE"
+      ],
+      "hi": [
+        "विकल्प 1: QUAYSIDE OR RIVER BANK (OPEN WATER AHEAD)",
+        "विकल्प 2: FERRY POINT",
+        "विकल्प 3: DANGEROUS DIP",
+        "विकल्प 4: NARROW BRIDGE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Road leads directly to an unfenced water body, canal, or jetty.",
+      "te": "సరైన సమాధానం: QUAYSIDE OR RIVER BANK (OPEN WATER AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: QUAYSIDE OR RIVER BANK (OPEN WATER AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_074",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 74,
+    "image": "assets/signs/sign_074.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (GUARDED LEVEL CROSSING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 74)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 74)"
+    },
+    "options": {
+      "en": [
+        "GUARDED RAILWAY CROSSING (WITH BARRIERS)",
+        "UNGUARDED RAILWAY CROSSING",
+        "ROAD BARRIER",
+        "BRIDGE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: GUARDED RAILWAY CROSSING (WITH BARRIERS)",
+        "ఆప్షన్ 2: UNGUARDED RAILWAY CROSSING",
+        "ఆప్షన్ 3: ROAD BARRIER",
+        "ఆప్షన్ 4: BRIDGE"
+      ],
+      "hi": [
+        "विकल्प 1: GUARDED RAILWAY CROSSING (WITH BARRIERS)",
+        "विकल्प 2: UNGUARDED RAILWAY CROSSING",
+        "विकल्प 3: ROAD BARRIER",
+        "विकल्प 4: BRIDGE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Railway tracks protected by gates/barriers with attendant. Stop when red lights flash.",
+      "te": "సరైన సమాధానం: GUARDED RAILWAY CROSSING (WITH BARRIERS). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: GUARDED RAILWAY CROSSING (WITH BARRIERS). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_075",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 75,
+    "image": "assets/signs/sign_075.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (UNGUARDED LEVEL CROSSING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 75)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 75)"
+    },
+    "options": {
+      "en": [
+        "UNGUARDED RAILWAY CROSSING (NO GATES)",
+        "GUARDED RAILWAY CROSSING",
+        "TRAMWAY CROSSING",
+        "BARRIER"
+      ],
+      "te": [
+        "ఆప్షన్ 1: UNGUARDED RAILWAY CROSSING (NO GATES)",
+        "ఆప్షన్ 2: GUARDED RAILWAY CROSSING",
+        "ఆప్షన్ 3: TRAMWAY CROSSING",
+        "ఆప్షన్ 4: BARRIER"
+      ],
+      "hi": [
+        "विकल्प 1: UNGUARDED RAILWAY CROSSING (NO GATES)",
+        "विकल्प 2: GUARDED RAILWAY CROSSING",
+        "विकल्प 3: TRAMWAY CROSSING",
+        "विकल्प 4: BARRIER"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Railway crossing without gates. Driver must stop, look both ways, and listen for trains.",
+      "te": "సరైన సమాధానం: UNGUARDED RAILWAY CROSSING (NO GATES). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: UNGUARDED RAILWAY CROSSING (NO GATES). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_076",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 76,
+    "image": "assets/signs/sign_076.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (MEN AT WORK)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 76)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 76)"
+    },
+    "options": {
+      "en": [
+        "MEN AT WORK (ROAD CONSTRUCTION AHEAD)",
+        "PEDESTRIAN CROSSING",
+        "LOOSE GRAVEL",
+        "BARRIER"
+      ],
+      "te": [
+        "ఆప్షన్ 1: MEN AT WORK (ROAD CONSTRUCTION AHEAD)",
+        "ఆప్షన్ 2: PEDESTRIAN CROSSING",
+        "ఆప్షన్ 3: LOOSE GRAVEL",
+        "ఆప్షన్ 4: BARRIER"
+      ],
+      "hi": [
+        "विकल्प 1: MEN AT WORK (ROAD CONSTRUCTION AHEAD)",
+        "विकल्प 2: PEDESTRIAN CROSSING",
+        "विकल्प 3: LOOSE GRAVEL",
+        "विकल्प 4: BARRIER"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Road construction or maintenance crew ahead. Slow down and observe flaggers.",
+      "te": "సరైన సమాధానం: MEN AT WORK (ROAD CONSTRUCTION AHEAD). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: MEN AT WORK (ROAD CONSTRUCTION AHEAD). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_077",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 77,
+    "image": "assets/signs/sign_077.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (UNGUARDED CROSSING DISTANCE MARKER)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 77)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 77)"
+    },
+    "options": {
+      "en": [
+        "UNGUARDED RAILWAY LEVEL CROSSING 200M (2 BARS)",
+        "GUARDED CROSSING 100M",
+        "MILESTONE",
+        "BRIDGE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: UNGUARDED RAILWAY LEVEL CROSSING 200M (2 BARS)",
+        "ఆప్షన్ 2: GUARDED CROSSING 100M",
+        "ఆప్షన్ 3: MILESTONE",
+        "ఆప్షన్ 4: BRIDGE"
+      ],
+      "hi": [
+        "विकल्प 1: UNGUARDED RAILWAY LEVEL CROSSING 200M (2 BARS)",
+        "विकल्प 2: GUARDED CROSSING 100M",
+        "विकल्प 3: MILESTONE",
+        "विकल्प 4: BRIDGE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "2 red bars = 200 metres to unguarded railway level crossing.",
+      "te": "సరైన సమాధానం: UNGUARDED RAILWAY LEVEL CROSSING 200M (2 BARS). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: UNGUARDED RAILWAY LEVEL CROSSING 200M (2 BARS). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_078",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 78,
+    "image": "assets/signs/sign_078.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (GUARDED CROSSING DISTANCE MARKER)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 78)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 78)"
+    },
+    "options": {
+      "en": [
+        "GUARDED RAILWAY LEVEL CROSSING 100M (1 BAR)",
+        "UNGUARDED 200M",
+        "SPEED BREAKER",
+        "STOP SIGN"
+      ],
+      "te": [
+        "ఆప్షన్ 1: GUARDED RAILWAY LEVEL CROSSING 100M (1 BAR)",
+        "ఆప్షన్ 2: UNGUARDED 200M",
+        "ఆప్షన్ 3: SPEED BREAKER",
+        "ఆప్షన్ 4: STOP SIGN"
+      ],
+      "hi": [
+        "विकल्प 1: GUARDED RAILWAY LEVEL CROSSING 100M (1 BAR)",
+        "विकल्प 2: UNGUARDED 200M",
+        "विकल्प 3: SPEED BREAKER",
+        "विकल्प 4: STOP SIGN"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "1 red bar with gate symbol = 100 metres to guarded railway level crossing.",
+      "te": "సరైన సమాధానం: GUARDED RAILWAY LEVEL CROSSING 100M (1 BAR). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: GUARDED RAILWAY LEVEL CROSSING 100M (1 BAR). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_079",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 79,
+    "image": "assets/signs/sign_079.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (BLIND PERSONS CROSSING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 79)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 79)"
+    },
+    "options": {
+      "en": [
+        "BLIND PERSONS CROSSING AHEAD",
+        "HOSPITAL ENTRANCE",
+        "PEDESTRIAN CROSSING",
+        "SILENCE ZONE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: BLIND PERSONS CROSSING AHEAD",
+        "ఆప్షన్ 2: HOSPITAL ENTRANCE",
+        "ఆప్షన్ 3: PEDESTRIAN CROSSING",
+        "ఆప్షన్ 4: SILENCE ZONE"
+      ],
+      "hi": [
+        "विकल्प 1: BLIND PERSONS CROSSING AHEAD",
+        "विकल्प 2: HOSPITAL ENTRANCE",
+        "विकल्प 3: PEDESTRIAN CROSSING",
+        "विकल्प 4: SILENCE ZONE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Visually impaired pedestrians frequent this area. Exercise utmost care.",
+      "te": "సరైన సమాధానం: BLIND PERSONS CROSSING AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: BLIND PERSONS CROSSING AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_080",
+    "category": "road_signs",
+    "signType": "cautionary",
+    "questionNumber": 80,
+    "image": "assets/signs/sign_080.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LANE CLOSED AHEAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 80)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 80)"
+    },
+    "options": {
+      "en": [
+        "LANE CLOSED AHEAD (MERGE TRAFFIC)",
+        "NARROW ROAD",
+        "ONE WAY",
+        "NO OVERTAKING"
+      ],
+      "te": [
+        "ఆప్షన్ 1: LANE CLOSED AHEAD (MERGE TRAFFIC)",
+        "ఆప్షన్ 2: NARROW ROAD",
+        "ఆప్షన్ 3: ONE WAY",
+        "ఆప్షన్ 4: NO OVERTAKING"
+      ],
+      "hi": [
+        "विकल्प 1: LANE CLOSED AHEAD (MERGE TRAFFIC)",
+        "विकल्प 2: NARROW ROAD",
+        "विकल्प 3: ONE WAY",
+        "विकल्प 4: NO OVERTAKING"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Right/left lane closed due to roadworks; merge smoothly into the open lane.",
+      "te": "సరైన సమాధానం: LANE CLOSED AHEAD (MERGE TRAFFIC). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: LANE CLOSED AHEAD (MERGE TRAFFIC). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_081",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 81,
+    "image": "assets/signs/sign_081.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (PUBLIC TELEPHONE)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 81)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 81)"
+    },
+    "options": {
+      "en": [
+        "PUBLIC TELEPHONE BOOTH",
+        "FIRST AID POST",
+        "POLICE STATION",
+        "INFORMATION CENTRE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: PUBLIC TELEPHONE BOOTH",
+        "ఆప్షన్ 2: FIRST AID POST",
+        "ఆప్షన్ 3: POLICE STATION",
+        "ఆప్షన్ 4: INFORMATION CENTRE"
+      ],
+      "hi": [
+        "विकल्प 1: PUBLIC TELEPHONE BOOTH",
+        "विकल्प 2: FIRST AID POST",
+        "विकल्प 3: POLICE STATION",
+        "विकल्प 4: INFORMATION CENTRE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Informatory blue sign indicating telephone booth available ahead.",
+      "te": "సరైన సమాధానం: PUBLIC TELEPHONE BOOTH. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: PUBLIC TELEPHONE BOOTH. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_082",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 82,
+    "image": "assets/signs/sign_082.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (PETROL PUMP)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 82)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 82)"
+    },
+    "options": {
+      "en": [
+        "PETROL PUMP (FUEL STATION) AHEAD",
+        "WORKSHOP",
+        "HOSPITAL",
+        "RESTING PLACE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: PETROL PUMP (FUEL STATION) AHEAD",
+        "ఆప్షన్ 2: WORKSHOP",
+        "ఆప్షన్ 3: HOSPITAL",
+        "ఆప్షన్ 4: RESTING PLACE"
+      ],
+      "hi": [
+        "विकल्प 1: PETROL PUMP (FUEL STATION) AHEAD",
+        "विकल्प 2: WORKSHOP",
+        "विकल्प 3: HOSPITAL",
+        "विकल्प 4: RESTING PLACE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Fuel dispensing station available at the indicated distance.",
+      "te": "సరైన సమాధానం: PETROL PUMP (FUEL STATION) AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: PETROL PUMP (FUEL STATION) AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_083",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 83,
+    "image": "assets/signs/sign_083.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (HOSPITAL)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 83)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 83)"
+    },
+    "options": {
+      "en": [
+        "HOSPITAL AHEAD (SILENCE ZONE)",
+        "FIRST AID POST",
+        "RESTING PLACE",
+        "HOTEL"
+      ],
+      "te": [
+        "ఆప్షన్ 1: HOSPITAL AHEAD (SILENCE ZONE)",
+        "ఆప్షన్ 2: FIRST AID POST",
+        "ఆప్షన్ 3: RESTING PLACE",
+        "ఆప్షన్ 4: HOTEL"
+      ],
+      "hi": [
+        "विकल्प 1: HOSPITAL AHEAD (SILENCE ZONE)",
+        "विकल्प 2: FIRST AID POST",
+        "विकल्प 3: RESTING PLACE",
+        "विकल्प 4: HOTEL"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue square with 'H' or red cross indicates a hospital. Do not sound horn.",
+      "te": "సరైన సమాధానం: HOSPITAL AHEAD (SILENCE ZONE). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: HOSPITAL AHEAD (SILENCE ZONE). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_084",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 84,
+    "image": "assets/signs/sign_084.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (FIRST AID POST)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 84)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 84)"
+    },
+    "options": {
+      "en": [
+        "FIRST AID POST (DISPENSARY/CLINIC)",
+        "HOSPITAL",
+        "PHARMACY",
+        "POLICE POST"
+      ],
+      "te": [
+        "ఆప్షన్ 1: FIRST AID POST (DISPENSARY/CLINIC)",
+        "ఆప్షన్ 2: HOSPITAL",
+        "ఆప్షన్ 3: PHARMACY",
+        "ఆప్షన్ 4: POLICE POST"
+      ],
+      "hi": [
+        "विकल्प 1: FIRST AID POST (DISPENSARY/CLINIC)",
+        "विकल्प 2: HOSPITAL",
+        "विकल्प 3: PHARMACY",
+        "विकल्प 4: POLICE POST"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Emergency first aid medical facility available ahead.",
+      "te": "సరైన సమాధానం: FIRST AID POST (DISPENSARY/CLINIC). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: FIRST AID POST (DISPENSARY/CLINIC). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_085",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 85,
+    "image": "assets/signs/sign_085.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (EATING PLACE)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 85)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 85)"
+    },
+    "options": {
+      "en": [
+        "EATING PLACE (RESTAURANT) AHEAD",
+        "LIGHT REFRESHMENT",
+        "HOTEL",
+        "RESTING PLACE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: EATING PLACE (RESTAURANT) AHEAD",
+        "ఆప్షన్ 2: LIGHT REFRESHMENT",
+        "ఆప్షన్ 3: HOTEL",
+        "ఆప్షన్ 4: RESTING PLACE"
+      ],
+      "hi": [
+        "विकल्प 1: EATING PLACE (RESTAURANT) AHEAD",
+        "विकल्प 2: LIGHT REFRESHMENT",
+        "विकल्प 3: HOTEL",
+        "विकल्प 4: RESTING PLACE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Restaurant/meals facility available ahead.",
+      "te": "సరైన సమాధానం: EATING PLACE (RESTAURANT) AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: EATING PLACE (RESTAURANT) AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_086",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 86,
+    "image": "assets/signs/sign_086.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (LIGHT REFRESHMENT)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 86)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 86)"
+    },
+    "options": {
+      "en": [
+        "LIGHT REFRESHMENT (TEA/SNACKS) AHEAD",
+        "EATING PLACE",
+        "PETROL PUMP",
+        "RESTING PLACE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: LIGHT REFRESHMENT (TEA/SNACKS) AHEAD",
+        "ఆప్షన్ 2: EATING PLACE",
+        "ఆప్షన్ 3: PETROL PUMP",
+        "ఆప్షన్ 4: RESTING PLACE"
+      ],
+      "hi": [
+        "विकल्प 1: LIGHT REFRESHMENT (TEA/SNACKS) AHEAD",
+        "विकल्प 2: EATING PLACE",
+        "विकल्प 3: PETROL PUMP",
+        "विकल्प 4: RESTING PLACE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Tea stall, snacks, or coffee cafeteria ahead.",
+      "te": "సరైన సమాధానం: LIGHT REFRESHMENT (TEA/SNACKS) AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: LIGHT REFRESHMENT (TEA/SNACKS) AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_087",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 87,
+    "image": "assets/signs/sign_087.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (RESTING PLACE)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 87)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 87)"
+    },
+    "options": {
+      "en": [
+        "RESTING PLACE (MOTEL / REST ROOM) AHEAD",
+        "HOSPITAL",
+        "PARKING LOT",
+        "CAMP SITE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: RESTING PLACE (MOTEL / REST ROOM) AHEAD",
+        "ఆప్షన్ 2: HOSPITAL",
+        "ఆప్షన్ 3: PARKING LOT",
+        "ఆప్షన్ 4: CAMP SITE"
+      ],
+      "hi": [
+        "विकल्प 1: RESTING PLACE (MOTEL / REST ROOM) AHEAD",
+        "विकल्प 2: HOSPITAL",
+        "विकल्प 3: PARKING LOT",
+        "विकल्प 4: CAMP SITE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Rest area with beds/dormitories for fatigued drivers to sleep.",
+      "te": "సరైన సమాధానం: RESTING PLACE (MOTEL / REST ROOM) AHEAD. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: RESTING PLACE (MOTEL / REST ROOM) AHEAD. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_088",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 88,
+    "image": "assets/signs/sign_088.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (ROAD CLOSED)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 88)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 88)"
+    },
+    "options": {
+      "en": [
+        "ROAD CLOSED TO ALL TRAFFIC",
+        "NO ENTRY",
+        "DEAD END",
+        "DIVERSION"
+      ],
+      "te": [
+        "ఆప్షన్ 1: ROAD CLOSED TO ALL TRAFFIC",
+        "ఆప్షన్ 2: NO ENTRY",
+        "ఆప్షన్ 3: DEAD END",
+        "ఆప్షన్ 4: DIVERSION"
+      ],
+      "hi": [
+        "विकल्प 1: ROAD CLOSED TO ALL TRAFFIC",
+        "विकल्प 2: NO ENTRY",
+        "विकल्प 3: DEAD END",
+        "विकल्प 4: DIVERSION"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Road temporarily or permanently closed to all vehicles.",
+      "te": "సరైన సమాధానం: ROAD CLOSED TO ALL TRAFFIC. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: ROAD CLOSED TO ALL TRAFFIC. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_089",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 89,
+    "image": "assets/signs/sign_089.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (NO THROUGH ROAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 89)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 89)"
+    },
+    "options": {
+      "en": [
+        "NO THROUGH ROAD (CUL-DE-SAC / DEAD END)",
+        "ONE WAY",
+        "NO ENTRY",
+        "SIDE ROAD"
+      ],
+      "te": [
+        "ఆప్షన్ 1: NO THROUGH ROAD (CUL-DE-SAC / DEAD END)",
+        "ఆప్షన్ 2: ONE WAY",
+        "ఆప్షన్ 3: NO ENTRY",
+        "ఆప్షన్ 4: SIDE ROAD"
+      ],
+      "hi": [
+        "विकल्प 1: NO THROUGH ROAD (CUL-DE-SAC / DEAD END)",
+        "विकल्प 2: ONE WAY",
+        "विकल्प 3: NO ENTRY",
+        "विकल्प 4: SIDE ROAD"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Road has no exit ahead; leads to a dead end.",
+      "te": "సరైన సమాధానం: NO THROUGH ROAD (CUL-DE-SAC / DEAD END). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: NO THROUGH ROAD (CUL-DE-SAC / DEAD END). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_090",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 90,
+    "image": "assets/signs/sign_090.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (NO THROUGH SIDE ROAD)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 90)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 90)"
+    },
+    "options": {
+      "en": [
+        "NO THROUGH SIDE ROAD (SIDE STREET DEAD END)",
+        "SIDE ROAD RIGHT",
+        "NO RIGHT TURN",
+        "ONE WAY"
+      ],
+      "te": [
+        "ఆప్షన్ 1: NO THROUGH SIDE ROAD (SIDE STREET DEAD END)",
+        "ఆప్షన్ 2: SIDE ROAD RIGHT",
+        "ఆప్షన్ 3: NO RIGHT TURN",
+        "ఆప్షన్ 4: ONE WAY"
+      ],
+      "hi": [
+        "विकल्प 1: NO THROUGH SIDE ROAD (SIDE STREET DEAD END)",
+        "विकल्प 2: SIDE ROAD RIGHT",
+        "विकल्प 3: NO RIGHT TURN",
+        "विकल्प 4: ONE WAY"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Side street turning off this road is a dead end without through passage.",
+      "te": "సరైన సమాధానం: NO THROUGH SIDE ROAD (SIDE STREET DEAD END). ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: NO THROUGH SIDE ROAD (SIDE STREET DEAD END). यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_091",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 91,
+    "image": "assets/signs/sign_091.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (PARKING THIS SIDE)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 91)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 91)"
+    },
+    "options": {
+      "en": [
+        "PARKING ALLOWED ON THIS SIDE",
+        "NO PARKING",
+        "TAXI STAND",
+        "BUS STOP"
+      ],
+      "te": [
+        "ఆప్షన్ 1: PARKING ALLOWED ON THIS SIDE",
+        "ఆప్షన్ 2: NO PARKING",
+        "ఆప్షన్ 3: TAXI STAND",
+        "ఆప్షన్ 4: BUS STOP"
+      ],
+      "hi": [
+        "विकल्प 1: PARKING ALLOWED ON THIS SIDE",
+        "विकल्प 2: NO PARKING",
+        "विकल्प 3: TAXI STAND",
+        "विकल्प 4: BUS STOP"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Blue sign with 'P' indicates designated vehicle parking zone.",
+      "te": "సరైన సమాధానం: PARKING ALLOWED ON THIS SIDE. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: PARKING ALLOWED ON THIS SIDE. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_092",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 92,
+    "image": "assets/signs/sign_092.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (SCOOTER & MOTORCYCLE PARKING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 92)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 92)"
+    },
+    "options": {
+      "en": [
+        "PARKING LOT FOR TWO WHEELERS ONLY",
+        "CYCLES PARKING",
+        "NO PARKING TWO WHEELERS",
+        "ALL VEHICLES PARKING"
+      ],
+      "te": [
+        "ఆప్షన్ 1: PARKING LOT FOR TWO WHEELERS ONLY",
+        "ఆప్షన్ 2: CYCLES PARKING",
+        "ఆప్షన్ 3: NO PARKING TWO WHEELERS",
+        "ఆప్షన్ 4: ALL VEHICLES PARKING"
+      ],
+      "hi": [
+        "विकल्प 1: PARKING LOT FOR TWO WHEELERS ONLY",
+        "विकल्प 2: CYCLES PARKING",
+        "विकल्प 3: NO PARKING TWO WHEELERS",
+        "विकल्प 4: ALL VEHICLES PARKING"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Designated parking space reserved exclusively for scooters and motorcycles.",
+      "te": "సరైన సమాధానం: PARKING LOT FOR TWO WHEELERS ONLY. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: PARKING LOT FOR TWO WHEELERS ONLY. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_093",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 93,
+    "image": "assets/signs/sign_093.png",
+    "text": {
+      "en": "WHAT DOES THIS SIGN MEAN? (CYCLE PARKING)",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 93)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 93)"
+    },
+    "options": {
+      "en": [
+        "PARKING FOR BICYCLES (CYCLES) ONLY",
+        "TWO WHEELERS PARKING",
+        "CYCLE TRACK",
+        "CYCLES PROHIBITED"
+      ],
+      "te": [
+        "ఆప్షన్ 1: PARKING FOR BICYCLES (CYCLES) ONLY",
+        "ఆప్షన్ 2: TWO WHEELERS PARKING",
+        "ఆప్షన్ 3: CYCLE TRACK",
+        "ఆప్షన్ 4: CYCLES PROHIBITED"
+      ],
+      "hi": [
+        "विकल्प 1: PARKING FOR BICYCLES (CYCLES) ONLY",
+        "विकल्प 2: TWO WHEELERS PARKING",
+        "विकल्प 3: CYCLE TRACK",
+        "विकल्प 4: CYCLES PROHIBITED"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Designated stand for parking pedal bicycles.",
+      "te": "సరైన సమాధానం: PARKING FOR BICYCLES (CYCLES) ONLY. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: PARKING FOR BICYCLES (CYCLES) ONLY. यह आधिकारिक यातायात नियम है।"
+    }
+  },
+  {
+    "id": "TS_RS_094",
+    "category": "road_signs",
+    "signType": "informatory",
+    "questionNumber": 94,
+    "image": "assets/signs/sign_094.png",
+    "text": {
+      "en": "TWO SOLID YELLOW LINES ON THE ROADWAY MEAN",
+      "te": "ఈ రోడ్డు చిహ్నం అర్థమేమిటి ? (ప్రశ్న 94)",
+      "hi": "इस सड़क चिन्ह का क्या अर्थ है? (प्रश्न 94)"
+    },
+    "options": {
+      "en": [
+        "YOU MUST NOT CROSS THESE LINES TO OVERTAKE OR MAKE A U-TURN",
+        "ONE WAY ROAD",
+        "CAN CHANGE LANE WITH CAUTION",
+        "NONE OF THE ABOVE"
+      ],
+      "te": [
+        "ఆప్షన్ 1: YOU MUST NOT CROSS THESE LINES TO OVERTAKE OR MAKE A U-TURN",
+        "ఆప్షన్ 2: ONE WAY ROAD",
+        "ఆప్షన్ 3: CAN CHANGE LANE WITH CAUTION",
+        "ఆప్షన్ 4: NONE OF THE ABOVE"
+      ],
+      "hi": [
+        "विकल्प 1: YOU MUST NOT CROSS THESE LINES TO OVERTAKE OR MAKE A U-TURN",
+        "विकल्प 2: ONE WAY ROAD",
+        "विकल्प 3: CAN CHANGE LANE WITH CAUTION",
+        "विकल्प 4: NONE OF THE ABOVE"
+      ]
+    },
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Double solid yellow lines prohibit crossing under all circumstances; acts like a physical barrier.",
+      "te": "సరైన సమాధానం: YOU MUST NOT CROSS THESE LINES TO OVERTAKE OR MAKE A U-TURN. ఇది అధికారిక ట్రాఫిక్ నిబంధన.",
+      "hi": "सही उत्तर: YOU MUST NOT CROSS THESE LINES TO OVERTAKE OR MAKE A U-TURN. यह आधिकारिक यातायात नियम है।"
+    }
+  }
+]
