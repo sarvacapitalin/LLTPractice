@@ -93,6 +93,8 @@ export class CoverageEngine {
    * This guarantees that mock test attempts actively drive candidate readiness to 95%!
    */
   sampleMockExamQuestions() {
+    const shuffle = arr => arr.slice().sort(() => 0.5 - Math.random());
+
     const signs = this.questions.filter(q => q.category === "road_signs");
     const rules = this.questions.filter(q => q.category === "rules_of_road");
     const principles = this.questions.filter(q => q.category === "general_principles");
@@ -111,8 +113,6 @@ export class CoverageEngine {
         }
       });
 
-      // Shuffle helper
-      const shuffle = arr => arr.slice().sort(() => 0.5 - Math.random());
       const shuffledPriority = shuffle(priority);
       const shuffledMastered = shuffle(mastered);
 

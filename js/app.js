@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 async function loadAllDatasets() {
   try {
-    const v = "v=10";
+    const v = "v=11";
     const [signsRes, rulesRes, gpRes, twinsRes, cheatRes, guideRes] = await Promise.all([
       fetch(`data/questions/telangana/road-signs.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/questions/telangana/rules-of-road.json?${v}`).then(r => r.json()).catch(() => []),
