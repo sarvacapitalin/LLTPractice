@@ -282,6 +282,81 @@
   box-shadow: 0 0 0 1px var(--secondary-blue);
 }
 
+/* Tutor Mode Feedback Styles */
+.option-card.correct {
+  border-color: #16A34A !important;
+  background: #F0FDF4 !important;
+  box-shadow: 0 0 0 2px #22C55E !important;
+}
+
+.option-card.correct .option-badge {
+  background: #16A34A !important;
+  color: #FFFFFF !important;
+  border-color: #16A34A !important;
+}
+
+.option-card.incorrect {
+  border-color: #DC2626 !important;
+  background: #FEF2F2 !important;
+  box-shadow: 0 0 0 2px #EF4444 !important;
+}
+
+.option-card.incorrect .option-badge {
+  background: #DC2626 !important;
+  color: #FFFFFF !important;
+  border-color: #DC2626 !important;
+}
+
+.option-card.dimmed {
+  opacity: 0.55;
+  filter: grayscale(20%);
+}
+
+/* Tutor Mode In-Exam Explanation Box */
+.exam-explanation-box {
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  border-left: 4px solid #16A34A;
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  margin-top: 10px;
+  animation: fadeIn 0.25s ease-in;
+}
+
+.exam-explanation-box.wrong {
+  background: #FEF2F2;
+  border-color: #FECACA;
+  border-left-color: #DC2626;
+}
+
+.exam-explanation-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.exam-explanation-box.correct .exam-explanation-title {
+  color: #166534;
+}
+
+.exam-explanation-box.wrong .exam-explanation-title {
+  color: #991B1B;
+}
+
+.exam-explanation-text {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: #334155;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .option-badge {
   width: 32px;
   height: 32px;
@@ -446,4 +521,221 @@
 
 .share-whatsapp-btn:hover {
   background: #1EBE5D;
+}
+
+/* Post-Exam Detailed Question Review Section */
+.exam-review-container {
+  width: 100%;
+  max-width: 860px;
+  margin-top: 24px;
+  text-align: left;
+  border-top: 2px solid var(--border-color);
+  padding-top: 24px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.review-heading {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.review-filter-btn {
+  background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.review-filter-btn:hover {
+  background: #E2E8F0;
+}
+
+.review-filter-btn.active {
+  background: var(--secondary-blue);
+  color: #FFFFFF;
+  border-color: var(--secondary-blue);
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card {
+  background: #FFFFFF;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.review-card.correct {
+  border-left: 5px solid #22C55E;
+}
+
+.review-card.wrong {
+  border-left: 5px solid #EF4444;
+}
+
+.review-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-q-num {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.review-q-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.review-q-status.correct {
+  background: #DCFCE7;
+  color: #166534;
+}
+
+.review-q-status.wrong {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.review-q-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.review-q-img-wrap {
+  text-align: center;
+  margin-bottom: 12px;
+  background: #F8FAFC;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+}
+
+.review-q-img {
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.review-options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.review-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  background: #FAFAFA;
+}
+
+.review-opt.user-chosen-wrong {
+  border-color: #EF4444;
+  background: #FEF2F2;
+  color: #991B1B;
+  font-weight: 600;
+}
+
+.review-opt.official-correct {
+  border-color: #22C55E;
+  background: #F0FDF4;
+  color: #166534;
+  font-weight: 700;
+}
+
+.review-opt-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  background: #E2E8F0;
+  color: #334155;
+}
+
+.review-opt.official-correct .review-opt-badge {
+  background: #16A34A;
+  color: #FFFFFF;
+}
+
+.review-opt.user-chosen-wrong .review-opt-badge {
+  background: #DC2626;
+  color: #FFFFFF;
+}
+
+.review-explanation {
+  background: #F8FAFC;
+  border-left: 3px solid var(--secondary-blue);
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85rem;
+  color: #334155;
+  margin-top: 8px;
+}
+
+.retry-missed-btn {
+  background: #EF4444;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.retry-missed-btn:hover {
+  background: #DC2626;
 }

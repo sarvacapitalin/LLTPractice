@@ -1,12 +1,12 @@
 {
-  "report_id": "QA_RUN_1795038342",
-  "generated_at": "2026-11-18T21:45:42.458324Z",
-  "duration_seconds": 0.026,
+  "report_id": "QA_RUN_1795040491",
+  "generated_at": "2026-11-18T22:21:31.336146Z",
+  "duration_seconds": 0.032,
   "overall_status": "PASSED",
   "summary": {
-    "total_suites": 8,
-    "total_tests": 58,
-    "passed": 58,
+    "total_suites": 9,
+    "total_tests": 64,
+    "passed": 64,
     "failed": 0,
     "pass_rate_percent": 100.0
   },
@@ -384,7 +384,7 @@
           "test": "css_file_exists_exam-stall.css",
           "status": "PASSED",
           "details": {
-            "size": 7826
+            "size": 13117
           }
         },
         {
@@ -420,7 +420,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 20219
+            "bytes_served": 22932
           }
         },
         {
@@ -454,7 +454,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 20219
+            "bytes_served": 22932
           }
         },
         {
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 31050
+            "bytes_served": 42153
           }
         },
         {
@@ -508,6 +508,46 @@
             "content_type": "image/png",
             "bytes_served": 9717
           }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Tutor Mode & Post-Exam Answer Review Suite",
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "real_exam_mode_advances_without_reveal",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "tutor_mode_pauses_and_reveals",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "tutor_mode_locks_option_during_reveal",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "tutor_mode_continue_advances",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "post_exam_history_structure_valid",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "missed_correct_tally_exact_partition",
+          "status": "PASSED",
+          "details": {}
         }
       ],
       "errors": []

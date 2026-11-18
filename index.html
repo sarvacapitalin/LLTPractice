@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Telangana RTA Learner's Licence Practice • Official STALL Test</title>
-  <link rel="stylesheet" href="css/styles.css?v=5">
-  <link rel="stylesheet" href="css/exam-stall.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=6">
+  <link rel="stylesheet" href="css/exam-stall.css?v=6">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0B2545">
   <meta name="description" content="Prepare for Telangana RTA Learner's Licence Test (LLR / STALL) in Hyderabad with authentic 20-question computerized mock exams, 95% readiness tracking, and trilingual support.">
@@ -89,7 +89,7 @@
         </p>
 
         <!-- Readiness Gate Notice -->
-        <div id="readiness-gate-card" style="background: var(--accent-gold-light); border: 1px solid #FCD34D; border-radius: var(--radius-md); padding: 14px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+        <div id="readiness-gate-card" style="background: var(--accent-gold-light); border: 1px solid #FCD34D; border-radius: var(--radius-md); padding: 14px; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
           <div>
             <strong style="color: #92400E; display: block; font-size: 0.95rem;">95% Exam Readiness Tracker</strong>
             <span style="font-size: 0.82rem; color: #78350F;">Master at least 391 of 412 questions (2 correct streaks required) to guarantee passing on test day.</span>
@@ -97,6 +97,22 @@
           <button id="btn-reset-readiness-mini" style="background: none; border: 1px solid #B45309; color: #B45309; padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.78rem; font-weight: 600; cursor: pointer;">
             🔄 Reset Progress to 0%
           </button>
+        </div>
+
+        <!-- Mode Toggle: Real Exam (Default) vs Tutor Mode -->
+        <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer;" id="tutor-toggle-wrapper">
+          <div>
+            <strong style="color: var(--primary-navy); display: flex; align-items: center; gap: 6px; font-size: 0.95rem;">
+              <span>🎓</span> <span>Tutor Mode (Instant Answer & Explanation)</span>
+            </strong>
+            <span style="font-size: 0.82rem; color: var(--text-secondary);">
+              Default is OFF (Strict STALL exam simulator). Turn ON to see green/red answer reveal and rule explanation immediately after each question.
+            </span>
+          </div>
+          <label style="display: flex; align-items: center; cursor: pointer; gap: 6px;">
+            <input type="checkbox" id="exam-toggle-tutor-mode" style="width: 20px; height: 20px; cursor: pointer;">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--secondary-blue);" id="tutor-mode-status-label">OFF</span>
+          </label>
         </div>
 
         <button id="btn-start-exam-main" class="confirm-next-btn" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 16px;">
@@ -161,6 +177,9 @@
           <div class="options-grid" id="exam-options-container">
             <!-- Dynamically populated option cards -->
           </div>
+
+          <!-- Tutor Mode In-Exam Explanation Box -->
+          <div id="exam-explanation-box" class="exam-explanation-box" style="display: none;"></div>
         </div>
 
         <!-- STALL Bottom Footer -->
@@ -184,6 +203,10 @@
           <div class="score-display">
             <span id="result-score-text">Score: 12 out of 15 (80%)</span>
           </div>
+
+          <!-- Category Performance Breakdown -->
+          <div id="result-category-breakdown" style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.88rem; font-weight: 700;"></div>
+
           <p id="result-explanation" style="max-width: 500px; color: var(--text-secondary);" data-i18n="result_pass_desc">
             You reached the passing mark of 12 correct! You are well prepared for the real RTA exam.
           </p>
@@ -192,9 +215,27 @@
             <button id="btn-retake-exam" class="confirm-next-btn">
               🔄 <span data-i18n="btn_restart_exam">TAKE ANOTHER TEST</span>
             </button>
+            <button id="btn-retake-missed" class="retry-missed-btn" style="display: none;">
+              🎯 <span>RE-TRY MISSED QUESTIONS (<span id="count-missed-btn">0</span>)</span>
+            </button>
             <a id="btn-share-whatsapp" class="share-whatsapp-btn" target="_blank" rel="noopener">
               <span>💬</span> <span data-i18n="whatsapp_share">Share Score on WhatsApp</span>
             </a>
+          </div>
+
+          <!-- Post-Exam Detailed Question Review -->
+          <div class="exam-review-container" id="exam-review-container">
+            <div class="review-header">
+              <h3 class="review-heading">📝 Detailed Question Review</h3>
+              <div class="review-filters">
+                <button class="review-filter-btn active" data-review-filter="all">All (<span id="count-review-all">0</span>)</button>
+                <button class="review-filter-btn" data-review-filter="wrong">❌ Missed (<span id="count-review-wrong">0</span>)</button>
+                <button class="review-filter-btn" data-review-filter="correct">✔️ Correct (<span id="count-review-correct">0</span>)</button>
+              </div>
+            </div>
+            <div class="review-list" id="exam-review-list">
+              <!-- Dynamically populated review cards -->
+            </div>
           </div>
         </div>
       </div>
@@ -346,6 +387,6 @@
   </div>
 
   <!-- Main JavaScript App Controller -->
-  <script type="module" src="js/app.js?v=5"></script>
+  <script type="module" src="js/app.js?v=6"></script>
 </body>
 </html>

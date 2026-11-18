@@ -254,10 +254,27 @@ function initExamUI() {
   const resultCard = document.getElementById("exam-result-card");
   const btnStart = document.getElementById("btn-start-exam-main");
   const btnRetake = document.getElementById("btn-retake-exam");
+  const btnRetakeMissed = document.getElementById("btn-retake-missed");
   const btnConfirm = document.getElementById("btn-confirm-next");
   const btnRead = document.getElementById("btn-read-question");
   const guessCheckbox = document.getElementById("exam-guess-checkbox");
   const optionsContainer = document.getElementById("exam-options-container");
+  const tutorToggle = document.getElementById("exam-toggle-tutor-mode");
+  const tutorLabel = document.getElementById("tutor-mode-status-label");
+  const explanationBox = document.getElementById("exam-explanation-box");
+
+  // Initialize Tutor Mode preference (Default: OFF)
+  const initialTutor = storage.getPreference("tutorMode", false);
+  if (tutorToggle) tutorToggle.checked = initialTutor;
+  if (tutorLabel) tutorLabel.textContent = initialTutor ? "ON" : "OFF";
+  exam.setTutorMode(initialTutor);
+
+  tutorToggle?.addEventListener("change", (e) => {
+    const on = e.target.checked;
+    exam.setTutorMode(on);
+    storage.setPreference("tutorMode", on);
+    if (tutorLabel) tutorLabel.textContent = on ? "ON" : "OFF";
+  });
 
   btnStart?.addEventListener("click", () => {
     if (!datasetsLoaded || allQuestions.length === 0) {
@@ -274,6 +291,11 @@ function initExamUI() {
   });
 
   btnConfirm?.addEventListener("click", () => {
+    if (exam.isRevealed) {
+      currentRenderedQId = null;
+      exam.continueToNext();
+      return;
+    }
     const isGuessed = guessCheckbox ? guessCheckbox.checked : false;
     currentRenderedQId = null;
     exam.confirmAndSubmit(isGuessed);
@@ -286,6 +308,7 @@ function initExamUI() {
 
   // Event delegation on options container for fast, reliable click handling
   optionsContainer?.addEventListener("click", (e) => {
+    if (exam.isRevealed) return; // Prevent changing answers while revealed in Tutor Mode
     const card = e.target.closest(".option-card");
     if (card) {
       const idx = parseInt(card.getAttribute("data-option-index"), 10);
@@ -325,8 +348,9 @@ function initExamUI() {
       const desc = document.getElementById("result-explanation");
       const waBtn = document.getElementById("btn-share-whatsapp");
 
-      const percent = Math.round((state.correctCount / 20) * 100);
-      if (scoreText) scoreText.textContent = `Score: ${state.correctCount} / 20 (${percent}%) • Pass Mark: 12`;
+      const totalQs = state.totalQuestions || 20;
+      const percent = Math.round((state.correctCount / totalQs) * 100);
+      if (scoreText) scoreText.textContent = `Score: ${state.correctCount} / ${totalQs} (${percent}%) • Pass Mark: 12`;
 
       if (state.passed) {
         if (badge) { badge.className = "result-badge-big pass"; badge.textContent = "✓"; }
@@ -335,13 +359,16 @@ function initExamUI() {
       } else {
         if (badge) { badge.className = "result-badge-big fail"; badge.textContent = "✗"; }
         if (title) { title.className = "result-title fail"; title.textContent = t("result_fail", "TEST NOT CLEARED"); }
-        if (desc) desc.textContent = t("result_fail_desc", "You need at least 12 correct answers to pass. Review your missed questions in Topic Practice.");
+        if (desc) desc.textContent = t("result_fail_desc", "You need at least 12 correct answers to pass. Review your missed questions below or in Topic Practice.");
       }
 
       if (waBtn) {
-        const waMsg = encodeURIComponent(`I scored ${state.correctCount}/20 on the Telangana RTA LLR STALL mock exam! Practice here: ${window.location.href}`);
+        const waMsg = encodeURIComponent(`I scored ${state.correctCount}/${totalQs} on the Telangana RTA LLR STALL mock exam! Practice here: ${window.location.href}`);
         waBtn.href = `https://api.whatsapp.com/send?text=${waMsg}`;
       }
+
+      // Render the Detailed Post-Exam Review Section
+      renderExamResultReview(state, getCurrentLang(), exam);
       return;
     }
 
@@ -470,11 +497,212 @@ function initExamUI() {
       }
     }
 
-    // 3. Update Confirm button status
-    if (btnConfirm) {
-      btnConfirm.disabled = (state.selectedOption === null);
+    // 3. Handle Tutor Mode feedback state vs standard state
+    const expBox = document.getElementById("exam-explanation-box");
+    if (state.isRevealed) {
+      // Highlight correct & wrong options
+      const optContainer = document.getElementById("exam-options-container");
+      if (optContainer) {
+        optContainer.querySelectorAll(".option-card").forEach((card) => {
+          const idx = parseInt(card.getAttribute("data-option-index"), 10);
+          card.classList.remove("selected", "correct", "incorrect", "dimmed");
+          if (idx === q.answerIndex) {
+            card.classList.add("correct");
+          } else if (idx === state.selectedOption) {
+            card.classList.add("incorrect");
+          } else {
+            card.classList.add("dimmed");
+          }
+        });
+      }
+
+      // Display official rule explanation
+      if (expBox) {
+        const isCorrect = (state.selectedOption === q.answerIndex);
+        expBox.className = "exam-explanation-box " + (isCorrect ? "correct" : "wrong");
+        const expText = (q.explanation && (q.explanation[lang] || q.explanation.en)) || "Follow official Telangana RTA rules and guidelines.";
+        expBox.innerHTML = `
+          <div class="exam-explanation-title">
+            <span>${isCorrect ? "✓ Correct Answer!" : `✗ Incorrect! Official Correct Answer: Option ${q.answerIndex + 1}`}</span>
+          </div>
+          <div class="exam-explanation-text">${expText}</div>
+        `;
+        expBox.style.display = "block";
+      }
+
+      // Transform button to CONTINUE
+      if (btnConfirm) {
+        btnConfirm.disabled = false;
+        btnConfirm.innerHTML = `<span>CONTINUE</span> ➔`;
+        btnConfirm.style.background = "var(--secondary-blue)";
+      }
+    } else {
+      if (expBox) expBox.style.display = "none";
+      if (btnConfirm) {
+        btnConfirm.disabled = (state.selectedOption === null);
+        btnConfirm.innerHTML = `<span data-i18n="btn_confirm_next">CONFIRM & NEXT</span> ➔`;
+        btnConfirm.style.background = "";
+      }
     }
   };
+}
+
+// Render Post-Exam Detailed Question Breakdown on Results Card
+function renderExamResultReview(state, lang, examEngine) {
+  const catBreakdown = document.getElementById("result-category-breakdown");
+  const reviewList = document.getElementById("exam-review-list");
+  const btnRetakeMissed = document.getElementById("btn-retake-missed");
+  const countMissedBtn = document.getElementById("count-missed-btn");
+  const countAll = document.getElementById("count-review-all");
+  const countWrong = document.getElementById("count-review-wrong");
+  const countCorrect = document.getElementById("count-review-correct");
+
+  if (!reviewList) return;
+
+  const history = state.history || [];
+  const missedItems = history.filter(h => !h.isCorrect);
+  const correctItems = history.filter(h => h.isCorrect);
+
+  if (countAll) countAll.textContent = history.length;
+  if (countWrong) countWrong.textContent = missedItems.length;
+  if (countCorrect) countCorrect.textContent = correctItems.length;
+
+  // Category breakdown
+  if (catBreakdown) {
+    let signsC = 0, signsT = 0;
+    let rulesC = 0, rulesT = 0;
+    let gpC = 0, gpT = 0;
+
+    history.forEach(h => {
+      const cat = h.question.category;
+      if (cat === "road_signs") { signsT++; if (h.isCorrect) signsC++; }
+      else if (cat === "rules_of_road") { rulesT++; if (h.isCorrect) rulesC++; }
+      else if (cat === "general_principles") { gpT++; if (h.isCorrect) gpC++; }
+    });
+
+    catBreakdown.innerHTML = `
+      <span style="background: #FEF3C7; color: #92400E; padding: 4px 10px; border-radius: 4px; border: 1px solid #FDE68A;">
+        🚸 Signs: ${signsC}/${signsT} (${signsT > 0 ? Math.round((signsC/signsT)*100) : 0}%)
+      </span>
+      <span style="background: #FEE2E2; color: #991B1B; padding: 4px 10px; border-radius: 4px; border: 1px solid #FECACA;">
+        🛑 Rules: ${rulesC}/${rulesT} (${rulesT > 0 ? Math.round((rulesC/rulesT)*100) : 0}%)
+      </span>
+      <span style="background: #EFF6FF; color: #1E40AF; padding: 4px 10px; border-radius: 4px; border: 1px solid #BFDBFE;">
+        🚗 Principles: ${gpC}/${gpT} (${gpT > 0 ? Math.round((gpC/gpT)*100) : 0}%)
+      </span>
+    `;
+  }
+
+  // Re-try Missed Questions Button
+  if (btnRetakeMissed) {
+    if (missedItems.length > 0) {
+      btnRetakeMissed.style.display = "inline-flex";
+      if (countMissedBtn) countMissedBtn.textContent = missedItems.length;
+      btnRetakeMissed.onclick = () => {
+        const missedQuestions = missedItems.map(h => h.question);
+        currentRenderedQId = null;
+        examEngine.startCustomExam(missedQuestions);
+      };
+    } else {
+      btnRetakeMissed.style.display = "none";
+    }
+  }
+
+  // Build review cards
+  function buildCards(filter = "all") {
+    let itemsToRender = history;
+    if (filter === "wrong") itemsToRender = missedItems;
+    if (filter === "correct") itemsToRender = correctItems;
+
+    if (itemsToRender.length === 0) {
+      reviewList.innerHTML = `<div style="text-align: center; color: var(--text-secondary); padding: 24px; font-weight: 600;">No questions match this filter.</div>`;
+      return;
+    }
+
+    let html = "";
+    itemsToRender.forEach((h, idx) => {
+      const q = h.question;
+      const isCorrect = h.isCorrect;
+      const userChoice = h.selected;
+      const correctIdx = q.answerIndex;
+      const qText = (q.text && q.text[lang]) || (q.text && q.text.en) || "";
+      const qExp = (q.explanation && (q.explanation[lang] || q.explanation.en)) || "Follow standard official Telangana RTA rules.";
+      
+      let opts = [];
+      if (q.options) {
+        if (Array.isArray(q.options)) opts = q.options;
+        else if (typeof q.options === "object") opts = q.options[lang] || q.options.en || [];
+      }
+
+      let categoryName = "Traffic Sign";
+      if (q.category === "rules_of_road") categoryName = "Rule of the Road";
+      else if (q.category === "general_principles") categoryName = "Driving Principle";
+
+      html += `
+        <div class="review-card ${isCorrect ? 'correct' : 'wrong'}" data-review-status="${isCorrect ? 'correct' : 'wrong'}">
+          <div class="review-card-top">
+            <span class="review-q-num">Q${idx + 1} • ${categoryName} (${q.id})</span>
+            <span class="review-q-status ${isCorrect ? 'correct' : 'wrong'}">
+              ${isCorrect ? "✓ Correct" : (h.timeout ? "⏰ Timed Out" : "✗ Incorrect")}
+              ${h.isGuessed ? " • 🤔 Guessed" : ""}
+            </span>
+          </div>
+
+          <h4 class="review-q-title">${qText}</h4>
+
+          ${q.image ? `
+            <div class="review-q-img-wrap">
+              <img src="${q.image}" class="review-q-img" alt="Traffic Sign">
+            </div>
+          ` : ''}
+
+          <div class="review-options-grid">
+            ${opts.map((optText, optIdx) => {
+              let optClass = "";
+              let optBadge = optIdx + 1;
+              let suffixTag = "";
+
+              if (optIdx === correctIdx) {
+                optClass = "official-correct";
+                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #166534; font-weight: 700;">✓ Correct Answer</span>`;
+              } else if (optIdx === userChoice && !isCorrect) {
+                optClass = "user-chosen-wrong";
+                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #991B1B; font-weight: 700;">✗ Your Choice</span>`;
+              } else if (optIdx === userChoice && isCorrect) {
+                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #166534; font-weight: 700;">✓ Your Choice</span>`;
+              }
+
+              return `
+                <div class="review-opt ${optClass}">
+                  <div class="review-opt-badge">${optBadge}</div>
+                  <div>${optText}</div>
+                  ${suffixTag}
+                </div>
+              `;
+            }).join("")}
+          </div>
+
+          <div class="review-explanation">
+            <strong>💡 Official Rule / Explanation:</strong> ${qExp}
+          </div>
+        </div>
+      `;
+    });
+
+    reviewList.innerHTML = html;
+  }
+
+  buildCards("all");
+
+  // Wire up review filter pills
+  document.querySelectorAll(".review-filter-btn").forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll(".review-filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const filter = btn.getAttribute("data-review-filter");
+      buildCards(filter);
+    };
+  });
 }
 
 // ==========================================

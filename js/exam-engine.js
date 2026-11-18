@@ -17,7 +17,13 @@ export class ExamEngine {
     this.history = []; // records per question
     this.isActive = false;
     this.isFinished = false;
+    this.tutorMode = false; // When true: instant right/wrong feedback on submit
+    this.isRevealed = false; // When true in tutorMode: answer is currently revealed
     this.onStateUpdate = null; // UI callback
+  }
+
+  setTutorMode(enabled) {
+    this.tutorMode = Boolean(enabled);
   }
 
   startNewExam() {
@@ -39,11 +45,28 @@ export class ExamEngine {
     this.history = [];
     this.isActive = true;
     this.isFinished = false;
+    this.isRevealed = false;
+
+    this.startQuestion();
+  }
+
+  startCustomExam(customQuestions) {
+    if (!customQuestions || customQuestions.length === 0) return;
+    this.questions = customQuestions.slice();
+    this.currentIndex = 0;
+    this.selectedOption = null;
+    this.correctCount = 0;
+    this.wrongCount = 0;
+    this.history = [];
+    this.isActive = true;
+    this.isFinished = false;
+    this.isRevealed = false;
 
     this.startQuestion();
   }
 
   startQuestion() {
+    this.isRevealed = false;
     if (this.currentIndex >= this.questions.length) {
       this.finishExam("completed");
       return;
@@ -102,7 +125,7 @@ export class ExamEngine {
   }
 
   selectOption(index) {
-    if (!this.isActive || this.isFinished) return;
+    if (!this.isActive || this.isFinished || this.isRevealed) return;
     this.selectedOption = index;
     sounds.playSelect();
     this.notifyUpdate();
@@ -110,6 +133,11 @@ export class ExamEngine {
 
   confirmAndSubmit(isGuessed = false) {
     if (this.selectedOption === null || !this.isActive) return;
+    if (this.isRevealed) {
+      // In tutorMode when already revealed, clicking confirm acts as Continue
+      this.continueToNext();
+      return;
+    }
 
     clearInterval(this.timer);
     speech.stop();
@@ -136,7 +164,20 @@ export class ExamEngine {
       timeLeft: this.timeLeft
     });
 
-    // Move to next question or check early stopping
+    if (this.tutorMode) {
+      // Pause on current question to show correct/wrong highlight & explanation
+      this.isRevealed = true;
+      this.notifyUpdate();
+    } else {
+      // Normal exam mode: instantly advance to next question
+      this.currentIndex += 1;
+      this.startQuestion();
+    }
+  }
+
+  continueToNext() {
+    if (!this.isActive || this.isFinished) return;
+    this.isRevealed = false;
     this.currentIndex += 1;
     this.startQuestion();
   }
@@ -229,13 +270,15 @@ export class ExamEngine {
       isActive: this.isActive,
       isFinished: this.isFinished,
       currentIndex: this.currentIndex,
-      totalQuestions: 20,
+      totalQuestions: this.questions.length,
       currentQuestion: currentQ,
       selectedOption: this.selectedOption,
       timeLeft: this.timeLeft,
       correctCount: this.correctCount,
       wrongCount: this.wrongCount,
       passed,
+      tutorMode: this.tutorMode,
+      isRevealed: this.isRevealed,
       history: this.history
     };
   }

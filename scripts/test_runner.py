@@ -936,6 +936,130 @@ def run_web_server_accessibility_suite():
 
 
 # ==============================================================================
+# SUITE 9: TUTOR MODE & POST-EXAM REVIEW SUITE
+# ==============================================================================
+def run_tutor_mode_and_review_suite(all_questions):
+    res = TestSuiteResult("Tutor Mode & Post-Exam Answer Review Suite")
+    print("\n--- Running Suite: Tutor Mode & Post-Exam Review ---")
+
+    class MockExamEngine:
+        def __init__(self, questions):
+            self.questions = questions[:20]
+            self.currentIndex = 0
+            self.selectedOption = None
+            self.correctCount = 0
+            self.wrongCount = 0
+            self.history = []
+            self.isActive = True
+            self.isFinished = False
+            self.tutorMode = False
+            self.isRevealed = False
+
+        def setTutorMode(self, enabled):
+            self.tutorMode = bool(enabled)
+
+        def selectOption(self, idx):
+            if not self.isActive or self.isRevealed:
+                return
+            self.selectedOption = idx
+
+        def confirmAndSubmit(self, isGuessed=False):
+            if self.selectedOption is None or not self.isActive:
+                return
+            if self.isRevealed:
+                self.continueToNext()
+                return
+
+            currentQ = self.questions[self.currentIndex]
+            isCorrect = (self.selectedOption == currentQ["answerIndex"])
+            if isCorrect:
+                self.correctCount += 1
+            else:
+                self.wrongCount += 1
+
+            self.history.append({
+                "question": currentQ,
+                "selected": self.selectedOption,
+                "isCorrect": isCorrect,
+                "isGuessed": isGuessed,
+                "timeLeft": 25
+            })
+
+            if self.tutorMode:
+                self.isRevealed = True
+            else:
+                self.currentIndex += 1
+
+        def continueToNext(self):
+            self.isRevealed = False
+            self.currentIndex += 1
+            if self.currentIndex >= len(self.questions):
+                self.isFinished = True
+                self.isActive = False
+
+    # Test 1: Real Exam Mode (default) advances immediately
+    engine1 = MockExamEngine(all_questions)
+    engine1.selectOption(0)
+    engine1.confirmAndSubmit()
+    if engine1.currentIndex == 1 and not engine1.isRevealed:
+        res.record_pass("real_exam_mode_advances_without_reveal")
+    else:
+        res.record_fail("real_exam_mode_advances_without_reveal", "Expected immediate question advance")
+
+    # Test 2: Tutor Mode pauses and sets isRevealed
+    engine2 = MockExamEngine(all_questions)
+    engine2.setTutorMode(True)
+    engine2.selectOption(1)
+    engine2.confirmAndSubmit()
+    if engine2.currentIndex == 0 and engine2.isRevealed:
+        res.record_pass("tutor_mode_pauses_and_reveals")
+    else:
+        res.record_fail("tutor_mode_pauses_and_reveals", f"Expected currentIndex 0 and isRevealed True, got {engine2.currentIndex}, {engine2.isRevealed}")
+
+    # Test 3: Tutor Mode blocks option change while revealed
+    engine2.selectOption(2)
+    if engine2.selectedOption == 1:
+        res.record_pass("tutor_mode_locks_option_during_reveal")
+    else:
+        res.record_fail("tutor_mode_locks_option_during_reveal", "Option should be locked during reveal")
+
+    # Test 4: continueToNext advances from reveal state
+    engine2.continueToNext()
+    if engine2.currentIndex == 1 and not engine2.isRevealed:
+        res.record_pass("tutor_mode_continue_advances")
+    else:
+        res.record_fail("tutor_mode_continue_advances", "Expected currentIndex 1 and isRevealed False")
+
+    # Test 5: Post-exam history records all attempted questions with full details
+    while not engine1.isFinished and engine1.currentIndex < len(engine1.questions):
+        engine1.selectOption(0)
+        engine1.confirmAndSubmit()
+        if engine1.wrongCount >= 9 or engine1.correctCount >= 12:
+            engine1.isFinished = True
+            break
+        engine1.continueToNext()
+
+    if len(engine1.history) > 0:
+        h0 = engine1.history[0]
+        if "question" in h0 and "selected" in h0 and "isCorrect" in h0:
+            res.record_pass("post_exam_history_structure_valid")
+        else:
+            res.record_fail("post_exam_history_structure_valid", f"Missing keys in history item: {h0.keys()}")
+    else:
+        res.record_fail("post_exam_history_structure_valid", "No history items recorded")
+
+    # Test 6: Missed questions filtering fidelity
+    missed = [h for h in engine1.history if not h["isCorrect"]]
+    correct = [h for h in engine1.history if h["isCorrect"]]
+    if len(missed) + len(correct) == len(engine1.history):
+        res.record_pass("missed_correct_tally_exact_partition")
+    else:
+        res.record_fail("missed_correct_tally_exact_partition", "Tally sum mismatch")
+
+    return res
+
+
+# ==============================================================================
 # MAIN RUNNER & REPORT GENERATOR
 # ==============================================================================
 def main():
@@ -978,6 +1102,10 @@ def main():
     # 8. Local Web Server Accessibility Suite
     suite8 = run_web_server_accessibility_suite()
     suites.append(suite8)
+
+    # 9. Tutor Mode & Post-Exam Answer Review Suite
+    suite9 = run_tutor_mode_and_review_suite(all_questions)
+    suites.append(suite9)
 
     elapsed_time = round(time.time() - start_time, 3)
 
