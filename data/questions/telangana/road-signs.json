@@ -1456,29 +1456,29 @@
     },
     "options": {
       "en": [
-        "COMPULSORY CYCLE",
-        "TRACK",
-        "SCHOOL AREA CYCLE PROHIBITED",
+        "COMPULSORY CYCLE TRACK",
+        "SCHOOL AREA",
+        "CYCLE PROHIBITED",
         "NONE OF THE ABOVE"
       ],
       "te": [
-        "తప్పనిసరి CYCLE",
-        "TRACK",
-        "పాఠశాల AREA CYCLE నిషిద్ధం",
+        "తప్పనిసరి సైకిల్ ట్రాక్",
+        "పాఠశాల ప్రాంతం",
+        "సైకిళ్లు నిషిద్ధం",
         "పైవేవీ కావు"
       ],
       "hi": [
-        "अनिवार्य CYCLE",
-        "TRACK",
-        "स्कूल AREA CYCLE निषेध",
+        "अनिवार्य साइकिल ट्रैक",
+        "स्कूल क्षेत्र",
+        "साइकिल निषेध",
         "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Road Sign Rule: COMPULSORY CYCLE. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: తప్పనిసరి CYCLE. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: अनिवार्य CYCLE. मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: COMPULSORY CYCLE TRACK.",
+      "te": "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: తప్పనిసరి సైకిల్ ట్రాక్.",
+      "hi": "आधिकारिक सड़क नियम के अनुसार सही उत्तर: अनिवार्य साइकिल ट्रैक."
     }
   },
   {
@@ -1494,29 +1494,29 @@
     },
     "options": {
       "en": [
-        "COMPULSORY CYCLE",
-        "TRACK",
-        "CYCLE PROHIBITED CYCLE TRACK",
+        "COMPULSORY CYCLE TRACK",
+        "CYCLE PROHIBITED",
+        "CYCLE TRACK",
         "CYCLE CROSSING"
       ],
       "te": [
-        "తప్పనిసరి CYCLE",
-        "TRACK",
-        "CYCLE నిషిద్ధం CYCLE TRACK",
+        "తప్పనిసరి సైకిల్ ట్రాక్",
+        "సైకిళ్లు నిషిద్ధం",
+        "సైకిల్ ట్రాక్",
         "సైకిల్ క్రాసింగ్"
       ],
       "hi": [
-        "अनिवार्य CYCLE",
-        "TRACK",
-        "CYCLE निषेध CYCLE TRACK",
+        "अनिवार्य साइकिल ट्रैक",
+        "साइकिल निषेध",
+        "साइकिल ट्रैक",
         "साइकिल क्रॉसिंग"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Road Sign Rule: CYCLE CROSSING. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: సైకిల్ క్రాసింగ్. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: साइकिल क्रॉसिंग. मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: CYCLE CROSSING.",
+      "te": "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: సైకిల్ క్రాసింగ్.",
+      "hi": "आधिकारिक सड़क नियम के अनुसार सही उत्तर: साइकिल क्रॉसिंग."
     }
   },
   {
@@ -2142,27 +2142,27 @@
       "en": [
         "BARRIER AHEAD",
         "ROUND ABOUT",
-        "CROSS ROAD RAILWAY CROSSING",
-        "AHEAD"
+        "CROSS ROAD",
+        "RAILWAY CROSSING AHEAD"
       ],
       "te": [
-        "ముందు చెక్‌పోస్ట్ / బారికేడ్ కలదు",
-        "ROUND ABOUT",
-        "CROSS రోడ్డు రైల్వే దాటడం / క్రాసింగ్",
-        "ముందు"
+        "ముందు బారికేడ్ కలదు",
+        "రౌండ్‌ఎబౌట్ (వృత్తాకార కూడలి)",
+        "రహదారి కూడలి (క్రాస్ రోడ్డు)",
+        "ముందు రైల్వే లెవల్ క్రాసింగ్ కలదు"
       ],
       "hi": [
-        "आगे बैरियर / चेकपोस्ट है",
-        "ROUND ABOUT",
-        "CROSS सड़क रेलवे पार करना (क्रॉसिंग)",
-        "आगे"
+        "आगे बैरियर है",
+        "गोल चक्कर (राउंडअबाउट)",
+        "चौराहा (क्रॉस रोड)",
+        "आगे रेलवे क्रॉसिंग है"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Road Sign Rule: CROSS ROAD RAILWAY CROSSING. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: CROSS రోడ్డు రైల్వే దాటడం / క్రాసింగ్. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: CROSS सड़क रेलवे पार करना (क्रॉसिंग). मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: CROSS ROAD.",
+      "te": "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: రహదారి కూడలి (క్రాస్ రోడ్డు).",
+      "hi": "आधिकारिक सड़क नियम के अनुसार सही उत्तर: चौराहा (क्रॉस रोड)."
     }
   },
   {

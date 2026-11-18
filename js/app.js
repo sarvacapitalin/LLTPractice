@@ -63,13 +63,14 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 async function loadAllDatasets() {
   try {
+    const v = "v=8";
     const [signsRes, rulesRes, gpRes, twinsRes, cheatRes, guideRes] = await Promise.all([
-      fetch("data/questions/telangana/road-signs.json").then(r => r.json()).catch(() => []),
-      fetch("data/questions/telangana/rules-of-road.json").then(r => r.json()).catch(() => []),
-      fetch("data/questions/telangana/general-principles.json").then(r => r.json()).catch(() => []),
-      fetch("data/tricky-twins.json").then(r => r.json()).catch(() => []),
-      fetch("data/last-minute-cheatsheet.json").then(r => r.json()).catch(() => null),
-      fetch("data/rto-guide.json").then(r => r.json()).catch(() => null)
+      fetch(`data/questions/telangana/road-signs.json?${v}`).then(r => r.json()).catch(() => []),
+      fetch(`data/questions/telangana/rules-of-road.json?${v}`).then(r => r.json()).catch(() => []),
+      fetch(`data/questions/telangana/general-principles.json?${v}`).then(r => r.json()).catch(() => []),
+      fetch(`data/tricky-twins.json?${v}`).then(r => r.json()).catch(() => []),
+      fetch(`data/last-minute-cheatsheet.json?${v}`).then(r => r.json()).catch(() => null),
+      fetch(`data/rto-guide.json?${v}`).then(r => r.json()).catch(() => null)
     ]);
 
     roadSigns = signsRes;
