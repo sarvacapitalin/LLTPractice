@@ -12,7 +12,7 @@
         "te": "నో పార్కింగ్ (ఒక క్రాస్ గీత)",
         "hi": "पार्किंग नहीं (1 तिरछी रेखा)"
       },
-      "image": "assets/signs/rs_12.png",
+      "image": "assets/signs/sign_024.png",
       "rule": {
         "en": "You cannot leave your vehicle unattended. However, momentarily picking up or dropping off a passenger is allowed.",
         "te": "వాహనాన్ని పార్క్ చేసి వదిలి వెళ్లకూడదు. ప్రయాణికులను దించడానికి కొద్దిసేపు ఆగవచ్చు.",
@@ -25,7 +25,7 @@
         "te": "నో స్టాపింగ్ లేదా స్టాండింగ్ (రెండు క్రాస్ 'X' గీతలు)",
         "hi": "रुकना व ठहरना सख्त मना है ('X' क्रॉस रेखा)"
       },
-      "image": "assets/signs/rs_13.png",
+      "image": "assets/signs/sign_025.png",
       "rule": {
         "en": "STRICTEST BAN: You cannot even pause, idle, or drop someone off for a single second. Common on flyovers and busy intersections.",
         "te": "అత్యంత కఠినమైన నిషేధం: ఒక్క సెకను కూడా వాహనాన్ని ఆపకూడదు. ఫ్లైఓవర్లు మరియు రద్దీ జంక్షన్ల వద్ద ఉంటుంది.",
@@ -51,7 +51,7 @@
         "te": "కాపలా ఉన్న రైల్వే క్రాసింగ్ (కంచె/గేట్ గుర్తు)",
         "hi": "सुरक्षित क्रॉसिंग (फाटक/बाड़ का निशान)"
       },
-      "image": "assets/signs/rs_72.png",
+      "image": "assets/signs/sign_074.png",
       "rule": {
         "en": "Has a railway gate and watchman. Wait for the gate to open safely.",
         "te": "గేటు మరియు కాపలాదారు ఉంటారు. గేటు తెరిచే వరకు వేచి ఉండాలి.",
@@ -64,7 +64,7 @@
         "te": "కాపలా లేని రైల్వే క్రాసింగ్ (రైలు ఇంజిన్ గుర్తు)",
         "hi": "असुरक्षित क्रॉसिंग (ट्रेन इंजन का निशान)"
       },
-      "image": "assets/signs/rs_70.png",
+      "image": "assets/signs/sign_075.png",
       "rule": {
         "en": "NO GATE OR WATCHMAN! Driver must mandatory stop, look both directions, listen, and proceed only when 100% clear.",
         "te": "గేటు లేదా కాపలాదారు ఉండరు! డ్రైవర్ స్వయంగా ఆగి, రెండు వైపులా చూసి సురక్షితంగా వెళ్లాలి.",
@@ -90,7 +90,7 @@
         "te": "1 ఎరుపు గీత (50 - 100 మీటర్లు)",
         "hi": "1 लाल पट्टी (50 - 100 मीटर)"
       },
-      "image": "assets/signs/rs_70.png",
+      "image": "assets/signs/sign_078.png",
       "rule": {
         "en": "The railway track is very close: 50 to 100 meters ahead. Prepare to slow down or stop immediately.",
         "te": "రైల్వే ట్రాక్ చాలా దగ్గరగా 50-100 మీటర్లలో ఉంది.",
@@ -103,7 +103,7 @@
         "te": "2 ఎరుపు గీతలు (200 మీటర్లు)",
         "hi": "2 लाल पट्टियाँ (200 मीटर)"
       },
-      "image": "assets/signs/rs_71.png",
+      "image": "assets/signs/sign_077.png",
       "rule": {
         "en": "The railway track is 200 meters ahead. Early warning to reduce speed.",
         "te": "రైల్వే ట్రాక్ 200 మీటర్ల దూరంలో ఉంది. వేగం తగ్గించండి.",
@@ -129,7 +129,7 @@
         "te": "మెరిసే పసుపు లైట్ (ఫ్లాషింగ్ ఎల్లో)",
         "hi": "चमकती पीली बत्ती"
       },
-      "image": "assets/signs/rs_19.png",
+      "image": "assets/signs/sign_002.png",
       "rule": {
         "en": "Slow down and proceed with caution. No need to bring vehicle to a dead stop unless traffic is crossing.",
         "te": "వేగం తగ్గించి, జాగ్రత్తగా గమనిస్తూ ముందుకు వెళ్లండి. వాహనాన్ని పూర్తిగా ఆపనవసరం లేదు.",
@@ -142,7 +142,7 @@
         "te": "మెరిసే ఎరుపు లైట్ (ఫ్లాషింగ్ రెడ్)",
         "hi": "चमकती लाल बत्ती"
       },
-      "image": "assets/signs/rs_16.png",
+      "image": "assets/signs/sign_001.png",
       "rule": {
         "en": "TREAT AS A FULL STOP SIGN! You must stop completely, yield right of way to priority traffic, and proceed only when clear.",
         "te": "స్టాప్ సైన్ లాంటిది! వాహనాన్ని పూర్తిగా ఆపి, రోడ్డు ఖాళీగా ఉందని నిర్ధారించుకున్నాకే వెళ్లాలి.",
@@ -168,7 +168,7 @@
         "te": "ఎత్తు పరిమితి (పైకి, కిందికి బాణాలు)",
         "hi": "ऊंचाई सीमा (ऊपर-नीचे तीर)"
       },
-      "image": "assets/signs/rs_27.png",
+      "image": "assets/signs/sign_028.png",
       "rule": {
         "en": "Vehicle height must not exceed 3.5 meters (for underpasses and low bridges). Notice the arrows point UP and DOWN.",
         "te": "వాహనం ఎత్తు 3.5 మీటర్లు మించకూడదు (వంతెనల కింద). బాణాలు పైకి, కిందికి ఉంటాయి.",
@@ -181,7 +181,7 @@
         "te": "వెడల్పు పరిమితి (ఎడమ, కుడి బాణాలు)",
         "hi": "चौड़ाई सीमा (दाएं-बाएं तीर)"
       },
-      "image": "assets/signs/rs_28.png",
+      "image": "assets/signs/sign_027.png",
       "rule": {
         "en": "Vehicle width must not exceed 2 meters (for narrow lanes). Notice the arrows point LEFT and RIGHT.",
         "te": "వాహనం వెడల్పు 2 మీటర్లు మించకూడదు (ఇరుకైన దారులలో). బాణాలు పక్కలకు ఉంటాయి.",

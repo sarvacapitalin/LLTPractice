@@ -4,20 +4,29 @@ from scripts.test_stream_tokens import get_row_stream
 
 def segment_all(category_name, pdf_path, cmap_id, total_count):
     tokens = get_row_stream(pdf_path, cmap_id, category_name)
+    n = len(tokens)
     
     questions = {}
     current_q = 1
     i = 0
-    n = len(tokens)
     
-    def matches_q(tj, num):
-        # Match number at start
-        m = re.match(r'^' + str(num) + r'(?:\b|[A-Za-z])', tj)
-        return bool(m)
-    
+    def is_q_start(idx, target_q):
+        if idx >= n: return False
+        p, x, y, t = tokens[idx]
+        m = re.match(r'^' + str(target_q) + r'(?:\b|[A-Za-z])', t)
+        if not m: return False
+        rem = t[len(str(target_q)):].strip()
+        if rem and re.search(r'[A-Za-z]', rem):
+            return True
+        if idx + 1 < n:
+            next_t = tokens[idx + 1][3]
+            if len(re.findall(r'[A-Za-z]', next_t)) >= 3:
+                return True
+        return False
+        
     while i < n and current_q <= total_count:
-        p, x, y, t = tokens[i]
-        if matches_q(t, current_q):
+        if is_q_start(i, current_q):
+            p, x, y, t = tokens[i]
             q_toks = []
             rem = t[len(str(current_q)):].strip()
             if rem:
@@ -25,18 +34,9 @@ def segment_all(category_name, pdf_path, cmap_id, total_count):
             j = i + 1
             target_next = current_q + 1
             while j < n:
-                pj, xj, yj, tj = tokens[j]
-                if target_next <= total_count and matches_q(tj, target_next):
-                    # Check if this token is actually target_next question number or an answer
-                    # If target_next <= 4, is it an answer?
-                    # An answer token is followed by another question number or is preceded by 4 options
-                    # If target_next <= 4, check if xj < 200 (question number column) or if it's accompanied by text
-                    if target_next <= 4 and tj in ['1', '2', '3', '4'] and xj > 250:
-                        q_toks.append((xj, yj, tj))
-                        j += 1
-                        continue
+                if target_next <= total_count and is_q_start(j, target_next):
                     break
-                # Ignore road signs drop-shadow duplicates
+                pj, xj, yj, tj = tokens[j]
                 if category_name == 'road_signs' and tj == str(current_q) and xj < 200:
                     break
                 q_toks.append((xj, yj, tj))
@@ -56,7 +56,6 @@ if __name__ == '__main__':
     ]:
         qs = segment_all(cat, pdf, cid, total)
         print(f"[{cat}] Successfully segmented: {len(qs)} / {total}")
-        # Check answer detection
         valid_ans = 0
         for q, (p, toks) in qs.items():
             ans = None

@@ -1,102 +1,516 @@
 {
-  "timestamp": "2026-11-18T20:41:01Z",
-  "test_suites": {
-    "Data Integrity": [
-      {
-        "test": "Total Question Counts (94 + 159 + 159 = 412)",
-        "status": "PASSED",
-        "details": "Signs: 94, Rules: 159, GP: 159, Total: 412"
-      },
-      {
-        "test": "Unique Question IDs",
-        "status": "PASSED",
-        "details": "Unique: 412, Expected: 412"
-      },
-      {
-        "test": "Trilingual Schema & Option Counts (4 options each)",
-        "status": "PASSED",
-        "details": "All 412 valid"
-      },
-      {
-        "test": "All 94 Road Sign PNG Images Exist on Disk",
-        "status": "PASSED",
-        "details": "All 94 PNGs verified"
-      },
-      {
-        "test": "All Scenario Images Exist on Disk",
-        "status": "PASSED",
-        "details": "All scenario images verified"
-      }
-    ],
-    "Exam Quota (8-8-4)": [
-      {
-        "test": "Strict 8-8-4 Quota Across 100 Simulated Exams",
-        "status": "PASSED",
-        "details": "100/100 exams had exactly 8 signs, 8 rules, 4 principles"
-      }
-    ],
-    "2-Streak Mastery System": [
-      {
-        "test": "Attempt 1 Correct -> Probation (Streak 1)",
-        "status": "PASSED",
-        "details": ""
-      },
-      {
-        "test": "Attempt 2 Consecutive Correct -> Mastered (Streak 2)",
-        "status": "PASSED",
-        "details": ""
-      },
-      {
-        "test": "Attempt 3 Incorrect -> Streak Reset to 0 (Probation)",
-        "status": "PASSED",
-        "details": ""
-      },
-      {
-        "test": "'I Guessed This' Flag Caps Streak at 1 (Keeps on Probation)",
-        "status": "PASSED",
-        "details": ""
-      }
-    ],
-    "95% Readiness Gate & Reset": [
-      {
-        "test": "Readiness 300/412 -> 73% (Not Ready)",
-        "status": "PASSED",
-        "details": ""
-      },
-      {
-        "test": "Readiness 391/412 -> 95% (EXAM READY)",
-        "status": "PASSED",
-        "details": ""
-      },
-      {
-        "test": "Readiness 412/412 -> 100% (EXAM READY)",
-        "status": "PASSED",
-        "details": ""
-      },
-      {
-        "test": "Reset Progress Clears All Streaks to 0%",
-        "status": "PASSED",
-        "details": ""
-      }
-    ],
-    "Cross-Device Sync": [
-      {
-        "test": "Compact Sync Payload Serialization & Deserialization Roundtrip",
-        "status": "PASSED",
-        "details": ""
-      }
-    ],
-    "Local Web Server & HTTP": [
-      {
-        "test": "index.html Exists and Contains Full SPA Layout",
-        "status": "PASSED",
-        "details": ""
-      }
-    ]
-  },
+  "report_id": "QA_RUN_1795034744",
+  "generated_at": "2026-11-18T20:45:44.693275Z",
+  "duration_seconds": 0.025,
+  "overall_status": "PASSED",
   "summary": {
-    "total": 16,
-    "passed": 16,
-    "failed": 0
-  }
+    "total_suites": 8,
+    "total_tests": 58,
+    "passed": 58,
+    "failed": 0,
+    "pass_rate_percent": 100.0
+  },
+  "verification_matrix": [
+    {
+      "requirement": "Data Integrity (412 Telangana Questions)",
+      "target": "100% schema valid (94 signs, 159 rules, 159 principles)",
+      "status": "VERIFIED",
+      "evidence": "412 loaded with valid IDs, bilingual text, options, and answer indices."
+    },
+    {
+      "requirement": "Quota Enforcement (8 Signs, 8 Rules, 4 Principles = 20)",
+      "target": "Strict 8-8-4 distribution across 50 random samples",
+      "status": "VERIFIED",
+      "evidence": "50 consecutive samples tested across varying candidate progression stages with 0 deviations."
+    },
+    {
+      "requirement": "2-Streak Mastery Logic",
+      "target": "2 consecutive correct to master; guessing capped at 1; incorrect resets to 0",
+      "status": "VERIFIED",
+      "evidence": "State transitions tested: clean progression, repeated guessing cap, demotion on error."
+    },
+    {
+      "requirement": "95% Readiness Gate",
+      "target": "Readiness reaches 95% only when >= 391 questions are mastered",
+      "status": "VERIFIED",
+      "evidence": "Boundary sweep verified: 390 mastered = 94% (locked), 391 mastered = 95% (unlocked)."
+    },
+    {
+      "requirement": "Reset Functionality",
+      "target": "Clears all questions to 0 attempts, 0 streaks, and 0% readiness while keeping preferences",
+      "status": "VERIFIED",
+      "evidence": "Simulated candidate state cleared, verified all 412 questions reset to unseen."
+    },
+    {
+      "requirement": "Cross-Device Sync Roundtrip",
+      "target": "Compact payload serializes and deserializes accurately without data loss",
+      "status": "VERIFIED",
+      "evidence": "Full roundtrip verified on fresh client and merge scenario taking max streaks."
+    },
+    {
+      "requirement": "Asset Verification",
+      "target": "All 94 sign images, scenario images, CSS, and JS modules exist with non-zero size",
+      "status": "VERIFIED",
+      "evidence": "94 sign images verified as valid PNGs, 20 scenarios, 2 CSS, and 13 JS modules checked."
+    },
+    {
+      "requirement": "Local Web Server Accessibility",
+      "target": "Serving index.html returns status 200 OK and Content-Type text/html",
+      "status": "VERIFIED",
+      "evidence": "HTTP 200 OK verified for /, /index.html, styles.css, app.js, and sign_001.png."
+    }
+  ],
+  "suites": [
+    {
+      "name": "Data Integrity & Schema Verification",
+      "passed": 11,
+      "failed": 0,
+      "total": 11,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "count_check_road_signs",
+          "status": "PASSED",
+          "details": {
+            "expected": 94,
+            "actual": 94
+          }
+        },
+        {
+          "test": "count_check_rules_of_road",
+          "status": "PASSED",
+          "details": {
+            "expected": 159,
+            "actual": 159
+          }
+        },
+        {
+          "test": "count_check_general_principles",
+          "status": "PASSED",
+          "details": {
+            "expected": 159,
+            "actual": 159
+          }
+        },
+        {
+          "test": "total_questions_count_412",
+          "status": "PASSED",
+          "details": {
+            "total": 412
+          }
+        },
+        {
+          "test": "schema_validation_all_412",
+          "status": "PASSED",
+          "details": {
+            "verified_questions": 412
+          }
+        },
+        {
+          "test": "question_referenced_images_exist",
+          "status": "PASSED",
+          "details": {
+            "checked_count": 115
+          }
+        },
+        {
+          "test": "supplementary_dataset_tricky-twins.json",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "supplementary_dataset_last-minute-cheatsheet.json",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "supplementary_dataset_rto-guide.json",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "supplementary_dataset_states.json",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "i18n_key_parity",
+          "status": "PASSED",
+          "details": {
+            "total_keys": 54
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Exam Quota Enforcement (8-8-4)",
+      "passed": 1,
+      "failed": 0,
+      "total": 1,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "quota_8_8_4_across_50_samples",
+          "status": "PASSED",
+          "details": {
+            "samples_run": 50,
+            "quota_verified": "8 Signs, 8 Rules, 4 Principles = 20 Total",
+            "zero_duplicates": true
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "2-Streak Mastery Logic",
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "first_correct_streak_1_probation",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "second_correct_streak_2_mastered",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "third_consecutive_correct_maintains_mastery",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "incorrect_resets_streak_to_zero_and_demotes",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "guessed_correct_streak_1_probation",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "repeated_guessing_caps_streak_at_1_never_mastered",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "clean_correct_after_guess_advances_to_mastered",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "alternating_answers_never_reach_mastery",
+          "status": "PASSED",
+          "details": {}
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "95% Readiness Gate & Calculation Accuracy",
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "readiness_at_0_mastered",
+          "status": "PASSED",
+          "details": {
+            "percent": 0,
+            "isExamReady": false
+          }
+        },
+        {
+          "test": "readiness_at_halfway_206",
+          "status": "PASSED",
+          "details": {
+            "percent": 50,
+            "isExamReady": false
+          }
+        },
+        {
+          "test": "readiness_at_389_mastered",
+          "status": "PASSED",
+          "details": {
+            "percent": 94,
+            "isExamReady": false
+          }
+        },
+        {
+          "test": "readiness_at_390_strictly_below_95_gate",
+          "status": "PASSED",
+          "details": {
+            "percent": 94,
+            "isExamReady": false
+          }
+        },
+        {
+          "test": "readiness_at_391_reaches_95_gate",
+          "status": "PASSED",
+          "details": {
+            "percent": 95,
+            "isExamReady": true
+          }
+        },
+        {
+          "test": "readiness_at_392_mastered",
+          "status": "PASSED",
+          "details": {
+            "percent": 95,
+            "isExamReady": true
+          }
+        },
+        {
+          "test": "readiness_at_412_mastered",
+          "status": "PASSED",
+          "details": {
+            "percent": 100,
+            "isExamReady": true
+          }
+        },
+        {
+          "test": "readiness_monotonicity_and_strict_gate_sweep",
+          "status": "PASSED",
+          "details": {
+            "sweep_points": 413
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Reset Functionality & State Clearing",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "pre_reset_state_established",
+          "status": "PASSED",
+          "details": {
+            "mastered": 395,
+            "history_len": 5
+          }
+        },
+        {
+          "test": "reset_clears_questions_and_history_preserves_prefs",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "all_412_questions_reset_to_zero_attempts_and_streaks",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "readiness_recomputed_to_0_percent_after_reset",
+          "status": "PASSED",
+          "details": {}
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Cross-Device Sync Payload Serialization & Roundtrip",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "sync_payload_serialization",
+          "status": "PASSED",
+          "details": {
+            "bytes_length": 119
+          }
+        },
+        {
+          "test": "sync_payload_omits_unattempted_for_compactness",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "sync_roundtrip_fidelity_fresh_receiver",
+          "status": "PASSED",
+          "details": {
+            "verified_questions": 4
+          }
+        },
+        {
+          "test": "sync_merge_preserves_maximum_streaks_without_data_loss",
+          "status": "PASSED",
+          "details": {}
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Asset Integrity & File Existence",
+      "passed": 7,
+      "failed": 0,
+      "total": 7,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "all_94_sign_images_exist_and_valid_png",
+          "status": "PASSED",
+          "details": {
+            "verified_count": 94
+          }
+        },
+        {
+          "test": "scenario_images_exist_and_non_zero",
+          "status": "PASSED",
+          "details": {
+            "total_scenarios": 20
+          }
+        },
+        {
+          "test": "css_file_exists_styles.css",
+          "status": "PASSED",
+          "details": {
+            "size": 5509
+          }
+        },
+        {
+          "test": "css_file_exists_exam-stall.css",
+          "status": "PASSED",
+          "details": {
+            "size": 7438
+          }
+        },
+        {
+          "test": "all_13_js_modules_exist_and_non_zero",
+          "status": "PASSED",
+          "details": {
+            "modules": 13
+          }
+        },
+        {
+          "test": "manifest_json_valid",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "service_worker_file_exists",
+          "status": "PASSED",
+          "details": {}
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "Local Web Server & HTTP Endpoint Accessibility",
+      "passed": 15,
+      "failed": 0,
+      "total": 15,
+      "status": "PASSED",
+      "tests": [
+        {
+          "test": "http_get_/index.html",
+          "status": "PASSED",
+          "details": {
+            "status_code": 200,
+            "content_type": "text/html",
+            "bytes_served": 20207
+          }
+        },
+        {
+          "test": "dom_check_title_telangana_rta",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_viewport_meta",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_main_container_element",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_script_app_js",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_link_styles_css",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "http_get_/",
+          "status": "PASSED",
+          "details": {
+            "status_code": 200,
+            "content_type": "text/html",
+            "bytes_served": 20207
+          }
+        },
+        {
+          "test": "dom_check_title_telangana_rta",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_viewport_meta",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_main_container_element",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_script_app_js",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "dom_check_link_styles_css",
+          "status": "PASSED",
+          "details": {}
+        },
+        {
+          "test": "http_get_/css/styles.css",
+          "status": "PASSED",
+          "details": {
+            "status_code": 200,
+            "content_type": "text/css",
+            "bytes_served": 5509
+          }
+        },
+        {
+          "test": "http_get_/js/app.js",
+          "status": "PASSED",
+          "details": {
+            "status_code": 200,
+            "content_type": "text/javascript",
+            "bytes_served": 29229
+          }
+        },
+        {
+          "test": "http_get_/assets/signs/sign_001.png",
+          "status": "PASSED",
+          "details": {
+            "status_code": 200,
+            "content_type": "image/png",
+            "bytes_served": 9717
+          }
+        }
+      ],
+      "errors": []
+    }
+  ]
 }
