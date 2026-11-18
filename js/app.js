@@ -17,6 +17,7 @@ let trickyTwins = [];
 let cheatsheet = null;
 let rtoGuide = null;
 let currentRenderedQId = null;
+let datasetsLoaded = false;
 
 // Initialize on DOM load
 window.addEventListener("DOMContentLoaded", async () => {
@@ -52,7 +53,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   if ("caches" in window) {
     caches.keys().then(keys => {
       keys.forEach(k => {
-        if (k !== "ts-llr-practice-v3") {
+        if (k !== "ts-llr-practice-v4") {
           console.log("Deleting legacy cache:", k);
           caches.delete(k);
         }
@@ -85,6 +86,7 @@ async function loadAllDatasets() {
     practice.setQuestions(allQuestions);
     flashcards.setSigns(roadSigns);
 
+    datasetsLoaded = true;
     console.log(`Loaded ${allQuestions.length} total questions (Signs: ${roadSigns.length}, Rules: ${rulesOfRoad.length}, Principles: ${generalPrinciples.length})`);
   } catch (e) {
     console.error("Error loading question data:", e);
@@ -259,6 +261,10 @@ function initExamUI() {
   const optionsContainer = document.getElementById("exam-options-container");
 
   btnStart?.addEventListener("click", () => {
+    if (!datasetsLoaded || allQuestions.length === 0) {
+      alert("Questions are still loading. Please wait a moment and try again.");
+      return;
+    }
     currentRenderedQId = null;
     exam.startNewExam();
   });
@@ -346,7 +352,12 @@ function initExamUI() {
     if (resultCard) resultCard.style.display = "none";
 
     const q = state.currentQuestion;
-    if (!q) return;
+    if (!q) {
+      // Questions failed to load — show error in question text
+      const qTextEl = document.getElementById("exam-q-text");
+      if (qTextEl) qTextEl.textContent = "⚠️ Questions not loaded. Please refresh the page.";
+      return;
+    }
 
     const lang = getCurrentLang();
     const timerDisplay = document.getElementById("timer-seconds-display");
@@ -369,11 +380,10 @@ function initExamUI() {
       }
     }
 
-    // 2. Only re-render question header, image, and options when question changes
+    // 2. Only re-render question body when question changes
+    //    Re-query DOM elements fresh each time (never rely on stale closure reference)
     const isNewQuestion = (currentRenderedQId !== q.id);
     if (isNewQuestion) {
-      currentRenderedQId = q.id;
-
       const qBadge = document.getElementById("exam-q-badge");
       const qText = document.getElementById("exam-q-text");
       const visualBox = document.getElementById("exam-q-visual");
@@ -381,6 +391,7 @@ function initExamUI() {
       const countSigns = document.getElementById("count-signs");
       const countRules = document.getElementById("count-rules");
       const countPrinciples = document.getElementById("count-principles");
+      const freshOptionsContainer = document.getElementById("exam-options-container");
 
       // Header badge
       if (qBadge) qBadge.textContent = `Question ${state.currentIndex + 1} of 20`;
@@ -410,45 +421,53 @@ function initExamUI() {
         if (visualBox) visualBox.style.display = "none";
       }
 
-      // Populate options
-      if (optionsContainer) {
-        let opts = [];
-        if (q && q.options) {
-          if (Array.isArray(q.options)) {
-            opts = q.options;
-          } else if (typeof q.options === "object") {
-            opts = q.options[lang] || q.options.en || q.options.te || q.options.hi || [];
-          }
+      // Populate options — build HTML and inject
+      let opts = [];
+      if (q && q.options) {
+        if (Array.isArray(q.options)) {
+          opts = q.options;
+        } else if (typeof q.options === "object") {
+          opts = q.options[lang] || q.options.en || q.options.te || q.options.hi || [];
         }
+      }
 
+      if (freshOptionsContainer) {
         if (!opts || opts.length === 0) {
-          console.warn("No options found for question:", q);
-          optionsContainer.innerHTML = `<div style="color: #EF4444; padding: 12px; font-weight: 700;">No options available for this question.</div>`;
+          console.warn("No options found for question:", q.id, q);
+          freshOptionsContainer.innerHTML = `<div style="color: #EF4444; padding: 12px; font-weight: 700;">No options available for this question.</div>`;
         } else {
           let html = "";
           opts.forEach((optText, idx) => {
             const isSelected = (state.selectedOption === idx);
-            html += `
-              <div class="option-card ${isSelected ? 'selected' : ''}" role="button" tabindex="0" data-option-index="${idx}">
-                <div class="option-badge">${idx + 1}</div>
-                <div class="option-text">${optText}</div>
-              </div>
-            `;
+            html += `<div class="option-card ${isSelected ? 'selected' : ''}" role="button" tabindex="0" data-option-index="${idx}"><div class="option-badge">${idx + 1}</div><div class="option-text">${optText}</div></div>`;
           });
-          optionsContainer.innerHTML = html;
+          freshOptionsContainer.innerHTML = html;
+          console.log(`[Exam] Q${state.currentIndex + 1} rendered with ${opts.length} options (id=${q.id})`);
         }
+        // Only mark as rendered AFTER successfully writing to DOM
+        currentRenderedQId = q.id;
+      } else {
+        console.error("[Exam] exam-options-container element not found in DOM!");
       }
     } else {
-      // Existing question: simply update the selected class without rebuilding the DOM
-      if (optionsContainer) {
-        optionsContainer.querySelectorAll(".option-card").forEach((card) => {
-          const idx = parseInt(card.getAttribute("data-option-index"), 10);
-          if (idx === state.selectedOption) {
-            card.classList.add("selected");
-          } else {
-            card.classList.remove("selected");
-          }
-        });
+      // Same question, different tick — only update selected state without DOM rebuild
+      const freshOptionsContainer = document.getElementById("exam-options-container");
+      if (freshOptionsContainer) {
+        const cards = freshOptionsContainer.querySelectorAll(".option-card");
+        if (cards.length === 0) {
+          // Safety net: options disappeared somehow — force a re-render next tick
+          console.warn("[Exam] Options container is empty on existing question — forcing re-render");
+          currentRenderedQId = null;
+        } else {
+          cards.forEach((card) => {
+            const idx = parseInt(card.getAttribute("data-option-index"), 10);
+            if (idx === state.selectedOption) {
+              card.classList.add("selected");
+            } else {
+              card.classList.remove("selected");
+            }
+          });
+        }
       }
     }
 

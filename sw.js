@@ -1,5 +1,5 @@
 // sw.js - Service Worker for Offline Practice Resilience (v3)
-const CACHE_NAME = "ts-llr-practice-v3";
+const CACHE_NAME = "ts-llr-practice-v4";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",

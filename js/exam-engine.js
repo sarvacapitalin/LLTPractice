@@ -22,6 +22,16 @@ export class ExamEngine {
 
   startNewExam() {
     this.questions = coverage.sampleMockExamQuestions();
+
+    // Guard: if questions failed to load, don't start
+    if (!this.questions || this.questions.length === 0) {
+      console.error("[ExamEngine] startNewExam: No questions available — datasets not loaded!");
+      this.isActive = false;
+      this.isFinished = false;
+      this.notifyUpdate();
+      return;
+    }
+
     this.currentIndex = 0;
     this.selectedOption = null;
     this.correctCount = 0;
