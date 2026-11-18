@@ -110,23 +110,24 @@ split_map = {
     59: (192, 194),
     66: (215, 217),
     71: (233, 235),
-    76: (248, 250),
+    75: (248, 250),
     87: (276, 277),
-    91: (289, 291)
+    94: (289, 291)
 }
 
-print("-> Repairing and stitching 14 cut-off signs...")
-for q, (o1, o2) in split_map.items():
-    w1, h1, rgb1 = get_raw_rgb(o1)
-    w2, h2, rgb2 = get_raw_rgb(o2)
-    tot_h = h1 + h2
-    rgb = rgb1 + rgb2
-    ppm = f"P6\n{w1} {tot_h}\n255\n".encode() + rgb
-    out_ppm = f"/tmp/stitched_sign_{q:03d}.ppm"
-    out_png = f"assets/signs/sign_{q:03d}.png"
-    with open(out_ppm, "wb") as pf: pf.write(ppm)
-    subprocess.run(f"/usr/bin/sips -s format png {out_ppm} --out {out_png} >/dev/null 2>&1", shell=True)
-    if os.path.exists(out_ppm): os.remove(out_ppm)
-    print(f"✓ Stitched Q{q:02d}: {w1}x{tot_h} -> {out_png}")
+if __name__ == "__main__":
+    print("-> Repairing and stitching 14 cut-off signs...")
+    for q, (o1, o2) in split_map.items():
+        w1, h1, rgb1 = get_raw_rgb(o1)
+        w2, h2, rgb2 = get_raw_rgb(o2)
+        tot_h = h1 + h2
+        rgb = rgb1 + rgb2
+        ppm = f"P6\n{w1} {tot_h}\n255\n".encode() + rgb
+        out_ppm = f"/tmp/stitched_sign_{q:03d}.ppm"
+        out_png = f"assets/signs/sign_{q:03d}.png"
+        with open(out_ppm, "wb") as pf: pf.write(ppm)
+        subprocess.run(f"/usr/bin/sips -s format png {out_ppm} --out {out_png} >/dev/null 2>&1", shell=True)
+        if os.path.exists(out_ppm): os.remove(out_ppm)
+        print(f"✓ Stitched Q{q:02d}: {w1}x{tot_h} -> {out_png}")
 
-print("All cut-off signs repaired successfully.")
+    print("All cut-off signs repaired successfully.")

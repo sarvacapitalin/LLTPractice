@@ -114,123 +114,121 @@ def get_raw_rgb(oid):
         return w, h, rgb
     return w, h, decomp[:w*h*3]
 
-split_pairs = {
-    (12, 17): 4, (32, 39): 10, (54, 56): 17, (71, 79): 24, (96, 102): 31,
-    (121, 129): 38, (146, 148): 45, (169, 171): 52, (192, 194): 59,
-    (215, 217): 66, (233, 235): 71, (248, 250): 76, (276, 277): 87, (289, 291): 91
-}
+if __name__ == "__main__":
+    split_pairs = {
+        (12, 17): 4, (32, 39): 10, (54, 56): 17, (71, 79): 24, (96, 102): 31,
+        (121, 129): 38, (146, 148): 45, (169, 171): 52, (192, 194): 59,
+        (215, 217): 66, (233, 235): 71, (248, 250): 75, (276, 277): 87, (289, 291): 94
+    }
 
-page_expected_qs = {
-    1: list(range(1, 7)), 2: list(range(7, 14)), 3: list(range(14, 21)),
-    4: list(range(21, 28)), 5: list(range(28, 35)), 6: list(range(35, 42)),
-    7: list(range(42, 49)), 8: list(range(49, 56)), 9: list(range(56, 63)),
-    10: list(range(63, 70)), 11: list(range(70, 73)), 12: list(range(73, 79)),
-    13: list(range(79, 84)), 14: list(range(84, 91)), 15: list(range(91, 95))
-}
+    page_expected_qs = {
+        1: list(range(1, 7)), 2: list(range(7, 14)), 3: list(range(14, 21)),
+        4: list(range(21, 28)), 5: list(range(28, 35)), 6: list(range(35, 42)),
+        7: list(range(42, 49)), 8: list(range(49, 56)), 9: list(range(56, 63)),
+        10: list(range(63, 70)), 11: list(range(70, 73)), 12: list(range(73, 79)),
+        13: list(range(79, 84)), 14: list(range(84, 91)), 15: list(range(91, 95))
+    }
 
-page_objs = list(re.finditer(rb"(\d+)\s+0\s+obj\s*<<(.*?/Type\s*/Page\b.*?)>>\s*endobj", pdf_bytes, re.DOTALL))
-math_mapping = {}
+    page_objs = list(re.finditer(rb"(\d+)\s+0\s+obj\s*<<(.*?/Type\s*/Page\b.*?)>>\s*endobj", pdf_bytes, re.DOTALL))
+    math_mapping = {}
 
-for p_num in range(1, 16):
-    m = page_objs[p_num - 1]
-    body = m.group(2).decode("latin1", errors="ignore")
-    c_m = re.search(r"/Contents\s+(\d+)\s+0\s+R", body)
-    c_id = int(c_m.group(1))
-    
-    sm = re.search(rb"\n" + str(c_id).encode() + rb"\s+0\s+obj\s*<<.*?>>\s*stream\r?\n(.*?)\r?\nendstream", pdf_bytes, re.DOTALL)
-    s = (zlib.decompress(sm.group(1)) if sm else b"").decode("latin1", errors="ignore")
-    
-    calls = []
-    for dm in re.finditer(r"q\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+cm\s*/R(\d+)\s+Do", s):
-        tx = float(dm.group(5))
-        oid = int(dm.group(7))
-        calls.append((tx, oid))
-    
-    # Page 1 table flows top-to-bottom with descending tx
-    # Pages 2-15 table flows top-to-bottom with ascending tx
-    if p_num == 1:
-        calls.sort(key=lambda c: c[0], reverse=True)
-    else:
-        calls.sort(key=lambda c: c[0])
-    
-    merged = []
-    i = 0
-    while i < len(calls):
-        if i + 1 < len(calls):
-            pair = (calls[i][1], calls[i+1][1])
-            pair_rev = (calls[i+1][1], calls[i][1])
-            if pair in split_pairs or pair_rev in split_pairs:
-                merged.append(pair if pair in split_pairs else pair_rev)
-                i += 2
-                continue
-        merged.append(calls[i][1])
-        i += 1
+    for p_num in range(1, 16):
+        m = page_objs[p_num - 1]
+        body = m.group(2).decode("latin1", errors="ignore")
+        c_m = re.search(r"/Contents\s+(\d+)\s+0\s+R", body)
+        c_id = int(c_m.group(1))
         
-    for q, item in zip(page_expected_qs[p_num], merged):
-        math_mapping[q] = item
+        sm = re.search(rb"\n" + str(c_id).encode() + rb"\s+0\s+obj\s*<<.*?>>\s*stream\r?\n(.*?)\r?\nendstream", pdf_bytes, re.DOTALL)
+        s = (zlib.decompress(sm.group(1)) if sm else b"").decode("latin1", errors="ignore")
+        
+        calls = []
+        for dm in re.finditer(r"q\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+([\d\.\-]+)\s+cm\s*/R(\d+)\s+Do", s):
+            tx = float(dm.group(5))
+            oid = int(dm.group(7))
+            calls.append((tx, oid))
+        
+        if p_num == 1:
+            calls.sort(key=lambda c: c[0], reverse=True)
+        else:
+            calls.sort(key=lambda c: c[0])
+        
+        merged = []
+        i = 0
+        while i < len(calls):
+            if i + 1 < len(calls):
+                pair = (calls[i][1], calls[i+1][1])
+                pair_rev = (calls[i+1][1], calls[i][1])
+                if pair in split_pairs or pair_rev in split_pairs:
+                    merged.append(pair if pair in split_pairs else pair_rev)
+                    i += 2
+                    continue
+            merged.append(calls[i][1])
+            i += 1
+            
+        for q, item in zip(page_expected_qs[p_num], merged):
+            math_mapping[q] = item
 
-print(f"Verified mathematical mapping for all {len(math_mapping)} road signs.")
+    print(f"Verified mathematical mapping for all {len(math_mapping)} road signs.")
 
-# Extract each sign image and save to assets/signs/sign_XXX.png
-for q in range(1, 95):
-    item = math_mapping[q]
-    dest_png = os.path.join(SIGNS_DIR, f"sign_{q:03d}.png")
-    
-    if isinstance(item, tuple):
-        # Stitched sign
-        o1, o2 = item
-        w1, h1, rgb1 = get_raw_rgb(o1)
-        w2, h2, rgb2 = get_raw_rgb(o2)
-        tot_h = h1 + h2
-        rgb = rgb1 + rgb2
-        ppm = f"P6\n{w1} {tot_h}\n255\n".encode() + rgb
-        tmp_ppm = f"/tmp/_stitch_{q}.ppm"
-        with open(tmp_ppm, "wb") as pf: pf.write(ppm)
-        subprocess.run(f"/usr/bin/sips -s format png '{tmp_ppm}' --out '{dest_png}' >/dev/null 2>&1", shell=True)
-        if os.path.exists(tmp_ppm): os.remove(tmp_ppm)
-        print(f"✓ Generated stitched Q{q:02d}: {w1}x{tot_h} -> sign_{q:03d}.png")
-    else:
-        oid = item
-        w, h, rgb = get_raw_rgb(oid)
-        ppm = f"P6\n{w} {h}\n255\n".encode() + rgb
-        tmp_ppm = f"/tmp/_single_{q}.ppm"
-        with open(tmp_ppm, "wb") as pf: pf.write(ppm)
-        subprocess.run(f"/usr/bin/sips -s format png '{tmp_ppm}' --out '{dest_png}' >/dev/null 2>&1", shell=True)
-        if os.path.exists(tmp_ppm): os.remove(tmp_ppm)
-        print(f"✓ Generated single Q{q:02d} (obj {oid}): {w}x{h} -> sign_{q:03d}.png")
+    # Extract each sign image and save to assets/signs/sign_XXX.png
+    for q in range(1, 95):
+        item = math_mapping[q]
+        dest_png = os.path.join(SIGNS_DIR, f"sign_{q:03d}.png")
+        
+        if isinstance(item, tuple):
+            o1, o2 = item
+            w1, h1, rgb1 = get_raw_rgb(o1)
+            w2, h2, rgb2 = get_raw_rgb(o2)
+            tot_h = h1 + h2
+            rgb = rgb1 + rgb2
+            ppm = f"P6\n{w1} {tot_h}\n255\n".encode() + rgb
+            tmp_ppm = f"/tmp/_stitch_{q}.ppm"
+            with open(tmp_ppm, "wb") as pf: pf.write(ppm)
+            subprocess.run(f"/usr/bin/sips -s format png '{tmp_ppm}' --out '{dest_png}' >/dev/null 2>&1", shell=True)
+            if os.path.exists(tmp_ppm): os.remove(tmp_ppm)
+            print(f"✓ Generated stitched Q{q:02d}: {w1}x{tot_h} -> sign_{q:03d}.png")
+        else:
+            oid = item
+            w, h, rgb = get_raw_rgb(oid)
+            ppm = f"P6\n{w} {h}\n255\n".encode() + rgb
+            tmp_ppm = f"/tmp/_single_{q}.ppm"
+            with open(tmp_ppm, "wb") as pf: pf.write(ppm)
+            subprocess.run(f"/usr/bin/sips -s format png '{tmp_ppm}' --out '{dest_png}' >/dev/null 2>&1", shell=True)
+            if os.path.exists(tmp_ppm): os.remove(tmp_ppm)
+            print(f"✓ Generated single Q{q:02d} (obj {oid}): {w}x{h} -> sign_{q:03d}.png")
 
-# Now update road-signs.json options and translations for Q39, Q40, Q57
-with open(ROAD_SIGNS_JSON, "r", encoding="utf-8") as f:
-    signs_data = json.load(f)
+    # Now update road-signs.json options and translations for Q39, Q40, Q57
+    with open(ROAD_SIGNS_JSON, "r", encoding="utf-8") as f:
+        signs_data = json.load(f)
 
-for q in signs_data:
-    qid = q["id"]
-    if qid == "TS_RS_039":
-        q["options"]["en"] = ["COMPULSORY CYCLE TRACK", "SCHOOL AREA", "CYCLE PROHIBITED", "NONE OF THE ABOVE"]
-        q["options"]["te"] = ["తప్పనిసరి సైకిల్ ట్రాక్", "పాఠశాల ప్రాంతం", "సైకిళ్లు నిషిద్ధం", "పైవేవీ కావు"]
-        q["options"]["hi"] = ["अनिवार्य साइकिल ट्रैक", "स्कूल क्षेत्र", "साइकिल निषेध", "इनमें से कोई नहीं"]
-        q["answerIndex"] = 0
-        q["explanation"]["en"] = "Official Road Sign Rule: COMPULSORY CYCLE TRACK."
-        q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: తప్పనిసరి సైకిల్ ట్రాక్."
-        q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: अनिवार्य साइकिल ट्रैक."
-    elif qid == "TS_RS_040":
-        q["options"]["en"] = ["COMPULSORY CYCLE TRACK", "CYCLE PROHIBITED", "CYCLE TRACK", "CYCLE CROSSING"]
-        q["options"]["te"] = ["తప్పనిసరి సైకిల్ ట్రాక్", "సైకిళ్లు నిషిద్ధం", "సైకిల్ ట్రాక్", "సైకిల్ క్రాసింగ్"]
-        q["options"]["hi"] = ["अनिवार्य साइकिल ट्रैक", "साइकिल निषेध", "साइकिल ट्रैक", "साइकिल क्रॉसिंग"]
-        q["answerIndex"] = 3
-        q["explanation"]["en"] = "Official Road Sign Rule: CYCLE CROSSING."
-        q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: సైకిల్ క్రాసింగ్."
-        q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: साइकिल क्रॉसिंग."
-    elif qid == "TS_RS_057":
-        q["options"]["en"] = ["BARRIER AHEAD", "ROUND ABOUT", "CROSS ROAD", "RAILWAY CROSSING AHEAD"]
-        q["options"]["te"] = ["ముందు బారికేడ్ కలదు", "రౌండ్‌ఎబౌట్ (వృత్తాకార కూడలి)", "రహదారి కూడలి (క్రాస్ రోడ్డు)", "ముందు రైల్వే లెవల్ క్రాసింగ్ కలదు"]
-        q["options"]["hi"] = ["आगे बैरियर है", "गोल चक्कर (राउंडअबाउट)", "चौराहा (क्रॉस रोड)", "आगे रेलवे क्रॉसिंग है"]
-        q["answerIndex"] = 2
-        q["explanation"]["en"] = "Official Road Sign Rule: CROSS ROAD."
-        q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: రహదారి కూడలి (క్రాస్ రోడ్డు)."
-        q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: चौराहा (क्रॉस रोड)."
+    for q in signs_data:
+        qid = q["id"]
+        if qid == "TS_RS_039":
+            q["options"]["en"] = ["COMPULSORY CYCLE TRACK", "SCHOOL AREA", "CYCLE PROHIBITED", "NONE OF THE ABOVE"]
+            q["options"]["te"] = ["తప్పనిసరి సైకిల్ ట్రాక్", "పాఠశాల ప్రాంతం", "సైకిళ్లు నిషిద్ధం", "పైవేవీ కావు"]
+            q["options"]["hi"] = ["अनिवार्य साइकिल ट्रैक", "स्कूल क्षेत्र", "साइकिल निषेध", "इनमें से कोई नहीं"]
+            q["answerIndex"] = 0
+            q["explanation"]["en"] = "Official Road Sign Rule: COMPULSORY CYCLE TRACK."
+            q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: తప్పనిసరి సైకిల్ ట్రాక్."
+            q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: अनिवार्य साइकिल ट्रैक."
+        elif qid == "TS_RS_040":
+            q["options"]["en"] = ["COMPULSORY CYCLE TRACK", "CYCLE PROHIBITED", "CYCLE TRACK", "CYCLE CROSSING"]
+            q["options"]["te"] = ["తప్పనిసరి సైకిల్ ట్రాక్", "సైకిళ్లు నిషిద్ధం", "సైకిల్ ట్రాక్", "సైకిల్ క్రాసింగ్"]
+            q["options"]["hi"] = ["अनिवार्य साइकिल ट्रैक", "साइकिल निषेध", "साइकिल ट्रैक", "సైకిల్ క్రాసింగ్"]
+            q["answerIndex"] = 3
+            q["explanation"]["en"] = "Official Road Sign Rule: CYCLE CROSSING."
+            q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: సైకిల్ క్రాసింగ్."
+            q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: साइकिल क्रॉसिंग."
+        elif qid == "TS_RS_057":
+            q["options"]["en"] = ["BARRIER AHEAD", "ROUND ABOUT", "CROSS ROAD", "RAILWAY CROSSING AHEAD"]
+            q["options"]["te"] = ["ముందు బారికేడ్ కలదు", "రౌండ్‌ఎబౌట్ (వృత్తాకార కూడలి)", "రహదారి కూడలి (క్రాస్ రోడ్డు)", "ముందు రైల్వే లెవల్ క్రాసింగ్ కలదు"]
+            q["options"]["hi"] = ["आगे बैरियर है", "गोल चक्कर (राउंडअबाउट)", "चौराहा (क्रॉस रोड)", "आगे रेलवे क्रॉसिंग है"]
+            q["answerIndex"] = 2
+            q["explanation"]["en"] = "Official Road Sign Rule: CROSS ROAD."
+            q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: రహదారి కూడలి (క్రాస్ రోడ్డు)."
+            q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: चौराहा (क्रॉस रोड)."
 
-with open(ROAD_SIGNS_JSON, "w", encoding="utf-8") as f:
-    json.dump(signs_data, f, indent=2, ensure_ascii=False)
+    with open(ROAD_SIGNS_JSON, "w", encoding="utf-8") as f:
+        json.dump(signs_data, f, indent=2, ensure_ascii=False)
 
-print("\nSUCCESS: All 94 Road Signs cleanly extracted and road-signs.json updated successfully!")
+    print("\nSUCCESS: All 94 Road Signs cleanly extracted and road-signs.json updated successfully!")
