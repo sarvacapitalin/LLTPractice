@@ -1,82 +1,104 @@
-from scripts.test_cell_extractor import extract_pdf_cells
+import re
 import json
+from scripts.test_pdf_parse import parse_cmap, get_obj_stream, unescape_pdf_bytes, get_page_contents
 
-def extract_all_questions_robust(pdf_path, cid, total, missing_starts=None):
-    if missing_starts is None:
-        missing_starts = {}
-    pages = extract_pdf_cells(pdf_path, cid)
-    
-    # First, flatten elements with page numbers
-    all_elements = []
-    for p_num, elems in pages:
-        # filter table headers
-        for x, y, c_idx, t in elems:
-            t_s = t.strip()
-            if p_num == 1 and t_s in ['12', '34567', 'S.NO.', 'QUESTIONS', 'RELEVANT FIGURE/SIGN', 'IF ANY', 'OPTION1', 'OPTION2', 'OPTION3', 'OPTION4', 'ANSWER', 'OPTION', 'S']:
-                continue
-            all_elements.append((p_num, x, y, c_idx, t_s))
-            
-    # Now find each question's bounding tokens
-    # A question starts with its S.NO at 70 <= y <= 95 and c_idx == 0
-    # or if in missing_starts, text starts with missing_starts[q]
-    q_ranges = []
-    
-    current_q = 1
-    for i, (p_num, x, y, c_idx, t_s) in enumerate(all_elements):
-        matched = False
-        if 70 <= y <= 95 and c_idx == 0 and t_s == str(current_q):
-            matched = True
-        elif current_q in missing_starts and t_s.startswith(missing_starts[current_q]):
-            matched = True
-            
-        if matched:
-            q_ranges.append((current_q, i))
-            current_q += 1
-            if current_q > total:
-                break
-                
-    print(f'[{pdf_path}] Identified {len(q_ranges)} / {total} question boundaries.')
-    
-    parsed_questions = {}
-    for idx in range(len(q_ranges)):
-        q_num, start_idx = q_ranges[idx]
-        end_idx = q_ranges[idx+1][1] if idx + 1 < len(q_ranges) else len(all_elements)
-        q_tokens = all_elements[start_idx:end_idx]
-        
-        # Analyze q_tokens
-        # Look for answer token:
-        # In the table, Answer Option is 1, 2, 3, or 4.
-        # It usually has y >= 680 or is the last token in a row, or matches a single digit 1-4.
-        answers = []
-        for p, x, y, c_idx, t in q_tokens:
-            if y >= 680 and t in ['1', '2', '3', '4']:
-                answers.append((y, t))
-            elif c_idx > 0 and t in ['1', '2', '3', '4']:
-                answers.append((y, t))
-                
-        # Also check last token in q_tokens
-        last_t = q_tokens[-1][4]
-        if last_t in ['1', '2', '3', '4']:
-            answers.append((q_tokens[-1][2], last_t))
-            
-        parsed_questions[q_num] = {
-            'tokens': q_tokens,
-            'answers_found': answers
-        }
-        
-    return parsed_questions
+def decode_stream_robust(stream_bytes, cmap):
+    cmd_pattern = re.compile(
+        rb"(?:(-?[\d\.]+)\s+(-?[\d\.]+)\s+(-?[\d\.]+)\s+(-?[\d\.]+)\s+(-?[\d\.]+)\s+(-?[\d\.]+)\s+Tm)|"
+        rb"(?:(-?[\d\.]+)\s+(-?[\d\.]+)\s+Td)|"
+        rb"(?:(-?[\d\.]+)\s+(-?[\d\.]+)\s+TD)|"
+        rb"(?:(-?[\d\.]+)\s+TL)|"
+        rb"(?:T\*)|"
+        rb"(?:\[(.*?)\]\s*TJ)|"
+        rb"(?:\(((?:[^()\\]|\\.)*)\)\s*Tj)|"
+        rb"(?:\(((?:[^()\\]|\\.)*)\)\s*\')|"
+        rb"(?:(-?[\d\.]+)\s+(-?[\d\.]+)\s+\(((?:[^()\\]|\\.)*)\)\s*\")",
+        re.DOTALL
+    )
 
-if __name__ == '__main__':
-    for name, cid, total, missing in [
-        ('road-signs-english.pdf', 299, 94, {}),
-        ('rules-of-road-regulations-english.pdf', 180, 159, {}),
-        ('general-driving-principles-english.pdf', 128, 159, {
-            32: "THE MOST EFFECTIVE DEVICE FOR",
-            128: "WHAT WILL HAPPEN IF THE WHEELS",
-            144: "ALCOHOL MAY AFFECT ADVERSELY",
-            150: "BOARDING AND ALIGHTING WHILE"
-        })
-    ]:
-        pq = extract_all_questions_robust(name, cid, total, missing)
-        no_ans = [q for q, data in pq.items() if not data['answers_found']]
-        print(f'{name}: Questions without answers found: {len(no_ans)} -> {no_ans[:10]}')
+    tx, ty = 0.0, 0.0
+    line_tx, line_ty = 0.0, 0.0
+    leading = 12.0
+    elements = []
+
+    for m in cmd_pattern.finditer(stream_bytes):
+        if m.group(1) is not None:
+            tx = float(m.group(5))
+            ty = float(m.group(6))
+            line_tx, line_ty = tx, ty
+        elif m.group(7) is not None:
+            tx += float(m.group(7))
+            ty += float(m.group(8))
+            line_tx, line_ty = tx, ty
+        elif m.group(9) is not None:
+            tx += float(m.group(9))
+            ty += float(m.group(10))
+            leading = -float(m.group(10))
+            line_tx, line_ty = tx, ty
+        elif m.group(11) is not None:
+            leading = float(m.group(11))
+        elif m.group(0) == b"T*":
+            ty -= leading
+            tx = line_tx
+        elif m.group(12) is not None: # TJ
+            raw_arr = m.group(12)
+            i = 0
+            n = len(raw_arr)
+            current_str = []
+            cur_x = tx
+            while i < n:
+                if raw_arr[i:i+1] == b"(":
+                    i += 1
+                    start = i
+                    depth = 1
+                    while i < n and depth > 0:
+                        if raw_arr[i:i+1] == b"\\":
+                            i += 2
+                            continue
+                        if raw_arr[i:i+1] == b"(": depth += 1
+                        elif raw_arr[i:i+1] == b")": depth -= 1
+                        i += 1
+                    s = raw_arr[start:i-1]
+                    t = "".join(cmap.get(b, "") for b in unescape_pdf_bytes(s))
+                    current_str.append(t)
+                elif raw_arr[i:i+1] in b"0123456789-+":
+                    start = i
+                    while i < n and raw_arr[i:i+1] in b"0123456789-.+":
+                        i += 1
+                    num = float(raw_arr[start:i])
+                    if num < -1000: # large column gap -> emit element
+                        txt = "".join(current_str).strip()
+                        if txt:
+                            elements.append((round(cur_x, 2), round(ty, 2), txt))
+                        current_str = []
+                        cur_x += (-num / 1000.0) * 10.0
+                    elif num < -180: # word space
+                        current_str.append(" ")
+                else:
+                    i += 1
+            txt = "".join(current_str).strip()
+            if txt:
+                elements.append((round(cur_x, 2), round(ty, 2), txt))
+        elif m.group(13) is not None: # Tj
+            raw_str = m.group(13)
+            text = "".join(cmap.get(b, "") for b in unescape_pdf_bytes(raw_str)).strip()
+            if text: elements.append((round(tx, 2), round(ty, 2), text))
+        elif m.group(14) is not None: # single quote (next line and show)
+            ty -= leading
+            tx = line_tx
+            raw_str = m.group(14)
+            text = "".join(cmap.get(b, "") for b in unescape_pdf_bytes(raw_str)).strip()
+            if text: elements.append((round(tx, 2), round(ty, 2), text))
+
+    return elements
+
+if __name__ == "__main__":
+    with open("general-driving-principles-english.pdf", "rb") as f:
+        pdf = f.read()
+    cmap = parse_cmap(get_obj_stream(pdf, 128))
+    stream = get_obj_stream(pdf, get_page_contents(pdf)[1][1]) # page 2
+    elems = decode_stream_robust(stream, cmap)
+    print(f"Total elements: {len(elems)}")
+    for el in elems:
+        if any(w in el[2] for w in ["OBJECTS", "MIRROR", "RESTRICT", "DISTRACT", "CONCENTRATION", "11"]):
+            print("  ", el)

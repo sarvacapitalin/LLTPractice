@@ -6,26 +6,26 @@
     "questionNumber": 1,
     "image": null,
     "text": {
-      "en": "YOU WANT TO TURN RIGHT AT A JUNCTION.  BUT YOU THINK THAT YOUR INDICATORS CAN NOT BE SEEN CLEARLY.  WHAT SHOULD YOU DO?",
+      "en": "YOU WANT TO TURN RIGHT AT A JUNCTION. BUT YOU THINK THAT YOUR INDICATORS CAN NOT BE SEEN CLEARLY. WHAT SHOULD YOU DO?",
       "te": "మీరు ఏమి చేయాలి ?",
       "hi": "आपको क्या करना चाहिए ?"
     },
     "options": {
       "en": [
         "KEEP WELL OVER TO THE RIGHT",
-        "GIVE  ARM SIGNAL AND INDICATOR  SIGNAL",
+        "GIVE ARM SIGNAL AND INDICATOR SIGNAL",
         "GET OUT AND CHECK IF YOUR INDICATORS CAN BE SEEN",
         "STAY IN THE LEFT HAND LANE"
       ],
       "te": [
         "కుడి వైపుకు దగ్గరగా వాహనాన్ని ఉంచాలి",
-        "GIVE ARM సంకేతం / సిగ్నల్ AND INDICATOR సంకేతం / సిగ్నల్",
+        "చేతి సంకేతం మరియు ఇండికేటర్ సిగ్నల్ రెండూ ఇవ్వాలి",
         "కిందకి దిగి ఇండికేటర్లు కనిపిస్తున్నాయో లేదో తనిఖీ చేయాలి",
         "ఎడమ వైపు లేన్‌లోనే కొనసాగాలి"
       ],
       "hi": [
         "दाईं ओर रहकर चलें",
-        "GIVE ARM संकेत (सिग्नल) AND INDICATOR संकेत (सिग्नल)",
+        "हाथ का संकेत और इंडिकेटर दोनों दें",
         "नीचे उतरकर जांचें कि इंडिकेटर दिख रहे हैं या नहीं",
         "बाईं लेन में ही रहें"
       ]
@@ -44,7 +44,7 @@
     "questionNumber": 2,
     "image": null,
     "text": {
-      "en": "YOU HAVE TO MAKE A JOURNEY IN FOGGY CONDITIONS.  YOU SHOULD",
+      "en": "YOU HAVE TO MAKE A JOURNEY IN FOGGY CONDITIONS. YOU SHOULD",
       "te": "YOU HAVE TO MAKE A JOURNEY IN FOGGY CONDITIONS. YOU చేయాలి",
       "hi": "YOU HAVE TO MAKE A JOURNEY IN FOGGY CONDITIONS. YOU चाहिए"
     },
@@ -82,7 +82,7 @@
     "questionNumber": 3,
     "image": null,
     "text": {
-      "en": "YOUR ARE DRIVING A VEHICLE. YOU NOTICE ANIMALS IN FRONT.  WHAT SHOULD YOU DO FIRST?",
+      "en": "YOUR ARE DRIVING A VEHICLE. YOU NOTICE ANIMALS IN FRONT. WHAT SHOULD YOU DO FIRST?",
       "te": "మీరు ఏమి చేయాలి ?",
       "hi": "आपको क्या करना चाहिए ?"
     },
@@ -120,7 +120,7 @@
     "questionNumber": 4,
     "image": null,
     "text": {
-      "en": "YOU ARE DRIVING PAST A LANE OF PARKED CARS. YOU NOTICE BALL BOUNCING OUT INTO THE ROAD AHEAD.  WHAT SHOULD YOU DO?",
+      "en": "YOU ARE DRIVING PAST A LANE OF PARKED CARS. YOU NOTICE BALL BOUNCING OUT INTO THE ROAD AHEAD. WHAT SHOULD YOU DO?",
       "te": "మీరు ఏమి చేయాలి ?",
       "hi": "आपको क्या करना चाहिए ?"
     },
@@ -202,29 +202,29 @@
     },
     "options": {
       "en": [
-        "`L' MARK VEHICLES",
-        "SLOW SPEED VEHICLES",
-        "OLD VEHICLES",
-        "LIGHT VEHICLES"
+        "`L'  MARK VEHICLES.",
+        "SLOW SPEED VEHICLES. OLD VEHICLE",
+        "S.",
+        "LIGHT VEHICLES."
       ],
       "te": [
-        "లెర్నర్ బోర్డు ('L' మార్క్) ఉన్న వాహనాలు",
-        "నెమ్మదిగా వెళ్లే వాహనాలు",
-        "పాత వాహనాలు",
+        "`L' MARK వాహనాలు",
+        "నెమ్మదిగా వేగం వాహనాలు OLD వాహనం",
+        "S.",
         "తేలికపాటి వాహనాలు"
       ],
       "hi": [
-        "'L' मार्क वाले वाहन (शिक्षार्थी वाहन)",
-        "धीमी गति वाले वाहन",
-        "पुराने वाहन",
+        "`L' MARK वाहन",
+        "धीमा गति वाहन OLD वाहन",
+        "S.",
         "हल्के वाहन"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: `L' MARK VEHICLES. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: లెర్నర్ బోర్డు ('L' మార్క్) ఉన్న వాహనాలు. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: 'L' मार्क वाले वाहन (शिक्षार्थी वाहन). सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: `L'  MARK VEHICLES.. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: `L' MARK వాహనాలు. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: `L' MARK वाहन. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -272,7 +272,7 @@
     "questionNumber": 8,
     "image": null,
     "text": {
-      "en": "YOU ARE FOLLOWING A TWO WHEELER ON A POOR ROAD SURFACE.  YOU SHOULD",
+      "en": "YOU ARE FOLLOWING A TWO WHEELER ON A POOR ROAD SURFACE. YOU SHOULD",
       "te": "YOU ARE FOLLOWING A TWO WHEELER ON A POOR రోడ్డు SURFACE. YOU చేయాలి",
       "hi": "YOU ARE FOLLOWING A TWO WHEELER ON A POOR सड़क SURFACE. YOU चाहिए"
     },
@@ -432,27 +432,27 @@
       "en": [
         "SOUND THE HORN",
         "BRAKE FIRMLY",
-        "KEEP A SAFE GAP",
-        "FLASH YOUR LIGHTS"
+        "KEEP A SAFE GAP FLASH YOU",
+        "R LIGHTS"
       ],
       "te": [
         "హారన్ మోగించాలి",
         "బ్రేక్ గట్టిగా వేయాలి",
-        "సురక్షితమైన దూరం పాటించాలి",
-        "హెడ్‌లైట్లను ఫ్లాష్ చేయాలి"
+        "KEEP A సురక్షితమైన GAP FLASH YOU",
+        "R లైట్లు"
       ],
       "hi": [
         "हॉर्न बजाएं",
         "मजबूती से ब्रेक लगाएं",
-        "सुरक्षित दूरी बनाए रखें",
-        "लाइटें फ्लैश करें"
+        "KEEP A सुरक्षित GAP FLASH YOU",
+        "R बत्तियां"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: KEEP A SAFE GAP. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: సురక్షితమైన దూరం పాటించాలి. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: सुरक्षित दूरी बनाए रखें. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: KEEP A SAFE GAP FLASH YOU. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: KEEP A సురక్షితమైన GAP FLASH YOU. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: KEEP A सुरक्षित GAP FLASH YOU. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -462,35 +462,35 @@
     "questionNumber": 13,
     "image": "assets/scenarios/rr_22.png",
     "text": {
-      "en": "YOU ARE DRIVING A TWO WHEELER",
-      "te": "YOU ARE డ్రైవింగ్ A TWO WHEELER",
-      "hi": "YOU ARE ड्राइविंग A TWO WHEELER"
+      "en": "YOU ARE DRIVING A TWO WHEELER ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED VEHICLES YOU SHOULD",
+      "te": "YOU ARE డ్రైవింగ్ A TWO WHEELER ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED వాహనాలు YOU చేయాలి",
+      "hi": "YOU ARE ड्राइविंग A TWO WHEELER ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED वाहन YOU चाहिए"
     },
     "options": {
       "en": [
-        "ON THE MOTORWAY IN WINDY CONDITIONS.  WHEN PASSING HIGH- SIDED VEHICLES YOU SHOULD",
         "INCREASE YOUR SPEED.",
-        "BEAWARE OF SUDDEN BLAST OF WIND. DRIVE ALONGSIDE VERY CLOSELY.",
+        "BEAWARE OF SUDDEN BLAST OF WIND.",
+        "DRIVE ALONGSIDE VERY CLOSELY.",
         "EXPECT NORMAL CONDITIONS."
       ],
       "te": [
-        "ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED వాహనాలు YOU చేయాలి",
         "వాహన వేగాన్ని పెంచాలి",
-        "BEAWARE OF SUDDEN BLAST OF WIND. డ్రైవ్ చేయండి ALONGSIDE VERY CLOSELY.",
+        "BEAWARE OF SUDDEN BLAST OF WIND.",
+        "డ్రైవ్ చేయండి ALONGSIDE VERY CLOSELY.",
         "EXPECT NORMAL CONDITIONS."
       ],
       "hi": [
-        "ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED वाहन YOU चाहिए",
         "अपनी गति बढ़ाएं",
-        "BEAWARE OF SUDDEN BLAST OF WIND. गाड़ी चलाएं ALONGSIDE VERY CLOSELY.",
+        "BEAWARE OF SUDDEN BLAST OF WIND.",
+        "गाड़ी चलाएं ALONGSIDE VERY CLOSELY.",
         "EXPECT NORMAL CONDITIONS."
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: INCREASE YOUR SPEED.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: వాహన వేగాన్ని పెంచాలి. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: अपनी गति बढ़ाएं. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: BEAWARE OF SUDDEN BLAST OF WIND.. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: BEAWARE OF SUDDEN BLAST OF WIND.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: BEAWARE OF SUDDEN BLAST OF WIND.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -500,7 +500,7 @@
     "questionNumber": 14,
     "image": null,
     "text": {
-      "en": "YOU ARE DRIVING UPTO AN INTERSECTION WHERE THERE IS NO SIGNAL.  PEOPLE ARE CROSSING IN FRONT OF YOUR CAR.  YOU SHOULD",
+      "en": "YOU ARE DRIVING UPTO AN INTERSECTION WHERE THERE IS NO SIGNAL. PEOPLE ARE CROSSING IN FRONT OF YOUR CAR. YOU SHOULD",
       "te": "YOU ARE డ్రైవింగ్ UPTO AN జంక్షన్ WHERE THERE IS కాదు సంకేతం / సిగ్నల్ PEOPLE ARE దాటడం / క్రాసింగ్ IN FRONT OF YOUR CAR. YOU చేయాలి",
       "hi": "YOU ARE ड्राइविंग UPTO AN चौराहा WHERE THERE IS नहीं संकेत (सिग्नल) PEOPLE ARE पार करना (क्रॉसिंग) IN FRONT OF YOUR CAR. YOU चाहिए"
     },
@@ -538,28 +538,28 @@
     "questionNumber": 15,
     "image": null,
     "text": {
-      "en": "YOU WISH TO TAKE A \"U\" TURN.  IF THERE IS A POLICEMAN AT THE INTERSECTION CONTROLLED BY A TRAFFIC LIGHT, YOU SHOULD",
+      "en": "YOU WISH TO TAKE A \"U\" TURN. IF THERE IS A POLICEMAN AT THE INTERSECTION CONTROLLED BY A TRAFFIC LIGHT, YOU SHOULD",
       "te": "YOU WISH TO TAKE A \"U\" TURN. IF THERE IS A POLICEMAN AT THE జంక్షన్ CONTROLLED BY A TRAFFIC లైట్ YOU చేయాలి",
       "hi": "YOU WISH TO TAKE A \"U\" TURN. IF THERE IS A POLICEMAN AT THE चौराहा CONTROLLED BY A TRAFFIC बत्ती (लाइट) YOU चाहिए"
     },
     "options": {
       "en": [
-        "DRIVE TO ANOTHER INTERSECTION THAT HAS NO TRAFFIC LIGHT",
+        "DRIVE TO ANOTHER INTERSECTION THAT HAS NO TRAFFIC LIGHT TRAFFIC LIGHT, YOU SHOULD",
         "WAIT UNTIL THE LIGHT TURNS GREEN BEFORE MAKING THE \"U\" TURN",
-        "MAKE THE \"U\" TURN IF THERE IS A POLICEMAN AT THE INTERSECTION.",
-        "AVOID MAKING A 'U' TURN"
+        "MAKE THE \"U\" TURN IF THERE IS A POLICEMAN AT THE INTERSECTION. AVOID MAKING A 'U' TURN",
+        "2"
       ],
       "te": [
-        "డ్రైవ్ చేయండి TO ANOTHER జంక్షన్ THAT HAS కాదు TRAFFIC లైట్",
+        "డ్రైవ్ చేయండి TO ANOTHER జంక్షన్ THAT HAS కాదు TRAFFIC లైట్ TRAFFIC లైట్ YOU చేయాలి",
         "WAIT UNTIL THE లైట్ TURNS GREEN BEFORE MAKING THE \"U\" TURN",
-        "MAKE THE \"U\" TURN IF THERE IS A POLICEMAN AT THE జంక్షన్",
-        "AVOID MAKING A 'U' TURN"
+        "MAKE THE \"U\" TURN IF THERE IS A POLICEMAN AT THE జంక్షన్ AVOID MAKING A 'U' TURN",
+        "2"
       ],
       "hi": [
-        "गाड़ी चलाएं TO ANOTHER चौराहा THAT HAS नहीं TRAFFIC बत्ती (लाइट)",
+        "गाड़ी चलाएं TO ANOTHER चौराहा THAT HAS नहीं TRAFFIC बत्ती (लाइट) TRAFFIC बत्ती (लाइट) YOU चाहिए",
         "WAIT UNTIL THE बत्ती (लाइट) TURNS GREEN BEFORE MAKING THE \"U\" TURN",
-        "MAKE THE \"U\" TURN IF THERE IS A POLICEMAN AT THE चौराहा",
-        "AVOID MAKING A 'U' TURN"
+        "MAKE THE \"U\" TURN IF THERE IS A POLICEMAN AT THE चौराहा AVOID MAKING A 'U' TURN",
+        "2"
       ]
     },
     "answerIndex": 1,
@@ -576,7 +576,7 @@
     "questionNumber": 16,
     "image": null,
     "text": {
-      "en": "YOU ARE DRIVING ON A TWO-LANE STREET.   THE VEHICLE IN FRONT OF YOU IS MOVING VERY SLOWLY,  AND THE ROAD AHEAD IS CLEAR FOR OVERTAKING, YOU SHOULD",
+      "en": "YOU ARE DRIVING ON A TWO-LANE STREET. THE VEHICLE IN FRONT OF YOU IS MOVING VERY SLOWLY, AND THE ROAD AHEAD IS CLEAR FOR OVERTAKING, YOU SHOULD",
       "te": "YOU ARE డ్రైవింగ్ ON A TWO-LANE STREET. THE వాహనం IN FRONT OF YOU IS MOVING VERY SLOWLY, AND THE రోడ్డు ముందు IS CLEAR FOR ఓవర్‌టేకింగ్ YOU చేయాలి",
       "hi": "YOU ARE ड्राइविंग ON A TWO-LANE STREET. THE वाहन IN FRONT OF YOU IS MOVING VERY SLOWLY, AND THE सड़क आगे IS CLEAR FOR ओवरटेकिंग YOU चाहिए"
     },
@@ -652,7 +652,7 @@
     "questionNumber": 18,
     "image": null,
     "text": {
-      "en": "WHILE DRIVING ON THE MOTORWAY YOU HAVE TO SLOW DOWN QUICKLY DUE TO A HAZARD.  WHAT SHOULD YOU DO?",
+      "en": "WHILE DRIVING ON THE MOTORWAY YOU HAVE TO SLOW DOWN QUICKLY DUE TO A HAZARD. WHAT SHOULD YOU DO?",
       "te": "మీరు ఏమి చేయాలి ?",
       "hi": "आपको क्या करना चाहिए ?"
     },
@@ -690,35 +690,35 @@
     "questionNumber": 19,
     "image": null,
     "text": {
-      "en": "YOU DRIVE UP TO A CORNER WHERE YOU SEE SOME LOOSE GRAVEL ON THE ROAD.  YOU SHOULD",
+      "en": "YOU DRIVE UP TO A CORNER WHERE YOU SEE SOME LOOSE GRAVEL ON THE ROAD. YOU SHOULD",
       "te": "YOU డ్రైవ్ చేయండి UP TO A CORNER WHERE YOU SEE SOME LOOSE GRAVEL ON THE రోడ్డు YOU చేయాలి",
       "hi": "YOU गाड़ी चलाएं UP TO A CORNER WHERE YOU SEE SOME LOOSE GRAVEL ON THE सड़क YOU चाहिए"
     },
     "options": {
       "en": [
         "CHECK THE MIRRORS AND CHANGE LANES",
-        "SPEED UP AND DRIVE OVER THE GRAVEL AS",
-        "QUICKLY AS POSSIBLE.",
-        "SLOW DOWN NONE OF THE ABOVE"
+        "SPEED UP AND DRIVE OVER THE GRAVEL AS QUICKLY AS POSSIBLE.",
+        "SLOW DOWN",
+        "NONE OF THE ABOVE"
       ],
       "te": [
         "CHECK THE అద్దాలు AND CHANGE LANES",
-        "వేగం UP AND డ్రైవ్ చేయండి OVER THE GRAVEL AS",
-        "QUICKLY AS POSSIBLE.",
-        "నెమ్మదిగా DOWN NONE OF THE ABOVE"
+        "వేగం UP AND డ్రైవ్ చేయండి OVER THE GRAVEL AS QUICKLY AS POSSIBLE.",
+        "నెమ్మదిగా DOWN",
+        "పైవేవీ కావు"
       ],
       "hi": [
         "CHECK THE दर्पण AND CHANGE LANES",
-        "गति UP AND गाड़ी चलाएं OVER THE GRAVEL AS",
-        "QUICKLY AS POSSIBLE.",
-        "धीमा DOWN NONE OF THE ABOVE"
+        "गति UP AND गाड़ी चलाएं OVER THE GRAVEL AS QUICKLY AS POSSIBLE.",
+        "धीमा DOWN",
+        "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: QUICKLY AS POSSIBLE.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: QUICKLY AS POSSIBLE.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: QUICKLY AS POSSIBLE.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: SLOW DOWN. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: నెమ్మదిగా DOWN. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: धीमा DOWN. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -728,7 +728,7 @@
     "questionNumber": 20,
     "image": null,
     "text": {
-      "en": "WHEN YOU HAVE STARTED TO OVERTAKE THE CAR AHEAD, YOU NOTICE THAT ITS RIGHT INDICATOR IS FLASHING.  YOU SHOULD",
+      "en": "WHEN YOU HAVE STARTED TO OVERTAKE THE CAR AHEAD, YOU NOTICE THAT ITS RIGHT INDICATOR IS FLASHING. YOU SHOULD",
       "te": "WHEN YOU HAVE STARTED TO ఓవర్‌టేక్ చేయండి THE CAR ముందు YOU NOTICE THAT ITS కుడి INDICATOR IS FLASHING. YOU చేయాలి",
       "hi": "WHEN YOU HAVE STARTED TO ओवरटेक करें THE CAR आगे YOU NOTICE THAT ITS दायां INDICATOR IS FLASHING. YOU चाहिए"
     },
@@ -772,29 +772,29 @@
     },
     "options": {
       "en": [
-        "CROSS IT WHENEVER YOU FEEL",
-        "CROSS IT WHEN THERE IS NO TRAFFIC COMING FROM THE OPPOSITE DIRECTION",
-        "NEVER CROSS IT UNDER ANY CIRCUMSTANCES",
-        "CROSS IT WHEN IT IS SAFE TO DO SO BUT SHOULD COME BACK TO YOUR LANE AFTER OVERTAKING"
+        "A CONTINUOUS YELLOW OR WHITE WHEN THERE IS NO",
+        "CROSS IT WHENEVER YOU FEEL CROSS IT WHEN THERE IS NO TRAFFIC COMING FROM THE OPPOSITE DIRECTION",
+        "NEVER CROSS IT UNDER ANY CIRCUMSTANCES CROSS IT WHEN IT IS SAFE TO DO SO BUT SHOULD COME BACK TO YOUR LANE AFTER OVERTAKING",
+        "4"
       ],
       "te": [
-        "CROSS IT WHENEVER YOU FEEL",
-        "CROSS IT WHEN THERE IS కాదు TRAFFIC COMING FROM THE OPPOSITE DIRECTION",
-        "ఎప్పుడూ చేయకూడదు CROSS IT UNDER ANY CIRCUMSTANCES",
-        "CROSS IT WHEN IT IS సురక్షితమైన TO DO SO BUT చేయాలి COME BACK TO YOUR LANE AFTER ఓవర్‌టేకింగ్"
+        "A CONTINUOUS YELLOW OR WHITE WHEN THERE IS కాదు",
+        "CROSS IT WHENEVER YOU FEEL CROSS IT WHEN THERE IS కాదు TRAFFIC COMING FROM THE OPPOSITE DIRECTION",
+        "ఎప్పుడూ చేయకూడదు CROSS IT UNDER ANY CIRCUMSTANCES CROSS IT WHEN IT IS సురక్షితమైన TO DO SO BUT చేయాలి COME BACK TO YOUR LANE AFTER ఓవర్‌టేకింగ్",
+        "4"
       ],
       "hi": [
-        "CROSS IT WHENEVER YOU FEEL",
-        "CROSS IT WHEN THERE IS नहीं TRAFFIC COMING FROM THE OPPOSITE DIRECTION",
-        "कभी नहीं CROSS IT UNDER ANY CIRCUMSTANCES",
-        "CROSS IT WHEN IT IS सुरक्षित TO DO SO BUT चाहिए COME BACK TO YOUR LANE AFTER ओवरटेकिंग"
+        "A CONTINUOUS YELLOW OR WHITE WHEN THERE IS नहीं",
+        "CROSS IT WHENEVER YOU FEEL CROSS IT WHEN THERE IS नहीं TRAFFIC COMING FROM THE OPPOSITE DIRECTION",
+        "कभी नहीं CROSS IT UNDER ANY CIRCUMSTANCES CROSS IT WHEN IT IS सुरक्षित TO DO SO BUT चाहिए COME BACK TO YOUR LANE AFTER ओवरटेकिंग",
+        "4"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: CROSS IT WHEN IT IS SAFE TO DO SO BUT SHOULD COME BACK TO YOUR LANE AFTER OVERTAKING. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: CROSS IT WHEN IT IS సురక్షితమైన TO DO SO BUT చేయాలి COME BACK TO YOUR LANE AFTER ఓవర్‌టేకింగ్. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: CROSS IT WHEN IT IS सुरक्षित TO DO SO BUT चाहिए COME BACK TO YOUR LANE AFTER ओवरटेकिंग. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: 4. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: 4. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: 4. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -918,7 +918,7 @@
     "questionNumber": 25,
     "image": null,
     "text": {
-      "en": "WHILE APPROACHING A PEDESTRIAN CROSSING WHICH IS CONTROLLED BY A TRAFFIC SIGNAL, THE SIGNAL HAS TURNED GREEN FOR YOU.   BUT THE PEDESTRIANS ARE STILL CROSSING. YOU SHOULD",
+      "en": "WHILE APPROACHING A PEDESTRIAN CROSSING WHICH IS CONTROLLED BY A TRAFFIC SIGNAL, THE SIGNAL HAS TURNED GREEN FOR YOU. BUT THE PEDESTRIANS ARE STILL CROSSING. YOU SHOULD",
       "te": "WHILE APPROACHING A పాదచారి దాటడం / క్రాసింగ్ WHICH IS CONTROLLED BY A TRAFFIC సంకేతం / సిగ్నల్ THE సంకేతం / సిగ్నల్ HAS TURNED GREEN FOR YOU. BUT THE పాదచారులు ARE STILL దాటడం / క్రాసింగ్ YOU చేయాలి",
       "hi": "WHILE APPROACHING A पैदल यात्री पार करना (क्रॉसिंग) WHICH IS CONTROLLED BY A TRAFFIC संकेत (सिग्नल) THE संकेत (सिग्नल) HAS TURNED GREEN FOR YOU. BUT THE पैदल यात्री ARE STILL पार करना (क्रॉसिंग) YOU चाहिए"
     },
@@ -1032,35 +1032,35 @@
     "questionNumber": 28,
     "image": "assets/scenarios/rr_34.png",
     "text": {
-      "en": "WHEN YOU APPROACH AN",
-      "te": "WHEN YOU APPROACH AN",
-      "hi": "WHEN YOU APPROACH AN"
+      "en": "WHEN YOU APPROACH AN INTERSECTION, THE GREEN SIGNAL HAS JUST CHANGED INTO AMBER, YOU SHOULD",
+      "te": "WHEN YOU APPROACH AN జంక్షన్ THE GREEN సంకేతం / సిగ్నల్ HAS JUST CHANGED INTO AMBER, YOU చేయాలి",
+      "hi": "WHEN YOU APPROACH AN चौराहा THE GREEN संकेत (सिग्नल) HAS JUST CHANGED INTO AMBER, YOU चाहिए"
     },
     "options": {
       "en": [
-        "INTERSECTION, THE GREEN SIGNAL HAS JUST CHANGED INTO AMBER, YOU SHOULD",
         "HURRY UP AND CROSS",
-        "APPLY BRAKES AND CROSS SEE, IF YOU HAVE CROSSED THE STOP LINE OR ARE SO CLOSE TO IT THAT YOU CANNOT STOP SAFELY, CROSS THE INTERSECTION WITH CAUTION",
+        "APPLY BRAKES AND CROSS",
+        "SEE, IF YOU HAVE CROSSED THE STOP LINE OR ARE SO CLOSE TO IT THAT YOU CANNOT STOP SAFELY, CROSS THE INTERSECTION WITH CAUTION",
         "SEE, IF THERE IS NO POLICEMAN, CROSS, OTHERWISE STOP."
       ],
       "te": [
-        "జంక్షన్ THE GREEN సంకేతం / సిగ్నల్ HAS JUST CHANGED INTO AMBER, YOU చేయాలి",
         "HURRY UP AND CROSS",
-        "APPLY బ్రేకులు AND CROSS SEE, IF YOU HAVE CROSSED THE ఆపండి LINE OR ARE SO CLOSE TO IT THAT YOU చేయకూడదు ఆపండి సురక్షితంగా CROSS THE జంక్షన్ WITH జాగ్రత్త",
+        "APPLY బ్రేకులు AND CROSS",
+        "SEE, IF YOU HAVE CROSSED THE ఆపండి LINE OR ARE SO CLOSE TO IT THAT YOU చేయకూడదు ఆపండి సురక్షితంగా CROSS THE జంక్షన్ WITH జాగ్రత్త",
         "SEE, IF THERE IS కాదు POLICEMAN, CROSS, OTHERWISE ఆపండి"
       ],
       "hi": [
-        "चौराहा THE GREEN संकेत (सिग्नल) HAS JUST CHANGED INTO AMBER, YOU चाहिए",
         "HURRY UP AND CROSS",
-        "APPLY ब्रेक AND CROSS SEE, IF YOU HAVE CROSSED THE रुकें LINE OR ARE SO CLOSE TO IT THAT YOU नहीं कर सकते रुकें सुरक्षित रूप से CROSS THE चौराहा WITH सावधानी",
+        "APPLY ब्रेक AND CROSS",
+        "SEE, IF YOU HAVE CROSSED THE रुकें LINE OR ARE SO CLOSE TO IT THAT YOU नहीं कर सकते रुकें सुरक्षित रूप से CROSS THE चौराहा WITH सावधानी",
         "SEE, IF THERE IS नहीं POLICEMAN, CROSS, OTHERWISE रुकें"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: APPLY BRAKES AND CROSS SEE, IF YOU HAVE CROSSED THE STOP LINE OR ARE SO CLOSE TO IT THAT YOU CANNOT STOP SAFELY, CROSS THE INTERSECTION WITH CAUTION. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: APPLY బ్రేకులు AND CROSS SEE, IF YOU HAVE CROSSED THE ఆపండి LINE OR ARE SO CLOSE TO IT THAT YOU చేయకూడదు ఆపండి సురక్షితంగా CROSS THE జంక్షన్ WITH జాగ్రత్త. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: APPLY ब्रेक AND CROSS SEE, IF YOU HAVE CROSSED THE रुकें LINE OR ARE SO CLOSE TO IT THAT YOU नहीं कर सकते रुकें सुरक्षित रूप से CROSS THE चौराहा WITH सावधानी. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: SEE, IF YOU HAVE CROSSED THE STOP LINE OR ARE SO CLOSE TO IT THAT YOU CANNOT STOP SAFELY, CROSS THE INTERSECTION WITH CAUTION. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: SEE, IF YOU HAVE CROSSED THE ఆపండి LINE OR ARE SO CLOSE TO IT THAT YOU చేయకూడదు ఆపండి సురక్షితంగా CROSS THE జంక్షన్ WITH జాగ్రత్త. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: SEE, IF YOU HAVE CROSSED THE रुकें LINE OR ARE SO CLOSE TO IT THAT YOU नहीं कर सकते रुकें सुरक्षित रूप से CROSS THE चौराहा WITH सावधानी. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -1108,27 +1108,27 @@
     "questionNumber": 30,
     "image": "assets/scenarios/rr_36.png",
     "text": {
-      "en": "AS YOU APPROACH THE STOP LINE",
-      "te": "AS YOU APPROACH THE ఆపండి LINE",
-      "hi": "AS YOU APPROACH THE रुकें LINE"
+      "en": "AS YOU APPROACH THE STOP LINE AT AN INTERSECTION YOU SEE THE LIGHT TURN AMBER. YOU SHOULD",
+      "te": "AS YOU APPROACH THE ఆపండి LINE AT AN జంక్షన్ YOU SEE THE లైట్ TURN AMBER. YOU చేయాలి",
+      "hi": "AS YOU APPROACH THE रुकें LINE AT AN चौराहा YOU SEE THE बत्ती (लाइट) TURN AMBER. YOU चाहिए"
     },
     "options": {
       "en": [
-        "AT AN INTERSECTION YOU SEE THE LIGHT TURN AMBER.  YOU SHOULD",
         "PREPARE TO GO GO IF THE WAY IS CLEAR",
-        "GO IF NO PEDESTRIANS ARE CROSSING",
+        "GO IF NO PEDESTRIANS",
+        "ARE CROSSING",
         "GET READY TO STOP BEFORE THE STOP LINE"
       ],
       "te": [
-        "AT AN జంక్షన్ YOU SEE THE లైట్ TURN AMBER. YOU చేయాలి",
         "PREPARE TO GO GO IF THE WAY IS CLEAR",
-        "GO IF కాదు పాదచారులు ARE దాటడం / క్రాసింగ్",
+        "GO IF కాదు పాదచారులు",
+        "ARE దాటడం / క్రాసింగ్",
         "GET READY TO ఆపండి BEFORE THE ఆపండి LINE"
       ],
       "hi": [
-        "AT AN चौराहा YOU SEE THE बत्ती (लाइट) TURN AMBER. YOU चाहिए",
         "PREPARE TO GO GO IF THE WAY IS CLEAR",
-        "GO IF नहीं पैदल यात्री ARE पार करना (क्रॉसिंग)",
+        "GO IF नहीं पैदल यात्री",
+        "ARE पार करना (क्रॉसिंग)",
         "GET READY TO रुकें BEFORE THE रुकें LINE"
       ]
     },
@@ -1146,7 +1146,7 @@
     "questionNumber": 31,
     "image": null,
     "text": {
-      "en": "WHILE DRIVING YOU DECIDED TO STOP IMMEDIATELY                     THE CORRECT HAND SIGNAL IS",
+      "en": "WHILE DRIVING YOU DECIDED TO STOP IMMEDIATELY THE CORRECT HAND SIGNAL IS",
       "te": "WHILE డ్రైవింగ్ YOU DECIDED TO ఆపండి IMMEDIATELY THE CORRECT HAND సంకేతం / సిగ్నల్ IS",
       "hi": "WHILE ड्राइविंग YOU DECIDED TO रुकें IMMEDIATELY THE CORRECT HAND संकेत (सिग्नल) IS"
     },
@@ -1260,35 +1260,35 @@
     "questionNumber": 34,
     "image": null,
     "text": {
-      "en": "YOUR MOBILE PHONE RINGS WHILE YOU ARE DRIVING.         YOU SHOULD",
+      "en": "YOUR MOBILE PHONE RINGS WHILE YOU ARE DRIVING. YOU SHOULD",
       "te": "YOUR మొబైల్ ఫోన్ ఫోన్ RINGS WHILE YOU ARE డ్రైవింగ్ YOU చేయాలి",
       "hi": "YOUR मोबाइल फोन फोन RINGS WHILE YOU ARE ड्राइविंग YOU चाहिए"
     },
     "options": {
       "en": [
         "STOP IMMEDIATELY",
-        "ANSWER IT IMMEDIATELY",
-        "STOP AT A SUITABLE PLACE AND ATTEND PHONE",
-        "STOP AT THE NEAREST KERB"
+        "ANSWER IT IMMEDIATELY STOP AT A SUITABLE PLACE AND ATTEND PHONE YOU ARE MOST LIKELY TO LOSE",
+        "STOP AT THE NEAREST KERB",
+        "3"
       ],
       "te": [
         "ఆపండి IMMEDIATELY",
-        "ANSWER IT IMMEDIATELY",
-        "ఆపండి AT A SUITABLE PLACE AND ATTEND ఫోన్",
-        "ఆపండి AT THE NEAREST KERB"
+        "ANSWER IT IMMEDIATELY ఆపండి AT A SUITABLE PLACE AND ATTEND ఫోన్ YOU ARE MOST LIKELY TO LOSE",
+        "ఆపండి AT THE NEAREST KERB",
+        "3"
       ],
       "hi": [
         "रुकें IMMEDIATELY",
-        "ANSWER IT IMMEDIATELY",
-        "रुकें AT A SUITABLE PLACE AND ATTEND फोन",
-        "रुकें AT THE NEAREST KERB"
+        "ANSWER IT IMMEDIATELY रुकें AT A SUITABLE PLACE AND ATTEND फोन YOU ARE MOST LIKELY TO LOSE",
+        "रुकें AT THE NEAREST KERB",
+        "3"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: STOP AT A SUITABLE PLACE AND ATTEND PHONE. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: ఆపండి AT A SUITABLE PLACE AND ATTEND ఫోన్. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: रुकें AT A SUITABLE PLACE AND ATTEND फोन. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: STOP AT THE NEAREST KERB. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: ఆపండి AT THE NEAREST KERB. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: रुकें AT THE NEAREST KERB. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -1336,7 +1336,7 @@
     "questionNumber": 36,
     "image": null,
     "text": {
-      "en": "YOU ARE APPROACHING A ZEBRA CROSSING.  PEDESTRIANS ARE WAITING TO CROSS.  YOU SHOULD",
+      "en": "YOU ARE APPROACHING A ZEBRA CROSSING. PEDESTRIANS ARE WAITING TO CROSS. YOU SHOULD",
       "te": "YOU ARE APPROACHING A ZEBRA దాటడం / క్రాసింగ్ పాదచారులు ARE WAITING TO CROSS. YOU చేయాలి",
       "hi": "YOU ARE APPROACHING A ZEBRA पार करना (क्रॉसिंग) पैदल यात्री ARE WAITING TO CROSS. YOU चाहिए"
     },
@@ -1412,35 +1412,35 @@
     "questionNumber": 38,
     "image": "assets/scenarios/rr_49.png",
     "text": {
-      "en": "WHEN YOU ARE MOVING OFF FROM",
-      "te": "WHEN YOU ARE MOVING OFF FROM",
-      "hi": "WHEN YOU ARE MOVING OFF FROM"
+      "en": "WHEN YOU ARE MOVING OFF FROM BEHIND A PARKED CAR YOU SHOULD",
+      "te": "WHEN YOU ARE MOVING OFF FROM వెనుక A PARKED CAR YOU చేయాలి",
+      "hi": "WHEN YOU ARE MOVING OFF FROM पीछे A PARKED CAR YOU चाहिए"
     },
     "options": {
       "en": [
-        "BEHIND A PARKED CAR YOU SHOULD LOOK AROUND BEFORE",
-        "YOU MOVE OFF USE ALL THE MIRRORS",
-        "ON THE VEHICLE",
-        "GIVE A SIGNAL ALL OF THE ABOVE"
+        "LOOK AROUND BEFORE YOU MOVE OFF",
+        "USE ALL THE MIRRORS ON THE VEHICLE",
+        "GIVE A SIGNAL",
+        "ALL OF THE ABOVE"
       ],
       "te": [
-        "వెనుక A PARKED CAR YOU చేయాలి LOOK AROUND BEFORE",
-        "YOU MOVE OFF USE ALL THE అద్దాలు",
-        "ON THE వాహనం",
-        "GIVE A సంకేతం / సిగ్నల్ ALL OF THE ABOVE"
+        "LOOK AROUND BEFORE YOU MOVE OFF",
+        "USE ALL THE అద్దాలు ON THE వాహనం",
+        "GIVE A సంకేతం / సిగ్నల్",
+        "పైవన్నీ"
       ],
       "hi": [
-        "पीछे A PARKED CAR YOU चाहिए LOOK AROUND BEFORE",
-        "YOU MOVE OFF USE ALL THE दर्पण",
-        "ON THE वाहन",
-        "GIVE A संकेत (सिग्नल) ALL OF THE ABOVE"
+        "LOOK AROUND BEFORE YOU MOVE OFF",
+        "USE ALL THE दर्पण ON THE वाहन",
+        "GIVE A संकेत (सिग्नल)",
+        "उपरोक्त सभी"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: GIVE A SIGNAL ALL OF THE ABOVE. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: GIVE A సంకేతం / సిగ్నల్ ALL OF THE ABOVE. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: GIVE A संकेत (सिग्नल) ALL OF THE ABOVE. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: ALL OF THE ABOVE. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: పైవన్నీ. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: उपरोक्त सभी. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -1532,29 +1532,29 @@
     },
     "options": {
       "en": [
-        "MOTORCYCLES &",
-        "BICYCLES",
-        "TRACTOR TRAILERS",
+        "MOTORCYCLES & BICYCLES",
+        "TRACTOR",
+        "TRAILERS",
         "NONE OF THE ABOVE"
       ],
       "te": [
-        "MOTORCYCLES &",
-        "BICYCLES",
-        "TRACTOR TRAILERS",
+        "MOTORCYCLES & BICYCLES",
+        "TRACTOR",
+        "TRAILERS",
         "పైవేవీ కావు"
       ],
       "hi": [
-        "MOTORCYCLES &",
-        "BICYCLES",
-        "TRACTOR TRAILERS",
+        "MOTORCYCLES & BICYCLES",
+        "TRACTOR",
+        "TRAILERS",
         "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: MOTORCYCLES &. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: MOTORCYCLES &. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: MOTORCYCLES &. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: MOTORCYCLES & BICYCLES. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: MOTORCYCLES & BICYCLES. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: MOTORCYCLES & BICYCLES. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -1647,28 +1647,28 @@
     "options": {
       "en": [
         "OPPOSITE A TRAFFIC ISLAND",
-        "IN A SECURE PARKING",
-        "PLACE",
-        "ON A BEND NEAR A TUNNEL"
+        "IN A SECURE PARKING PLACE",
+        "ON A BEND",
+        "NEAR A TUNNEL"
       ],
       "te": [
         "OPPOSITE A TRAFFIC ISLAND",
-        "IN A SECURE పార్కింగ్",
-        "PLACE",
-        "ON A BEND NEAR A TUNNEL"
+        "IN A SECURE పార్కింగ్ PLACE",
+        "ON A BEND",
+        "NEAR A TUNNEL"
       ],
       "hi": [
         "OPPOSITE A TRAFFIC ISLAND",
-        "IN A SECURE पार्किंग",
-        "PLACE",
-        "ON A BEND NEAR A TUNNEL"
+        "IN A SECURE पार्किंग PLACE",
+        "ON A BEND",
+        "NEAR A TUNNEL"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: IN A SECURE PARKING. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: IN A SECURE పార్కింగ్. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: IN A SECURE पार्किंग. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: IN A SECURE PARKING PLACE. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: IN A SECURE పార్కింగ్ PLACE. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: IN A SECURE पार्किंग PLACE. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -1684,19 +1684,19 @@
     },
     "options": {
       "en": [
-        "NEAR A SHOPPING MALLAT OR NEAR A BUS STOP",
+        "NEAR A SHOPPING MALL AT OR NEAR A BUS STOP",
         "WITHIN 10 METRES",
         "(32FEET) OF A JUNCTION",
         "ALL OF THE ABOVE"
       ],
       "te": [
-        "NEAR A SHOPPING MALLAT OR NEAR A BUS ఆపండి",
+        "NEAR A SHOPPING MALL AT OR NEAR A BUS ఆపండి",
         "WITHIN 10 మీటర్లు",
         "(32FEET) OF A కూడలి (జంక్షన్)",
         "పైవన్నీ"
       ],
       "hi": [
-        "NEAR A SHOPPING MALLAT OR NEAR A BUS रुकें",
+        "NEAR A SHOPPING MALL AT OR NEAR A BUS रुकें",
         "WITHIN 10 मीटर",
         "(32FEET) OF A चौराहा (जंक्शन)",
         "उपरोक्त सभी"
@@ -1722,29 +1722,29 @@
     },
     "options": {
       "en": [
-        "NEAR A SCHOOL",
-        "ENTRANCE",
-        "NEAR A POLICE STATION ON A SIDE ROAD",
-        "ALL OF THE ABOVE"
+        "NEAR A SCHOOL ENTRANCE",
+        "NEAR A POLICE STATION ON A SIDE ROAD ALL OF THE ABOVE",
+        "4",
+        "WHEN LEAVING YOUR VEHICLE SWITCH THE ENGINE"
       ],
       "te": [
-        "NEAR A పాఠశాల",
-        "ENTRANCE",
-        "NEAR A పోలీస్ STATION ON A SIDE రోడ్డు",
-        "పైవన్నీ"
+        "NEAR A పాఠశాల ENTRANCE",
+        "NEAR A పోలీస్ STATION ON A SIDE రోడ్డు ALL OF THE ABOVE",
+        "4",
+        "WHEN LEAVING YOUR వాహనం SWITCH THE ENGINE"
       ],
       "hi": [
-        "NEAR A स्कूल",
-        "ENTRANCE",
-        "NEAR A पुलिस STATION ON A SIDE सड़क",
-        "उपरोक्त सभी"
+        "NEAR A स्कूल ENTRANCE",
+        "NEAR A पुलिस STATION ON A SIDE सड़क ALL OF THE ABOVE",
+        "4",
+        "WHEN LEAVING YOUR वाहन SWITCH THE ENGINE"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: ALL OF THE ABOVE. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: పైవన్నీ. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: उपरोक्त सभी. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: WHEN LEAVING YOUR VEHICLE SWITCH THE ENGINE. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: WHEN LEAVING YOUR వాహనం SWITCH THE ENGINE. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: WHEN LEAVING YOUR वाहन SWITCH THE ENGINE. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -1798,7 +1798,7 @@
     },
     "options": {
       "en": [
-        "ARE NO ROAD SIGNS.  TWO VEHICLES APPROACH.  WHICH HAS PRIORITY?",
+        "ARE NO ROAD SIGNS. TWO VEHICLES APPROACH. WHICH HAS PRIORITY?",
         "NEITHER VEHICLE THE VEHICLE TRAVELLING THE",
         "FASTEST THE VEHICLE ON THE WIDEST ROAD",
         "VEHICLE APPROACHING FROM THE RIGHT"
@@ -1830,7 +1830,7 @@
     "questionNumber": 49,
     "image": null,
     "text": {
-      "en": "PEDESTRIANS ARE WAITING TO CROSS AT A ZEBRA CROSSING.  THEY ARE STANDING ON THE PAVEMENT YOU SHOULD NORMALLY",
+      "en": "PEDESTRIANS ARE WAITING TO CROSS AT A ZEBRA CROSSING. THEY ARE STANDING ON THE PAVEMENT YOU SHOULD NORMALLY",
       "te": "పాదచారులు ARE WAITING TO CROSS AT A ZEBRA దాటడం / క్రాసింగ్ THEY ARE STANDING ON THE PAVEMENT YOU చేయాలి NORMALLY",
       "hi": "पैदल यात्री ARE WAITING TO CROSS AT A ZEBRA पार करना (क्रॉसिंग) THEY ARE STANDING ON THE PAVEMENT YOU चाहिए NORMALLY"
     },
@@ -1875,20 +1875,20 @@
     "options": {
       "en": [
         "ON A BUSY ROAD",
-        "ON A ONE WAY ROAD",
-        "ON A ROUNDABOUT",
+        "ON A ONE WAY R",
+        "OAD ON A ROUND ABOUT",
         "ALL OF THE ABOVE"
       ],
       "te": [
         "రద్దీగా ఉండే రోడ్డుపై",
-        "వన్ వే రోడ్డుపై",
-        "రౌండ్‌ఎబౌట్ (ట్రాఫిక్ సర్కిల్) వద్ద",
+        "ON A ONE WAY R",
+        "OAD ON A ROUND ABOUT",
         "పైవన్నీ"
       ],
       "hi": [
         "व्यस्त सड़क पर",
-        "एकतरफा सड़क पर",
-        "गोल चक्कर पर",
+        "ON A ONE WAY R",
+        "OAD ON A ROUND ABOUT",
         "उपरोक्त सभी"
       ]
     },
@@ -1950,29 +1950,29 @@
     },
     "options": {
       "en": [
-        "ONLY IF BOTH ROADS ARE CLEAR OF TRAFFIC",
-        "NOT AT ANY TIME AT ANY TIME",
-        "ONLY IF THE MAIN",
-        "ROAD IS CLEAR OF TRAFFIC"
+        "YOUR ARE SIGNALLING TO TURN",
+        "ONLY IF BOTH ROADS ARE CLEAR OF TRAFFIC NOT AT ANY TIME",
+        "AT ANY TIME ONLY IF THE MAIN ROAD IS CLEAR OF TRAFFIC",
+        "2"
       ],
       "te": [
-        "ONLY IF BOTH రోడ్లు ARE CLEAR OF TRAFFIC",
-        "NOT AT ANY సమయం AT ANY సమయం",
-        "ONLY IF THE MAIN",
-        "రోడ్డు IS CLEAR OF TRAFFIC"
+        "YOUR ARE SIGNALLING TO TURN",
+        "ONLY IF BOTH రోడ్లు ARE CLEAR OF TRAFFIC NOT AT ANY సమయం",
+        "AT ANY సమయం ONLY IF THE MAIN రోడ్డు IS CLEAR OF TRAFFIC",
+        "2"
       ],
       "hi": [
-        "ONLY IF BOTH सड़कें ARE CLEAR OF TRAFFIC",
-        "NOT AT ANY समय AT ANY समय",
-        "ONLY IF THE MAIN",
-        "सड़क IS CLEAR OF TRAFFIC"
+        "YOUR ARE SIGNALLING TO TURN",
+        "ONLY IF BOTH सड़कें ARE CLEAR OF TRAFFIC NOT AT ANY समय",
+        "AT ANY समय ONLY IF THE MAIN सड़क IS CLEAR OF TRAFFIC",
+        "2"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: NOT AT ANY TIME AT ANY TIME. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: NOT AT ANY సమయం AT ANY సమయం. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: NOT AT ANY समय AT ANY समय. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: ONLY IF BOTH ROADS ARE CLEAR OF TRAFFIC NOT AT ANY TIME. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: ONLY IF BOTH రోడ్లు ARE CLEAR OF TRAFFIC NOT AT ANY సమయం. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: ONLY IF BOTH सड़कें ARE CLEAR OF TRAFFIC NOT AT ANY समय. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -1982,7 +1982,7 @@
     "questionNumber": 53,
     "image": null,
     "text": {
-      "en": "YOUR ARE SIGNALLING TO TURN RIGHT IN BUSY TRAFFIC.  HOW WOULD YOU CONFIRM YOUR INTENTION SAFELY?",
+      "en": "YOUR ARE SIGNALLING TO TURN RIGHT IN BUSY TRAFFIC. HOW WOULD YOU CONFIRM YOUR INTENTION SAFELY?",
       "te": "YOUR ARE SIGNALLING TO TURN కుడి IN BUSY TRAFFIC. HOW WOULD YOU CONFIRM YOUR INTENTION సురక్షితంగా",
       "hi": "YOUR ARE SIGNALLING TO TURN दायां IN BUSY TRAFFIC. HOW WOULD YOU CONFIRM YOUR INTENTION सुरक्षित रूप से"
     },
@@ -2058,35 +2058,35 @@
     "questionNumber": 55,
     "image": null,
     "text": {
-      "en": "THERE IS A POLICE CAR FOLLOWING YOU, THE POLICE OFFICER FLASHES THE HEADLIGHTS AND POINTS TO THE LEFT.  WHAT SHOULD YOU DO?",
+      "en": "THERE IS A POLICE CAR FOLLOWING YOU, THE POLICE OFFICER FLASHES THE HEADLIGHTS AND POINTS TO THE LEFT. WHAT SHOULD YOU DO?",
       "te": "మీరు ఏమి చేయాలి ?",
       "hi": "आपको क्या करना चाहिए ?"
     },
     "options": {
       "en": [
-        "TURN AT THE NEXT LEFT",
-        "STOP ON THE LEFT",
-        "STOP IMMEDIATELY",
-        "MOVE OVER TO THE RIGHT"
+        "TURN AT THE NEXT LEFT STOP ON THE LEFT",
+        "STOP IMMEDIAT",
+        "ELY MOVE OVER TO THE",
+        "RIGHT"
       ],
       "te": [
-        "తరువాతి ఎడమ మలుపు వద్ద తిరగాలి",
-        "వాహనాన్ని ఎడమ వైపునకు తీసుకువచ్చి ఆపాలి",
-        "తక్షణమే అక్కడే ఆపాలి",
-        "కుడి వైపునకు తరలిపోవాలి"
+        "TURN AT THE NEXT ఎడమ ఆపండి ON THE ఎడమ",
+        "ఆపండి IMMEDIAT",
+        "ELY MOVE OVER TO THE",
+        "కుడి"
       ],
       "hi": [
-        "अगले बाएं मोड़ पर मुड़ें",
-        "सड़क के बाईं ओर वाहन रोकें",
-        "तुरंत वहीं रुकें",
-        "दाईं ओर चले जाएं"
+        "TURN AT THE NEXT बायां रुकें ON THE बायां",
+        "रुकें IMMEDIAT",
+        "ELY MOVE OVER TO THE",
+        "दायां"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "When a police officer flashes headlights and points left, pull over safely and stop on the left.",
-      "te": "పోలీస్ హెడ్‌లైట్ వేసి ఎడమవైపు చూపిస్తే ఎడమ వైపునకు వచ్చి సురక్షితంగా ఆపాలి.",
-      "hi": "जब पुलिस हेडलाइट जलाकर बाईं ओर इशारा करे, तो बाईं ओर सुरक्षित रुकें।"
+      "en": "Official Traffic Regulation: STOP IMMEDIAT. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: ఆపండి IMMEDIAT. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: रुकें IMMEDIAT. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -2105,19 +2105,19 @@
         "CYCLISTS",
         "SLOW-MOVING",
         "VEHICLES",
-        "TRAFFIC ON YOUR RIGHTTRAFFIC ON YOUR LEFT"
+        "TRAFFIC ON YOUR RIGHT TRAFFIC ON YOUR LEFT"
       ],
       "te": [
         "సైకిల్ నడిపేవారు",
         "SLOW-MOVING",
         "వాహనాలు",
-        "TRAFFIC ON YOUR RIGHTTRAFFIC ON YOUR ఎడమ"
+        "TRAFFIC ON YOUR కుడి TRAFFIC ON YOUR ఎడమ"
       ],
       "hi": [
         "साइकिल सवार",
         "SLOW-MOVING",
         "वाहन",
-        "TRAFFIC ON YOUR RIGHTTRAFFIC ON YOUR बायां"
+        "TRAFFIC ON YOUR दायां TRAFFIC ON YOUR बायां"
       ]
     },
     "answerIndex": 2,
@@ -2134,7 +2134,7 @@
     "questionNumber": 57,
     "image": null,
     "text": {
-      "en": "YOU ARE REVERSING A CAR INTO A SIDE ROAD.  WHILE REVERSING YOU SHOULD MAINLY LOOK",
+      "en": "YOU ARE REVERSING A CAR INTO A SIDE ROAD. WHILE REVERSING YOU SHOULD MAINLY LOOK",
       "te": "YOU ARE REVERSING A CAR INTO A SIDE రోడ్డు WHILE REVERSING YOU చేయాలి MAINLY LOOK",
       "hi": "YOU ARE REVERSING A CAR INTO A SIDE सड़क WHILE REVERSING YOU चाहिए MAINLY LOOK"
     },
@@ -2178,29 +2178,29 @@
     },
     "options": {
       "en": [
-        "USE YOUR MIRRORS AND LOOK AROUND FOR A FINAL CHECK",
-        "SIGNAL FOR OTHER DRIVERS TO SLOW DOWN",
-        "NOT LOOK AROUND IF THERE IS A PARKED VEHICLE CLOSE IN FRONT OF YOU",
-        "GIVE A HAND SIGNAL AS WELL AS USE YOUR INDICATOR"
+        "USE YOUR MIRRORS AND LOOK AROUND FOR A FINAL CHECK SIGNAL FOR OTHER",
+        "DRIVERS TO SLOW DOWN NOT LOOK AROUND IF THERE IS A PARKED",
+        "VEHICLE CLOSE IN FRONT OF YOU GIVE A HAND SIGNAL AS",
+        "WELL AS USE YOUR INDICATOR 1 FRONT OF YOU"
       ],
       "te": [
-        "USE YOUR అద్దాలు AND LOOK AROUND FOR A FINAL CHECK",
-        "సంకేతం / సిగ్నల్ FOR OTHER డ్రైవర్లు TO నెమ్మదిగా DOWN",
-        "NOT LOOK AROUND IF THERE IS A PARKED వాహనం CLOSE IN FRONT OF YOU",
-        "GIVE A HAND సంకేతం / సిగ్నల్ AS WELL AS USE YOUR INDICATOR"
+        "USE YOUR అద్దాలు AND LOOK AROUND FOR A FINAL CHECK సంకేతం / సిగ్నల్ FOR OTHER",
+        "డ్రైవర్లు TO నెమ్మదిగా DOWN NOT LOOK AROUND IF THERE IS A PARKED",
+        "వాహనం CLOSE IN FRONT OF YOU GIVE A HAND సంకేతం / సిగ్నల్ AS",
+        "WELL AS USE YOUR INDICATOR 1 FRONT OF YOU"
       ],
       "hi": [
-        "USE YOUR दर्पण AND LOOK AROUND FOR A FINAL CHECK",
-        "संकेत (सिग्नल) FOR OTHER चालक TO धीमा DOWN",
-        "NOT LOOK AROUND IF THERE IS A PARKED वाहन CLOSE IN FRONT OF YOU",
-        "GIVE A HAND संकेत (सिग्नल) AS WELL AS USE YOUR INDICATOR"
+        "USE YOUR दर्पण AND LOOK AROUND FOR A FINAL CHECK संकेत (सिग्नल) FOR OTHER",
+        "चालक TO धीमा DOWN NOT LOOK AROUND IF THERE IS A PARKED",
+        "वाहन CLOSE IN FRONT OF YOU GIVE A HAND संकेत (सिग्नल) AS",
+        "WELL AS USE YOUR INDICATOR 1 FRONT OF YOU"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: USE YOUR MIRRORS AND LOOK AROUND FOR A FINAL CHECK. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: USE YOUR అద్దాలు AND LOOK AROUND FOR A FINAL CHECK. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: USE YOUR दर्पण AND LOOK AROUND FOR A FINAL CHECK. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: USE YOUR MIRRORS AND LOOK AROUND FOR A FINAL CHECK SIGNAL FOR OTHER. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: USE YOUR అద్దాలు AND LOOK AROUND FOR A FINAL CHECK సంకేతం / సిగ్నల్ FOR OTHER. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: USE YOUR दर्पण AND LOOK AROUND FOR A FINAL CHECK संकेत (सिग्नल) FOR OTHER. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -2407,21 +2407,21 @@
     "options": {
       "en": [
         "SLOW DOWN AND MOVE WITH CAUTION",
-        "COME TO A FULL STOP",
-        "DONT CHANGE SPEED IF THE WAY IS CLEAR.",
-        "WAIT FOR THE POLICEMAN TO ARRIVE"
+        "COME TO A FULL STOP DONT CHANGE SPEED IF THE WAY IS CLEAR.",
+        "WAIT FOR THE POLICEMAN TO ARRIVE CONTINUE UNTIL YOU STOP AND REVERSE LOOK INTO THE REAR",
+        "1"
       ],
       "te": [
         "నెమ్మదిగా DOWN AND MOVE WITH జాగ్రత్త",
-        "COME TO A FULL ఆపండి",
-        "DONT CHANGE వేగం IF THE WAY IS CLEAR.",
-        "WAIT FOR THE POLICEMAN TO ARRIVE"
+        "COME TO A FULL ఆపండి DONT CHANGE వేగం IF THE WAY IS CLEAR.",
+        "WAIT FOR THE POLICEMAN TO ARRIVE CONTINUE UNTIL YOU ఆపండి AND REVERSE LOOK INTO THE REAR",
+        "1"
       ],
       "hi": [
         "धीमा DOWN AND MOVE WITH सावधानी",
-        "COME TO A FULL रुकें",
-        "DONT CHANGE गति IF THE WAY IS CLEAR.",
-        "WAIT FOR THE POLICEMAN TO ARRIVE"
+        "COME TO A FULL रुकें DONT CHANGE गति IF THE WAY IS CLEAR.",
+        "WAIT FOR THE POLICEMAN TO ARRIVE CONTINUE UNTIL YOU रुकें AND REVERSE LOOK INTO THE REAR",
+        "1"
       ]
     },
     "answerIndex": 0,
@@ -2476,7 +2476,7 @@
     "questionNumber": 66,
     "image": null,
     "text": {
-      "en": "YOU ARE ABOUT TO TAKE A RIGHT TURN AT AN INTERSECTION.   THE SIGNAL IS GREEN FOR YOU. YOU HEAR A SIREN AND SEE A FIRE BRIGADE ABOUT TO OVERTAKE YOU. YOU SHOULD",
+      "en": "YOU ARE ABOUT TO TAKE A RIGHT TURN AT AN INTERSECTION. THE SIGNAL IS GREEN FOR YOU. YOU HEAR A SIREN AND SEE A FIRE BRIGADE ABOUT TO OVERTAKE YOU. YOU SHOULD",
       "te": "YOU ARE ABOUT TO TAKE A కుడి TURN AT AN జంక్షన్ THE సంకేతం / సిగ్నల్ IS GREEN FOR YOU. YOU HEAR A SIREN AND SEE A FIRE BRIGADE ABOUT TO ఓవర్‌టేక్ చేయండి YOU. YOU చేయాలి",
       "hi": "YOU ARE ABOUT TO TAKE A दायां TURN AT AN चौराहा THE संकेत (सिग्नल) IS GREEN FOR YOU. YOU HEAR A SIREN AND SEE A FIRE BRIGADE ABOUT TO ओवरटेक करें YOU. YOU चाहिए"
     },
@@ -2514,7 +2514,7 @@
     "questionNumber": 67,
     "image": null,
     "text": {
-      "en": "WHILE DRIVING YOU APPROACH A LARGE PUDDLE THAT IS CLOSE TO THE LEFT-HAND KERB.  PEDESTRIANS ARE CLOSE TO THE WATER. YOU SHOULD",
+      "en": "WHILE DRIVING YOU APPROACH A LARGE PUDDLE THAT IS CLOSE TO THE LEFT-HAND KERB. PEDESTRIANS ARE CLOSE TO THE WATER. YOU SHOULD",
       "te": "WHILE డ్రైవింగ్ YOU APPROACH A LARGE PUDDLE THAT IS CLOSE TO THE LEFT-HAND KERB. పాదచారులు ARE CLOSE TO THE WATER. YOU చేయాలి",
       "hi": "WHILE ड्राइविंग YOU APPROACH A LARGE PUDDLE THAT IS CLOSE TO THE LEFT-HAND KERB. पैदल यात्री ARE CLOSE TO THE WATER. YOU चाहिए"
     },
@@ -2590,7 +2590,7 @@
     "questionNumber": 69,
     "image": null,
     "text": {
-      "en": "YOU SEE A PEDESTRIAN WITH A STICK AND DARK GLASSES TRYING TO CROSS THE ROAD.  WHAT DO YOU INTERPRET?",
+      "en": "YOU SEE A PEDESTRIAN WITH A STICK AND DARK GLASSES TRYING TO CROSS THE ROAD. WHAT DO YOU INTERPRET?",
       "te": "YOU SEE A పాదచారి WITH A STICK AND DARK GLASSES TRYING TO CROSS THE రోడ్డు WHAT DO YOU INTERPRET?",
       "hi": "YOU SEE A पैदल यात्री WITH A STICK AND DARK GLASSES TRYING TO CROSS THE सड़क WHAT DO YOU INTERPRET?"
     },
@@ -2673,28 +2673,28 @@
     "options": {
       "en": [
         "SOUND YOUR HORN REPEATEDLY",
-        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY CAN SEE YOU BETTER.",
-        "INCREASE YOUR SPEED TO AVOID THE CHANGE OF HITTING THEM.",
-        "SLOW DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE ROAD."
+        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY CAN SEE YOU BETTER. INCREASE YOUR SPEED TO AVOID THE CHANGE OF HITTING THEM.",
+        "SLOW DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE ROAD.",
+        "4 A VEHICLE AHEAD OF YOU HAS MAY OVERTAKE THE MAY OVERTAKE THE VEHICLE IF THERE ARE"
       ],
       "te": [
         "SOUND YOUR హారన్ REPEATEDLY",
-        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY చేయవచ్చు SEE YOU BETTER.",
-        "INCREASE YOUR వేగం TO AVOID THE CHANGE OF HITTING THEM.",
-        "నెమ్మదిగా DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE రోడ్డు"
+        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY చేయవచ్చు SEE YOU BETTER. INCREASE YOUR వేగం TO AVOID THE CHANGE OF HITTING THEM.",
+        "నెమ్మదిగా DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE రోడ్డు",
+        "4 A వాహనం ముందు OF YOU HAS MAY ఓవర్‌టేక్ చేయండి THE MAY ఓవర్‌టేక్ చేయండి THE వాహనం IF THERE ARE"
       ],
       "hi": [
         "SOUND YOUR हॉर्न REPEATEDLY",
-        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY सकते हैं SEE YOU BETTER.",
-        "INCREASE YOUR गति TO AVOID THE CHANGE OF HITTING THEM.",
-        "धीमा DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE सड़क"
+        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY सकते हैं SEE YOU BETTER. INCREASE YOUR गति TO AVOID THE CHANGE OF HITTING THEM.",
+        "धीमा DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE सड़क",
+        "4 A वाहन आगे OF YOU HAS MAY ओवरटेक करें THE MAY ओवरटेक करें THE वाहन IF THERE ARE"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: SLOW DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE ROAD.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: నెమ్మదిగా DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE రోడ్డు. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: धीमा DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE सड़क. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: 4 A VEHICLE AHEAD OF YOU HAS MAY OVERTAKE THE MAY OVERTAKE THE VEHICLE IF THERE ARE. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: 4 A వాహనం ముందు OF YOU HAS MAY ఓవర్‌టేక్ చేయండి THE MAY ఓవర్‌టేక్ చేయండి THE వాహనం IF THERE ARE. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: 4 A वाहन आगे OF YOU HAS MAY ओवरटेक करें THE MAY ओवरटेक करें THE वाहन IF THERE ARE. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -2704,7 +2704,7 @@
     "questionNumber": 72,
     "image": null,
     "text": {
-      "en": "A VEHICLE AHEAD OF YOU HAS STOPPED AT A PEDESTRIAN CROSSING.  YOU",
+      "en": "A VEHICLE AHEAD OF YOU HAS STOPPED AT A PEDESTRIAN CROSSING. YOU",
       "te": "A వాహనం ముందు OF YOU HAS STOPPED AT A పాదచారి దాటడం / క్రాసింగ్ YOU",
       "hi": "A वाहन आगे OF YOU HAS STOPPED AT A पैदल यात्री पार करना (क्रॉसिंग) YOU"
     },
@@ -3166,29 +3166,29 @@
     },
     "options": {
       "en": [
-        "FIRE SERVICE VEHICLES",
-        "AMBULANCES",
+        "AT A TRAFFIC JUNCTION, YOU GOT A",
+        "FIRE SERVICE VEHICLES AMBULANCES GREEN SIGNAL TO MOVE ON. BUT PATIENTLY WAIT AND",
         "HEAVY VEHICLES ONLY",
-        "1 & 2"
+        "1 & 2 4"
       ],
       "te": [
-        "ఫైర్ సర్వీస్ (అగ్నిమాపక) వాహనాలు",
-        "అంబులెన్సులు (రోగుల వాహనాలు)",
+        "AT A TRAFFIC కూడలి (జంక్షన్) YOU GOT A",
+        "FIRE SERVICE వాహనాలు AMBULANCES GREEN సంకేతం / సిగ్నల్ TO MOVE ON. BUT PATIENTLY WAIT AND",
         "HEAVY వాహనాలు ONLY",
-        "1 & 2"
+        "1 & 2 4"
       ],
       "hi": [
-        "अग्निशमन वाहन",
-        "एम्बुलेंस (रोगी वाहन)",
+        "AT A TRAFFIC चौराहा (जंक्शन) YOU GOT A",
+        "FIRE SERVICE वाहन AMBULANCES GREEN संकेत (सिग्नल) TO MOVE ON. BUT PATIENTLY WAIT AND",
         "HEAVY वाहन ONLY",
-        "1 & 2"
+        "1 & 2 4"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: 1 & 2. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: 1 & 2. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: 1 & 2. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: 1 & 2 4. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: 1 & 2 4. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: 1 & 2 4. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -3318,19 +3318,19 @@
     },
     "options": {
       "en": [
-        "VEHICLE AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES",
+        "VEHICLE AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES \"",
         "RAISE THE RIGHT FORE ARM VERTICALLY OUT SIDE TO THE RIGHT OF THE VEHICLE, PALM TO THE FRONT",
         "EXTEND RIGHT ARM IN HORIZONTAL POSITION TO THE RIGHT OF THE VEHICLE WITH PALM OF THE HAND TURNED TO THE FRONT",
         "EXTEND THE RIGHT ARM, PALM DOWN, TO THE RIGHT OF THE EXTEND RIGHT ARM TO THE RIGHT OF THE VEHICLE AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
       ],
       "te": [
-        "వాహనం AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES",
+        "వాహనం AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES \"",
         "RAISE THE కుడి FORE ARM VERTICALLY OUT SIDE TO THE కుడి OF THE వాహనం PALM TO THE FRONT",
         "EXTEND కుడి ARM IN HORIZONTAL POSITION TO THE కుడి OF THE వాహనం WITH PALM OF THE HAND TURNED TO THE FRONT",
         "EXTEND THE కుడి ARM, PALM DOWN, TO THE కుడి OF THE EXTEND కుడి ARM TO THE కుడి OF THE వాహనం AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
       ],
       "hi": [
-        "वाहन AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES",
+        "वाहन AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES \"",
         "RAISE THE दायां FORE ARM VERTICALLY OUT SIDE TO THE दायां OF THE वाहन PALM TO THE FRONT",
         "EXTEND दायां ARM IN HORIZONTAL POSITION TO THE दायां OF THE वाहन WITH PALM OF THE HAND TURNED TO THE FRONT",
         "EXTEND THE दायां ARM, PALM DOWN, TO THE दायां OF THE EXTEND दायां ARM TO THE दायां OF THE वाहन AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
@@ -3357,19 +3357,19 @@
     "options": {
       "en": [
         "EXTEND THE RIGHT ARM, PALM DOWN, TO THE RIGHT OF THE",
-        "VEHICLE AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES",
+        "VEHICLE AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES \"",
         "RAISE THE RIGHT FORE ARM VERTICALLY OUT SIDE TO THE RIGHT OF THE VEHICLE, PALM TO THE FRONT EXTEND RIGHT ARM IN HORIZONTAL POSITION TO THE RIGHT OF THE VEHICLE WITH PALM OF THE HAND TURNED TO THE FRONT",
         "EXTEND RIGHT ARM TO THE RIGHT OF THE VEHICLE AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
       ],
       "te": [
         "EXTEND THE కుడి ARM, PALM DOWN, TO THE కుడి OF THE",
-        "వాహనం AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES",
+        "వాహనం AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES \"",
         "RAISE THE కుడి FORE ARM VERTICALLY OUT SIDE TO THE కుడి OF THE వాహనం PALM TO THE FRONT EXTEND కుడి ARM IN HORIZONTAL POSITION TO THE కుడి OF THE వాహనం WITH PALM OF THE HAND TURNED TO THE FRONT",
         "EXTEND కుడి ARM TO THE కుడి OF THE వాహనం AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
       ],
       "hi": [
         "EXTEND THE दायां ARM, PALM DOWN, TO THE दायां OF THE",
-        "वाहन AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES",
+        "वाहन AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES \"",
         "RAISE THE दायां FORE ARM VERTICALLY OUT SIDE TO THE दायां OF THE वाहन PALM TO THE FRONT EXTEND दायां ARM IN HORIZONTAL POSITION TO THE दायां OF THE वाहन WITH PALM OF THE HAND TURNED TO THE FRONT",
         "EXTEND दायां ARM TO THE दायां OF THE वाहन AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
       ]
@@ -3394,29 +3394,29 @@
     },
     "options": {
       "en": [
-        "EXTEND THE RIGHT ARM, PALM DOWN, TO THE RIGHT OF THE VEHICLE AND MOVE THE EXTENDED ARM UP AND",
-        "DOWN SEVERAL TIMES RAISE THE RIGHT FORE ARM VERTICALLY OUT SIDE TO THE RIGHT OF THE VEHICLE, PALM TO",
-        "THE FRONT EXTEND RIGHT ARM IN HORIZONTAL POSITION TO THE RIGHT OF THE VEHICLE WITH PALM OF THE HAND TURNED TO",
-        "EXTEND RIGHT ARM TO THE RIGHT OF THE VEHICLE AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
+        "EXTEND THE RIGHT ARM, PALM DOWN, TO THE RIGHT OF THE",
+        "EXTEND RIGHT ARM IN HORIZONTAL POSITION TO THE RIGHT OF THE VEHICLE WITH PALM OF",
+        "VEHICLE AND MOVE THE EXTENDED ARM UP AND RAISE THE RIGHT FORE ARM VERTICALLY OUT SIDE TO THE RIGHT OF THE VEHICLE, PALM TO EXTEND RIGHT ARM TO THE RIGHT OF THE VEHICLE AND ROTATE IT IN AN ANTI CLOCK WISE 4",
+        "DOWN SEVERAL TIMES THE FRONT THE HAND TURNED TO DIRECTION DOWN SEVERAL TIMES \" THE FRONT THE HAND TURNED TO THE FRONT DIRECTION"
       ],
       "te": [
-        "EXTEND THE కుడి ARM, PALM DOWN, TO THE కుడి OF THE వాహనం AND MOVE THE EXTENDED ARM UP AND",
-        "DOWN SEVERAL TIMES RAISE THE కుడి FORE ARM VERTICALLY OUT SIDE TO THE కుడి OF THE వాహనం PALM TO",
-        "THE FRONT EXTEND కుడి ARM IN HORIZONTAL POSITION TO THE కుడి OF THE వాహనం WITH PALM OF THE HAND TURNED TO",
-        "EXTEND కుడి ARM TO THE కుడి OF THE వాహనం AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
+        "EXTEND THE కుడి ARM, PALM DOWN, TO THE కుడి OF THE",
+        "EXTEND కుడి ARM IN HORIZONTAL POSITION TO THE కుడి OF THE వాహనం WITH PALM OF",
+        "వాహనం AND MOVE THE EXTENDED ARM UP AND RAISE THE కుడి FORE ARM VERTICALLY OUT SIDE TO THE కుడి OF THE వాహనం PALM TO EXTEND కుడి ARM TO THE కుడి OF THE వాహనం AND ROTATE IT IN AN ANTI CLOCK WISE 4",
+        "DOWN SEVERAL TIMES THE FRONT THE HAND TURNED TO DIRECTION DOWN SEVERAL TIMES \" THE FRONT THE HAND TURNED TO THE FRONT DIRECTION"
       ],
       "hi": [
-        "EXTEND THE दायां ARM, PALM DOWN, TO THE दायां OF THE वाहन AND MOVE THE EXTENDED ARM UP AND",
-        "DOWN SEVERAL TIMES RAISE THE दायां FORE ARM VERTICALLY OUT SIDE TO THE दायां OF THE वाहन PALM TO",
-        "THE FRONT EXTEND दायां ARM IN HORIZONTAL POSITION TO THE दायां OF THE वाहन WITH PALM OF THE HAND TURNED TO",
-        "EXTEND दायां ARM TO THE दायां OF THE वाहन AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION"
+        "EXTEND THE दायां ARM, PALM DOWN, TO THE दायां OF THE",
+        "EXTEND दायां ARM IN HORIZONTAL POSITION TO THE दायां OF THE वाहन WITH PALM OF",
+        "वाहन AND MOVE THE EXTENDED ARM UP AND RAISE THE दायां FORE ARM VERTICALLY OUT SIDE TO THE दायां OF THE वाहन PALM TO EXTEND दायां ARM TO THE दायां OF THE वाहन AND ROTATE IT IN AN ANTI CLOCK WISE 4",
+        "DOWN SEVERAL TIMES THE FRONT THE HAND TURNED TO DIRECTION DOWN SEVERAL TIMES \" THE FRONT THE HAND TURNED TO THE FRONT DIRECTION"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: EXTEND RIGHT ARM TO THE RIGHT OF THE VEHICLE AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: EXTEND కుడి ARM TO THE కుడి OF THE వాహనం AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: EXTEND दायां ARM TO THE दायां OF THE वाहन AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: DOWN SEVERAL TIMES THE FRONT THE HAND TURNED TO DIRECTION DOWN SEVERAL TIMES \" THE FRONT THE HAND TURNED TO THE FRONT DIRECTION. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: DOWN SEVERAL TIMES THE FRONT THE HAND TURNED TO DIRECTION DOWN SEVERAL TIMES \" THE FRONT THE HAND TURNED TO THE FRONT DIRECTION. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: DOWN SEVERAL TIMES THE FRONT THE HAND TURNED TO DIRECTION DOWN SEVERAL TIMES \" THE FRONT THE HAND TURNED TO THE FRONT DIRECTION. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -3433,20 +3433,20 @@
     "options": {
       "en": [
         "NEAR A ROAD CROSSING",
-        "NEAR A BEND ON THE",
-        "ROAD ON A FOOT PATH",
+        "NEAR A BEND ON THE ROAD",
+        "ON A FOOT PATH",
         "NONE OF THESE"
       ],
       "te": [
         "NEAR A రోడ్డు దాటడం / క్రాసింగ్",
-        "NEAR A BEND ON THE",
-        "రోడ్డు ON A FOOT PATH",
+        "NEAR A BEND ON THE రోడ్డు",
+        "ON A FOOT PATH",
         "వీటిలో ఏదీ కాదు"
       ],
       "hi": [
         "NEAR A सड़क पार करना (क्रॉसिंग)",
-        "NEAR A BEND ON THE",
-        "सड़क ON A FOOT PATH",
+        "NEAR A BEND ON THE सड़क",
+        "ON A FOOT PATH",
         "इनमें से कोई नहीं"
       ]
     },
@@ -3622,29 +3622,29 @@
     },
     "options": {
       "en": [
-        "FOLLOW THE FRONT VEHICLE CLOSE BEHIND",
-        "KEEP SUFFICIENT DISTANCE FROM THE FRONT VEHICLE TO AVOID COLLISSION",
+        "YOU ARE GOING DOWN A NARROW YOU ASK THE YOU ALLOW THE YOU OBSTRUCT THE",
+        "FOLLOW THE FRONT VEHICLE CLOSE BEHIND KEEP SUFFICIENT DISTANCE FROM THE FRONT VEHICLE TO AVOID COLLISSION",
         "KEEP A VERY LONG DISTANCE FROM THE FRONT VEHICLE",
-        "NONE OF THESE"
+        "NONE OF THESE 2"
       ],
       "te": [
-        "FOLLOW THE FRONT వాహనం CLOSE వెనుక",
-        "KEEP SUFFICIENT దూరం FROM THE FRONT వాహనం TO AVOID COLLISSION",
+        "YOU ARE GOING DOWN A NARROW YOU ASK THE YOU ALLOW THE YOU OBSTRUCT THE",
+        "FOLLOW THE FRONT వాహనం CLOSE వెనుక KEEP SUFFICIENT దూరం FROM THE FRONT వాహనం TO AVOID COLLISSION",
         "KEEP A VERY LONG దూరం FROM THE FRONT వాహనం",
-        "వీటిలో ఏదీ కాదు"
+        "NONE OF THESE 2"
       ],
       "hi": [
-        "FOLLOW THE FRONT वाहन CLOSE पीछे",
-        "KEEP SUFFICIENT दूरी FROM THE FRONT वाहन TO AVOID COLLISSION",
+        "YOU ARE GOING DOWN A NARROW YOU ASK THE YOU ALLOW THE YOU OBSTRUCT THE",
+        "FOLLOW THE FRONT वाहन CLOSE पीछे KEEP SUFFICIENT दूरी FROM THE FRONT वाहन TO AVOID COLLISSION",
         "KEEP A VERY LONG दूरी FROM THE FRONT वाहन",
-        "इनमें से कोई नहीं"
+        "NONE OF THESE 2"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: KEEP SUFFICIENT DISTANCE FROM THE FRONT VEHICLE TO AVOID COLLISSION. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: KEEP SUFFICIENT దూరం FROM THE FRONT వాహనం TO AVOID COLLISSION. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: KEEP SUFFICIENT दूरी FROM THE FRONT वाहन TO AVOID COLLISSION. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: FOLLOW THE FRONT VEHICLE CLOSE BEHIND KEEP SUFFICIENT DISTANCE FROM THE FRONT VEHICLE TO AVOID COLLISSION. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: FOLLOW THE FRONT వాహనం CLOSE వెనుక KEEP SUFFICIENT దూరం FROM THE FRONT వాహనం TO AVOID COLLISSION. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: FOLLOW THE FRONT वाहन CLOSE पीछे KEEP SUFFICIENT दूरी FROM THE FRONT वाहन TO AVOID COLLISSION. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -3958,7 +3958,7 @@
     "questionNumber": 105,
     "image": "assets/scenarios/rr_108.png",
     "text": {
-      "en": "WHEN  JOINING A MOTORWAY YOU MUST ALWAYS",
+      "en": "WHEN JOINING A MOTORWAY YOU MUST ALWAYS",
       "te": "WHEN JOINING A MOTORWAY YOU తప్పనిసరిగా ఎల్లప్పుడూ",
       "hi": "WHEN JOINING A MOTORWAY YOU अनिवार्य रूप से हमेशा"
     },
@@ -4034,27 +4034,27 @@
     "questionNumber": 107,
     "image": null,
     "text": {
-      "en": "YOU ARE LEAVING YOUR VEHICLE",
-      "te": "YOU ARE LEAVING YOUR వాహనం",
-      "hi": "YOU ARE LEAVING YOUR वाहन"
+      "en": "YOU ARE LEAVING YOUR VEHICLE PARKED ON A ROAD. WHEN MAY YOU LEAVE THE ENGINE RUNNING?",
+      "te": "YOU ARE LEAVING YOUR వాహనం PARKED ON A రోడ్డు WHEN MAY YOU LEAVE THE ENGINE RUNNING?",
+      "hi": "YOU ARE LEAVING YOUR वाहन PARKED ON A सड़क WHEN MAY YOU LEAVE THE ENGINE RUNNING?"
     },
     "options": {
       "en": [
-        "PARKED ON A ROAD. WHEN MAY YOU LEAVE THE ENGINE RUNNING?",
-        "IF YOUR VEHICLE  WILL BE PARKED FOR LESS THAN FIVE MINUTES",
-        "IF THE BATTERY IS FLAT WHEN IN A 20 KMPH ZONE",
+        "IF YOUR VEHICLE WILL BE PARKED FOR LESS THAN FIVE MINUTES",
+        "IF THE BATTERY IS FLAT",
+        "WHEN IN A 20 KMPH ZONE",
         "NOT ON ANY OCCASION"
       ],
       "te": [
-        "PARKED ON A రోడ్డు WHEN MAY YOU LEAVE THE ENGINE RUNNING?",
         "IF YOUR వాహనం WILL BE PARKED FOR LESS THAN FIVE MINUTES",
-        "IF THE BATTERY IS FLAT WHEN IN A 20 కి.మీ/గం ZONE",
+        "IF THE BATTERY IS FLAT",
+        "WHEN IN A 20 కి.మీ/గం ZONE",
         "NOT ON ANY OCCASION"
       ],
       "hi": [
-        "PARKED ON A सड़क WHEN MAY YOU LEAVE THE ENGINE RUNNING?",
         "IF YOUR वाहन WILL BE PARKED FOR LESS THAN FIVE MINUTES",
-        "IF THE BATTERY IS FLAT WHEN IN A 20 किमी/घंटा ZONE",
+        "IF THE BATTERY IS FLAT",
+        "WHEN IN A 20 किमी/घंटा ZONE",
         "NOT ON ANY OCCASION"
       ]
     },
@@ -4078,29 +4078,29 @@
     },
     "options": {
       "en": [
+        "DEPENDS ON THE",
         "INDICATE LEFT BEFORE LEAVING THE ROUNDABOUT",
-        "DONT INDICATE AT ANY TIME",
-        "INDICATE RIGHT WHEN APPROACHING THE ROUNDABOUT",
-        "INDICATE LEFT WHEN APPROACHING THE ROUNDABOUT"
+        "DONT INDICATE AT ANY TIME INDICATE RIGHT WHEN APPROACHING THE ROUNDABOUT INDICATE LEFT WHEN APPROACHING THE ROUNDABOUT",
+        "1"
       ],
       "te": [
+        "DEPENDS ON THE",
         "INDICATE ఎడమ BEFORE LEAVING THE రౌండ్‌ఎబౌట్",
-        "DONT INDICATE AT ANY సమయం",
-        "INDICATE కుడి WHEN APPROACHING THE రౌండ్‌ఎబౌట్",
-        "INDICATE ఎడమ WHEN APPROACHING THE రౌండ్‌ఎబౌట్"
+        "DONT INDICATE AT ANY సమయం INDICATE కుడి WHEN APPROACHING THE రౌండ్‌ఎబౌట్ INDICATE ఎడమ WHEN APPROACHING THE రౌండ్‌ఎబౌట్",
+        "1"
       ],
       "hi": [
+        "DEPENDS ON THE",
         "INDICATE बायां BEFORE LEAVING THE गोल चक्कर",
-        "DONT INDICATE AT ANY समय",
-        "INDICATE दायां WHEN APPROACHING THE गोल चक्कर",
-        "INDICATE बायां WHEN APPROACHING THE गोल चक्कर"
+        "DONT INDICATE AT ANY समय INDICATE दायां WHEN APPROACHING THE गोल चक्कर INDICATE बायां WHEN APPROACHING THE गोल चक्कर",
+        "1"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: INDICATE LEFT BEFORE LEAVING THE ROUNDABOUT. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: INDICATE ఎడమ BEFORE LEAVING THE రౌండ్‌ఎబౌట్. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: INDICATE बायां BEFORE LEAVING THE गोल चक्कर. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: DEPENDS ON THE. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: DEPENDS ON THE. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: DEPENDS ON THE. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -4384,27 +4384,27 @@
       "en": [
         "BE PATIENT AND WAIT.",
         "SOUND YOUR HORN.",
-        "DRIVE ON. WAVE",
-        "THEM TO CROSS."
+        "DRIVE ON.",
+        "WAVE THEM TO CROSS."
       ],
       "te": [
-        "BE PATIENT AND WAIT.",
-        "SOUND YOUR హారన్",
-        "డ్రైవ్ చేయండి ON. WAVE",
-        "THEM TO CROSS."
+        "ఓపికగా వేచి ఉండండి.",
+        "హారన్ మోగించండి.",
+        "ముందుకు డ్రైవ్ చేయండి.",
+        "వారిని దాటమని సైగ చేయండి."
       ],
       "hi": [
-        "BE PATIENT AND WAIT.",
-        "SOUND YOUR हॉर्न",
-        "गाड़ी चलाएं ON. WAVE",
-        "THEM TO CROSS."
+        "धैर्य रखें और प्रतीक्षा करें।",
+        "हॉर्न बजाएं।",
+        "आगे गाड़ी बढ़ाएं।",
+        "उन्हें पार करने का इशारा करें।"
       ]
     },
     "answerIndex": 0,
     "explanation": {
       "en": "Official Traffic Regulation: BE PATIENT AND WAIT.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: BE PATIENT AND WAIT.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: BE PATIENT AND WAIT.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "te": "అధికారిక రహదారి నిబంధన: ఓపికగా వేచి ఉండండి.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: धैर्य रखें और प्रतीक्षा करें।. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -4534,29 +4534,29 @@
     },
     "options": {
       "en": [
-        "SOUND YOUR HORN",
-        "DROP BACK FURTHER",
+        "GAP. YOU SHOULD",
+        "SOUND YOUR HORN DROP BACK FURTHER",
         "FLASH YOUR HEADLIGHTS",
-        "START TO OVERTAKE."
+        "START TO OVERTAKE. 2"
       ],
       "te": [
-        "SOUND YOUR హారన్",
-        "DROP BACK FURTHER",
+        "GAP. YOU చేయాలి",
+        "SOUND YOUR హారన్ DROP BACK FURTHER",
         "FLASH YOUR HEADLIGHTS",
-        "START TO ఓవర్‌టేక్ చేయండి"
+        "START TO ఓవర్‌టేక్ చేయండి 2"
       ],
       "hi": [
-        "SOUND YOUR हॉर्न",
-        "DROP BACK FURTHER",
+        "GAP. YOU चाहिए",
+        "SOUND YOUR हॉर्न DROP BACK FURTHER",
         "FLASH YOUR HEADLIGHTS",
-        "START TO ओवरटेक करें"
+        "START TO ओवरटेक करें 2"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: DROP BACK FURTHER. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: DROP BACK FURTHER. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: DROP BACK FURTHER. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: SOUND YOUR HORN DROP BACK FURTHER. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: SOUND YOUR హారన్ DROP BACK FURTHER. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: SOUND YOUR हॉर्न DROP BACK FURTHER. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -4572,29 +4572,29 @@
     },
     "options": {
       "en": [
-        "AT PEDESTRIAN",
-        "CROSSINGS.",
-        "AT NO TIME. AT JUNCTIONS.",
+        "AT PEDESTRIAN CROSSINGS.",
+        "AT NO TIME.",
+        "AT JUNCTIONS.",
         "AT SCHOOL CROSSINGS."
       ],
       "te": [
-        "AT పాదచారి",
-        "CROSSINGS.",
-        "AT కాదు సమయం AT JUNCTIONS.",
+        "AT పాదచారి CROSSINGS.",
+        "AT కాదు సమయం",
+        "AT JUNCTIONS.",
         "AT పాఠశాల CROSSINGS."
       ],
       "hi": [
-        "AT पैदल यात्री",
-        "CROSSINGS.",
-        "AT नहीं समय AT JUNCTIONS.",
+        "AT पैदल यात्री CROSSINGS.",
+        "AT नहीं समय",
+        "AT JUNCTIONS.",
         "AT स्कूल CROSSINGS."
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: CROSSINGS.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: CROSSINGS.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: CROSSINGS.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: AT NO TIME.. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: AT కాదు సమయం. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: AT नहीं समय. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -4612,27 +4612,27 @@
       "en": [
         "PASS ON THE LEFT",
         "PASS ON THE RIGHT",
-        "STAY BEHIND",
-        "MOVE CLOSER"
+        "STAY BEHIND MOVE C",
+        "LOSER"
       ],
       "te": [
         "ఎడమ వైపు నుంచి దాటాలి",
         "కుడి వైపు నుంచి దాటాలి",
-        "వెనుకే వేచి ఉండాలి",
-        "మరింత దగ్గరకు వెళ్లాలి"
+        "STAY వెనుక MOVE C",
+        "LOSER"
       ],
       "hi": [
         "बाईं ओर से निकलें",
         "दाईं ओर से निकलें",
-        "पीछे ही रहें",
-        "अधिक करीब जाएं"
+        "STAY पीछे MOVE C",
+        "LOSER"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: STAY BEHIND. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: వెనుకే వేచి ఉండాలి. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: पीछे ही रहें. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: STAY BEHIND MOVE C. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: STAY వెనుక MOVE C. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: STAY पीछे MOVE C. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -4680,35 +4680,35 @@
     "questionNumber": 124,
     "image": null,
     "text": {
-      "en": "WHEN ANOTHER VEHICLE IS OVERTAKING YOU, YOU SHOULD",
-      "te": "WHEN ANOTHER వాహనం IS ఓవర్‌టేకింగ్ YOU, YOU చేయాలి",
-      "hi": "WHEN ANOTHER वाहन IS ओवरटेकिंग YOU, YOU चाहिए"
+      "en": "A LONG, HEAVILY LOADED LORRY IS TAKING A LONG TIME TO OVERTAKE YOU. WHAT SHOULD YOU DO?",
+      "te": "మీరు ఏమి చేయాలి ?",
+      "hi": "आपको क्या करना चाहिए ?"
     },
     "options": {
       "en": [
-        "SPEED UP",
-        "SLOW DOWN OR MAINTAIN SPEED",
-        "HOLD YOUR SPEED",
-        "CHANGE DIRECTION"
+        "SPEED UP.",
+        "SLOW DOWN.",
+        "HOLD YOUR SPEED. CHANGE DIRECTIO",
+        "N."
       ],
       "te": [
         "వేగాన్ని పెంచాలి",
-        "వేగాన్ని తగ్గించాలి లేదా అదే వేగం ఉంచాలి",
-        "అదే వేగాన్ని కొనసాగించాలి",
-        "దిశను మార్చాలి"
+        "నెమ్మదిగా DOWN.",
+        "HOLD YOUR వేగం CHANGE DIRECTIO",
+        "N."
       ],
       "hi": [
         "गति बढ़ाएं",
-        "गति धीमी करें या बनाए रखें",
-        "समान गति बनाए रखें",
-        "दिशा बदलें"
+        "धीमा DOWN.",
+        "HOLD YOUR गति CHANGE DIRECTIO",
+        "N."
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: SLOW DOWN OR MAINTAIN SPEED. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: వేగాన్ని తగ్గించాలి లేదా అదే వేగం ఉంచాలి. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: गति धीमी करें या बनाए रखें. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: SLOW DOWN.. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: నెమ్మదిగా DOWN.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: धीमा DOWN.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -4958,13 +4958,13 @@
         "PRESS THE BRAKE"
       ],
       "te": [
-        "SOUND YOUR హారన్",
+        "హారన్ మోగించండి.",
         "CHECK YOUR అద్దం",
         "FLASH YOUR HEADLIGHTS",
         "PRESS THE బ్రేక్"
       ],
       "hi": [
-        "SOUND YOUR हॉर्न",
+        "हॉर्न बजाएं।",
         "CHECK YOUR शीशा (दर्पण)",
         "FLASH YOUR HEADLIGHTS",
         "PRESS THE ब्रेक"
@@ -4990,29 +4990,29 @@
     },
     "options": {
       "en": [
-        "OVERTAKE ON THE RIGHT.",
+        "OVERTAKE ON THE RIGHT. SHOULD YOU DO?",
         "GIVE A HORN WARNING",
-        "SIGNAL THE CYCLIST TO MOVE ACROSS",
-        "GIVE THE CYCLIST PLENTY OF ROOM"
+        "SIGNAL THE CYCLIST TO MOVE ACROSS GIVE THE CYCLIST PLENTY OF ROOM",
+        "4"
       ],
       "te": [
-        "కుడి వైపు నుండి ఓవర్‌టేక్ చేయాలి",
+        "ఓవర్‌టేక్ చేయండి ON THE కుడి చేయాలి YOU DO?",
         "GIVE A హారన్ WARNING",
-        "సంకేతం / సిగ్నల్ THE CYCLIST TO MOVE ACROSS",
-        "GIVE THE CYCLIST PLENTY OF ROOM"
+        "సంకేతం / సిగ్నల్ THE CYCLIST TO MOVE ACROSS GIVE THE CYCLIST PLENTY OF ROOM",
+        "4"
       ],
       "hi": [
-        "दाईं ओर से ओवरटेक करें",
+        "ओवरटेक करें ON THE दायां चाहिए YOU DO?",
         "GIVE A हॉर्न WARNING",
-        "संकेत (सिग्नल) THE CYCLIST TO MOVE ACROSS",
-        "GIVE THE CYCLIST PLENTY OF ROOM"
+        "संकेत (सिग्नल) THE CYCLIST TO MOVE ACROSS GIVE THE CYCLIST PLENTY OF ROOM",
+        "4"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: GIVE THE CYCLIST PLENTY OF ROOM. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: GIVE THE CYCLIST PLENTY OF ROOM. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: GIVE THE CYCLIST PLENTY OF ROOM. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: 4. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: 4. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: 4. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5022,35 +5022,35 @@
     "questionNumber": 133,
     "image": null,
     "text": {
-      "en": "EVEN IF YOUR TRAFFIC SIGNAL GIVES",
-      "te": "EVEN IF YOUR TRAFFIC సంకేతం / సిగ్నల్ GIVES",
-      "hi": "EVEN IF YOUR TRAFFIC संकेत (सिग्नल) GIVES"
+      "en": "EVEN IF YOUR TRAFFIC SIGNAL GIVES YOU A CLEARWAY, YOU SHOULD-",
+      "te": "ట్రాఫిక్ సిగ్నల్ క్లియర్‌గా ఉన్నప్పటికీ, మీరు చేయవలసింది-",
+      "hi": "ट्रैफिक सिग्नल साफ रास्ता देने पर भी, आपको क्या करना चाहिए-"
     },
     "options": {
       "en": [
-        "YOU A CLEARWAY, YOU SHOULD-",
         "BE READY TO STOP.",
-        "DONT OBEY THEM IN EMERGENCY. BE OBSERVANT FOR DRIVERS WHO DO NOT RESPECT TRAFFIC SIGNALS.",
+        "DONT OBEY THEM IN EMERGENCY.",
+        "BE OBSERVANT FOR DRIVERS WHO DO NOT RESPECT TRAFFIC SIGNALS.",
         "DONT GO IN FOGGY CONDITIONS."
       ],
       "te": [
-        "YOU A CLEARWAY, YOU చేయాలి",
-        "BE READY TO ఆపండి",
-        "DONT OBEY THEM IN EMERGENCY. BE OBSERVANT FOR డ్రైవర్లు WHO DO NOT RESPECT TRAFFIC సంకేతాలు",
-        "DONT GO IN FOGGY CONDITIONS."
+        "ఆగడానికి సిద్ధంగా ఉండండి.",
+        "అత్యవసర పరిస్థితుల్లో వాటిని పాటించవద్దు.",
+        "ట్రాఫిక్ సిగ్నల్స్ పాటించని డ్రైవర్లను గమనిస్తూ అప్రమత్తంగా ఉండాలి.",
+        "పొగమంచు పరిస్థితుల్లో వెళ్లవద్దు."
       ],
       "hi": [
-        "YOU A CLEARWAY, YOU चाहिए",
-        "BE READY TO रुकें",
-        "DONT OBEY THEM IN EMERGENCY. BE OBSERVANT FOR चालक WHO DO NOT RESPECT TRAFFIC संकेत",
-        "DONT GO IN FOGGY CONDITIONS."
+        "रुकने के लिए तैयार रहें।",
+        "आपात स्थिति में उनका पालन न करें।",
+        "ट्रैफिक सिग्नलों का पालन न करने वाले चालकों पर नजर रखें।",
+        "कोहरे की स्थिति में न जाएं।"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: DONT OBEY THEM IN EMERGENCY. BE OBSERVANT FOR DRIVERS WHO DO NOT RESPECT TRAFFIC SIGNALS.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: DONT OBEY THEM IN EMERGENCY. BE OBSERVANT FOR డ్రైవర్లు WHO DO NOT RESPECT TRAFFIC సంకేతాలు. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: DONT OBEY THEM IN EMERGENCY. BE OBSERVANT FOR चालक WHO DO NOT RESPECT TRAFFIC संकेत. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: BE OBSERVANT FOR DRIVERS WHO DO NOT RESPECT TRAFFIC SIGNALS.. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: ట్రాఫిక్ సిగ్నల్స్ పాటించని డ్రైవర్లను గమనిస్తూ అప్రమత్తంగా ఉండాలి.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: ट्रैफिक सिग्नलों का पालन न करने वाले चालकों पर नजर रखें।. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5218,29 +5218,29 @@
     },
     "options": {
       "en": [
-        "MAINTAIN A REDUCED SPEED THROUGHOUT",
-        "ACCELERATE QUICKLY BETWEEN EACH ONE",
-        "ALWAYS KEEP TO THE MAXIMUM LEGAL SPEED",
-        "DRIVE SLOWLY AT SCHOOL TIMINGS ONLY"
+        "WHEN APPROACHING A RIGHT- TO OVERCOME THE TO LET FASTER TRAFFIC",
+        "MAINTAIN A REDUCED SPEED THROUGHOUT ACCELERATE QUICKLY BETWEEN EACH ONE",
+        "ALWAYS KEEP TO THE MAXIMUM LEGAL SPEED DRIVE SLOWLY AT SCHOOL TIMINGS ONLY",
+        "1"
       ],
       "te": [
-        "MAINTAIN A REDUCED వేగం THROUGHOUT",
-        "ACCELERATE QUICKLY BETWEEN EACH ONE",
-        "ఎల్లప్పుడూ KEEP TO THE MAXIMUM LEGAL వేగం",
-        "డ్రైవ్ చేయండి SLOWLY AT పాఠశాల TIMINGS ONLY"
+        "WHEN APPROACHING A కుడి TO OVERCOME THE TO LET FASTER TRAFFIC",
+        "MAINTAIN A REDUCED వేగం THROUGHOUT ACCELERATE QUICKLY BETWEEN EACH ONE",
+        "ఎల్లప్పుడూ KEEP TO THE MAXIMUM LEGAL వేగం డ్రైవ్ చేయండి SLOWLY AT పాఠశాల TIMINGS ONLY",
+        "1"
       ],
       "hi": [
-        "MAINTAIN A REDUCED गति THROUGHOUT",
-        "ACCELERATE QUICKLY BETWEEN EACH ONE",
-        "हमेशा KEEP TO THE MAXIMUM LEGAL गति",
-        "गाड़ी चलाएं SLOWLY AT स्कूल TIMINGS ONLY"
+        "WHEN APPROACHING A दायां TO OVERCOME THE TO LET FASTER TRAFFIC",
+        "MAINTAIN A REDUCED गति THROUGHOUT ACCELERATE QUICKLY BETWEEN EACH ONE",
+        "हमेशा KEEP TO THE MAXIMUM LEGAL गति गाड़ी चलाएं SLOWLY AT स्कूल TIMINGS ONLY",
+        "1"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: MAINTAIN A REDUCED SPEED THROUGHOUT. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: MAINTAIN A REDUCED వేగం THROUGHOUT. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: MAINTAIN A REDUCED गति THROUGHOUT. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: WHEN APPROACHING A RIGHT- TO OVERCOME THE TO LET FASTER TRAFFIC. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: WHEN APPROACHING A కుడి TO OVERCOME THE TO LET FASTER TRAFFIC. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: WHEN APPROACHING A दायां TO OVERCOME THE TO LET FASTER TRAFFIC. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5326,27 +5326,27 @@
     "questionNumber": 141,
     "image": null,
     "text": {
-      "en": "WHAT SHOULD THE DRIVER OF THE",
-      "te": "WHAT చేయాలి THE డ్రైవర్ OF THE",
-      "hi": "WHAT चाहिए THE चालक (ड्राइवर) OF THE"
+      "en": "WHAT SHOULD THE DRIVER OF THE CAR APPROACHING THE CROSSING DO?",
+      "te": "WHAT చేయాలి THE డ్రైవర్ OF THE CAR APPROACHING THE దాటడం / క్రాసింగ్ DO?",
+      "hi": "WHAT चाहिए THE चालक (ड्राइवर) OF THE CAR APPROACHING THE पार करना (क्रॉसिंग) DO?"
     },
     "options": {
       "en": [
-        "CAR APPROACHING THE CROSSING DO?",
         "CONTINUE AT THE SAME SPEED",
-        "SOUND THE HORN DRIVE THROUGH QUICKLY",
+        "SOUND THE HORN",
+        "DRIVE THROUGH QUICKLY",
         "SLOW DOWN AND GET READY TO STOP"
       ],
       "te": [
-        "CAR APPROACHING THE దాటడం / క్రాసింగ్ DO?",
         "CONTINUE AT THE SAME వేగం",
-        "SOUND THE హారన్ డ్రైవ్ చేయండి THROUGH QUICKLY",
+        "హారన్ మోగించాలి",
+        "డ్రైవ్ చేయండి THROUGH QUICKLY",
         "నెమ్మదిగా DOWN AND GET READY TO ఆపండి"
       ],
       "hi": [
-        "CAR APPROACHING THE पार करना (क्रॉसिंग) DO?",
         "CONTINUE AT THE SAME गति",
-        "SOUND THE हॉर्न गाड़ी चलाएं THROUGH QUICKLY",
+        "हॉर्न बजाएं",
+        "गाड़ी चलाएं THROUGH QUICKLY",
         "धीमा DOWN AND GET READY TO रुकें"
       ]
     },
@@ -5364,35 +5364,35 @@
     "questionNumber": 142,
     "image": null,
     "text": {
-      "en": "YOU ARE BEHIND THE CYCLIST.",
-      "te": "YOU ARE వెనుక THE CYCLIST.",
-      "hi": "YOU ARE पीछे THE CYCLIST."
+      "en": "YOU ARE BEHIND THE CYCLIST. WHEN THE TRAFFIC LIGHTS CHANGE, WHAT SHOULD YOU DO?",
+      "te": "మీరు ఏమి చేయాలి ?",
+      "hi": "आपको क्या करना चाहिए ?"
     },
     "options": {
       "en": [
-        "WHEN THE TRAFFIC LIGHTS CHANGE, WHAT SHOULD YOU DO?",
         "TRY TO MOVE OFF BEFORE THE CYCLIST",
-        "ALLOW THE CYCLIST TIME AND ROOM TURN RIGHT BUT GIVE THE CYCLIST ROOM",
+        "ALLOW THE CYCLIST TIME AND ROOM",
+        "TURN RIGHT BUT GIVE THE CYCLIST ROOM",
         "TAP YOUR HORN AND DRIVE THROUGH FIRST"
       ],
       "te": [
-        "మీరు ఏమి చేయాలి ?",
         "TRY TO MOVE OFF BEFORE THE CYCLIST",
-        "ALLOW THE CYCLIST సమయం AND ROOM TURN కుడి BUT GIVE THE CYCLIST ROOM",
+        "ALLOW THE CYCLIST సమయం AND ROOM",
+        "TURN కుడి BUT GIVE THE CYCLIST ROOM",
         "TAP YOUR హారన్ AND డ్రైవ్ చేయండి THROUGH FIRST"
       ],
       "hi": [
-        "आपको क्या करना चाहिए ?",
         "TRY TO MOVE OFF BEFORE THE CYCLIST",
-        "ALLOW THE CYCLIST समय AND ROOM TURN दायां BUT GIVE THE CYCLIST ROOM",
+        "ALLOW THE CYCLIST समय AND ROOM",
+        "TURN दायां BUT GIVE THE CYCLIST ROOM",
         "TAP YOUR हॉर्न AND गाड़ी चलाएं THROUGH FIRST"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: TRY TO MOVE OFF BEFORE THE CYCLIST. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: TRY TO MOVE OFF BEFORE THE CYCLIST. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: TRY TO MOVE OFF BEFORE THE CYCLIST. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: ALLOW THE CYCLIST TIME AND ROOM. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: ALLOW THE CYCLIST సమయం AND ROOM. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: ALLOW THE CYCLIST समय AND ROOM. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5484,29 +5484,29 @@
     },
     "options": {
       "en": [
+        "YOU ARE APPROACHING A MINI-",
         "THE BUS MAY HAVE BROKEN DOWN",
-        "PEDESTRIANS MAY COME FROM BEHIND THE BUS",
-        "THE BUS MAY MOVE OFF SUDDENLY",
-        "THE BUS MAY REMAIN STATIONARY"
+        "PEDESTRIANS MAY COME FROM BEHIND THE BUS THE BUS MAY MOVE OFF SUDDENLY ROUNDABOUT. THE LONG VEHICLE",
+        "THE BUS MAY REMAIN STATIONARY 2"
       ],
       "te": [
+        "YOU ARE APPROACHING A MINI-",
         "THE BUS MAY HAVE BROKEN DOWN",
-        "పాదచారులు MAY COME FROM వెనుక THE BUS",
-        "THE BUS MAY MOVE OFF SUDDENLY",
-        "THE BUS MAY REMAIN STATIONARY"
+        "పాదచారులు MAY COME FROM వెనుక THE BUS THE BUS MAY MOVE OFF SUDDENLY రౌండ్‌ఎబౌట్ THE LONG వాహనం",
+        "THE BUS MAY REMAIN STATIONARY 2"
       ],
       "hi": [
+        "YOU ARE APPROACHING A MINI-",
         "THE BUS MAY HAVE BROKEN DOWN",
-        "पैदल यात्री MAY COME FROM पीछे THE BUS",
-        "THE BUS MAY MOVE OFF SUDDENLY",
-        "THE BUS MAY REMAIN STATIONARY"
+        "पैदल यात्री MAY COME FROM पीछे THE BUS THE BUS MAY MOVE OFF SUDDENLY गोल चक्कर THE LONG वाहन",
+        "THE BUS MAY REMAIN STATIONARY 2"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: PEDESTRIANS MAY COME FROM BEHIND THE BUS. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: పాదచారులు MAY COME FROM వెనుక THE BUS. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: पैदल यात्री MAY COME FROM पीछे THE BUS. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: THE BUS MAY HAVE BROKEN DOWN. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: THE BUS MAY HAVE BROKEN DOWN. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: THE BUS MAY HAVE BROKEN DOWN. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5592,35 +5592,35 @@
     "questionNumber": 148,
     "image": "assets/scenarios/rr_156.png",
     "text": {
-      "en": "THE WHITE LINE ALONG THE SIDE OF",
-      "te": "THE WHITE LINE ALONG THE SIDE OF",
-      "hi": "THE WHITE LINE ALONG THE SIDE OF"
+      "en": "THE WHITE LINE ALONG THE SIDE OF THE ROAD",
+      "te": "THE WHITE LINE ALONG THE SIDE OF THE రోడ్డు",
+      "hi": "THE WHITE LINE ALONG THE SIDE OF THE सड़क"
     },
     "options": {
       "en": [
-        "THE ROAD SHOWS THE EDGE OF",
-        "THE CARRIAGEWAY SHOWS THE APPROACH",
+        "SHOWS THE EDGE OF THE CARRIAGEWAY",
+        "SHOWS THE APPROACH",
         "TO A HAZARD",
         "MEANS NO PARKING MEANS NO OVERTAKING"
       ],
       "te": [
-        "THE రోడ్డు SHOWS THE EDGE OF",
-        "THE CARRIAGEWAY SHOWS THE APPROACH",
+        "SHOWS THE EDGE OF THE CARRIAGEWAY",
+        "SHOWS THE APPROACH",
         "TO A HAZARD",
         "MEANS కాదు పార్కింగ్ MEANS కాదు ఓవర్‌టేకింగ్"
       ],
       "hi": [
-        "THE सड़क SHOWS THE EDGE OF",
-        "THE CARRIAGEWAY SHOWS THE APPROACH",
+        "SHOWS THE EDGE OF THE CARRIAGEWAY",
+        "SHOWS THE APPROACH",
         "TO A HAZARD",
         "MEANS नहीं पार्किंग MEANS नहीं ओवरटेकिंग"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: THE ROAD SHOWS THE EDGE OF. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: THE రోడ్డు SHOWS THE EDGE OF. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: THE सड़क SHOWS THE EDGE OF. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: SHOWS THE EDGE OF THE CARRIAGEWAY. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: SHOWS THE EDGE OF THE CARRIAGEWAY. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: SHOWS THE EDGE OF THE CARRIAGEWAY. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5744,35 +5744,35 @@
     "questionNumber": 152,
     "image": null,
     "text": {
-      "en": "WHICH HAND SIGNAL IS USED FOR",
-      "te": "WHICH HAND సంకేతం / సిగ్నల్ IS USED FOR",
-      "hi": "WHICH HAND संकेत (सिग्नल) IS USED FOR"
+      "en": "WHICH HAND SIGNAL IS USED FOR 'U' TURN",
+      "te": "WHICH HAND సంకేతం / సిగ్నల్ IS USED FOR 'U' TURN",
+      "hi": "WHICH HAND संकेत (सिग्नल) IS USED FOR 'U' TURN"
     },
     "options": {
       "en": [
-        "'U' TURN LEFT TURN SIGNAL",
+        "LEFT TURN SIGNAL",
         "SLOW DOWN SIGNAL",
-        "RIGHT TURN SIGNAL",
-        "SPECIAL 'U' TURN SIGNAL"
+        "RIGHT TURN SIGNAL SPECIAL 'U' TURN",
+        "SIGNAL"
       ],
       "te": [
-        "'U' TURN ఎడమ TURN సంకేతం / సిగ్నల్",
+        "ఎడమ TURN సంకేతం / సిగ్నల్",
         "నెమ్మదిగా DOWN సంకేతం / సిగ్నల్",
-        "కుడి TURN సంకేతం / సిగ్నల్",
-        "SPECIAL 'U' TURN సంకేతం / సిగ్నల్"
+        "కుడి TURN సంకేతం / సిగ్నల్ SPECIAL 'U' TURN",
+        "సంకేతం / సిగ్నల్"
       ],
       "hi": [
-        "'U' TURN बायां TURN संकेत (सिग्नल)",
+        "बायां TURN संकेत (सिग्नल)",
         "धीमा DOWN संकेत (सिग्नल)",
-        "दायां TURN संकेत (सिग्नल)",
-        "SPECIAL 'U' TURN संकेत (सिग्नल)"
+        "दायां TURN संकेत (सिग्नल) SPECIAL 'U' TURN",
+        "संकेत (सिग्नल)"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: RIGHT TURN SIGNAL. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: కుడి TURN సంకేతం / సిగ్నల్. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: दायां TURN संकेत (सिग्नल). सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: RIGHT TURN SIGNAL SPECIAL 'U' TURN. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: కుడి TURN సంకేతం / సిగ్నల్ SPECIAL 'U' TURN. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: दायां TURN संकेत (सिग्नल) SPECIAL 'U' TURN. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5858,35 +5858,35 @@
     "questionNumber": 155,
     "image": null,
     "text": {
-      "en": "WHEN A VEHICLE ARRIVES AT AN",
-      "te": "WHEN A వాహనం ARRIVES AT AN",
-      "hi": "WHEN A वाहन ARRIVES AT AN"
+      "en": "WHEN A VEHICLE ARRIVES AT AN UNGUARDED RAILWAY CROSSING",
+      "te": "WHEN A వాహనం ARRIVES AT AN UNGUARDED రైల్వే దాటడం / క్రాసింగ్",
+      "hi": "WHEN A वाहन ARRIVES AT AN UNGUARDED रेलवे पार करना (क्रॉसिंग)"
     },
     "options": {
       "en": [
-        "UNGUARDED RAILWAY CROSSING",
         "THE DRIVER MUST SOUND HORN AND DRIVE THROUGH",
-        "THE DRIVER MUST SWITCH ON THE HEADLIGHTS AND DRIVE THE DRIVER MUST GET OUT OF THE VEHICLE AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.",
+        "THE DRIVER MUST SWITCH ON THE HEADLIGHTS AND DRIVE",
+        "THE DRIVER MUST GET OUT OF THE VEHICLE AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.",
         "THE DRIVER MUST CHECK WITH THE RAILWAY AUTHORITIES ABOUT TRAIN TIMINGS"
       ],
       "te": [
-        "కాపలా లేని రైల్వే లెవల్ క్రాసింగ్",
         "THE డ్రైవర్ తప్పనిసరిగా SOUND హారన్ AND డ్రైవ్ చేయండి THROUGH",
-        "THE డ్రైవర్ తప్పనిసరిగా SWITCH ON THE HEADLIGHTS AND డ్రైవ్ చేయండి THE డ్రైవర్ తప్పనిసరిగా GET OUT OF THE వాహనం AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.",
+        "THE డ్రైవర్ తప్పనిసరిగా SWITCH ON THE HEADLIGHTS AND డ్రైవ్ చేయండి",
+        "THE డ్రైవర్ తప్పనిసరిగా GET OUT OF THE వాహనం AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.",
         "THE డ్రైవర్ తప్పనిసరిగా CHECK WITH THE రైల్వే AUTHORITIES ABOUT TRAIN TIMINGS"
       ],
       "hi": [
-        "मानवरहित रेलवे क्रॉसिंग",
         "THE चालक (ड्राइवर) अनिवार्य रूप से SOUND हॉर्न AND गाड़ी चलाएं THROUGH",
-        "THE चालक (ड्राइवर) अनिवार्य रूप से SWITCH ON THE HEADLIGHTS AND गाड़ी चलाएं THE चालक (ड्राइवर) अनिवार्य रूप से GET OUT OF THE वाहन AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.",
+        "THE चालक (ड्राइवर) अनिवार्य रूप से SWITCH ON THE HEADLIGHTS AND गाड़ी चलाएं",
+        "THE चालक (ड्राइवर) अनिवार्य रूप से GET OUT OF THE वाहन AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.",
         "THE चालक (ड्राइवर) अनिवार्य रूप से CHECK WITH THE रेलवे AUTHORITIES ABOUT TRAIN TIMINGS"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Traffic Regulation: THE DRIVER MUST SWITCH ON THE HEADLIGHTS AND DRIVE THE DRIVER MUST GET OUT OF THE VEHICLE AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: THE డ్రైవర్ తప్పనిసరిగా SWITCH ON THE HEADLIGHTS AND డ్రైవ్ చేయండి THE డ్రైవర్ తప్పనిసరిగా GET OUT OF THE వాహనం AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: THE चालक (ड्राइवर) अनिवार्य रूप से SWITCH ON THE HEADLIGHTS AND गाड़ी चलाएं THE चालक (ड्राइवर) अनिवार्य रूप से GET OUT OF THE वाहन AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: THE DRIVER MUST GET OUT OF THE VEHICLE AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: THE డ్రైవర్ తప్పనిసరిగా GET OUT OF THE వాహనం AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: THE चालक (ड्राइवर) अनिवार्य रूप से GET OUT OF THE वाहन AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5896,35 +5896,35 @@
     "questionNumber": 156,
     "image": null,
     "text": {
-      "en": "YOU WISH TO PARK FACING DOWN",
-      "te": "YOU WISH TO పార్క్ చేయండి FACING DOWN",
-      "hi": "YOU WISH TO पार्क करें FACING DOWN"
+      "en": "YOU WISH TO PARK FACING DOWN HILL. WHICH OF THE FOLLOWING SHOULD YOU DO?",
+      "te": "మీరు క్రిందికి వాలుగా ఉన్న ప్రదేశంలో పార్క్ చేయాలనుకున్నప్పుడు ఏమి చేయాలి?",
+      "hi": "ढलान पर नीचे की ओर मुंह करके पार्क करते समय आपको क्या करना चाहिए?"
     },
     "options": {
       "en": [
-        "HILL.  WHICH OF THE FOLLOWING SHOULD YOU DO?",
         "TURN THE STEERING WHEEL TOWARDS THE KERB AND PUT THE HAND BRAKE FIRMLY",
-        "PARK CLOSE TO THE BUMPER OF THE ANOTHER CAR PARK WITH TWO WHEELS ON THE KERB",
+        "PARK CLOSE TO THE BUMPER OF THE ANOTHER CAR",
+        "PARK WITH TWO WHEELS ON THE KERB",
         "TURN THE STEERING WHEEL AWAY FROM THE KERB"
       ],
       "te": [
-        "కొండ WHICH OF THE FOLLOWING చేయాలి YOU DO?",
-        "TURN THE STEERING WHEEL TOWARDS THE KERB AND PUT THE HAND బ్రేక్ FIRMLY",
-        "పార్క్ చేయండి CLOSE TO THE BUMPER OF THE ANOTHER CAR పార్క్ చేయండి WITH TWO WHEELS ON THE KERB",
-        "TURN THE STEERING WHEEL AWAY FROM THE KERB"
+        "స్టీరింగ్ వీల్‌ను కెర్బ్ వైపు తిప్పి హ్యాండ్‌బ్రేక్ గట్టిగా వేయాలి.",
+        "మరొక కారు బంపర్‌కు దగ్గరగా పార్క్ చేయండి.",
+        "రెండు చక్రాలను కెర్బ్ పై ఉంచి పార్క్ చేయండి.",
+        "స్టీరింగ్ వీల్‌ను కెర్బ్ నుండి దూరంగా తిప్పండి."
       ],
       "hi": [
-        "पहाड़ WHICH OF THE FOLLOWING चाहिए YOU DO?",
-        "TURN THE STEERING WHEEL TOWARDS THE KERB AND PUT THE HAND ब्रेक FIRMLY",
-        "पार्क करें CLOSE TO THE BUMPER OF THE ANOTHER CAR पार्क करें WITH TWO WHEELS ON THE KERB",
-        "TURN THE STEERING WHEEL AWAY FROM THE KERB"
+        "स्टीयरिंग व्हील को कर्ब की ओर मोड़ें और हैंडब्रेक मजबूती से लगाएं।",
+        "दूसरी कार के बम्पर के पास पार्क करें।",
+        "दो पहियों को कर्ब पर चढ़ाकर पार्क करें।",
+        "स्टीयरिंग व्हील को कर्ब से दूर मोड़ें।"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: HILL.  WHICH OF THE FOLLOWING SHOULD YOU DO?. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: కొండ WHICH OF THE FOLLOWING చేయాలి YOU DO?. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: पहाड़ WHICH OF THE FOLLOWING चाहिए YOU DO?. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: TURN THE STEERING WHEEL TOWARDS THE KERB AND PUT THE HAND BRAKE FIRMLY. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: స్టీరింగ్ వీల్‌ను కెర్బ్ వైపు తిప్పి హ్యాండ్‌బ్రేక్ గట్టిగా వేయాలి.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: स्टीयरिंग व्हील को कर्ब की ओर मोड़ें और हैंडब्रेक मजबूती से लगाएं।. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -5934,35 +5934,35 @@
     "questionNumber": 157,
     "image": null,
     "text": {
-      "en": "LENDING OF A MOTOR VEHICLE TO A",
-      "te": "LENDING OF A MOTOR వాహనం TO A",
-      "hi": "LENDING OF A MOTOR वाहन TO A"
+      "en": "LENDING OF A MOTOR VEHICLE TO A PERSON FOR DRIVING, WHO IS NOT HOLDING A VALID LICENCE IS:-",
+      "te": "సరైన లైసెన్స్ లేని వ్యక్తికి వాహనాన్ని నడపడానికి ఇవ్వడం:-",
+      "hi": "वैध लाइसेंस न रखने वाले व्यक्ति को वाहन चलाने के लिए देना:-"
     },
     "options": {
       "en": [
-        "PERSON FOR DRIVING, WHO IS NOT HOLDING A VALID LICENCE IS:-",
         "NOT AN OFFENCE SINCE THE BORROWER IS SOLELY RESPONSIBLE.",
-        "A SERIOUS OFFENCE. AN OFFENCE ONLY WHEN VEHICLE IS INVOLVED IN AN ACCIDENT.",
+        "A SERIOUS OFFENCE.",
+        "AN OFFENCE ONLY WHEN VEHICLE IS INVOLVED IN AN ACCIDENT.",
         "NONE OF THE ABOVE"
       ],
       "te": [
-        "PERSON FOR డ్రైవింగ్ WHO IS NOT HOLDING A చెల్లుబాటు అవుతుంది లైసెన్స్ IS:-",
-        "NOT AN OFFENCE SINCE THE BORROWER IS SOLELY RESPONSIBLE.",
-        "A SERIOUS OFFENCE. AN OFFENCE ONLY WHEN వాహనం IS INVOLVED IN AN ప్రమాదం",
+        "తీసుకున్న వ్యక్తే బాధ్యుడు కాబట్టి నేరం కాదు.",
+        "తీవ్రమైన నేరం.",
+        "వాహనం ప్రమాదానికి గురైనప్పుడు మాత్రమే నేరం.",
         "పైవేవీ కావు"
       ],
       "hi": [
-        "PERSON FOR ड्राइविंग WHO IS NOT HOLDING A वैध लाइसेंस IS:-",
-        "NOT AN OFFENCE SINCE THE BORROWER IS SOLELY RESPONSIBLE.",
-        "A SERIOUS OFFENCE. AN OFFENCE ONLY WHEN वाहन IS INVOLVED IN AN दुर्घटना",
+        "यह अपराध नहीं है क्योंकि वाहन ले जाने वाला ही जिम्मेदार है।",
+        "गंभीर अपराध है।",
+        "केवल तभी अपराध जब वाहन दुर्घटनाग्रस्त हो।",
         "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: NOT AN OFFENCE SINCE THE BORROWER IS SOLELY RESPONSIBLE.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: NOT AN OFFENCE SINCE THE BORROWER IS SOLELY RESPONSIBLE.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: NOT AN OFFENCE SINCE THE BORROWER IS SOLELY RESPONSIBLE.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: A SERIOUS OFFENCE.. This is mandatory for road safety and collision avoidance.",
+      "te": "అధికారిక రహదారి నిబంధన: తీవ్రమైన నేరం.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: गंभीर अपराध है।. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
     }
   },
   {
@@ -6010,27 +6010,27 @@
     "questionNumber": 159,
     "image": null,
     "text": {
-      "en": "PEDESTRIANS MUST NOT CROSS THE",
-      "te": "పాదచారులు తప్పనిసరిగా NOT CROSS THE",
-      "hi": "पैदल यात्री अनिवार्य रूप से NOT CROSS THE"
+      "en": "PEDESTRIANS MUST NOT CROSS THE ROAD, FROM BEHIND A VEHICLE OR NEAR TO A BEND, BECAUSE",
+      "te": "పాదచారులు తప్పనిసరిగా NOT CROSS THE రోడ్డు FROM వెనుక A వాహనం OR NEAR TO A BEND, BECAUSE",
+      "hi": "पैदल यात्री अनिवार्य रूप से NOT CROSS THE सड़क FROM पीछे A वाहन OR NEAR TO A BEND, BECAUSE"
     },
     "options": {
       "en": [
-        "ROAD, FROM BEHIND A VEHICLE OR NEAR TO A BEND, BECAUSE",
         "THEY MAY NOT BE ABLE TO RUN ACROSS THE ROAD",
-        "THEY MAY CAUSE INCONVENIENCE TO THE PEDESTRIANS CHILDREN MAY FEEL SCARED",
+        "THEY MAY CAUSE INCONVENIENCE TO THE PEDESTRIANS",
+        "CHILDREN MAY FEEL SCARED",
         "DRIVERS OF THE OTHER VEHICLES MAY NOT BE ABLE TO SEE THE PERSON CROSSING THE ROAD"
       ],
       "te": [
-        "రోడ్డు FROM వెనుక A వాహనం OR NEAR TO A BEND, BECAUSE",
         "THEY MAY NOT BE ABLE TO RUN ACROSS THE రోడ్డు",
-        "THEY MAY CAUSE INCONVENIENCE TO THE పాదచారులు పిల్లలు MAY FEEL SCARED",
+        "THEY MAY CAUSE INCONVENIENCE TO THE పాదచారులు",
+        "పిల్లలు MAY FEEL SCARED",
         "డ్రైవర్లు OF THE OTHER వాహనాలు MAY NOT BE ABLE TO SEE THE PERSON దాటడం / క్రాసింగ్ THE రోడ్డు"
       ],
       "hi": [
-        "सड़क FROM पीछे A वाहन OR NEAR TO A BEND, BECAUSE",
         "THEY MAY NOT BE ABLE TO RUN ACROSS THE सड़क",
-        "THEY MAY CAUSE INCONVENIENCE TO THE पैदल यात्री बच्चे MAY FEEL SCARED",
+        "THEY MAY CAUSE INCONVENIENCE TO THE पैदल यात्री",
+        "बच्चे MAY FEEL SCARED",
         "चालक OF THE OTHER वाहन MAY NOT BE ABLE TO SEE THE PERSON पार करना (क्रॉसिंग) THE सड़क"
       ]
     },
