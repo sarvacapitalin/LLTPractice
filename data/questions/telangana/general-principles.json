@@ -4072,35 +4072,35 @@
     "questionNumber": 108,
     "image": null,
     "text": {
-      "en": "YOU HAVE THIRD PARTY INSURANCE.",
-      "te": "YOU HAVE THIRD PARTY INSURANCE.",
-      "hi": "YOU HAVE THIRD PARTY INSURANCE."
+      "en": "YOU HAVE THIRD PARTY INSURANCE. WHAT DOES THIS COVER?",
+      "te": "మీ వద్ద థర్డ్ పార్టీ ఇన్సూరెన్స్ ఉంది. ఇది దేనికి రక్షణ కల్పిస్తుంది?",
+      "hi": "आपके पास थर्ड पार्टी बीमा है। यह किस चीज को कवर करता है?"
     },
     "options": {
       "en": [
-        "WHAT DOES THIS COVER?",
         "INJURY TO ANOTHER PERSON.",
-        "DAMAGE TO SOMEONE'S",
-        "DAMAGE TO OTHER VEHICLES. ALL OF THE ABOVE."
+        "DAMAGE TO SOMEONE'S PROPERTY.",
+        "DAMAGE TO OTHER VEHICLES.",
+        "ALL OF THE ABOVE."
       ],
       "te": [
-        "WHAT DOES THIS COVER?",
-        "INJURY TO ANOTHER PERSON.",
-        "DAMAGE TO SOMEONE'S",
-        "DAMAGE TO OTHER వాహనాలు ALL OF THE ABOVE."
+        "ఇతర వ్యక్తులకు గాయాలు / ప్రాణ నష్టం.",
+        "ఇతరుల ఆస్తి నష్టం.",
+        "ఇతర వాహనాలకు కలిగే నష్టం.",
+        "పైవన్నీ (ALL OF THE ABOVE)."
       ],
       "hi": [
-        "WHAT DOES THIS COVER?",
-        "INJURY TO ANOTHER PERSON.",
-        "DAMAGE TO SOMEONE'S",
-        "DAMAGE TO OTHER वाहन ALL OF THE ABOVE."
+        "किसी अन्य व्यक्ति को चोट / शारीरिक हानि।",
+        "किसी अन्य की संपत्ति का नुकसान।",
+        "अन्य वाहनों को नुकसान।",
+        "उपरोक्त सभी।"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Certified Driving Principle: DAMAGE TO OTHER VEHICLES. ALL OF THE ABOVE.. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: DAMAGE TO OTHER వాహనాలు ALL OF THE ABOVE.. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: DAMAGE TO OTHER वाहन ALL OF THE ABOVE.. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Third party insurance covers liability for death, injury, property, or vehicular damage caused to third parties.",
+      "te": "థర్డ్ పార్టీ బీమా ఇతరుల ప్రాణాలు, గాయాలు, మరియు ఆస్తి లేదా వాహన నష్టానికి రక్షణ కల్పిస్తుంది.",
+      "hi": "थर्ड पार्टी बीमा तीसरे पक्ष की चोट, मृत्यु और संपत्ति या वाहन के नुकसान को कवर करता है।"
     }
   },
   {
@@ -4496,29 +4496,29 @@
     },
     "options": {
       "en": [
-        "THAT THE VEHICLE IS NOT",
-        "THE PASSENGERS.",
-        "THE MECHANIC OF THE",
-        "THE DRIVER OF THE VEHICLE. ALL OF THE ABOVE"
+        "THE OWNER OF THE VEHICLE.",
+        "THE PASSENGER IN THE VEHICLE.",
+        "THE MECHANIC OF THE VEHICLE.",
+        "THE DRIVER OF THE VEHICLE."
       ],
       "te": [
-        "THAT THE వాహనం IS NOT",
-        "THE PASSENGERS.",
-        "THE MECHANIC OF THE",
-        "THE డ్రైవర్ OF THE వాహనం ALL OF THE ABOVE"
+        "వాహన యజమాని.",
+        "వాహనంలో ప్రయాణీకుడు.",
+        "వాహనం యొక్క మెకానిక్.",
+        "వాహనం నడుపుతున్న డ్రైవర్."
       ],
       "hi": [
-        "THAT THE वाहन IS NOT",
-        "THE PASSENGERS.",
-        "THE MECHANIC OF THE",
-        "THE चालक (ड्राइवर) OF THE वाहन ALL OF THE ABOVE"
+        "वाहन का मालिक।",
+        "वाहन में सवार यात्री।",
+        "वाहन का मैकेनिक।",
+        "वाहन का चालक।"
       ]
     },
-    "answerIndex": 2,
+    "answerIndex": 3,
     "explanation": {
-      "en": "Certified Driving Principle: THE MECHANIC OF THE. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: THE MECHANIC OF THE. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: THE MECHANIC OF THE. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "The driver of the vehicle is legally responsible for ensuring children are wearing seatbelts.",
+      "te": "వాహనంలో పిల్లలు సీట్ బెల్ట్ ధరించేలా చూసే చట్టపరమైన బాధ్యత డ్రైవర్ దే.",
+      "hi": "बच्चों द्वारा सीटबेल्ट पहनना सुनिश्चित करने की कानूनी जिम्मेदारी चालक की है।"
     }
   },
   {
@@ -6010,35 +6010,35 @@
     "questionNumber": 159,
     "image": null,
     "text": {
-      "en": "A PROPERLY SERVICED VEHICLE WILL",
-      "te": "A PROPERLY SERVICED వాహనం WILL",
-      "hi": "A PROPERLY SERVICED वाहन WILL"
+      "en": "A PROPERLY SERVICED VEHICLE WILL GIVE:",
+      "te": "క్రమం తప్పకుండా సర్వీస్ చేసిన వాహనం ఏమి ఇస్తుంది?",
+      "hi": "उचित रूप से सर्विस किया गया वाहन क्या लाभ देता है?"
     },
     "options": {
       "en": [
-        "LOWER INSURANCE",
-        "YOU A REFUND ON YOUR",
-        "BETTER FUEL ECONOMY AND",
+        "LOWER ROAD TAX",
+        "A REFUND ON YOUR INSURANCE",
+        "BETTER FUEL ECONOMY AND CLEANER EXHAUST",
         "NONE OF THE ABOVE"
       ],
       "te": [
-        "LOWER INSURANCE",
-        "YOU A REFUND ON YOUR",
-        "BETTER FUEL ECONOMY AND",
+        "తక్కువ రోడ్డు పన్ను",
+        "బీమా ప్రీమియం వాపసు",
+        "మెరుగైన ఇంధన సామర్థ్యం (మైలేజ్) మరియు తక్కువ కాలుష్యం",
         "పైవేవీ కావు"
       ],
       "hi": [
-        "LOWER INSURANCE",
-        "YOU A REFUND ON YOUR",
-        "BETTER FUEL ECONOMY AND",
+        "कम सड़क कर",
+        "बीमा रिफंड",
+        "बेहतर माइलेज (ईंधन बचत) और कम प्रदूषण",
         "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Certified Driving Principle: BETTER FUEL ECONOMY AND. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: BETTER FUEL ECONOMY AND. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: BETTER FUEL ECONOMY AND. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Regular vehicle maintenance ensures optimal engine combustion, improving fuel mileage and reducing emissions.",
+      "te": "సమయానికి సర్వీస్ చేయడం వల్ల ఇంజిన్ సమర్థవంతంగా పనిచేసి మెరుగైన మైలేజీ మరియు తక్కువ పొగ విడుదల చేస్తుంది.",
+      "hi": "नियमित सर्विसिंग से इंजन बेहतर माइलेज देता है और प्रदूषण कम होता है।"
     }
   }
 ]

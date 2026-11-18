@@ -2064,29 +2064,29 @@
     },
     "options": {
       "en": [
-        "TURN AT THE NEXT LEFT STOP ON THE LEFT",
-        "STOP IMMEDIAT",
-        "ELY",
+        "TURN AT THE NEXT LEFT",
+        "STOP ON THE LEFT",
+        "STOP IMMEDIATELY",
         "MOVE OVER TO THE RIGHT"
       ],
       "te": [
-        "TURN AT THE NEXT ఎడమ ఆపండి ON THE ఎడమ",
-        "ఆపండి IMMEDIAT",
-        "ELY",
-        "MOVE OVER TO THE కుడి"
+        "తరువాతి ఎడమ మలుపు వద్ద తిరగాలి",
+        "వాహనాన్ని ఎడమ వైపునకు తీసుకువచ్చి ఆపాలి",
+        "తక్షణమే అక్కడే ఆపాలి",
+        "కుడి వైపునకు తరలిపోవాలి"
       ],
       "hi": [
-        "TURN AT THE NEXT बायां रुकें ON THE बायां",
-        "रुकें IMMEDIAT",
-        "ELY",
-        "MOVE OVER TO THE दायां"
+        "अगले बाएं मोड़ पर मुड़ें",
+        "सड़क के बाईं ओर वाहन रोकें",
+        "तुरंत वहीं रुकें",
+        "दाईं ओर चले जाएं"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Traffic Regulation: STOP IMMEDIAT. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: ఆపండి IMMEDIAT. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: रुकें IMMEDIAT. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "When a police officer flashes headlights and points left, pull over safely and stop on the left.",
+      "te": "పోలీస్ హెడ్‌లైట్ వేసి ఎడమవైపు చూపిస్తే ఎడమ వైపునకు వచ్చి సురక్షితంగా ఆపాలి.",
+      "hi": "जब पुलिस हेडलाइट जलाकर बाईं ओर इशारा करे, तो बाईं ओर सुरक्षित रुकें।"
     }
   },
   {
