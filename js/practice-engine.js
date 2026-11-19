@@ -19,6 +19,7 @@ export class PracticeEngine {
     if (this.questions.length > 0 && !this.selectedQuestion) {
       this.selectedQuestion = this.questions[0];
     }
+    this.notifyUpdate();
   }
 
   setCategory(category) {

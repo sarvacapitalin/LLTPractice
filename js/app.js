@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 async function loadAllDatasets() {
   try {
-    const v = "v=14";
+    const v = "v=19";
     const [signsRes, rulesRes, gpRes, twinsRes, cheatRes, guideRes] = await Promise.all([
       fetch(`data/questions/telangana/road-signs.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/questions/telangana/rules-of-road.json?${v}`).then(r => r.json()).catch(() => []),
@@ -85,6 +85,10 @@ async function loadAllDatasets() {
     coverage.setQuestions(allQuestions);
     practice.setQuestions(allQuestions);
     flashcards.setSigns(roadSigns);
+
+    // Ensure dependent feature views are rendered immediately
+    practice.notifyUpdate();
+    flashcards.notifyUpdate();
 
     datasetsLoaded = true;
     console.log(`Loaded ${allQuestions.length} total questions (Signs: ${roadSigns.length}, Rules: ${rulesOfRoad.length}, Principles: ${generalPrinciples.length})`);
@@ -148,6 +152,19 @@ function setupTabs() {
       });
       const targetPane = document.getElementById(targetId);
       if (targetPane) targetPane.classList.add("active");
+
+      // Activate sub-engines when their respective tab is selected
+      if (targetId === "tab-practice") {
+        practice.notifyUpdate();
+      } else if (targetId === "tab-flashcards") {
+        flashcards.notifyUpdate();
+      } else if (targetId === "tab-twins") {
+        renderTrickyTwins();
+      } else if (targetId === "tab-cheatsheet") {
+        renderCheatsheet();
+      } else if (targetId === "tab-rto-guide") {
+        renderRtoGuide();
+      }
 
       // Pause audio on tab change
       speech.stop();
@@ -741,6 +758,8 @@ function initPracticeUI() {
     renderPracticeMatrix(state.filteredQuestions);
     renderPracticeCard(state.selectedQuestion);
   };
+
+  practice.notifyUpdate();
 }
 
 function renderPracticeMatrix(filteredList) {
@@ -935,6 +954,8 @@ function initFlashcardsUI() {
       if (backView) backView.style.display = "none";
     }
   };
+
+  flashcards.notifyUpdate();
 }
 
 // ==========================================

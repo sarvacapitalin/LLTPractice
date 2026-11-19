@@ -1,7 +1,7 @@
 {
-  "report_id": "QA_RUN_1795116629",
-  "generated_at": "2026-11-19T19:30:29.191140Z",
-  "duration_seconds": 0.044,
+  "report_id": "QA_RUN_1795117854",
+  "generated_at": "2026-11-19T19:50:54.018187Z",
+  "duration_seconds": 0.065,
   "overall_status": "PASSED",
   "summary": {
     "total_suites": 9,
@@ -420,7 +420,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 35734
+            "bytes_served": 35759
           }
         },
         {
@@ -454,7 +454,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 35734
+            "bytes_served": 35759
           }
         },
         {
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 53764
+            "bytes_served": 54409
           }
         },
         {

@@ -15,6 +15,7 @@ export class FlashcardsEngine {
 
   setSigns(signs) {
     this.signs = signs;
+    this.notifyUpdate();
   }
 
   getFilteredSigns() {
