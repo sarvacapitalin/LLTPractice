@@ -1,6 +1,6 @@
 {
-  "report_id": "QA_RUN_1795121741",
-  "generated_at": "2026-11-19T20:55:41.051867Z",
+  "report_id": "QA_RUN_1795122808",
+  "generated_at": "2026-11-19T21:13:28.194672Z",
   "duration_seconds": 0.037,
   "overall_status": "PASSED",
   "summary": {
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 58107
+            "bytes_served": 58631
           }
         },
         {

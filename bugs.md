@@ -195,6 +195,7 @@ Preserve the authentic STALL fixed option order:
 
 ### Bug ID: BUG-05
 **Bug Shortname:** Guess Checkbox State Leak Across Questions, Hotkey Submissions, and Timeouts  
+**Status:** FIXED  
 **Description:**  
 When a user checks the *"🤔 I guessed this answer (keep on probation)"* checkbox during an exam:
 1. If the user submits using the `Enter` hotkey instead of clicking the `CONFIRM & NEXT` button, the checkbox is never unchecked.
@@ -232,6 +233,15 @@ if (isNewQuestion) {
 }
 ```
 Also ensure `guessCheckbox.checked = false;` is executed inside `setupKeyboardHotkeys()` upon submitting via `Enter`.
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Added `if (guessBox) guessBox.checked = false;` in `setupKeyboardHotkeys()` immediately when submitting via the `Enter` hotkey.
+  - Added `if (guessBox) guessBox.checked = false;` inside `exam.onStateUpdate` within the `if (isNewQuestion)` block, ensuring that regardless of transition mechanism (next question, 30s timeout expiration, tutor mode continue, retake, or custom exam launch), the guess checkbox is cleanly reset for the next question.
+  - Added reset safeguarding inside `btnStart`, `btnRetake`, and `btnRetakeMissed` handlers.
+- **Why this works & Test Scenario:**
+  - Prevents the probation state (`isGuessed: true`) from leaking across questions or sessions, eliminating false probation penalties on subsequent questions.
+  - Verified with simulated DOM test: checked guess box on Q1, submitted via Enter hotkey (checked transitioned to false); simulated timeout / transition to Q2 with pre-checked state, `isNewQuestion` automatically cleared checked state to false.
 
 ---
 

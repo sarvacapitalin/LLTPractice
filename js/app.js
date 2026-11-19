@@ -253,8 +253,14 @@ function setupKeyboardHotkeys() {
       if (["1", "2", "3", "4"].includes(e.key)) {
         exam.selectOption(parseInt(e.key, 10) - 1);
       } else if (e.key === "Enter") {
+        if (exam.isRevealed) {
+          currentRenderedQId = null;
+          exam.continueToNext();
+          return;
+        }
         const guessBox = document.getElementById("exam-guess-checkbox");
         const isGuessed = guessBox ? guessBox.checked : false;
+        if (guessBox) guessBox.checked = false;
         exam.confirmAndSubmit(isGuessed);
       } else if (e.key === " " || e.key === "Spacebar") {
         // Spacebar toggles audio reading
@@ -300,11 +306,13 @@ function initExamUI() {
       alert("Questions are still loading. Please wait a moment and try again.");
       return;
     }
+    if (guessCheckbox) guessCheckbox.checked = false;
     currentRenderedQId = null;
     exam.startNewExam();
   });
 
   btnRetake?.addEventListener("click", () => {
+    if (guessCheckbox) guessCheckbox.checked = false;
     currentRenderedQId = null;
     exam.startNewExam();
   });
@@ -434,6 +442,9 @@ function initExamUI() {
     //    Re-query DOM elements fresh each time (never rely on stale closure reference)
     const isNewQuestion = (currentRenderedQId !== q.id);
     if (isNewQuestion) {
+      const guessBox = document.getElementById("exam-guess-checkbox");
+      if (guessBox) guessBox.checked = false;
+
       const qBadge = document.getElementById("exam-q-badge");
       const qText = document.getElementById("exam-q-text");
       const visualBox = document.getElementById("exam-q-visual");
@@ -630,6 +641,8 @@ function renderExamResultReview(state, lang, examEngine) {
       if (countMissedBtn) countMissedBtn.textContent = missedItems.length;
       btnRetakeMissed.onclick = () => {
         const missedQuestions = missedItems.map(h => h.question);
+        const guessBox = document.getElementById("exam-guess-checkbox");
+        if (guessBox) guessBox.checked = false;
         currentRenderedQId = null;
         examEngine.startCustomExam(missedQuestions);
       };
