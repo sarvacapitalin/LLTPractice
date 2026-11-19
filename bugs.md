@@ -618,6 +618,7 @@ let optionsHtml = `<div class="options-grid" style="margin-top: 14px;">`;
 
 ### Bug ID: BUG-14
 **Bug Shortname:** Tricky Twins Side-by-Side Comparison Grid Cramped on Small Mobile Viewports  
+**Status:** FIXED  
 **Description:**  
 In the Tricky Twins tab (`tab-twins`), sign comparisons (Sign A vs Sign B) are rendered with hardcoded inline style:  
 `style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;"`.  
@@ -629,10 +630,11 @@ On mobile screens under 420px width, each card column is under 140px wide, causi
 3. Observe Sign A and Sign B side-by-side in narrow columns where text wraps onto 10+ lines.
 
 **Root Cause:**  
-In `js/app.js` line 962, `grid-template-columns: 1fr 1fr;` is hardcoded as an inline style without a responsive `@media (max-width: 600px)` breakpoint.
+In `js/app.js`, `grid-template-columns: 1fr 1fr;` is hardcoded as an inline style without a responsive `@media (max-width: 600px)` breakpoint.
 
 **Code artifacts and line references:**
-- [`js/app.js#L962`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L962): Hardcoded `grid-template-columns: 1fr 1fr; gap: 14px;`.
+- [`js/app.js#L1217`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L1217): Hardcoded `grid-template-columns: 1fr 1fr; gap: 14px;`.
+- [`css/styles.css`](file:///Users/raghu/Projects/LLTPractice/css/styles.css): Missing `.twins-comparison-grid` class and mobile breakpoint.
 
 **Solution:**  
 Assign a class `.twins-comparison-grid` and define it in `css/styles.css`:
@@ -649,6 +651,16 @@ Assign a class `.twins-comparison-grid` and define it in `css/styles.css`:
   }
 }
 ```
+
+**Implemented fix:**  
+- In `css/styles.css`:
+  - Added `.twins-comparison-grid` with a default 2-column layout (`grid-template-columns: 1fr 1fr; gap: 14px;`) on desktop and tablet viewports.
+  - Added responsive media query `@media (max-width: 600px)` collapsing the grid into a single full-width column (`grid-template-columns: 1fr; gap: 10px;`) on mobile screens.
+- In `js/app.js`:
+  - Replaced the hardcoded inline `style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;"` with `class="twins-comparison-grid"` inside `renderTrickyTwins()`.
+- **Why this works & Test Scenario:**
+  - On narrow screens ($\le 600\text{px}$), Sign A and Sign B neatly stack vertically with 100% available width rather than squeezing into 140px micro-columns, ensuring sign images, titles, and explanations remain easily readable without text overflow or vertical distortion.
+  - Verified with DOM style and media query inspection: on desktop the grid preserves the 2-column side-by-side layout, and on mobile breakpoints ($\le 600\text{px}$) the CSS rule applies a single-column stack. All 64 QA tests continue to pass.
 
 ---
 

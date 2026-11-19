@@ -1,6 +1,6 @@
 {
-  "report_id": "QA_RUN_1795131496",
-  "generated_at": "2026-11-19T23:38:16.180301Z",
+  "report_id": "QA_RUN_1795132543",
+  "generated_at": "2026-11-19T23:55:43.514384Z",
   "duration_seconds": 0.038,
   "overall_status": "PASSED",
   "summary": {
@@ -377,7 +377,7 @@
           "test": "css_file_exists_styles.css",
           "status": "PASSED",
           "details": {
-            "size": 5509
+            "size": 5746
           }
         },
         {
@@ -488,7 +488,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/css",
-            "bytes_served": 5509
+            "bytes_served": 5746
           }
         },
         {
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 65215
+            "bytes_served": 65179
           }
         },
         {

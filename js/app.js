@@ -1214,7 +1214,7 @@ function renderTrickyTwins() {
 
     card.innerHTML = `
       <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 14px; font-weight: 700; border-bottom: 2px solid var(--border-color); padding-bottom: 8px;">${titleText}</h3>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div class="twins-comparison-grid">
         <!-- Sign A -->
         <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; text-align: center;">
           <img src="${pair.signA.image}" alt="${pair.signA.name.en}" style="max-height: 90px; object-fit: contain; margin-bottom: 8px;">
