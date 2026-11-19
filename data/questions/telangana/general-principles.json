@@ -1381,20 +1381,20 @@
     "options": {
       "en": [
         "MOTOR CAR ONLY",
-        "MOTOR CAR AND",
-        "MOTORCYCLE ABOVE 50CC EVERY MOTOR VEHICLE",
+        "MOTOR CAR AND MOTORCYCLE ABOVE 50CC",
+        "EVERY MOTOR VEHICLE",
         "NONE OF THE ABOVE"
       ],
       "te": [
         "MOTOR CAR ONLY",
-        "MOTOR CAR AND",
-        "MOTORCYCLE ABOVE 50CC EVERY MOTOR వాహనం",
+        "MOTOR CAR AND MOTORCYCLE ABOVE 50CC",
+        "EVERY MOTOR వాహనం",
         "పైవేవీ కావు"
       ],
       "hi": [
         "MOTOR CAR ONLY",
-        "MOTOR CAR AND",
-        "MOTORCYCLE ABOVE 50CC EVERY MOTOR वाहन",
+        "MOTOR CAR AND MOTORCYCLE ABOVE 50CC",
+        "EVERY MOTOR वाहन",
         "इनमें से कोई नहीं"
       ]
     },
@@ -1685,28 +1685,28 @@
     "options": {
       "en": [
         "YES, BUT ONLY WHEN YOU STOP AT INTERSECTIONS.",
-        "NO YES, BUT YOU MUST HOLD THE",
-        "STEERING WHEEL WITH AT",
-        "LEAST ONE HAND. ONLY AT NIGHT"
+        "NO",
+        "YES, BUT YOU MUST HOLD THE STEERING WHEEL WITH AT LEAST ONE HAND.",
+        "ONLY AT NIGHT"
       ],
       "te": [
         "అవును BUT ONLY WHEN YOU ఆపండి AT INTERSECTIONS.",
-        "కాదు అవును BUT YOU తప్పనిసరిగా HOLD THE",
-        "STEERING WHEEL WITH AT",
-        "LEAST ONE HAND. ONLY AT రాత్రి"
+        "కాదు",
+        "అవును BUT YOU తప్పనిసరిగా HOLD THE STEERING WHEEL WITH AT LEAST ONE HAND.",
+        "ONLY AT రాత్రి"
       ],
       "hi": [
         "हाँ BUT ONLY WHEN YOU रुकें AT INTERSECTIONS.",
-        "नहीं हाँ BUT YOU अनिवार्य रूप से HOLD THE",
-        "STEERING WHEEL WITH AT",
-        "LEAST ONE HAND. ONLY AT रात"
+        "नहीं",
+        "हाँ BUT YOU अनिवार्य रूप से HOLD THE STEERING WHEEL WITH AT LEAST ONE HAND.",
+        "ONLY AT रात"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Certified Driving Principle: NO YES, BUT YOU MUST HOLD THE. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: కాదు అవును BUT YOU తప్పనిసరిగా HOLD THE. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: नहीं हाँ BUT YOU अनिवार्य रूप से HOLD THE. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: NO. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: కాదు. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: नहीं. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {
@@ -2064,29 +2064,29 @@
     },
     "options": {
       "en": [
-        "STOP AND TAKE A BREAK SHOUT ABUSIVE LANGUAGE",
-        "GESTURE TO THEM WITH",
-        "YOUR HAND",
+        "STOP AND TAKE A BREAK",
+        "SHOUT ABUSIVE LANGUAGE",
+        "GESTURE TO THEM WITH YOUR HAND",
         "FOLLOW THEIR CAR, FLASHING THE HEADLIGHTS"
       ],
       "te": [
-        "ఆపండి AND TAKE A BREAK SHOUT ABUSIVE LANGUAGE",
-        "GESTURE TO THEM WITH",
-        "YOUR HAND",
+        "ఆపండి AND TAKE A BREAK",
+        "SHOUT ABUSIVE LANGUAGE",
+        "GESTURE TO THEM WITH YOUR HAND",
         "FOLLOW THEIR CAR, FLASHING THE HEADLIGHTS"
       ],
       "hi": [
-        "रुकें AND TAKE A BREAK SHOUT ABUSIVE LANGUAGE",
-        "GESTURE TO THEM WITH",
-        "YOUR HAND",
+        "रुकें AND TAKE A BREAK",
+        "SHOUT ABUSIVE LANGUAGE",
+        "GESTURE TO THEM WITH YOUR HAND",
         "FOLLOW THEIR CAR, FLASHING THE HEADLIGHTS"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Certified Driving Principle: STOP AND TAKE A BREAK SHOUT ABUSIVE LANGUAGE. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: ఆపండి AND TAKE A BREAK SHOUT ABUSIVE LANGUAGE. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: रुकें AND TAKE A BREAK SHOUT ABUSIVE LANGUAGE. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: STOP AND TAKE A BREAK. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: ఆపండి AND TAKE A BREAK. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: रुकें AND TAKE A BREAK. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {
@@ -2103,21 +2103,21 @@
     "options": {
       "en": [
         "IS VALID THROUGH OUT THE INDIA",
-        "IS VALID THROUGHOUT THE",
-        "WORLD",
-        "IS VALID ONLY IN THE STATE NOT VALID ANYWHERE"
+        "IS VALID THROUGHOUT THE WORLD",
+        "IS VALID ONLY IN THE STATE",
+        "NOT VALID ANYWHERE"
       ],
       "te": [
         "IS చెల్లుబాటు అవుతుంది THROUGH OUT THE INDIA",
-        "IS చెల్లుబాటు అవుతుంది THROUGHOUT THE",
-        "WORLD",
-        "IS చెల్లుబాటు అవుతుంది ONLY IN THE STATE NOT చెల్లుబాటు అవుతుంది ANYWHERE"
+        "IS చెల్లుబాటు అవుతుంది THROUGHOUT THE WORLD",
+        "IS చెల్లుబాటు అవుతుంది ONLY IN THE STATE",
+        "NOT చెల్లుబాటు అవుతుంది ANYWHERE"
       ],
       "hi": [
         "IS वैध THROUGH OUT THE INDIA",
-        "IS वैध THROUGHOUT THE",
-        "WORLD",
-        "IS वैध ONLY IN THE STATE NOT वैध ANYWHERE"
+        "IS वैध THROUGHOUT THE WORLD",
+        "IS वैध ONLY IN THE STATE",
+        "NOT वैध ANYWHERE"
       ]
     },
     "answerIndex": 0,
@@ -2444,29 +2444,29 @@
     },
     "options": {
       "en": [
-        "MOVE THE RIDER OUT OF THE",
-        "ROAD.",
-        "WARN OTHER TRAFFIC CLEAR THE ROAD OF DEBRIS.",
+        "MOVE THE RIDER OUT OF THE ROAD.",
+        "WARN OTHER TRAFFIC",
+        "CLEAR THE ROAD OF DEBRIS.",
         "GIVE THE RIDER REASSURANCE"
       ],
       "te": [
-        "MOVE THE RIDER OUT OF THE",
-        "రోడ్డు",
-        "WARN OTHER TRAFFIC CLEAR THE రోడ్డు OF DEBRIS.",
+        "MOVE THE RIDER OUT OF THE రోడ్డు",
+        "WARN OTHER TRAFFIC",
+        "CLEAR THE రోడ్డు OF DEBRIS.",
         "GIVE THE RIDER REASSURANCE"
       ],
       "hi": [
-        "MOVE THE RIDER OUT OF THE",
-        "सड़क",
-        "WARN OTHER TRAFFIC CLEAR THE सड़क OF DEBRIS.",
+        "MOVE THE RIDER OUT OF THE सड़क",
+        "WARN OTHER TRAFFIC",
+        "CLEAR THE सड़क OF DEBRIS.",
         "GIVE THE RIDER REASSURANCE"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Certified Driving Principle: ROAD.. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: రోడ్డు. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: सड़क. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: WARN OTHER TRAFFIC. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: WARN OTHER TRAFFIC. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: WARN OTHER TRAFFIC. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {
@@ -3129,28 +3129,28 @@
     "options": {
       "en": [
         "DISTURBING MENTAL EQUILIBRIUM.",
-        "DISTURBING THE",
-        "CONCENTRATION OF DRIVER.",
-        "LOSS OF HEARING CAPACITY. ALL OF THE ABOVE"
+        "DISTURBING THE CONCENTRATION OF DRIVER.",
+        "LOSS OF HEARING CAPACITY.",
+        "ALL OF THE ABOVE"
       ],
       "te": [
         "DISTURBING MENTAL EQUILIBRIUM.",
-        "DISTURBING THE",
-        "CONCENTRATION OF డ్రైవర్",
-        "LOSS OF HEARING CAPACITY. ALL OF THE ABOVE"
+        "DISTURBING THE CONCENTRATION OF డ్రైవర్",
+        "LOSS OF HEARING CAPACITY.",
+        "పైవన్నీ"
       ],
       "hi": [
         "DISTURBING MENTAL EQUILIBRIUM.",
-        "DISTURBING THE",
-        "CONCENTRATION OF चालक (ड्राइवर)",
-        "LOSS OF HEARING CAPACITY. ALL OF THE ABOVE"
+        "DISTURBING THE CONCENTRATION OF चालक (ड्राइवर)",
+        "LOSS OF HEARING CAPACITY.",
+        "उपरोक्त सभी"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Certified Driving Principle: LOSS OF HEARING CAPACITY. ALL OF THE ABOVE. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: LOSS OF HEARING CAPACITY. ALL OF THE ABOVE. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: LOSS OF HEARING CAPACITY. ALL OF THE ABOVE. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: ALL OF THE ABOVE. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: పైవన్నీ. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: उपरोक्त सभी. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {
@@ -3958,35 +3958,35 @@
     "questionNumber": 105,
     "image": null,
     "text": {
-      "en": "WHEN YOU SMELL OR SEE FIRE IN YOUR VEHICLE, WHAT SHOULD YOU DO? CLOTH. PULL TO THE SIDE OF THE ROAD IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND SMOTHER BURNING WIRES BY POURING WATER ON THEM. DON'T DO ANYTHING BUT CALL THE FIRE BRIGADE.",
+      "en": "WHEN YOU SMELL OR SEE FIRE IN YOUR VEHICLE, WHAT SHOULD YOU DO?",
       "te": "మీరు ఏమి చేయాలి ?",
       "hi": "आपको क्या करना चाहिए ?"
     },
     "options": {
       "en": [
-        "PULL TO THE SIDE OF THE ROAD IMMEDIATELY, TURN",
-        "OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND",
-        "TRY TO SMOOTHER BURNING",
-        "WIRES WITH SAND OR HEAVY NONE OF THE ABOVE."
+        "PULL TO THE SIDE OF THE ROAD IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND TRY TO SMOOTHER BURNING WIRES WITH SAND OR HEAVY CLOTH.",
+        "PULL TO THE SIDE OF THE ROAD IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND SMOTHER BURNING WIRES BY POURING WATER ON THEM.",
+        "DON'T DO ANYTHING BUT CALL THE FIRE BRIGADE.",
+        "NONE OF THE ABOVE."
       ],
       "te": [
-        "PULL TO THE SIDE OF THE రోడ్డు IMMEDIATELY, TURN",
-        "OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND",
-        "TRY TO SMOOTHER BURNING",
-        "WIRES WITH SAND OR HEAVY NONE OF THE ABOVE."
+        "PULL TO THE SIDE OF THE రోడ్డు IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND TRY TO SMOOTHER BURNING WIRES WITH SAND OR HEAVY CLOTH.",
+        "PULL TO THE SIDE OF THE రోడ్డు IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND SMOTHER BURNING WIRES BY POURING WATER ON THEM.",
+        "DON'T DO ANYTHING BUT CALL THE FIRE BRIGADE.",
+        "పైవేవీ కావు"
       ],
       "hi": [
-        "PULL TO THE SIDE OF THE सड़क IMMEDIATELY, TURN",
-        "OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND",
-        "TRY TO SMOOTHER BURNING",
-        "WIRES WITH SAND OR HEAVY NONE OF THE ABOVE."
+        "PULL TO THE SIDE OF THE सड़क IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND TRY TO SMOOTHER BURNING WIRES WITH SAND OR HEAVY CLOTH.",
+        "PULL TO THE SIDE OF THE सड़क IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND SMOTHER BURNING WIRES BY POURING WATER ON THEM.",
+        "DON'T DO ANYTHING BUT CALL THE FIRE BRIGADE.",
+        "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Certified Driving Principle: PULL TO THE SIDE OF THE ROAD IMMEDIATELY, TURN. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: PULL TO THE SIDE OF THE రోడ్డు IMMEDIATELY, TURN. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: PULL TO THE SIDE OF THE सड़क IMMEDIATELY, TURN. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: PULL TO THE SIDE OF THE ROAD IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND TRY TO SMOOTHER BURNING WIRES WITH SAND OR HEAVY CLOTH.. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: PULL TO THE SIDE OF THE రోడ్డు IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND TRY TO SMOOTHER BURNING WIRES WITH SAND OR HEAVY CLOTH.. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: PULL TO THE SIDE OF THE सड़क IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND TRY TO SMOOTHER BURNING WIRES WITH SAND OR HEAVY CLOTH.. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {
@@ -4497,28 +4497,28 @@
     "options": {
       "en": [
         "THE PASSENGERS.",
-        "THE MECHANIC OF THE",
-        "VEHICLE. THE DRIVER OF THE VEHICLE.",
+        "THE MECHANIC OF THE VEHICLE.",
+        "THE DRIVER OF THE VEHICLE.",
         "ALL OF THE ABOVE"
       ],
       "te": [
         "THE PASSENGERS.",
-        "THE MECHANIC OF THE",
-        "వాహనం THE డ్రైవర్ OF THE వాహనం",
+        "THE MECHANIC OF THE వాహనం",
+        "THE డ్రైవర్ OF THE వాహనం",
         "పైవన్నీ"
       ],
       "hi": [
         "THE PASSENGERS.",
-        "THE MECHANIC OF THE",
-        "वाहन THE चालक (ड्राइवर) OF THE वाहन",
+        "THE MECHANIC OF THE वाहन",
+        "THE चालक (ड्राइवर) OF THE वाहन",
         "उपरोक्त सभी"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Certified Driving Principle: VEHICLE. THE DRIVER OF THE VEHICLE.. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: వాహనం THE డ్రైవర్ OF THE వాహనం. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: वाहन THE चालक (ड्राइवर) OF THE वाहन. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: THE DRIVER OF THE VEHICLE.. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: THE డ్రైవర్ OF THE వాహనం. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: THE चालक (ड्राइवर) OF THE वाहन. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {
@@ -4838,29 +4838,29 @@
     },
     "options": {
       "en": [
-        "VEHICLE PULLING TO THE",
-        "RIGHT.",
-        "VEHICLE PULLING TO THE LEFT. STEERING WOBBLING.",
+        "VEHICLE PULLING TO THE RIGHT.",
+        "VEHICLE PULLING TO THE LEFT.",
+        "STEERING WOBBLING.",
         "NONE OF THE ABOVE."
       ],
       "te": [
-        "వాహనం PULLING TO THE",
-        "కుడి",
-        "వాహనం PULLING TO THE ఎడమ STEERING WOBBLING.",
+        "వాహనం కుడి వైపుకు లాగడం",
+        "వాహనం ఎడమ వైపుకు లాగడం",
+        "స్టీరింగ్ వణకడం / ఊగడం",
         "పైవేవీ కావు"
       ],
       "hi": [
-        "वाहन PULLING TO THE",
-        "दायां",
-        "वाहन PULLING TO THE बायां STEERING WOBBLING.",
+        "वाहन का दाईं ओर खिंचना",
+        "वाहन का बाईं ओर खिंचना",
+        "स्टीयरिंग का कांपना या डगमगाना",
         "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Certified Driving Principle: VEHICLE PULLING TO THE LEFT. STEERING WOBBLING.. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: వాహనం PULLING TO THE ఎడమ STEERING WOBBLING.. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: वाहन PULLING TO THE बायां STEERING WOBBLING.. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: STEERING WOBBLING.. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: స్టీరింగ్ వణకడం / ఊగడం. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: स्टीयरिंग का कांपना या डगमगाना. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {
@@ -5789,28 +5789,28 @@
     "options": {
       "en": [
         "GIVES YOU A BETTER FUEL AVERAGE",
-        "DOES NOT GIVE YOU SUFFICIENT TIME TO REACT TO",
-        "HAZARDS TAKE LESS TIME FOR YOUR JOURNEY",
+        "DOES NOT GIVE YOU SUFFICIENT TIME TO REACT TO HAZARDS",
+        "TAKE LESS TIME FOR YOUR JOURNEY",
         "WILL CAUSE LESS DAMAGE TO YOUR ENGINE"
       ],
       "te": [
         "GIVES YOU A BETTER FUEL AVERAGE",
-        "DOES NOT GIVE YOU SUFFICIENT సమయం TO REACT TO",
-        "HAZARDS TAKE LESS సమయం FOR YOUR JOURNEY",
+        "DOES NOT GIVE YOU SUFFICIENT సమయం TO REACT TO HAZARDS",
+        "TAKE LESS సమయం FOR YOUR JOURNEY",
         "WILL CAUSE LESS DAMAGE TO YOUR ENGINE"
       ],
       "hi": [
         "GIVES YOU A BETTER FUEL AVERAGE",
-        "DOES NOT GIVE YOU SUFFICIENT समय TO REACT TO",
-        "HAZARDS TAKE LESS समय FOR YOUR JOURNEY",
+        "DOES NOT GIVE YOU SUFFICIENT समय TO REACT TO HAZARDS",
+        "TAKE LESS समय FOR YOUR JOURNEY",
         "WILL CAUSE LESS DAMAGE TO YOUR ENGINE"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Certified Driving Principle: DOES NOT GIVE YOU SUFFICIENT TIME TO REACT TO. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: DOES NOT GIVE YOU SUFFICIENT సమయం TO REACT TO. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: DOES NOT GIVE YOU SUFFICIENT समय TO REACT TO. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: DOES NOT GIVE YOU SUFFICIENT TIME TO REACT TO HAZARDS. This standard practice ensures vehicle control and passenger safety.",
+      "te": "సరైన డ్రైవింగ్ సూత్రం: DOES NOT GIVE YOU SUFFICIENT సమయం TO REACT TO HAZARDS. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
+      "hi": "सही ड्राइविंग सिद्धांत: DOES NOT GIVE YOU SUFFICIENT समय TO REACT TO HAZARDS. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
   },
   {

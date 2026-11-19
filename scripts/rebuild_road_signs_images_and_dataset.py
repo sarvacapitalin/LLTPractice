@@ -227,6 +227,38 @@ if __name__ == "__main__":
             q["explanation"]["en"] = "Official Road Sign Rule: CROSS ROAD."
             q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: రహదారి కూడలి (క్రాస్ రోడ్డు)."
             q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: चौराहा (क्रॉस रोड)."
+        elif qid == "TS_RS_002":
+            q["options"]["en"] = ["SLOW DOWN AND PROCEED WITH CAUTION", "NO ENTRY", "STOP HERE", "NONE OF THE ABOVE"]
+            q["options"]["te"] = ["నెమ్మదిగా చేసి జాగ్రత్తగా ముందుకు సాగాలి", "ప్రవేశం లేదు (నో ఎంట్రీ)", "ఇక్కడ ఆగండి", "పైవేవీ కావు"]
+            q["options"]["hi"] = ["धीमे करें और सावधानी से आगे बढ़ें", "प्रवेश निषेध (नो एंट्री)", "यहाँ रुकें", "इनमें से कोई नहीं"]
+            q["answerIndex"] = 0
+            q["explanation"]["en"] = "Official Road Sign Rule: SLOW DOWN AND PROCEED WITH CAUTION."
+            q["explanation"]["te"] = "అధికారిక ట్రాఫిక్ సిగ్నల్ నిబంధన: నెమ్మదిగా చేసి జాగ్రత్తగా ముందుకు సాగాలి."
+            q["explanation"]["hi"] = "आधिकारिक ट्रैफिक सिग्नल नियम: धीमे करें और सावधानी से आगे बढ़ें।"
+        elif qid == "TS_RS_003":
+            q["options"]["en"] = ["STOP", "BRIGHT SUN", "STOP, OBSERVE AND PROCEED WITH CAUTION", "NONE OF THE ABOVE"]
+            q["options"]["te"] = ["ఆగండి", "తీవ్రమైన ఎండ", "ఆగి, ట్రాఫిక్‌ను గమనించి జాగ్రత్తగా వెళ్లాలి", "పైవేవీ కావు"]
+            q["options"]["hi"] = ["रुकें", "तेज धूप", "रुकें, यातायात देखें और सावधानी से आगे बढ़ें", "इनमें से कोई नहीं"]
+            q["answerIndex"] = 2
+            q["explanation"]["en"] = "Official Road Sign Rule: STOP, OBSERVE AND PROCEED WITH CAUTION."
+            q["explanation"]["te"] = "అధికారిక ట్రాఫిక్ సిగ్నల్ నిబంధన: ఆగి, ట్రాఫిక్‌ను గమనించి జాగ్రత్తగా వెళ్లాలి."
+            q["explanation"]["hi"] = "आधिकारिक ट्रैफिक सिग्नल नियम: रुकें, यातायात देखें और सावधानी से आगे बढ़ें।"
+        elif qid == "TS_RS_022":
+            q["options"]["en"] = ["NO PARKING", "NO STOPPING OR STANDING", "LENGTH LIMIT", "SPEED LIMIT"]
+            q["options"]["te"] = ["నో పార్కింగ్", "వాహనాన్ని ఆపడం లేదా నిలపడం నిషిద్ధం", "పొడవు పరిమితి", "వేగ పరిమితి"]
+            q["options"]["hi"] = ["पार्किंग निषेध", "रुकना या खड़ा होना सख्त मना है", "लंबाई सीमा", "गति सीमा"]
+            q["answerIndex"] = 1
+            q["explanation"]["en"] = "Official Road Sign Rule: NO STOPPING OR STANDING."
+            q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: వాహనాన్ని ఆపడం లేదా నిలపడం నిషిద్ధం."
+            q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: रुकना या खड़ा होना सख्त मना है।"
+        elif qid == "TS_RS_063":
+            q["options"]["en"] = ["RAILWAY CROSSING", "BARRIER AHEAD", "MEN AT WORK", "NONE OF THE ABOVE"]
+            q["options"]["te"] = ["రైల్వే క్రాసింగ్", "ముందు చెక్‌పోస్ట్ / బారికేడ్ కలదు", "రోడ్డు పని జరుగుచున్నది", "పైవేవీ కావు"]
+            q["options"]["hi"] = ["रेलवे क्रॉसिंग", "आगे बैरियर है", "सड़क पर काम चल रहा है", "इनमें से कोई नहीं"]
+            q["answerIndex"] = 1
+            q["explanation"]["en"] = "Official Road Sign Rule: BARRIER AHEAD."
+            q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: ముందు చెక్‌పోస్ట్ / బారికేడ్ కలదు."
+            q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: आगे बैरियर है।"
 
     with open(ROAD_SIGNS_JSON, "w", encoding="utf-8") as f:
         json.dump(signs_data, f, indent=2, ensure_ascii=False)

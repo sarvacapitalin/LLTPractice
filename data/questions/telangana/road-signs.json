@@ -50,29 +50,29 @@
     },
     "options": {
       "en": [
-        "SLOW DOWN AND PROCEED WITH",
-        "CAUTION",
+        "SLOW DOWN AND PROCEED WITH CAUTION",
         "NO ENTRY",
-        "STOP HERE NONE OF THE ABOVE"
+        "STOP HERE",
+        "NONE OF THE ABOVE"
       ],
       "te": [
-        "నెమ్మదిగా DOWN AND PROCEED WITH",
-        "జాగ్రత్త",
-        "ప్రవేశం లేదు (NO ENTRY)",
-        "ఆపండి HERE NONE OF THE ABOVE"
+        "నెమ్మదిగా చేసి జాగ్రత్తగా ముందుకు సాగాలి",
+        "ప్రవేశం లేదు (నో ఎంట్రీ)",
+        "ఇక్కడ ఆగండి",
+        "పైవేవీ కావు"
       ],
       "hi": [
-        "धीमा DOWN AND PROCEED WITH",
-        "सावधानी",
-        "प्रवेश निषेध",
-        "रुकें HERE NONE OF THE ABOVE"
+        "धीमे करें और सावधानी से आगे बढ़ें",
+        "प्रवेश निषेध (नो एंट्री)",
+        "यहाँ रुकें",
+        "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Road Sign Rule: SLOW DOWN AND PROCEED WITH. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: నెమ్మదిగా DOWN AND PROCEED WITH. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: धीमा DOWN AND PROCEED WITH. मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: SLOW DOWN AND PROCEED WITH CAUTION.",
+      "te": "అధికారిక ట్రాఫిక్ సిగ్నల్ నిబంధన: నెమ్మదిగా చేసి జాగ్రత్తగా ముందుకు సాగాలి.",
+      "hi": "आधिकारिक ट्रैफिक सिग्नल नियम: धीमे करें और सावधानी से आगे बढ़ें।"
     }
   },
   {
@@ -88,29 +88,29 @@
     },
     "options": {
       "en": [
-        "STOP BRIGHT SUN",
-        "STOP, OBSERVE AND",
-        "PROCEED WITH",
-        "CAUTION NONE OF THE ABOVE"
+        "STOP",
+        "BRIGHT SUN",
+        "STOP, OBSERVE AND PROCEED WITH CAUTION",
+        "NONE OF THE ABOVE"
       ],
       "te": [
-        "ఆపండి BRIGHT SUN",
-        "ఆపండి OBSERVE AND",
-        "PROCEED WITH",
-        "జాగ్రత్త NONE OF THE ABOVE"
+        "ఆగండి",
+        "తీవ్రమైన ఎండ",
+        "ఆగి, ట్రాఫిక్‌ను గమనించి జాగ్రత్తగా వెళ్లాలి",
+        "పైవేవీ కావు"
       ],
       "hi": [
-        "रुकें BRIGHT SUN",
-        "रुकें OBSERVE AND",
-        "PROCEED WITH",
-        "सावधानी NONE OF THE ABOVE"
+        "रुकें",
+        "तेज धूप",
+        "रुकें, यातायात देखें और सावधानी से आगे बढ़ें",
+        "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Official Road Sign Rule: PROCEED WITH. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: PROCEED WITH. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: PROCEED WITH. मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: STOP, OBSERVE AND PROCEED WITH CAUTION.",
+      "te": "అధికారిక ట్రాఫిక్ సిగ్నల్ నిబంధన: ఆగి, ట్రాఫిక్‌ను గమనించి జాగ్రత్తగా వెళ్లాలి.",
+      "hi": "आधिकारिक ट्रैफिक सिग्नल नियम: रुकें, यातायात देखें और सावधानी से आगे बढ़ें।"
     }
   },
   {
@@ -811,28 +811,28 @@
     "options": {
       "en": [
         "NO PARKING",
-        "NO STOPPING OR",
-        "STANDING LENGTH LIMIT",
+        "NO STOPPING OR STANDING",
+        "LENGTH LIMIT",
         "SPEED LIMIT"
       ],
       "te": [
-        "నో పార్కింగ్ (వాహనం పార్క్ చేయరాదు)",
-        "కాదు ఆపడం OR",
-        "STANDING LENGTH LIMIT",
+        "నో పార్కింగ్",
+        "వాహనాన్ని ఆపడం లేదా నిలపడం నిషిద్ధం",
+        "పొడవు పరిమితి",
         "వేగ పరిమితి"
       ],
       "hi": [
-        "नो पार्किंग (गाड़ी खड़ी करना मना है)",
-        "नहीं रुकना OR",
-        "STANDING LENGTH LIMIT",
+        "पार्किंग निषेध",
+        "रुकना या खड़ा होना सख्त मना है",
+        "लंबाई सीमा",
         "गति सीमा"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Road Sign Rule: NO STOPPING OR. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: కాదు ఆపడం OR. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: नहीं रुकना OR. मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: NO STOPPING OR STANDING.",
+      "te": "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: వాహనాన్ని ఆపడం లేదా నిలపడం నిషిద్ధం.",
+      "hi": "आधिकारिक सड़क नियम के अनुसार सही उत्तर: रुकना या खड़ा होना सख्त मना है।"
     }
   },
   {
@@ -2370,27 +2370,27 @@
       "en": [
         "RAILWAY CROSSING",
         "BARRIER AHEAD",
-        "MEN AT WORK NONE OF THE",
-        "ABOVE"
+        "MEN AT WORK",
+        "NONE OF THE ABOVE"
       ],
       "te": [
-        "రైల్వే దాటడం / క్రాసింగ్",
+        "రైల్వే క్రాసింగ్",
         "ముందు చెక్‌పోస్ట్ / బారికేడ్ కలదు",
-        "MEN AT WORK NONE OF THE",
-        "ABOVE"
+        "రోడ్డు పని జరుగుచున్నది",
+        "పైవేవీ కావు"
       ],
       "hi": [
-        "रेलवे पार करना (क्रॉसिंग)",
-        "आगे बैरियर / चेकपोस्ट है",
-        "MEN AT WORK NONE OF THE",
-        "ABOVE"
+        "रेलवे क्रॉसिंग",
+        "आगे बैरियर है",
+        "सड़क पर काम चल रहा है",
+        "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Official Road Sign Rule: BARRIER AHEAD. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: ముందు చెక్‌పోస్ట్ / బారికేడ్ కలదు. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: आगे बैरियर / चेकपोस्ट है. मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: BARRIER AHEAD.",
+      "te": "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: ముందు చెక్‌పోస్ట్ / బారికేడ్ కలదు.",
+      "hi": "आधिकारिक सड़क नियम के अनुसार सही उत्तर: आगे बैरियर है।"
     }
   },
   {
