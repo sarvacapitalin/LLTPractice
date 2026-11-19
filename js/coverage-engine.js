@@ -93,7 +93,14 @@ export class CoverageEngine {
    * This guarantees that mock test attempts actively drive candidate readiness to 95%!
    */
   sampleMockExamQuestions() {
-    const shuffle = arr => arr.slice().sort(() => 0.5 - Math.random());
+    const shuffle = array => {
+      const arr = array.slice();
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    };
 
     const signs = this.questions.filter(q => q.category === "road_signs");
     const rules = this.questions.filter(q => q.category === "rules_of_road");
@@ -117,15 +124,23 @@ export class CoverageEngine {
       const shuffledMastered = shuffle(mastered);
 
       const selected = [];
-      // Prefer priority up to 70% or whatever is available
-      while (selected.length < count && shuffledPriority.length > 0) {
+      // 1. Target 70% from priority (unseen / probation / guessed)
+      const priorityTarget = Math.min(Math.round(count * 0.7), shuffledPriority.length);
+      while (selected.length < priorityTarget && shuffledPriority.length > 0) {
         selected.push(shuffledPriority.pop());
       }
-      // Fill remaining quota with mastered questions
+
+      // 2. Sample 30% from mastered questions (spaced revision)
       while (selected.length < count && shuffledMastered.length > 0) {
         selected.push(shuffledMastered.pop());
       }
-      // If pool was small, fallback
+
+      // 3. If mastered questions were insufficient, fill remainder from priority
+      while (selected.length < count && shuffledPriority.length > 0) {
+        selected.push(shuffledPriority.pop());
+      }
+
+      // 4. If pool was smaller than requested count, fallback
       while (selected.length < count && pool.length > 0) {
         const randQ = pool[Math.floor(Math.random() * pool.length)];
         if (!selected.includes(randQ)) selected.push(randQ);

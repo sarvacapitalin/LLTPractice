@@ -437,6 +437,7 @@ Call `sounds.ensureAudioActive()` on `btnStart`, `option-card` clicks, and `btnS
 
 ### Bug ID: BUG-10
 **Bug Shortname:** Biased Sampling and Flawed 70/30 Priority Distribution in Adaptive Sampler  
+**Status:** FIXED  
 **Description:**  
 In `js/coverage-engine.js`:
 1. Array shuffling uses `arr.slice().sort(() => 0.5 - Math.random())`, which is non-uniform and heavily biased.
@@ -483,6 +484,18 @@ In `js/coverage-engine.js`:
      selected.push(shuffledPriority.pop());
    }
    ```
+
+**Implemented fix:**  
+- In `js/coverage-engine.js`:
+  - Replaced the biased comparator sort `sort(() => 0.5 - Math.random())` with a uniform Fisher-Yates shuffle implementation.
+  - Replaced the unbounded priority `while` loop with a capped multi-stage quota allocation:
+    1. First samples up to 70% (`Math.round(count * 0.7)`) from the priority pool (`unseen`, `probation`, `isGuessed`).
+    2. Then samples the remaining 30% from the mastered pool for active spaced revision.
+    3. Gracefully backfills from whichever pool has remaining questions if either pool is depleted, ensuring the authentic 8-8-4 quota is always 100% fulfilled without deadlocks or shortfalls.
+- Updated python test runner mirror in `scripts/test_runner.py` to match the exact algorithm.
+- **Why this works & Test Scenario:**
+  - Guarantees unbiased random selection and ensures that candidates who have mastered questions receive spaced revision of those mastered questions during mock exams instead of having them completely excluded.
+  - Verified via Node.js automated test across varying user mastery stages (0% fresh user, 50% intermediate user, 100% expert user), validating that exactly 2 mastered signs, 2 mastered rules, and 1 mastered principle were drawn for the intermediate stage, while fresh and expert stages cleanly yielded full 20-question exams satisfying the 8-8-4 quota.
 
 ---
 

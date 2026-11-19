@@ -241,10 +241,13 @@ def sample_mock_exam(all_questions, question_states):
         random.shuffle(mastered)
 
         selected = []
-        while len(selected) < count and len(priority) > 0:
+        priority_target = min(round(count * 0.7), len(priority))
+        while len(selected) < priority_target and len(priority) > 0:
             selected.append(priority.pop())
         while len(selected) < count and len(mastered) > 0:
             selected.append(mastered.pop())
+        while len(selected) < count and len(priority) > 0:
+            selected.append(priority.pop())
         while len(selected) < count and len(pool) > 0:
             rand_q = random.choice(pool)
             if rand_q not in selected:
