@@ -1,7 +1,10 @@
-// js/i18n.js - Trilingual Internationalization Manager (English, Telugu, Hindi)
+// js/i18n.js - Trilingual Internationalization Manager (English active; Telugu & Hindi temporarily disabled)
 import { storage } from "./storage-engine.js";
 
-let currentLang = storage.getPreference("language", "en");
+// Force English exclusively while regional language datasets undergo authentic review
+let currentLang = "en";
+storage.setPreference("language", "en");
+
 let translations = {
   en: {},
   te: {},
@@ -25,17 +28,16 @@ export async function initI18n() {
 }
 
 export function setLanguage(lang) {
-  if (["en", "te", "hi"].includes(lang)) {
-    currentLang = lang;
-    storage.setPreference("language", lang);
-    document.documentElement.lang = lang;
-    updateDomTranslations();
-    window.dispatchEvent(new CustomEvent("languageChanged", { detail: lang }));
-  }
+  // Telugu and Hindi exams are temporarily disabled pending authentic official translation
+  currentLang = "en";
+  storage.setPreference("language", "en");
+  document.documentElement.lang = "en";
+  updateDomTranslations();
+  window.dispatchEvent(new CustomEvent("languageChanged", { detail: "en" }));
 }
 
 export function getCurrentLang() {
-  return currentLang;
+  return "en";
 }
 
 export function t(key, fallback = "") {
