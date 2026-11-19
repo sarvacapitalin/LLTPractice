@@ -581,6 +581,7 @@ wrapper?.addEventListener("click", (e) => {
 
 ### Bug ID: BUG-13
 **Bug Shortname:** Topic Practice Options Grid Fixed Inline 2-Column Layout Broken on Mobile  
+**Status:** FIXED  
 **Description:**  
 In Topic Practice, the 4 option buttons are rendered inside a container with an inline style:  
 `style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px;"`.  
@@ -604,6 +605,14 @@ Replace the inline grid style with the responsive `.options-grid` class:
 ```javascript
 let optionsHtml = `<div class="options-grid" style="margin-top: 14px;">`;
 ```
+
+**Implemented fix:**  
+- Updated `renderPracticeCard()` in `js/app.js`:
+  - Enforced the responsive `.options-grid` container class, which collapses from 2 columns on desktop to 1 full-width column on mobile viewports ($\le 768\text{px}$).
+  - Styled individual option buttons with `width: 100%; box-sizing: border-box; min-height: 48px;` and wrapped option text inside `<span style="flex: 1; word-break: break-word; line-height: 1.35;">`.
+- **Why this works & Test Scenario:**
+  - Prevents multi-line official RTA question options from squishing into narrow 140px vertical columns on mobile devices, ensuring compliant touch targets ($\ge 48\text{px}$) and clean readability.
+  - Verified with mobile viewport simulation: buttons neatly stack into a single column on viewports $\le 768\text{px}$ without text overflow or horizontal truncation.
 
 ---
 

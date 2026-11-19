@@ -972,7 +972,7 @@ function renderPracticeCard(q) {
   const opts = q.options[lang] || q.options.en;
   let optionsHtml = `<div class="options-grid" style="margin-top: 14px;">`;
   opts.forEach((optText, idx) => {
-    let btnStyle = "text-align: left; background: #FFFFFF; border: 1.5px solid #CBD5E1; border-radius: 8px; padding: 10px 12px; font-size: 0.92rem; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: all 0.2s;";
+    let btnStyle = "text-align: left; background: #FFFFFF; border: 1.5px solid #CBD5E1; border-radius: 8px; padding: 10px 14px; font-size: 0.92rem; font-weight: 500; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; min-height: 48px; transition: all 0.2s;";
     let disabledAttr = "";
 
     if (isAnswered) {
@@ -990,7 +990,7 @@ function renderPracticeCard(q) {
     optionsHtml += `
       <button class="practice-opt-btn" data-opt-idx="${idx}" ${disabledAttr} style="${btnStyle}">
         <span style="width: 26px; height: 26px; border-radius: 50%; background: #F1F5F9; border: 1px solid #CBD5E1; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0;">${idx + 1}</span>
-        <span>${optText}</span>
+        <span style="flex: 1; word-break: break-word; line-height: 1.35;">${optText}</span>
       </button>
     `;
   });
