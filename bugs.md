@@ -56,6 +56,7 @@ When `this.questions.length < 12`, `correctCount` can never reach 12. Consequent
 
 ### Bug ID: BUG-02
 **Bug Shortname:** Instant Visual Feedback Erasure in Topic Practice Due to Synchronous Re-Render  
+**Status:** FIXED  
 **Description:**  
 In Topic Practice (`tab-practice`), when a user taps an option button to test their knowledge, the option button is supposed to turn green (if correct) or red (if incorrect), and display the official explanation in `#practice-explanation-box`. However, the explanation and option colors flash for a single frame (0ms) and are instantly wiped out, leaving the question card reset to its initial unanswered state. The user is left unable to verify if their choice was right or read the explanation.
 
@@ -90,6 +91,15 @@ Inside `js/practice-engine.js` line 85, `answerPracticeQuestion()` synchronously
 Store the answered state on the active question or separate the matrix update from the card re-render:
 1. In `practice-engine.js`, record `selectedOption` and `answered` state on `this.activeAnswerState = { qId, selectedIndex, isCorrect }`.
 2. Either do not invoke full `renderPracticeCard()` inside `onStateChange` when triggered by an answer (only invoke `renderPracticeMatrix()` and `updateReadinessMeter()`), OR have `renderPracticeCard(q)` inspect `this.activeAnswerState` to render the answered state with disabled buttons, green/red highlight, and visible explanation box.
+
+**Implemented fix:**  
+- Updated `PracticeEngine` (`js/practice-engine.js`) to maintain `this.lastAnswers[questionId] = { selectedIndex, isCorrect }` and pass an action reason (`notifyUpdate("answer")` vs `"update"` / `"select"`).
+- In `js/app.js`, modified `practice.onStateChange` so that when `state.reason === "answer"`, it updates `updateReadinessMeter()` and `renderPracticeMatrix()` without blowing away the question card via `renderPracticeCard()`.
+- Enhanced `renderPracticeCard(q)` to inspect `practice.lastAnswers[q.id]`. When a question has been answered, buttons render with green/red borders and background styles, cursor defaults, disabled states, and the `#practice-explanation-box` stays visible with a dedicated `"🔄 Re-try"` button.
+- Updated the status badge container (`#practice-status-badge-wrap`) in real-time upon clicking an option to reflect immediate streak and mastery progression.
+- **Why this works & Test Scenario:**
+  - Separating the matrix/readiness sync from the question card DOM lifecycle prevents tearing down active button styles and hiding the explanation.
+  - Verified via automated unit test: answering question 1 emits `reason: "answer"`, registers `{ selectedIndex: 1, isCorrect: true }`, updates streak from 0 to 1, and maintains green/red feedback and official explanation on screen without blinking or resetting.
 
 ---
 

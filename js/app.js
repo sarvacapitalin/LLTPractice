@@ -236,6 +236,7 @@ function setupModals() {
 
   document.getElementById("btn-confirm-reset")?.addEventListener("click", () => {
     storage.resetReadiness();
+    if (practice.lastAnswers) practice.lastAnswers = {};
     if (resetModal) resetModal.style.display = "none";
     updateReadinessMeter();
     practice.notifyUpdate();
@@ -767,7 +768,9 @@ function initPracticeUI() {
   practice.onStateChange = state => {
     updateReadinessMeter();
     renderPracticeMatrix(state.filteredQuestions);
-    renderPracticeCard(state.selectedQuestion);
+    if (state.reason !== "answer") {
+      renderPracticeCard(state.selectedQuestion);
+    }
   };
 
   practice.notifyUpdate();
@@ -823,6 +826,8 @@ function renderPracticeCard(q) {
 
   const lang = getCurrentLang();
   const qState = storage.getQuestionState(q.id);
+  const lastAns = (practice.lastAnswers && practice.lastAnswers[q.id]) || null;
+  const isAnswered = lastAns !== null;
 
   let statusBadge = `<span style="background: #F1F5F9; color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">UNSEEN</span>`;
   if (qState.status === "mastered") {
@@ -841,10 +846,25 @@ function renderPracticeCard(q) {
   }
 
   const opts = q.options[lang] || q.options.en;
-  let optionsHtml = `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px;">`;
+  let optionsHtml = `<div class="options-grid" style="margin-top: 14px;">`;
   opts.forEach((optText, idx) => {
+    let btnStyle = "text-align: left; background: #FFFFFF; border: 1.5px solid #CBD5E1; border-radius: 8px; padding: 10px 12px; font-size: 0.92rem; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: all 0.2s;";
+    let disabledAttr = "";
+
+    if (isAnswered) {
+      disabledAttr = "disabled";
+      btnStyle += " cursor: default;";
+      if (idx === q.answerIndex) {
+        btnStyle += " border-color: #22C55E; background: #DCFCE7; color: #166534; font-weight: 700;";
+      } else if (idx === lastAns.selectedIndex && !lastAns.isCorrect) {
+        btnStyle += " border-color: #EF4444; background: #FEE2E2; color: #991B1B; font-weight: 600;";
+      }
+    } else {
+      btnStyle += " cursor: pointer;";
+    }
+
     optionsHtml += `
-      <button class="practice-opt-btn" data-opt-idx="${idx}" style="text-align: left; background: #FFFFFF; border: 1.5px solid #CBD5E1; border-radius: 8px; padding: 10px 12px; cursor: pointer; font-size: 0.92rem; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: all 0.2s;">
+      <button class="practice-opt-btn" data-opt-idx="${idx}" ${disabledAttr} style="${btnStyle}">
         <span style="width: 26px; height: 26px; border-radius: 50%; background: #F1F5F9; border: 1px solid #CBD5E1; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0;">${idx + 1}</span>
         <span>${optText}</span>
       </button>
@@ -853,19 +873,29 @@ function renderPracticeCard(q) {
   optionsHtml += `</div>`;
 
   const expText = q.explanation[lang] || q.explanation.en || "";
+  const expDisplay = isAnswered ? "block" : "none";
 
   container.innerHTML = `
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
       <span style="font-weight: 700; color: var(--secondary-blue); font-size: 0.88rem;">${q.id} • Question ${q.questionNumber}</span>
-      <div>${statusBadge}</div>
+      <div id="practice-status-badge-wrap">${statusBadge}</div>
     </div>
     <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 8px;">${q.text[lang] || q.text.en}</h3>
     ${imgHtml}
     ${optionsHtml}
-    <div id="practice-explanation-box" style="display: none; margin-top: 14px; background: #EFF6FF; border-left: 4px solid var(--secondary-blue); padding: 12px; border-radius: 4px; font-size: 0.9rem; color: #1E293B;">
-      <strong>Explanation:</strong> ${expText}
+    <div id="practice-explanation-box" style="display: ${expDisplay}; margin-top: 14px; background: #EFF6FF; border-left: 4px solid var(--secondary-blue); padding: 12px; border-radius: 4px; font-size: 0.9rem; color: #1E293B;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+        <div><strong>💡 Official Rule / Explanation:</strong> ${expText}</div>
+        <button id="btn-practice-retry-q" style="background: none; border: 1px solid var(--secondary-blue); color: var(--secondary-blue); border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; font-weight: 600; cursor: pointer; flex-shrink: 0;">🔄 Re-try</button>
+      </div>
     </div>
   `;
+
+  // Attach retry button handler if answered
+  container.querySelector("#btn-practice-retry-q")?.addEventListener("click", () => {
+    if (practice.lastAnswers) delete practice.lastAnswers[q.id];
+    renderPracticeCard(q);
+  });
 
   // Attach option click handlers
   container.querySelectorAll(".practice-opt-btn").forEach(btn => {
@@ -875,19 +905,35 @@ function renderPracticeCard(q) {
 
       container.querySelectorAll(".practice-opt-btn").forEach((b, bIdx) => {
         b.disabled = true;
+        b.style.cursor = "default";
         if (bIdx === q.answerIndex) {
           b.style.borderColor = "#22C55E";
           b.style.background = "#DCFCE7";
+          b.style.color = "#166534";
+          b.style.fontWeight = "700";
         } else if (bIdx === idx && !isCorrect) {
           b.style.borderColor = "#EF4444";
           b.style.background = "#FEE2E2";
+          b.style.color = "#991B1B";
+          b.style.fontWeight = "600";
         }
       });
 
       const expBox = document.getElementById("practice-explanation-box");
       if (expBox) expBox.style.display = "block";
 
+      // Instantly update status badge visually
       practice.answerPracticeQuestion(q.id, idx, false);
+
+      const statusBadgeWrap = document.getElementById("practice-status-badge-wrap");
+      const updatedState = storage.getQuestionState(q.id);
+      if (statusBadgeWrap) {
+        if (updatedState.status === "mastered") {
+          statusBadgeWrap.innerHTML = `<span style="background: #DCFCE7; color: #166534; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">MASTERED (Streak: ${updatedState.streak})</span>`;
+        } else if (updatedState.status === "probation") {
+          statusBadgeWrap.innerHTML = `<span style="background: #FEF3C7; color: #92400E; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">NEEDS PRACTICE (Streak: ${updatedState.streak})</span>`;
+        }
+      }
     });
   });
 }

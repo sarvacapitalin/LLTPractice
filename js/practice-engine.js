@@ -11,6 +11,7 @@ export class PracticeEngine {
     this.activeFilter = "all"; // 'all', 'unseen', 'probation', 'mastered', 'guessed'
     this.searchQuery = "";
     this.selectedQuestion = null;
+    this.lastAnswers = {}; // questionId -> { selectedIndex, isCorrect }
     this.onStateChange = null;
   }
 
@@ -82,18 +83,21 @@ export class PracticeEngine {
     if (isCorrect) sounds.playSuccess();
     else sounds.playFail();
 
+    this.lastAnswers[questionId] = { selectedIndex, isCorrect };
+
     storage.recordAttempt(questionId, isCorrect, isGuessed);
-    this.notifyUpdate();
+    this.notifyUpdate("answer");
     return isCorrect;
   }
 
-  notifyUpdate() {
+  notifyUpdate(reason = "update") {
     if (this.onStateChange) {
       this.onStateChange({
         filteredQuestions: this.getFilteredQuestions(),
         selectedQuestion: this.selectedQuestion,
         activeCategory: this.activeCategory,
-        activeFilter: this.activeFilter
+        activeFilter: this.activeFilter,
+        reason
       });
     }
   }
