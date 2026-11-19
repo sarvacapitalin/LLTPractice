@@ -131,8 +131,23 @@ function setupSoundToggle() {
     enabled = !enabled;
     storage.setPreference("soundEnabled", enabled);
     sounds.toggle(enabled);
+    if (enabled) {
+      sounds.ensureAudioActive();
+      sounds.playSelect();
+    }
     if (icon) icon.textContent = enabled ? "🔔" : "🔕";
   });
+
+  // Global user-gesture audio unlocker for modern autoplay-restricted browsers
+  const unlockAudio = () => {
+    sounds.ensureAudioActive();
+    window.removeEventListener("pointerdown", unlockAudio);
+    window.removeEventListener("keydown", unlockAudio);
+    window.removeEventListener("touchstart", unlockAudio);
+  };
+  window.addEventListener("pointerdown", unlockAudio, { passive: true });
+  window.addEventListener("keydown", unlockAudio, { passive: true });
+  window.addEventListener("touchstart", unlockAudio, { passive: true });
 }
 
 // Navigation Tabs
@@ -365,6 +380,7 @@ function initExamUI() {
   });
 
   btnStart?.addEventListener("click", () => {
+    sounds.ensureAudioActive();
     if (!datasetsLoaded || allQuestions.length === 0) {
       alert("Questions are still loading. Please wait a moment and try again.");
       return;
@@ -375,6 +391,7 @@ function initExamUI() {
   });
 
   btnRetake?.addEventListener("click", () => {
+    sounds.ensureAudioActive();
     if (guessCheckbox) guessCheckbox.checked = false;
     currentRenderedQId = null;
     exam.startNewExam();

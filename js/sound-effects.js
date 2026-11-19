@@ -6,9 +6,23 @@ export class SoundEffects {
   }
 
   init() {
-    if (!this.ctx && (window.AudioContext || window.webkitAudioContext)) {
-      const AudioCtx = window.AudioContext || window.webkitAudioContext;
-      this.ctx = new AudioCtx();
+    if (!this.ctx && typeof window !== "undefined" && (window.AudioContext || window.webkitAudioContext)) {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        this.ctx = new AudioCtx();
+      } catch (e) {
+        this.ctx = null;
+      }
+    }
+    if (this.ctx && this.ctx.state === "suspended" && typeof this.ctx.resume === "function") {
+      this.ctx.resume().catch(() => {});
+    }
+  }
+
+  ensureAudioActive() {
+    this.init();
+    if (this.ctx && this.ctx.state === "suspended" && typeof this.ctx.resume === "function") {
+      this.ctx.resume().catch(() => {});
     }
   }
 

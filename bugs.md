@@ -384,6 +384,7 @@ In `js/flashcards-engine.js`:
 
 ### Bug ID: BUG-09
 **Bug Shortname:** Web Audio API Sounds Silenced on Autoplay-Restricted Browsers Due to Unresumed AudioContext  
+**Status:** FIXED  
 **Description:**  
 Sound effects (clock ticking in the final 5 seconds, selection clicks, success chimes, and failure buzzers) fail to play in modern browsers (Chrome, Safari, iOS WebKit) because the synthesized `AudioContext` initializes in a `"suspended"` state and is never resumed inside a user gesture handler.
 
@@ -420,6 +421,17 @@ ensureAudioActive() {
 }
 ```
 Call `sounds.ensureAudioActive()` on `btnStart`, `option-card` clicks, and `btnSoundToggle`.
+
+**Implemented fix:**  
+- In `js/sound-effects.js`:
+  - Updated `init()` to verify `this.ctx.state === "suspended"` and trigger `this.ctx.resume()`.
+  - Added public `ensureAudioActive()` method to safely unlock and resume suspended audio contexts on user interaction.
+- In `js/app.js`:
+  - Added global user-gesture audio unlock listeners (`pointerdown`, `keydown`, `touchstart`) inside `setupSoundToggle()` that invoke `sounds.ensureAudioActive()` and unbind themselves upon first tap/click.
+  - Added direct `sounds.ensureAudioActive()` triggers inside `btnStart`, `btnRetake`, and sound toggle listeners.
+- **Why this works & Test Scenario:**
+  - Modern browser Autoplay policies require user gesture activation before an `AudioContext` can output sound. Unlocking on the first pointer/key interaction ensures timer countdown ticks and exam chimes play reliably even when triggered asynchronously by `setInterval`.
+  - Verified via Node.js automated test: simulated suspended `AudioContext`, invoked `ensureAudioActive()`, and confirmed transition to `running` with clean execution of `playTick()`, `playSelect()`, `playSuccess()`, and `playFail()`.
 
 ---
 
