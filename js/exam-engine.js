@@ -17,6 +17,7 @@ export class ExamEngine {
     this.history = []; // records per question
     this.isActive = false;
     this.isFinished = false;
+    this.isCustom = false;
     this.tutorMode = false; // When true: instant right/wrong feedback on submit
     this.isRevealed = false; // When true in tutorMode: answer is currently revealed
     this.onStateUpdate = null; // UI callback
@@ -84,6 +85,7 @@ export class ExamEngine {
     this.history = [];
     this.isActive = true;
     this.isFinished = false;
+    this.isCustom = false;
     this.isRevealed = false;
 
     this.startQuestion();
@@ -99,6 +101,7 @@ export class ExamEngine {
     this.history = [];
     this.isActive = true;
     this.isFinished = false;
+    this.isCustom = true;
     this.isRevealed = false;
 
     this.startQuestion();
@@ -111,14 +114,16 @@ export class ExamEngine {
       return;
     }
 
+    const totalQs = this.questions.length;
+    const passThreshold = this.isCustom ? Math.max(1, Math.ceil(totalQs * 0.6)) : 12;
+    const failThreshold = this.isCustom ? (totalQs - passThreshold + 1) : 9;
+
     // Check early stopping rule:
-    // Pass if 12 correct reached
-    if (this.correctCount >= 12) {
+    if (this.correctCount >= passThreshold) {
       this.finishExam("early_pass");
       return;
     }
-    // Fail if 9 wrong reached (max remaining correct = 20 - wrongCount < 12)
-    if (this.wrongCount >= 9) {
+    if (this.wrongCount >= failThreshold) {
       this.finishExam("early_fail");
       return;
     }
@@ -249,7 +254,9 @@ export class ExamEngine {
     this.isActive = false;
     this.isFinished = true;
 
-    const passed = this.correctCount >= 12;
+    const totalQs = this.questions.length;
+    const passThreshold = this.isCustom ? Math.max(1, Math.ceil(totalQs * 0.6)) : 12;
+    const passed = this.correctCount >= passThreshold;
     if (passed) {
       sounds.playSuccess();
     } else {
@@ -303,13 +310,17 @@ export class ExamEngine {
 
   getStateSnapshot() {
     const currentQ = this.questions[this.currentIndex] || null;
-    const passed = this.correctCount >= 12;
+    const totalQs = this.questions.length;
+    const passThreshold = this.isCustom ? Math.max(1, Math.ceil(totalQs * 0.6)) : 12;
+    const passed = this.correctCount >= passThreshold;
 
     return {
       isActive: this.isActive,
       isFinished: this.isFinished,
+      isCustom: this.isCustom,
+      passThreshold,
       currentIndex: this.currentIndex,
-      totalQuestions: this.questions.length,
+      totalQuestions: totalQs,
       currentQuestion: currentQ,
       selectedOption: this.selectedOption,
       timeLeft: this.timeLeft,

@@ -6,6 +6,7 @@ This document records all bugs identified during an in-depth audit of the codeba
 
 ### Bug ID: BUG-01
 **Bug Shortname:** Custom Exam & "Re-try Missed Questions" Mode Fails by Design Due to Hardcoded 12-Question Pass Gate  
+**Status:** FIXED  
 **Description:**  
 When a candidate finishes a mock exam with fewer than 12 missed questions (e.g., 2, 4, or 8 missed questions) and clicks the **"RE-TRY MISSED QUESTIONS (N)"** button, the custom exam can never be passed. Even if the candidate answers 100% of the missed questions correctly, the application marks the test as **FAILED ("TEST NOT CLEARED")**, plays the error sound effect, and displays *"You need at least 12 correct answers to pass."* Additionally, the workstation header displays `Question X of 20` hardcoded instead of `Question X of N`, and the quota counters show `/8`, `/8`, and `/4`.
 
@@ -41,6 +42,15 @@ When `this.questions.length < 12`, `correctCount` can never reach 12. Consequent
 3. In `finishExam()`, set `const passed = this.correctCount >= passThreshold;`.
 4. In `js/app.js`, update `qBadge.textContent` to `Question ${state.currentIndex + 1} of ${state.totalQuestions}`.
 5. In custom exam mode, hide or adapt the 8-8-4 quota counter to reflect the actual categories present in the retry set.
+
+**Implemented fix:**  
+- Updated `ExamEngine` (`js/exam-engine.js`) to set `this.isCustom = true` in `startCustomExam()` and `this.isCustom = false` in `startNewExam()`.
+- Computed dynamic passing threshold `passThreshold = this.isCustom ? Math.max(1, Math.ceil(totalQs * 0.6)) : 12` and fail threshold `failThreshold = this.isCustom ? (totalQs - passThreshold + 1) : 9` across `startQuestion()`, `finishExam()`, and `getStateSnapshot()`.
+- Updated `js/app.js` to render dynamic question headers (`Question ${state.currentIndex + 1} of ${state.totalQuestions}`), dynamic category quota denominators (`${seen}/${total}` based on questions present in the session), and custom pass/fail result descriptions indicating the dynamic pass mark.
+- **Why this works & Test Scenario:**
+  - For a standard 20-question STALL exam, `isCustom` is false, preserving the official 12-to-pass / 9-to-fail rule.
+  - For a retry session with $N < 20$ questions (e.g. 4 missed questions), `passThreshold` is $\lceil 4 \times 0.6 \rceil = 3$ questions. Answering 3 or 4 correctly now legitimately awards a PASS with success chimes and scorecard celebration.
+  - Verified via automated Node test where 4 dummy questions were initiated via `startCustomExam()`, answered correctly, and confirmed to transition to `isFinished: true`, `passed: true`, with `passThreshold: 3`.
 
 ---
 

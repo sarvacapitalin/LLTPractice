@@ -368,16 +368,21 @@ function initExamUI() {
 
       const totalQs = state.totalQuestions || 20;
       const percent = Math.round((state.correctCount / totalQs) * 100);
-      if (scoreText) scoreText.textContent = `Score: ${state.correctCount} / ${totalQs} (${percent}%) • Pass Mark: 12`;
+      const passMark = state.passThreshold || (state.isCustom ? Math.max(1, Math.ceil(totalQs * 0.6)) : 12);
+      if (scoreText) scoreText.textContent = `Score: ${state.correctCount} / ${totalQs} (${percent}%) • Pass Mark: ${passMark}`;
 
       if (state.passed) {
         if (badge) { badge.className = "result-badge-big pass"; badge.textContent = "✓"; }
         if (title) { title.className = "result-title pass"; title.textContent = t("result_pass", "CONGRATULATIONS! YOU PASSED"); }
-        if (desc) desc.textContent = t("result_pass_desc", "You reached the passing mark of 12 correct! You are well prepared for the real RTA exam.");
+        if (desc) desc.textContent = state.isCustom
+          ? `You passed the retry session with ${state.correctCount} out of ${totalQs} correct!`
+          : t("result_pass_desc", "You reached the passing mark of 12 correct! You are well prepared for the real RTA exam.");
       } else {
         if (badge) { badge.className = "result-badge-big fail"; badge.textContent = "✗"; }
         if (title) { title.className = "result-title fail"; title.textContent = t("result_fail", "TEST NOT CLEARED"); }
-        if (desc) desc.textContent = t("result_fail_desc", "You need at least 12 correct answers to pass. Review your missed questions below or in Topic Practice.");
+        if (desc) desc.textContent = state.isCustom
+          ? `You need at least ${passMark} correct out of ${totalQs} to clear this retry session.`
+          : t("result_fail_desc", "You need at least 12 correct answers to pass. Review your missed questions below or in Topic Practice.");
       }
 
       if (waBtn) {
@@ -438,7 +443,7 @@ function initExamUI() {
       const freshOptionsContainer = document.getElementById("exam-options-container");
 
       // Header badge
-      if (qBadge) qBadge.textContent = `Question ${state.currentIndex + 1} of 20`;
+      if (qBadge) qBadge.textContent = `Question ${state.currentIndex + 1} of ${state.totalQuestions}`;
 
       // Category quota counters
       let sSeen = 0, rSeen = 0, pSeen = 0;
@@ -450,9 +455,15 @@ function initExamUI() {
           else if (item.category === "general_principles") pSeen++;
         }
       }
-      if (countSigns) countSigns.textContent = `${Math.min(sSeen, 8)}/8`;
-      if (countRules) countRules.textContent = `${Math.min(rSeen, 8)}/8`;
-      if (countPrinciples) countPrinciples.textContent = `${Math.min(pSeen, 4)}/4`;
+      let sTotal = 0, rTotal = 0, pTotal = 0;
+      exam.questions.forEach(item => {
+        if (item.category === "road_signs") sTotal++;
+        else if (item.category === "rules_of_road") rTotal++;
+        else if (item.category === "general_principles") pTotal++;
+      });
+      if (countSigns) countSigns.textContent = `${Math.min(sSeen, sTotal)}/${sTotal}`;
+      if (countRules) countRules.textContent = `${Math.min(rSeen, rTotal)}/${rTotal}`;
+      if (countPrinciples) countPrinciples.textContent = `${Math.min(pSeen, pTotal)}/${pTotal}`;
 
       // Question text
       if (qText) qText.textContent = (q.text && q.text[lang]) || (q.text && q.text.en) || "";
