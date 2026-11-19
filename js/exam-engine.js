@@ -26,17 +26,56 @@ export class ExamEngine {
     this.tutorMode = Boolean(enabled);
   }
 
+  shuffleQuestionOptions(q) {
+    if (!q || !q.options) return q;
+    const opts = q.options.en || (Array.isArray(q.options) ? q.options : null);
+    if (!opts || opts.length < 2) return q;
+
+    const n = opts.length;
+    const indices = Array.from({ length: n }, (_, i) => i);
+    for (let i = n - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+
+    const newAnswerIndex = indices.indexOf(q.answerIndex);
+
+    let newOptions;
+    if (Array.isArray(q.options)) {
+      newOptions = indices.map(i => q.options[i]);
+    } else {
+      newOptions = {};
+      for (const [lang, arr] of Object.entries(q.options)) {
+        if (Array.isArray(arr)) {
+          newOptions[lang] = indices.map(i => arr[i] || "");
+        } else {
+          newOptions[lang] = arr;
+        }
+      }
+    }
+
+    return {
+      ...q,
+      options: newOptions,
+      answerIndex: newAnswerIndex,
+      originalAnswerIndex: q.answerIndex
+    };
+  }
+
   startNewExam() {
-    this.questions = coverage.sampleMockExamQuestions();
+    const sampled = coverage.sampleMockExamQuestions();
 
     // Guard: if questions failed to load, don't start
-    if (!this.questions || this.questions.length === 0) {
+    if (!sampled || sampled.length === 0) {
       console.error("[ExamEngine] startNewExam: No questions available — datasets not loaded!");
       this.isActive = false;
       this.isFinished = false;
       this.notifyUpdate();
       return;
     }
+
+    // Dynamically shuffle options for every question matching authentic STALL computerized exam behavior
+    this.questions = sampled.map(q => this.shuffleQuestionOptions(q));
 
     this.currentIndex = 0;
     this.selectedOption = null;
@@ -52,7 +91,7 @@ export class ExamEngine {
 
   startCustomExam(customQuestions) {
     if (!customQuestions || customQuestions.length === 0) return;
-    this.questions = customQuestions.slice();
+    this.questions = customQuestions.map(q => this.shuffleQuestionOptions(q));
     this.currentIndex = 0;
     this.selectedOption = null;
     this.correctCount = 0;
