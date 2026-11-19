@@ -75,8 +75,10 @@ export class ExamEngine {
       return;
     }
 
-    // Dynamically shuffle options for every question matching authentic STALL computerized exam behavior
-    this.questions = sampled.map(q => this.shuffleQuestionOptions(q));
+    // Maintain authentic STALL fixed option sequence (1, 2, 3, 4) matching physical kiosk keys
+    // and official government answer explanations, with optional toggle via user preference
+    const shouldShuffle = storage.getPreference("shuffleOptions", false);
+    this.questions = shouldShuffle ? sampled.map(q => this.shuffleQuestionOptions(q)) : sampled.slice();
 
     this.currentIndex = 0;
     this.selectedOption = null;
@@ -93,7 +95,8 @@ export class ExamEngine {
 
   startCustomExam(customQuestions) {
     if (!customQuestions || customQuestions.length === 0) return;
-    this.questions = customQuestions.map(q => this.shuffleQuestionOptions(q));
+    const shouldShuffle = storage.getPreference("shuffleOptions", false);
+    this.questions = shouldShuffle ? customQuestions.map(q => this.shuffleQuestionOptions(q)) : customQuestions.slice();
     this.currentIndex = 0;
     this.selectedOption = null;
     this.correctCount = 0;

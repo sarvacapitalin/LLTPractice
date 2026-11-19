@@ -154,6 +154,7 @@ Call `this._syncSelectedQuestion()` at the start of `setCategory()`, `setFilter(
 
 ### Bug ID: BUG-04
 **Bug Shortname:** Random Option Shuffling Contradicts Official STALL Specification and Distorts Question Explanations  
+**Status:** FIXED  
 **Description:**  
 In `js/exam-engine.js`, every mock exam question has its 4 multiple-choice options shuffled using `shuffleQuestionOptions()`. However:
 1. The official documentation in `index.html` (JSON-LD Schema line 126 and FAQ line 515) and `llms.txt` explicitly state: *"Options remain in the exact same fixed order (1, 2, 3, 4) because the STALL kiosk uses a physical numeric keypad mapped directly to the official government question bank answer keys. Only the selection of the 20 questions is randomized."*
@@ -180,6 +181,15 @@ In `js/exam-engine.js` lines 29–63 and lines 78 & 94:
 Preserve the authentic STALL fixed option order:
 1. Remove `this.shuffleQuestionOptions(q)` calls from `startNewExam()` and `startCustomExam()`, or gate option shuffling behind an optional "Advanced Practice / Shuffle Options" user setting (defaulting to OFF).
 2. Align the simulator behavior with the real RTO kiosk hardware numeric mapping and the published FAQ specification.
+
+**Implemented fix:**  
+- Updated `startNewExam()` and `startCustomExam()` in `js/exam-engine.js` to preserve the original fixed option order `(1, 2, 3, 4)` by default, matching physical STALL kiosk numeric keypads and the official published RTA FAQ specification.
+- Added preference check `storage.getPreference("shuffleOptions", false)` allowing candidates who explicitly opt into dynamic option shuffling for advanced practice to do so without breaking default fidelity.
+- Retained `shuffleQuestionOptions(q)` as an available utility method so no breaking API changes were introduced.
+- **Why this works & Test Scenario:**
+  - Prevents answer mismatch on questions `TS_RS_086`–`TS_RS_090` where official RTA explanations cite specific option numbers (e.g. *"Official RTA Key: Option 2 ('HE INTENDS TO MOVE OUT TO THE RIGHT OR TURN RIGHT')"*).
+  - Keeps Topic Practice and Mock Exam option orders completely consistent.
+  - Verified via automated Node.js test: loaded questions `TS_RS_086` through `TS_RS_090` into `ExamEngine.startNewExam()`; all options remained in exact 1-to-1 canonical order with correct indexes matching the question bank keys. Verified toggling `shuffleOptions: true` in user preferences properly enables shuffling when requested.
 
 ---
 
