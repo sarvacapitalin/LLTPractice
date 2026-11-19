@@ -105,6 +105,7 @@ Store the answered state on the active question or separate the matrix update fr
 
 ### Bug ID: BUG-03
 **Bug Shortname:** Stale Question Displayed in Topic Practice When Switching Category, Status Filter, or Searching  
+**Status:** FIXED  
 **Description:**  
 In Topic Practice, when a user switches between categories (e.g. from "Road Signs" to "Traffic Rules"), changes the status filter (e.g. to "Unseen Only"), or types a search query, the Question Navigator matrix updates to show the filtered questions, but the main question card continues displaying the previously selected question from the old category or filter. Furthermore, if a search query or filter returns 0 matching questions, the card still shows the stale question instead of an empty state.
 
@@ -140,6 +141,14 @@ _syncSelectedQuestion() {
 ```
 Call `this._syncSelectedQuestion()` at the start of `setCategory()`, `setFilter()`, `setSearch()`, and `notifyUpdate()`. In `app.js`, if `q === null`, render a clean empty-state card:
 `<div class="empty-state">No questions found matching your filter or search criteria.</div>`.
+
+**Implemented fix:**  
+- Implemented `_syncSelectedQuestion()` in `PracticeEngine` (`js/practice-engine.js`) and invoked it in `setQuestions()`, `setCategory()`, `setFilter()`, `setSearch()`, and `notifyUpdate()`.
+- If the current selected question does not belong to the updated filter set, the engine automatically selects `filtered[0]`. If no questions match the search/filter criteria, `this.selectedQuestion` cleanly resolves to `null`.
+- Updated `renderPracticeCard(q)` in `js/app.js` to render an accessible empty-state card (`"🔍 No questions found"`) when `q` is `null`, guiding the user to clear their search or reset filters.
+- **Why this works & Test Scenario:**
+  - Guarantees the question card and Question Navigator matrix chip selection stay 100% in sync across category buttons, search inputs, and status filter dropdowns.
+  - Verified via Node.js automated test: selecting `TS_RS_001` and switching category to `rules_of_road` automatically promoted `TS_RR_001`; searching `xyznonexistent` yielded `selectedQuestion = null`, and clearing search immediately restored `TS_RR_001`.
 
 ---
 

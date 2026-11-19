@@ -17,25 +17,35 @@ export class PracticeEngine {
 
   setQuestions(allQuestions) {
     this.questions = allQuestions;
-    if (this.questions.length > 0 && !this.selectedQuestion) {
-      this.selectedQuestion = this.questions[0];
-    }
+    this._syncSelectedQuestion();
     this.notifyUpdate();
   }
 
   setCategory(category) {
     this.activeCategory = category;
+    this._syncSelectedQuestion();
     this.notifyUpdate();
   }
 
   setFilter(filter) {
     this.activeFilter = filter;
+    this._syncSelectedQuestion();
     this.notifyUpdate();
   }
 
   setSearch(query) {
     this.searchQuery = query.toLowerCase().trim();
+    this._syncSelectedQuestion();
     this.notifyUpdate();
+  }
+
+  _syncSelectedQuestion() {
+    const filtered = this.getFilteredQuestions();
+    if (filtered.length === 0) {
+      this.selectedQuestion = null;
+    } else if (!this.selectedQuestion || !filtered.some(q => q.id === this.selectedQuestion.id)) {
+      this.selectedQuestion = filtered[0];
+    }
   }
 
   selectQuestion(qId) {
@@ -91,6 +101,9 @@ export class PracticeEngine {
   }
 
   notifyUpdate(reason = "update") {
+    if (reason !== "answer") {
+      this._syncSelectedQuestion();
+    }
     if (this.onStateChange) {
       this.onStateChange({
         filteredQuestions: this.getFilteredQuestions(),

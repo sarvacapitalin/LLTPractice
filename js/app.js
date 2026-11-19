@@ -822,7 +822,18 @@ function renderPracticeMatrix(filteredList) {
 
 function renderPracticeCard(q) {
   const container = document.getElementById("practice-active-q-view");
-  if (!container || !q) return;
+  if (!container) return;
+
+  if (!q) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 40px 16px; color: var(--text-secondary);">
+        <div style="font-size: 2.2rem; margin-bottom: 8px;">🔍</div>
+        <strong style="display: block; font-size: 1.05rem; color: var(--primary-navy); margin-bottom: 6px;">No questions found</strong>
+        <p style="font-size: 0.88rem; margin: 0; color: var(--text-muted);">No questions match your current search or status filter. Try clearing your search keyword or switching filters.</p>
+      </div>
+    `;
+    return;
+  }
 
   const lang = getCurrentLang();
   const qState = storage.getQuestionState(q.id);
