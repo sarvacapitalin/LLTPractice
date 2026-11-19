@@ -247,6 +247,7 @@ Also ensure `guessCheckbox.checked = false;` is executed inside `setupKeyboardHo
 
 ### Bug ID: BUG-06
 **Bug Shortname:** Background Exam Timer and Keyboard Hotkeys Continue Active When Navigating Away from Exam Tab  
+**Status:** FIXED  
 **Description:**  
 When an exam is in progress and the candidate switches to another tab (such as **"📚 Topic Practice"**, **"🗂️ Sign Flashcards"**, or **"🏢 Hyderabad RTO Guide"**):
 1. The 30-second question timer does not pause. Every 30 seconds, `handleTimeout()` triggers, failing questions and decrementing candidate streaks in `localStorage` in the background. After ~4.5 minutes, the exam fails silently with 9 wrong answers.
@@ -276,6 +277,17 @@ When an exam is in progress and the candidate switches to another tab (such as *
    if (!isExamTabActive || isTyping || !exam.isActive || exam.isFinished) return;
    ```
 2. When switching away from `tab-exam` while `exam.isActive` is true, either prompt the user with a confirmation dialog to abandon the test, or pause the timer until returning to the tab.
+
+**Implemented fix:**  
+- Added `pauseTimer()` and `resumeTimer()` methods to `ExamEngine` (`js/exam-engine.js`), managing `this.isPaused` state and clearing/restoring the countdown interval cleanly.
+- In `js/app.js`:
+  - Updated `setupTabs()` to invoke `exam.pauseTimer()` whenever switching away from `tab-exam` during an active exam, and `exam.resumeTimer()` when switching back to `tab-exam`.
+  - Added a `visibilitychange` listener to automatically pause the exam timer when the browser tab is hidden or minimized and resume when visible on the exam tab.
+  - Hardened `setupKeyboardHotkeys()` to verify that the exam tab is active (`#tab-exam.active`) and that neither `document.activeElement` nor `e.target` is an `INPUT`, `TEXTAREA`, or content-editable element, plus prevented default spacebar page scrolling during audio read.
+- **Why this works & Test Scenario:**
+  - Candidates can safely navigate across tabs or switch browser windows without background timeout penalties destroying their exam or corrupting question streaks.
+  - Keystrokes in search bars or inputs never leak into the exam engine.
+  - Verified via Node.js test simulating keypress events during text inputs and tab switches (hotkey ignored when outside exam tab or inside input; hotkey executed when active on exam tab). Verified timer pause/resume cycle with `pauseTimer()` and `resumeTimer()`.
 
 ---
 

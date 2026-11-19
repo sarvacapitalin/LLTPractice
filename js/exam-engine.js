@@ -18,6 +18,7 @@ export class ExamEngine {
     this.isActive = false;
     this.isFinished = false;
     this.isCustom = false;
+    this.isPaused = false;
     this.tutorMode = false; // When true: instant right/wrong feedback on submit
     this.isRevealed = false; // When true in tutorMode: answer is currently revealed
     this.onStateUpdate = null; // UI callback
@@ -222,6 +223,43 @@ export class ExamEngine {
     }
   }
 
+  pauseTimer() {
+    if (!this.isActive || this.isFinished) return;
+    this.isPaused = true;
+    if (this.timer) {
+      clearInterval(this.timer);
+      this.timer = null;
+    }
+    speech.stop();
+  }
+
+  resumeTimer() {
+    if (!this.isActive || this.isFinished || !this.isPaused) return;
+    this.isPaused = false;
+    if (this.isRevealed) return; // In tutor mode pause, timer remains stopped until Continue
+
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      this.timeLeft -= 1;
+      if (this.timeLeft <= 5) {
+        sounds.playTick();
+      }
+
+      if (this.timeLeft <= 0) {
+        clearInterval(this.timer);
+        this.timer = null;
+        this.handleTimeout();
+      } else {
+        try {
+          this.notifyUpdate();
+        } catch (err) {
+          console.error("Error in timer notifyUpdate:", err);
+        }
+      }
+    }, 1000);
+    this.notifyUpdate();
+  }
+
   continueToNext() {
     if (!this.isActive || this.isFinished) return;
     this.isRevealed = false;
@@ -321,6 +359,7 @@ export class ExamEngine {
       isActive: this.isActive,
       isFinished: this.isFinished,
       isCustom: this.isCustom,
+      isPaused: this.isPaused,
       passThreshold,
       currentIndex: this.currentIndex,
       totalQuestions: totalQs,

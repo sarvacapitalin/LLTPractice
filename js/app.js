@@ -139,6 +139,15 @@ function setupTabs() {
   const tabs = document.querySelectorAll(".nav-tab");
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
+      const targetId = tab.getAttribute("data-tab");
+
+      // Pause active exam timer if switching away from the exam tab; resume if returning
+      if (targetId !== "tab-exam" && exam.isActive && !exam.isFinished) {
+        exam.pauseTimer();
+      } else if (targetId === "tab-exam" && exam.isActive && !exam.isFinished) {
+        exam.resumeTimer();
+      }
+
       tabs.forEach(t => {
         t.classList.remove("active");
         t.setAttribute("aria-selected", "false");
@@ -146,7 +155,6 @@ function setupTabs() {
       tab.classList.add("active");
       tab.setAttribute("aria-selected", "true");
 
-      const targetId = tab.getAttribute("data-tab");
       document.querySelectorAll(".tab-pane").forEach(pane => {
         pane.classList.remove("active");
       });
@@ -169,6 +177,20 @@ function setupTabs() {
       // Pause audio on tab change
       speech.stop();
     });
+  });
+
+  // Pause active exam timer when browser tab loses focus / window is minimized
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      if (exam.isActive && !exam.isFinished) {
+        exam.pauseTimer();
+      }
+    } else {
+      const examTab = document.getElementById("tab-exam");
+      if (examTab && examTab.classList.contains("active") && exam.isActive && !exam.isFinished) {
+        exam.resumeTimer();
+      }
+    }
   });
 }
 
@@ -248,6 +270,15 @@ function setupModals() {
 // Keyboard shortcuts (1-4 for options, Enter for confirm)
 function setupKeyboardHotkeys() {
   window.addEventListener("keydown", e => {
+    // Only handle hotkeys if exam tab is active and candidate is not typing in an input/textarea
+    const examTab = document.getElementById("tab-exam");
+    const isExamTabActive = examTab && examTab.classList.contains("active");
+    const activeEl = document.activeElement || e.target;
+    const isTyping = (activeEl && (activeEl.tagName === "INPUT" || activeEl.tagName === "TEXTAREA" || activeEl.isContentEditable)) ||
+                     (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.isContentEditable));
+
+    if (!isExamTabActive || isTyping) return;
+
     // If exam is active
     if (exam.isActive && !exam.isFinished) {
       if (["1", "2", "3", "4"].includes(e.key)) {
@@ -263,6 +294,7 @@ function setupKeyboardHotkeys() {
         if (guessBox) guessBox.checked = false;
         exam.confirmAndSubmit(isGuessed);
       } else if (e.key === " " || e.key === "Spacebar") {
+        e.preventDefault();
         // Spacebar toggles audio reading
         exam.readCurrentQuestion();
       }
