@@ -1,7 +1,7 @@
 {
-  "report_id": "QA_RUN_1795115521",
-  "generated_at": "2026-11-19T19:12:01.464377Z",
-  "duration_seconds": 0.041,
+  "report_id": "QA_RUN_1795116629",
+  "generated_at": "2026-11-19T19:30:29.191140Z",
+  "duration_seconds": 0.044,
   "overall_status": "PASSED",
   "summary": {
     "total_suites": 9,
@@ -370,7 +370,7 @@
           "test": "scenario_images_exist_and_non_zero",
           "status": "PASSED",
           "details": {
-            "total_scenarios": 20
+            "total_scenarios": 22
           }
         },
         {
