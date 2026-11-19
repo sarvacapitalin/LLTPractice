@@ -1035,8 +1035,25 @@ function initFlashcardsUI() {
   const btnKnow = document.getElementById("btn-fc-mastered");
   const btnStudy = document.getElementById("btn-fc-study-again");
 
+  // Ensure empty-view element exists inside cardBox
+  let emptyView = document.getElementById("fc-empty-view");
+  if (!emptyView && cardBox) {
+    emptyView = document.createElement("div");
+    emptyView.id = "fc-empty-view";
+    emptyView.style.display = "none";
+    emptyView.style.flexDirection = "column";
+    emptyView.style.alignItems = "center";
+    emptyView.style.gap = "12px";
+    emptyView.style.padding = "20px";
+    emptyView.style.textAlign = "center";
+    cardBox.appendChild(emptyView);
+  }
+
   cardBox?.addEventListener("click", () => {
-    flashcards.flipCard();
+    const list = flashcards.getFilteredSigns();
+    if (list.length > 0) {
+      flashcards.flipCard();
+    }
   });
 
   btnPrev?.addEventListener("click", () => flashcards.prevCard());
@@ -1076,10 +1093,46 @@ function initFlashcardsUI() {
     const signDesc = document.getElementById("fc-sign-desc");
     const counter = document.getElementById("fc-counter");
 
-    if (counter) counter.textContent = `Card ${state.currentIndex + 1} of ${state.total}`;
-
     const sign = state.currentSign;
-    if (!sign) return;
+
+    if (!sign || state.total === 0) {
+      if (counter) counter.textContent = "0 of 0";
+      if (frontView) frontView.style.display = "none";
+      if (backView) backView.style.display = "none";
+      if (emptyView) {
+        emptyView.style.display = "flex";
+        emptyView.innerHTML = `
+          <div style="font-size: 3rem;">🎉</div>
+          <h3 style="font-size: 1.25rem; color: #166534; font-weight: 800; margin: 0;">All Signs in this Category Mastered!</h3>
+          <p style="font-size: 0.9rem; color: #475569; margin: 0; max-width: 360px;">You've achieved mastery on all signs under this filter. Select "All (94)" or another category to continue drilling.</p>
+        `;
+      }
+      if (btnPrev) { btnPrev.disabled = true; btnPrev.style.opacity = "0.5"; btnPrev.style.cursor = "not-allowed"; }
+      if (btnNext) { btnNext.disabled = true; btnNext.style.opacity = "0.5"; btnNext.style.cursor = "not-allowed"; }
+      if (btnKnow) { btnKnow.disabled = true; btnKnow.style.opacity = "0.5"; btnKnow.style.cursor = "not-allowed"; }
+      if (btnStudy) { btnStudy.disabled = true; btnStudy.style.opacity = "0.5"; btnStudy.style.cursor = "not-allowed"; }
+      return;
+    }
+
+    if (emptyView) emptyView.style.display = "none";
+    if (btnKnow) { btnKnow.disabled = false; btnKnow.style.opacity = "1"; btnKnow.style.cursor = "pointer"; }
+    if (btnStudy) { btnStudy.disabled = false; btnStudy.style.opacity = "1"; btnStudy.style.cursor = "pointer"; }
+
+    if (btnPrev) {
+      const isFirst = state.currentIndex === 0;
+      btnPrev.disabled = isFirst;
+      btnPrev.style.opacity = isFirst ? "0.5" : "1";
+      btnPrev.style.cursor = isFirst ? "not-allowed" : "pointer";
+    }
+
+    if (btnNext) {
+      const isLast = state.currentIndex >= state.total - 1;
+      btnNext.disabled = isLast;
+      btnNext.style.opacity = isLast ? "0.5" : "1";
+      btnNext.style.cursor = isLast ? "not-allowed" : "pointer";
+    }
+
+    if (counter) counter.textContent = `Card ${state.currentIndex + 1} of ${state.total}`;
 
     const lang = getCurrentLang();
     const name = sign.options[lang] ? sign.options[lang][sign.answerIndex] : sign.options.en[sign.answerIndex];

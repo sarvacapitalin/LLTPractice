@@ -332,6 +332,7 @@ However, the QR code rendered in the modal is a synthetic mock: `js/qrcode-gener
 
 ### Bug ID: BUG-08
 **Bug Shortname:** Flashcard Progression and Counter Frozen on Last Card and Empty Filters  
+**Status:** FIXED  
 **Description:**  
 In the Sign Flashcards module (`tab-flashcards`):
 1. When on the last card of any filtered set (`currentIndex === total - 1`), tapping **"I Know This"** or **"Study Again"** records the attempt in `storage`, but does not advance or refresh the card view. The card remains flipped or frozen without user feedback.
@@ -365,6 +366,19 @@ In `js/flashcards-engine.js`:
    }
    ```
 3. Disable the `Previous` button when `currentIndex === 0` and disable `Next` button when `currentIndex === state.total - 1`.
+
+**Implemented fix:**  
+- In `js/flashcards-engine.js`:
+  - Implemented `_clampIndex()` to safeguard `this.currentIndex` within `[0, list.length - 1]`, preventing out-of-bounds array access.
+  - Updated `nextCard()`, `prevCard()`, `markMastered()`, and `markNeedsPractice()` to flip the card back to the front and call `this.notifyUpdate()` unconditionally, even at boundary indices.
+  - Handled the `"unmastered"` filter dynamic list reduction so that when a card is mastered, the subsequent card slides into view smoothly.
+- In `js/app.js`:
+  - Added an empty celebration state `#fc-empty-view` inside `#flashcard-box` displaying `"🎉 All Signs in this Category Mastered!"` when `state.total === 0` or `sign === null`, setting counter to `"0 of 0"`, and disabling action buttons with visual opacity feedback.
+  - Dynamically disabled the `Previous` button at `currentIndex === 0` and the `Next` button at `currentIndex === state.total - 1`.
+  - Guarded card flip click listeners against empty states.
+- **Why this works & Test Scenario:**
+  - Prevents stale card graphics and counter anomalies (`Card 1 of 0`) when candidate achieves mastery over the flashcard set.
+  - Verified via Node.js automated test: stepped through boundary cards, verified `prevCard()` at 0 clamped at 0, verified `nextCard()` and `markMastered()` at last card updated state and flipped to front; simulated progressively mastering all unmastered cards until count reached 0, correctly producing `currentSign: null, total: 0`.
 
 ---
 

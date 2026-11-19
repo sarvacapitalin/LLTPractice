@@ -15,6 +15,7 @@ export class FlashcardsEngine {
 
   setSigns(signs) {
     this.signs = signs;
+    this._clampIndex();
     this.notifyUpdate();
   }
 
@@ -29,6 +30,17 @@ export class FlashcardsEngine {
     });
   }
 
+  _clampIndex() {
+    const list = this.getFilteredSigns();
+    if (list.length === 0) {
+      this.currentIndex = 0;
+    } else if (this.currentIndex >= list.length) {
+      this.currentIndex = list.length - 1;
+    } else if (this.currentIndex < 0) {
+      this.currentIndex = 0;
+    }
+  }
+
   setFilter(filter) {
     this.activeFilter = filter;
     this.currentIndex = 0;
@@ -37,6 +49,8 @@ export class FlashcardsEngine {
   }
 
   flipCard() {
+    const list = this.getFilteredSigns();
+    if (list.length === 0) return;
     this.isFlipped = !this.isFlipped;
     sounds.playSelect();
     this.notifyUpdate();
@@ -47,16 +61,18 @@ export class FlashcardsEngine {
     if (this.currentIndex < list.length - 1) {
       this.currentIndex += 1;
       this.isFlipped = false;
-      this.notifyUpdate();
     }
+    this._clampIndex();
+    this.notifyUpdate();
   }
 
   prevCard() {
     if (this.currentIndex > 0) {
       this.currentIndex -= 1;
       this.isFlipped = false;
-      this.notifyUpdate();
     }
+    this._clampIndex();
+    this.notifyUpdate();
   }
 
   markMastered(signId) {
@@ -64,13 +80,29 @@ export class FlashcardsEngine {
     // require streak 2
     storage.recordAttempt(signId, true, false);
     sounds.playSuccess();
-    this.nextCard();
+    this.isFlipped = false;
+
+    if (this.activeFilter !== "unmastered") {
+      const list = this.getFilteredSigns();
+      if (this.currentIndex < list.length - 1) {
+        this.currentIndex += 1;
+      }
+    }
+    this._clampIndex();
+    this.notifyUpdate();
   }
 
   markNeedsPractice(signId) {
     storage.recordAttempt(signId, false, false);
     sounds.playFail();
-    this.nextCard();
+    this.isFlipped = false;
+
+    const list = this.getFilteredSigns();
+    if (this.currentIndex < list.length - 1) {
+      this.currentIndex += 1;
+    }
+    this._clampIndex();
+    this.notifyUpdate();
   }
 
   readCurrentSign() {
@@ -84,6 +116,7 @@ export class FlashcardsEngine {
   }
 
   notifyUpdate() {
+    this._clampIndex();
     if (this.onStateChange) {
       const list = this.getFilteredSigns();
       this.onStateChange({
