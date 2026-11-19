@@ -4377,34 +4377,34 @@
     "image": null,
     "text": {
       "en": "WHICH IS ILLEGAL WHILE DRIVING A FOUR WHEELER VEHICLE?",
-      "te": "WHICH IS ILLEGAL WHILE డ్రైవింగ్ A FOUR WHEELER వాహనం",
-      "hi": "WHICH IS ILLEGAL WHILE ड्राइविंग A FOUR WHEELER वाहन"
+      "te": "నాలుగు చక్రాల వాహనాన్ని నడుపుతున్నప్పుడు ఈ క్రింది వాటిలో ఏది చట్టవిరుద్ధం?",
+      "hi": "चार पहिया वाहन चलाते समय इनमें से क्या गैरकानूनी है?"
     },
     "options": {
       "en": [
-        "IMPROPER WORKING OF ALL",
-        "LIGHTS & INDICATORS.",
-        "NOT USING SEAT BELTS. BOTH OF THE ABOVE.",
+        "IMPROPER WORKING OF ALL LIGHTS & INDICATORS.",
+        "NOT USING SEAT BELTS.",
+        "BOTH OF THE ABOVE.",
         "NONE OF THE ABOVE"
       ],
       "te": [
-        "IMPROPER WORKING OF ALL",
-        "లైట్లు & INDICATORS.",
-        "NOT USING SEAT BELTS. BOTH OF THE ABOVE.",
+        "అన్ని లైట్లు మరియు ఇండికేటర్లు సరిగ్గా పనిచేయకపోవడం.",
+        "సీట్ బెల్ట్ ధరించకపోవడం.",
+        "పై రెండూ.",
         "పైవేవీ కావు"
       ],
       "hi": [
-        "IMPROPER WORKING OF ALL",
-        "बत्तियां & INDICATORS.",
-        "NOT USING SEAT BELTS. BOTH OF THE ABOVE.",
+        "सभी लाइटों और संकेतकों का ठीक से काम न करना।",
+        "सीट बेल्ट न लगाना।",
+        "उपरोक्त दोनों।",
         "इनमें से कोई नहीं"
       ]
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Certified Driving Principle: NOT USING SEAT BELTS. BOTH OF THE ABOVE.. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: NOT USING SEAT BELTS. BOTH OF THE ABOVE.. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: NOT USING SEAT BELTS. BOTH OF THE ABOVE.. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: BOTH OF THE ABOVE. Defective lighting and failure to wear seat belts are both illegal offences under MV Act.",
+      "te": "ధృవీకరించబడిన డ్రైవింగ్ సూత్రం: పై రెండూ. లైట్లు పనిచేయకపోవడం మరియు సీట్ బెల్ట్ పెట్టుకోకపోవడం రెండూ చట్టవిరుద్ధం.",
+      "hi": "प्रमाणित ड्राइविंग सिद्धांत: उपरोक्त दोनों। बिना काम करती लाइटों और बिना सीट बेल्ट के वाहन चलाना गैरकानूनी है।"
     }
   },
   {
@@ -4947,34 +4947,34 @@
     "image": null,
     "text": {
       "en": "WHEN MAY A DRIVER LEND HIS DRIVING LICENCE TO ANOTHER PERSON?",
-      "te": "WHEN MAY A డ్రైవర్ LEND HIS డ్రైవింగ్ లైసెన్స్ TO ANOTHER PERSON?",
-      "hi": "WHEN MAY A चालक (ड्राइवर) LEND HIS ड्राइविंग लाइसेंस TO ANOTHER PERSON?"
+      "te": "ఒక డ్రైవర్ తన డ్రైవింగ్ లైసెన్స్‌ను మరొక వ్యక్తికి ఎప్పుడు ఇవ్వవచ్చు?",
+      "hi": "एक चालक अपना ड्राइविंग लाइसेंस किसी अन्य व्यक्ति को कब उधार दे सकता है?"
     },
     "options": {
       "en": [
         "FOR DRIVING LESSONS.",
         "AT NO TIME.",
-        "FOR IDENTIFICATION ONLY. IF THE PERSON IS WELL",
-        "KNOWN TO HIM."
+        "FOR IDENTIFICATION ONLY.",
+        "IF THE PERSON IS WELL KNOWN TO HIM."
       ],
       "te": [
-        "FOR డ్రైవింగ్ LESSONS.",
-        "AT కాదు సమయం",
-        "FOR IDENTIFICATION ONLY. IF THE PERSON IS WELL",
-        "KNOWN TO HIM."
+        "డ్రైవింగ్ నేర్చుకోవడానికి.",
+        "ఎప్పటికీ ఇవ్వకూడదు.",
+        "గుర్తింపు కార్డుగా మాత్రమే.",
+        "ఆ వ్యక్తి తనకు బాగా తెలిసిన వారైతే."
       ],
       "hi": [
-        "FOR ड्राइविंग LESSONS.",
-        "AT नहीं समय",
-        "FOR IDENTIFICATION ONLY. IF THE PERSON IS WELL",
-        "KNOWN TO HIM."
+        "ड्राइविंग सीखने के लिए।",
+        "कभी भी नहीं।",
+        "केवल पहचान के लिए।",
+        "यदि वह व्यक्ति उसका परिचित हो।"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Certified Driving Principle: AT NO TIME.. This standard practice ensures vehicle control and passenger safety.",
-      "te": "సరైన డ్రైవింగ్ సూత్రం: AT కాదు సమయం. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
-      "hi": "सही ड्राइविंग सिद्धांत: AT नहीं समय. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
+      "en": "Certified Driving Principle: AT NO TIME. A driving licence is strictly non-transferable and personal.",
+      "te": "ధృవీకరించబడిన డ్రైవింగ్ సూత్రం: ఎప్పటికీ ఇవ్వకూడదు. డ్రైవింగ్ లైసెన్స్ అనేది వ్యక్తిగత అధికారిక పత్రం.",
+      "hi": "प्रमाणित ड्राइविंग सिद्धांत: कभी भी नहीं। ड्राइविंग लाइसेंस व्यक्तिगत दस्तावेज है और इसे किसी अन्य को देना गैरकानूनी है।"
     }
   },
   {

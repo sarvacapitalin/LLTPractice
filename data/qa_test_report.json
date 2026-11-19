@@ -1,7 +1,7 @@
 {
-  "report_id": "QA_RUN_1795048929",
-  "generated_at": "2026-11-19T00:42:09.019164Z",
-  "duration_seconds": 0.041,
+  "report_id": "QA_RUN_1795049657",
+  "generated_at": "2026-11-19T00:54:17.695675Z",
+  "duration_seconds": 0.04,
   "overall_status": "PASSED",
   "summary": {
     "total_suites": 9,
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 42205
+            "bytes_served": 53764
           }
         },
         {

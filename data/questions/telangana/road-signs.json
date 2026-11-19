@@ -3160,35 +3160,35 @@
     "questionNumber": 84,
     "image": "assets/signs/sign_084.png",
     "text": {
-      "en": "YOU APPROACH A JUNCTION.  THE TRAFFIC LIGHTS ARE NOT WORKING.",
-      "te": "YOU APPROACH A కూడలి (జంక్షన్) THE TRAFFIC లైట్లు ARE NOT WORKING.",
-      "hi": "YOU APPROACH A चौराहा (जंक्शन) THE TRAFFIC बत्तियां ARE NOT WORKING."
+      "en": "YOU APPROACH A JUNCTION. THE TRAFFIC LIGHTS ARE NOT WORKING. A POLICE OFFICER GIVES THIS SIGNAL. YOU SHOULD",
+      "te": "మీరు ఒక కూడలి (జంక్షన్) వద్దకు చేరుకున్నారు. ట్రాఫిక్ సిగ్నల్ లైట్లు పనిచేయడం లేదు. ఒక ట్రాఫిక్ పోలీస్ అధికారి ఈ సంకేతాన్ని ఇస్తున్నారు. మీరు ఏమి చేయాలి?",
+      "hi": "आप एक चौराहे (जंक्शन) पर पहुंचते हैं। ट्रैफिक लाइट काम नहीं कर रही हैं। एक पुलिस अधिकारी यह संकेत देता है। आपको क्या करना चाहिए?"
     },
     "options": {
       "en": [
-        "A POLICE OFFICER GIVES THIS SIGNAL. YOU SHOULD",
-        "TURN LEFT ONLY TURN RIGHT ONLY",
+        "TURN LEFT ONLY",
+        "TURN RIGHT ONLY",
         "STOP LEVEL WITH THE OFFICER'S ARM",
         "STOP BEFORE THE STOP LINE"
       ],
       "te": [
-        "A పోలీస్ OFFICER GIVES THIS సంకేతం / సిగ్నల్ YOU చేయాలి",
-        "TURN ఎడమ ONLY TURN కుడి ONLY",
-        "ఆపండి LEVEL WITH THE OFFICER'S ARM",
-        "ఆపండి BEFORE THE ఆపండి LINE"
+        "ఎడమ వైపు మాత్రమే తిరగాలి",
+        "కుడి వైపు మాత్రమే తిరగాలి",
+        "పోలీస్ అధికారి చేతి సమాంతరంగా ఆపాలి",
+        "స్టాప్ లైన్ కంటే ముందే ఆపాలి"
       ],
       "hi": [
-        "A पुलिस OFFICER GIVES THIS संकेत (सिग्नल) YOU चाहिए",
-        "TURN बायां ONLY TURN दायां ONLY",
-        "रुकें LEVEL WITH THE OFFICER'S ARM",
-        "रुकें BEFORE THE रुकें LINE"
+        "केवल बाईं ओर मुड़ें",
+        "केवल दाईं ओर मुड़ें",
+        "अधिकारी के हाथ के समानांतर रुकें",
+        "स्टॉप लाइन से पहले रुकें"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Road Sign Rule: STOP BEFORE THE STOP LINE. Obeying this sign is mandatory under the Motor Vehicles Act.",
-      "te": "అధికారిక ట్రాఫిక్ సంకేత నిబంధన: ఆపండి BEFORE THE ఆపండి LINE. మోటారు వాహనాల చట్టం ప్రకారం ఈ చిహ్నాన్ని తప్పనిసరిగా పాటించాలి.",
-      "hi": "आधिकारिक सड़क संकेत नियम: रुकें BEFORE THE रुकें LINE. मोटर वाहन अधिनियम के तहत इस संकेत का पालन करना अनिवार्य है।"
+      "en": "Official Road Sign Rule: STOP BEFORE THE STOP LINE. When a police officer signals with hand raised/extended across the path at a junction without working traffic lights, you must stop before the stop line.",
+      "te": "అధికారిక రహదారి నిబంధన: స్టాప్ లైన్ కంటే ముందే ఆపాలి. ట్రాఫిక్ లైట్లు పనిచేయని కూడలి వద్ద పోలీస్ అధికారి ఆగమని సంకేతం ఇచ్చినప్పుడు, వాహనాన్ని స్టాప్ లైన్ కంటే ముందే ఆపడం తప్పనిసరి.",
+      "hi": "आधिकारिक यातायात नियम: स्टॉप लाइन से पहले रुकें। जब ट्रैफिक लाइटें काम न कर रही हों और पुलिस अधिकारी चौराहे पर रुकने का संकेत दे, तो स्टॉप लाइन से पहले वाहन रोकना अनिवार्य है।"
     }
   },
   {

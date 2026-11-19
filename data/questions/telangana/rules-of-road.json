@@ -994,35 +994,35 @@
     "questionNumber": 27,
     "image": null,
     "text": {
-      "en": "A FLASHING RED LIGHT AT AN INTER SECTION MEANS",
-      "te": "A FLASHING RED లైట్ AT AN INTER SECTION MEANS",
-      "hi": "A FLASHING RED बत्ती (लाइट) AT AN INTER SECTION MEANS"
+      "en": "A FLASHING RED LIGHT AT AN INTERSECTION MEANS",
+      "te": "కూడలి వద్ద ఎరుపు రంగు లైట్ మినుకుమినుకుమంటుంటే (ఫ్లాషింగ్) దాని అర్థం ఏమిటి?",
+      "hi": "चौराहे पर लाल बत्ती टिमटिमाने (फ्लैश होने) का क्या अर्थ है?"
     },
     "options": {
       "en": [
-        "DOWN, AND GIVE RIGHT WAY TO VEHICLES APPROACHING FROM LEFT OR RIGHT SIDE",
+        "YOU SHOULD SLOW DOWN AND DRIVE WITH INCREASED CAUTION.",
+        "YOU SHOULD SLOW DOWN, AND GIVE RIGHT WAY TO VEHICLES APPROACHING FROM LEFT OR RIGHT SIDE",
         "SIGNAL LIGHT IS OUT OF ORDER AND AS SUCH YOU SHOULD PROCEED WITH CAUTION.",
-        "YOU SHOULD SLOW DOWN AND DRIVE WITH INCREASED CAUTION. YOU SHOULD STOP, GIVE WAY TO VEHICLES IN THE PRIORITY ROAD AND PROCEED ONLY WHEN THE WAY IS CLEAR",
-        "YOU SHOULD SLOW"
+        "YOU SHOULD STOP, GIVE WAY TO VEHICLES IN THE PRIORITY ROAD AND PROCEED ONLY WHEN THE WAY IS CLEAR"
       ],
       "te": [
-        "DOWN, AND GIVE కుడి WAY TO వాహనాలు APPROACHING FROM ఎడమ OR కుడి SIDE",
-        "సంకేతం / సిగ్నల్ లైట్ IS OUT OF ORDER AND AS SUCH YOU చేయాలి PROCEED WITH జాగ్రత్త",
-        "YOU చేయాలి నెమ్మదిగా DOWN AND డ్రైవ్ చేయండి WITH INCREASED జాగ్రత్త YOU చేయాలి ఆపండి GIVE WAY TO వాహనాలు IN THE PRIORITY రోడ్డు AND PROCEED ONLY WHEN THE WAY IS CLEAR",
-        "YOU చేయాలి నెమ్మదిగా"
+        "వాహనం వేగాన్ని తగ్గించి, మరింత జాగ్రత్తగా డ్రైవ్ చేయాలి.",
+        "వేగాన్ని తగ్గించి, ఎడమ లేదా కుడి వైపు నుండి వచ్చే వాహనాలకు దారి ఇవ్వాలి.",
+        "సిగ్నల్ పనిచేయడం లేదు కాబట్టి జాగ్రత్తగా ముందుకు వెళ్లాలి.",
+        "వాహనాన్ని పూర్తిగా ఆపి, ప్రధాన రోడ్డులోని వాహనాలకు దారి ఇచ్చి, మార్గం క్లియర్ అయిన తర్వాతే వెళ్లాలి."
       ],
       "hi": [
-        "DOWN, AND GIVE दायां WAY TO वाहन APPROACHING FROM बायां OR दायां SIDE",
-        "संकेत (सिग्नल) बत्ती (लाइट) IS OUT OF ORDER AND AS SUCH YOU चाहिए PROCEED WITH सावधानी",
-        "YOU चाहिए धीमा DOWN AND गाड़ी चलाएं WITH INCREASED सावधानी YOU चाहिए रुकें GIVE WAY TO वाहन IN THE PRIORITY सड़क AND PROCEED ONLY WHEN THE WAY IS CLEAR",
-        "YOU चाहिए धीमा"
+        "गाड़ी धीमी करें और अतिरिक्त सावधानी से आगे बढ़ें।",
+        "गाड़ी धीमी करें और बाएं या दाएं से आने वाले वाहनों को रास्ता दें।",
+        "सिग्नल खराब है, इसलिए सावधानी से आगे बढ़ें।",
+        "गाड़ी पूरी तरह रोकें, प्राथमिकता वाली सड़क के वाहनों को रास्ता दें और रास्ता साफ होने पर ही आगे बढ़ें।"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: YOU SHOULD SLOW. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: YOU చేయాలి నెమ్మదిగా. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: YOU चाहिए धीमा. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: YOU SHOULD STOP, GIVE WAY TO VEHICLES IN THE PRIORITY ROAD AND PROCEED ONLY WHEN THE WAY IS CLEAR. A flashing red light is equivalent to a STOP sign.",
+      "te": "అధికారిక రహదారి నిబంధన: వాహనాన్ని పూర్తిగా ఆపి, ప్రధాన రోడ్డులోని వాహనాలకు దారి ఇచ్చి, మార్గం క్లియర్ అయిన తర్వాతే వెళ్లాలి. ఫ్లాషింగ్ రెడ్ లైట్ అనేది స్టాప్ బోర్డుతో సమానం.",
+      "hi": "आधिकारिक यातायात नियम: गाड़ी पूरी तरह रोकें, मुख्य मार्ग के वाहनों को रास्ता दें और रास्ता साफ होने पर ही आगे बढ़ें। टिमटिमाती लाल बत्ती स्टॉप संकेत के समान होती है।"
     }
   },
   {
@@ -2439,34 +2439,34 @@
     "image": null,
     "text": {
       "en": "WHAT MUST YOU DO IF YOU MISS YOUR EXIT ON A FREEWAY?",
-      "te": "WHAT తప్పనిసరిగా YOU DO IF YOU MISS YOUR EXIT ON A FREEWAY?",
-      "hi": "WHAT अनिवार्य रूप से YOU DO IF YOU MISS YOUR EXIT ON A FREEWAY?"
+      "te": "హైవే / ఫ్రీవే పై మీరు దిగాల్సిన ఎగ్జిట్‌ను మిస్ అయితే మీరు ఏమి చేయాలి?",
+      "hi": "यदि आप फ्रीवे/हाईवे पर अपना निकास (एग्जिट) चूक जाते हैं, तो आपको क्या करना चाहिए?"
     },
     "options": {
       "en": [
         "CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.",
-        "STOP AND REVERSE BACK ALONG THE FREE WAY TO THE EXIT YOU",
-        "MISSED. STOP IMMEDIATELY AND TURN AROUND",
+        "STOP AND REVERSE BACK ALONG THE FREEWAY TO THE EXIT YOU MISSED.",
+        "STOP IMMEDIATELY AND TURN AROUND",
         "LOOK INTO THE REAR VIEW MIRROR AND REVERSE."
       ],
       "te": [
-        "CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.",
-        "ఆపండి AND REVERSE BACK ALONG THE FREE WAY TO THE EXIT YOU",
-        "MISSED. ఆపండి IMMEDIATELY AND TURN AROUND",
-        "LOOK INTO THE REAR VIEW అద్దం AND REVERSE."
+        "తదుపరి ఎగ్జిట్ వచ్చే వరకు ముందుకు ప్రయాణించాలి.",
+        "వాహనాన్ని ఆపి, ఫ్రీవేపై రివర్స్‌లో మిస్సయిన ఎగ్జిట్ వద్దకు వెళ్లాలి.",
+        "వెంటనే ఆపి యూ-టర్న్ తీసుకోవాలి.",
+        "రియర్ వ్యూ మిర్రర్‌లో చూస్తూ రివర్స్ చేయాలి."
       ],
       "hi": [
-        "CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.",
-        "रुकें AND REVERSE BACK ALONG THE FREE WAY TO THE EXIT YOU",
-        "MISSED. रुकें IMMEDIATELY AND TURN AROUND",
-        "LOOK INTO THE REAR VIEW शीशा (दर्पण) AND REVERSE."
+        "अगले उपयुक्त निकास (एग्जिट) तक आगे बढ़ते रहें।",
+        "गाड़ी रोककर हाईवे पर रिवर्स करके छूटे हुए निकास पर जाएं।",
+        "तुरंत रुकें और गाड़ी मोड़ें।",
+        "रियर व्यू मिरर में देखते हुए रिवर्स करें।"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT. Reversing or turning around on a freeway is illegal and extremely dangerous.",
+      "te": "అధికారిక రహదారి నిబంధన: తదుపరి ఎగ్జిట్ వచ్చే వరకు ముందుకు ప్రయాణించాలి. హైవే లేదా ఫ్రీవే పై రివర్స్ చేయడం లేదా యూ-టర్న్ చేయడం చట్టరీత్యా నేరం.",
+      "hi": "आधिकारिक यातायात नियम: अगले उपयुक्त निकास (एग्जिट) तक आगे बढ़ते रहें। हाईवे पर कभी भी रिवर्स करना या यू-टर्न लेना गैरकानूनी है।"
     }
   },
   {
@@ -2666,35 +2666,35 @@
     "questionNumber": 71,
     "image": null,
     "text": {
-      "en": "WHEN DRIVING IN AN AREA WHERE THERE ARE MANY PEDESTRIANS (E.G.A BUS STOP) IT IS IMPORTANT TO",
-      "te": "WHEN డ్రైవింగ్ IN AN AREA WHERE THERE ARE MANY పాదచారులు (E.G.A BUS ఆపండి IT IS IMPORTANT TO",
-      "hi": "WHEN ड्राइविंग IN AN AREA WHERE THERE ARE MANY पैदल यात्री (E.G.A BUS रुकें IT IS IMPORTANT TO"
+      "en": "WHEN DRIVING IN AN AREA WHERE THERE ARE MANY PEDESTRIANS (E.G. A BUS STOP) IT IS IMPORTANT TO",
+      "te": "పాదచారులు ఎక్కువగా ఉండే ప్రాంతాల్లో (ఉదాహరణకు బస్ స్టాప్ వద్ద) డ్రైవింగ్ చేస్తున్నప్పుడు ఏమి చేయడం ముఖ్యం?",
+      "hi": "जहाँ अधिक पैदल यात्री हों (जैसे बस स्टॉप), वहाँ गाड़ी चलाते समय क्या करना महत्वपूर्ण है?"
     },
     "options": {
       "en": [
         "SOUND YOUR HORN REPEATEDLY",
-        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY CAN SEE YOU BETTER. INCREASE YOUR SPEED TO AVOID THE CHANGE OF HITTING THEM.",
-        "SLOW DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE ROAD.",
-        "4 A VEHICLE AHEAD OF YOU HAS MAY OVERTAKE THE MAY OVERTAKE THE VEHICLE IF THERE ARE"
+        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY CAN SEE YOU BETTER.",
+        "INCREASE YOUR SPEED TO AVOID THE CHANCE OF HITTING THEM.",
+        "SLOW DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE ROAD."
       ],
       "te": [
-        "SOUND YOUR హారన్ REPEATEDLY",
-        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY చేయవచ్చు SEE YOU BETTER. INCREASE YOUR వేగం TO AVOID THE CHANGE OF HITTING THEM.",
-        "నెమ్మదిగా DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE రోడ్డు",
-        "4 A వాహనం ముందు OF YOU HAS MAY ఓవర్‌టేక్ చేయండి THE MAY ఓవర్‌టేక్ చేయండి THE వాహనం IF THERE ARE"
+        "నిరంతరం హారన్ మోగించాలి.",
+        "వారు మిమ్మల్ని చూడటానికి హెడ్‌లైట్లను హై బీమ్‌లో ఉంచాలి.",
+        "ప్రమాదం జరగకుండా ఉండటానికి వేగాన్ని పెంచాలి.",
+        "వేగాన్ని తగ్గించి, వారు రోడ్డుపైకి వస్తున్నారేమో గమనిస్తూ అప్రమత్తంగా ఉండాలి."
       ],
       "hi": [
-        "SOUND YOUR हॉर्न REPEATEDLY",
-        "PUT YOUR HEADLIGHTS ON HIGH BEAM SO THEY सकते हैं SEE YOU BETTER. INCREASE YOUR गति TO AVOID THE CHANGE OF HITTING THEM.",
-        "धीमा DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE सड़क",
-        "4 A वाहन आगे OF YOU HAS MAY ओवरटेक करें THE MAY ओवरटेक करें THE वाहन IF THERE ARE"
+        "बार-बार हॉर्न बजाएं।",
+        "हेडलाइट को हाई बीम पर रखें ताकि वे आपको देख सकें।",
+        "टकराने से बचने के लिए अपनी गति बढ़ाएं।",
+        "गति धीमी करें और ध्यान दें कि कहीं वे सड़क पर तो नहीं आ रहे हैं।"
       ]
     },
     "answerIndex": 3,
     "explanation": {
-      "en": "Official Traffic Regulation: 4 A VEHICLE AHEAD OF YOU HAS MAY OVERTAKE THE MAY OVERTAKE THE VEHICLE IF THERE ARE. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: 4 A వాహనం ముందు OF YOU HAS MAY ఓవర్‌టేక్ చేయండి THE MAY ఓవర్‌టేక్ చేయండి THE వాహనం IF THERE ARE. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: 4 A वाहन आगे OF YOU HAS MAY ओवरटेक करें THE MAY ओवरटेक करें THE वाहन IF THERE ARE. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: SLOW DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE ROAD. In pedestrian-heavy areas, drivers must anticipate pedestrian movements.",
+      "te": "అధికారిక రహదారి నిబంధన: వేగాన్ని తగ్గించి, వారు రోడ్డుపైకి వస్తున్నారేమో గమనిస్తూ అప్రమత్తంగా ఉండాలి. రద్దీ ప్రాంతాల్లో పాదచారుల భద్రత అత్యంత ముఖ్యం.",
+      "hi": "आधिकारिक यातायात नियम: गति धीमी करें और ध्यान दें कि कहीं वे सड़क पर तो नहीं आ रहे हैं। पैदल यात्रियों की सुरक्षा सर्वोपरि है।"
     }
   },
   {
@@ -5137,34 +5137,34 @@
     "image": null,
     "text": {
       "en": "IF A PERSON CARRYING A WHITE STICK WITH RED RING IS CROSSING THE ROAD, WHAT SHOULD YOU DO?",
-      "te": "మీరు ఏమి చేయాలి ?",
-      "hi": "आपको क्या करना चाहिए ?"
+      "te": "ఎరుపు రంగు రింగ్ ఉన్న తెల్లటి చేతికర్రను పట్టుకున్న వ్యక్తి రోడ్డు దాటుతుంటే, మీరు ఏమి చేయాలి?",
+      "hi": "यदि लाल छल्ले वाली सफेद छड़ी पकड़े हुए कोई व्यक्ति सड़क पार कर रहा है, तो आपको क्या करना चाहिए?"
     },
     "options": {
       "en": [
-        "WAIT UNTIL HE CROSS",
-        "THE ROAD",
-        "MAN HANDLE HIM GIVE HIM LIFT",
+        "WAIT UNTIL HE CROSSES THE ROAD",
+        "MANHANDLE HIM",
+        "GIVE HIM LIFT",
         "LET HIM GO UNNOTICED"
       ],
       "te": [
-        "WAIT UNTIL HE CROSS",
-        "THE రోడ్డు",
-        "MAN HANDLE HIM GIVE HIM LIFT",
-        "LET HIM GO UNNOTICED"
+        "అతను రోడ్డు దాటే వరకు వేచి ఉండాలి",
+        "అతనితో దురుసుగా ప్రవర్తించాలి",
+        "అతనికి లిఫ్ట్ ఇవ్వాలి",
+        "అతనిని పట్టించుకోకుండా వదిలేయాలి"
       ],
       "hi": [
-        "WAIT UNTIL HE CROSS",
-        "THE सड़क",
-        "MAN HANDLE HIM GIVE HIM LIFT",
-        "LET HIM GO UNNOTICED"
+        "सड़क पार करने तक प्रतीक्षा करें",
+        "उसके साथ दुर्व्यवहार करें",
+        "उसे लिफ्ट दें",
+        "उस पर ध्यान दिए बिना चले जाएं"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official Traffic Regulation: WAIT UNTIL HE CROSS. This is mandatory for road safety and collision avoidance.",
-      "te": "అధికారిక రహదారి నిబంధన: WAIT UNTIL HE CROSS. రోడ్డు భద్రత మరియు ప్రమాదాల నివారణకు ఈ నియమం తప్పనిసరి.",
-      "hi": "आधिकारिक यातायात नियम: WAIT UNTIL HE CROSS. सड़क सुरक्षा और दुर्घटना रोकथाम के लिए यह नियम अनिवार्य है।"
+      "en": "Official Traffic Regulation: WAIT UNTIL HE CROSSES THE ROAD. A white stick with a red band indicates a deaf-blind pedestrian; give them full right of way.",
+      "te": "అధికారిక రహదారి నిబంధన: అతను రోడ్డు దాటే వరకు వేచి ఉండాలి. ఎరుపు రంగు బ్యాండ్ ఉన్న తెల్లటి చేతికర్ర ఆ వ్యక్తికి వినికిడి మరియు దృష్టి లోపం ఉన్నట్లు సూచిస్తుంది.",
+      "hi": "आधिकारिक यातायात नियम: सड़क पार करने तक प्रतीक्षा करें। लाल पट्टी वाली सफेद छड़ी दृष्टिहीन और बधिर व्यक्ति का संकेत है।"
     }
   },
   {

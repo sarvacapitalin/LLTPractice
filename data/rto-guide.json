@@ -1,85 +1,110 @@
 {
   "title": {
-    "en": "Hyderabad RTA Learner's Licence (LLR) Test Day Guide",
-    "te": "హైదరాబాద్ RTA లెర్నర్స్ లైసెన్స్ (LLR) టెస్ట్ డే గైడ్",
-    "hi": "हैदराबाद आरटीए लर्नर लाइसेंस (एलएलआर) परीक्षा दिवस गाइड"
+    "en": "Hyderabad & Telangana RTA Learner's Licence (LLR) Complete Guide",
+    "te": "హైదరాబాద్ & తెలంగాణ RTA లెర్నర్స్ లైసెన్స్ (LLR) పూర్తి గైడ్",
+    "hi": "हैदराबाद और तेलंगाना आरटीए लर्नर लाइसेंस (एलएलआर) संपूर्ण गाइड"
+  },
+  "subtitle": {
+    "en": "Official step-by-step test-day walkthrough, document checklist, fee structure, and RTO center directory.",
+    "te": "పరీక్ష రోజు పూర్తి విధానం, అవసరమైన పత్రాల చెక్‌లిస్ట్, ఫీజుల వివరాలు మరియు హైదరాబాద్ RTO కేంద్రాలు.",
+    "hi": "परीक्षा दिवस की पूरी प्रक्रिया, आवश्यक दस्तावेज़ सूची, शुल्क विवरण और हैदराबाद आरटीओ केंद्र।"
   },
   "checklist": [
     {
+      "id": "form2",
       "item": {
         "en": "Application Form Printout (Form 2)",
         "te": "దరఖాస్తు ఫారం ప్రింటౌట్ (ఫారం 2)",
         "hi": "आवेदन पत्र का प्रिंटआउट (फॉर्म 2)"
       },
       "desc": {
-        "en": "Printed copy of the online application form submitted on transport.telangana.gov.in or Parivahan portal.",
-        "te": "ఆన్‌లైన్ పోర్టల్‌లో సమర్పించిన అప్లికేషన్ ప్రింటౌట్.",
-        "hi": "ऑनलाइन जमा किए गए आवेदन पत्र की मुद्रित प्रति।"
+        "en": "Printed copy of the online application submitted on transport.telangana.gov.in or Parivahan Sarathi.",
+        "te": "transport.telangana.gov.in లేదా సారథి పోర్టల్‌లో సమర్పించిన ఆన్‌లైన్ దరఖాస్తు ప్రింటౌట్.",
+        "hi": "transport.telangana.gov.in या सारथी पोर्टल पर जमा किए गए आवेदन पत्र की मुद्रित प्रति।"
       },
       "mandatory": true
     },
     {
+      "id": "slot_slip",
       "item": {
         "en": "Slot Booking Appointment Slip",
-        "te": "స్లాట్ బుకింగ్ అపాయింట్‌మెంట్ స్లిప్",
+        "te": "స్లాట్ బుకింగ్ అపాయింట్‌మెంట్ రసీదు",
         "hi": "स्लॉट बुकिंग अपॉइंटमेंट पर्ची"
       },
       "desc": {
-        "en": "Shows your designated RTO office (e.g. Khairatabad, Kondapur, Uppal) and time slot.",
-        "te": "మీ నిర్దేశిత RTO కార్యాలయం మరియు సమయ స్లాట్ వివరాలు.",
-        "hi": "आपके निर्दिष्ट आरटीओ कार्यालय और समय स्लॉट को दर्शाता है।"
+        "en": "Confirms your designated RTO office (e.g. Khairatabad, Kondapur, Uppal) and time slot.",
+        "te": "మీ నిర్దేశిత RTO కార్యాలయం (ఉదా: ఖైరతాబాద్, కొండాపూర్, ఉప్పల్) మరియు సమయ స్లాట్ వివరాల రసీదు.",
+        "hi": "आपके निर्दिष्ट आरटीओ कार्यालय (उदा. खैरताबाद, कोंडापुर, उप्पल) और समय स्लॉट की पुष्टि।"
       },
       "mandatory": true
     },
     {
+      "id": "aadhaar",
       "item": {
         "en": "Original Aadhaar Card + 1 Photocopy",
         "te": "ఒరిజినల్ ఆధార్ కార్డు + 1 జిరాక్స్ కాపీ",
         "hi": "मूल आधार कार्ड + 1 फोटोकॉपी"
       },
       "desc": {
-        "en": "Primary identity and address proof required at verification counter.",
-        "te": "ధృవీకరణ కౌంటర్ వద్ద అవసరమైన ప్రాథమిక గుర్తింపు మరియు చిరునామా రుజువు.",
-        "hi": "सत्यापन काउंटर पर आवश्यक प्राथमिक पहचान और पते का प्रमाण।"
+        "en": "Mandatory primary photo ID and address proof required at verification counter.",
+        "te": "ధృవీకరణ కౌంటర్ వద్ద పరిశీలనకు తప్పనిసరిగా చూపించాల్సిన ప్రాథమిక గుర్తింపు మరియు చిరునామా రుజువు.",
+        "hi": "सत्यापन काउंटर पर आवश्यक अनिवार्य प्राथमिक फोटो पहचान और पते का प्रमाण।"
       },
       "mandatory": true
     },
     {
+      "id": "age_proof",
       "item": {
-        "en": "Age & Address Proof (SSC Certificate / Passport / Voter ID)",
-        "te": "వయస్సు & చిరునామా రుజువు (SSC సర్టిఫికేట్ / పాస్‌పోర్ట్)",
+        "en": "Age & Address Proof (SSC Memo / Passport / Voter ID)",
+        "te": "వయస్సు & చిరునామా రుజువు (SSC మెమో / పాస్‌పోర్ట్)",
         "hi": "आयु और पते का प्रमाण (एसएससी प्रमाणपत्र / पासपोर्ट)"
       },
       "desc": {
-        "en": "Date of birth proof (minimum age 18 for LMV car/motorcycle with gear).",
-        "te": "పుట్టిన తేదీ రుజువు (కార్/గేర్ వాహనాలకు కనీస వయస్సు 18 సంవత్సరాలు).",
-        "hi": "जन्म तिथि का प्रमाण (कार/गियर वाहन के लिए न्यूनतम 18 वर्ष)।"
+        "en": "Date of birth verification (minimum age 16 for gearless 50cc, 18 for LMV car/motorcycle with gear).",
+        "te": "పుట్టిన తేదీ ధృవీకరణ (గేర్ లేని ద్విచక్ర వాహనాలకు 16 ఏళ్లు, కారు/గేర్ వాహనాలకు 18 ఏళ్లు).",
+        "hi": "जन्म तिथि सत्यापन (बिना गियर वाले वाहन के लिए 16 वर्ष, कार/गियर वाले वाहन के लिए 18 वर्ष)।"
       },
       "mandatory": true
     },
     {
+      "id": "fee_receipt",
+      "item": {
+        "en": "Online Payment Fee Receipt",
+        "te": "ఆన్‌లైన్ ఫీజు చెల్లింపు రసీదు",
+        "hi": "ऑनलाइन शुल्क भुगतान रसीद"
+      },
+      "desc": {
+        "en": "Receipt showing test and service fee paid (₹150 test fee + ₹50 service fee per class).",
+        "te": "టెస్ట్ ఫీజు మరియు సర్వీస్ ఛార్జీ చెల్లించిన రసీదు (తరగతికి ₹150 టెస్ట్ ఫీజు + ₹50 సర్వీస్ ఛార్జ్).",
+        "hi": "परीक्षा और सेवा शुल्क भुगतान रसीद (प्रति वर्ग ₹150 परीक्षा शुल्क + ₹50 सेवा शुल्क)।"
+      },
+      "mandatory": true
+    },
+    {
+      "id": "medical_form",
+      "item": {
+        "en": "Medical Certificate (Form 1 / Form 1A)",
+        "te": "వైద్య ధృవీకరణ పత్రం (ఫారం 1 / 1A)",
+        "hi": "चिकित्सा प्रमाणपत्र (फॉर्म 1 / 1ए)"
+      },
+      "desc": {
+        "en": "Self-declaration Form 1 is standard. Form 1A signed by a registered doctor is required if applicant is over 40.",
+        "te": "స్వీయ ప్రకటన ఫారం 1 సరిపోతుంది. 40 ఏళ్లు పైబడిన అభ్యర్థులకు ప్రభుత్వ వైద్యుని సంతకం కలిగిన ఫారం 1A అవసరం.",
+        "hi": "स्व-घोषणा फॉर्म 1 मानक है। 40 वर्ष से अधिक उम्र के आवेदकों के लिए डॉक्टर द्वारा हस्ताक्षरित फॉर्म 1ए अनिवार्य है।"
+      },
+      "mandatory": false
+    },
+    {
+      "id": "photos",
       "item": {
         "en": "Passport Size Photographs (2 copies)",
         "te": "పాస్‌పోర్ట్ సైజు ఫోటోలు (2 కాపీలు)",
         "hi": "पासपोर्ट साइज फोटो (2 प्रतियां)"
       },
       "desc": {
-        "en": "Recent color photographs with white background (as backup).",
-        "te": "తెల్లటి నేపథ్యంతో ఇటీవల తీసిన రంగు ఫోటోలు.",
-        "hi": "सफेद पृष्ठभूमि वाले हाल के रंगीन फोटो।"
-      },
-      "mandatory": false
-    },
-    {
-      "item": {
-        "en": "Medical Certificate (Form 1 / Form 1A)",
-        "te": "మెడికల్ సర్టిఫికేట్ (ఫారం 1 / ఫారం 1A)",
-        "hi": "मेडिकल सर्टिफिकेट (फॉर्म 1 / 1ए)"
-      },
-      "desc": {
-        "en": "Self-declaration Form 1 is standard. Form 1A signed by a registered doctor is needed if applicant is over 40.",
-        "te": "40 ఏళ్లు పైబడిన వారికి డాక్టర్ సంతకం చేసిన ఫారం 1A అవసరం.",
-        "hi": "40 वर्ष से अधिक आयु वालों के लिए डॉक्टर द्वारा हस्ताक्षरित फॉर्म 1ए आवश्यक है।"
+        "en": "Keep 2 recent color photographs with white background as backup (biometrics are captured digitally).",
+        "te": "డిజిటల్ ఫోటో తీసినప్పటికీ, భద్రత కోసం 2 తాజా పాస్‌పోర్ట్ ఫోటోలు వెంట ఉంచుకోండి.",
+        "hi": "डिजिटल फोटो लिए जाने के बावजूद बैकअप के रूप में 2 हाल के रंगीन फोटो साथ रखें।"
       },
       "mandatory": false
     }
@@ -88,104 +113,272 @@
     {
       "step": 1,
       "title": {
-        "en": "Arrival & Token Counter",
-        "te": "కార్యాలయానికి చేరుకోవడం & టోకెన్ తీసుకోవడం",
-        "hi": "आगमन और टोकन काउंटर"
+        "en": "Arrival & Queue Token",
+        "te": "కార్యాలయానికి చేరుకోవడం & క్యూ టోకెన్",
+        "hi": "आगमन और कतार टोकन"
       },
       "detail": {
-        "en": "Reach the RTO office 15-20 minutes before your slot. Show your slot booking slip at the entrance token counter to receive a queue token.",
-        "te": "మీ స్లాట్ సమయానికి 15-20 నిమిషాల ముందు RTO కి చేరుకోండి. క్యూ టోకెన్ పొందండి.",
-        "hi": "अपने स्लॉट समय से 15-20 मिनट पहले पहुंचें और कतार टोकन प्राप्त करें।"
+        "en": "Reach your designated RTO office 15-20 minutes before your slot time. Present your slot booking slip at the entrance reception counter to receive your computerized queue token.",
+        "te": "మీ స్లాట్ సమయానికి 15-20 నిమిషాల ముందే RTO ఆఫీస్‌కు చేరుకోండి. ప్రవేశ ద్వారం వద్ద స్లాట్ స్లిప్ చూపించి కంప్యూటరైజ్డ్ క్యూ టోకెన్ పొందండి.",
+        "hi": "अपने स्लॉट समय से 15-20 मिनट पहले आरटीओ कार्यालय पहुंचें। प्रवेश द्वार पर स्लॉट पर्ची दिखाकर कतार टोकन लें।"
       }
     },
     {
       "step": 2,
       "title": {
-        "en": "Document Verification Counter",
-        "te": "డాక్యుమెంట్ వెరిఫికేషన్ కౌంటర్",
-        "hi": "दस्तावेज़ सत्यापन काउंटर"
+        "en": "Document Verification (MVI Counter)",
+        "te": "పత్రాల పరిశీలన (MVI కౌంటర్)",
+        "hi": "दस्तावेज़ सत्यापन (एमवीआई काउंटर)"
       },
       "detail": {
-        "en": "The Motor Vehicle Inspector (MVI) verifies your original Aadhaar and uploaded certificates. They stamp and approve your application.",
-        "te": "MVI మీ ఒరిజినల్ ఆధార్ మరియు అప్‌లోడ్ చేసిన సర్టిఫికెట్లను తనిఖీ చేసి స్టాంప్ వేస్తారు.",
-        "hi": "एमवीआई आपके मूल आधार और दस्तावेजों की जांच करके आवेदन को स्वीकृत करते हैं।"
+        "en": "Wait for your token number on the digital display. The Motor Vehicle Inspector (MVI) verifies your original Aadhaar card, age proof, and Form 2 printout, then digitally approves your application.",
+        "te": "డిజిటల్ స్క్రీన్‌పై మీ టోకెన్ నంబర్ రాగానే వెరిఫికేషన్ కౌంటర్‌కు వెళ్లండి. మోటారు వాహన తనిఖీ అధికారి (MVI) మీ ఒరిజినల్ ఆధార్, వయస్సు పత్రాలను పరిశీలించి ఆమోదిస్తారు.",
+        "hi": "डिजिटल स्क्रीन पर अपना टोकन नंबर आने पर सत्यापन काउंटर पर जाएं। मोटर वाहन निरीक्षक (एमवीआई) आपके मूल दस्तावेजों की जांच करके आवेदन को स्वीकृत करेंगे।"
       }
     },
     {
       "step": 3,
       "title": {
-        "en": "Biometric & Photo Capture",
-        "te": "బయోమెట్రిక్ & ఫోటో క్యాప్చర్",
-        "hi": "बायोमेट्रिक और फोटो कैप्चर"
+        "en": "Biometric & Digital Photo Capture",
+        "te": "బయోమెట్రిక్ & డిజిటల్ ఫోటో నమోదు",
+        "hi": "बायोमेट्रिक और डिजिटल फोटो कैप्चर"
       },
       "detail": {
-        "en": "Your digital photograph, digital signature on pad, and thumbprint are captured. This photo will appear on your permanent Driving Licence!",
-        "te": "డిజిటల్ ఫోటో, సంతకం మరియు వేలిముద్ర నమోదు చేస్తారు. ఇదే ఫోటో మీ డ్రైవింగ్ లైసెన్స్‌పై వస్తుంది.",
-        "hi": "आपकी डिजिटल फोटो, डिजिटल हस्ताक्षर और अंगूठे का निशान लिया जाएगा।"
+        "en": "Proceed to the biometric room. Your live digital photograph, digital stylus signature, and thumbprint will be captured. Note: This live photo will appear on your final driving licence!",
+        "te": "బయోమెట్రిక్ గదిలోకి వెళ్లండి. మీ లైవ్ ఫోటో, డిజిటల్ సంతకం మరియు వేలిముద్రలను నమోదు చేస్తారు. ఈ ఫోటోయే మీ డ్రైవింగ్ లైసెన్స్‌పై వస్తుంది కాబట్టి సిద్ధంగా ఉండండి.",
+        "hi": "बायोमेट्रिक कक्ष में आपकी लाइव फोटो, डिजिटल हस्ताक्षर और फिंगरप्रिंट लिए जाएंगे। यही फोटो आपके ड्राइविंग लाइसेंस पर आएगी!"
       }
     },
     {
       "step": 4,
       "title": {
-        "en": "Computer Lab (STALL Test)",
-        "te": "కంప్యూటర్ టెస్ట్ హాల్ (STALL టెస్ట్)",
-        "hi": "कंप्यूटर टेस्ट हॉल (STALL परीक्षा)"
+        "en": "STALL Computer Test Booth",
+        "te": "STALL కంప్యూటర్ టెస్ట్ బూత్",
+        "hi": "STALL कंप्यूटर टेस्ट बूथ"
       },
       "detail": {
-        "en": "You are allocated a computer booth with a touch monitor or mouse. Put on the headphones if you wish to hear audio prompts. Enter your Roll/Token No., select your language (English/Telugu/Hindi), and begin the 20-question test.",
-        "te": "కంప్యూటర్ బూత్‌లో మీ భాషను (ఇంగ్లీష్/తెలుగు/హిందీ) ఎంచుకుని 20 ప్రశ్నల పరీక్షను ప్రారంభించండి.",
-        "hi": "कंप्यूटर बूथ पर अपनी भाषा (अंग्रेजी/तेलुगु/हिंदी) चुनें और 20 प्रश्नों की परीक्षा शुरू करें।"
+        "en": "Enter the air-conditioned STALL test lab. Sit at your assigned terminal. Enter your Application / Token number. Select your preferred test language (English, Telugu, or Hindi). Put on headphones if you wish to hear audio prompts. Answer 20 questions (30 seconds per question).",
+        "te": "టెస్ట్ ల్యాబ్‌లో మీకు కేటాయించిన కంప్యూటర్ వద్ద కూర్చోండి. అప్లికేషన్ నంబర్ నమోదు చేసి, మీకు నచ్చిన భాషను (ఇంగ్లీష్, తెలుగు, లేదా హిందీ) ఎంచుకోండి. 20 ప్రశ్నలకు సమాధానం ఇవ్వండి (ప్రతి ప్రశ్నకు 30 సెకన్లు).",
+        "hi": "कंप्यूटर लैब में अपने बूथ पर बैठें। अपना आवेदन नंबर दर्ज करें और भाषा (अंग्रेजी, तेलुगु या हिंदी) चुनें। 20 प्रश्नों के उत्तर दें (प्रति प्रश्न 30 सेकंड)।"
       }
     },
     {
       "step": 5,
       "title": {
-        "en": "Instant Result & LLR Download",
+        "en": "Instant Result & LLR PDF Download",
         "te": "తక్షణ ఫలితం & LLR డౌన్‌లోడ్",
         "hi": "तत्काल परिणाम और एलएलआर डाउनलोड"
       },
       "detail": {
-        "en": "As soon as you score 12 correct answers, the screen displays PASS! An SMS with the LLR download link is sent to your registered mobile number within a few minutes.",
-        "te": "12 సరైన సమాధానాలు రాగానే 'పాస్' అని కనిపిస్తుంది. LLR డౌన్‌లోడ్ లింక్ SMS ద్వారా వస్తుంది.",
-        "hi": "12 सही उत्तर मिलते ही स्क्रीन पर 'पास' दिखेगा और मोबाइल पर एलएलआर डाउनलोड लिंक आ जाएगा।"
+        "en": "The moment you reach 12 correct answers, the computer screen displays 'CONGRATULATIONS - TEST PASSED'. An SMS with the official digital LLR download link is sent to your registered mobile within 15 minutes. No physical paper collection needed!",
+        "te": "మీరు 12 సరైన సమాధానాలు పూర్తి చేయగానే కంప్యూటర్ స్క్రీన్‌పై 'PASS' అని కనిపిస్తుంది. 15 నిమిషాల్లో మీ రిజిస్టర్డ్ మొబైల్‌కు డిజిటల్ LLR డౌన్‌లోడ్ లింక్ SMS ద్వారా వస్తుంది. ఆఫీస్‌లో వేచి ఉండాల్సిన పనిలేదు!",
+        "hi": "जैसे ही आप 12 सही उत्तर देंगे, स्क्रीन पर 'पास' दिखेगा। 15 मिनट के भीतर आपके मोबाइल पर डिजिटल एलएलआर डाउनलोड लिंक का एसएमएस आ जाएगा।"
       }
     }
   ],
+  "centers": [
+    {
+      "code": "TS-09",
+      "name": {
+        "en": "RTO Central (Khairatabad)",
+        "te": "RTO సెంట్రల్ (ఖైరతాబాద్)",
+        "hi": "आरटीओ सेंट्रल (खैरताबाद)"
+      },
+      "area": {
+        "en": "Khairatabad, Banjara Hills, Somajiguda, Punjagutta, Hyderabad Central",
+        "te": "ఖైరతాబాద్, బంజారా హిల్స్, సోమాజిగూడ, పంజాగుట్ట, హైదరాబాద్ సెంట్రల్",
+        "hi": "खैरताबाद, बंजारा हिल्स, सोमाजीगुडा, पंजगुट्टा"
+      },
+      "address": {
+        "en": "Opposite Eenadu Office, Somajiguda, Khairatabad, Hyderabad - 500082",
+        "te": "ఈనాడు ఆఫీస్ ఎదురుగా, సోమాజిగూడ, ఖైరతాబాద్, హైదరాబాద్ - 500082",
+        "hi": "ईनाडु कार्यालय के सामने, सोमाजीगुडा, खैरताबाद, हैदराबाद - 500082"
+      },
+      "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
+    },
+    {
+      "code": "TS-10",
+      "name": {
+        "en": "RTO North (Secunderabad / Trimulgherry)",
+        "te": "RTO నార్త్ (సికింద్రాబాద్ / తిరుమలగిరి)",
+        "hi": "आरटीओ नॉर्थ (सिकंदराबाद / तिरुमलघरी)"
+      },
+      "area": {
+        "en": "Secunderabad, Marredpally, Trimulgherry, Begumpet, Alwal, Bowenpally",
+        "te": "సికింద్రాబాద్, మారేడ్‌పల్లి, తిరుమలగిరి, బేగంపేట్, అల్వాల్, బోయిన్‌పల్లి",
+        "hi": "सिकंदराबाद, मारेडपल्ली, तिरुमलघरी, बेगमपेट, अलवाल"
+      },
+      "address": {
+        "en": "Near Trimulgherry Cross Roads, Lal Bazar, Secunderabad - 500015",
+        "te": "తిరుమలగిరి క్రాస్ రోడ్స్ సమీపంలో, లాల్ బజార్, సికింద్రాబాద్ - 500015",
+        "hi": "तिरुमलघरी चौराहे के पास, लाल बाजार, सिकंदराबाद - 500015"
+      },
+      "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
+    },
+    {
+      "code": "TS-07",
+      "name": {
+        "en": "RTO Rangareddy / Cyberabad (Kondapur)",
+        "te": "RTO రంగారెడ్డి / సైబరాబాద్ (కొండాపూర్)",
+        "hi": "आरटीओ रंगारेड्डी / साइबराबाद (कोंडापुर)"
+      },
+      "area": {
+        "en": "Hitec City, Gachibowli, Madhapur, Kondapur, Kukatpally, Serilingampally",
+        "te": "హైటెక్ సిటీ, గచ్చిబౌలి, మాదాపూర్, కొండాపూర్, కూకట్‌పల్లి, శేరిలింగంపల్లి",
+        "hi": "हाईटेक सिटी, गाचीबोवली, माधापुर, कोंडापुर, कुकटपल्ली"
+      },
+      "address": {
+        "en": "Opp. RTO Driving Track, Near Botanical Garden, Kondapur, Hyderabad - 500084",
+        "te": "బొటానికల్ గార్డెన్ సమీపంలో, డ్రైవింగ్ ట్రాక్ ఎదురుగా, కొండాపూర్, హైదరాబాద్ - 500084",
+        "hi": "बॉटनिकल गार्डन के पास, ड्राइविंग ट्रैक के सामने, कोंडापुर, हैदराबाद - 500084"
+      },
+      "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
+    },
+    {
+      "code": "TS-08",
+      "name": {
+        "en": "RTO East / Medchal (Uppal)",
+        "te": "RTO ఈస్ట్ / మేడ్చల్ (ఉప్పల్)",
+        "hi": "आरटीओ ईस्ट / मेडचल (उप्पल)"
+      },
+      "area": {
+        "en": "Uppal, Boduppal, Habsiguda, Ramanthapur, Tarnaka, Ghatkesar",
+        "te": "ఉప్పల్, బోడుప్పల్, హబ్సిగూడ, రామంతాపూర్, తార్నాక, ఘట్‌కేసర్",
+        "hi": "उप्पल, बोडुप्पल, हब्सीगुडा, रामंतपुर, तारनाका"
+      },
+      "address": {
+        "en": "Near Survey of India, Inner Ring Road, Uppal, Hyderabad - 500039",
+        "te": "సర్వే ఆఫ్ ఇండియా సమీపంలో, ఇన్నర్ రింగ్ రోడ్డు, ఉప్పల్, హైదరాబాద్ - 500039",
+        "hi": "सर्वे ऑफ इंडिया के पास, इनर रिंग रोड, उप्पल, हैदराबाद - 500039"
+      },
+      "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
+    },
+    {
+      "code": "TS-11",
+      "name": {
+        "en": "RTO West (Tolichowki / Mehdipatnam)",
+        "te": "RTO వెస్ట్ (టోలిచౌకి / మెహదీపట్నం)",
+        "hi": "आरटीओ वेस्ट (टोलीचौकी / मेहदीपटनम)"
+      },
+      "area": {
+        "en": "Mehdipatnam, Tolichowki, Golconda, Attapur, Langar Houz, Gudimalkapur",
+        "te": "మెహదీపట్నం, టోలిచౌకి, గోల్కొండ, అత్తాపూర్, లంగర్ హౌజ్",
+        "hi": "मेहदीपटनम, टोलीचौकी, गोलकोंडा, अत्तापुर"
+      },
+      "address": {
+        "en": "Rethibowli Cross Roads, Mehdipatnam, Hyderabad - 500028",
+        "te": "రెతిబౌలి క్రాస్ రోడ్స్, మెహదీపట్నం, హైదరాబాద్ - 500028",
+        "hi": "रेथीबोवली चौराहा, मेहदीपटनम, हैदराबाद - 500028"
+      },
+      "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
+    },
+    {
+      "code": "TS-12",
+      "name": {
+        "en": "RTO East (Malakpet)",
+        "te": "RTO ఈస్ట్ (మలక్‌పేట్)",
+        "hi": "आरटीओ ईस्ट (मलकपेट)"
+      },
+      "area": {
+        "en": "Malakpet, Dilsukhnagar, Kothapet, LB Nagar, Chaitanyapuri, Amberpet",
+        "te": "మలక్‌పేట్, దిల్‌సుఖ్‌నగర్, కొత్తపేట, ఎల్బీనగర్, అంబర్‌పేట్",
+        "hi": "मलकपेट, दिलसुखनगर, कोठापेट, एलबी नगर"
+      },
+      "address": {
+        "en": "Old Malakpet, Near TV Tower, Moosarambagh, Hyderabad - 500036",
+        "te": "ఓల్డ్ మలక్‌పేట్, టీవీ టవర్ సమీపంలో, మూసారాంబాగ్‌, హైదరాబాద్ - 500036",
+        "hi": "ओल्ड मलकपेट, टीवी टावर के पास, मूसा रामबाग, हैदराबाद - 500036"
+      },
+      "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
+    }
+  ],
+  "feeRules": {
+    "fees": [
+      {
+        "category": {
+          "en": "One Vehicle Class (e.g., Two-Wheeler MCWG)",
+          "te": "ఒక వాహన తరగతి (ఉదా: మోటార్ సైకిల్ MCWG)",
+          "hi": "एक वाहन श्रेणी (उदा. मोटरसाइकिल एमसीडब्ल्यूजी)"
+        },
+        "amount": "₹200",
+        "breakup": {
+          "en": "₹150 LLR Test Fee + ₹50 Service Fee",
+          "te": "₹150 LLR టెస్ట్ ఫీజు + ₹50 సర్వీస్ ఫీజు",
+          "hi": "₹150 परीक्षा शुल्क + ₹50 सेवा शुल्क"
+        }
+      },
+      {
+        "category": {
+          "en": "Two Vehicle Classes (Two-Wheeler + Car LMV)",
+          "te": "రెండు వాహన తరగతులు (ద్విచక్ర వాహనం + కారు LMV)",
+          "hi": "दो वाहन श्रेणियां (दोपहिया + कार एलएमवी)"
+        },
+        "amount": "₹350",
+        "breakup": {
+          "en": "₹300 Test Fee (₹150 x 2) + ₹50 Service Fee",
+          "te": "₹300 టెస్ట్ ఫీజు (₹150 x 2) + ₹50 సర్వీస్ ఫీజు",
+          "hi": "₹300 परीक्षा शुल्क (₹150 x 2) + ₹50 सेवा शुल्क"
+        }
+      }
+    ],
+    "retestRule": {
+      "en": "If you fail the test, you can book a re-test slot after 7 days on transport.telangana.gov.in by paying a re-test fee of ₹150.",
+      "te": "పరీక్షలో ఫెయిల్ అయితే, 7 రోజుల తర్వాత మళ్లీ transport.telangana.gov.in లో ₹150 చెల్లించి రీ-టెస్ట్ స్లాట్ బుక్ చేసుకోవచ్చు.",
+      "hi": "यदि आप परीक्षा में अनुत्तीर्ण होते हैं, तो 7 दिनों के बाद ₹150 का भुगतान करके पुनः परीक्षा स्लॉट बुक कर सकते हैं।"
+    },
+    "validityRule": {
+      "en": "Your Learner's Licence (LLR) is valid for 6 months across India. You are eligible to apply for your permanent Driving Licence (DL) driving track test after completing 30 days from LLR issue date.",
+      "te": "లెర్నర్స్ లైసెన్స్ (LLR) జారీ చేసిన తేదీ నుండి భారతదేశం అంతటా 6 నెలల పాటు చెల్లుబాటు అవుతుంది. LLR వచ్చిన 30 రోజుల తర్వాత శాశ్వత డ్రైవింగ్ లైసెన్స్ (DL) టెస్ట్ కోసం దరఖాస్తు చేసుకోవచ్చు.",
+      "hi": "आपका शिक्षार्थी लाइसेंस (एलएलआर) पूरे भारत में 6 महीने के लिए वैध है। आप एलएलआर जारी होने के 30 दिन बाद स्थायी ड्राइविंग लाइसेंस (डीएल) के लिए आवेदन कर सकते हैं।"
+    }
+  },
   "topTips": [
     {
       "title": {
-        "en": "Don't Rush at 10 Seconds",
-        "te": "టైమర్ చూసి కంగారు పడవద్దు",
-        "hi": "टाइमर देखकर घबराएं नहीं"
+        "en": "Don't Panic at the 30-Second Timer",
+        "te": "30 సెకన్ల టైమర్ చూసి కంగారు పడవద్దు",
+        "hi": "30 सेकंड का टाइमर देखकर घबराएं नहीं"
       },
       "desc": {
-        "en": "30 seconds is more than enough time to read 1 question and 4 short options. Take 10 seconds to read carefully before tapping an option.",
-        "te": "30 సెకన్లు ఒక ప్రశ్న చదవడానికి సరిపోతుంది. కంగారు పడకుండా ప్రశ్నను పూర్తిగా చదవండి.",
-        "hi": "30 सेकंड का समय पर्याप्त होता है। विकल्प चुनने से पहले प्रश्न को ध्यान से पढ़ें।"
+        "en": "30 seconds is plenty of time to read 1 short question and 4 options. Spend 10 seconds carefully reading before clicking.",
+        "te": "ఒక చిన్న ప్రశ్న మరియు 4 ఎంపికలను చదవడానికి 30 సెకన్లు చాలా ఎక్కువ సమయం. ప్రశ్నను పూర్తిగా చదివిన తర్వాతే సమాధానాన్ని ఎంచుకోండి.",
+        "hi": "30 सेकंड का समय पर्याप्त होता है। विकल्प चुनने से पहले प्रश्न और सभी विकल्पों को ध्यान से पढ़ें।"
       }
     },
     {
       "title": {
-        "en": "Watch out for Negative Words",
-        "te": "'కానిది' / 'చేయకూడనిది' పదాలను గమనించండి",
-        "hi": "'नहीं' वाले प्रश्नों पर विशेष ध्यान दें"
+        "en": "Watch out for Negative Words ('NOT', 'NEVER')",
+        "te": "'చేయకూడనిది', 'నిషిద్ధం' వంటి వ్యతిరేక పదాలను గమనించండి",
+        "hi": "'नहीं', 'निषेध' जैसे नकारात्मक शब्दों पर ध्यान दें"
       },
       "desc": {
-        "en": "Many candidates fail on questions asking 'Which of these is NOT allowed?' or 'When should you NOT overtake?'. Look out for the word NOT.",
-        "te": "'ఏది తప్పు', 'ఎప్పుడు ఓవర్‌టేక్ చేయకూడదు' వంటి వ్యతిరేక ప్రశ్నలను జాగ్రత్తగా చదవండి.",
-        "hi": "'इनमें से क्या नहीं करना चाहिए' जैसे नकारात्मक शब्दों पर विशेष ध्यान दें।"
+        "en": "Over 40% of candidate mistakes occur on questions asking 'Where must you NOT park?' or 'When should you NEVER overtake?'. Read every word cautiously.",
+        "te": "'ఎక్కడ పార్క్ చేయకూడదు?', 'ఎప్పుడు ఓవర్‌టేక్ చేయరాదు?' వంటి వ్యతిరేక ప్రశ్నలను చాలా మంది పొరపాటున చదువుతారు. 'కాదు/నిషిద్ధం' అనే పదాలపై జాగ్రత్త వహించండి.",
+        "hi": "लगभग 40% गलतियाँ 'कहाँ पार्क नहीं करना चाहिए' जैसे प्रश्नों में होती हैं। प्रश्न को अंत तक ध्यान से पढ़ें।"
       }
     },
     {
       "title": {
-        "en": "Remember the Shape Rules",
-        "te": "ట్రాఫిక్ సంకేతాల ఆకారాల నియమం",
-        "hi": "संकेतों के आकार का नियम"
+        "en": "Master the Road Sign Shapes",
+        "te": "రోడ్డు సంకేతాల ఆకారాల బండగుర్తు",
+        "hi": "सड़क संकेतों के आकार का नियम याद रखें"
       },
       "desc": {
-        "en": "Circles = Mandatory / Order (Must obey). Triangles = Cautionary / Warning (Be careful). Rectangles = Informatory (Information & facilities).",
-        "te": "వృత్తాకారం (సర్కిల్) = తప్పనిసరి. త్రిభుజాకారం = హెచ్చరిక. చతురస్రం/దీర్ఘచతురస్రం = సమాచారం.",
-        "hi": "गोलाकार = अनिवार्य आदेश। त्रिकोण = चेतावनी/सावधानी। आयताकार = सूचनात्मक।"
+        "en": "Circles = Mandatory Orders (Law - Must Obey). Triangles = Cautionary Warnings (Hazards ahead). Rectangles/Blue = Informatory Guidance (Directions, amenities).",
+        "te": "వృత్తాలు (సర్కిల్) = తప్పనిసరి పాటించాల్సిన నియమాలు (చట్టం). త్రిభుజాలు = ప్రమాద హెచ్చరికలు. దీర్ఘచతురస్రాలు/నీలం = సమాచార మరియు సౌకర్యాల సంకేతాలు.",
+        "hi": "गोलाकार = अनिवार्य आदेश (कानून)। त्रिकोण = चेतावनी/सावधानी। आयताकार = सूचनात्मक और दिशा निर्देश।"
+      }
+    },
+    {
+      "title": {
+        "en": "Aim for 12 Out of 12 Early Finish",
+        "te": "మొదటి 12 ప్రశ్నలకే పాస్ కావచ్చు",
+        "hi": "पहले 12 प्रश्नों में ही पास हो सकते हैं"
+      },
+      "desc": {
+        "en": "If you get the first 12 questions right, the computer instantly passes you and closes the test. You don't even have to face the remaining 8 questions!",
+        "te": "మొదటి 12 ప్రశ్నలకు సరైన సమాధానాలు ఇస్తే, కంప్యూటర్ వెంటనే మిమ్మల్ని 'పాస్' చేసి పరీక్షను ముగిస్తుంది. మిగిలిన 8 ప్రశ్నలు రాయాల్సిన అవసరమే ఉండదు!",
+        "hi": "यदि आप पहले 12 प्रश्नों के सही उत्तर देते हैं, तो कंप्यूटर तुरंत आपको पास कर देगा और शेष 8 प्रश्न नहीं पूछेगा!"
       }
     }
   ]

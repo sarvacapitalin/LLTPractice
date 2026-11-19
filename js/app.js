@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 async function loadAllDatasets() {
   try {
-    const v = "v=13";
+    const v = "v=14";
     const [signsRes, rulesRes, gpRes, twinsRes, cheatRes, guideRes] = await Promise.all([
       fetch(`data/questions/telangana/road-signs.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/questions/telangana/rules-of-road.json?${v}`).then(r => r.json()).catch(() => []),
@@ -1007,40 +1007,214 @@ function renderCheatsheet() {
 }
 
 // ==========================================
-// 6. HYDERABAD RTO GUIDE RENDERER
+// 6. HYDERABAD RTO GUIDE RENDERER (Full Comprehensive Guide)
 // ==========================================
 function renderRtoGuide() {
   const container = document.getElementById("rto-guide-container");
   if (!container || !rtoGuide) return;
 
+  const lang = getCurrentLang();
+  const title = (rtoGuide.title && rtoGuide.title[lang]) || (rtoGuide.title && rtoGuide.title.en) || "Hyderabad RTA Learner's Licence (LLR) Complete Guide";
+  const subtitle = (rtoGuide.subtitle && rtoGuide.subtitle[lang]) || (rtoGuide.subtitle && rtoGuide.subtitle.en) || "Official step-by-step test-day walkthrough, document checklist, fee structure, and RTO center directory.";
+
+  // Load saved checklist state from localStorage
+  const savedChecks = JSON.parse(localStorage.getItem("rto_guide_checklist") || "{}");
+
+  const checklistHtml = (rtoGuide.checklist || []).map(item => {
+    const itemText = (item.item && item.item[lang]) || (item.item && item.item.en) || "";
+    const descText = (item.desc && item.desc[lang]) || (item.desc && item.desc.en) || "";
+    const isChecked = !!savedChecks[item.id];
+    const badgeColor = item.mandatory ? "background: #FEE2E2; color: #991B1B;" : "background: #F1F5F9; color: #475569;";
+    const badgeText = item.mandatory ? (lang === "te" ? "తప్పనిసరి" : lang === "hi" ? "अनिवार्य" : "Mandatory") : (lang === "te" ? "ఐచ్ఛికం" : lang === "hi" ? "वैकल्पिक" : "Optional");
+
+    return `
+      <label style="display: flex; gap: 14px; align-items: flex-start; padding: 14px; background: #FFFFFF; border: 1px solid var(--border-color); border-radius: 10px; cursor: pointer; transition: all 0.2s ease;">
+        <input type="checkbox" class="rto-check-item" data-id="${item.id}" ${isChecked ? "checked" : ""} style="width: 20px; height: 20px; margin-top: 2px; accent-color: var(--secondary-blue); cursor: pointer;">
+        <div style="flex: 1;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+            <strong style="font-size: 0.95rem; color: var(--text-primary); text-decoration: ${isChecked ? "line-through" : "none"};">${itemText}</strong>
+            <span style="font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; ${badgeColor}">${badgeText}</span>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">${descText}</p>
+        </div>
+      </label>
+    `;
+  }).join("");
+
+  const stepsHtml = (rtoGuide.steps || []).map(step => {
+    const stepTitle = (step.title && step.title[lang]) || (step.title && step.title.en) || "";
+    const stepDetail = (step.detail && step.detail[lang]) || (step.detail && step.detail.en) || "";
+
+    return `
+      <div style="display: flex; gap: 16px; align-items: flex-start;">
+        <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--secondary-blue); color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem; flex-shrink: 0; box-shadow: 0 4px 6px -1px rgba(19, 64, 116, 0.3);">
+          ${step.step}
+        </div>
+        <div style="flex: 1; background: #F8FAFC; border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; margin-bottom: 12px;">
+          <h4 style="font-size: 1.05rem; color: var(--primary-navy); font-weight: 700; margin-bottom: 6px;">${stepTitle}</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; margin: 0;">${stepDetail}</p>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  const centersHtml = (rtoGuide.centers || []).map(center => {
+    const name = (center.name && center.name[lang]) || (center.name && center.name.en) || "";
+    const area = (center.area && center.area[lang]) || (center.area && center.area.en) || "";
+    const address = (center.address && center.address[lang]) || (center.address && center.address.en) || "";
+
+    return `
+      <div style="background: #FFFFFF; border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm);">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="background: var(--primary-navy); color: #F3CA40; font-size: 0.75rem; font-weight: 800; padding: 3px 10px; border-radius: 6px;">${center.code}</span>
+            <span style="font-size: 0.75rem; color: #10B981; font-weight: 600;">⏰ ${center.hours}</span>
+          </div>
+          <h4 style="font-size: 1rem; color: var(--text-primary); font-weight: 700; margin-bottom: 4px;">${name}</h4>
+          <p style="font-size: 0.82rem; color: var(--secondary-blue); font-weight: 600; margin-bottom: 8px;">📍 ${area}</p>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4; margin: 0;">${address}</p>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  const feeData = rtoGuide.feeRules || {};
+  const feesList = (feeData.fees || []).map(f => {
+    const cat = (f.category && f.category[lang]) || (f.category && f.category.en) || "";
+    const breakup = (f.breakup && f.breakup[lang]) || (f.breakup && f.breakup.en) || "";
+    return `
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #FFFFFF; border: 1px solid var(--border-color); border-radius: 8px;">
+        <div>
+          <strong style="display: block; font-size: 0.92rem; color: var(--text-primary);">${cat}</strong>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">${breakup}</span>
+        </div>
+        <span style="font-size: 1.2rem; font-weight: 800; color: #047857;">${f.amount}</span>
+      </div>
+    `;
+  }).join("");
+
+  const retestText = (feeData.retestRule && feeData.retestRule[lang]) || (feeData.retestRule && feeData.retestRule.en) || "";
+  const validityText = (feeData.validityRule && feeData.validityRule[lang]) || (feeData.validityRule && feeData.validityRule.en) || "";
+
+  const tipsHtml = (rtoGuide.topTips || []).map(tip => {
+    const tipTitle = (tip.title && tip.title[lang]) || (tip.title && tip.title.en) || "";
+    const tipDesc = (tip.desc && tip.desc[lang]) || (tip.desc && tip.desc.en) || "";
+
+    return `
+      <div style="background: #FFFBEB; border: 1px solid #FDE68A; border-radius: 12px; padding: 16px;">
+        <h4 style="font-size: 0.95rem; color: #92400E; font-weight: 800; margin-bottom: 6px;">💡 ${tipTitle}</h4>
+        <p style="font-size: 0.85rem; color: #78350F; line-height: 1.4; margin: 0;">${tipDesc}</p>
+      </div>
+    `;
+  }).join("");
+
   container.innerHTML = `
-    <h2 style="font-size: 1.35rem; color: var(--primary-navy); margin-bottom: 8px; font-weight: 800;">🏢 ${rtoGuide.title}</h2>
-    <p style="color: var(--text-secondary); margin-bottom: 20px;">Detailed test-day walkthrough for Hyderabad & Telangana RTA testing centres.</p>
+    <!-- Header -->
+    <div style="border-bottom: 2px solid var(--border-color); padding-bottom: 16px; margin-bottom: 24px;">
+      <h2 style="font-size: 1.45rem; color: var(--primary-navy); margin-bottom: 6px; font-weight: 800; display: flex; align-items: center; gap: 8px;">
+        <span>🏢</span> <span>${title}</span>
+      </h2>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin: 0;">${subtitle}</p>
+    </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-      <!-- Checklist -->
-      <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px;">
-        <h3 style="font-size: 1.05rem; color: var(--secondary-blue); margin-bottom: 10px; font-weight: 700;">📋 What to Carry</h3>
-        <ul style="padding-left: 18px; font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px;">
-          ${(rtoGuide.checklist || []).map(item => `<li>${item}</li>`).join("")}
-        </ul>
+    <!-- Section 1: Checklist & Workflow Split Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 32px;">
+      <!-- Interactive Checklist -->
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; display: flex; align-items: center; gap: 6px;">
+            <span>📋</span> <span>${lang === "te" ? "తీసుకెళ్లవలసిన పత్రాలు" : lang === "hi" ? "दस्तावेज़ चेकलिस्ट" : "Documents Checklist"}</span>
+          </h3>
+          <span style="font-size: 0.78rem; color: var(--text-muted);">${lang === "te" ? "టిక్ చేసి తనిఖీ చేయండి" : lang === "hi" ? "टिक करके जांचें" : "Interactive (Tap to check)"}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          ${checklistHtml}
+        </div>
       </div>
 
-      <!-- Test Center Workflow -->
-      <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px;">
-        <h3 style="font-size: 1.05rem; color: var(--secondary-blue); margin-bottom: 10px; font-weight: 700;">🏛️ Testing Room Workflow</h3>
-        <ol style="padding-left: 18px; font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 6px;">
-          ${(rtoGuide.steps || rtoGuide.workflow || []).map(step => `<li>${step}</li>`).join("")}
-        </ol>
+      <!-- Test Day Steps -->
+      <div>
+        <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 14px; display: flex; align-items: center; gap: 6px;">
+          <span>🚶‍♂️</span> <span>${lang === "te" ? "పరీక్ష రోజు 5 దశల విధానం" : lang === "hi" ? "परीक्षा दिवस के 5 चरण" : "Test Day 5-Step Process"}</span>
+        </h3>
+        <div style="display: flex; flex-direction: column;">
+          ${stepsHtml}
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Hyderabad RTO Centers Directory -->
+    <div style="margin-bottom: 32px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+        <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; display: flex; align-items: center; gap: 6px;">
+          <span>📍</span> <span>${lang === "te" ? "హైదరాబాద్ RTO కార్యాలయాలు & కేంద్రాలు" : lang === "hi" ? "हैदराबाद आरटीओ केंद्र" : "Hyderabad RTO Testing Centers Directory"}</span>
+        </h3>
+        <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="font-size: 0.8rem; color: var(--secondary-blue); font-weight: 600; text-decoration: underline;">
+          transport.telangana.gov.in ↗
+        </a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+        ${centersHtml}
+      </div>
+    </div>
+
+    <!-- Section 3: Fee Structure & Validity Rules -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 32px;">
+      <!-- Fees -->
+      <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
+        <h3 style="font-size: 1.05rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
+          <span>💳</span> <span>${lang === "te" ? "అధికారిక ఫీజుల వివరాలు" : lang === "hi" ? "आधिकारिक शुल्क" : "Official Government Fees"}</span>
+        </h3>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px;">
+          ${feesList}
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4; margin: 0; background: #FFFFFF; padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+          <strong>ℹ️ ${lang === "te" ? "రీ-టెస్ట్ నిబంధన:" : lang === "hi" ? "पुनः परीक्षा नियम:" : "Retest Policy:"}</strong> ${retestText}
+        </p>
       </div>
 
-      <!-- Common Pitfalls -->
-      <div style="background: #FFFBEB; border: 1px solid #FDE68A; border-radius: var(--radius-md); padding: 16px;">
-        <h3 style="font-size: 1.05rem; color: #92400E; margin-bottom: 10px; font-weight: 700;">⚠️ Common Pitfalls to Avoid</h3>
-        <ul style="padding-left: 18px; font-size: 0.88rem; color: #78350F; display: flex; flex-direction: column; gap: 6px;">
-          ${(rtoGuide.topTips || rtoGuide.commonPitfalls || []).map(item => `<li>${item}</li>`).join("")}
-        </ul>
+      <!-- Validity & DL Eligibility -->
+      <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 12px; padding: 20px;">
+        <h3 style="font-size: 1.05rem; color: #166534; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
+          <span>⏳</span> <span>${lang === "te" ? "LLR చెల్లుబాటు & తదుపరి ప్రక్రియ" : lang === "hi" ? "वैधता और स्थायी लाइसेंस" : "LLR Validity & Next Steps"}</span>
+        </h3>
+        <div style="font-size: 0.88rem; color: #14532D; line-height: 1.5; margin-bottom: 14px;">
+          ${validityText}
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #86EFAC; border-radius: 8px; padding: 12px;">
+          <strong style="display: block; font-size: 0.85rem; color: #166534; margin-bottom: 4px;">🎯 30-Day Permanent DL Rule:</strong>
+          <span style="font-size: 0.8rem; color: #15803D;">Practice driving with an 'L' board sticker and an accompanying permanent DL holder. Book your permanent Driving Test track slot anytime between day 31 and day 180!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Top Exam-Day Tips -->
+    <div>
+      <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 14px; display: flex; align-items: center; gap: 6px;">
+        <span>🏆</span> <span>${lang === "te" ? "పరీక్ష హాల్‌లో పాస్ కావడానికి చిట్కాలు" : lang === "hi" ? "परीक्षा हॉल के लिए महत्वपूर्ण टिप्स" : "Exam Hall High-Scorer Tips"}</span>
+      </h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+        ${tipsHtml}
       </div>
     </div>
   `;
+
+  // Attach interactive checkbox listeners
+  container.querySelectorAll(".rto-check-item").forEach(cb => {
+    cb.addEventListener("change", e => {
+      const id = e.target.getAttribute("data-id");
+      const current = JSON.parse(localStorage.getItem("rto_guide_checklist") || "{}");
+      if (e.target.checked) {
+        current[id] = true;
+      } else {
+        delete current[id];
+      }
+      localStorage.setItem("rto_guide_checklist", JSON.stringify(current));
+      
+      // Update label strikethrough visually
+      const label = e.target.closest("label");
+      const strong = label ? label.querySelector("strong") : null;
+      if (strong) strong.style.textDecoration = e.target.checked ? "line-through" : "none";
+    });
+  });
 }
