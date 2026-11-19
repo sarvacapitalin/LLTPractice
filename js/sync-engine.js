@@ -28,14 +28,42 @@ export class SyncEngine {
     });
   }
 
-  generateSyncQrSvg() {
+  generateSyncUrl() {
     const payload = this.getCompactPayload();
-    return createQRCodeSvg(payload, 240);
+    let baseUrl = "https://llr.sarvacapital.in/";
+    if (typeof window !== "undefined" && window.location && window.location.origin) {
+      baseUrl = window.location.origin + window.location.pathname;
+    }
+    return `${baseUrl}?sync=${encodeURIComponent(payload)}`;
+  }
+
+  generateSyncQrSvg() {
+    const url = this.generateSyncUrl();
+    return createQRCodeSvg(url, 240);
   }
 
   applyCompactPayload(payloadString) {
     try {
-      const data = JSON.parse(payloadString);
+      let rawJson = payloadString;
+      if (typeof rawJson === "string") {
+        if (rawJson.includes("?sync=")) {
+          const syncIdx = rawJson.indexOf("?sync=");
+          const rawParam = rawJson.slice(syncIdx + 6);
+          try {
+            rawJson = decodeURIComponent(rawParam);
+          } catch (e) {
+            rawJson = rawParam;
+          }
+        } else if (rawJson.startsWith("%7B")) {
+          try {
+            rawJson = decodeURIComponent(rawJson);
+          } catch (e) {
+            // Keep as is
+          }
+        }
+      }
+
+      const data = JSON.parse(rawJson);
       if (!data || !data.q) return false;
 
       // Merge into current state (taking max streak)

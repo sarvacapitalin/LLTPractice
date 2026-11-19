@@ -39,6 +39,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   renderCheatsheet();
   renderRtoGuide();
   updateReadinessMeter();
+  checkSyncUrlParam();
 
   // UNREGISTER all Service Workers and wipe ALL caches to fix stale module serving.
   // The SW was cache-busting HTML/CSS/app.js but sub-modules (exam-engine.js, etc.)
@@ -208,6 +209,36 @@ function updateReadinessMeter() {
     } else {
       fill.style.background = "#FFD54F";
     }
+  }
+}
+
+// Check and import URL sync query parameter (?sync=...) for mobile scan-to-sync
+function checkSyncUrlParam() {
+  try {
+    if (typeof window === "undefined" || !window.location) return;
+    const params = new URLSearchParams(window.location.search);
+    const syncParam = params.get("sync");
+    if (syncParam) {
+      let rawJson = syncParam;
+      try {
+        if (syncParam.startsWith("%") || syncParam.includes("%22") || syncParam.includes("%7B")) {
+          rawJson = decodeURIComponent(syncParam);
+        }
+      } catch (e) {
+        rawJson = syncParam;
+      }
+      const ok = sync.applyCompactPayload(rawJson);
+      if (ok) {
+        updateReadinessMeter();
+        practice.notifyUpdate();
+        flashcards.notifyUpdate();
+        alert(t("sync_success", "Progress synchronized successfully from scan!"));
+        const cleanUrl = window.location.origin + window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
+    }
+  } catch (err) {
+    console.error("Failed to process sync query parameter:", err);
   }
 }
 

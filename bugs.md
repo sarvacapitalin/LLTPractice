@@ -293,6 +293,7 @@ When an exam is in progress and the candidate switches to another tab (such as *
 
 ### Bug ID: BUG-07
 **Bug Shortname:** Fake QR Code Generator and Inoperable Mobile "Scan-to-Sync" Feature  
+**Status:** FIXED  
 **Description:**  
 The application heavily features a *"Zero-Server Cross-Device Scan-to-Sync (Laptop ↔ Mobile)"* feature in the UI and README: *"Scan this QR code with your mobile phone to instantly import your progress from this laptop."*  
 However, the QR code rendered in the modal is a synthetic mock: `js/qrcode-generator.js` does not implement standard ISO/IEC 18004 QR encoding (it uses a dummy 29x29 matrix filled with a pseudo-random hash). Standard camera apps (iOS Camera, Google Lens, Android) cannot decode it. Furthermore, even if valid, the payload is raw JSON (`{"v":1,"q":...}`) without a URL scheme or deep link handler, and the web app provides no mobile camera scanner, making it impossible for a phone camera scan to import data into mobile `localStorage`.
@@ -316,6 +317,16 @@ However, the QR code rendered in the modal is a synthetic mock: `js/qrcode-gener
 1. Replace `qrcode-generator.js` with an authentic, standards-compliant zero-dependency QR encoder (such as standard Type 1–10 byte-mode QR generator with Reed-Solomon GF(256) error correction) or use a proven lightweight client-side QR library.
 2. In `sync-engine.js`, wrap the compressed payload into a URL: `https://llr.sarvacapital.in/?sync=${encodeURIComponent(compressedData)}`.
 3. In `js/app.js` on load, detect `?sync=` in the URL query string, automatically import the state via `sync.applyCompactPayload()`, and alert the user of successful synchronization.
+
+**Implemented fix:**  
+- Completely replaced `js/qrcode-generator.js` with a fully standards-compliant, zero-dependency ISO/IEC 18004 QR Code implementation (Kazuhiko Arase standard engine with automatic version detection 1–40 and Reed-Solomon error correction).
+- Added `generateSyncUrl()` in `js/sync-engine.js` which serializes the compact question streak payload into a URL: `${baseUrl}?sync=${encodeURIComponent(payload)}`.
+- Updated `generateSyncQrSvg()` to encode the scannable URL rather than raw JSON, allowing native smartphone camera apps (iOS Camera, Google Lens) to scan the screen and open the web app directly.
+- Enhanced `applyCompactPayload()` in `js/sync-engine.js` to parse both direct JSON payloads and URL strings containing `?sync=`.
+- Added `checkSyncUrlParam()` to `js/app.js` on `DOMContentLoaded` to detect `?sync=` in the URL query, automatically merge the imported progress, refresh UI meters, alert the candidate of successful sync, and clean up the address bar via `window.history.replaceState()`.
+- **Why this works & Test Scenario:**
+  - Phone cameras directly decode the ISO/IEC 18004 QR code into a tappable URL link. Tapping it opens the site on mobile, merges question mastery streaks into mobile `localStorage`, and updates readiness without requiring any cloud server or intermediate app.
+  - Verified via Node.js automated test: generated authentic QR SVG from `generateSyncUrl()`, verified valid SVG element tags with standard finder modules, and performed full deserialization roundtrip via `applyCompactPayload()` restoring streaks and mastery status accurately.
 
 ---
 
