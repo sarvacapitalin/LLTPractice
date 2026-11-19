@@ -389,6 +389,16 @@ function initExamUI() {
     if (tutorLabel) tutorLabel.textContent = on ? "ON" : "OFF";
   });
 
+  const tutorWrapper = document.getElementById("tutor-toggle-wrapper");
+  tutorWrapper?.addEventListener("click", (e) => {
+    if (!e.target.closest("label")) {
+      if (tutorToggle) {
+        tutorToggle.checked = !tutorToggle.checked;
+        tutorToggle.dispatchEvent(new Event("change"));
+      }
+    }
+  });
+
   btnStart?.addEventListener("click", () => {
     sounds.ensureAudioActive();
     if (!datasetsLoaded || allQuestions.length === 0) {

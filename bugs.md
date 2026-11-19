@@ -540,6 +540,7 @@ document.getElementById("btn-readiness-badge")?.addEventListener("click", () => 
 
 ### Bug ID: BUG-12
 **Bug Shortname:** Tutor Mode Wrapper Has Cursor Pointer but Only Checkbox Is Clickable  
+**Status:** FIXED  
 **Description:**  
 On the Mock Test welcome card, the Tutor Mode toggle card (`#tutor-toggle-wrapper`) has an inline style `cursor: pointer;`, signalling to the user that tapping anywhere on the card will toggle Tutor Mode on or off. However, clicking the card text or container does nothing; only clicking the small 20px checkbox inside the label responds.
 
@@ -568,6 +569,13 @@ wrapper?.addEventListener("click", (e) => {
   }
 });
 ```
+
+**Implemented fix:**  
+- Attached a click listener to `#tutor-toggle-wrapper` in `initExamUI()` within `js/app.js`.
+- If the click target is not already within the toggle label (`!e.target.closest("label")`), the listener programmatically toggles `tutorToggle.checked` and dispatches the standard `"change"` event, updating both the engine preference and the `"ON"`/`"OFF"` visual badge.
+- **Why this works & Test Scenario:**
+  - Provides a generous tap target across the entire card container on desktop and mobile without risk of duplicate event firings when tapping the checkbox directly.
+  - Verified via Node.js simulated event dispatch: clicking the wrapper card toggles checkbox state and updates status label; clicking directly inside the label allows native input handling without double toggle.
 
 ---
 
