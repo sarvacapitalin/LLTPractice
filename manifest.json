@@ -1,8 +1,10 @@
 {
-  "name": "Telangana RTA Learner's Licence Practice",
+  "name": "Telangana RTA Learner's Licence Practice 2026",
   "short_name": "TS LLR Prep",
-  "description": "Authentic Telangana RTA LLR STALL computerized exam preparation and 95% readiness tracker",
-  "start_url": "./index.html",
+  "description": "Authentic Telangana RTA LLR STALL computerized exam simulator with 412 questions and 95% pass readiness tracking",
+  "id": "/",
+  "scope": "/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0B2545",
   "theme_color": "#0B2545",
