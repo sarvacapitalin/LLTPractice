@@ -501,6 +501,7 @@ In `js/coverage-engine.js`:
 
 ### Bug ID: BUG-11
 **Bug Shortname:** Dead UI Element: Exam Readiness Badge in Header Has No Click Handler  
+**Status:** FIXED  
 **Description:**  
 The header element `#btn-readiness-badge` displays the candidate's exam readiness percentage (e.g. `0%`). It includes the HTML attribute `title="Click to view readiness breakdown"`, has hover styles, and displays `cursor: pointer`. However, clicking it does absolutely nothing because no click event listener is attached anywhere in the JavaScript codebase.
 
@@ -526,6 +527,14 @@ document.getElementById("btn-readiness-badge")?.addEventListener("click", () => 
   practiceTabBtn?.click();
 });
 ```
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Attached a click event listener to `#btn-readiness-badge` in `setupTabs()` that activates the **Topic Practice** tab (`tab-practice`), immediately presenting the candidate with the full category-wise mastery breakdown, search filter, and question navigator matrix.
+  - Enhanced `updateReadinessMeter()` to dynamically update `#btn-readiness-badge`'s `title` attribute with live stats (e.g. `Exam Readiness: 45% (186/412 Mastered) • Click to open Topic Practice`).
+- **Why this works & Test Scenario:**
+  - Converts a dead UI element with click affordance (`cursor: pointer`, hover states, and title tooltip) into an active, functional navigation trigger.
+  - Verified via Node.js DOM simulation test: clicking `#btn-readiness-badge` successfully dispatches a click to `[data-tab="tab-practice"]`, switching views cleanly.
 
 ---
 

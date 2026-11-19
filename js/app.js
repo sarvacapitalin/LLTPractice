@@ -208,14 +208,24 @@ function setupTabs() {
       }
     }
   });
+
+  // Exam Readiness Badge in Header
+  document.getElementById("btn-readiness-badge")?.addEventListener("click", () => {
+    const practiceTabBtn = document.querySelector('[data-tab="tab-practice"]');
+    practiceTabBtn?.click();
+  });
 }
 
 // Readiness Meter Update
 function updateReadinessMeter() {
   const stats = coverage.getReadinessStats();
+  const badge = document.getElementById("btn-readiness-badge");
   const badgeVal = document.getElementById("header-readiness-val");
   const fill = document.getElementById("header-readiness-fill");
 
+  if (badge) {
+    badge.title = `Exam Readiness: ${stats.readinessPercent}% (${stats.mastered}/${stats.total} Mastered) • Click to open Topic Practice`;
+  }
   if (badgeVal) badgeVal.textContent = `${stats.readinessPercent}%`;
   if (fill) {
     fill.style.width = `${Math.min(stats.readinessPercent, 100)}%`;
