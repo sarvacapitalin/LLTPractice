@@ -936,6 +936,7 @@ window.addEventListener("keydown", (e) => {
 
 ### Bug ID: BUG-21
 **Bug Shortname:** PWA Manifest Icon Dimensions and Accessibility Viewport Zoom Restriction  
+**Status:** FIXED  
 **Description:**  
 1. In `manifest.json`, `assets/signs/sign_001.png` is specified as icons for `"sizes": "192x192"` and `"sizes": "512x512"`. However, the physical image dimensions of `sign_001.png` on disk are `285x215` (non-square, aspect ratio ~1.32). This causes PWA audit warnings, icon distortion on Android homescreens, and failed PWA install criteria.
 2. In `index.html` line 5, the viewport meta tag includes `maximum-scale=1.0, user-scalable=no`. This violates WCAG 2.1 Success Criterion 1.4.4 (Resize text, Level AA) by disabling pinch-to-zoom on mobile devices for visually impaired users.
@@ -946,8 +947,8 @@ window.addEventListener("keydown", (e) => {
 3. Check PWA section: fails on non-square icon manifest declaration.
 
 **Root Cause:**  
-- `manifest.json` lines 11–22 references `sign_001.png` (285x215) with mismatched square dimensions.
-- `index.html` line 5 specifies `maximum-scale=1.0, user-scalable=no`.
+- `manifest.json` lines 11–22 referenced `sign_001.png` (285x215) with mismatched square dimensions.
+- `index.html` line 5 specified `maximum-scale=1.0, user-scalable=no`.
 
 **Code artifacts and line references:**
 - [`manifest.json#L11-L22`](file:///Users/raghu/Projects/LLTPractice/manifest.json#L11-L22): Mismatched icon sizes.
@@ -957,6 +958,19 @@ window.addEventListener("keydown", (e) => {
 1. In `index.html` line 5, change the viewport meta tag to:
    `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 2. Create square icons (e.g., `assets/icons/icon-192.png` and `assets/icons/icon-512.png` or SVG) and update `manifest.json`.
+
+**Implemented fix:**  
+- In `index.html`:
+  - Replaced the restrictive `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">` with the accessible, WCAG-compliant standard: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`.
+  - Added `<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">` and `<link rel="apple-touch-icon" href="assets/icons/icon-192.png">`.
+- Generated true square high-resolution icons matching theme `#0B2545` with standard maskable safe zone:
+  - `assets/icons/icon-192.png` (192x192 PNG)
+  - `assets/icons/icon-512.png` (512x512 PNG)
+- In `manifest.json`:
+  - Updated icon entries to point to `assets/icons/icon-192.png` and `assets/icons/icon-512.png` with `"purpose": "any maskable"`.
+- **Why this works & Test Scenario:**
+  - Satisfies WCAG 2.1 Success Criterion 1.4.4 by enabling browser pinch-to-zoom for low-vision candidates, and resolves PWA manifest audit errors by providing true square 192x192 and 512x512 app icons.
+  - Verified physical pixel dimensions with `sips` (192x192 and 512x512); verified viewport meta tag conforms to mobile accessibility standards. All 64 QA tests pass.
 
 ---
 
