@@ -702,6 +702,7 @@ document.querySelectorAll(".review-filter-btn").forEach(b => {
 
 ### Bug ID: BUG-16
 **Bug Shortname:** Dead Code in Post-Exam Review Option Highlighting Logic  
+**Status:** FIXED  
 **Description:**  
 In `js/app.js` (`renderExamResultReview`), the template tries to add a `✓ Your Choice` suffix tag when the user chose the correct option:
 ```javascript
@@ -725,7 +726,7 @@ Whenever `isCorrect` is true, `userChoice === correctIdx`. Because the first `if
 The first condition `optIdx === correctIdx` subsumes `optIdx === userChoice && isCorrect`.
 
 **Code artifacts and line references:**
-- [`js/app.js#L666-L675`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L666-L675): Mutually exclusive condition order renders the third branch unreachable.
+- [`js/app.js#L808-L820`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L808-L820): Mutually exclusive condition order renders the third branch unreachable.
 
 **Solution:**  
 Refactor the branch logic:
@@ -742,6 +743,17 @@ if (optIdx === correctIdx) {
   suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #991B1B; font-weight: 700;">✗ Your Choice</span>`;
 }
 ```
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Refactored `renderExamResultReview()` option evaluation logic inside the review card generation loop.
+  - When `optIdx === correctIdx`, the code now checks `if (isCorrect)`:
+    - If `true`, it renders `✓ Your Choice (Correct)`, clearly acknowledging the candidate's accurate choice alongside the official answer.
+    - If `false`, it renders `✓ Correct Answer`, providing the official key for missed/timed-out questions.
+  - Retained `optIdx === userChoice && !isCorrect` to mark the candidate's erroneous choice with `✗ Your Choice`.
+- **Why this works & Test Scenario:**
+  - Eliminates dead code branch and ensures candidates receive explicit positive reinforcement that their selected option was indeed the correct answer.
+  - Verified via Node.js test covering all branches: correctly selected options receive `✓ Your Choice (Correct)`, missed questions display both `✓ Correct Answer` and `✗ Your Choice`, and unselected options have no suffix tags. All 64 QA tests pass.
 
 ---
 

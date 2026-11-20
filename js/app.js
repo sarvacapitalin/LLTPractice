@@ -807,12 +807,14 @@ function renderExamResultReview(state, lang, examEngine) {
 
               if (optIdx === correctIdx) {
                 optClass = "official-correct";
-                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #166534; font-weight: 700;">✓ Correct Answer</span>`;
+                if (isCorrect) {
+                  suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #166534; font-weight: 700;">✓ Your Choice (Correct)</span>`;
+                } else {
+                  suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #166534; font-weight: 700;">✓ Correct Answer</span>`;
+                }
               } else if (optIdx === userChoice && !isCorrect) {
                 optClass = "user-chosen-wrong";
                 suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #991B1B; font-weight: 700;">✗ Your Choice</span>`;
-              } else if (optIdx === userChoice && isCorrect) {
-                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #166534; font-weight: 700;">✓ Your Choice</span>`;
               }
 
               return `
