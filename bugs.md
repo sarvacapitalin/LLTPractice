@@ -1047,6 +1047,7 @@ Re-enable full trilingual support:
 
 ### Bug ID: BUG-23
 **Bug Shortname:** `storage.importStateJson()` Crashes Application When Imported Backup Lacks Preferences Object  
+**Status:** FIXED  
 **Description:**  
 When importing a backup state via `storage.importStateJson(jsonString)`, the function assigns `this.state = parsed` without checking if `parsed.preferences` or `parsed.examHistory` exists. If a user imports a stripped or minimal backup file (e.g. `{ "questions": { ... } }`), `this.state.preferences` becomes `undefined`. Subsequent calls to `storage.getPreference("soundEnabled", true)` immediately crash with an unhandled TypeError: `Cannot read properties of undefined (reading 'soundEnabled')`, breaking sound, voice, and theme rendering.
 
@@ -1057,11 +1058,11 @@ When importing a backup state via `storage.importStateJson(jsonString)`, the fun
 4. Refresh or click sound toggle: application crashes with `TypeError: Cannot read properties of undefined (reading 'soundEnabled')`.
 
 **Root Cause:**  
-In `js/storage-engine.js` lines 146–159, `importStateJson()` parses JSON and checks `if (parsed && parsed.questions)`, then immediately sets `this.state = parsed;` without the fallback sanitization present in `loadState()`.
+In `js/storage-engine.js`, `importStateJson()` parsed JSON and checked `if (parsed && parsed.questions)`, then immediately set `this.state = parsed;` without the fallback sanitization present in `loadState()`.
 
 **Code artifacts and line references:**
-- [`js/storage-engine.js#L146-L159`](file:///Users/raghu/Projects/LLTPractice/js/storage-engine.js#L146-L159): `importStateJson()` lacks schema validation and property defaulting.
-- [`js/storage-engine.js#L123-L125`](file:///Users/raghu/Projects/LLTPractice/js/storage-engine.js#L123-L125): `getPreference()` expects `this.state.preferences` to exist.
+- [`js/storage-engine.js#L146-L175`](file:///Users/raghu/Projects/LLTPractice/js/storage-engine.js#L146-L175): `importStateJson()` lacked schema validation and property defaulting.
+- [`js/storage-engine.js#L123-L131`](file:///Users/raghu/Projects/LLTPractice/js/storage-engine.js#L123-L131): `getPreference()` expected `this.state.preferences` to always exist.
 
 **Solution:**  
 Sanitize imported JSON against the default schema before assigning:
@@ -1087,6 +1088,18 @@ importStateJson(jsonString) {
   }
 }
 ```
+
+**Implemented fix:**  
+- In `js/storage-engine.js`:
+  - Rewrote `importStateJson(jsonString)` to sanitize the imported payload against standard state defaults:
+    - Validates that `parsed` and `parsed.questions` are objects.
+    - Defaults `version: parsed.version || 1`.
+    - Defaults `examHistory` to `Array.isArray(parsed.examHistory) ? parsed.examHistory : []`.
+    - Merges imported `preferences` onto the complete default preference schema (`{ language: "en", soundEnabled: true, autoSpeech: false }`).
+  - Added defensive guards in `getPreference()` and `setPreference()` to auto-instantiate `this.state.preferences` if unexpectedly undefined.
+- **Why this works & Test Scenario:**
+  - Prevents application runtime crashes (`TypeError: Cannot read properties of undefined`) when candidates import partial, minimal, or third-party JSON backup files that omit `preferences` or `examHistory`.
+  - Verified via Node.js automated test: imported a stripped JSON payload containing only question state; confirmed `preferences` and `examHistory` were initialized with defaults, and subsequent calls to `getPreference`, `setPreference`, and `recordExamResult` executed without error. All 64 QA tests pass.
 
 ---
 

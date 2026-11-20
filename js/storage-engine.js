@@ -121,10 +121,16 @@ export class StorageEngine {
   }
 
   getPreference(key, defaultVal) {
+    if (!this.state.preferences) {
+      this.state.preferences = { language: "en", soundEnabled: true, autoSpeech: false };
+    }
     return this.state.preferences[key] !== undefined ? this.state.preferences[key] : defaultVal;
   }
 
   setPreference(key, val) {
+    if (!this.state.preferences) {
+      this.state.preferences = { language: "en", soundEnabled: true, autoSpeech: false };
+    }
     this.state.preferences[key] = val;
     this.saveState();
   }
@@ -146,8 +152,17 @@ export class StorageEngine {
   importStateJson(jsonString) {
     try {
       const parsed = JSON.parse(jsonString);
-      if (parsed && parsed.questions) {
-        this.state = parsed;
+      if (parsed && typeof parsed === "object" && parsed.questions && typeof parsed.questions === "object") {
+        this.state = {
+          version: parsed.version || 1,
+          lastUpdated: parsed.lastUpdated || new Date().toISOString(),
+          questions: parsed.questions || {},
+          examHistory: Array.isArray(parsed.examHistory) ? parsed.examHistory : [],
+          preferences: Object.assign(
+            { language: "en", soundEnabled: true, autoSpeech: false },
+            (parsed.preferences && typeof parsed.preferences === "object") ? parsed.preferences : {}
+          )
+        };
         this.saveState();
         return true;
       }
