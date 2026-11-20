@@ -911,11 +911,14 @@ function renderPracticeMatrix(filteredList) {
   if (!matrix) return;
   matrix.innerHTML = "";
 
+  const isAllCategories = practice.activeCategory === "all";
+
   filteredList.forEach(q => {
     const qState = storage.getQuestionState(q.id);
     const chip = document.createElement("button");
-    chip.textContent = q.questionNumber;
-    chip.title = `Q${q.questionNumber}: ${q.id} (Status: ${qState.status}, Streak: ${qState.streak})`;
+    const catPrefix = q.category === "road_signs" ? "RS" : (q.category === "rules_of_road" ? "RR" : "GP");
+    chip.textContent = isAllCategories ? `${catPrefix}-${q.questionNumber}` : q.questionNumber;
+    chip.title = `${catPrefix}-${q.questionNumber}: ${q.id} (Status: ${qState.status}, Streak: ${qState.streak})`;
 
     let bg = "#E2E8F0";
     let color = "#1E293B";

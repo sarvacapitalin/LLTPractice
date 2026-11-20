@@ -853,6 +853,7 @@ Update `exam.readCurrentQuestion()` to invoke this toggle method.
 
 ### Bug ID: BUG-19
 **Bug Shortname:** Duplicate Question Numbers in Question Navigator When Viewing "All (412)"  
+**Status:** FIXED  
 **Description:**  
 In Topic Practice, when the filter is set to **"All (412)"**, the Question Navigator matrix renders buttons labelled solely with `q.questionNumber`. Because Road Signs, Rules of the Road, and General Principles each start numbering from 1, the navigator displays three buttons labeled "1", three labeled "2", three labeled "3", up to "94", and two labeled "95" to "159". The user cannot determine which category a button corresponds to.
 
@@ -862,11 +863,10 @@ In Topic Practice, when the filter is set to **"All (412)"**, the Question Navig
 3. Scroll through the Question Navigator matrix: notice three buttons with the label `1`, three with `2`, etc.
 
 **Root Cause:**  
-In `js/app.js` line 754:
-`chip.textContent = q.questionNumber;` uses the intra-category sequential integer rather than a category-distinguished tag or global index.
+In `js/app.js`, `chip.textContent = q.questionNumber;` used the intra-category sequential integer rather than a category-distinguished tag or global index.
 
 **Code artifacts and line references:**
-- [`js/app.js#L754`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L754): `chip.textContent = q.questionNumber;`.
+- [`js/app.js#L914-L922`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L914-L922): `chip.textContent = q.questionNumber;`.
 
 **Solution:**  
 Prefix the chip label with category initials or group by category headers when "All (412)" is active:
@@ -874,6 +874,17 @@ Prefix the chip label with category initials or group by category headers when "
 const catPrefix = q.category === "road_signs" ? "RS" : q.category === "rules_of_road" ? "RR" : "GP";
 chip.textContent = `${catPrefix}-${q.questionNumber}`;
 ```
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Updated `renderPracticeMatrix(filteredList)` to determine `isAllCategories = practice.activeCategory === "all"`.
+  - Added prefix resolution (`RS-` for `road_signs`, `RR-` for `rules_of_road`, and `GP-` for `general_principles`).
+  - When viewing "All (412)", chips are labeled with their category prefix (e.g. `RS-1`, `RR-1`, `GP-1`), eliminating confusion between identical question numbers.
+  - When filtered to a single category (e.g. "Road Signs (94)"), the clean numeric label (`1`, `2`, `3`...) is preserved.
+  - Updated chip `title` tooltip to display the full category tag and question identifier (e.g. `RS-1: TS_RS_001 (Status: unseen, Streak: 0)`).
+- **Why this works & Test Scenario:**
+  - Candidates browsing all 412 questions can instantly identify the topic/category of each question directly from the navigator matrix without collision.
+  - Verified via Node.js test: verified that `RS-1`, `RR-1`, and `GP-1` render under "all", and clean integer `1` renders under single category filters. All 64 QA tests pass.
 
 ---
 
