@@ -807,6 +807,7 @@ if (scoreText) {
 
 ### Bug ID: BUG-18
 **Bug Shortname:** Audio "Read Aloud" Button Cannot Be Paused or Stopped  
+**Status:** FIXED  
 **Description:**  
 When the user clicks the **"🔊 Read Aloud"** button on an active question, speech synthesis begins narrating the question and options. If the user clicks the button again to stop the narration, the speech does not stop; instead, it cancels and immediately restarts reading from the very beginning.
 
@@ -817,11 +818,11 @@ When the user clicks the **"🔊 Read Aloud"** button on an active question, spe
 4. Notice that narration immediately restarts from the question title rather than stopping.
 
 **Root Cause:**  
-In `js/app.js` line 306, `btnRead.onclick` directly calls `exam.readCurrentQuestion()`. In `js/speech-engine.js` lines 26–29, `readQuestion()` calls `this.stop()` and immediately proceeds to `this.synth.speak(utterance)` without checking if `this.isReading` was already `true`.
+In `js/app.js`, `btnRead.onclick` directly calls `exam.readCurrentQuestion()`. In `js/speech-engine.js`, `readQuestion()` calls `this.stop()` and immediately proceeds to `this.synth.speak(utterance)` without checking if `this.isReading` was already `true`.
 
 **Code artifacts and line references:**
-- [`js/speech-engine.js#L26-L30`](file:///Users/raghu/Projects/LLTPractice/js/speech-engine.js#L26-L30): `readQuestion()` unconditionally starts speaking.
-- [`js/app.js#L306-L308`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L306-L308): `btnRead` handler does not toggle.
+- [`js/speech-engine.js#L26-L35`](file:///Users/raghu/Projects/LLTPractice/js/speech-engine.js#L26-L35): Missing toggle check.
+- [`js/exam-engine.js#L337-L347`](file:///Users/raghu/Projects/LLTPractice/js/exam-engine.js#L337-L347): `readCurrentQuestion()` did not distinguish between explicit start vs user toggle.
 
 **Solution:**  
 Implement toggle behavior in `SpeechEngine` or in the caller:
@@ -835,6 +836,18 @@ toggleQuestionSpeech(questionText, options, langCode) {
 }
 ```
 Update `exam.readCurrentQuestion()` to invoke this toggle method.
+
+**Implemented fix:**  
+- In `js/speech-engine.js`:
+  - Added `toggleQuestionSpeech(questionText, options, langCode)` method to `SpeechEngine`.
+  - Checks if `this.isReading` is active or if `this.synth.speaking / this.synth.pending` are true; if so, immediately stops speech playback via `this.stop()`; otherwise, begins reading the question and options via `this.readQuestion()`.
+- In `js/exam-engine.js`:
+  - Updated `readCurrentQuestion(force = false)` to support a `force` flag:
+    - User clicks (`#btn-read-question`) and hotkey taps (`Spacebar`) route through `toggleQuestionSpeech()` to toggle narration on/off.
+    - Automatic reading (`autoSpeech` user preference) passes `force = true` on new question transition so each question starts reading cleanly.
+- **Why this works & Test Scenario:**
+  - Candidates can now cleanly pause/cancel speech narration at any time by tapping the "Read Aloud" button or pressing the Spacebar, removing distracting unwanted audio repeats.
+  - Verified via Node.js Web Speech API mock test: sequential calls to `toggleQuestionSpeech` correctly toggled `isReading` between true -> false -> true with appropriate state transitions and cancel/speak calls. All 64 QA tests pass.
 
 ---
 

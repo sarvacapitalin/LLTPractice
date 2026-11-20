@@ -23,6 +23,14 @@ export class SpeechEngine {
     }
   }
 
+  toggleQuestionSpeech(questionText, options, langCode = 'en') {
+    if (this.isReading || (this.synth && (this.synth.speaking || this.synth.pending))) {
+      this.stop();
+    } else {
+      this.readQuestion(questionText, options, langCode);
+    }
+  }
+
   readQuestion(questionText, options, langCode = 'en') {
     if (!this.isSupported() || !this.synth) return;
     this.stop();

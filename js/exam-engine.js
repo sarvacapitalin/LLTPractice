@@ -165,7 +165,7 @@ export class ExamEngine {
     // Auto-read if user enabled voice
     if (storage.getPreference("autoSpeech", false)) {
       try {
-        this.readCurrentQuestion();
+        this.readCurrentQuestion(true);
       } catch (e) {
         console.warn("Speech reader:", e);
       }
@@ -334,13 +334,17 @@ export class ExamEngine {
     this.notifyUpdate();
   }
 
-  readCurrentQuestion() {
+  readCurrentQuestion(force = false) {
     const q = this.questions[this.currentIndex];
     if (!q) return;
     const lang = getCurrentLang();
     const qText = q.text[lang] || q.text.en;
     const qOpts = q.options[lang] || q.options.en;
-    speech.readQuestion(qText, qOpts, lang);
+    if (force) {
+      speech.readQuestion(qText, qOpts, lang);
+    } else {
+      speech.toggleQuestionSpeech(qText, qOpts, lang);
+    }
   }
 
   notifyUpdate() {
