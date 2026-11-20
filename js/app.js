@@ -296,8 +296,11 @@ function setupModals() {
         if (syncModal) syncModal.style.display = "none";
         updateReadinessMeter();
         practice.notifyUpdate();
+        flashcards.notifyUpdate();
       } catch (err) {
         alert("Error importing backup file: " + err.message);
+      } finally {
+        e.target.value = "";
       }
     }
   });

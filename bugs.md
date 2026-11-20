@@ -1105,6 +1105,7 @@ importStateJson(jsonString) {
 
 ### Bug ID: BUG-24
 **Bug Shortname:** File Input Change Event Does Not Fire When Re-Importing the Same Backup File  
+**Status:** FIXED  
 **Description:**  
 In the Sync modal, if a user imports a backup file, experiences an error or makes modifications, and attempts to import the same file again (or another file with the same filename in the same directory), the file picker's `change` event will not fire. The user clicks "Import Backup File", selects the file, and nothing happens.
 
@@ -1116,10 +1117,10 @@ In the Sync modal, if a user imports a backup file, experiences an error or make
 5. Notice the file is selected in the OS dialog, but the application does not import it and no confirmation alert appears.
 
 **Root Cause:**  
-In `js/app.js` line 195, the change event listener on `#input-sync-file` processes the file but never resets `e.target.value = ""`. When the same file is selected, the browser considers the input value unchanged and suppresses the `change` event.
+In `js/app.js`, the change event listener on `#input-sync-file` processed the file but never reset `e.target.value = ""`. When the same file was selected consecutively, the browser considered the input value unchanged and suppressed the `change` event.
 
 **Code artifacts and line references:**
-- [`js/app.js#L195-L208`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L195-L208): `input-sync-file` event listener fails to clear `e.target.value`.
+- [`js/app.js#L290-L305`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L290-L305): `input-sync-file` event listener failed to clear `e.target.value`.
 
 **Solution:**  
 Add `e.target.value = "";` at the conclusion of the import handler in `app.js`:
@@ -1133,6 +1134,7 @@ document.getElementById("input-sync-file")?.addEventListener("change", async e =
       if (syncModal) syncModal.style.display = "none";
       updateReadinessMeter();
       practice.notifyUpdate();
+      flashcards.notifyUpdate();
     } catch (err) {
       alert("Error importing backup file: " + err.message);
     } finally {
@@ -1141,3 +1143,11 @@ document.getElementById("input-sync-file")?.addEventListener("change", async e =
   }
 });
 ```
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Wrapped the file processing in `#input-sync-file`'s `change` listener with a `finally` block that explicitly resets `e.target.value = ""`.
+  - Added `flashcards.notifyUpdate()` alongside `updateReadinessMeter()` and `practice.notifyUpdate()` to synchronize flashcard mastery state immediately upon backup import.
+- **Why this works & Test Scenario:**
+  - Resetting `e.target.value = ""` ensures the browser's native file input state is cleared after each upload attempt, allowing the native `change` event to fire predictably whenever the same file is re-selected or modified.
+  - Verified via Node.js automated test: simulated sequential file selection of identical filenames, confirming `e.target.value` cleared back to `""` in both success and error scenarios. All 64 QA tests pass.
