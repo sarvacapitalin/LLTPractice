@@ -890,6 +890,7 @@ chip.textContent = `${catPrefix}-${q.questionNumber}`;
 
 ### Bug ID: BUG-20
 **Bug Shortname:** Missing Modal Dismissal on Backdrop Click and Escape Key  
+**Status:** FIXED  
 **Description:**  
 Both `#modal-sync` (Cross-Device Sync modal) and `#modal-reset` (Reset Progress confirmation modal) cannot be dismissed by clicking outside the modal dialog on the dark backdrop, nor by pressing the standard `Escape` keyboard key. Users are forced to find and click the specific "Close" or "Cancel" button, violating WAI-ARIA modal dialog conventions.
 
@@ -901,10 +902,10 @@ Both `#modal-sync` (Cross-Device Sync modal) and `#modal-reset` (Reset Progress 
 5. Notice the modal still stays open.
 
 **Root Cause:**  
-In `js/app.js` lines 176–228 (`setupModals`), event listeners are only attached to `#btn-close-sync` and `#btn-cancel-reset`. No click listeners are attached to `#modal-sync` / `#modal-reset` or keydown listeners for `Escape`.
+In `js/app.js` (`setupModals`), event listeners were only attached to `#btn-close-sync` and `#btn-cancel-reset`. No click listeners were attached to `#modal-sync` / `#modal-reset` or keydown listeners for `Escape`.
 
 **Code artifacts and line references:**
-- [`js/app.js#L176-L228`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L176-L228): Missing backdrop and Escape event handlers.
+- [`js/app.js#L271-L340`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L271-L340): Missing backdrop and Escape event handlers.
 
 **Solution:**  
 Add backdrop click and Escape key listeners in `setupModals`:
@@ -922,6 +923,14 @@ window.addEventListener("keydown", (e) => {
   }
 });
 ```
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Added click event listeners on both `#modal-sync` and `#modal-reset` outer wrappers in `setupModals()`, dismissing the modal whenever `e.target === modal` (clicking the semi-transparent backdrop outside the dialog card).
+  - Added a global `window` `keydown` listener for the `Escape` key, immediately hiding any active modal dialogs.
+- **Why this works & Test Scenario:**
+  - Satisfies WAI-ARIA modal accessibility conventions and user expectations on both mobile and desktop platforms by allowing fast, intuitive dismissal without forcing users to target specific small close buttons.
+  - Verified via Node.js DOM event simulation test: backdrop clicks and Escape key presses cleanly dismissed both modals, while clicks inside modal dialog content correctly preserved modal visibility. All 64 QA tests pass.
 
 ---
 

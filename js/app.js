@@ -321,6 +321,23 @@ function setupModals() {
     flashcards.notifyUpdate();
     alert("Practice progress reset to 0%. All streaks cleared!");
   });
+
+  // Dismiss modals on backdrop click
+  [syncModal, resetModal].forEach(modal => {
+    modal?.addEventListener("click", e => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  // Dismiss modals on Escape key
+  window.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      if (syncModal && syncModal.style.display !== "none") syncModal.style.display = "none";
+      if (resetModal && resetModal.style.display !== "none") resetModal.style.display = "none";
+    }
+  });
 }
 
 // Keyboard shortcuts (1-4 for options, Enter for confirm)
