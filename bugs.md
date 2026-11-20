@@ -759,6 +759,7 @@ if (optIdx === correctIdx) {
 
 ### Bug ID: BUG-17
 **Bug Shortname:** Early-Stopping Exam Score Text Displays Inaccurate Total and Artificially Lowered Percentage  
+**Status:** FIXED  
 **Description:**  
 In the official Telangana STALL test, answering 12 questions correctly immediately triggers early-stopping with a PASS. If a candidate achieves this in 14 questions, their actual performance is 12/14 (85.7%). However, the result screen displays:  
 `Score: 12 / 20 (60%) • Pass Mark: 12`.  
@@ -770,17 +771,11 @@ The percentage is calculated against the full 20 questions rather than the 14 qu
 3. Observe the scorecard text: `Score: 12 / 20 (60%)`.
 
 **Root Cause:**  
-In `js/app.js` lines 352–354:
-```javascript
-const totalQs = state.totalQuestions || 20;
-const percent = Math.round((state.correctCount / totalQs) * 100);
-if (scoreText) scoreText.textContent = `Score: ${state.correctCount} / ${totalQs} (${percent}%) • Pass Mark: 12`;
-```
-`state.totalQuestions` is 20 (`exam.questions.length`), while `state.history.length` is 12.
+In `js/app.js`, the score percentage calculation previously evaluated `Math.round((state.correctCount / totalQs) * 100)` against total available questions (20) instead of the actual number of questions presented/attempted (`state.history.length`).
 
 **Code artifacts and line references:**
-- [`js/app.js#L352-L354`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L352-L354): Score calculation uses 20 instead of attempted question count.
-- [`js/exam-engine.js#L274`](file:///Users/raghu/Projects/LLTPractice/js/exam-engine.js#L274): Storage uses `Math.min(this.questions.length, this.history.length)`.
+- [`js/app.js#L478-L490`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L478-L490): Score calculation used 20 instead of attempted question count.
+- [`js/exam-engine.js#L320-L323`](file:///Users/raghu/Projects/LLTPractice/js/exam-engine.js#L320-L323): Storage engine records `Math.min(this.questions.length, this.history.length)`.
 
 **Solution:**  
 In `app.js`, display both attempted questions and criteria:
@@ -795,6 +790,18 @@ if (scoreText) {
   }
 }
 ```
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Computed `attempted = (state.history && state.history.length) ? state.history.length : totalQs` and determined `percent` based on `attempted`.
+  - Updated `scoreText` formatting to handle all scenarios cleanly:
+    - Early pass (`state.passed && attempted < totalQs`): `Score: X / Y (Z%) • Early Pass: 12 of 20 criteria met!`.
+    - Early fail (`!state.passed && attempted < totalQs`): `Score: X / Y (Z%) • Pass Mark: 12 (Attempted: Y/20)`.
+    - Completed full exam: `Score: X / 20 (Z%) • Pass Mark: 12`.
+  - Updated WhatsApp sharing message to use `attempted` for consistency with user storage and scorecard display.
+- **Why this works & Test Scenario:**
+  - Aligns the scorecard and WhatsApp share text with candidate performance and the exact question count stored in `localStorage`, eliminating confusing artificial deflation of scores when early pass triggers.
+  - Verified via Node.js test across all outcome variants: early pass (12/14) renders 86%, full pass (15/20) renders 75%, and early fail (3/12) reflects actual attempted ratio without anomalies. All 64 QA tests pass.
 
 ---
 

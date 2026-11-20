@@ -476,9 +476,19 @@ function initExamUI() {
       const waBtn = document.getElementById("btn-share-whatsapp");
 
       const totalQs = state.totalQuestions || 20;
-      const percent = Math.round((state.correctCount / totalQs) * 100);
+      const attempted = (state.history && state.history.length) ? state.history.length : totalQs;
+      const percent = Math.round((state.correctCount / attempted) * 100);
       const passMark = state.passThreshold || (state.isCustom ? Math.max(1, Math.ceil(totalQs * 0.6)) : 12);
-      if (scoreText) scoreText.textContent = `Score: ${state.correctCount} / ${totalQs} (${percent}%) • Pass Mark: ${passMark}`;
+
+      if (scoreText) {
+        if (state.passed && attempted < totalQs) {
+          scoreText.textContent = `Score: ${state.correctCount} / ${attempted} (${percent}%) • Early Pass: ${passMark} of ${totalQs} criteria met!`;
+        } else if (!state.passed && attempted < totalQs) {
+          scoreText.textContent = `Score: ${state.correctCount} / ${attempted} (${percent}%) • Pass Mark: ${passMark} (Attempted: ${attempted}/${totalQs})`;
+        } else {
+          scoreText.textContent = `Score: ${state.correctCount} / ${totalQs} (${percent}%) • Pass Mark: ${passMark}`;
+        }
+      }
 
       if (state.passed) {
         if (badge) { badge.className = "result-badge-big pass"; badge.textContent = "✓"; }
@@ -495,7 +505,7 @@ function initExamUI() {
       }
 
       if (waBtn) {
-        const waMsg = encodeURIComponent(`I scored ${state.correctCount}/${totalQs} on the Telangana RTA LLR STALL mock exam! Practice here: ${window.location.href}`);
+        const waMsg = encodeURIComponent(`I scored ${state.correctCount}/${attempted} on the Telangana RTA LLR STALL mock exam! Practice here: ${window.location.href}`);
         waBtn.href = `https://api.whatsapp.com/send?text=${waMsg}`;
       }
 
