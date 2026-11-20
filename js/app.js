@@ -835,6 +835,11 @@ function renderExamResultReview(state, lang, examEngine) {
     reviewList.innerHTML = html;
   }
 
+  // Reset review filter buttons to "all"
+  document.querySelectorAll(".review-filter-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.getAttribute("data-review-filter") === "all");
+  });
+
   buildCards("all");
 
   // Wire up review filter pills

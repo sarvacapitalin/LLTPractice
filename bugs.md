@@ -666,6 +666,7 @@ Assign a class `.twins-comparison-grid` and define it in `css/styles.css`:
 
 ### Bug ID: BUG-15
 **Bug Shortname:** Post-Exam Review Filter Buttons Do Not Reset to "All" When Starting a New Exam Review  
+**Status:** FIXED  
 **Description:**  
 On the Mock Test result card, candidates can filter review questions using pills: **"All"**, **"❌ Missed"**, or **"✔️ Correct"**. If a candidate selects "❌ Missed" on exam 1, then takes another test and finishes it, `renderExamResultReview()` renders all questions, but the "❌ Missed" filter pill retains the `.active` blue CSS class. The UI shows the "Missed" button active while the list below displays all questions.
 
@@ -677,10 +678,10 @@ On the Mock Test result card, candidates can filter review questions using pills
 5. Look at the review pills: **"❌ Missed"** is highlighted with blue background, but the list displays all questions.
 
 **Root Cause:**  
-In `js/app.js` line 696, `buildCards("all")` is called when populating the review card, but the `.active` class is not reset across the `.review-filter-btn` elements.
+In `js/app.js`, `buildCards("all")` is called when populating the review card, but the `.active` class is not reset across the `.review-filter-btn` elements.
 
 **Code artifacts and line references:**
-- [`js/app.js#L696-L706`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L696-L706): `buildCards("all")` called without resetting filter button classes.
+- [`js/app.js#L838-L848`](file:///Users/raghu/Projects/LLTPractice/js/app.js#L838-L848): `buildCards("all")` called without resetting filter button classes.
 
 **Solution:**  
 In `renderExamResultReview()`, reset the active filter pill state whenever a review is generated:
@@ -689,6 +690,13 @@ document.querySelectorAll(".review-filter-btn").forEach(b => {
   b.classList.toggle("active", b.getAttribute("data-review-filter") === "all");
 });
 ```
+
+**Implemented fix:**  
+- In `js/app.js`:
+  - Updated `renderExamResultReview()` to iterate over all `.review-filter-btn` elements immediately before invoking `buildCards("all")`, toggling the `.active` class so only the `"all"` filter button is active.
+- **Why this works & Test Scenario:**
+  - Guarantees that the visual state of the review filter pills matches the rendered question set on initial review display, even if the candidate selected a specific filter (e.g. "❌ Missed" or "✔️ Correct") on a preceding test run.
+  - Verified with simulated DOM test: after artificially setting `.active` on the `"wrong"` button and invoking the reset logic, `.active` was removed from `"wrong"` and cleanly restored to `"all"`. All 64 QA tests continue to pass.
 
 ---
 
