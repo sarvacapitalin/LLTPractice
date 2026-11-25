@@ -45,12 +45,34 @@ export async function initI18n() {
   }
 }
 
-export function setLanguage(lang) {
+export function setLanguage(lang, { updateUrl = true } = {}) {
   if (SUPPORTED_LANGS.includes(lang)) {
     currentLang = lang;
     storage.setPreference("language", lang);
     document.documentElement.lang = lang;
+    const select = document.getElementById("select-language");
+    if (select && select.value !== lang) {
+      select.value = lang;
+    }
     updateDomTranslations();
+    if (updateUrl && typeof window !== "undefined" && window.history && window.location) {
+      try {
+        const url = new URL(window.location.href);
+        if (lang === "en") {
+          url.searchParams.delete("lang");
+        } else {
+          url.searchParams.set("lang", lang);
+        }
+        const nextUrl = url.pathname + (url.searchParams.toString() ? `?${url.searchParams.toString()}` : "");
+        const currentUrl = window.location.pathname + window.location.search;
+        if (nextUrl !== currentUrl) {
+          const currentTab = (window.history.state && window.history.state.tab) || undefined;
+          window.history.pushState({ tab: currentTab, lang }, "", nextUrl);
+        }
+      } catch (e) {
+        // Ignore history errors in restricted contexts
+      }
+    }
     window.dispatchEvent(new CustomEvent("languageChanged", { detail: lang }));
   }
 }

@@ -114,7 +114,7 @@ function setupLanguageSelector() {
   window.addEventListener("languageChanged", () => {
     updateReadinessMeter();
     currentRenderedQId = null;
-    if (exam.isActive) exam.notifyUpdate();
+    if (exam.isActive || exam.isFinished) exam.notifyUpdate();
     practice.notifyUpdate();
     flashcards.notifyUpdate();
     renderTrickyTwins();
@@ -154,49 +154,127 @@ function setupSoundToggle() {
   window.addEventListener("touchstart", unlockAudio, { passive: true });
 }
 
+const TAB_TO_PARAM = {
+  "tab-exam": "exam",
+  "tab-practice": "practice",
+  "tab-flashcards": "flashcards",
+  "tab-twins": "twins",
+  "tab-cheatsheet": "cheatsheet",
+  "tab-guide": "guide"
+};
+
+const PARAM_TO_TAB = {
+  exam: "tab-exam",
+  practice: "tab-practice",
+  flashcards: "tab-flashcards",
+  twins: "tab-twins",
+  cheatsheet: "tab-cheatsheet",
+  guide: "tab-guide",
+  "rto-guide": "tab-guide"
+};
+
+const TAB_TITLES = {
+  "tab-exam": "Telangana RTA Learner's Licence Practice 2026 • Official STALL Mock Test Simulator",
+  "tab-practice": "Topic Practice (412 Questions) • Telangana RTA LLR Practice 2026",
+  "tab-flashcards": "Road Sign Flashcards (94 Signs) • Telangana RTA LLR Practice 2026",
+  "tab-twins": "Tricky Twins Sign Comparisons • Telangana RTA LLR Practice 2026",
+  "tab-cheatsheet": "Rapid Cheatsheet & Hand Signals • Telangana RTA LLR Practice 2026",
+  "tab-guide": "Hyderabad & Telangana RTO Guide, DL Track & Fines • LLR Practice 2026"
+};
+
+function activateTab(targetId, { pushHistory = true } = {}) {
+  const tabs = document.querySelectorAll(".nav-tab");
+  const targetTabBtn = document.querySelector(`.nav-tab[data-tab="${targetId}"]`);
+  if (!targetTabBtn) return;
+
+  // Pause active exam timer if switching away from the exam tab; resume if returning
+  if (targetId !== "tab-exam" && exam.isActive && !exam.isFinished) {
+    exam.pauseTimer();
+  } else if (targetId === "tab-exam" && exam.isActive && !exam.isFinished) {
+    exam.resumeTimer();
+  }
+
+  tabs.forEach(t => {
+    t.classList.remove("active");
+    t.setAttribute("aria-selected", "false");
+  });
+  targetTabBtn.classList.add("active");
+  targetTabBtn.setAttribute("aria-selected", "true");
+
+  document.querySelectorAll(".tab-pane").forEach(pane => {
+    pane.classList.remove("active");
+  });
+  const targetPane = document.getElementById(targetId);
+  if (targetPane) targetPane.classList.add("active");
+
+  // Activate sub-engines when their respective tab is selected
+  if (targetId === "tab-practice") {
+    practice.notifyUpdate();
+  } else if (targetId === "tab-flashcards") {
+    flashcards.notifyUpdate();
+  } else if (targetId === "tab-twins") {
+    renderTrickyTwins();
+  } else if (targetId === "tab-cheatsheet") {
+    renderCheatsheet();
+  } else if (targetId === "tab-guide") {
+    renderRtoGuide();
+  }
+
+  // Update page title for browser history & clarity
+  if (TAB_TITLES[targetId]) {
+    document.title = TAB_TITLES[targetId];
+  }
+
+  // Sync URL address bar cleanly without reloading
+  if (pushHistory && typeof window !== "undefined" && window.history && window.location) {
+    try {
+      const url = new URL(window.location.href);
+      const paramVal = TAB_TO_PARAM[targetId];
+      if (!paramVal || paramVal === "exam") {
+        url.searchParams.delete("tab");
+      } else {
+        url.searchParams.set("tab", paramVal);
+      }
+      url.hash = "";
+      const nextUrl = url.pathname + (url.searchParams.toString() ? `?${url.searchParams.toString()}` : "");
+      const currentUrl = window.location.pathname + window.location.search + window.location.hash;
+      if (nextUrl !== currentUrl) {
+        window.history.pushState({ tab: targetId, lang: getCurrentLang() }, "", nextUrl);
+      }
+    } catch (e) {
+      // Ignore history errors in restricted contexts
+    }
+  }
+
+  // Pause audio on tab change
+  speech.stop();
+}
+
 // Navigation Tabs
 function setupTabs() {
   const tabs = document.querySelectorAll(".nav-tab");
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
       const targetId = tab.getAttribute("data-tab");
-
-      // Pause active exam timer if switching away from the exam tab; resume if returning
-      if (targetId !== "tab-exam" && exam.isActive && !exam.isFinished) {
-        exam.pauseTimer();
-      } else if (targetId === "tab-exam" && exam.isActive && !exam.isFinished) {
-        exam.resumeTimer();
-      }
-
-      tabs.forEach(t => {
-        t.classList.remove("active");
-        t.setAttribute("aria-selected", "false");
-      });
-      tab.classList.add("active");
-      tab.setAttribute("aria-selected", "true");
-
-      document.querySelectorAll(".tab-pane").forEach(pane => {
-        pane.classList.remove("active");
-      });
-      const targetPane = document.getElementById(targetId);
-      if (targetPane) targetPane.classList.add("active");
-
-      // Activate sub-engines when their respective tab is selected
-      if (targetId === "tab-practice") {
-        practice.notifyUpdate();
-      } else if (targetId === "tab-flashcards") {
-        flashcards.notifyUpdate();
-      } else if (targetId === "tab-twins") {
-        renderTrickyTwins();
-      } else if (targetId === "tab-cheatsheet") {
-        renderCheatsheet();
-      } else if (targetId === "tab-guide") {
-        renderRtoGuide();
-      }
-
-      // Pause audio on tab change
-      speech.stop();
+      activateTab(targetId, { pushHistory: true });
     });
+  });
+
+  // Handle browser Back/Forward buttons cleanly
+  window.addEventListener("popstate", (event) => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const stateLang = event.state && event.state.lang;
+      const urlLang = params.get("lang") || stateLang;
+      if (urlLang && ["en", "te", "hi"].includes(urlLang) && urlLang !== getCurrentLang()) {
+        setLanguage(urlLang, { updateUrl: false });
+      }
+      const rawTab = (params.get("tab") || window.location.hash.replace("#", "") || "exam").toLowerCase();
+      const targetId = PARAM_TO_TAB[rawTab] || "tab-exam";
+      activateTab(targetId, { pushHistory: false });
+    } catch (e) {
+      // Ignore malformed URL on popstate
+    }
   });
 
   // Pause active exam timer when browser tab loses focus / window is minimized
@@ -215,8 +293,7 @@ function setupTabs() {
 
   // Exam Readiness Badge in Header
   document.getElementById("btn-readiness-badge")?.addEventListener("click", () => {
-    const practiceTabBtn = document.querySelector('[data-tab="tab-practice"]');
-    practiceTabBtn?.click();
+    activateTab("tab-practice", { pushHistory: true });
   });
 }
 
@@ -245,21 +322,27 @@ function updateReadinessMeter() {
 function applyInitialTabFromUrl() {
   try {
     if (typeof window === "undefined" || !window.location) return;
-    const params = new URLSearchParams(window.location.search);
-    const rawTab = (params.get("tab") || window.location.hash.replace("#", "") || "").toLowerCase();
-    const tabMap = {
-      exam: "tab-exam",
-      practice: "tab-practice",
-      flashcards: "tab-flashcards",
-      twins: "tab-twins",
-      cheatsheet: "tab-cheatsheet",
-      guide: "tab-guide",
-      "rto-guide": "tab-guide"
-    };
-    const targetId = tabMap[rawTab];
+    const url = new URL(window.location.href);
+    const rawTab = (url.searchParams.get("tab") || url.hash.replace("#", "") || "").toLowerCase();
+    const targetId = PARAM_TO_TAB[rawTab];
     if (targetId) {
-      const btn = document.querySelector(`.nav-tab[data-tab="${targetId}"]`);
-      btn?.click();
+      activateTab(targetId, { pushHistory: false });
+      if (url.hash && !url.searchParams.get("tab")) {
+        const paramVal = TAB_TO_PARAM[targetId];
+        if (paramVal && paramVal !== "exam") {
+          url.searchParams.set("tab", paramVal);
+        }
+        url.hash = "";
+      }
+    }
+    // Establish initial history state cleanly without pushing a duplicate entry
+    if (window.history && window.history.replaceState) {
+      const normalizedUrl = url.pathname + (url.searchParams.toString() ? `?${url.searchParams.toString()}` : "") + url.hash;
+      window.history.replaceState(
+        { tab: targetId || "tab-exam", lang: getCurrentLang() },
+        document.title,
+        normalizedUrl
+      );
     }
   } catch (e) {
     // Ignore invalid URL tab param
@@ -270,8 +353,8 @@ function applyInitialTabFromUrl() {
 function checkSyncUrlParam() {
   try {
     if (typeof window === "undefined" || !window.location) return;
-    const params = new URLSearchParams(window.location.search);
-    const syncParam = params.get("sync");
+    const url = new URL(window.location.href);
+    const syncParam = url.searchParams.get("sync");
     if (syncParam) {
       let rawJson = syncParam;
       try {
@@ -287,8 +370,10 @@ function checkSyncUrlParam() {
         practice.notifyUpdate();
         flashcards.notifyUpdate();
         alert(t("sync_success", "Progress synchronized successfully from scan!"));
-        const cleanUrl = window.location.origin + window.location.pathname;
-        window.history.replaceState({}, document.title, cleanUrl);
+        url.searchParams.delete("sync");
+        const cleanUrl = url.pathname + (url.searchParams.toString() ? `?${url.searchParams.toString()}` : "");
+        const activeTab = (window.history.state && window.history.state.tab) || PARAM_TO_TAB[url.searchParams.get("tab")] || "tab-exam";
+        window.history.replaceState({ tab: activeTab, lang: getCurrentLang() }, document.title, cleanUrl);
       }
     }
   } catch (err) {
