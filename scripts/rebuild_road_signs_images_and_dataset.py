@@ -147,10 +147,8 @@ if __name__ == "__main__":
             oid = int(dm.group(7))
             calls.append((tx, oid))
         
-        if p_num == 1:
-            calls.sort(key=lambda c: c[0], reverse=True)
-        else:
-            calls.sort(key=lambda c: c[0])
+        # Page 1 X coordinates are ascending from Q1 to Q6 just like Pages 2-15
+        calls.sort(key=lambda c: c[0])
         
         merged = []
         i = 0

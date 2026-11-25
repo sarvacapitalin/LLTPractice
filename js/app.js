@@ -69,9 +69,16 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+const ASSET_VER = "v=23";
+
+function withAssetVer(url) {
+  if (!url) return url;
+  return url.includes("?") ? url : `${url}?${ASSET_VER}`;
+}
+
 async function loadAllDatasets() {
   try {
-    const v = "v=22";
+    const v = ASSET_VER;
     const [signsRes, rulesRes, gpRes, twinsRes, cheatRes, guideRes, popularRes] = await Promise.all([
       fetch(`data/questions/telangana/road-signs.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/questions/telangana/rules-of-road.json?${v}`).then(r => r.json()).catch(() => []),
@@ -786,7 +793,7 @@ function initExamUI() {
       if (qText) qText.textContent = cleanPdfText((q.text && q.text[lang]) || (q.text && q.text.en) || "");
 
       if (q.image) {
-        if (qImg) qImg.src = q.image;
+        if (qImg) qImg.src = withAssetVer(q.image);
         if (visualBox) visualBox.style.display = "flex";
       } else if (visualBox) {
         visualBox.style.display = "none";
@@ -965,7 +972,7 @@ function renderExamResultReview(state, lang, examEngine) {
             </span>
           </div>
           <h4 class="review-q-title">${qText}</h4>
-          ${q.image ? `<div class="review-q-img-wrap"><img src="${q.image}" class="review-q-img" alt="Traffic Sign"></div>` : ""}
+          ${q.image ? `<div class="review-q-img-wrap"><img src="${withAssetVer(q.image)}" class="review-q-img" alt="Traffic Sign"></div>` : ""}
           <div class="review-options-grid">
             ${opts.map((optText, optIdx) => {
               let optClass = "";
@@ -1160,7 +1167,7 @@ function renderPracticeCard(q) {
 
   const catLabel = q.category === "road_signs" ? "Road Signs" : q.category === "rules_of_road" ? "Traffic Rules" : "Driving Principles";
   const imgHtml = q.image
-    ? `<div class="question-visual-box" style="margin: 12px auto;"><img src="${q.image}" alt="Sign / Scenario" class="question-image" style="max-height: 145px;"></div>`
+    ? `<div class="question-visual-box" style="margin: 12px auto;"><img src="${withAssetVer(q.image)}" alt="Sign / Scenario" class="question-image" style="max-height: 145px;"></div>`
     : "";
 
   const opts = q.options[lang] || q.options.en;
@@ -1408,8 +1415,8 @@ function initFlashcardsUI() {
     const name = cleanPdfText(rawName);
     const desc = sign.explanation[lang] || sign.explanation.en;
 
-    if (img) img.src = sign.image;
-    if (backThumb) backThumb.src = sign.image;
+    if (img) img.src = withAssetVer(sign.image);
+    if (backThumb) backThumb.src = withAssetVer(sign.image);
 
     if (typeBadge) {
       const sType = (sign.signType || "mandatory").toLowerCase();
@@ -1470,13 +1477,13 @@ function renderTrickyTwins() {
       <h3 style="font-size: 1.08rem; color: var(--primary-navy); margin-bottom: 14px; font-weight: 800; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">${titleText}</h3>
       <div class="twins-comparison-grid">
         <div style="background: var(--surface-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 12px; text-align: center;">
-          <img src="${pair.signA.image}" alt="${pair.signA.name.en}" style="max-height: 86px; object-fit: contain; margin-bottom: 8px;">
+          <img src="${withAssetVer(pair.signA.image)}" alt="${pair.signA.name.en}" style="max-height: 86px; object-fit: contain; margin-bottom: 8px;">
           <strong style="display: block; font-size: 0.88rem; color: var(--primary-navy); margin-bottom: 4px;">${pair.signA.name[lang] || pair.signA.name.en}</strong>
           <p style="font-size: 0.8rem; color: var(--text-secondary); text-align: left; line-height: 1.4;">${pair.signA.rule[lang] || pair.signA.rule.en}</p>
         </div>
 
         <div style="background: var(--surface-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 12px; text-align: center;">
-          <img src="${pair.signB.image}" alt="${pair.signB.name.en}" style="max-height: 86px; object-fit: contain; margin-bottom: 8px;">
+          <img src="${withAssetVer(pair.signB.image)}" alt="${pair.signB.name.en}" style="max-height: 86px; object-fit: contain; margin-bottom: 8px;">
           <strong style="display: block; font-size: 0.88rem; color: var(--primary-navy); margin-bottom: 4px;">${pair.signB.name[lang] || pair.signB.name.en}</strong>
           <p style="font-size: 0.8rem; color: var(--text-secondary); text-align: left; line-height: 1.4;">${pair.signB.rule[lang] || pair.signB.rule.en}</p>
         </div>
@@ -1518,7 +1525,7 @@ function renderCheatsheet() {
       .map(
         item => `
       <div style="background: var(--surface-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 12px; display: flex; gap: 12px; align-items: center;">
-        <img src="${item.image}" alt="${item.name.en}" style="width: 68px; height: 68px; object-fit: contain; background: #FFFFFF; border-radius: var(--radius-sm); padding: 4px; border: 1px solid var(--border-color); flex-shrink: 0;">
+        <img src="${withAssetVer(item.image)}" alt="${item.name.en}" style="width: 68px; height: 68px; object-fit: contain; background: #FFFFFF; border-radius: var(--radius-sm); padding: 4px; border: 1px solid var(--border-color); flex-shrink: 0;">
         <div>
           <span class="seo-badge badge-informatory" style="margin-bottom: 4px;">${item.kind}</span>
           <strong style="display: block; font-size: 0.9rem; color: var(--primary-navy); margin-bottom: 3px;">${item.name[lang] || item.name.en}</strong>
