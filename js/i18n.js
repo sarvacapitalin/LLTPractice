@@ -2,7 +2,20 @@
 import { storage } from "./storage-engine.js";
 
 const SUPPORTED_LANGS = ["en", "te", "hi"];
-let currentLang = storage.getPreference("language", "en");
+let urlLang = null;
+if (typeof window !== "undefined" && window.location) {
+  try {
+    const paramLang = new URLSearchParams(window.location.search).get("lang");
+    if (SUPPORTED_LANGS.includes(paramLang)) {
+      urlLang = paramLang;
+      storage.setPreference("language", paramLang);
+    }
+  } catch (e) {
+    // Ignore malformed search query
+  }
+}
+
+let currentLang = urlLang || storage.getPreference("language", "en");
 if (!SUPPORTED_LANGS.includes(currentLang)) {
   currentLang = "en";
 }

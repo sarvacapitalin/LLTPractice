@@ -301,3 +301,29 @@ body {
   }
 }
 
+/* Clean Print / Save-as-PDF Stylesheet */
+@media print {
+  .app-header,
+  .nav-bar,
+  .app-footer,
+  .no-print,
+  #modal-sync,
+  #modal-reset {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .main-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #cheatsheet-container,
+  #rto-guide-container {
+    box-shadow: none !important;
+    padding: 8px !important;
+  }
+}
+

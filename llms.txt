@@ -1,42 +1,37 @@
 # Telangana RTA Learner's Licence Practice (STALL Simulator)
-> Authoritative public preparation resource for the Telangana RTA Learner's Licence computerized STALL (Screen Test Aid for Learner Licence) examination conducted across Hyderabad and all Telangana District RTOs.
+
+> Authoritative, free, zero-login web simulator and complete 412-question study resource for the Telangana RTA Learner's Licence computerized STALL (Screen Test Aid for Learner Licence) examination conducted across Hyderabad and all Telangana District RTOs, in English, Telugu (తెలుగు), and Hindi (हिन्दी).
 
 - Website: https://llr.sarvacapital.in/
 - Hosted by: Sarva Capital (https://sarvacapital.in)
-- Access: 100% Free, No Login Required, Works Offline (PWA)
-- Languages: Trilingual support in English, Telugu (తెలుగు), and Hindi (हिन्दी)
-- Master Question Bank: 412 authentic questions from Telangana Transport Department (94 Road Signs, 159 Rules of the Road, 159 General Driving Principles)
+- Access: 100% Free, No Login Required, Mobile-Friendly
+- Languages: English, Telugu (తెలుగు), Hindi (हिन्दी) with voice read-aloud
+- Master Question Bank: 412 official Telangana Transport Department questions (94 Road Signs, 159 Rules of the Road, 159 General Driving Principles)
 
 ## Key Examination Facts (Telangana STALL)
 - **Exam Name**: STALL (Screen Test Aid for Learner Licence) computerized examination.
 - **Governing Body**: Transport Department, Government of Telangana (Telangana RTA) under the Motor Vehicles Act, 1988 & Central Motor Vehicles Rules, 1989.
-- **Total Questions per Exam**: 20 questions randomly sampled across 3 mandatory quotas:
-  - 8 Mandatory / Cautionary / Informatory Road Signs (40%)
-  - 8 Rules of the Road Regulations (40%)
-  - 4 General Driving Principles & Vehicle Safety (20%)
-- **Time Limit**: 30 seconds per question (maximum 10 minutes total).
-- **Passing Mark**: 12 correct out of 20 (60% minimum).
-- **Negative Marking**: None.
-- **Early Termination Rule**: In the official STALL exam terminal, as soon as a candidate reaches 12 correct answers, the test immediately concludes and declares the candidate as "PASSED". If a candidate accumulates 9 wrong answers (making 12 correct mathematically impossible), the test terminates with "FAILED".
-- **Hardware/Interface**: Exam terminals use touchscreens and 4-key numeric hardware strips (1, 2, 3, 4). Options remain in fixed 1-4 order matching the official master question bank.
+- **Total Questions per Exam**: 20 questions sampled across 3 mandatory quotas: 8 Road Signs (40%), 8 Rules of the Road (40%), 4 General Driving Principles (20%).
+- **Time Limit**: 30 seconds per question (10 minutes maximum).
+- **Passing Mark**: 12 correct out of 20 (60%); zero negative marking.
+- **Early Termination**: Terminal immediately finishes as PASSED at 12 correct answers, or FAILED at 9 wrong answers.
+- **Fixed Option Order**: Options (1, 2, 3, 4) remain in the exact fixed order of the official master question bank to match the physical 4-key numeric strip on RTO kiosks.
 
-## Practice Features Available on llr.sarvacapital.in
-1. **STALL Mock Test**: Exact simulation of the Telangana RTO computer screen with 20 questions, 30s timer, pass counter, and real-exam mode or tutor mode with audio read-aloud.
-2. **Topic Practice**: Filter by Road Signs (94 questions), Rules of the Road (159 questions), or General Principles (159 questions).
-3. **Interactive Flashcards**: 94 road sign flashcards with instant flip explanations.
-4. **Tricky Twins**: Side-by-side comparative analysis of easily confused signs (e.g., Mandatory Speed Limit vs Minimum Speed, No Entry vs One Way, Side Road Left vs Turn Left).
-5. **Rapid Cheatsheet**: Numerical limits, speed limits, alcohol limits (30mg/100ml BAC), penalty fines, and must-know legal rules.
-6. **Hyderabad RTO Guide**: Exact step-by-step test-day walkthrough for Khairatabad (TS-09), Secunderabad (TS-10), Kondapur/Rangareddy (TS-07), Uppal (TS-08), Mehdipatnam, and Medchal RTOs.
-7. **95% Readiness Gate**: Algorithm tracking 2 consecutive clean answers per question (spaced mastery) to guarantee test-day success.
-8. **Cross-Device Sync**: Transfer progress between phone and desktop via encrypted single-string code.
+## Pages & Study Guides
+- [STALL Mock Exam Simulator](https://llr.sarvacapital.in/): Interactive 20-question exam simulator with 30s timer, 95% readiness gate, tutor mode, and QR cross-device sync.
+- [All 94 Telangana Road Signs & Meanings](https://llr.sarvacapital.in/road-signs/): Visual directory of Mandatory (42), Cautionary (38), and Informatory (14) road signs in English, Telugu, and Hindi.
+- [Complete 412 LLR Question Bank & Answers](https://llr.sarvacapital.in/question-bank/): Full static list of all 412 official questions, options, verified answers, and explanations.
+- [Hyderabad & Telangana RTO Guide](https://llr.sarvacapital.in/rto-guide/): Required documents checklist (Form 2, Aadhaar, Form 1/1A), 5-step test-day process, fees (₹200 single / ₹350 dual / ₹150 retest), and RTO center addresses (TS-07 to TS-12).
+- [Permanent DL Track Test & Slot Booking Guide](https://llr.sarvacapital.in/dl-test-guide/): Two-Wheeler Figure '8' Track and Car 'H' Track rules, automated RFID tracks, online slot booking on transport.telangana.gov.in, and digital LLR download via DigiLocker / mParivahan.
+- [Telangana Traffic Fines & Hand Signals](https://llr.sarvacapital.in/traffic-fines/): Statutory MV Act traffic fines (helmet, drunk driving, overspeeding, no licence) plus visual driver & traffic police hand signals.
+- [All Telangana District RTO Codes (TS/TG 01–38)](https://llr.sarvacapital.in/telangana-rto-codes/): Complete list of all 38 Telangana district RTA codes (Adilabad to Narayanpet, covering both TS and TG prefixes).
+- [Rapid Cheatsheet, Hand Signals & Tricky Twins](https://llr.sarvacapital.in/cheatsheet/): Printable 10-minute revision rules, hand signals, and side-by-side comparisons of commonly confused road signs.
+- [Telugu Practice Guide (తెలుగు)](https://llr.sarvacapital.in/te/): Telugu-language Telangana LLR study guide, sample signs, RTO centers, and simulator entry.
+- [Hindi Practice Guide (हिन्दी)](https://llr.sarvacapital.in/hi/): Hindi-language Telangana LLR study guide, sample signs, RTO centers, and simulator entry.
 
-## Official Telangana RTO Test Centers Covered
-- RTO Central (Khairatabad) - TS-09
-- RTO North (Secunderabad / Trimulgherry) - TS-10
-- RTO West (Tolichowki / Mehdipatnam) - TS-11
-- RTO East (Malakpet) - TS-12
-- RTO South (Chandrayangutta / Kishanbagh) - TS-13
-- RTO Rangareddy / Cyberabad (Kondapur) - TS-07
-- RTO Uppal - TS-08
-- RTO Medchal / Malkajgiri - TS-08
-- All District Transport Offices (Warangal, Karimnagar, Nizamabad, Khammam, Mahbubnagar, Nalgonda, etc.)
+## Machine-Readable Data & Full Context
+- [Complete LLM Knowledge Base (llms-full.txt)](https://llr.sarvacapital.in/llms-full.txt): Single-file Markdown reference containing exam rules, RTO addresses, fees, golden rules, tricky twins, and all 412 questions and answers.
+- [Road Signs Dataset (JSON)](https://llr.sarvacapital.in/data/questions/telangana/road-signs.json): 94 trilingual road sign questions.
+- [Rules of the Road Dataset (JSON)](https://llr.sarvacapital.in/data/questions/telangana/rules-of-road.json): 159 trilingual traffic rule questions.
+- [General Driving Principles Dataset (JSON)](https://llr.sarvacapital.in/data/questions/telangana/general-principles.json): 159 trilingual driving principle questions.
+- [Hyderabad RTO Guide Data (JSON)](https://llr.sarvacapital.in/data/rto-guide.json): Structured RTO centers, fees, checklist, and steps.

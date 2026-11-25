@@ -16,6 +16,7 @@ let generalPrinciples = [];
 let trickyTwins = [];
 let cheatsheet = null;
 let rtoGuide = null;
+let popularGuides = null;
 let currentRenderedQId = null;
 let datasetsLoaded = false;
 
@@ -39,6 +40,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   renderCheatsheet();
   renderRtoGuide();
   updateReadinessMeter();
+  applyInitialTabFromUrl();
   checkSyncUrlParam();
 
   // UNREGISTER all Service Workers and wipe ALL caches to fix stale module serving.
@@ -64,14 +66,15 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 async function loadAllDatasets() {
   try {
-    const v = "v=19";
-    const [signsRes, rulesRes, gpRes, twinsRes, cheatRes, guideRes] = await Promise.all([
+    const v = "v=20";
+    const [signsRes, rulesRes, gpRes, twinsRes, cheatRes, guideRes, popularRes] = await Promise.all([
       fetch(`data/questions/telangana/road-signs.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/questions/telangana/rules-of-road.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/questions/telangana/general-principles.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/tricky-twins.json?${v}`).then(r => r.json()).catch(() => []),
       fetch(`data/last-minute-cheatsheet.json?${v}`).then(r => r.json()).catch(() => null),
-      fetch(`data/rto-guide.json?${v}`).then(r => r.json()).catch(() => null)
+      fetch(`data/rto-guide.json?${v}`).then(r => r.json()).catch(() => null),
+      fetch(`data/popular-guides.json?${v}`).then(r => r.json()).catch(() => null)
     ]);
 
     roadSigns = signsRes;
@@ -82,6 +85,7 @@ async function loadAllDatasets() {
     trickyTwins = twinsRes;
     cheatsheet = cheatRes;
     rtoGuide = guideRes;
+    popularGuides = popularRes;
 
     coverage.setQuestions(allQuestions);
     practice.setQuestions(allQuestions);
@@ -186,7 +190,7 @@ function setupTabs() {
         renderTrickyTwins();
       } else if (targetId === "tab-cheatsheet") {
         renderCheatsheet();
-      } else if (targetId === "tab-rto-guide") {
+      } else if (targetId === "tab-guide") {
         renderRtoGuide();
       }
 
@@ -234,6 +238,31 @@ function updateReadinessMeter() {
     } else {
       fill.style.background = "#FFD54F";
     }
+  }
+}
+
+// Deep-link support for ?tab=practice|flashcards|twins|cheatsheet|guide|exam or #hash
+function applyInitialTabFromUrl() {
+  try {
+    if (typeof window === "undefined" || !window.location) return;
+    const params = new URLSearchParams(window.location.search);
+    const rawTab = (params.get("tab") || window.location.hash.replace("#", "") || "").toLowerCase();
+    const tabMap = {
+      exam: "tab-exam",
+      practice: "tab-practice",
+      flashcards: "tab-flashcards",
+      twins: "tab-twins",
+      cheatsheet: "tab-cheatsheet",
+      guide: "tab-guide",
+      "rto-guide": "tab-guide"
+    };
+    const targetId = tabMap[rawTab];
+    if (targetId) {
+      const btn = document.querySelector(`.nav-tab[data-tab="${targetId}"]`);
+      btn?.click();
+    }
+  } catch (e) {
+    // Ignore invalid URL tab param
   }
 }
 
@@ -1287,18 +1316,61 @@ function renderCheatsheet() {
 
   const title = cheatsheet.title[lang] || cheatsheet.title.en;
 
-  let rulesHtml = `<ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 12px;">`;
+  let rulesHtml = `<ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;">`;
   cheatsheet.goldenRules.forEach(gr => {
     const text = gr.rule[lang] || gr.rule.en;
     rulesHtml += `<li style="font-size: 0.98rem; color: var(--text-primary); line-height: 1.45;">${text}</li>`;
   });
   rulesHtml += `</ol>`;
 
+  // Hand Signals & Traffic Police Visual Guide
+  let handSignalsHtml = "";
+  if (popularGuides && popularGuides.handSignals) {
+    const hs = popularGuides.handSignals;
+    const hsTitle = hs.title[lang] || hs.title.en;
+    const hsCards = hs.items.map(item => `
+      <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 12px; display: flex; gap: 12px; align-items: center;">
+        <img src="${item.image}" alt="${item.name.en}" style="width: 68px; height: 68px; object-fit: contain; background: #FFF; border-radius: 8px; padding: 4px; border: 1px solid #E2E8F0; flex-shrink: 0;">
+        <div>
+          <span style="display: inline-block; font-size: 0.7rem; font-weight: 700; color: #134074; background: #DBEAFE; padding: 2px 7px; border-radius: 999px; margin-bottom: 4px;">${item.kind}</span>
+          <strong style="display: block; font-size: 0.9rem; color: var(--primary-navy); margin-bottom: 3px;">${item.name[lang] || item.name.en}</strong>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.35; margin: 0;">${item.desc[lang] || item.desc.en}</p>
+        </div>
+      </div>
+    `).join("");
+
+    handSignalsHtml = `
+      <div style="border-top: 2px solid var(--border-color); padding-top: 22px;">
+        <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 12px;">👮 ${hsTitle}</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 12px;">
+          ${hsCards}
+        </div>
+      </div>
+    `;
+  }
+
   container.innerHTML = `
-    <h2 style="font-size: 1.35rem; color: var(--primary-navy); margin-bottom: 12px; font-weight: 800;">⚡ ${title}</h2>
-    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px;">Read these essential golden rules in 10 minutes right before entering the RTO examination room.</p>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
+      <div>
+        <h2 style="font-size: 1.35rem; color: var(--primary-navy); margin-bottom: 6px; font-weight: 800;">⚡ ${title}</h2>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Read these essential golden rules in 10 minutes right before entering the RTO examination room.</p>
+      </div>
+      <div class="no-print" style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button id="btn-print-cheatsheet" class="control-btn" style="background: var(--secondary-blue); color: #FFFFFF;">
+          🖨️ <span>Print / Save PDF</span>
+        </button>
+        <a href="cheatsheet/" class="control-btn" style="background: #F1F5F9; color: #1E293B; text-decoration: none;">
+          📄 <span>Full Printable Sheet</span>
+        </a>
+      </div>
+    </div>
     ${rulesHtml}
+    ${handSignalsHtml}
   `;
+
+  document.getElementById("btn-print-cheatsheet")?.addEventListener("click", () => {
+    window.print();
+  });
 }
 
 // ==========================================
@@ -1484,7 +1556,7 @@ function renderRtoGuide() {
     </div>
 
     <!-- Section 4: Top Exam-Day Tips -->
-    <div>
+    <div style="margin-bottom: 32px;">
       <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 14px; display: flex; align-items: center; gap: 6px;">
         <span>🏆</span> <span>${lang === "te" ? "పరీక్ష హాల్‌లో పాస్ కావడానికి చిట్కాలు" : lang === "hi" ? "परीक्षा हॉल के लिए महत्वपूर्ण टिप्स" : "Exam Hall High-Scorer Tips"}</span>
       </h3>
@@ -1492,7 +1564,19 @@ function renderRtoGuide() {
         ${tipsHtml}
       </div>
     </div>
+
+    ${renderPopularGuidesSections(lang)}
   `;
+
+  // District RTO Code filter listener
+  const rtoSearchInput = document.getElementById("rto-district-search");
+  rtoSearchInput?.addEventListener("input", (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    container.querySelectorAll(".rto-district-chip").forEach(chip => {
+      const hay = chip.getAttribute("data-search") || "";
+      chip.style.display = (!q || hay.includes(q)) ? "flex" : "none";
+    });
+  });
 
   // Attach interactive checkbox listeners
   container.querySelectorAll(".rto-check-item").forEach(cb => {
@@ -1512,4 +1596,121 @@ function renderRtoGuide() {
       if (strong) strong.style.textDecoration = e.target.checked ? "line-through" : "none";
     });
   });
+}
+
+function renderPopularGuidesSections(lang) {
+  if (!popularGuides) return "";
+
+  // 1. Slot Booking & Digital LLR Download
+  const slot = popularGuides.slotAndDownloadGuide;
+  const slotTitle = (slot.title && slot.title[lang]) || slot.title.en;
+  const slotStepsHtml = slot.steps.map(s => `
+    <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: 10px; padding: 14px;">
+      <strong style="display: block; color: var(--secondary-blue); font-size: 0.95rem; margin-bottom: 4px;">
+        ${s.step}. ${(s.title && s.title[lang]) || s.title.en}
+      </strong>
+      <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.45; margin: 0;">
+        ${(s.detail && s.detail[lang]) || s.detail.en}
+      </p>
+    </div>
+  `).join("");
+
+  // 2. Permanent DL Track Test Guide (8-Track & H-Track)
+  const dl = popularGuides.dlTrackGuide;
+  const dlTitle = (dl.title && dl.title[lang]) || dl.title.en;
+  const dlSub = (dl.subtitle && dl.subtitle[lang]) || dl.subtitle.en;
+  const dlElig = (dl.eligibility && dl.eligibility[lang]) || dl.eligibility.en;
+  const dlTracksHtml = dl.tracks.map(tr => {
+    const pts = (tr.points[lang] || tr.points.en).map(p => `<li style="margin-bottom: 5px;">${p}</li>`).join("");
+    return `
+      <div style="background: #FFFFFF; border: 1px solid var(--border-color); border-radius: 12px; padding: 16px;">
+        <span style="display: inline-block; background: #EFF6FF; color: var(--secondary-blue); font-size: 0.72rem; font-weight: 800; padding: 3px 9px; border-radius: 999px; margin-bottom: 8px;">${tr.badge}</span>
+        <h4 style="font-size: 1rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 8px;">${tr.title[lang] || tr.title.en}</h4>
+        <ul style="padding-left: 18px; font-size: 0.84rem; color: var(--text-secondary); line-height: 1.45; margin: 0;">${pts}</ul>
+      </div>
+    `;
+  }).join("");
+  const dlDocsHtml = (dl.documents[lang] || dl.documents.en).map(d => `<li style="margin-bottom: 4px;">${d}</li>`).join("");
+
+  // 3. Telangana Traffic Fines & E-Challan Table
+  const fines = popularGuides.trafficFines;
+  const finesTitle = (fines.title && fines.title[lang]) || fines.title.en;
+  const finesRowsHtml = fines.items.map(item => `
+    <tr>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #E2E8F0; font-size: 0.86rem; color: var(--text-primary); font-weight: 600;">${item.offence[lang] || item.offence.en}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #E2E8F0; font-size: 0.86rem; color: #B91C1C; font-weight: 700;">${item.fine}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid #E2E8F0; font-size: 0.78rem; color: var(--text-muted);">${item.section}</td>
+    </tr>
+  `).join("");
+
+  // 4. All 38 Telangana District RTO Codes (TS / TG)
+  const rtoChipsHtml = popularGuides.districtRtoCodes.map(d => {
+    const searchStr = `${d.code} ts-${d.code} tg-${d.code} ${d.district}`.toLowerCase();
+    return `
+      <div class="rto-district-chip" data-search="${searchStr}" style="display: flex; align-items: center; gap: 10px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 9px 12px;">
+        <span style="background: var(--primary-navy); color: #F3CA40; font-size: 0.74rem; font-weight: 800; padding: 3px 8px; border-radius: 5px; flex-shrink: 0;">TS / TG-${d.code}</span>
+        <span style="font-size: 0.84rem; color: var(--text-primary); font-weight: 600;">${d.district}</span>
+      </div>
+    `;
+  }).join("");
+
+  return `
+    <!-- Section 5: Online Slot Booking & Digital LLR Download -->
+    <div style="border-top: 2px solid var(--border-color); padding-top: 28px; margin-bottom: 32px;">
+      <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 14px;">💻 ${slotTitle}</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+        ${slotStepsHtml}
+      </div>
+    </div>
+
+    <!-- Section 6: Permanent DL Track Test Guide -->
+    <div style="border-top: 2px solid var(--border-color); padding-top: 28px; margin-bottom: 32px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+        <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin: 0;">🚗 ${dlTitle}</h3>
+        <a href="dl-test-guide/" style="font-size: 0.82rem; color: var(--secondary-blue); font-weight: 700;">Full DL Track Guide ↗</a>
+      </div>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;">${dlSub} <strong>${dlElig}</strong></p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 14px;">
+        ${dlTracksHtml}
+      </div>
+      <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 10px; padding: 14px;">
+        <strong style="display: block; font-size: 0.9rem; color: #166534; margin-bottom: 6px;">📋 ${lang === "te" ? "DL ట్రాక్ టెస్ట్‌కు కావలసిన పత్రాలు" : lang === "hi" ? "DL ट्रैक टेस्ट के लिए आवश्यक दस्तावेज़" : "Documents & Vehicle Needed at DL Track"}</strong>
+        <ul style="padding-left: 18px; font-size: 0.84rem; color: #14532D; margin: 0;">${dlDocsHtml}</ul>
+      </div>
+    </div>
+
+    <!-- Section 7: Telangana Traffic Fines & E-Challan -->
+    <div style="border-top: 2px solid var(--border-color); padding-top: 28px; margin-bottom: 32px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+        <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin: 0;">🚨 ${finesTitle}</h3>
+        <a href="traffic-fines/" style="font-size: 0.82rem; color: var(--secondary-blue); font-weight: 700;">Traffic Fines &amp; Hand Signals Page ↗</a>
+      </div>
+      <div style="overflow-x: auto; border: 1px solid var(--border-color); border-radius: 10px;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; background: #FFFFFF;">
+          <thead>
+            <tr style="background: #F8FAFC;">
+              <th style="padding: 10px 12px; border-bottom: 2px solid #E2E8F0; font-size: 0.84rem;">Violation</th>
+              <th style="padding: 10px 12px; border-bottom: 2px solid #E2E8F0; font-size: 0.84rem;">Statutory Fine / Penalty</th>
+              <th style="padding: 10px 12px; border-bottom: 2px solid #E2E8F0; font-size: 0.84rem;">MV Act</th>
+            </tr>
+          </thead>
+          <tbody>${finesRowsHtml}</tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 8: All 38 Telangana District RTA Codes -->
+    <div style="border-top: 2px solid var(--border-color); padding-top: 28px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+        <div>
+          <h3 style="font-size: 1.15rem; color: var(--primary-navy); font-weight: 800; margin: 0;">🗺️ ${lang === "te" ? "తెలంగాణ అన్ని జిల్లాల RTO కోడ్‌లు (TS / TG 01–38)" : lang === "hi" ? "तेलंगाना के सभी जिलों के RTO कोड (TS / TG 01–38)" : "All Telangana District RTO Codes (TS / TG 01–38)"}</h3>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Both legacy TS and updated TG prefixes map to the same district RTA offices.</span>
+        </div>
+        <input type="text" id="rto-district-search" placeholder="Search district or code (e.g. Warangal, 07)..." style="padding: 8px 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 0.85rem; min-width: 240px;">
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;">
+        ${rtoChipsHtml}
+      </div>
+    </div>
+  `;
 }

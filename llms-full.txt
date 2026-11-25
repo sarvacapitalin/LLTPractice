@@ -1,0 +1,552 @@
+# Telangana RTA Learner's Licence (LLR) Practice & STALL Simulator — Complete Knowledge Reference
+
+> Authoritative, free, offline-capable (PWA) preparation guide and complete 412-question bank for the Telangana Transport Department STALL computerized Learner's Licence test at https://llr.sarvacapital.in/.
+
+## 1. Official STALL Exam Format & Rules (Telangana RTA)
+- Governing Authority: Transport Department, Government of Telangana (Motor Vehicles Act, 1988 & CMVR 1989)
+- Exam Format: 20 multiple-choice questions per test
+- Category Quota: 8 Road Signs (40%) + 8 Rules of the Road (40%) + 4 General Driving Principles (20%)
+- Time Limit: 30 seconds per question (maximum 10 minutes)
+- Passing Mark: 12 correct out of 20 (60%); zero negative marking
+- Early Termination: Test ends immediately as PASSED on reaching 12 correct answers, or FAILED on reaching 9 wrong answers
+- Fixed Option Order: Options 1, 2, 3, 4 are never shuffled (matching STALL physical keypad 1-4)
+- Languages Supported: English, Telugu (తెలుగు), Hindi (हिन्दी)
+
+## 2. Official Fees, Retest & Validity
+- One Vehicle Class (e.g., Two-Wheeler MCWG): ₹200 (₹150 LLR Test Fee + ₹50 Service Fee)
+- Two Vehicle Classes (Two-Wheeler + Car LMV): ₹350 (₹300 Test Fee (₹150 x 2) + ₹50 Service Fee)
+- Retest Policy: If you fail the test, you can book a re-test slot after 7 days on transport.telangana.gov.in by paying a re-test fee of ₹150.
+- Validity: Your Learner's Licence (LLR) is valid for 6 months across India. You are eligible to apply for your permanent Driving Licence (DL) driving track test after completing 30 days from LLR issue date.
+
+## 3. Required Documents Checklist
+- [Mandatory] Application Form Printout (Form 2): Printed copy of the online application submitted on transport.telangana.gov.in or Parivahan Sarathi.
+- [Mandatory] Slot Booking Appointment Slip: Confirms your designated RTO office (e.g. Khairatabad, Kondapur, Uppal) and time slot.
+- [Mandatory] Original Aadhaar Card + 1 Photocopy: Mandatory primary photo ID and address proof required at verification counter.
+- [Mandatory] Age & Address Proof (SSC Memo / Passport / Voter ID): Date of birth verification (minimum age 16 for gearless 50cc, 18 for LMV car/motorcycle with gear).
+- [Mandatory] Online Payment Fee Receipt: Receipt showing test and service fee paid (₹150 test fee + ₹50 service fee per class).
+- [Optional] Medical Certificate (Form 1 / Form 1A): Self-declaration Form 1 is standard. Form 1A signed by a registered doctor is required if applicant is over 40.
+- [Optional] Passport Size Photographs (2 copies): Keep 2 recent color photographs with white background as backup (biometrics are captured digitally).
+
+## 4. Test-Day 5-Step Process
+1. **Arrival & Queue Token**: Reach your designated RTO office 15-20 minutes before your slot time. Present your slot booking slip at the entrance reception counter to receive your computerized queue token.
+2. **Document Verification (MVI Counter)**: Wait for your token number on the digital display. The Motor Vehicle Inspector (MVI) verifies your original Aadhaar card, age proof, and Form 2 printout, then digitally approves your application.
+3. **Biometric & Digital Photo Capture**: Proceed to the biometric room. Your live digital photograph, digital stylus signature, and thumbprint will be captured. Note: This live photo will appear on your final driving licence!
+4. **STALL Computer Test Booth**: Enter the air-conditioned STALL test lab. Sit at your assigned terminal. Enter your Application / Token number. Select your preferred test language (English, Telugu, or Hindi). Put on headphones if you wish to hear audio prompts. Answer 20 questions (30 seconds per question).
+5. **Instant Result & LLR PDF Download**: The moment you reach 12 correct answers, the computer screen displays 'CONGRATULATIONS - TEST PASSED'. An SMS with the official digital LLR download link is sent to your registered mobile within 15 minutes. No physical paper collection needed!
+
+## 5. Hyderabad RTO Testing Centers Directory
+- **TS-09 — RTO Central (Khairatabad)**: Opposite Eenadu Office, Somajiguda, Khairatabad, Hyderabad - 500082 | Areas: Khairatabad, Banjara Hills, Somajiguda, Punjagutta, Hyderabad Central | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-10 — RTO North (Secunderabad / Trimulgherry)**: Near Trimulgherry Cross Roads, Lal Bazar, Secunderabad - 500015 | Areas: Secunderabad, Marredpally, Trimulgherry, Begumpet, Alwal, Bowenpally | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-07 — RTO Rangareddy / Cyberabad (Kondapur)**: Opp. RTO Driving Track, Near Botanical Garden, Kondapur, Hyderabad - 500084 | Areas: Hitec City, Gachibowli, Madhapur, Kondapur, Kukatpally, Serilingampally | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-08 — RTO East / Medchal (Uppal)**: Near Survey of India, Inner Ring Road, Uppal, Hyderabad - 500039 | Areas: Uppal, Boduppal, Habsiguda, Ramanthapur, Tarnaka, Ghatkesar | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-11 — RTO West (Tolichowki / Mehdipatnam)**: Rethibowli Cross Roads, Mehdipatnam, Hyderabad - 500028 | Areas: Mehdipatnam, Tolichowki, Golconda, Attapur, Langar Houz, Gudimalkapur | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-12 — RTO East (Malakpet)**: Old Malakpet, Near TV Tower, Moosarambagh, Hyderabad - 500036 | Areas: Malakpet, Dilsukhnagar, Kothapet, LB Nagar, Chaitanyapuri, Amberpet | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+
+## 6. All 38 Telangana District RTO Codes (TS / TG 01–38)
+- TS-01 / TG-01: Adilabad
+- TS-02 / TG-02: Karimnagar
+- TS-03 / TG-03: Warangal Urban (Hanumakonda)
+- TS-04 / TG-04: Khammam
+- TS-05 / TG-05: Nalgonda
+- TS-06 / TG-06: Mahbubnagar
+- TS-07 / TG-07: Ranga Reddy (Kondapur / Ibrahimpatnam)
+- TS-08 / TG-08: Medchal–Malkajgiri (Uppal / Medchal)
+- TS-09 / TG-09: Hyderabad Central (Khairatabad)
+- TS-10 / TG-10: Hyderabad North (Secunderabad / Trimulgherry)
+- TS-11 / TG-11: Hyderabad East / West (Malakpet / Mehdipatnam)
+- TS-12 / TG-12: Hyderabad South (Chandrayangutta / Malakpet)
+- TS-13 / TG-13: Hyderabad West (Tolichowki / Chandrayangutta)
+- TS-14 / TG-14: Reserved for Hyderabad
+- TS-15 / TG-15: Sangareddy
+- TS-16 / TG-16: Nizamabad
+- TS-17 / TG-17: Kamareddy
+- TS-18 / TG-18: Nirmal
+- TS-19 / TG-19: Mancherial
+- TS-20 / TG-20: Kumaram Bheem Asifabad
+- TS-21 / TG-21: Jagtial
+- TS-22 / TG-22: Peddapalli
+- TS-23 / TG-23: Rajanna Sircilla
+- TS-24 / TG-24: Warangal Rural
+- TS-25 / TG-25: Jayashankar Bhupalpally
+- TS-26 / TG-26: Mahabubabad
+- TS-27 / TG-27: Jangaon
+- TS-28 / TG-28: Bhadradri Kothagudem
+- TS-29 / TG-29: Suryapet
+- TS-30 / TG-30: Yadadri Bhuvanagiri
+- TS-31 / TG-31: Nagarkurnool
+- TS-32 / TG-32: Wanaparthy
+- TS-33 / TG-33: Jogulamba Gadwal
+- TS-34 / TG-34: Vikarabad
+- TS-35 / TG-35: Medak
+- TS-36 / TG-36: Siddipet
+- TS-37 / TG-37: Mulugu
+- TS-38 / TG-38: Narayanpet
+
+## 7. Permanent DL Track Test Guide (8-Track & H-Track) & Digital LLR Download
+- Eligibility: You can book your Permanent DL track test slot on transport.telangana.gov.in after completing 30 days from your LLR issue date (valid up to 180 days).
+- **Figure '8' Track Test (Motorcycle / Scooter)**: Wear an ISI-certified strapped helmet before starting. | Ride smoothly along the figure-8 loop using steady clutch & throttle control. | Do NOT put either foot down on the ground inside the track. | Do NOT touch or cross the painted curb/sensor lines. | Use turn indicators when entering and exiting the track.
+- **The 'H' Track & Reversing Test (Car / LMV)**: Adjust seat & side mirrors and fasten your seatbelt before moving. | Drive forward into the 'H' bay and reverse cleanly through the narrow lane without hitting poles or boundary lines. | Use side rear-view mirrors and check blind spots while reversing. | Avoid stalling the engine or rolling backward on gradients/ramps. | Signal properly with indicators before every turn or reverse maneuver.
+- Step 1 (Apply Online on Telangana Transport Portal): Visit transport.telangana.gov.in -> Online Services -> Driving Licence -> Fresh Learner's Licence (LLR). Verify with Aadhaar OTP, choose vehicle classes (MCWG / LMV), and submit Form 2 & self-declaration Form 1.
+- Step 2 (Book Your STALL Test Slot & Pay Fee): Select your local RTA office, pick an available green date/time slot, pay ₹200 (1 class) or ₹350 (2 classes) online, and print Form 2 + Slot Booking Slip.
+- Step 3 (Download Digital LLR & Add to DigiLocker / mParivahan): Within ~15 minutes of scoring 12/20, you receive an SMS link to download your signed PDF LLR. Fetch it into DigiLocker or NextGen mParivahan—digital documents are legally valid across India.
+
+## 8. Telangana Traffic Fines (Motor Vehicles Amendment Act)
+- **Riding Without Helmet (Rider or Pillion)**: ₹1,000 + 3-month DL suspension (Section 194D)
+- **Triple Riding on Two-Wheeler**: ₹1,000 + 3-month DL suspension (Section 194C)
+- **Driving Without Seatbelt**: ₹1,000 (Section 194B)
+- **Drunk / Drugged Driving (BAC > 30 mg/100 ml)**: ₹10,000 &/or 6 months jail (Repeat: ₹15,000) (Section 185)
+- **Driving Without Valid Driving Licence**: ₹5,000 (Owner permitting: ₹5,000) (Section 181 / 180)
+- **Using Handheld Mobile Phone While Driving**: ₹5,000 (Section 184)
+- **Overspeeding (LMV / Cars)**: ₹1,000 – ₹2,000 (Heavy: ₹2,000 – ₹4,000) (Section 183)
+- **Signal Jumping / Dangerous Driving**: ₹1,000 – ₹5,000 (Section 184)
+- **Blocking Emergency Vehicle (Ambulance / Fire)**: ₹10,000 (Section 194E)
+- **Driving Without Valid Motor Insurance**: ₹2,000 (Repeat: ₹4,000) (Section 196)
+
+## 9. Driver Hand Signals & Traffic Police Signals
+- **Police Signal: STOP Oncoming Traffic** (Police Signal): Right hand raised vertically with palm facing oncoming traffic — vehicles approaching from the front must stop.
+- **Police Signal: STOP Before Stop Line** (Police Signal): Both arms extended or signaling front & rear traffic to halt behind the white stop line at an uncontrolled junction.
+- **Driver Turning Left** (Driver Hand Signal): Right arm extended horizontally outside the vehicle and rotated anti-clockwise to signal a left turn.
+- **Driver Turning Right** (Driver Hand Signal): Right arm extended horizontally outside the right side with palm facing forward.
+- **Driver Intends to STOP** (Driver Hand Signal): Right arm raised vertically upward (bent at elbow at 90 degrees) with palm facing forward.
+- **Driver Slowing Down** (Driver Hand Signal): Right arm extended horizontally and moved slowly up and down with palm facing downward.
+- **Driver Giving Way to Overtake** (Driver Hand Signal): Right arm extended and waved forward from back to front in a semi-circular motion, inviting vehicles behind to overtake safely.
+- **Double Solid Lines (Strictly No Crossing)** (Road Marking): You MUST NOT cross double solid white/yellow lines to overtake or make a U-turn.
+
+## 10. Rapid Cheatsheet (Top 10 Golden Rules)
+1. Pass mark is 12 out of 20 (60%). As soon as you hit 12 correct, you pass immediately!
+2. Circles = Mandatory Orders (Red border = Stop/No, Blue background = Must do). Triangles = Warnings (Caution). Rectangles = Information.
+3. Pedestrians ALWAYS have the right of way at uncontrolled pedestrian / zebra crossings.
+4. Overtaking must ALWAYS be done from the RIGHT side. Overtaking from the left is only permitted if the vehicle ahead signals a right turn and moves to the road center.
+5. On steep hills / slopes, vehicles travelling UPHILL have priority over vehicles travelling downhill.
+6. Emergency Phone Numbers: Police = 100, Ambulance = 108, Fire = 101.
+7. Valid Learner's Licence is valid for 6 months (180 days). You can apply for a permanent licence after 30 days.
+8. White Stick carried by a pedestrian indicates that the person is BLIND.
+9. Solid Yellow/White Lines: You MUST NOT cross to overtake or make a U-turn. Stay strictly in your lane.
+10. Amber light at a traffic signal: Stop before the stop line unless you are so close that stopping suddenly would cause an accident.
+
+## 11. Tricky Twins (Commonly Confused Road Signs)
+- **No Parking vs No Stopping / Standing**: No Parking (1 Diagonal Slash) (You cannot leave your vehicle unattended. However, momentarily picking up or dropping off a passenger is allowed.) VS No Stopping or Standing (Crossed 'X' Slashes) (STRICTEST BAN: You cannot even pause, idle, or drop someone off for a single second. Common on flyovers and busy intersections.). Memory hook: 1 Slash = No Parking. Cross 'X' = Nothing allowed (No Stop, No Stand).
+- **Guarded vs Unguarded Level Crossing**: Guarded Level Crossing (Fence Symbol) (Has a railway gate and watchman. Wait for the gate to open safely.) VS Unguarded Level Crossing (Steam Engine Symbol) (NO GATE OR WATCHMAN! Driver must mandatory stop, look both directions, listen, and proceed only when 100% clear.). Memory hook: Fence = Guarded (Protected). Engine = Unguarded (Danger, look for trains yourself).
+- **Railway Crossing Distance Bars: 1 Bar vs 2 Bars**: 1 Red Bar (50 - 100 Meters) (The railway track is very close: 50 to 100 meters ahead. Prepare to slow down or stop immediately.) VS 2 Red Bars (200 Meters) (The railway track is 200 meters ahead. Early warning to reduce speed.). Memory hook: 1 Slash = 100m (Closer). 2 Slashes = 200m (Farther).
+- **Flashing Yellow Light vs Flashing Red Light**: Flashing Yellow Light (Slow down and proceed with caution. No need to bring vehicle to a dead stop unless traffic is crossing.) VS Flashing Red Light (TREAT AS A FULL STOP SIGN! You must stop completely, yield right of way to priority traffic, and proceed only when clear.). Memory hook: Flashing Yellow = Caution. Flashing Red = Stop First, Then Go.
+- **Height Limit vs Width Limit**: Height Limit (3.5M with Vertical Arrows) (Vehicle height must not exceed 3.5 meters (for underpasses and low bridges). Notice the arrows point UP and DOWN.) VS Width Limit (2M with Horizontal Arrows) (Vehicle width must not exceed 2 meters (for narrow lanes). Notice the arrows point LEFT and RIGHT.). Memory hook: Vertical arrows = Height. Horizontal arrows = Width.
+
+## 12. Complete 412 Official Telangana RTA LLR Questions & Verified Answers
+
+### Road Signs (94 Questions)
+- **TS_RS_001**: A  RED TRAFFIC LIGHT MEANS -> **Answer: MUST STOP BEHIND WHITE STOP LINE**
+- **TS_RS_002**: A FLASHING YELLOW LIGHT INDICATES -> **Answer: SLOW DOWN AND PROCEED WITH CAUTION**
+- **TS_RS_003**: A FLASHING RED LIGHT INDICATES -> **Answer: STOP, OBSERVE AND PROCEED WITH CAUTION**
+- **TS_RS_004**: THE SIGNS MARKED  IN THIS CIRCLE ARE.. -> **Answer: MANDATORY**
+- **TS_RS_005**: THE SIGNS MARKED  IN THIS TRIANGLE ARE.. -> **Answer: CAUTIONARY**
+- **TS_RS_006**: THE SIGNS MARKED IN THIS RECTANGLE ARE.. -> **Answer: INFORMATORY**
+- **TS_RS_007**: WHAT DOES THIS SIGN MEAN? -> **Answer: STOP**
+- **TS_RS_008**: WHAT DOES THIS SIGN MEAN? -> **Answer: GIVE WAY**
+- **TS_RS_009**: YOU MISSED YOUR WAY AND FIND YOU ARE ON A ONE-WAY STREET. -> **Answer: BLOW YOUR HORN AND DRIVE CONTINUE TO THE END OF THE ROAD**
+- **TS_RS_010**: WHAT DOES THIS SIGN MEAN? -> **Answer: ONE WAY**
+- **TS_RS_011**: WHAT DOES THIS SIGN MEAN? -> **Answer: NO ENTRY**
+- **TS_RS_012**: WHAT DOES THIS SIGN MEAN? -> **Answer: VEHICLE PROHIBITED IN BOTH DIRECTION**
+- **TS_RS_013**: WHAT DOES THIS SIGN MEAN? -> **Answer: RIGHT TURN PROHIBITED**
+- **TS_RS_014**: WHAT DOES THIS SIGN MEAN? -> **Answer: U-TURN PROHIBITED**
+- **TS_RS_015**: WHAT DOES THIS SIGN MEAN? -> **Answer: ALL MOTOR VEHICLES PROHIBITED**
+- **TS_RS_016**: WHAT DOES THIS SIGN MEAN? -> **Answer: OVERTAKING PROHIBITED**
+- **TS_RS_017**: WHAT DOES THIS SIGN MEAN? -> **Answer: HORN PROHIBITED**
+- **TS_RS_018**: WHAT DOES THIS SIGN MEAN? -> **Answer: PEDESTRIANS**
+- **TS_RS_019**: WHAT DOES THIS SIGN MEAN? -> **Answer: CYCLES PROHIBITED**
+- **TS_RS_020**: WHAT DOES THIS SIGN MEAN? -> **Answer: TRUCKS PROHIBITED**
+- **TS_RS_021**: WHAT DOES THIS SIGN MEAN? -> **Answer: NO PARKING**
+- **TS_RS_022**: WHAT DOES THIS SIGN MEAN? -> **Answer: NO STOPPING OR STANDING**
+- **TS_RS_023**: WHAT DOES THIS SIGN MEAN? -> **Answer: RESTRICTION ENDS SIGN**
+- **TS_RS_024**: WHAT DOES THIS SIGN MEAN? -> **Answer: LENGTH LIMIT**
+- **TS_RS_025**: WHAT DOES THIS SIGN MEAN? -> **Answer: SPEED LIMIT**
+- **TS_RS_026**: WHAT DOES THIS SIGN MEAN? -> **Answer: LOAD LIMIT**
+- **TS_RS_027**: WHAT DOES THIS SIGN MEAN? -> **Answer: HEIGHT LIMIT**
+- **TS_RS_028**: WHAT DOES THIS SIGN MEAN? -> **Answer: WIDTH LIMIT**
+- **TS_RS_029**: WHAT DOES THIS SIGN MEAN? -> **Answer: AXLE LOAD LIMIT**
+- **TS_RS_030**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY KEEP LEFT**
+- **TS_RS_031**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY AHEAD ONLY**
+- **TS_RS_032**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY TURN RIGHT AHEAD**
+- **TS_RS_033**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY TURN LEFT AHEAD**
+- **TS_RS_034**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY TURN LEFT**
+- **TS_RS_035**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY TURN RIGHT**
+- **TS_RS_036**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY AHEAD OR TURN LEFT**
+- **TS_RS_037**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY AHEAD OR TURN RIGHT**
+- **TS_RS_038**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY SOUND HORN**
+- **TS_RS_039**: WHAT DOES THIS SIGN MEAN? -> **Answer: COMPULSORY CYCLE TRACK**
+- **TS_RS_040**: WHAT DOES THIS SIGN MEAN? -> **Answer: CYCLE CROSSING**
+- **TS_RS_041**: WHAT DOES THIS SIGN MEAN? -> **Answer: RIGHT HAND CURVE**
+- **TS_RS_042**: WHAT DOES THIS SIGN MEAN? -> **Answer: LEFT HAND CURVE**
+- **TS_RS_043**: WHAT DOES THIS SIGN MEAN? -> **Answer: RIGHT HAIR PIN BEND**
+- **TS_RS_044**: WHAT DOES THIS SIGN MEAN? -> **Answer: LEFT HAIR PIN BEND**
+- **TS_RS_045**: WHAT DOES THIS SIGN MEAN? -> **Answer: RIGHT REVERSE BEND**
+- **TS_RS_046**: WHAT DOES THIS SIGN MEAN? -> **Answer: STEEP ASCENT**
+- **TS_RS_047**: WHAT DOES THIS SIGN MEAN? -> **Answer: STEEP DESCENT**
+- **TS_RS_048**: WHAT DOES THIS SIGN MEAN? NARROW ROAD AHEAD -> **Answer: NARROW ROAD AHEAD**
+- **TS_RS_049**: WHAT DOES THIS SIGN MEAN? NARROW ROAD AHEAD -> **Answer: ROAD WIDENS AHEAD**
+- **TS_RS_050**: WHAT DOES THIS SIGN MEAN? NARROW ROAD AHEAD -> **Answer: NARROW BRIDGE**
+- **TS_RS_051**: WHAT DOES THIS SIGN MEAN? SLIPPERY ROAD -> **Answer: LOOSE GRAVEL**
+- **TS_RS_052**: WHAT DOES THIS SIGN MEAN? -> **Answer: LOOSE GRAVEL**
+- **TS_RS_053**: WHAT DOES THIS SIGN MEAN? -> **Answer: PEDESTRIAN CROSSING**
+- **TS_RS_054**: WHAT DOES THIS SIGN MEAN? -> **Answer: SCHOOL AHEAD**
+- **TS_RS_055**: WHAT DOES THIS SIGN MEAN? -> **Answer: MEN AT WORK**
+- **TS_RS_056**: WHAT DOES THIS SIGN MEAN? -> **Answer: FALLING ROCKS**
+- **TS_RS_057**: WHAT DOES THIS SIGN MEAN? -> **Answer: CROSS ROAD**
+- **TS_RS_058**: WHAT DOES THIS SIGN MEAN? -> **Answer: GAP IN MEDIAN**
+- **TS_RS_059**: WHAT DOES THIS SIGN MEAN? -> **Answer: ROUND ABOUT**
+- **TS_RS_060**: WHAT DOES THIS SIGN MEAN? -> **Answer: MAJOR ROAD AHEAD**
+- **TS_RS_061**: WHAT DOES THIS SIGN MEAN? -> **Answer: DANGEROUS DIP**
+- **TS_RS_062**: WHAT DOES THIS SIGN MEAN? -> **Answer: HUMP OR ROUGH ROADMAJOR ROAD AHEAD**
+- **TS_RS_063**: WHAT DOES THIS SIGN MEAN? -> **Answer: BARRIER AHEAD**
+- **TS_RS_064**: WHAT DOES THIS SIGN MEAN? -> **Answer: STAGGERED INTERSECTION**
+- **TS_RS_065**: WHAT DOES THIS SIGN MEAN? -> **Answer: Y-INTERSECTION**
+- **TS_RS_066**: WHAT DOES THIS SIGN MEAN? -> **Answer: Y-INTERSECTION**
+- **TS_RS_067**: WHAT DOES THIS SIGN MEAN? -> **Answer: SIDE ROAD LEFT**
+- **TS_RS_068**: WHAT DOES THIS SIGN MEAN? -> **Answer: FERRY**
+- **TS_RS_069**: WHAT DOES THIS SIGN MEAN? -> **Answer: CATTLE**
+- **TS_RS_070**: WHAT DOES THIS SIGN MEAN? -> **Answer: UNGUARDED LEVEL CROSSING (50-100 METERS)**
+- **TS_RS_071**: WHAT DOES THIS SIGN MEAN? -> **Answer: UNGUARDED LEVEL CROSSING (200 METERS)**
+- **TS_RS_072**: WHAT DOES THIS SIGN MEAN? -> **Answer: GUARDED LEVEL CROSSING (50-100 METERS)**
+- **TS_RS_073**: WHAT DOES THIS SIGN MEAN? -> **Answer: GUARDED LEVEL CROSSING (200 METERS)**
+- **TS_RS_074**: WHAT DOES THIS SIGN MEAN? -> **Answer: PETROL PUMP**
+- **TS_RS_075**: WHAT DOES THIS SIGN MEAN? -> **Answer: EATING PLACE**
+- **TS_RS_076**: WHAT DOES THIS SIGN MEAN? -> **Answer: RESTING PLACE**
+- **TS_RS_077**: WHAT DOES THIS SIGN MEAN? -> **Answer: HOSPITAL**
+- **TS_RS_078**: WHAT DOES THIS SIGN MEAN? -> **Answer: FIRST AID POST**
+- **TS_RS_079**: WHAT DOES THIS SIGN MEAN? -> **Answer: NO THROUGH ROAD**
+- **TS_RS_080**: WHAT DOES THIS SIGN MEAN? -> **Answer: ROAD**
+- **TS_RS_081**: WHAT DOES THIS SIGN MEAN? -> **Answer: PARK THIS SIDE**
+- **TS_RS_082**: WHAT DOES THIS SIGN MEAN? -> **Answer: AND MOTOR CYCLES**
+- **TS_RS_083**: WHAT DOES THIS SIGNAL FROM A POLICE OFFICER, MEAN TO ONCOMING TRAFFIC? -> **Answer: STOP**
+- **TS_RS_084**: YOU APPROACH A JUNCTION. THE TRAFFIC LIGHTS ARE NOT WORKING. A POLICE OFFICER GIVES THIS SIGNAL. YOU SHOULD -> **Answer: STOP BEFORE THE STOP LINE**
+- **TS_RS_085**: WHILE DRIVING TO MAKE A RIGHT TURN, THE PROPER HAND SIGNAL IS -> **Answer: EXTEND RIGHT PALM IN A HORIZONTAL POSITION OUTSIDE TO THE RIGHT OF VEHICLE WITH PALM OF THE HAND TURNED TO THE FRONT.**
+- **TS_RS_086**: IF THE DRIVER IS GIVING THIS HAND SIGNAL, WHAT DOES HE MEAN? -> **Answer: HE INTENDS TO MOVE TO THE LEFT OR TO TURN LEFT**
+- **TS_RS_087**: IF THE DRIVER IS GIVING THIS HAND SIGNAL, WHAT DOES HE MEAN? -> **Answer: HE INTENDS TO MOVE OUT TO THE RIGHT OR TURN RIGHT**
+- **TS_RS_088**: IF THE DRIVER IS GIVING THIS HAND SIGNAL, WHAT DOES HE MEAN? -> **Answer: HE INTENDS TO STOP**
+- **TS_RS_089**: IF THE DRIVER IS GIVING THIS HAND SIGNAL, WHAT DOES HE MEAN? -> **Answer: HE INTENDS TO SLOW DOWN**
+- **TS_RS_090**: IF THE DRIVER IS GIVING THIS HAND SIGNAL, WHAT DOES HE MEAN? -> **Answer: HE INTENDS TO GIVE WAY, TO BE OVERTAKEN**
+- **TS_RS_091**: BROKEN WHITE LINE INDICATES.. -> **Answer: CAN CHANGE LANE WITH CAUTION**
+- **TS_RS_092**: CONTINUES WHITE OR YELLOW LINE INDICATES -> **Answer: CHANGING OF LANE PROHIBITED**
+- **TS_RS_093**: LEFT SIDE BROKEN LINE AND ADJACENT SOLID LINE MEANS -> **Answer: OVERTAKING IS PERMITTED WITH CARE OF TRAFFIC ADJACENT TO THE BROKEN LINE, BUT PROHIBITED FOR TRAFFIC ADJACENT TO SOLID LINE**
+- **TS_RS_094**: TWO SOLID YELLOW LINES MEANS -> **Answer: YOU MUST NOT CROSS THESE LINES TO OVERTAKE OR MAKE A U-TURN**
+
+### Rules of the Road (159 Questions)
+- **TS_RR_001**: YOU WANT TO TURN RIGHT AT A JUNCTION. BUT YOU THINK THAT YOUR INDICATORS CAN NOT BE SEEN CLEARLY. WHAT SHOULD YOU DO? -> **Answer: STAY IN THE LEFT HAND LANE**
+- **TS_RR_002**: YOU HAVE TO MAKE A JOURNEY IN FOGGY CONDITIONS. YOU SHOULD -> **Answer: LEAVE PLENTY OF TIME FOR YOUR JOURNEY**
+- **TS_RR_003**: YOUR ARE DRIVING A VEHICLE. YOU NOTICE ANIMALS IN FRONT. WHAT SHOULD YOU DO FIRST? -> **Answer: BE PREPARED TO SLOW DOWN**
+- **TS_RR_004**: YOU ARE DRIVING PAST A LANE OF PARKED CARS. YOU NOTICE BALL BOUNCING OUT INTO THE ROAD AHEAD. WHAT SHOULD YOU DO? -> **Answer: SLOW DOWN AND BE PREPARED TO STOP FOR CHILDREN**
+- **TS_RR_005**: WHAT IS THE MAIN HAZARD YOU SHOULD BE AWARE OF WHEN FOLLOWING A CYCLIST? -> **Answer: THE CYCLIST MAY TURN EITHER WAY INTO THE ROAD**
+- **TS_RR_006**: BE EXTRA CAUTIOUS WHILE OVERTAKING -> **Answer: 'L' MARK VEHICLES.**
+- **TS_RR_007**: BE CAREFUL WHILE OVERTAKING `L' MARK (LEARNER DRIVER) VEHICLE BECAUSE -> **Answer: THEY MAY GET NERVOUS AND IT MAY LEAD TO AN ACCIDENT.**
+- **TS_RR_008**: YOU ARE FOLLOWING A TWO WHEELER ON A POOR ROAD SURFACE. YOU SHOULD -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_009**: YOU SHOULD NOT OVERTAKE WHEN? -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_010**: YOU SHOULD NEVER ATTEMPT TO OVERTAKE A CYCLIST! -> **Answer: JUST BEFORE YOU TURN LEFT**
+- **TS_RR_011**: WHEN YOU APPROACH A BUS SIGNALLING TO MOVE OFF FROM A BUS STOP, YOU SHOULD -> **Answer: ALLOW IT TO PULL AWAY, IF IT IS SAFE TO DO SO**
+- **TS_RR_012**: YOU HAVE JUST BEEN OVERTAKEN BY A MOTORCYCLIST WHO IS CUTTING IN SHARPLY. YOU SHOULD -> **Answer: KEEP A SAFE GAP**
+- **TS_RR_013**: YOU ARE DRIVING A TWO WHEELER ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED VEHICLES YOU SHOULD -> **Answer: BEAWARE OF SUDDEN BLAST OF WIND.**
+- **TS_RR_014**: YOU ARE DRIVING UPTO AN INTERSECTION WHERE THERE IS NO SIGNAL. PEOPLE ARE CROSSING IN FRONT OF YOUR CAR. YOU SHOULD -> **Answer: STOP AND ALLOW PEDESTRIANS TO CROSS**
+- **TS_RR_015**: YOU WISH TO TAKE A "U" TURN. IF THERE IS A POLICEMAN AT THE INTERSECTION CONTROLLED BY A TRAFFIC LIGHT, YOU SHOULD -> **Answer: WAIT UNTIL THE LIGHT TURNS GREEN BEFORE MAKING THE "U" TURN**
+- **TS_RR_016**: YOU ARE DRIVING ON A TWO-LANE STREET. THE VEHICLE IN FRONT OF YOU IS MOVING VERY SLOWLY, AND THE ROAD AHEAD IS CLEAR FOR OVERTAKING, YOU SHOULD -> **Answer: NEVER OVERTAKE AT ALL.**
+- **TS_RR_017**: AS YOU APPROACH AN INTERSECTION, YOU SHOULD CHECK FOR TRAFFIC ON YOUR LEFT AND RIGHT. -> **Answer: AT ALL TIMES BEFORE ENTERING THE INTERSECTION.**
+- **TS_RR_018**: WHILE DRIVING ON THE MOTORWAY YOU HAVE TO SLOW DOWN QUICKLY DUE TO A HAZARD. WHAT SHOULD YOU DO? -> **Answer: SWITCH ON YOUR HAZARD LIGHT**
+- **TS_RR_019**: YOU DRIVE UP TO A CORNER WHERE YOU SEE SOME LOOSE GRAVEL ON THE ROAD. YOU SHOULD -> **Answer: SLOW DOWN**
+- **TS_RR_020**: WHEN YOU HAVE STARTED TO OVERTAKE THE CAR AHEAD, YOU NOTICE THAT ITS RIGHT INDICATOR IS FLASHING. YOU SHOULD -> **Answer: CHECK YOUR MIRROR AND MOVE BACK BEHIND THE CAR.**
+- **TS_RR_021**: A DOTTED WHITE CENTRAL LINE ON THE ROAD MEANS THAT YOU MAY -> **Answer: CROSS IT WHEN IT IS SAFE TO DO SO BUT SHOULD COME BACK TO YOUR LANE AFTER OVERTAKING**
+- **TS_RR_022**: A CONTINUOUS YELLOW OR WHITE LINE IN THE CENTER OF THE ROAD INDICATES THAT YOU MAY CROSS IT -> **Answer: BUT AVOID AS FAR AS POSSIBLE**
+- **TS_RR_023**: TWO CONTINUOUS YELLOW LINES IN THE MIDDLE OF THE ROAD INDICATE THAT -> **Answer: OVERTAKING AND RIGHT TURNING BOTH ARE NOT PERMITTED**
+- **TS_RR_024**: SPEED LIMIT SIGNS INDICATE THE MAXIMUM SPEED DURING IDEAL CONDITIONS. -> **Answer: TRUE**
+- **TS_RR_025**: WHILE APPROACHING A PEDESTRIAN CROSSING WHICH IS CONTROLLED BY A TRAFFIC SIGNAL, THE SIGNAL HAS TURNED GREEN FOR YOU. BUT THE PEDESTRIANS ARE STILL CROSSING. YOU SHOULD -> **Answer: SLOW DOWN AND GIVE WAY TO PEDESTRIANS**
+- **TS_RR_026**: UNDER WHAT CIRCUMSTANCES YOU WILL NOT GO FORWARD WHEN THE SIGNAL LIGHTS ARE IN YOUR FAVOUR? -> **Answer: IF A POLICEMAN ON DUTY HAS SIGNALLED YOU TO STOP**
+- **TS_RR_027**: A FLASHING RED LIGHT AT AN INTERSECTION MEANS -> **Answer: YOU SHOULD STOP, GIVE WAY TO VEHICLES IN THE PRIORITY ROAD AND PROCEED ONLY WHEN THE WAY IS CLEAR**
+- **TS_RR_028**: WHEN YOU APPROACH AN INTERSECTION, THE GREEN SIGNAL HAS JUST CHANGED INTO AMBER, YOU SHOULD -> **Answer: SEE, IF YOU HAVE CROSSED THE STOP LINE OR ARE SO CLOSE TO IT THAT YOU CANNOT STOP SAFELY, CROSS THE INTERSECTION WITH CAUTION**
+- **TS_RR_029**: WHICH OF THESE LIGHTS WILL COME AFTER AMBER AT A TRAFFIC LIGHT? -> **Answer: RED**
+- **TS_RR_030**: AS YOU APPROACH THE STOP LINE AT AN INTERSECTION YOU SEE THE LIGHT TURN AMBER. YOU SHOULD -> **Answer: GET READY TO STOP BEFORE THE STOP LINE**
+- **TS_RR_031**: WHILE DRIVING YOU DECIDED TO STOP IMMEDIATELY THE CORRECT HAND SIGNAL IS -> **Answer: EXTEND THE RIGHT ARM & BEND THE ELBOW AT RIGHT ANGLES AND TURNING PALM TO THE FRONT.**
+- **TS_RR_032**: YOU ARE DRIVING TOWARDS AN INTERSECTION WHERE THERE IS A FLASHING YELLOW TRAFFIC LIGHT. YOU SHOULD -> **Answer: CONTINUE AT THE SAME SPEED**
+- **TS_RR_033**: BEFORE TURNING YOUR VEHICLE ON THE ROAD YOU SHOULD -> **Answer: CHECK ALL AROUND FOR OTHER ROAD USERS**
+- **TS_RR_034**: YOUR MOBILE PHONE RINGS WHILE YOU ARE DRIVING. YOU SHOULD -> **Answer: STOP AT A SUITABLE PLACE AND ATTEND PHONE**
+- **TS_RR_035**: YOU ARE MOST LIKELY TO LOSE CONCENTRATION WHILE DRIVING IF YOU -> **Answer: USE A MOBILE PHONE**
+- **TS_RR_036**: YOU ARE APPROACHING A ZEBRA CROSSING. PEDESTRIANS ARE WAITING TO CROSS. YOU SHOULD -> **Answer: SLOW DOWN AND BE PREPARED TO STOP**
+- **TS_RR_037**: WHICH OF THE FOLLOWING SHOULD YOU DO BEFORE STOPPING? -> **Answer: USE THE MIRRORS**
+- **TS_RR_038**: WHEN YOU ARE MOVING OFF FROM BEHIND A PARKED CAR YOU SHOULD -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_039**: WHEN BEING FOLLOWED BY AN AMBULANCE SHOWING A FLASHING BLUE LIGHT YOU SHOULD -> **Answer: STOP SAFELY AND AS SOON AS POSSIBLE TO LET IT PASS**
+- **TS_RR_040**: WHEN PARKING AND LEAVING YOUR VEHICLE YOU SHOULD -> **Answer: ENGAGE THE STEERING LOCK**
+- **TS_RR_041**: WHICH OF THE FOLLOWING SHOULD BE ALLOWED EXTRA ROOM WHEN OVERTAKING? -> **Answer: MOTORCYCLES & BICYCLES**
+- **TS_RR_042**: WHEN MAY YOU STOP ON A MOTORWAY? -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_043**: IN WHICH OF THESE PLACES YOU MUST NOT PARK OR WAIT? -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_044**: WHEN LEAVING YOUR VEHICLE WHERE SHOULD YOU PARK IF POSSIBLE? -> **Answer: IN A SECURE PARKING PLACE**
+- **TS_RR_045**: WHICH OF THESE PLACES YOU MUST NOT PARK? -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_046**: IN WHICH OF THESE PLACE YOU MUST NOT PARK? -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_047**: WHEN LEAVING YOUR VEHICLE UNATTENDED FOR A FEW MINUTES YOU SHOULD -> **Answer: LOCK IT AND REMOVE THE KEY**
+- **TS_RR_048**: AT A TWO ROAD JUNCTION THERE -> **Answer: VEHICLE APPROACHING FROM THE RIGHT**
+- **TS_RR_049**: PEDESTRIANS ARE WAITING TO CROSS AT A ZEBRA CROSSING. THEY ARE STANDING ON THE PAVEMENT YOU SHOULD NORMALLY -> **Answer: STOP BEFORE THE STOP LINE, LET THEM CROSS, WAIT PATIENTLY**
+- **TS_RR_050**: YOU MUST NOT REVERSE -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_051**: WHEN YOU ARE NOT SURE THAT IT IS SAFE TO REVERSE YOUR VEHICLE YOU SHOULD -> **Answer: GET OUT AND CHECK RE**
+- **TS_RR_052**: WHEN MAY YOU REVERSE FROM A SIDE ROAD INTO A MAIN ROAD? -> **Answer: NOT AT ANY TIME**
+- **TS_RR_053**: YOUR ARE SIGNALLING TO TURN RIGHT IN BUSY TRAFFIC. HOW WOULD YOU CONFIRM YOUR INTENTION SAFELY? -> **Answer: GIVE AN ARM SIGNAL**
+- **TS_RR_054**: WHEN TRAFFIC LIGHTS ARE OUT OF ORDER, WHAT PRECAUTION SHOULD YOU TAKE? -> **Answer: STOP, LOOK RIGHT AND LEFT AND PROCEED CAUTIOUSLY.**
+- **TS_RR_055**: THERE IS A POLICE CAR FOLLOWING YOU, THE POLICE OFFICER FLASHES THE HEADLIGHTS AND POINTS TO THE LEFT. WHAT SHOULD YOU DO? -> **Answer: STOP ON THE LEFT**
+- **TS_RR_056**: WHEN APPROACHING A ROUNDABOUT GIVE WAY TO -> **Answer: VEHICLES**
+- **TS_RR_057**: YOU ARE REVERSING A CAR INTO A SIDE ROAD. WHILE REVERSING YOU SHOULD MAINLY LOOK -> **Answer: THROUGH THE REAR WINDSCREEN**
+- **TS_RR_058**: TO MOVE OFF SAFELY FROM A PARKED POSITION YOU SHOULD -> **Answer: USE YOUR MIRRORS AND LOOK AROUND FOR A FINAL CHECK**
+- **TS_RR_059**: WHEN APPROACHING ROAD WORKS, YOU SHOULD NOT -> **Answer: START TO OVERTAKE & INCREASE SPEED**
+- **TS_RR_060**: WHICH IS THE BEST REASON FOR NOT FOLLOWING OTHER VEHICLES TOO CLOSELY? -> **Answer: AHEAD AND TO AVOID HITTING VEHICLES IN FRONT, IF THEY STOP SUDDENLY**
+- **TS_RR_061**: WHEN APPROACHING FROM THE REAR, WHERE TWO LANES OF TRAFFIC HAVE STOPPED AT A SIGNAL, YOU SHOULD? -> **Answer: STOP BEHIND THE LAST VEHICLE IN THE APPROPRIATE LANE**
+- **TS_RR_062**: A PEDESTRIAN IS CROSSING THE STREET AT AN UNMARKED CROSS- WALK, YOU SHOULD -> **Answer: PEDESTRIAN THE "RIGHT OF WAY"**
+- **TS_RR_063**: WHILE DRIVING, YOU WISH TO CHANGE FROM ONE LANE TO ANOTHER, YOU SHOULD -> **Answer: CHANGE LANES ONLY WHEN IT IS SAFE TO DO SO BY GIVING THE PROPER TURN SIGNAL**
+- **TS_RR_064**: YOU APPROACH AN INTERSECTION THAT DOES NOT HAVE TRAFFIC LIGHTS, A POLICEMAN OR TRAFFIC SIGNS, YOU SHOULD -> **Answer: SLOW DOWN AND MOVE WITH CAUTION**
+- **TS_RR_065**: WHAT MUST YOU DO IF YOU MISS YOUR EXIT ON A FREEWAY? -> **Answer: CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.**
+- **TS_RR_066**: YOU ARE ABOUT TO TAKE A RIGHT TURN AT AN INTERSECTION. THE SIGNAL IS GREEN FOR YOU. YOU HEAR A SIREN AND SEE A FIRE BRIGADE ABOUT TO OVERTAKE YOU. YOU SHOULD -> **Answer: STOP AND LET THE FIRE BRIGADE OVERTAKE YOU.**
+- **TS_RR_067**: WHILE DRIVING YOU APPROACH A LARGE PUDDLE THAT IS CLOSE TO THE LEFT-HAND KERB. PEDESTRIANS ARE CLOSE TO THE WATER. YOU SHOULD -> **Answer: SLOW DOWN BEFORE THE PUDDLE & TRY TO AVOID SPLASHING THE PEDESTRIANS**
+- **TS_RR_068**: WHAT ACTION WOULD YOU TAKE WHEN ELDERLY PEOPLE ARE CROSSING THE ROAD? -> **Answer: BE PATIENT AND GIVE THEM SUFFICIENT TIME TO CROSS.**
+- **TS_RR_069**: YOU SEE A PEDESTRIAN WITH A STICK AND DARK GLASSES TRYING TO CROSS THE ROAD. WHAT DO YOU INTERPRET? -> **Answer: THE PERSON IS BLIND**
+- **TS_RR_070**: WHEN DRIVING NEAR CHILDREN PLAYING OR WALKING NEAR THE EDGE OF THE ROAD, YOU SHOULD -> **Answer: SLOW DOWN, AND BE READY TO MAKE A SAFE STOP.**
+- **TS_RR_071**: WHEN DRIVING IN AN AREA WHERE THERE ARE MANY PEDESTRIANS (E.G. A BUS STOP) IT IS IMPORTANT TO -> **Answer: SLOW DOWN AND WATCH FOR AN INDICATION THAT THEY WILL ENTER THE ROAD.**
+- **TS_RR_072**: A VEHICLE AHEAD OF YOU HAS STOPPED AT A PEDESTRIAN CROSSING. YOU -> **Answer: MUST NOT OVERTAKE THE VEHICLE**
+- **TS_RR_073**: WHILE DRIVING MOTOR VEHICLE ON THE ROAD -> **Answer: YOU SHOULD DRIVE THE VEHICLE CLOSE TO THE LEFT HAND SIDE OF THE ROAD**
+- **TS_RR_074**: WHILE DRIVING MOTOR VEHICLE ON THE ROAD YOU SHOULD ALLOW THE TRAFFIC COMING FROM THE OPPOSITE DIRECTION -> **Answer: TO PASS TO THE RIGHT HAND SIDE**
+- **TS_RR_075**: WHEN YOU WANT TO TURN INTO THE ROAD ON THE LEFT SIDE, YOU HAVE TO DRIVE -> **Answer: AS CLOSE AS MAYBE TO THE LEFT SIDE OF THE ROAD**
+- **TS_RR_076**: WHEN YOU WANT TO TURN INTO THE ROAD ON THE RIGHT SIDE, YOU HAVE TO DRIVE -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_077**: WHEN YOU WANT TO OVERTAKE A VEHICLE IN FRONT OF YOU, YOU CAN OVERTAKE -> **Answer: ONLY FROM THE RIGHT HAND SIDE OF THAT VEHICLE**
+- **TS_RR_078**: YOU CAN OVERTAKE A VEHICLE IN FRONT OF YOU FROM THE LEFT HAND SIDE -> **Answer: WHEN THE DRIVER OF THAT VEHICLE INDICATES INTENTION TO TURN TO THE RIGHT AND HAS DRAWN HIS VEHICLE TO THE CENTRE OF THE ROAD**
+- **TS_RR_079**: YOU WANT TO OVERTAKE A VEHICLE IN FRONT OF YOU. YOU SUDDENLY FIND THAT THE VEHICLE COMING BEHIND YOU HAS BEGUN TO OVERTAKE YOU. WHAT SHOULD YOU DO.? -> **Answer: STOP OVERTAKING THE VEHICLE IN FRONT AS IT IS NOT SAFE TO DO SO**
+- **TS_RR_080**: OVERTAKING IS PROHIBITED IN WHICH OF THE FOLLOWING CASES -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_081**: YOU ARE DRIVING A VEHICLE. ANOTHER VEHICLE FROM BEHIND WANTS TO OVERTAKE YOU. WHAT SHOULD YOU DO.? -> **Answer: SLOW DOWN AND ALLOW THE VEHICLE TO OVERTAKE**
+- **TS_RR_082**: YOU SHALL SLOW DOWN THE VEHICLE -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_083**: WHEN YOU ARE ENTERING INTO A MAIN ROAD AT A ROAD JUNCTION -> **Answer: YOU SHOULD GIVE WAY TO THE VEHICLES PROCEEDING ALONG THAT ROAD**
+- **TS_RR_084**: WHEN YOU ARE DRIVING ON THE ROAD, YOU SHALL GIVE FREE PASSAGE TO -> **Answer: 1 & 2**
+- **TS_RR_085**: GREEN SIGNAL TO MOVE ON. BUT THE PEDESTRIANS ARE STILL ON THE ZEBRA CROSSING. WHAT SHOULD YOU DO.? -> **Answer: PATIENTLY WAIT AND ALLOW PEDESTRIANS TO PASS**
+- **TS_RR_086**: WHEN YOU WANT TO TAKE A U- TURN AT A TRAFFIC JUNCTION -> **Answer: YOU SHOULD FIRST SIGNAL FOR A RIGHT TURN AND WATCH THE REAR VIEW MIRROR AND TURN**
+- **TS_RR_087**: IF YOU WANT TO SLOW DOWN WHILE DRIVING, THE HAND SIGNAL YOU SHOULD GIVE IS -> **Answer: EXTEND THE RIGHT ARM, PALM DOWN, TO THE RIGHT OF THE VEHICLE AND MOVE THE EXTENDED ARM UP AND DOWN SEVERAL TIMES**
+- **TS_RR_088**: IF YOU ARE ABOUT TO STOP THE VEHICLE ON THE ROAD, THE HAND SIGNAL YOU SHOULD GIVE IS -> **Answer: RAISE THE RIGHT FORE ARM VERTICALLY OUT SIDE TO THE RIGHT OF THE VEHICLE, PALM TO THE FRONT**
+- **TS_RR_089**: IF YOU ARE ABOUT TO TURN TO THE RIGHT, THE HAND SIGNAL YOU SHOULD GIVE IS -> **Answer: EXTEND RIGHT ARM IN HORIZONTAL POSITION TO THE RIGHT OF THE VEHICLE WITH PALM OF THE HAND TURNED TO THE FRONT**
+- **TS_RR_090**: IF YOU ARE ABOUT TO TURN TO THE LEFT, THE HAND SIGNAL YOU SHOULD GIVE IS -> **Answer: EXTEND RIGHT ARM TO THE RIGHT OF THE VEHICLE AND ROTATE IT IN AN ANTI CLOCK WISE DIRECTION**
+- **TS_RR_091**: IN WHICH OF THE FOLLOWING PLACES CAN YOU PARK YOUR VEHICLE -> **Answer: NONE OF THESE**
+- **TS_RR_092**: IN WHICH OF THE FOLLOWING PLACES CAN YOU PARK YOUR VEHICLE -> **Answer: NONE OF THESE**
+- **TS_RR_093**: IN WHICH OF THE FOLLOWING PLACES CAN YOU PARK YOUR VEHICLE -> **Answer: IN A PLACE, OFF THE ROAD**
+- **TS_RR_094**: WHILE DRIVING ON A ROAD WHICH IS MARKED INTO LANES -> **Answer: YOU CAN CHANGE THE LANE ONLY AFTER GIVING PROPER SIGNAL**
+- **TS_RR_095**: WHEN A ROAD IS MARKED WITH A YELLOW LINE DIVIDING THE ROAD -> **Answer: YOU CAN OVERTAKE THE VEHICLE IN FRONT, WITH OUT CROSSING THE YELLOW LINE**
+- **TS_RR_096**: YOU ARE DRIVING BEHIND ANOTHER VEHICLE IN A BUSY TRAFFIC, YOU SHOULD -> **Answer: KEEP SUFFICIENT DISTANCE FROM THE FRONT VEHICLE TO AVOID COLLISION**
+- **TS_RR_097**: YOU ARE GOING DOWN A NARROW MOUNTAIN ROAD AND YOU FACE ANOTHER VEHICLE IN OPPOSITE DIRECTION. WHAT SHOULD YOU DO -> **Answer: YOU ALLOW THE UPCOMING VEHICLE TO PASS FIRST**
+- **TS_RR_098**: A BUS IS STOPPED AT A BUS STOP AHEAD OF YOU. ITS RIGHT INDICATOR IS FLASHING. YOU SHOULD- -> **Answer: SLOW DOWN AND GIVE WAY IF IT IS SAFE TO DO SO**
+- **TS_RR_099**: YOU ARE APPROACHING THE TRAFFIC LIGHTS THAT HAVE BEEN GREEN FOR SOME TIME. YOU SHOULD -> **Answer: BE READY TO STOP**
+- **TS_RR_100**: YOU ARE DRIVING BEHIND A LARGE GOODS VEHICLE. IT SIGNALS LEFT BUT STEERS TO THE RIGHT. YOU SHOULD -> **Answer: SLOW DOWN AND LET THE VEHICLE TURN**
+- **TS_RR_101**: A PERSON HERDING SHEEP ASKS YOU TO STOP. YOU SHOULD- -> **Answer: STOP AND SWITCH OFF YOUR ENGINE**
+- **TS_RR_102**: YOU CANNOT SEE CLEARLY BEHIND WHEN REVERSING. WHAT SHOULD YOU DO? -> **Answer: ASK SOMEONE TO GUIDE YOU**
+- **TS_RR_103**: YOU ARE FOLLOWING TWO CYCLISTS. THEY APPROACH A ROUNDABOUT IN THE LEFT-HAND LANE. IN WHICH DIRECTION SHOULD YOU EXPECT THE CYCLISTS TO GO? -> **Answer: ANY DIRECTION**
+- **TS_RR_104**: YOU ARE ON A NARROW ROAD AT NIGHT. A SLOWER MOVING VEHICLE AHEAD HAS BEEN SIGNALLING RIGHT FOR SOME TIME. WHAT SHOULD YOU DO? -> **Answer: WAIT FOR THE SIGNAL TO BE CANCELLED BEFORE OVERTAKING**
+- **TS_RR_105**: WHEN JOINING A MOTORWAY YOU MUST ALWAYS -> **Answer: GIVE WAY TO TRAFFIC ALREADY ON THE MOTORWAY**
+- **TS_RR_106**: YOU ARE DRIVING ON A MOTORWAY. BY MISTAKE YOU GO PAST THE EXIT THAT YOU WANTED TO TAKE. YOU SHOULD -> **Answer: CARRY ON TO THE NEXT EXIT**
+- **TS_RR_107**: YOU ARE LEAVING YOUR VEHICLE PARKED ON A ROAD. WHEN MAY YOU LEAVE THE ENGINE RUNNING? -> **Answer: NOT ON ANY OCCASION**
+- **TS_RR_108**: WHEN GOING STRAIGHT AHEAD AT A ROUNDABOUT YOU SHOULD -> **Answer: INDICATE LEFT BEFORE LEAVING THE ROUNDABOUT**
+- **TS_RR_109**: WHILE DRIVING ON A HILL, WHO SHOULD BE GIVEN RIGHT OF WAY? -> **Answer: VEHICLES TRAVELLING UPHILL**
+- **TS_RR_110**: WHAT MUST YOU DO WHEN APPROACHING AN INTERSECTION IF THE TRAFFIC LIGHTS CHANGE FROM GREEN TO AMBER? -> **Answer: STOP IF YOU CAN DO SAFELY BEFORE THE INTERSECTION.**
+- **TS_RR_111**: WHAT MUST YOU DO WHEN YOU INTEND TO TURN RIGHT FROM A ROAD INTO A DRIVEWAY OR INTERSECTION? -> **Answer: GIVE A RIGHT TURN SIGNAL AT LEAST THREE SECONDS BEFORE YOU INTEND TO TURN**
+- **TS_RR_112**: WHILE DRIVING A VEHICLE, IF YOU FIND AN ANIMAL RUNNING ACROSS THE ROAD SUDDENLY IN FRONT OF YOU, -> **Answer: YOU SHOULD CHECK TRAFFIC FROM BEHIND, SLOW DOWN OR STOP TO ENABLE THE ANIMAL TO CROSS**
+- **TS_RR_113**: WHILE BRAKING IN RAINY AND WET CONDITIONS, YOU SHOULD -> **Answer: APPLY BRAKES FREQUENTLY**
+- **TS_RR_114**: YOU ARE DRIVING DOWN A STEEP HILL. TO CONTROL THE SPEED OF YOUR VEHICLE YOU MUST -> **Answer: SELECT LOW GEAR AND USE THE BRAKES CAREFULLY**
+- **TS_RR_115**: WHILE DRIVING DOWNHILL.... -> **Answer: DRIVE WITH IGNITION**
+- **TS_RR_116**: YOU STOP FOR PEDESTRIANS WAITING TO CROSS AT A ZEBRA CROSSING. THEY DO NOT START TO CROSS. WHAT SHOULD YOU DO? -> **Answer: BE PATIENT AND WAIT.**
+- **TS_RR_117**: YOU SHOULD NEVER ATTEMPT TO OVERTAKE A CYCLIST -> **Answer: JUST BEFORE YOU TURN LEFT**
+- **TS_RR_118**: IT IS VERY WINDY. YOU ARE BEHIND A MOTORCYCLIST WHO IS OVERTAKING A HIGH-SIDED VEHICLE. WHAT SHOULD YOU DO? -> **Answer: KEEP WELL BACK.**
+- **TS_RR_119**: YOU INTEND TO TURN RIGHT INTO A SIDE ROAD. JUST BEFORE TURNING YOU SHOULD CHECK FOR MOTORCYCLISTS WHO MIGHT BE -> **Answer: OVERTAKING ON YOUR RIGHT.**
+- **TS_RR_120**: YOU KEEP WELL BACK WHILE WAITING TO OVERTAKE A LARGE VEHICLE. ANOTHER CAR FILLS THE GAP. YOU SHOULD -> **Answer: DROP BACK FURTHER**
+- **TS_RR_121**: WHEN SHOULD YOU DIRECT PEDESTRIANS TO CROSS THE ROAD? -> **Answer: AT NO TIME.**
+- **TS_RR_122**: THERE IS A SLOW-MOVING MOTORCYCLIST AHEAD OF YOU. YOU ARE UNSURE WHAT THE RIDER IS GOING TO DO. YOU SHOULD -> **Answer: STAY BEHIND**
+- **TS_RR_123**: BRAKING HARD AT SPEED ON A SHARP BEND CAN MAKE YOUR VEHICLE -> **Answer: UNSTABLE**
+- **TS_RR_124**: A LONG, HEAVILY LOADED LORRY IS TAKING A LONG TIME TO OVERTAKE YOU. WHAT SHOULD YOU DO? -> **Answer: SLOW DOWN.**
+- **TS_RR_125**: WHAT IS THE MAIN HAZARD A DRIVER SHOULD BE AWARE OF WHEN FOLLOWING A CYCLIST? -> **Answer: THE CYCLIST MAY SWERVE OUT INTO THE ROAD.**
+- **TS_RR_126**: YOU ARE DRIVING ON A WELL-LIT MOTORWAY AT NIGHT. YOU MUST -> **Answer: ALWAYS USE YOUR HEADLIGHTS**
+- **TS_RR_127**: YOU ARE DRIVING BEHIND A CYCLIST. YOU WISH TO TURN LEFT JUST AHEAD. YOU SHOULD -> **Answer: HOLD BACK UNTIL THE CYCLIST HAS PASSED THE JUNCTION**
+- **TS_RR_128**: THE FIRST THING YOU SHOULD DO WHEN YOU WANT TO OVERTAKE A LARGE LORRY IS -> **Answer: STAY WELL BACK TO GET A BETTER VIEW.**
+- **TS_RR_129**: YOU HAVE STOPPED AT A PEDESTRIAN CROSSING. TO ALLOW PEDESTRIANS TO CROSS, YOU SHOULD -> **Answer: WAIT UNTIL THEY HAVE CROSSED**
+- **TS_RR_130**: YOU ARE TURNING LEFT AT A JUNCTION. PEDESTRIANS HAVE STARTED TO CROSS THE ROAD. YOU SHOULD -> **Answer: GIVE WAY TO THEM**
+- **TS_RR_131**: A PEDESTRIAN STEPS OUT INTO THE ROAD JUST AHEAD OF YOU. WHAT SHOULD YOU DO FIRST? -> **Answer: PRESS THE BRAKE**
+- **TS_RR_132**: YOU ARE COMING UP TO A ROUNDABOUT. A CYCLIST IS SIGNALLING TO TURN RIGHT. WHAT SHOULD YOU DO? -> **Answer: GIVE THE CYCLIST PLENTY OF ROOM**
+- **TS_RR_133**: EVEN IF YOUR TRAFFIC SIGNAL GIVES YOU A CLEARWAY, YOU SHOULD- -> **Answer: BE OBSERVANT FOR DRIVERS WHO DO NOT RESPECT TRAFFIC SIGNALS.**
+- **TS_RR_134**: YOU MEET AN OBSTRUCTION ON YOUR SIDE OF THE ROAD-YOU SHOULD -> **Answer: GIVE WAY TO ONCOMING TRAFFIC.**
+- **TS_RR_135**: WHEN MAKING A SHORT STOP, FACING UPHILL, YOU SHOULD -> **Answer: APPLY THE PARKING BRAKE AFTER STOPPING**
+- **TS_RR_136**: IF A PERSON CARRYING A WHITE STICK WITH RED RING IS CROSSING THE ROAD, WHAT SHOULD YOU DO? -> **Answer: WAIT UNTIL HE CROSSES THE ROAD**
+- **TS_RR_137**: YOU ARE WAITING AT A T-JUNCTION. A VEHICLE IS COMING FROM THE RIGHT WITH THE LEFT SIGNAL FLASHING. WHAT SHOULD YOU DO? -> **Answer: WAIT UNTIL THE VEHICLE STARTS TO TURN IN**
+- **TS_RR_138**: YOU ENTER A ROAD WHERE THERE ARE ROAD HUMPS. WHAT SHOULD YOU DO? -> **Answer: MAINTAIN A REDUCED SPEED THROUGHOUT**
+- **TS_RR_139**: WHEN APPROACHING A RIGHT- HAND CURVE YOU SHOULD KEEP WELL TO THE LEFT. WHY IS THIS? -> **Answer: TO IMPROVE YOUR VIEW OF THE ROAD**
+- **TS_RR_140**: YOU ARE ON A LONG, DOWNHILL SLOPE. WHAT SHOULD YOU DO TO HELP CONTROL THE SPEED OF YOUR VEHICLE? -> **Answer: GRIP THE HANDBRAKE**
+- **TS_RR_141**: WHAT SHOULD THE DRIVER OF THE CAR APPROACHING THE CROSSING DO? -> **Answer: SLOW DOWN AND GET READY TO STOP**
+- **TS_RR_142**: YOU ARE BEHIND THE CYCLIST. WHEN THE TRAFFIC LIGHTS CHANGE, WHAT SHOULD YOU DO? -> **Answer: ALLOW THE CYCLIST TIME AND ROOM**
+- **TS_RR_143**: YOU INTEND TO TURN LEFT AT THE TRAFFIC LIGHTS. JUST BEFORE TURNING YOU SHOULD -> **Answer: CHECK FOR BICYCLES ON YOUR LEFT**
+- **TS_RR_144**: YOU ARE FOLLOWING A CYCLIST. YOU WISH TO TURN LEFT JUST AHEAD. YOU SHOULD- -> **Answer: HOLD BACK UNTIL THE CYCLIST HAS PASSED THE JUNCTION**
+- **TS_RR_145**: YOU ARE DRIVING IN TOWN. THERE IS A BUS AT THE BUS STOP ON THE OTHER SIDE OF THE ROAD. WHY SHOULD YOU BE CAREFUL? -> **Answer: PEDESTRIANS MAY COME FROM BEHIND THE BUS**
+- **TS_RR_146**: ROUNDABOUT. THE LONG VEHICLE IN FRONT IS SIGNALLING LEFT BUT POSITIONED OVER TO THE RIGHT. YOU SHOULD- -> **Answer: KEEP WELL BACK**
+- **TS_RR_147**: YOU MEET AN OBSTRUCTION ON YOUR SIDE OF THE ROAD. YOU SHOULD- -> **Answer: GIVE WAY TO ONCOMING TRAFFIC**
+- **TS_RR_148**: THE WHITE LINE ALONG THE SIDE OF THE ROAD -> **Answer: SHOWS THE EDGE OF THE CARRIAGEWAY**
+- **TS_RR_149**: YOU ARE WAITING AT A T-JUNCTION. A VEHICLE IS COMING FROM THE RIGHT WITH THE LEFT SIGNAL FLASHING. WHAT SHOULD YOU DO? -> **Answer: WAIT UNTIL THE VEHICLE STARTS TO TURN IN**
+- **TS_RR_150**: HOW SHOULD YOU STOP WHEN GOING UP THE GRADIENT? -> **Answer: USING THE HAND BRAKE**
+- **TS_RR_151**: WHICH OF THESE SHOULD YOU DO WHEN PASSING SHEEP ON A ROAD? -> **Answer: ALL OF THE ABOVE.**
+- **TS_RR_152**: WHICH HAND SIGNAL IS USED FOR 'U' TURN -> **Answer: RIGHT TURN SIGNAL**
+- **TS_RR_153**: WHEN YOUR VEHICLE IS BEING OVERTAKEN -> **Answer: DO NOT INCREASE SPEED**
+- **TS_RR_154**: YOU ARE APPROACHING A NARROW BRIDGE. ANOTHER VEHICLE FROM THE OPPOSITE DIRECTION IS ALREADY ON THE BRIDGE. YOU SHOULD -> **Answer: WAIT TILL THE OTHER VEHICLE HAS CROSSED THE BRIDGE AND THEN PROCEED**
+- **TS_RR_155**: WHEN A VEHICLE ARRIVES AT AN UNGUARDED RAILWAY CROSSING -> **Answer: THE DRIVER MUST GET OUT OF THE VEHICLE AND CHECK FOR ANY APPROACHING TRAIN AND THEN PASS.**
+- **TS_RR_156**: YOU WISH TO PARK FACING DOWN HILL. WHICH OF THE FOLLOWING SHOULD YOU DO? -> **Answer: TURN THE STEERING WHEEL TOWARDS THE KERB AND PUT THE HAND BRAKE FIRMLY**
+- **TS_RR_157**: LENDING OF A MOTOR VEHICLE TO A PERSON FOR DRIVING, WHO IS NOT HOLDING A VALID LICENCE IS:- -> **Answer: A SERIOUS OFFENCE.**
+- **TS_RR_158**: U TURN IS PROHIBITED ON -> **Answer: ALL OF THE ABOVE**
+- **TS_RR_159**: PEDESTRIANS MUST NOT CROSS THE ROAD, FROM BEHIND A VEHICLE OR NEAR TO A BEND, BECAUSE -> **Answer: DRIVERS OF THE OTHER VEHICLES MAY NOT BE ABLE TO SEE THE PERSON CROSSING THE ROAD**
+
+### General Driving Principles (159 Questions)
+- **TS_GP_001**: DRIVING IS A REPETITION OF THREE THINGS. WHICH ARE THEY IN CORRECT ORDER? -> **Answer: SEE, THINK AND DO**
+- **TS_GP_002**: WHICH OF THE FOLLOWING SHOULD BE DONE CONTINUOUSLY WHILE DRIVING A VEHICLE? -> **Answer: ASSESSING ROAD CONDITIONS AHEAD**
+- **TS_GP_003**: YOU START TO FEEL TIRED WHILE DRIVING. WHAT SHOULD YOU DO? -> **Answer: STOP AT A SAFE PLACE TO REST**
+- **TS_GP_004**: WHILE DRIVING A CAR, A PROPERLY ADJUSTED HEAD RESTRAINT WILL -> **Answer: HELP YOU TO AVOID NECK INJURY**
+- **TS_GP_005**: YOU SHOULD ONLY USE A MOBILE PHONE WHEN -> **Answer: THE VEHICLE IS STATIONARY & PARKED SUITABLY.**
+- **TS_GP_006**: WHILE DRIVING, AVOID -> **Answer: BOTH OF THE ABOVE.**
+- **TS_GP_007**: TO HELP CONCENTRATION ON LONG JOURNEYS YOU SHOULD STOP FREQUENTLY AND -> **Answer: HAVE A REST**
+- **TS_GP_008**: WHAT IS MEANT BY ‘DEFENSIVE DRIVING’? -> **Answer: BEING ALERT AND THINKING AHEAD**
+- **TS_GP_009**: TO DRIVE ON THE ROAD, LEARNERS MUST -> **Answer: HAVE A VALID LEARNERS LICENCE**
+- **TS_GP_010**: WHICH OF THE FOLLOWING TYPES OF EYE GLASSES SHOULD NOT BE WORN WHEN DRIVING AT NIGHT? -> **Answer: TINTED**
+- **TS_GP_011**: OBJECTS HANGING FROM YOUR INTERIOR MIRROR MAY -> **Answer: RESTRICT YOUR VIEW & DISTRACT YOUR ATTENTION**
+- **TS_GP_012**: WHAT IS THE BEST WAY TO PREVENT FATIGUE WHEN DRIVING? -> **Answer: STOP FOR REST**
+- **TS_GP_013**: YOUR OVERALL STOPPING DISTANCE WILL BE MUCH LONGER WHEN DRIVING -> **Answer: IN RAIN**
+- **TS_GP_014**: WHEN DRIVING AT SUNSET OR DAWN ON A DARK DAY. WHAT SHOULD YOU DO? -> **Answer: TURN ON YOUR LIGHTS ON LOW BEAM.**
+- **TS_GP_015**: AT ROAD JUNCTIONS WHICH OF THE FOLLOWING ARE MOST VULNERABLE? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_016**: IN WHAT SITUATION ARE OTHER DRIVERS ALLOWED TO FLASH THEIR HEADLIGHTS AT YOU? -> **Answer: TO WARN YOU OF THEIR PRESENCE**
+- **TS_GP_017**: WHAT IS THE BEST WAY TO AVOID HITTING OTHER VEHICLES, PEOPLE OR ANIMALS WHEN MOVING OFF FROM THE KERB? -> **Answer: CHECK YOUR MIRRORS AND LOOK OVER YOUR SHOULDER BEFORE MOVING OFF.**
+- **TS_GP_018**: WHICH OF THESE STATEMENTS IS TRUE? -> **Answer: PEDESTRIANS HAVE RIGHT OF WAY AT UNCONTROLLED PEDESTRIAN CROSSING**
+- **TS_GP_019**: WHEN DRIVING IN WET WEATHER YOU SHOULD -> **Answer: WATCH OUT FOR PEDESTRIANS WHO MAY HURRY AND TAKE RISKS.**
+- **TS_GP_020**: YOU MUST OBEY SIGNS GIVING ORDERS. THESE SIGNS ARE MOSTLY IN -> **Answer: RED / BLUE CIRCLES**
+- **TS_GP_021**: A RED TRAFFIC LIGHT MEANS -> **Answer: YOU MUST STOP BEHIND WHITE STOP LINE**
+- **TS_GP_022**: AS A LEARNING LICENCE-HOLDER YOU SHOULD NOT DRIVE A VEHICLE -> **Answer: ON THE MOTORWAY WITHOUT A PERMANENT LICENCE HOLDER.**
+- **TS_GP_023**: ON WHICH OF THESE OCCASIONS MUST YOU STOP YOUR VEHICLE? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_024**: WHY SHOULD YOU MAKE SURE THAT YOU HAVE CANCELLED YOUR INDICATORS AFTER TURNING? -> **Answer: TO AVOID MISLEADING OTHER ROAD USERS**
+- **TS_GP_025**: HOW MUCH DISTANCE SHOULD YOU KEEP FROM A VEHICLE TRAVELLING IN FRONT OF YOU? -> **Answer: A DISTANCE SUFFICIENT TO AVOID COLLISION IF THE VEHICLE IN FRONT OF YOU SUDDENLY SLOWS DOWN OR STOPS**
+- **TS_GP_026**: YOU MUST NOT USE YOUR HORN WHEN YOU ARE STATIONARY -> **Answer: UNLESS A MOVING VEHICLE MAY CAUSE YOU DANGER**
+- **TS_GP_027**: WHEN OTHER DRIVERS FLASH THEIR HEADLIGHTS AT YOU IT MEANS -> **Answer: THAT THEY ARE WARNING YOU OF THEIR PRESENCE**
+- **TS_GP_028**: WHILE DRIVING, A WARNING LIGHT ON YOUR VEHICLE'S INSTRUMENT PANEL COMES ON. YOU SHOULD -> **Answer: CHECK OUT THE PROBLEM QUICKLY AND SAFELY**
+- **TS_GP_029**: WHICH OF THESE MUST BE IN GOOD WORKING ORDER FOR YOUR CAR TO BE ROADWORTHY? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_030**: REAR VIEW MIRROR IS? -> **Answer: FOR VIEWING THE TRAFFIC APPROACHING FROM BEHIND**
+- **TS_GP_031**: HAND BRAKE IS TO BE USED TO? -> **Answer: PARK THE VEHICLE**
+- **TS_GP_032**: THE MOST EFFECTIVE DEVICE FOR PROTECTING PASSENGERS DURING ACCIDENT IS -> **Answer: SEAT BELTS**
+- **TS_GP_033**: YOU BORROW A FRIEND'S CAR AND FIND THAT THE POSITION OF THE DRIVER'S SEAT PUTS YOU SITTING A LONG WAY FROM THE STEERING WHEEL AND CONTROLS. WHAT SHOULD YOU DO? -> **Answer: ADJUST THE SEAT FORWARD TO FIT YOU**
+- **TS_GP_034**: MIRRORS ARE OFTEN SLIGHTLY CURVED (CONVEX), SO THAT -> **Answer: THEY GIVE A WIDER FIELD OF VISION**
+- **TS_GP_035**: WHAT SHOULD BE THE COLOUR SCHEME FOR NUMBER PLATES FOR PRIVATE VEHICLES? -> **Answer: WHITE BASE AND BLACK NUMERALS**
+- **TS_GP_036**: YOU HAVE A VALID LEARNER'S LICENCE TO DRIVE A CAR, YOU ARE ALLOWED TO -> **Answer: DRIVE AT ANY TIME, AND ANY PLACE PROVIDED THERE IS A PERMANENT LICENCE HOLDER WITH YOU WHO CAN CONTROL THE VEHICLE IN CASE OF EMERGENCY**
+- **TS_GP_037**: IF YOU HAVE A VALID DRIVING LICENCE FOR A LIGHT MOTOR VEHICLE, WHAT ARE YOU ALLOWED TO DRIVE? -> **Answer: MOTOR CAR ONLY**
+- **TS_GP_038**: IF YOU MEET WITH AN ACCIDENT WHILE DRIVING A VEHICLE, WITHOUT A VALID DRIVING LICENCE, THE INSURANCE COMPANY WILL -> **Answer: NOT COMPENSATE FOR DAMAGES**
+- **TS_GP_039**: WHILE DRIVING ON THE ROAD WITHOUT A VALID DRIVING LICENCE, WHEN CAN YOU FACE A PENAL ACTION? -> **Answer: WHEN CHECKING OFFICER CHECK YOUR VEHICLE**
+- **TS_GP_040**: LEARNERS LICENCE IS VALID -> **Answer: ISSUED FOR SIX MONTHS**
+- **TS_GP_041**: PUCC STANDS FOR -> **Answer: POLLUTION UNDER CONTROL CERTIFICATE**
+- **TS_GP_042**: MINIMUM AGE TO OBTAIN A CAR DRIVING LICENCE IS? -> **Answer: 18 YEARS**
+- **TS_GP_043**: YOUR CAR IS INVOLVED IN AN ACCIDENT HURTING PEOPLE, YOU SHOULD -> **Answer: REPORT TO THE NEAREST POLICE STATION AND TAKE THE PERSONS TO THE HOSPITAL**
+- **TS_GP_044**: IS IT AN OFFENCE TO OBSTRUCT CLEAR VISION OF YOUR NUMBER PLATES? -> **Answer: YES, AT ANY TIME**
+- **TS_GP_045**: ARE YOU ALLOWED TO USE A HAND- HELD MOBILE PHONE WHILE DRIVING A CAR? -> **Answer: NO**
+- **TS_GP_046**: WHICH OF THE FOLLOWING IS A BASIC STEP TO TAKE AFTER AN ACCIDENT? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_047**: WHAT PHONE NUMBER WILL YOU DIAL IN CASE OF A MEDICAL EMERGENCY TO GET ASSISTANCE BY THE AMBULANCE? -> **Answer: 108**
+- **TS_GP_048**: YOU ARRIVE AT THE SCENE OF AN ACCIDENT. WHAT IS THE FIRST THING YOU SHOULD DO? -> **Answer: WARN OTHER TRAFFIC**
+- **TS_GP_049**: ACCIDENTS OCCUR -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_050**: THE AGE GROUP OF DRIVERS MOSTLY INVOLVED IN A ROAD ACCIDENT? -> **Answer: 17 TO 25 YEARS OLD**
+- **TS_GP_051**: AN OLDER PERSON'S DRIVING ABILITY COULD BE AFFECTED BECAUSE THEY MAY BE UNABLE TO -> **Answer: REACT VERY QUICKLY**
+- **TS_GP_052**: YOU SHOULD NOT USE A MOBILE PHONE WHILE DRIVING -> **Answer: BECAUSE IT MIGHT DISTRACT YOUR ATTENTION FROM THE ROAD AHEAD.**
+- **TS_GP_053**: YOU ARE TAKING DRUGS THAT ARE LIKELY TO AFFECT YOUR DRIVING. WHAT SHOULD YOU DO? -> **Answer: SEEK MEDICAL ADVICE BEFORE DRIVING**
+- **TS_GP_054**: YOU HAVE BEEN INVOLVED IN AN ARGUMENT BEFORE STARTING YOUR JOURNEY. THIS HAS MADE YOU FEEL ANGRY. YOU SHOULD -> **Answer: CALM DOWN BEFORE YOU START TO DRIVE.**
+- **TS_GP_055**: A DRIVER'S BEHAVIOUR HAS UPSET YOU. IT MAY HELP IF YOU -> **Answer: STOP AND TAKE A BREAK**
+- **TS_GP_056**: A MOTOR DRIVING LICENCE ISSUED IN ANY STATE OF INDIA -> **Answer: IS VALID THROUGH OUT THE INDIA**
+- **TS_GP_057**: WHAT SHOULD YOU USE YOUR HORN FOR? -> **Answer: TO ALERT OTHERS OF YOUR PRESENCE**
+- **TS_GP_058**: BEFORE DRIVING A NEW VEHICLE THE DRIVER SHOULD -> **Answer: BE FAMILIAR WITH THE POSITION OF CONTROLS**
+- **TS_GP_059**: THE FIRST THING THAT ALCOHOL AFFECTS IS -> **Answer: JUDGEMENT.**
+- **TS_GP_060**: YOU HAVE TO DRIVE IN THE EVENING. YOU ARE INVITED TO A LUNCH . WHAT IS YOUR BEST COURSE OF ACTION? -> **Answer: DONT DRINK ANY ALCOHOL AT ALL**
+- **TS_GP_061**: WHAT ADVICE SHOULD YOU GIVE TO A DRIVER WHO HAS HAD A FEW ALCOHOLIC DRINKS AT A PARTY? -> **Answer: GO HOME BY PUBLIC TRANSPORT**
+- **TS_GP_062**: WHAT ELSE CAN SERIOUSLY AFFECT YOUR CONCENTRATION, OTHER THAN ALCOHOLIC DRINKS? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_063**: DO YOU HAVE ANY RESPONSIBILITY WHEN OPENING A VEHICLE DOOR ON A ROADWAY? -> **Answer: YES, YOU MUST NOT OPEN A DOOR IF YOU ARE LIKELY TO CAUSE DANGER TO ROAD USERS OR IMPEDE TRAFFIC.**
+- **TS_GP_064**: GENERALLY, IF YOU HEAR THE SIREN OF AN EMERGENCY VEHICLE YOU SHOULD -> **Answer: PULL OVER TO THE LEFT UNTILL THE EMERGENCY VEHICLE PASSES.**
+- **TS_GP_065**: YOU ARRIVE AT THE SCENE OF A MOTORCYCLE ACCIDENT. NO OTHER VEHICLE IS INVOLVED. THE RIDER IS UNCONSCIOUS, LYING IN THE MIDDLE OF THE ROAD. THE FIRST THING YOU SHOULD DO IS TO -> **Answer: WARN OTHER TRAFFIC**
+- **TS_GP_066**: WHICH OF THE FOLLOWING ATTITUDES ARE MOST LIKELY TO MAKE YOU A SAFE DRIVER? -> **Answer: WHEN I DRIVE, I AM RESPONSIBLE FOR MY SAFETY AS WELL AS THE SAFETY OF OTHER ROAD USERS.**
+- **TS_GP_067**: YOUR VEHICLE HAS BROKEN DOWN ON A HIGHWAY, WHAT IS THE FIRST THING YOU SHOULD DO? -> **Answer: WARN OTHER TRAFFIC**
+- **TS_GP_068**: WHICH OF THE FOLLOWING SHOULD NOT BE KEPT IN YOUR VEHICLE? -> **Answer: INFLAMMABLE MATERIAL**
+- **TS_GP_069**: WHICH OF THE FOLLOWING IS TRUE -> **Answer: THE PEDESTRIANS HAVE THE RIGHT OF WAY AT ALL PEDESTRIAN CROSSINGS**
+- **TS_GP_070**: WHAT IS THE MAXIMUM SPEED LIMIT WHEN TOWING ANOTHER MECHANICALLY DISABLED VEHICLE -> **Answer: 24KMPH**
+- **TS_GP_071**: WHICH OF THE FOLLOWING IS CORRECT -> **Answer: ALL THE ABOVE**
+- **TS_GP_072**: WHEN YOU APPROACH A ROAD WHERE WORKERS ARE UNDERTAKING REPAIRS, YOUR SPEED SHALL NOT BE MORE THAN -> **Answer: 25KMPH**
+- **TS_GP_073**: WHAT SHALL BE YOUR MAXIMUM SPEED WHEN YOU ARE PASSING A PROCESSION OR MEETINGS ON THE ROAD -> **Answer: 25KMPH**
+- **TS_GP_074**: A DRIVER OF GOODS VEHICLE CAN CARRY PASSENGERS -> **Answer: CAN NOT CARRY PASSENGERS**
+- **TS_GP_075**: WHICH OF THE FOLLOWING DOCUMENTS NEED NOT BE CARRIED WHILE DRIVING THE VEHICLE -> **Answer: INVOICE**
+- **TS_GP_076**: WHICH OF THE FOLLOWING ARE AUTHORISED TO ASK YOU FOR PRODUCTION OF DOCUMENTS WHILE YOU ARE DRIVING ON THE ROAD -> **Answer: ALL OF THESE**
+- **TS_GP_077**: WHAT IS THE MAXIMUM SPEED WITH WHICH YOU ARE ALLOWED TO DRIVE A TWO WHEELER ON THE ROAD -> **Answer: 50KMPH**
+- **TS_GP_078**: STOPPING WITH THE HELP OF GEARS CAN BE ACHIEVED BY -> **Answer: LOWERING GEARS ONE BY ONE**
+- **TS_GP_079**: WHICH OF THE FOLLOWING MAY CAUSE LOSS OF CONCENTRATION WHILE DRIVING? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_080**: ON A LONG MOTORWAY JOURNEY BOREDOM CAN CAUSE YOU TO FEEL SLEEPY. YOU SHOULD -> **Answer: LEAVE THE MOTORWAY AND FIND A SAFE PLACE TO STOP AND ENSURE A SUPPLY OF FRESH AIR INTO YOUR VEHICLE**
+- **TS_GP_081**: WHICH OF THESE DOES THE LAW REQUIRE YOU TO KEEP IN GOOD CONDITION? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_082**: YOU ARE CARRYING TWO 13 YEAR OLD CHILDREN AND THEIR PARENTS IN YOUR CAR. WHO IS RESPONSIBLE FOR SEEING THAT THE CHILDREN WEAR SEAT BELTS? -> **Answer: YOU, THE DRIVER**
+- **TS_GP_083**: NOISE POLLUTION MAY RESULT IN -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_084**: A DRIVER DOES SOMETHING THAT UPSETS YOU. YOU SHOULD -> **Answer: TRY NOT TO REACT**
+- **TS_GP_085**: HOW SHOULD YOU REACT TO DRIVERS WHO APPEAR TO BE INEXPERIENCED? -> **Answer: BE PATIENT AND PREPARED FOR THEIR SLOW REACTION**
+- **TS_GP_086**: YOU SHOULD ONLY FLASH YOUR HEADLIGHTS AT OTHER ROAD USERS -> **Answer: TO LET THEM KNOW THAT YOU ARE THERE**
+- **TS_GP_087**: PRESSING THE CLUTCH PEDAL DOWN OR ROLLING IN NEUTRAL FOR TOO LONG WHILE DRIVING WILL -> **Answer: REDUCE YOUR CONTROL**
+- **TS_GP_088**: HOW CAN YOU USE THE GEARS OF YOUR VEHICLE TO CONTROL YOUR SPEED? -> **Answer: BY CHANGING TO A LOWER GEAR**
+- **TS_GP_089**: YOU ARE DRIVING DOWN A STEEP HILL. WHY COULD KEEPING THE CLUTCH DOWN OR SELECTING NEUTRAL FOR TOO LONG BE DANGEROUS? -> **Answer: YOUR VEHICLE WILL PICK UP SPEED**
+- **TS_GP_090**: YOU ARE TRAVELLING IN VERY HEAVY RAIN. YOUR OVERALL STOPPING DISTANCE IS LIKELY TO -> **Answer: INCREASE**
+- **TS_GP_091**: WHAT IS THE LEGAL MINIMUM INSURANCE COVER YOU MUST HAVE TO DRIVE ON PUBLIC ROADS? -> **Answer: THIRD PARTY ONLY**
+- **TS_GP_092**: YOU HAVE JUST BOUGHT A SECOND HAND VEHICLE. WHEN SHOULD YOU TELL THE LICENSING AUTHORITY OF CHANGE OF OWNERSHIP? -> **Answer: WITHIN 14 DAYS**
+- **TS_GP_093**: YOU ARE THE FIRST TO ARRIVE AT THE SCENE OF AN ACCIDENT. WHICH OF THESE SHOULD YOU DO? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_094**: AN ACCIDENT HAS JUST HAPPENED. AN INJURED PERSON IS LYING ON THE BUSY ROAD. WHAT IS THE FIRST THING YOU SHOULD DO? -> **Answer: WARN OTHER TRAFFIC**
+- **TS_GP_095**: YOU HAVE STOPPED AT THE SCENE OF AN ACCIDENT TO GIVE HELP. WHICH OF THESE THINGS SHOULD YOU DO? -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_096**: YOUR INDICATORS MAY BE DIFFICULT TO SEE IN BRIGHT SUNLIGHT. WHAT SHOULD YOU DO? -> **Answer: GIVE AN ARM SIGNAL AS WELL AS USE YOUR INDICATORS**
+- **TS_GP_097**: WHAT ARE THE DOCUMENTS YOU NEED TO CARRY WITH YOU IN YOUR VEHICLE ALWAYS WHILE DRIVING? -> **Answer: DRIVING LICENCE, CERTIFICATE OF INSURANCE, REGISTRATION CERTIFICATE AND POLLUTION UNDER CONTROL CERTIFICATE**
+- **TS_GP_098**: WHAT IS THE VALIDITY PERIOD OF A LEARNER'S LICENCE? -> **Answer: 180 DAYS**
+- **TS_GP_099**: WHAT IS THE GRACE PERIOD FOR THE RENEWAL OF A PERMANENT DRIVING LICENCE? -> **Answer: 30 DAYS**
+- **TS_GP_100**: UNDER WHAT CIRCUMSTANCES CAN YOUR VEHICLE BE IMPOUNDED? -> **Answer: WHEN DRIVING A VEHICLE WITHOUT REGISTRATION**
+- **TS_GP_101**: HOW DOES ALCOHOL AFFECT YOUR DRIVING? -> **Answer: IT REDUCES YOUR CONCENTRATION**
+- **TS_GP_102**: WHAT DOES THE LAW REQUIRE WITH REGARD TO THE NEGOTIATING OF UNCONTROLLED PEDESTRIAN CROSSING? -> **Answer: STOP AND GIVE PRECEDENCE TO PEDESTRIANS WHO ARE ALREADY ON THE PEDESTRIAN CROSSING**
+- **TS_GP_103**: WHAT SHOULD YOU DO WHEN YOU ARE DAZZLED BY HEADLIGHTS OF OTHER VEHICLES AT NIGHT? -> **Answer: LOOK TO THE LEFT SIDE OF THE ROAD AND SLOW DOWN. KEEP HEADLIGHTS ON LOW BEAM**
+- **TS_GP_104**: A COVER NOTE IS A DOCUMENT ISSUED BEFORE YOU RECEIVE YOUR -> **Answer: INSURANCE CERTIFICATE**
+- **TS_GP_105**: WHEN YOU SMELL OR SEE FIRE IN YOUR VEHICLE, WHAT SHOULD YOU DO? -> **Answer: PULL TO THE SIDE OF THE ROAD IMMEDIATELY, TURN OFF THE ENGINE AND ALL ELECTRICAL SWITCHES AND TRY TO SMOOTHER BURNING WIRES WITH SAND OR HEAVY CLOTH.**
+- **TS_GP_106**: YOU SHOULD NOT DRIVE WITH YOUR FOOT ON THE CLUTCH FOR LONGER THAN NECESSARY BECAUSE IT -> **Answer: REDUCES CONTROL OVER THE VEHICLE AND WILL RESULT IN PREMATURE CLUTCH FAILURE**
+- **TS_GP_107**: FUNCTION OF CHOKE IS TO -> **Answer: ENRICH FUEL IN THE AIR-FUEL MIXTURE**
+- **TS_GP_108**: YOU HAVE THIRD PARTY INSURANCE. WHAT DOES THIS COVER? -> **Answer: ALL OF THE ABOVE.**
+- **TS_GP_109**: WHAT IS THE MAIN REASON THAT YOUR STOPPING DISTANCE INCREASES AFTER HEAVY RAIN? -> **Answer: YOUR TYRES HAVE LESS GRIP ON THE ROAD.**
+- **TS_GP_110**: WHEN YOUR VEHICLE IS LOADED YOU MUST MAKE SURE THAT THE LOAD WILL -> **Answer: REMAIN SECURE**
+- **TS_GP_111**: YOU SEE A PEDESTRIAN CARRYING A WHITE STICK. THIS SHOWS THAT THE PERSON IS -> **Answer: BLIND**
+- **TS_GP_112**: WHILE DRIVING, YOU APPROACH ROAD WORKS. YOU SEE A TEMPORARY MAXIMUM SPEED LIMIT SIGN. YOU MUST -> **Answer: COMPLY WITH THE SIGN AT ALL TIMES**
+- **TS_GP_113**: THE DRIVER OF A FOUR WHEELER MUST ENSURE THAT ANY LOAD THAT IS CARRIED ON A ROOF RACK MUST BE -> **Answer: SECURELY FASTENED WHEN DRIVING**
+- **TS_GP_114**: WHY PASSING A LORRY IS MORE RISKY THAN PASSING A CAR? -> **Answer: LORRIES ARE LONGER THAN CARS.**
+- **TS_GP_115**: BEFORE STARTING THE VEHICLE THE DRIVER SHOULD CHECK- -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_116**: WHICH IS ILLEGAL WHILE DRIVING A FOUR WHEELER VEHICLE? -> **Answer: BOTH OF THE ABOVE.**
+- **TS_GP_117**: WHILE DRIVING YOU SHOULD ALWAYS KEEP THE FOLLOWING IN MIND- -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_118**: WHEN YOU ARE BEING OVERTAKEN OR PASSED BY ANOTHER VEHICLE. DO NOT -> **Answer: INCREASE YOUR SPEED.**
+- **TS_GP_119**: WHO IS RESPONSIBLE FOR ENSURING THAT THE VEHICLE IS NOT OVERLOADED? -> **Answer: THE DRIVER OF THE VEHICLE.**
+- **TS_GP_120**: ON A FOGGY DAY YOU HAVE TO UNAVOIDABLY PARK YOUR VEHICLE ON THE ROAD. WHAT SHOULD YOU DO? KEEP STONES/BRICKS AROUND YOUR VEHICLE -> **Answer: LEAVE SIDE LIGHTS ON**
+- **TS_GP_121**: YOU SHOULD USE A MOBILE TELEPHONE ONLY WHEN YOU -> **Answer: HAVE STOPPED AT A SAFE PLACE**
+- **TS_GP_122**: TURBULENCE IS CREATED BY LARGE VEHICLES TRAVELLING AT SPEED. THIS IS MOST LIKELY TO BE A DANGER TO -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_123**: YOU ARE DRIVING IN HEAVY RAIN. YOUR STEERING SUDDENLY BECOMES VERY LIGHT. YOU SHOULD -> **Answer: EASE OFF THE ACCELERATOR**
+- **TS_GP_124**: YOU ARE FOLLOWING A LARGE LORRY ON A WET ROAD. SPRAY MAKES IT DIFFICULT TO SEE. YOU SHOULD -> **Answer: DROP BACK UNTIL YOU CAN SEE BETTER**
+- **TS_GP_125**: YOU ARE DRIVING IN FOG. WHY SHOULD YOU KEEP WELL BACK FROM THE VEHICLE IN FRONT? -> **Answer: IN CASE IT STOPS SUDDENLY**
+- **TS_GP_126**: YOU ARRIVE AT AN ACCIDENT WHERE SOMEONE IS SUFFERING FROM SEVERE BURNS. WHICH OF THE FOLLOWING WOULD HELP? -> **Answer: DOUSE THE BURNS WITH COLD WATER**
+- **TS_GP_127**: AIR POLLUTION EFFECTS -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_128**: WHAT WILL HAPPEN IF THE WHEELS ARE NOT PROPERLY BALANCED? -> **Answer: STEERING WOBBLING.**
+- **TS_GP_129**: WHAT IS MEANT BY CLUTCH RIDING? -> **Answer: KEEPING YOUR FOOT ON THE CLUTCH WHILE DRIVING**
+- **TS_GP_130**: THERE IS VIBRATION ON YOUR STEERING WHEEL AS YOU DRIVE. WHAT IS THE PROBABLE CAUSE? -> **Answer: UNBALANCED WHEELS.**
+- **TS_GP_131**: WHEN MAY A DRIVER LEND HIS DRIVING LICENCE TO ANOTHER PERSON? -> **Answer: AT NO TIME.**
+- **TS_GP_132**: IF YOUR VEHICLE HITS A PEDESTRIAN YOU SHOULD -> **Answer: HELP THE INJURED PERSON, IDENTIFY YOURSELF AND THEN REPORT TO THE POLICE.**
+- **TS_GP_133**: STICKERS, POSTERS AND OTHER NON- OFFICIAL ITEMS MAY NOT BE PLACED ON THE WINDSHIELD OF AN AUTOMOBILE BECAUSE:- IT IS UNLAWFUL TO ADVERTISE IN THIS WAY. -> **Answer: VISION.**
+- **TS_GP_134**: A PERSON HAVING DRIVING LICENCE SUSPENDED OR CANCELLED MAY -> **Answer: NOT DRIVE UNDER ANY CONDITIONS.**
+- **TS_GP_135**: IF A PERSON'S DRIVING LICENCE VALIDITY PERIOD IS OVER, HE CAN APPLY FOR RENEWAL OF MOTOR DRIVING LICENCE WITHIN WITHOUT PENALTY -> **Answer: THIRTY DAYS**
+- **TS_GP_136**: ANY PERSON MAY HOLD -> **Answer: ONLY ONE LICENCE.**
+- **TS_GP_137**: LENDING OF A MOTOR VEHICLE TO A PERSON FOR DRIVING, WHO IS NOT HOLDING A VALID LICENCE IS:- -> **Answer: A SERIOUS OFFENCE.**
+- **TS_GP_138**: DRIVING A VEHICLE HAVING POLLUTION VALUES ABOVE THE LIMIT SPECIFIED BY THE LAW: - -> **Answer: IS AN OFFENCE**
+- **TS_GP_139**: FITMENT OF A MULTITONED HORN TO A MOTOR VEHICLE: - -> **Answer: IS AN OFFENCE UNDER THE LAW AS IT CAUSES NOISE POLLUTION.**
+- **TS_GP_140**: THE AIM OF FIRST AID IS -> **Answer: ALL OF THE ABOVE.**
+- **TS_GP_141**: ALCOHOL MAY RESULT IN -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_142**: ALCOHOL AFFECTS -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_143**: ALCOHOL MAY RESULT IN -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_144**: ALCOHOL MAY AFFECT ADVERSELY BY -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_145**: INCREASING YOUR SPEED HAS WHAT EFFECT ON STOPPING DISTANCE? -> **Answer: THE MORE THE SPEED THE MORE THE STOPPING DISTANCE**
+- **TS_GP_146**: WHILE STARTING THE VEHICLE WHICH OF THE FOLLOWING THINGS SHOULD BE DONE -> **Answer: ALL OF THE ABOVE.**
+- **TS_GP_147**: THE RIGHT OF WAY SHOULD BE GIVEN TO -> **Answer: EMERGENCY VEHICLES**
+- **TS_GP_148**: FOG LAMPS ARE USED -> **Answer: WHEN THERE IS MIST**
+- **TS_GP_149**: ZEBRA CROSSING IS MEANT FOR PEDESTRIANS -> **Answer: EMERGENCY VEHICLES**
+- **TS_GP_150**: BOARDING AND ALIGHTING WHILE THE VEHICLE IS IN MOTION -> **Answer: OF VEHICLES**
+- **TS_GP_151**: MORE THAN TWO PERSONS ON A TWO WHEELER IS -> **Answer: DENSITY IS LOW**
+- **TS_GP_152**: USING UNREGISTERED VEHICLE IN PUBLIC PLACES IS -> **Answer: ILLEGAL**
+- **TS_GP_153**: DRIVING AT HIGH SPEED -> **Answer: DOES NOT GIVE YOU SUFFICIENT TIME TO REACT TO HAZARDS**
+- **TS_GP_154**: A BASIC RULE WHEN ON HIGHWAYS IS -> **Answer: KEEP THE LEFT LANE UNLESS OVERTAKING**
+- **TS_GP_155**: CAUSES OF THE AUTOMOBILE POLLUTION IS / ARE -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_156**: WHICH OF THE FOLLOWING WILL AFFECT YOUR STOPPING DISTANCE -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_157**: TO REDUCE THE VOLUME OF TRAFFIC ON THE ROADS YOU COULD -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_158**: TO PREVENT POLLUTING THE ENVIRONMENT, YOU CAN HELP BY -> **Answer: ALL OF THE ABOVE**
+- **TS_GP_159**: A PROPERLY SERVICED VEHICLE WILL GIVE -> **Answer: BETTER FUEL ECONOMY AND CLEANER EXHAUST EMISSIONS**

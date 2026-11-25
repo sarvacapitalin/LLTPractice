@@ -1,0 +1,421 @@
+{
+  "dlTrackGuide": {
+    "title": {
+      "en": "Permanent Driving Licence (DL) Track Test Guide (After 30 Days)",
+      "te": "శాశ్వత డ్రైవింగ్ లైసెన్స్ (DL) ట్రాక్ టెస్ట్ గైడ్ (30 రోజుల తర్వాత)",
+      "hi": "स्थायी ड्राइविंग लाइसेंस (DL) ट्रैक टेस्ट गाइड (30 दिन बाद)"
+    },
+    "subtitle": {
+      "en": "How to pass the Two-Wheeler '8' Track and Car 'H' Track practical driving test at Telangana automated RTA tracks.",
+      "te": "తెలంగాణ ఆటోమేటెడ్ RTA ట్రాక్‌లలో టూ-వీలర్ '8' ట్రాక్ మరియు కారు 'H' ట్రాక్ ప్రాక్టికల్ డ్రైవింగ్ టెస్ట్ పాస్ అయ్యే విధానం.",
+      "hi": "तेलंगाना के स्वचालित RTA ट्रैक पर टू-व्हीलर '8' ट्रैक और कार 'H' ट्रैक प्रैक्टिकल ड्राइविंग टेस्ट पास करने की पूरी जानकारी।"
+    },
+    "eligibility": {
+      "en": "You can book your Permanent DL track test slot on transport.telangana.gov.in after completing 30 days from your LLR issue date (valid up to 180 days).",
+      "te": "మీ LLR జారీ అయిన 30 రోజుల తర్వాత (180 రోజుల లోపు) transport.telangana.gov.in లో శాశ్వత DL ట్రాక్ టెస్ట్ స్లాట్ బుక్ చేసుకోవచ్చు.",
+      "hi": "LLR जारी होने के 30 दिन बाद (180 दिनों के भीतर) आप transport.telangana.gov.in पर स्थायी DL ट्रैक टेस्ट स्लॉट बुक कर सकते हैं।"
+    },
+    "tracks": [
+      {
+        "id": "track_8",
+        "badge": "MCWG / Two-Wheeler",
+        "title": {
+          "en": "Figure '8' Track Test (Motorcycle / Scooter)",
+          "te": "ఫిగర్ '8' ట్రాక్ టెస్ట్ (బైక్ / స్కూటర్)",
+          "hi": "फिगर '8' ट्रैक टेस्ट (बाइक / स्कूटर)"
+        },
+        "points": {
+          "en": [
+            "Wear an ISI-certified strapped helmet before starting.",
+            "Ride smoothly along the figure-8 loop using steady clutch & throttle control.",
+            "Do NOT put either foot down on the ground inside the track.",
+            "Do NOT touch or cross the painted curb/sensor lines.",
+            "Use turn indicators when entering and exiting the track."
+          ],
+          "te": [
+            "బయలుదేరే ముందు స్ట్రాప్ ఉన్న హెల్మెట్ తప్పనిసరిగా ధరించండి.",
+            "స్థిరమైన క్లచ్ & యాక్సిలరేటర్ నియంత్రణతో '8' ఆకారపు ట్రాక్‌పై సాఫీగా నడపండి.",
+            "ట్రాక్ లోపల కాలు కింద పెట్టకూడదు (Foot-down చేయరాదు).",
+            "ట్రాక్ అంచులను లేదా సెన్సార్ గీతలను తాకకూడదు.",
+            "ట్రాక్‌లోకి ప్రవేశించేటప్పుడు మరియు మలుపుల వద్ద ఇండికేటర్లు వాడండి."
+          ],
+          "hi": [
+            "शुरू करने से पहले पट्टा बांधकर प्रमाणित हेलमेट पहनें।",
+            "स्थिर क्लच और एक्सीलेरेटर नियंत्रण के साथ '8' आकार के ट्रैक पर आराम से चलाएं।",
+            "ट्रैक के अंदर जमीन पर पैर बिल्कुल न रखें।",
+            "ट्रैक की किनारे की रेखाओं या सेंसर पोल को न छुएं।",
+            "मोड़ पर और ट्रैक से निकलते समय इंडिकेटर का उपयोग करें।"
+          ]
+        }
+      },
+      {
+        "id": "track_h",
+        "badge": "LMV / Four-Wheeler",
+        "title": {
+          "en": "The 'H' Track & Reversing Test (Car / LMV)",
+          "te": "'H' ట్రాక్ & రివర్సింగ్ టెస్ట్ (కారు / LMV)",
+          "hi": "'H' ट्रैक और रिवर्सिंग टेस्ट (कार / LMV)"
+        },
+        "points": {
+          "en": [
+            "Adjust seat & side mirrors and fasten your seatbelt before moving.",
+            "Drive forward into the 'H' bay and reverse cleanly through the narrow lane without hitting poles or boundary lines.",
+            "Use side rear-view mirrors and check blind spots while reversing.",
+            "Avoid stalling the engine or rolling backward on gradients/ramps.",
+            "Signal properly with indicators before every turn or reverse maneuver."
+          ],
+          "te": [
+            "వాహనం కదిపే ముందు సీటు, మిర్రర్లు సర్దుబాటు చేసి సీట్‌బెల్ట్ పెట్టుకోండి.",
+            "'H' బే లోకి ముందుకు నడిపి, సైడ్ పోల్స్ లేదా గీతలను తాకకుండా వెనుకకు (రివర్స్) జాగ్రత్తగా నడపండి.",
+            "రివర్స్ చేసేటప్పుడు సైడ్ మిర్రర్లు మరియు బ్లైండ్ స్పాట్‌లను గమనించండి.",
+            "ఇంజిన్ ఆగిపోకుండా (Stall) మరియు ఎత్తుపై వెనుకకు జారకుండా క్లచ్ నియంత్రించండి.",
+            "ప్రతి మలుపు మరియు రివర్స్ ముందు సరైన ఇండికేటర్ వేయండి."
+          ],
+          "hi": [
+            "गाड़ी चलाने से पहले सीट व मिरर सेट करें और सीटबेल्ट लगाएं।",
+            "'H' बे में आगे जाएं और बिना किसी खंभे या लाइन को छुए संकरी लेन में साफ रिवर्स करें।",
+            "रिवर्स करते समय साइड मिरर और ब्लाइंड स्पॉट का ध्यान रखें।",
+            "इंजन बंद होने (स्टॉल) और ढलान पर पीछे लुढ़कने से बचें।",
+            "हर मोड़ और रिवर्स से पहले सही इंडिकेटर दें।"
+          ]
+        }
+      }
+    ],
+    "documents": {
+      "en": [
+        "Original Valid Learner's Licence (LLR) — at least 30 days old",
+        "Printed DL Track Test Slot Booking Receipt",
+        "Original Aadhaar Card + 1 photocopy & passport photos",
+        "Test Vehicle with valid RC, Insurance, PUC & visible 'L' Sticker"
+      ],
+      "te": [
+        "ఒరిజినల్ లెర్నర్స్ లైసెన్స్ (LLR) — కనీసం 30 రోజులు పూర్తయినది",
+        "DL ట్రాక్ టెస్ట్ స్లాట్ బుకింగ్ ప్రింటౌట్ రసీదు",
+        "ఒరిజినల్ ఆధార్ కార్డు + జిరాక్స్ కాపీ & పాస్‌పోర్ట్ ఫోటోలు",
+        "చెల్లుబాటు అయ్యే RC, ఇన్సూరెన్స్, PUC మరియు 'L' బోర్డు ఉన్న టెస్ట్ వాహనం"
+      ],
+      "hi": [
+        "मूल वैध लर्नर लाइसेंस (LLR) — कम से कम 30 दिन पुराना",
+        "DL ट्रैक टेस्ट स्लॉट बुकिंग की मुद्रित रसीद",
+        "मूल आधार कार्ड + 1 फोटोकॉपी और पासपोर्ट साइज फोटो",
+        "वैध RC, बीमा, PUC और स्पष्ट 'L' स्टिकर वाला परीक्षण वाहन"
+      ]
+    },
+    "automatedTracksNote": {
+      "en": "Major Hyderabad/Telangana RTA tracks (Kondapur TS-07, Uppal TS-08, Medchal, Nagole, Ibrahimpatnam) use automated RFID sensors & HD cameras to score track accuracy objectively."
+    }
+  },
+  "slotAndDownloadGuide": {
+    "title": {
+      "en": "Telangana RTA Online Application, Slot Booking & Digital LLR Download",
+      "te": "తెలంగాణ RTA ఆన్‌లైన్ దరఖాస్తు, స్లాట్ బుకింగ్ & డిజిటల్ LLR డౌన్‌లోడ్",
+      "hi": "तेलंगाना RTA ऑनलाइन आवेदन, स्लॉट बुकिंग और डिजिटल LLR डाउनलोड"
+    },
+    "steps": [
+      {
+        "step": 1,
+        "title": {
+          "en": "Apply Online on Telangana Transport Portal",
+          "te": "తెలంగాణ ట్రాన్స్‌పోర్ట్ పోర్టల్‌లో దరఖాస్తు",
+          "hi": "तेलंगाना परिवहन पोर्टल पर ऑनलाइन आवेदन"
+        },
+        "detail": {
+          "en": "Visit transport.telangana.gov.in -> Online Services -> Driving Licence -> Fresh Learner's Licence (LLR). Verify with Aadhaar OTP, choose vehicle classes (MCWG / LMV), and submit Form 2 & self-declaration Form 1.",
+          "te": "transport.telangana.gov.in -> ఆన్‌లైన్ సేవలు -> డ్రైవింగ్ లైసెన్స్ -> ఫ్రెష్ LLR లో ఆధార్ OTP తో దరఖాస్తు చేసి వాహన తరగతి (MCWG / LMV) ఎంచుకోండి.",
+          "hi": "transport.telangana.gov.in -> ऑनलाइन सेवाएं -> ड्राइविंग लाइसेंस -> फ्रेश LLR पर आधार OTP से सत्यापित कर वाहन श्रेणी चुनें।"
+        }
+      },
+      {
+        "step": 2,
+        "title": {
+          "en": "Book Your STALL Test Slot & Pay Fee",
+          "te": "STALL టెస్ట్ స్లాట్ బుక్ చేసి ఫీజు చెల్లించండి",
+          "hi": "STALL टेस्ट स्लॉट बुक करें और शुल्क भरें"
+        },
+        "detail": {
+          "en": "Select your local RTA office, pick an available green date/time slot, pay ₹200 (1 class) or ₹350 (2 classes) online, and print Form 2 + Slot Booking Slip.",
+          "te": "మీ సమీప RTO ఆఫీస్, ఖాళీగా ఉన్న (ఆకుపచ్చ) తేదీ/సమయాన్ని ఎంచుకుని ₹200 లేదా ₹350 ఫీజు చెల్లించి ఫారం 2 మరియు స్లాట్ స్లిప్ ప్రింట్ తీసుకోండి.",
+          "hi": "अपना RTA कार्यालय और उपलब्ध हरा स्लॉट चुनें, ₹200 (1 श्रेणी) या ₹350 (2 श्रेणी) का भुगतान करें और फॉर्म 2 व स्लॉट पर्ची प्रिंट करें।"
+        }
+      },
+      {
+        "step": 3,
+        "title": {
+          "en": "Download Digital LLR & Add to DigiLocker / mParivahan",
+          "te": "డిజిటల్ LLR డౌన్‌లోడ్ చేసి DigiLocker / mParivahan లో సేవ్ చేయండి",
+          "hi": "डिजिटल LLR डाउनलोड करें और DigiLocker / mParivahan में जोड़ें"
+        },
+        "detail": {
+          "en": "Within ~15 minutes of scoring 12/20, you receive an SMS link to download your signed PDF LLR. Fetch it into DigiLocker or NextGen mParivahan—digital documents are legally valid across India.",
+          "te": "12/20 మార్కులతో పాస్ అయిన 15 నిమిషాల్లో మీ మొబైల్‌కు వచ్చే SMS లింక్ ద్వారా PDF LLR డౌన్‌లోడ్ చేసుకోండి. DigiLocker లేదా mParivahan యాప్‌లో సేవ్ చేసుకోవచ్చు.",
+          "hi": "12/20 अंक लाकर पास होने के ~15 मिनट में SMS लिंक से डिजिटल LLR PDF डाउनलोड करें। इसे DigiLocker या mParivahan में जोड़ें—यह पूरे भारत में वैध है।"
+        }
+      }
+    ]
+  },
+  "trafficFines": {
+    "title": {
+      "en": "Telangana Traffic Fines & E-Challan Rules (MV Act)",
+      "te": "తెలంగాణ ట్రాఫిక్ జరిమానాలు & ఇ-చలాన్ నియమాలు",
+      "hi": "तेलंगाना ट्रैफिक जुर्माना और ई-चालान नियम"
+    },
+    "subtitle": {
+      "en": "Statutory penalties under the Motor Vehicles (Amendment) Act and Telangana CCTV / E-Challan enforcement.",
+      "te": "మోటారు వాహనాల సవరణ చట్టం ప్రకారం ప్రధాన ట్రాఫిక్ ఉల్లంఘనలు మరియు జరిమానాలు.",
+      "hi": "मोटर वाहन (संशोधन) अधिनियम के तहत प्रमुख यातायात उल्लंघन और जुर्माना।"
+    },
+    "items": [
+      {
+        "offence": {
+          "en": "Riding Without Helmet (Rider or Pillion)",
+          "te": "హెల్మెట్ లేకుండా ప్రయాణం (డ్రైవర్ లేదా వెనుక కూర్చున్నవారు)",
+          "hi": "बिना हेलमेट दोपहिया चलाना (चालक या पीछे बैठा व्यक्ति)"
+        },
+        "fine": "₹1,000 + 3-month DL suspension",
+        "section": "Section 194D"
+      },
+      {
+        "offence": {
+          "en": "Triple Riding on Two-Wheeler",
+          "te": "బైక్‌పై ముగ్గురు ప్రయాణించడం (ట్రిపుల్ రైడింగ్)",
+          "hi": "दोपहिया वाहन पर तीन सवारी (ट्रिपल राइडिंग)"
+        },
+        "fine": "₹1,000 + 3-month DL suspension",
+        "section": "Section 194C"
+      },
+      {
+        "offence": {
+          "en": "Driving Without Seatbelt",
+          "te": "సీట్‌బెల్ట్ లేకుండా కారు నడపడం",
+          "hi": "बिना सीटबेल्ट कार चलाना"
+        },
+        "fine": "₹1,000",
+        "section": "Section 194B"
+      },
+      {
+        "offence": {
+          "en": "Drunk / Drugged Driving (BAC > 30 mg/100 ml)",
+          "te": "మద్యం సేవించి వాహనం నడపడం (BAC > 30 mg/100 ml)",
+          "hi": "शराब पीकर गाड़ी चलाना (BAC > 30 mg/100 ml)"
+        },
+        "fine": "₹10,000 &/or 6 months jail (Repeat: ₹15,000)",
+        "section": "Section 185"
+      },
+      {
+        "offence": {
+          "en": "Driving Without Valid Driving Licence",
+          "te": "చెల్లుబాటు అయ్యే లైసెన్స్ లేకుండా నడపడం",
+          "hi": "बिना वैध ड्राइविंग लाइसेंस वाहन चलाना"
+        },
+        "fine": "₹5,000 (Owner permitting: ₹5,000)",
+        "section": "Section 181 / 180"
+      },
+      {
+        "offence": {
+          "en": "Using Handheld Mobile Phone While Driving",
+          "te": "డ్రైవింగ్ చేస్తూ చేతిలో మొబైల్ ఫోన్ వాడటం",
+          "hi": "ड्राइविंग के समय हाथ में मोबाइल फोन का उपयोग"
+        },
+        "fine": "₹5,000",
+        "section": "Section 184"
+      },
+      {
+        "offence": {
+          "en": "Overspeeding (LMV / Cars)",
+          "te": "అతివేగం (కార్లు / LMV)",
+          "hi": "तेज गति (ओवरस्पीडिंग - कार / LMV)"
+        },
+        "fine": "₹1,000 – ₹2,000 (Heavy: ₹2,000 – ₹4,000)",
+        "section": "Section 183"
+      },
+      {
+        "offence": {
+          "en": "Signal Jumping / Dangerous Driving",
+          "te": "రెడ్ సిగ్నల్ జంపింగ్ / ప్రమాదకర డ్రైవింగ్",
+          "hi": "लाल बत्ती जंप करना / खतरनाक ड्राइविंग"
+        },
+        "fine": "₹1,000 – ₹5,000",
+        "section": "Section 184"
+      },
+      {
+        "offence": {
+          "en": "Blocking Emergency Vehicle (Ambulance / Fire)",
+          "te": "అంబులెన్స్ / ఫైర్ ఇంజిన్‌కు దారి ఇవ్వకపోవడం",
+          "hi": "एम्बुलेंस / फायर ब्रिगेड को रास्ता न देना"
+        },
+        "fine": "₹10,000",
+        "section": "Section 194E"
+      },
+      {
+        "offence": {
+          "en": "Driving Without Valid Motor Insurance",
+          "te": "వాహన ఇన్సూరెన్స్ లేకుండా నడపడం",
+          "hi": "बिना वैध बीमा वाहन चलाना"
+        },
+        "fine": "₹2,000 (Repeat: ₹4,000)",
+        "section": "Section 196"
+      }
+    ]
+  },
+  "districtRtoCodes": [
+    {"code": "01", "district": "Adilabad"},
+    {"code": "02", "district": "Karimnagar"},
+    {"code": "03", "district": "Warangal Urban (Hanumakonda)"},
+    {"code": "04", "district": "Khammam"},
+    {"code": "05", "district": "Nalgonda"},
+    {"code": "06", "district": "Mahbubnagar"},
+    {"code": "07", "district": "Ranga Reddy (Kondapur / Ibrahimpatnam)"},
+    {"code": "08", "district": "Medchal–Malkajgiri (Uppal / Medchal)"},
+    {"code": "09", "district": "Hyderabad Central (Khairatabad)"},
+    {"code": "10", "district": "Hyderabad North (Secunderabad / Trimulgherry)"},
+    {"code": "11", "district": "Hyderabad East / West (Malakpet / Mehdipatnam)"},
+    {"code": "12", "district": "Hyderabad South (Chandrayangutta / Malakpet)"},
+    {"code": "13", "district": "Hyderabad West (Tolichowki / Chandrayangutta)"},
+    {"code": "14", "district": "Reserved for Hyderabad"},
+    {"code": "15", "district": "Sangareddy"},
+    {"code": "16", "district": "Nizamabad"},
+    {"code": "17", "district": "Kamareddy"},
+    {"code": "18", "district": "Nirmal"},
+    {"code": "19", "district": "Mancherial"},
+    {"code": "20", "district": "Kumaram Bheem Asifabad"},
+    {"code": "21", "district": "Jagtial"},
+    {"code": "22", "district": "Peddapalli"},
+    {"code": "23", "district": "Rajanna Sircilla"},
+    {"code": "24", "district": "Warangal Rural"},
+    {"code": "25", "district": "Jayashankar Bhupalpally"},
+    {"code": "26", "district": "Mahabubabad"},
+    {"code": "27", "district": "Jangaon"},
+    {"code": "28", "district": "Bhadradri Kothagudem"},
+    {"code": "29", "district": "Suryapet"},
+    {"code": "30", "district": "Yadadri Bhuvanagiri"},
+    {"code": "31", "district": "Nagarkurnool"},
+    {"code": "32", "district": "Wanaparthy"},
+    {"code": "33", "district": "Jogulamba Gadwal"},
+    {"code": "34", "district": "Vikarabad"},
+    {"code": "35", "district": "Medak"},
+    {"code": "36", "district": "Siddipet"},
+    {"code": "37", "district": "Mulugu"},
+    {"code": "38", "district": "Narayanpet"}
+  ],
+  "handSignals": {
+    "title": {
+      "en": "Driver Hand Signals, Traffic Police Signals & Road Markings",
+      "te": "డ్రైవర్ చేతి సంకేతాలు, ట్రాఫిక్ పోలీస్ సంకేతాలు & రోడ్డు గీతలు",
+      "hi": "ड्राइवर हाथ के संकेत, ट्रैफिक पुलिस संकेत और सड़क मार्किंग"
+    },
+    "items": [
+      {
+        "image": "assets/signs/sign_083.png",
+        "kind": "Police Signal",
+        "name": {
+          "en": "Police Signal: STOP Oncoming Traffic",
+          "te": "పోలీస్ సంకేతం: ఎదురుగా వచ్చే వాహనాలు ఆగండి",
+          "hi": "पुलिस संकेत: सामने से आने वाला ट्रैफिक रुकें"
+        },
+        "desc": {
+          "en": "Right hand raised vertically with palm facing oncoming traffic — vehicles approaching from the front must stop.",
+          "te": "కుడి చేతిని పైకి ఎత్తి అరచేతిని ముందు వైపు చూపితే ఎదురుగా వచ్చే వాహనాలు ఆగాలి.",
+          "hi": "दाहिना हाथ ऊपर उठाकर हथेली सामने दिखाने पर सामने से आने वाले वाहन रुकें।"
+        }
+      },
+      {
+        "image": "assets/signs/sign_084.png",
+        "kind": "Police Signal",
+        "name": {
+          "en": "Police Signal: STOP Before Stop Line",
+          "te": "పోలీస్ సంకేతం: స్టాప్ లైన్ వద్ద ఆగండి",
+          "hi": "पुलिस संकेत: स्टॉप लाइन से पहले रुकें"
+        },
+        "desc": {
+          "en": "Both arms extended or signaling front & rear traffic to halt behind the white stop line at an uncontrolled junction.",
+          "te": "జంక్షన్ వద్ద సిగ్నల్స్ పనిచేయనప్పుడు పోలీసు అధికారి చేయి చూపితే స్టాప్ లైన్ వెనుక ఆగాలి.",
+          "hi": "चौराहे पर लाइट बंद होने पर पुलिसकर्मी के इस संकेत पर स्टॉप लाइन के पीछे रुकें।"
+        }
+      },
+      {
+        "image": "assets/signs/sign_086.png",
+        "kind": "Driver Hand Signal",
+        "name": {
+          "en": "Driver Turning Left",
+          "te": "డ్రైవర్ ఎడమ వైపు తిరుగుతున్నారు",
+          "hi": "ड्राइवर बाएं मुड़ने का संकेत दे रहा है"
+        },
+        "desc": {
+          "en": "Right arm extended horizontally outside the vehicle and rotated anti-clockwise to signal a left turn.",
+          "te": "కుడి చేతిని బయటకు చాపి అపసవ్య దిశలో (Anti-clockwise) తిప్పడం ఎడమ మలుపు సంకేతం.",
+          "hi": "दाहिना हाथ बाहर निकालकर वामावर्त (anti-clockwise) घुमाना बाएं मुड़ने का संकेत है।"
+        }
+      },
+      {
+        "image": "assets/signs/sign_087.png",
+        "kind": "Driver Hand Signal",
+        "name": {
+          "en": "Driver Turning Right",
+          "te": "డ్రైవర్ కుడి వైపు తిరుగుతున్నారు",
+          "hi": "ड्राइवर दाएं मुड़ने का संकेत दे रहा है"
+        },
+        "desc": {
+          "en": "Right arm extended horizontally outside the right side with palm facing forward.",
+          "te": "కుడి చేతిని అరచేయి ముందుండేలా నిలువుగా కాకుండా సమాంతరంగా బయటకు చాపాలి.",
+          "hi": "दाहिने हाथ को हथेली आगे रखते हुए वाहन के बाहर क्षैतिज (सीधा) फैलाना।"
+        }
+      },
+      {
+        "image": "assets/signs/sign_088.png",
+        "kind": "Driver Hand Signal",
+        "name": {
+          "en": "Driver Intends to STOP",
+          "te": "డ్రైవర్ వాహనాన్ని ఆపబోతున్నారు",
+          "hi": "ड्राइवर रुकने का संकेत दे रहा है"
+        },
+        "desc": {
+          "en": "Right arm raised vertically upward (bent at elbow at 90 degrees) with palm facing forward.",
+          "te": "కుడి చేతిని మోచేయి వద్ద 90 డిగ్రీల కోణంలో పైకి ఎత్తి అరచేతిని ముందు చూపడం.",
+          "hi": "दाहिने हाथ को कोहनी से 90 डिग्री ऊपर उठाकर हथेली सामने दिखाना रुकने का संकेत है।"
+        }
+      },
+      {
+        "image": "assets/signs/sign_089.png",
+        "kind": "Driver Hand Signal",
+        "name": {
+          "en": "Driver Slowing Down",
+          "te": "డ్రైవర్ వేగాన్ని తగ్గిస్తున్నారు",
+          "hi": "ड्राइवर गति धीमी करने का संकेत दे रहा है"
+        },
+        "desc": {
+          "en": "Right arm extended horizontally and moved slowly up and down with palm facing downward.",
+          "te": "కుడి చేతిని బయటకు చాపి అరచేతిని కిందికి ఉంచి పైకి కిందికి ఊపాలి.",
+          "hi": "दाहिना हाथ बाहर निकालकर हथेली नीचे की ओर रखते हुए ऊपर-नीचे हिलाना।"
+        }
+      },
+      {
+        "image": "assets/signs/sign_090.png",
+        "kind": "Driver Hand Signal",
+        "name": {
+          "en": "Driver Giving Way to Overtake",
+          "te": "వెనుక వాహనానికి ఓవర్‌టేక్ చేయడానికి దారి ఇస్తున్నారు",
+          "hi": "ओवरटेक करने के लिए रास्ता देने का संकेत"
+        },
+        "desc": {
+          "en": "Right arm extended and waved forward from back to front in a semi-circular motion, inviting vehicles behind to overtake safely.",
+          "te": "కుడి చేతిని వెనుక నుండి ముందుకు ఊపుతూ వెనుక వాహనం సురక్షితంగా ఓవర్‌టేక్ చేయవచ్చని సూచించడం.",
+          "hi": "दाहिने हाथ को पीछे से आगे की ओर लहराकर पीछे वाले वाहन को सुरक्षित ओवरटेक करने का संकेत देना।"
+        }
+      },
+      {
+        "image": "assets/signs/sign_094.png",
+        "kind": "Road Marking",
+        "name": {
+          "en": "Double Solid Lines (Strictly No Crossing)",
+          "te": "రెండు నిరంతర గీతలు (దాటడం నిషేధం)",
+          "hi": "दोहरी ठोस रेखा (पार करना सख्त मना है)"
+        },
+        "desc": {
+          "en": "You MUST NOT cross double solid white/yellow lines to overtake or make a U-turn.",
+          "te": "రెండు నిరంతర గీతలను ఓవర్‌టేక్ చేయడానికి లేదా యూ-టర్న్ తీసుకోవడానికి ఎట్టి పరిస్థితుల్లో దాటకూడదు.",
+          "hi": "ओवरटेक करने या यू-टर्न लेने के लिए दोहरी ठोस रेखा को पार करना सख्त मना है।"
+        }
+      }
+    ]
+  }
+}
