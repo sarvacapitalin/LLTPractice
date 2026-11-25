@@ -183,12 +183,12 @@ const PARAM_TO_TAB = {
 };
 
 const TAB_TITLES = {
-  "tab-exam": "Telangana RTA Learner's Licence Practice 2026 • Official STALL Mock Test Simulator",
-  "tab-practice": "Topic Practice (412 Questions) • Telangana RTA LLR Practice 2026",
-  "tab-flashcards": "Road Sign Flashcards (94 Signs) • Telangana RTA LLR Practice 2026",
-  "tab-twins": "Tricky Twins Sign Comparisons • Telangana RTA LLR Practice 2026",
-  "tab-cheatsheet": "Rapid Cheatsheet & Hand Signals • Telangana RTA LLR Practice 2026",
-  "tab-guide": "Hyderabad & Telangana RTO Guide, DL Track & Fines • LLR Practice 2026"
+  "tab-exam": "Telangana RTA Learner's Licence Practice • STALL Mock 2026",
+  "tab-practice": "Topic Practice (412 Qs) • Telangana LLR 2026",
+  "tab-flashcards": "Road Sign Flashcards (94) • Telangana LLR 2026",
+  "tab-twins": "Tricky Twins Road Signs • Telangana LLR 2026",
+  "tab-cheatsheet": "Rapid Cheatsheet & Hand Signals • Telangana LLR",
+  "tab-guide": "Hyderabad RTO Guide, DL Track & Fines • LLR 2026"
 };
 
 function activateTab(targetId, { pushHistory = true } = {}) {
