@@ -1,8 +1,8 @@
 // js/ad-config.js - Central Google AdSense configuration for llr.sarvacapital.in
 export const ADSENSE_CONFIG = {
-  // Flip enabled to true and insert your verified AdSense clientId & slotIds once approved.
+  // Flip enabled to true and insert your verified AdSense slotIds once approved.
   enabled: false,
-  clientId: "ca-pub-XXXXXXXXXXXXXXXX",
+  clientId: "ca-pub-6573213692692289",
   slots: {
     home_study: {
       slotId: "0000000001",
