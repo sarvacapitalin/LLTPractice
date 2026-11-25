@@ -233,6 +233,18 @@ export class ExamEngine {
     speech.stop();
   }
 
+  abortExam() {
+    clearInterval(this.timer);
+    this.timer = null;
+    speech.stop();
+    this.isActive = false;
+    this.isFinished = false;
+    this.isPaused = false;
+    this.isRevealed = false;
+    this.selectedOption = null;
+    this.notifyUpdate();
+  }
+
   resumeTimer() {
     if (!this.isActive || this.isFinished || !this.isPaused) return;
     this.isPaused = false;

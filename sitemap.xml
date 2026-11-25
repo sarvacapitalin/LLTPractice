@@ -73,4 +73,16 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://llr.sarvacapital.in/hi/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://llr.sarvacapital.in/" />
   </url>
+  <url>
+    <loc>https://llr.sarvacapital.in/about/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://llr.sarvacapital.in/privacy-policy/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

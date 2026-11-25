@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#0B2545">
   <meta name="author" content="Sarva Capital">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  
+
   <meta name="description" content="Prepare for the Telangana RTA Learner's Licence Test (LLR) in Hyderabad with our official computerized STALL simulator. Practice 412 authentic questions across Road Signs, Rules of the Road, and Driving Principles with real-time 30-second timers, 95% readiness gate, and full Telugu, Hindi & English audio support.">
   <meta name="keywords" content="Telangana LLR mock test, Telangana RTA learner licence test, STALL computerized test Hyderabad, Hyderabad RTO exam practice, Sarathi LLR mock test Telugu, Telangana road signs test, Telangana driving licence practice, RTO Khairatabad LLR test, RTO Kondapur test simulator, RTO Secunderabad driving test, LLR practice test 2026">
 
@@ -203,8 +203,13 @@
   }
   </script>
 
-  <link rel="stylesheet" href="css/styles.css?v=21">
-  <link rel="stylesheet" href="css/exam-stall.css?v=21">
+  <!-- Multilingual Typography (Non-blocking display=swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css?v=22">
+  <link rel="stylesheet" href="css/exam-stall.css?v=22">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -212,7 +217,9 @@
   <header class="app-header">
     <div class="header-container">
       <div class="brand-section">
-        <div class="gov-emblem" aria-hidden="true">🏛️</div>
+        <div class="gov-emblem" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="18" r="1.5"/><rect x="7" y="2" width="10" height="20" rx="3"/></svg>
+        </div>
         <div class="brand-titles">
           <h1 data-i18n="app_title">Telangana RTA Learner's Licence Practice</h1>
           <span class="subtitle" data-i18n="app_subtitle">Official STALL Computerized Test Simulator • Hyderabad RTO</span>
@@ -221,7 +228,7 @@
 
       <div class="header-actions">
         <!-- Readiness Meter -->
-        <div class="readiness-badge" id="btn-readiness-badge" title="Click to view readiness breakdown">
+        <button type="button" class="readiness-badge" id="btn-readiness-badge" title="Click to view readiness breakdown">
           <div class="readiness-info">
             <span class="readiness-label" data-i18n="readiness_label">Exam Readiness</span>
             <span class="readiness-percent" id="header-readiness-val">0%</span>
@@ -229,15 +236,16 @@
           <div class="readiness-bar-mini">
             <div class="readiness-fill-mini" id="header-readiness-fill" style="width: 0%;"></div>
           </div>
-        </div>
+        </button>
 
         <!-- Sync Button -->
-        <button class="control-btn" id="btn-sync-modal" title="Sync progress between Phone and Laptop">
-          <span>📲</span> <span data-i18n="sync_devices">Sync</span>
+        <button type="button" class="control-btn" id="btn-sync-modal" title="Sync progress between Phone and Laptop">
+          <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          <span data-i18n="sync_short">Sync</span>
         </button>
 
         <!-- Sound Toggle -->
-        <button class="control-btn" id="btn-sound-toggle" title="Toggle Sound Effects">
+        <button type="button" class="control-btn" id="btn-sound-toggle" title="Toggle Sound Effects" aria-label="Toggle Sound Effects">
           <span id="sound-icon">🔔</span>
         </button>
 
@@ -254,23 +262,29 @@
   <!-- Navigation Tabs -->
   <nav class="nav-bar" aria-label="Main Navigation">
     <div class="nav-tabs" role="tablist">
-      <button class="nav-tab active" role="tab" data-tab="tab-exam" aria-selected="true">
-        <span>🚦</span> <span data-i18n="tab_mock_test">Mock Test (STALL)</span>
+      <button type="button" class="nav-tab active" role="tab" id="nav-tab-exam" data-tab="tab-exam" aria-controls="tab-exam" aria-selected="true">
+        <svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="18" r="1.5"/><rect x="7" y="2" width="10" height="20" rx="3"/></svg>
+        <span data-i18n="tab_mock_test">Mock Test (STALL)</span>
       </button>
-      <button class="nav-tab" role="tab" data-tab="tab-practice" aria-selected="false">
-        <span>📚</span> <span data-i18n="tab_topic_practice">Topic Practice</span>
+      <button type="button" class="nav-tab" role="tab" id="nav-tab-practice" data-tab="tab-practice" aria-controls="tab-practice" aria-selected="false">
+        <svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        <span data-i18n="tab_topic_practice">Topic Practice</span>
       </button>
-      <button class="nav-tab" role="tab" data-tab="tab-flashcards" aria-selected="false">
-        <span>🗂️</span> <span data-i18n="tab_flashcards">Sign Flashcards</span>
+      <button type="button" class="nav-tab" role="tab" id="nav-tab-flashcards" data-tab="tab-flashcards" aria-controls="tab-flashcards" aria-selected="false">
+        <svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>
+        <span data-i18n="tab_flashcards">Sign Flashcards</span>
       </button>
-      <button class="nav-tab" role="tab" data-tab="tab-twins" aria-selected="false">
-        <span>🔍</span> <span data-i18n="tab_tricky_twins">Tricky Twins</span>
+      <button type="button" class="nav-tab" role="tab" id="nav-tab-twins" data-tab="tab-twins" aria-controls="tab-twins" aria-selected="false">
+        <svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h3"/><path d="M16 3h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-3"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+        <span data-i18n="tab_tricky_twins">Tricky Twins</span>
       </button>
-      <button class="nav-tab" role="tab" data-tab="tab-cheatsheet" aria-selected="false">
-        <span>⚡</span> <span data-i18n="tab_cheatsheet">Rapid Cheatsheet</span>
+      <button type="button" class="nav-tab" role="tab" id="nav-tab-cheatsheet" data-tab="tab-cheatsheet" aria-controls="tab-cheatsheet" aria-selected="false">
+        <svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span data-i18n="tab_cheatsheet">Rapid Cheatsheet</span>
       </button>
-      <button class="nav-tab" role="tab" data-tab="tab-guide" aria-selected="false">
-        <span>🏢</span> <span data-i18n="tab_rto_guide">Hyderabad RTO Guide</span>
+      <button type="button" class="nav-tab" role="tab" id="nav-tab-guide" data-tab="tab-guide" aria-controls="tab-guide" aria-selected="false">
+        <svg class="ui-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/></svg>
+        <span data-i18n="tab_rto_guide">Hyderabad RTO Guide</span>
       </button>
     </div>
   </nav>
@@ -278,51 +292,161 @@
   <!-- Main Content Container -->
   <main class="main-container">
     <!-- TAB 1: STALL EXAM SIMULATOR -->
-    <section id="tab-exam" class="tab-pane active" role="tabpanel">
-      <div id="exam-intro-card" class="stall-exam-wrapper" style="padding: 24px;">
-        <h2 style="font-size: 1.4rem; color: var(--primary-navy); margin-bottom: 8px;" data-i18n="tab_mock_test">Mock Test (STALL)</h2>
-        <p style="color: var(--text-secondary); margin-bottom: 16px;" data-i18n="exam_rule_banner">
-          Telangana STALL Exam: 20 Questions (8 Signs + 8 Rules + 4 Principles). Pass: 12 Correct. 30 seconds per question.
-        </p>
+    <section id="tab-exam" class="tab-pane active" role="tabpanel" aria-labelledby="nav-tab-exam">
+      <!-- Intro Dashboard -->
+      <div id="exam-intro-card">
+        <div class="intro-dashboard-grid">
+          <!-- Left: Exam Rules & Launch Controls -->
+          <div class="intro-setup-panel">
+            <div>
+              <h2 class="section-title" data-i18n="tab_mock_test">Mock Test (STALL)</h2>
+              <p class="section-subtitle" data-i18n="exam_rule_banner">
+                Telangana STALL Exam: 20 Questions (8 Signs + 8 Rules + 4 Principles). Pass: 12 Correct. 30 seconds per question.
+              </p>
+              <div class="exam-spec-pills" style="margin-top: 12px;">
+                <span class="spec-pill" data-i18n="spec_questions">20 Questions (8-8-4)</span>
+                <span class="spec-pill" data-i18n="spec_pass_mark">Pass Mark: 12 / 20</span>
+                <span class="spec-pill" data-i18n="spec_timer">30s per Question</span>
+                <span class="spec-pill" data-i18n="spec_early_stop">Early Pass at 12</span>
+              </div>
+            </div>
 
-        <!-- Readiness Gate Notice -->
-        <div id="readiness-gate-card" style="background: var(--accent-gold-light); border: 1px solid #FCD34D; border-radius: var(--radius-md); padding: 14px; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-          <div>
-            <strong style="color: #92400E; display: block; font-size: 0.95rem;">95% Exam Readiness Tracker</strong>
-            <span style="font-size: 0.82rem; color: #78350F;">Master at least 391 of 412 questions (2 correct streaks required) to guarantee passing on test day.</span>
+            <!-- Tutor Mode Toggle -->
+            <div class="tutor-toggle-card" id="tutor-toggle-wrapper">
+              <div>
+                <strong style="color: var(--primary-navy); display: flex; align-items: center; gap: 6px; font-size: 0.94rem;">
+                  <span data-i18n="tutor_mode_title">Tutor Mode (Instant Answer & Explanation)</span>
+                </strong>
+                <span style="font-size: 0.82rem; color: var(--text-secondary); display: block; margin-top: 2px;" data-i18n="tutor_mode_desc">
+                  Keep OFF for authentic STALL exam simulation. Turn ON to check answers and official rules immediately after each question.
+                </span>
+              </div>
+              <label class="tutor-toggle-switch">
+                <input type="checkbox" id="exam-toggle-tutor-mode">
+                <span class="tutor-status-pill" id="tutor-mode-status-label">OFF</span>
+              </label>
+            </div>
+
+            <div class="intro-cta-group">
+              <button type="button" id="btn-start-exam-main" class="confirm-next-btn" style="width: 100%; font-size: 1.05rem; padding: 14px 20px;">
+                <span data-i18n="btn_start_exam">START NEW MOCK TEST</span>
+              </button>
+              <button type="button" id="btn-jump-practice-unseen" class="btn-outline-primary" style="width: 100%;">
+                <span data-i18n="btn_practice_unseen">Practice Unseen & Weak Questions (412 Bank)</span>
+              </button>
+            </div>
           </div>
-          <button id="btn-reset-readiness-mini" style="background: none; border: 1px solid #B45309; color: #B45309; padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.78rem; font-weight: 600; cursor: pointer;">
-            🔄 Reset Progress to 0%
-          </button>
+
+          <!-- Right: Category Mastery Tracker -->
+          <div class="intro-mastery-panel" id="readiness-gate-card">
+            <div class="mastery-header-row">
+              <div>
+                <div style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted);" data-i18n="readiness_tracker_title">95% Exam Readiness Tracker</div>
+                <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 4px;">
+                  <span class="mastery-percent-hero" id="intro-readiness-val">0%</span>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary); font-weight: 600;" id="intro-mastered-count">0 / 412 mastered</span>
+                </div>
+              </div>
+              <span class="mastery-goal-tag" id="intro-readiness-badge" data-i18n="readiness_goal_tag">Goal: 391 Qs</span>
+            </div>
+
+            <div class="mastery-rows">
+              <div>
+                <div class="mastery-row-head">
+                  <span data-i18n="cat_road_signs_label">Road Signs</span>
+                  <span class="tabular-nums" id="mastery-signs-count">0 / 94</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill signs" id="mastery-signs-bar" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="mastery-row-head">
+                  <span data-i18n="cat_rules_label">Rules of the Road</span>
+                  <span class="tabular-nums" id="mastery-rules-count">0 / 159</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill rules" id="mastery-rules-bar" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="mastery-row-head">
+                  <span data-i18n="cat_principles_label">Driving Principles</span>
+                  <span class="tabular-nums" id="mastery-principles-count">0 / 159</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill principles" id="mastery-principles-bar" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mastery-footer-row">
+              <span data-i18n="readiness_streak_note">2 consecutive right answers certify mastery.</span>
+              <button type="button" id="btn-reset-readiness-mini" class="btn-text-danger" data-i18n="btn_reset_short">
+                Reset Progress
+              </button>
+            </div>
+          </div>
         </div>
 
-        <!-- Mode Toggle: Real Exam (Default) vs Tutor Mode -->
-        <div style="background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer;" id="tutor-toggle-wrapper">
-          <div>
-            <strong style="color: var(--primary-navy); display: flex; align-items: center; gap: 6px; font-size: 0.95rem;">
-              <span>🎓</span> <span>Tutor Mode (Instant Answer & Explanation)</span>
-            </strong>
-            <span style="font-size: 0.82rem; color: var(--text-secondary);">
-              Default is OFF (Strict STALL exam simulator). Turn ON to see green/red answer reveal and rule explanation immediately after each question.
-            </span>
-          </div>
-          <label style="display: flex; align-items: center; cursor: pointer; gap: 6px;">
-            <input type="checkbox" id="exam-toggle-tutor-mode" style="width: 20px; height: 20px; cursor: pointer;">
-            <span style="font-size: 0.85rem; font-weight: 700; color: var(--secondary-blue);" id="tutor-mode-status-label">OFF</span>
-          </label>
-        </div>
+        <!-- Home Ad Slot (Hidden automatically during active exam) -->
+        <aside class="ad-slot-wrapper ad-format-leaderboard is-hidden exam-hide-on-active" id="ad-slot-home-study" data-ad-slot="home_study" data-ad-exam-hide="true" aria-label="Advertisement">
+          <span class="ad-label" data-i18n="advertisement_label">Advertisement</span>
+          <div class="ad-slot-inner"></div>
+        </aside>
 
-        <button id="btn-start-exam-main" class="confirm-next-btn" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 16px;">
-          🚦 <span data-i18n="btn_start_exam">START NEW MOCK TEST</span>
-        </button>
+        <!-- Organized Study Directory Hub -->
+        <section class="study-hub-section exam-hide-on-active" aria-labelledby="study-hub-heading">
+          <div class="section-header-block" style="margin-bottom: 10px;">
+            <div>
+              <h3 id="study-hub-heading" class="section-title" style="font-size: 1.15rem;" data-i18n="study_hub_title">Explore Study Tools & Official Guides</h3>
+              <p class="section-subtitle" data-i18n="study_hub_subtitle">Everything organized for quick study—switch directly to any reference guide, visual sign directory, or RTO checklist.</p>
+            </div>
+          </div>
+
+          <div class="study-hub-grid">
+            <a href="road-signs/" class="study-hub-card">
+              <span class="study-hub-badge">94 Visual Signs</span>
+              <span class="study-hub-title">All Telangana Road Signs</span>
+              <span class="study-hub-desc">Mandatory circles, cautionary triangles &amp; informatory signs with EN / TE / HI meanings.</span>
+            </a>
+            <a href="question-bank/" class="study-hub-card">
+              <span class="study-hub-badge">412 Q&amp;As</span>
+              <span class="study-hub-title">Complete Question Bank</span>
+              <span class="study-hub-desc">Browse or self-quiz all 412 Telangana RTA questions with verified answers &amp; rules.</span>
+            </a>
+            <a href="rto-guide/" class="study-hub-card">
+              <span class="study-hub-badge">TS-07 to TS-12</span>
+              <span class="study-hub-title">Hyderabad RTO &amp; Documents</span>
+              <span class="study-hub-desc">Form 2 &amp; Aadhaar checklist, MVI &amp; biometric steps, ₹200/₹350 fees &amp; center addresses.</span>
+            </a>
+            <a href="dl-test-guide/" class="study-hub-card">
+              <span class="study-hub-badge">After 30 Days</span>
+              <span class="study-hub-title">Permanent DL 8 &amp; H Track</span>
+              <span class="study-hub-desc">Two-wheeler '8' track, car 'H' reversing rules, RFID tracks &amp; DigiLocker LLR download.</span>
+            </a>
+            <a href="traffic-fines/" class="study-hub-card">
+              <span class="study-hub-badge">MV Act 2026</span>
+              <span class="study-hub-title">Traffic Fines &amp; Hand Signals</span>
+              <span class="study-hub-desc">Telangana E-Challan penalty list plus police and driver arm signal diagrams.</span>
+            </a>
+            <a href="telangana-rto-codes/" class="study-hub-card">
+              <span class="study-hub-badge">TS / TG 01–38</span>
+              <span class="study-hub-title">All 38 District RTO Codes</span>
+              <span class="study-hub-desc">Instant lookup across legacy TS and updated TG prefixes for every Telangana district.</span>
+            </a>
+          </div>
+        </section>
       </div>
 
-      <!-- Active STALL Workstation Screen -->
+      <!-- Active STALL Workstation Screen (100% AD-FREE PROTECTED ZONE) -->
       <div id="exam-active-card" class="stall-exam-wrapper" style="display: none;">
         <!-- Top Status Bar -->
         <div class="stall-top-bar">
           <div class="applicant-card">
-            <div class="applicant-avatar">A</div>
+            <div class="applicant-avatar" aria-hidden="true">A</div>
             <div class="applicant-details">
               <span class="applicant-name" data-i18n="applicant_name">Applicant: LLR Candidate</span>
               <span class="applicant-meta" data-i18n="applicant_token">Token: STALL-HYD-042</span>
@@ -330,27 +454,38 @@
           </div>
 
           <!-- Quota Tracker -->
-          <div class="quota-tracker">
+          <div class="quota-tracker" aria-label="Category Quota">
             <div class="quota-item" id="quota-signs">
-              <span>🚸 Signs:</span> <span class="quota-count" id="count-signs">0/8</span>
+              <span data-i18n="quota_signs_short">Signs:</span> <span class="quota-count" id="count-signs">0/8</span>
             </div>
             <div class="quota-item" id="quota-rules">
-              <span>🛑 Rules:</span> <span class="quota-count" id="count-rules">0/8</span>
+              <span data-i18n="quota_rules_short">Rules:</span> <span class="quota-count" id="count-rules">0/8</span>
             </div>
             <div class="quota-item" id="quota-principles">
-              <span>🚗 Principles:</span> <span class="quota-count" id="count-principles">0/4</span>
+              <span data-i18n="quota_principles_short">Principles:</span> <span class="quota-count" id="count-principles">0/4</span>
             </div>
           </div>
 
-          <!-- Circular 30s Timer -->
+          <!-- Circular 30s Timer + Exit Test -->
           <div class="stall-timer-container">
-            <div class="timer-box">
+            <div class="timer-box" aria-live="polite" aria-label="Seconds remaining">
               <svg class="timer-svg" viewBox="0 0 54 54">
                 <circle class="timer-circle-bg" cx="27" cy="27" r="23"></circle>
                 <circle class="timer-circle-progress" id="timer-progress-circle" cx="27" cy="27" r="23"></circle>
               </svg>
               <div class="timer-number" id="timer-seconds-display">30</div>
             </div>
+            <button type="button" class="stall-exit-btn" id="btn-exit-exam" title="Exit current mock test">
+              <span data-i18n="btn_exit_exam">Exit</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Thin Live Progress Strip -->
+        <div class="stall-progress-strip">
+          <span id="exam-live-tally">Correct: 0 • Wrong: 0 • Pass Mark: 12</span>
+          <div class="stall-progress-bar-bg" aria-hidden="true">
+            <div class="stall-progress-bar-fill" id="exam-progress-fill" style="width: 5%;"></div>
           </div>
         </div>
 
@@ -358,8 +493,9 @@
         <div class="stall-body">
           <div class="question-header">
             <span class="question-badge" id="exam-q-badge">Question 1 of 20</span>
-            <button class="speech-read-btn" id="btn-read-question" title="Read Question Aloud">
-              <span>🔊</span> <span data-i18n="voice_read">Read Aloud</span>
+            <button type="button" class="speech-read-btn" id="btn-read-question" title="Read Question Aloud">
+              <svg class="ui-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              <span data-i18n="voice_read">Read Aloud</span>
             </button>
           </div>
 
@@ -383,12 +519,15 @@
         <div class="stall-footer">
           <label class="guess-flag-container">
             <input type="checkbox" id="exam-guess-checkbox">
-            <span class="guess-flag-label" data-i18n="guess_checkbox">🤔 I guessed this answer (keep on probation)</span>
+            <span class="guess-flag-label" data-i18n="guess_checkbox">I guessed this answer (keep on probation)</span>
           </label>
 
-          <button class="confirm-next-btn" id="btn-confirm-next" disabled>
-            <span data-i18n="btn_confirm_next">CONFIRM & NEXT</span> ➔
-          </button>
+          <div class="stall-footer-right">
+            <span class="stall-kbd-hint" data-i18n="exam_kbd_hint">Keys 1–4: Select • Enter: Confirm • Space: Audio</span>
+            <button type="button" class="confirm-next-btn" id="btn-confirm-next" disabled>
+              <span data-i18n="btn_confirm_next">CONFIRM & NEXT</span> ➔
+            </button>
+          </div>
         </div>
       </div>
 
@@ -402,32 +541,38 @@
           </div>
 
           <!-- Category Performance Breakdown -->
-          <div id="result-category-breakdown" style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.88rem; font-weight: 700;"></div>
+          <div id="result-category-breakdown" style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; font-size: 0.86rem; font-weight: 700;"></div>
 
-          <p id="result-explanation" style="max-width: 500px; color: var(--text-secondary);" data-i18n="result_pass_desc">
+          <p id="result-explanation" style="max-width: 540px; color: var(--text-secondary);" data-i18n="result_pass_desc">
             You reached the passing mark of 12 correct! You are well prepared for the real RTA exam.
           </p>
 
-          <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 10px;">
-            <button id="btn-retake-exam" class="confirm-next-btn">
-              🔄 <span data-i18n="btn_restart_exam">TAKE ANOTHER TEST</span>
+          <div class="result-actions-row">
+            <button type="button" id="btn-retake-exam" class="confirm-next-btn">
+              <span data-i18n="btn_restart_exam">TAKE ANOTHER TEST</span>
             </button>
-            <button id="btn-retake-missed" class="retry-missed-btn" style="display: none;">
-              🎯 <span>RE-TRY MISSED QUESTIONS (<span id="count-missed-btn">0</span>)</span>
+            <button type="button" id="btn-retake-missed" class="retry-missed-btn" style="display: none;">
+              <span data-i18n="btn_retry_missed">RE-TRY MISSED QUESTIONS</span> (<span id="count-missed-btn">0</span>)
             </button>
             <a id="btn-share-whatsapp" class="share-whatsapp-btn" target="_blank" rel="noopener">
-              <span>💬</span> <span data-i18n="whatsapp_share">Share Score on WhatsApp</span>
+              <span data-i18n="whatsapp_share">Share Score on WhatsApp</span>
             </a>
           </div>
+
+          <!-- Post-Exam Natural Pause Ad Slot (Well separated from action buttons & review list) -->
+          <aside class="ad-slot-wrapper ad-format-leaderboard is-hidden" id="ad-slot-exam-result" data-ad-slot="exam_result" aria-label="Advertisement">
+            <span class="ad-label" data-i18n="advertisement_label">Advertisement</span>
+            <div class="ad-slot-inner"></div>
+          </aside>
 
           <!-- Post-Exam Detailed Question Review -->
           <div class="exam-review-container" id="exam-review-container">
             <div class="review-header">
-              <h3 class="review-heading">📝 Detailed Question Review</h3>
+              <h3 class="review-heading" data-i18n="review_heading">Detailed Question Review</h3>
               <div class="review-filters">
-                <button class="review-filter-btn active" data-review-filter="all">All (<span id="count-review-all">0</span>)</button>
-                <button class="review-filter-btn" data-review-filter="wrong">❌ Missed (<span id="count-review-wrong">0</span>)</button>
-                <button class="review-filter-btn" data-review-filter="correct">✔️ Correct (<span id="count-review-correct">0</span>)</button>
+                <button type="button" class="review-filter-btn active" data-review-filter="all"><span data-i18n="review_all">All</span> (<span id="count-review-all">0</span>)</button>
+                <button type="button" class="review-filter-btn" data-review-filter="wrong"><span data-i18n="review_missed">Missed</span> (<span id="count-review-wrong">0</span>)</button>
+                <button type="button" class="review-filter-btn" data-review-filter="correct"><span data-i18n="review_correct">Correct</span> (<span id="count-review-correct">0</span>)</button>
               </div>
             </div>
             <div class="review-list" id="exam-review-list">
@@ -439,218 +584,313 @@
     </section>
 
     <!-- TAB 2: TOPIC PRACTICE (412 QUESTIONS) -->
-    <section id="tab-practice" class="tab-pane" role="tabpanel">
-      <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 20px; box-shadow: var(--shadow-md);">
-        <!-- Filter Controls -->
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; justify-content: space-between;">
-          <!-- Category Tabs -->
-          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-            <button class="control-btn active-filter" data-practice-cat="all" style="background: var(--secondary-blue); color: #fff;">All (412)</button>
-            <button class="control-btn" data-practice-cat="road_signs" style="background: #F1F5F9; color: #334155;">Road Signs (94)</button>
-            <button class="control-btn" data-practice-cat="rules_of_road" style="background: #F1F5F9; color: #334155;">Traffic Rules (159)</button>
-            <button class="control-btn" data-practice-cat="general_principles" style="background: #F1F5F9; color: #334155;">Driving Principles (159)</button>
+    <section id="tab-practice" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-practice">
+      <div class="practice-workspace">
+        <!-- Primary Study Column: Active Question Card -->
+        <div class="practice-main-col">
+          <div class="practice-card">
+            <div class="practice-filter-bar" style="margin-bottom: 12px; justify-content: space-between; align-items: center;">
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <button type="button" class="pill-btn active" data-practice-cat="all" data-i18n="practice_cat_all">All (412)</button>
+                <button type="button" class="pill-btn" data-practice-cat="road_signs" data-i18n="practice_cat_signs">Road Signs (94)</button>
+                <button type="button" class="pill-btn" data-practice-cat="rules_of_road" data-i18n="practice_cat_rules">Traffic Rules (159)</button>
+                <button type="button" class="pill-btn" data-practice-cat="general_principles" data-i18n="practice_cat_principles">Driving Principles (159)</button>
+              </div>
+
+              <button type="button" id="btn-practice-case-toggle" class="btn-secondary-light" style="font-size: 0.78rem; padding: 5px 10px; min-height: 32px;" title="Toggle between Official RTO Uppercase and Easy-Read Sentence Case">
+                <span data-i18n="btn_easy_read">Aa Easy-Read</span>
+              </button>
+            </div>
+
+            <div id="practice-active-q-view">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Rail: Search, Filter & Question Navigator -->
+        <aside class="practice-rail-col">
+          <div class="card-surface" style="padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 8px;">
+              <h3 style="font-size: 0.98rem; font-weight: 800; color: var(--primary-navy);" data-i18n="question_navigator">Question Navigator</h3>
+              <span id="practice-match-count" class="spec-pill">412 / 412</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;">
+              <div class="search-input-wrap">
+                <input type="text" id="practice-search-input" placeholder="Search questions by keyword or number..." data-i18n="search_placeholder" aria-label="Search questions">
+                <button type="button" id="btn-practice-search-clear" class="search-clear-btn" aria-label="Clear search" title="Clear search">×</button>
+              </div>
+
+              <select id="practice-status-filter" class="ui-select" aria-label="Filter by mastery status">
+                <option value="all" data-i18n="filter_all">All Questions</option>
+                <option value="unseen" data-i18n="filter_unseen">Unseen Only</option>
+                <option value="probation" data-i18n="filter_probation">Needs Practice (Streak &lt; 2)</option>
+                <option value="mastered" data-i18n="filter_mastered">Mastered (Streak ≥ 2)</option>
+                <option value="guessed" data-i18n="filter_guessed">Guessed Questions</option>
+              </select>
+            </div>
+
+            <div class="matrix-legend" style="margin-bottom: 10px;">
+              <span><span class="legend-dot" style="background: #E2E8F0; border: 1px solid #CBD5E1;"></span><span data-i18n="legend_unseen">Unseen</span></span>
+              <span><span class="legend-dot" style="background: #FEF3C7; border: 1px solid #F59E0B;"></span><span data-i18n="legend_probation">Probation</span></span>
+              <span><span class="legend-dot" style="background: #DCFCE7; border: 1px solid #16A34A;"></span><span data-i18n="legend_mastered">Mastered</span></span>
+            </div>
+
+            <div id="practice-matrix" class="practice-matrix-box">
+              <!-- Matrix chips -->
+            </div>
           </div>
 
-          <!-- Status Filters -->
-          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-            <select id="practice-status-filter" class="lang-select" style="background: #F8FAFC; color: #1E293B; border-color: #CBD5E1;">
-              <option value="all">All Statuses</option>
-              <option value="unseen">Unseen Only</option>
-              <option value="probation">Needs Practice (Streak &lt; 2)</option>
-              <option value="mastered">Mastered (Streak ≥ 2)</option>
-              <option value="guessed">Guessed Questions</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Search Bar -->
-        <div style="margin-bottom: 16px;">
-          <input type="text" id="practice-search-input" placeholder="Search questions by keyword or number..." data-i18n="search_placeholder" style="width: 100%; padding: 12px 16px; border: 1px solid var(--border-color); border-radius: var(--radius-md); font-size: 0.95rem; outline: none;">
-        </div>
-
-        <!-- Question Detail / Practice Viewer -->
-        <div id="practice-active-q-view" style="border: 2px solid var(--border-color); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px; background: #FAFBFD;">
-          <!-- Populated dynamically -->
-        </div>
-
-        <!-- 412 Question Number Matrix -->
-        <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 10px;">Question Navigator</h4>
-        <div id="practice-matrix" style="display: flex; flex-wrap: wrap; gap: 6px; max-height: 220px; overflow-y: auto; padding: 10px; background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
-          <!-- Matrix chips -->
-        </div>
+          <!-- Practice Rail Ad Slot (150px+ separated from Question Option Buttons) -->
+          <aside class="ad-slot-wrapper ad-format-rectangle is-hidden" id="ad-slot-practice" data-ad-slot="practice_rail" style="margin: 0;" aria-label="Advertisement">
+            <span class="ad-label" data-i18n="advertisement_label">Advertisement</span>
+            <div class="ad-slot-inner"></div>
+          </aside>
+        </aside>
       </div>
     </section>
 
     <!-- TAB 3: SIGN FLASHCARDS (94 SIGNS) -->
-    <section id="tab-flashcards" class="tab-pane" role="tabpanel">
-      <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+    <section id="tab-flashcards" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-flashcards">
+      <div class="flashcards-shell">
+        <div class="section-header-block" style="justify-content: center; text-align: center; margin-bottom: 12px;">
+          <div>
+            <h2 class="section-title" style="justify-content: center;" data-i18n="tab_flashcards">Sign Flashcards</h2>
+            <p class="section-subtitle" style="margin: 4px auto 0;" data-i18n="fc_subtitle">Tap any sign card (or press Space) to reveal its official meaning and traffic rule.</p>
+          </div>
+        </div>
+
         <!-- Filter chips -->
-        <div style="display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap;">
-          <button class="control-btn" data-fc-filter="all" style="background: var(--secondary-blue); color: #fff;">All (94)</button>
-          <button class="control-btn" data-fc-filter="mandatory" style="background: #F1F5F9; color: #334155;">Mandatory</button>
-          <button class="control-btn" data-fc-filter="cautionary" style="background: #F1F5F9; color: #334155;">Cautionary</button>
-          <button class="control-btn" data-fc-filter="informatory" style="background: #F1F5F9; color: #334155;">Informatory</button>
-          <button class="control-btn" data-fc-filter="unmastered" style="background: #F1F5F9; color: #334155;">Unmastered Only</button>
+        <div style="display: flex; gap: 8px; justify-content: center; margin-bottom: 14px; flex-wrap: wrap;">
+          <button type="button" class="pill-btn active" data-fc-filter="all" data-i18n="fc_all_signs">All 94 Signs</button>
+          <button type="button" class="pill-btn" data-fc-filter="mandatory" data-i18n="fc_mandatory">Mandatory (Red Circles)</button>
+          <button type="button" class="pill-btn" data-fc-filter="cautionary" data-i18n="fc_cautionary">Cautionary (Triangles)</button>
+          <button type="button" class="pill-btn" data-fc-filter="informatory" data-i18n="fc_informatory">Informatory (Blue Rectangles)</button>
+          <button type="button" class="pill-btn" data-fc-filter="unmastered" data-i18n="fc_unmastered">Unmastered Only</button>
         </div>
 
         <!-- Flashcard View -->
-        <div id="flashcard-box" style="background: #FFFFFF; border: 2px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px 20px; min-height: 320px; box-shadow: var(--shadow-lg); cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; transition: transform 0.2s;">
-          <div id="fc-front-view" style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
-            <img id="fc-image" src="assets/signs/sign_001.png" alt="Road Sign" style="max-height: 160px; object-fit: contain;">
-            <span id="fc-type-badge" style="background: #EFF6FF; color: var(--secondary-blue); font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: 4px;">MANDATORY</span>
-            <span style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="fc_flip">Tap to Flip Card</span>
-          </div>
+        <div class="flashcard-stage">
+          <div id="flashcard-box" class="flashcard-box" tabindex="0" role="button" aria-label="Road sign flashcard. Click or press Space to flip.">
+            <div class="flashcard-top-meta">
+              <span id="fc-type-badge" class="seo-badge badge-mandatory">MANDATORY</span>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span id="fc-mastery-pill" class="spec-pill" style="background: #F1F5F9; color: #475569; border-color: #CBD5E1;">UNSEEN</span>
+                <button type="button" id="btn-fc-read" class="speech-read-btn" style="padding: 4px 10px; font-size: 0.78rem;" title="Read Sign Aloud">
+                  <svg class="ui-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  <span data-i18n="voice_read">Read Aloud</span>
+                </button>
+              </div>
+            </div>
 
-          <div id="fc-back-view" style="display: none; flex-direction: column; align-items: center; gap: 12px; padding: 10px;">
-            <h3 id="fc-sign-name" style="font-size: 1.3rem; color: var(--text-primary); font-weight: 800;">SIGN NAME</h3>
-            <p id="fc-sign-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.4; max-width: 440px;">Official meaning...</p>
+            <div id="fc-front-view" style="display: flex; flex-direction: column; align-items: center; gap: 14px; margin: auto 0;">
+              <img id="fc-image" src="assets/signs/sign_001.png" alt="Road Sign" style="max-height: 165px; object-fit: contain;">
+              <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;" data-i18n="fc_flip">Tap to Flip Card</span>
+            </div>
+
+            <div id="fc-back-view" style="display: none; flex-direction: column; align-items: center; gap: 12px; padding: 6px 10px; margin: auto 0;">
+              <img id="fc-back-thumb" class="fc-back-thumb" src="assets/signs/sign_001.png" alt="Road Sign thumbnail">
+              <h3 id="fc-sign-name" style="font-size: 1.25rem; color: var(--primary-navy); font-weight: 800;">SIGN NAME</h3>
+              <p id="fc-sign-desc" style="font-size: 0.94rem; color: var(--text-secondary); line-height: 1.5; max-width: 46ch;">Official meaning...</p>
+            </div>
           </div>
         </div>
 
         <!-- Flashcard Controls -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 18px;">
-          <button id="btn-fc-prev" class="control-btn" style="background: #E2E8F0; color: #1E293B;">← Previous</button>
-          <div style="display: flex; gap: 10px;">
-            <button id="btn-fc-study-again" class="control-btn" style="background: var(--danger-bg); color: var(--danger-red); border-color: #FECACA;">Study Again</button>
-            <button id="btn-fc-mastered" class="control-btn" style="background: var(--success-bg); color: var(--success-green); border-color: #BBF7D0;">I Know This</button>
+        <div class="fc-actions-bar">
+          <button type="button" id="btn-fc-prev" class="btn-secondary-light">← <span data-i18n="btn_prev">Previous</span></button>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
+            <button type="button" id="btn-fc-study-again" class="btn-secondary-light" style="background: var(--danger-bg); color: var(--danger-red); border-color: #FECACA;" data-i18n="fc_study_again">Study Again</button>
+            <button type="button" id="btn-fc-mastered" class="btn-secondary-light" style="background: var(--success-bg); color: var(--success-green); border-color: #86EFAC;" data-i18n="fc_i_know">I Know This Sign</button>
           </div>
-          <button id="btn-fc-next" class="control-btn" style="background: #E2E8F0; color: #1E293B;">Next →</button>
+          <button type="button" id="btn-fc-next" class="btn-secondary-light"><span data-i18n="btn_next">Next</span> →</button>
         </div>
-        <div id="fc-counter" style="margin-top: 10px; font-size: 0.82rem; color: var(--text-muted);">Card 1 of 94</div>
+
+        <div class="fc-progress-row">
+          <div id="fc-counter" style="font-size: 0.84rem; font-weight: 700; color: var(--text-secondary);" class="tabular-nums">Card 1 of 94</div>
+          <div class="progress-track" style="max-width: 320px;">
+            <div class="progress-fill" id="fc-progress-bar" style="width: 1%;"></div>
+          </div>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 4px;">
+            <span class="fc-kbd-hint" style="margin-top: 0;" data-i18n="fc_kbd_hint">Keyboard: Space to flip • ← / → to navigate</span>
+            <a href="road-signs/" style="font-size: 0.82rem; font-weight: 700; color: var(--secondary-blue); text-decoration: none;" data-i18n="fc_view_grid">View All 94 Signs Directory ↗</a>
+          </div>
+        </div>
+
+        <aside class="ad-slot-wrapper ad-format-leaderboard is-hidden" id="ad-slot-study-tool" data-ad-slot="study_tool" aria-label="Advertisement">
+          <span class="ad-label" data-i18n="advertisement_label">Advertisement</span>
+          <div class="ad-slot-inner"></div>
+        </aside>
       </div>
     </section>
 
     <!-- TAB 4: TRICKY TWINS -->
-    <section id="tab-twins" class="tab-pane" role="tabpanel">
+    <section id="tab-twins" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-twins">
+      <div class="card-surface" style="margin-bottom: 18px;">
+        <div class="section-header-block" style="margin-bottom: 0;">
+          <div>
+            <h2 class="section-title" data-i18n="tab_tricky_twins">Tricky Twins</h2>
+            <p class="section-subtitle" data-i18n="twins_subtitle">Side-by-side comparison of the most commonly confused road signs and signals in the Telangana STALL exam, complete with quick memory hooks.</p>
+          </div>
+          <a href="cheatsheet/" class="btn-outline-primary" style="font-size: 0.84rem; padding: 8px 14px;" data-i18n="open_printable_sheet">Open Printable Sheet ↗</a>
+        </div>
+      </div>
+
       <div id="twins-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px;">
         <!-- Populated dynamically from data/tricky-twins.json -->
       </div>
+
+      <aside class="ad-slot-wrapper ad-format-leaderboard is-hidden" id="ad-slot-twins-bottom" data-ad-slot="study_tool" aria-label="Advertisement">
+        <span class="ad-label" data-i18n="advertisement_label">Advertisement</span>
+        <div class="ad-slot-inner"></div>
+      </aside>
     </section>
 
     <!-- TAB 5: RAPID CHEATSHEET -->
-    <section id="tab-cheatsheet" class="tab-pane" role="tabpanel">
-      <div id="cheatsheet-container" style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-md);">
+    <section id="tab-cheatsheet" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-cheatsheet">
+      <div id="cheatsheet-container" class="card-surface">
         <!-- Populated dynamically from data/last-minute-cheatsheet.json -->
       </div>
+
+      <aside class="ad-slot-wrapper ad-format-leaderboard is-hidden" id="ad-slot-cheatsheet-bottom" data-ad-slot="study_tool" aria-label="Advertisement">
+        <span class="ad-label" data-i18n="advertisement_label">Advertisement</span>
+        <div class="ad-slot-inner"></div>
+      </aside>
     </section>
 
     <!-- TAB 6: HYDERABAD RTO GUIDE -->
-    <section id="tab-guide" class="tab-pane" role="tabpanel">
-      <div id="rto-guide-container" style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-md);">
+    <section id="tab-guide" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-guide">
+      <div id="rto-guide-container" class="card-surface">
         <!-- Populated dynamically from data/rto-guide.json -->
       </div>
+
+      <aside class="ad-slot-wrapper ad-format-multiplex is-hidden" id="ad-slot-guide-bottom" data-ad-slot="seo_multiplex" aria-label="Advertisement">
+        <span class="ad-label" data-i18n="advertisement_label">Advertisement</span>
+        <div class="ad-slot-inner"></div>
+      </aside>
     </section>
   </main>
 
-  <!-- Educational SEO & AI Knowledge Footer (Fully indexable by crawlers) -->
-  <footer class="app-footer" style="max-width: 1200px; margin: 40px auto 20px; padding: 24px 16px; border-top: 1px solid #E2E8F0; color: #475569; font-size: 0.9rem;">
-    <section aria-labelledby="seo-guide-title" style="margin-bottom: 24px;">
-      <h2 id="seo-guide-title" style="font-size: 1.15rem; color: #0B2545; font-weight: 700; margin-bottom: 8px;">
+  <!-- Educational SEO & Trust Footer (Hidden during active 30s timed exam) -->
+  <footer class="app-footer exam-hide-on-active">
+    <section class="footer-about-box" aria-labelledby="seo-guide-title">
+      <h2 id="seo-guide-title" style="font-size: 1.1rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 6px;">
         About Telangana RTA Learner's Licence (LLR) STALL Examination Simulator
       </h2>
-      <p style="line-height: 1.6; margin-bottom: 12px;">
+      <p style="line-height: 1.6; max-width: 78ch;">
         This simulator is an authentic, free educational tool designed to help driving licence candidates in Hyderabad and throughout Telangana pass their computerized <strong>STALL (Screen Test Aid for Learner Licence)</strong> exam on their first attempt. The question bank comprises all <strong>412 official questions</strong> released by the Telangana Transport Department under the Motor Vehicles Act, 1988, categorized into 94 Road Signs, 159 Rules of the Road, and 159 General Driving Principles.
       </p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 16px 0;">
-        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px;">
-          <strong style="color: #0B2545;">Exam Format:</strong> 20 Multiple Choice Questions (8 Signs, 8 Rules, 4 Principles)
+      <div class="footer-stat-grid">
+        <div class="footer-stat-card">
+          <strong style="color: var(--primary-navy);">Exam Format:</strong> 20 Multiple Choice Questions (8 Signs, 8 Rules, 4 Principles)
         </div>
-        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px;">
-          <strong style="color: #0B2545;">Passing Criteria:</strong> 12 correct out of 20 (60%). Zero negative marking.
+        <div class="footer-stat-card">
+          <strong style="color: var(--primary-navy);">Passing Criteria:</strong> 12 correct out of 20 (60%). Zero negative marking.
         </div>
-        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px;">
-          <strong style="color: #0B2545;">Timer:</strong> 30 seconds per question (10 minutes total).
+        <div class="footer-stat-card">
+          <strong style="color: var(--primary-navy);">Timer:</strong> 30 seconds per question (10 minutes total).
         </div>
-        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px;">
-          <strong style="color: #0B2545;">Languages:</strong> English, Telugu (తెలుగు), and Hindi (हिन्दी) with audio read-aloud.
+        <div class="footer-stat-card">
+          <strong style="color: var(--primary-navy);">Languages:</strong> English, Telugu (తెలుగు), and Hindi (हिन्दी) with audio read-aloud.
         </div>
       </div>
     </section>
 
     <!-- Semantic FAQ Section (Matches JSON-LD FAQPage) -->
-    <section aria-labelledby="seo-faq-title" style="margin-bottom: 24px;">
-      <h3 id="seo-faq-title" style="font-size: 1.05rem; color: #0B2545; font-weight: 700; margin-bottom: 12px;">
-        Frequently Asked Questions (Telangana LLR & RTO Hyderabad)
+    <section aria-labelledby="seo-faq-title" style="margin-bottom: 22px;">
+      <h3 id="seo-faq-title" style="font-size: 1.05rem; color: var(--primary-navy); font-weight: 800; margin-bottom: 12px;">
+        Frequently Asked Questions (Telangana LLR &amp; RTO Hyderabad)
       </h3>
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <details style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1E293B;">How many questions are asked in the Telangana RTA Learner's Licence (LLR) STALL test?</summary>
-          <p style="margin-top: 8px; line-height: 1.5; color: #475569;">
-            The Telangana RTA STALL (Screen Test Aid for Learner Licence) test consists of exactly 20 multiple-choice questions: 8 Road Signs (40%), 8 Rules of the Road (40%), and 4 General Driving Principles (20%).
-          </p>
+      <div class="footer-faq-grid">
+        <details class="footer-faq-item">
+          <summary>How many questions are asked in the Telangana RTA Learner's Licence (LLR) STALL test?</summary>
+          <p>The Telangana RTA STALL (Screen Test Aid for Learner Licence) test consists of exactly 20 multiple-choice questions: 8 Road Signs (40%), 8 Rules of the Road (40%), and 4 General Driving Principles (20%).</p>
         </details>
-        <details style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1E293B;">What is the pass mark for the Telangana LLR computerized exam?</summary>
-          <p style="margin-top: 8px; line-height: 1.5; color: #475569;">
-            The pass mark is 12 out of 20 (60%). There is no negative marking for incorrect answers.
-          </p>
+        <details class="footer-faq-item">
+          <summary>What is the pass mark for the Telangana LLR computerized exam?</summary>
+          <p>The pass mark is 12 out of 20 (60%). There is no negative marking for incorrect answers.</p>
         </details>
-        <details style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1E293B;">What is the time limit for each question in the Telangana STALL exam?</summary>
-          <p style="margin-top: 8px; line-height: 1.5; color: #475569;">
-            Candidates are allotted 30 seconds per question, with a maximum total test duration of 10 minutes.
-          </p>
+        <details class="footer-faq-item">
+          <summary>What is the time limit for each question in the Telangana STALL exam?</summary>
+          <p>Candidates are allotted 30 seconds per question, with a maximum total test duration of 10 minutes.</p>
         </details>
-        <details style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1E293B;">In which languages can I take the Telangana LLR exam?</summary>
-          <p style="margin-top: 8px; line-height: 1.5; color: #475569;">
-            You can take the exam in English, Telugu (తెలుగు), or Hindi (हिन्दी). This simulator provides full authentic trilingual text and audio read-aloud support for all 412 questions.
-          </p>
+        <details class="footer-faq-item">
+          <summary>In which languages can I take the Telangana LLR exam?</summary>
+          <p>You can take the exam in English, Telugu (తెలుగు), or Hindi (हिन्दी). This simulator provides full authentic trilingual text and audio read-aloud support for all 412 questions.</p>
         </details>
-        <details style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1E293B;">What happens when I get 12 correct answers in the official STALL exam?</summary>
-          <p style="margin-top: 8px; line-height: 1.5; color: #475569;">
-            In the official Telangana RTA STALL exam, the computerized kiosk immediately stops as soon as you record your 12th correct answer and declares you as "PASSED". You do not have to answer the remaining questions. If 9 questions are answered incorrectly, the test stops and marks "FAILED".
-          </p>
+        <details class="footer-faq-item">
+          <summary>What happens when I get 12 correct answers in the official STALL exam?</summary>
+          <p>In the official Telangana RTA STALL exam, the computerized kiosk immediately stops as soon as you record your 12th correct answer and declares you as "PASSED". If 9 questions are answered incorrectly, the test stops and marks "FAILED".</p>
         </details>
-        <details style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1E293B;">Are the 4 answer options shuffled in the real RTO test?</summary>
-          <p style="margin-top: 8px; line-height: 1.5; color: #475569;">
-            No. The options (1, 2, 3, 4) for any given question remain in the exact same fixed sequence as in the government master question bank. The physical kiosk keypad buttons (1, 2, 3, 4) map directly to these options. Only the selection of the 20 questions is randomized per candidate.
-          </p>
+        <details class="footer-faq-item">
+          <summary>Are the 4 answer options shuffled in the real RTO test?</summary>
+          <p>No. The options (1, 2, 3, 4) for any given question remain in the exact same fixed sequence as in the government master question bank because the physical kiosk keypad buttons map directly to these options.</p>
         </details>
-        <details style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1E293B;">Which Hyderabad RTO offices conduct the STALL computerized test?</summary>
-          <p style="margin-top: 8px; line-height: 1.5; color: #475569;">
-            The STALL test is conducted at all Regional Transport Offices across Greater Hyderabad including RTO Khairatabad (TS-09), RTO Secunderabad (TS-10), RTO Malakpet (TS-12), RTO Mehdipatnam / Tolichowki (TS-11), RTO Chandrayangutta (TS-13), RTO Kondapur / Cyberabad (TS-07), and RTO Uppal (TS-08).
-          </p>
+        <details class="footer-faq-item">
+          <summary>Which Hyderabad RTO offices conduct the STALL computerized test?</summary>
+          <p>The STALL test is conducted at all Regional Transport Offices across Greater Hyderabad including RTO Khairatabad (TS-09), RTO Secunderabad (TS-10), RTO Malakpet (TS-12), RTO Mehdipatnam / Tolichowki (TS-11), RTO Chandrayangutta (TS-13), RTO Kondapur / Cyberabad (TS-07), and RTO Uppal (TS-08).</p>
         </details>
       </div>
     </section>
 
-    <!-- Crawl-Friendly Study Resources & Language Directory -->
-    <nav aria-label="Study Resources and Language Guides" style="margin-bottom: 20px; padding: 16px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px;">
-      <h3 style="font-size: 0.95rem; color: #0B2545; font-weight: 700; margin-bottom: 10px;">
-        Complete Telangana LLR Study Guides &amp; Question Bank
-      </h3>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 0.85rem;">
-        <a href="road-signs/" style="color: #134074; font-weight: 600; text-decoration: none;">🚦 All 94 Road Signs &amp; Meanings</a>
-        <a href="question-bank/" style="color: #134074; font-weight: 600; text-decoration: none;">📚 412 Official LLR Questions &amp; Answers</a>
-        <a href="rto-guide/" style="color: #134074; font-weight: 600; text-decoration: none;">🏢 Hyderabad RTO Guide, Fees &amp; Centers</a>
-        <a href="dl-test-guide/" style="color: #134074; font-weight: 600; text-decoration: none;">🚗 Permanent DL 8 &amp; H Track Test Guide</a>
-        <a href="traffic-fines/" style="color: #134074; font-weight: 600; text-decoration: none;">🚨 Traffic Fines &amp; Hand Signals</a>
-        <a href="telangana-rto-codes/" style="color: #134074; font-weight: 600; text-decoration: none;">🗺️ All Telangana RTO Codes (TS/TG 01–38)</a>
-        <a href="cheatsheet/" style="color: #134074; font-weight: 600; text-decoration: none;">⚡ Printable Cheatsheet &amp; Tricky Twins</a>
-        <a href="te/" hreflang="te" style="color: #134074; font-weight: 600; text-decoration: none;">🌐 తెలుగు గైడ్ (Telugu LLR Prep)</a>
-        <a href="hi/" hreflang="hi" style="color: #134074; font-weight: 600; text-decoration: none;">🌐 हिन्दी गाइड (Hindi LLR Prep)</a>
+    <!-- Structured Multi-Column Directory -->
+    <nav class="footer-directory-grid" aria-label="Study Resources and Compliance Links">
+      <div>
+        <h3 class="footer-col-title">Practice &amp; Study Tools</h3>
+        <ul class="footer-link-list">
+          <li><a href="./">STALL Mock Test Simulator</a></li>
+          <li><a href="./?tab=practice">Interactive 412 Question Practice</a></li>
+          <li><a href="./?tab=flashcards">Road Sign Flip Flashcards</a></li>
+          <li><a href="./?tab=twins">Tricky Twins Comparisons</a></li>
+          <li><a href="cheatsheet/">Printable Rapid Cheatsheet</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">RTO Reference Guides</h3>
+        <ul class="footer-link-list">
+          <li><a href="road-signs/">All 94 Road Signs &amp; Meanings</a></li>
+          <li><a href="question-bank/">412 Official LLR Q&amp;A Bank</a></li>
+          <li><a href="rto-guide/">Hyderabad RTO Guide &amp; Fees</a></li>
+          <li><a href="dl-test-guide/">Permanent DL 8 &amp; H Track Guide</a></li>
+          <li><a href="traffic-fines/">Traffic Fines &amp; Hand Signals</a></li>
+          <li><a href="telangana-rto-codes/">All Telangana RTO Codes (01–38)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Regional Languages</h3>
+        <ul class="footer-link-list">
+          <li><a href="./">English LLR Simulator</a></li>
+          <li><a href="te/" hreflang="te">తెలుగు గైడ్ (Telugu Prep)</a></li>
+          <li><a href="hi/" hreflang="hi">हिन्दी गाइड (Hindi Prep)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">About &amp; Legal</h3>
+        <ul class="footer-link-list">
+          <li><a href="about/">About, Disclaimer &amp; Contact</a></li>
+          <li><a href="privacy-policy/">Privacy &amp; Cookie Policy</a></li>
+          <li><a href="mailto:contact@sarvacapital.in">contact@sarvacapital.in</a></li>
+          <li><a href="https://transport.telangana.gov.in" target="_blank" rel="noopener">Official Telangana Transport ↗</a></li>
+        </ul>
       </div>
     </nav>
 
     <!-- Attribution & Copyright -->
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-top: 1px solid #F1F5F9; padding-top: 16px; font-size: 0.8rem; color: #94A3B8;">
+    <div class="footer-bottom-bar">
       <div>
-        Hosted on <a href="https://llr.sarvacapital.in/" style="color: #134074; font-weight: 600; text-decoration: none;">llr.sarvacapital.in</a> • Public Learning Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color: #134074; text-decoration: underline;">Sarva Capital</a>
+        <a href="https://llr.sarvacapital.in/" style="color: var(--secondary-blue); font-weight: 700; text-decoration: none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color: var(--secondary-blue); text-decoration: underline;">Sarva Capital</a>
       </div>
       <div>
-        Master Question Bank: Government of Telangana Transport Department
+        Independent Practice Tool • Source Curriculum: Government of Telangana Transport Department
       </div>
     </div>
   </footer>
 
   <!-- Sync Modal -->
-  <div id="modal-sync" style="display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 200; align-items: center; justify-content: center; padding: 16px;">
-    <div style="background: #FFFFFF; border-radius: var(--radius-lg); max-width: 480px; width: 100%; padding: 24px; box-shadow: var(--shadow-lg); text-align: center;">
-      <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 8px;" data-i18n="sync_title">Cross-Device Practice Sync</h3>
+  <div id="modal-sync" class="app-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="sync-modal-title">
+    <div class="app-modal-card">
+      <h3 id="sync-modal-title" style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 8px;" data-i18n="sync_title">Cross-Device Practice Sync</h3>
       <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;" data-i18n="sync_desc">
         Scan this QR code with your mobile phone to instantly import your progress from this laptop.
       </p>
@@ -660,35 +900,38 @@
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px;">
-        <button id="btn-export-backup" class="control-btn" style="background: var(--secondary-blue); color: #fff; justify-content: center;">
-          💾 <span data-i18n="sync_export_file">Download Backup File (.json)</span>
+        <button type="button" id="btn-export-backup" class="btn-primary-solid" style="width: 100%;">
+          <span data-i18n="sync_export_file">Download Backup File (.json)</span>
         </button>
-        <label class="control-btn" style="background: #F1F5F9; color: #334155; justify-content: center; cursor: pointer;">
-          📂 <span data-i18n="sync_import_file">Import Backup File</span>
+        <label class="btn-secondary-light" style="width: 100%; cursor: pointer;">
+          <span data-i18n="sync_import_file">Import Backup File</span>
           <input type="file" id="input-sync-file" accept=".json" style="display: none;">
         </label>
       </div>
 
-      <button id="btn-close-sync" style="margin-top: 18px; background: none; border: none; color: var(--text-muted); font-weight: 600; cursor: pointer;">Close</button>
+      <button type="button" id="btn-close-sync" class="btn-secondary-light" style="margin-top: 14px; border: none; background: transparent; color: var(--text-muted);" data-i18n="btn_close">Close</button>
     </div>
   </div>
 
   <!-- Reset Confirmation Modal -->
-  <div id="modal-reset" style="display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 200; align-items: center; justify-content: center; padding: 16px;">
-    <div style="background: #FFFFFF; border-radius: var(--radius-lg); max-width: 420px; width: 100%; padding: 24px; box-shadow: var(--shadow-lg); text-align: center;">
-      <div style="font-size: 36px; margin-bottom: 8px;">⚠️</div>
-      <h3 style="font-size: 1.2rem; color: var(--danger-red); margin-bottom: 8px;" data-i18n="reset_progress">Reset Progress</h3>
+  <div id="modal-reset" class="app-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="reset-modal-title">
+    <div class="app-modal-card" style="max-width: 420px;">
+      <div style="font-size: 34px; margin-bottom: 8px;" aria-hidden="true">⚠️</div>
+      <h3 id="reset-modal-title" style="font-size: 1.2rem; color: var(--danger-red); margin-bottom: 8px;" data-i18n="reset_progress">Reset Progress</h3>
       <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px;" data-i18n="reset_confirm">
         Are you sure you want to reset all practice progress back to 0%? This cannot be undone.
       </p>
       <div style="display: flex; gap: 12px; justify-content: center;">
-        <button id="btn-cancel-reset" class="control-btn" style="background: #E2E8F0; color: #1E293B;">Cancel</button>
-        <button id="btn-confirm-reset" class="control-btn" style="background: var(--danger-red); color: #FFFFFF;">Yes, Reset to 0%</button>
+        <button type="button" id="btn-cancel-reset" class="btn-secondary-light" data-i18n="btn_cancel">Cancel</button>
+        <button type="button" id="btn-confirm-reset" class="btn-primary-solid" style="background: var(--danger-red); border-color: var(--danger-red);" data-i18n="btn_confirm_reset">Yes, Reset to 0%</button>
       </div>
     </div>
   </div>
 
+  <!-- Non-blocking Toast Banner -->
+  <div id="app-toast" class="app-toast" role="status" aria-live="polite"></div>
+
   <!-- Main JavaScript App Controller -->
-  <script type="module" src="js/app.js?v=21"></script>
+  <script type="module" src="js/app.js?v=22"></script>
 </body>
 </html>

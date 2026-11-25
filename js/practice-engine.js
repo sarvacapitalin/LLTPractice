@@ -2,7 +2,7 @@
 import { storage } from "./storage-engine.js";
 import { sounds } from "./sound-effects.js";
 import { speech } from "./speech-engine.js";
-import { t, getCurrentLang } from "./i18n.js";
+import { getCurrentLang } from "./i18n.js";
 
 export class PracticeEngine {
   constructor(allQuestions = []) {
@@ -52,8 +52,65 @@ export class PracticeEngine {
     const found = this.questions.find(q => q.id === qId);
     if (found) {
       this.selectedQuestion = found;
-      this.notifyUpdate();
+      this.notifyUpdate("select");
     }
+  }
+
+  getSelectedPosition() {
+    const filtered = this.getFilteredQuestions();
+    if (!this.selectedQuestion || filtered.length === 0) {
+      return { index: -1, total: filtered.length };
+    }
+    const index = filtered.findIndex(q => q.id === this.selectedQuestion.id);
+    return { index, total: filtered.length };
+  }
+
+  prevQuestion() {
+    const filtered = this.getFilteredQuestions();
+    const { index } = this.getSelectedPosition();
+    if (index > 0) {
+      this.selectedQuestion = filtered[index - 1];
+      speech.stop();
+      this.notifyUpdate("select");
+    }
+  }
+
+  nextQuestion() {
+    const filtered = this.getFilteredQuestions();
+    const { index } = this.getSelectedPosition();
+    if (index >= 0 && index < filtered.length - 1) {
+      this.selectedQuestion = filtered[index + 1];
+      speech.stop();
+      this.notifyUpdate("select");
+    }
+  }
+
+  selectNextUnseen() {
+    const filtered = this.getFilteredQuestions();
+    if (filtered.length === 0) return false;
+    const { index } = this.getSelectedPosition();
+    const start = index >= 0 ? index + 1 : 0;
+
+    for (let offset = 0; offset < filtered.length; offset++) {
+      const candidate = filtered[(start + offset) % filtered.length];
+      const st = storage.getQuestionState(candidate.id);
+      if (st.status !== "mastered") {
+        this.selectedQuestion = candidate;
+        speech.stop();
+        this.notifyUpdate("select");
+        return true;
+      }
+    }
+    return false;
+  }
+
+  readCurrentQuestion() {
+    const q = this.selectedQuestion;
+    if (!q) return;
+    const lang = getCurrentLang();
+    const qText = q.text[lang] || q.text.en;
+    const qOpts = q.options[lang] || q.options.en;
+    speech.toggleQuestionSpeech(qText, qOpts, lang);
   }
 
   getFilteredQuestions() {
@@ -74,9 +131,15 @@ export class PracticeEngine {
       // Search query
       if (this.searchQuery) {
         const text = (q.text[lang] || q.text.en || "").toLowerCase();
+        const enText = (q.text.en || "").toLowerCase();
         const id = q.id.toLowerCase();
         const qNum = String(q.questionNumber);
-        if (!text.includes(this.searchQuery) && !id.includes(this.searchQuery) && qNum !== this.searchQuery) {
+        if (
+          !text.includes(this.searchQuery) &&
+          !enText.includes(this.searchQuery) &&
+          !id.includes(this.searchQuery) &&
+          qNum !== this.searchQuery
+        ) {
           return false;
         }
       }

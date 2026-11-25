@@ -1,0 +1,4 @@
+# Authorized Digital Sellers (IAB ads.txt) for https://llr.sarvacapital.in/
+# Once approved by Google AdSense, replace pub-0000000000000000 with your
+# Publisher ID and uncomment the line below:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

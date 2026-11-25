@@ -1,6 +1,6 @@
 # Telangana RTA Learner's Licence (LLR) Practice & STALL Simulator — Complete Knowledge Reference
 
-> Authoritative, free, offline-capable (PWA) preparation guide and complete 412-question bank for the Telangana Transport Department STALL computerized Learner's Licence test at https://llr.sarvacapital.in/.
+> Authoritative, free, zero-login preparation guide and complete 412-question bank for the Telangana Transport Department STALL computerized Learner's Licence test at https://llr.sarvacapital.in/.
 
 ## 1. Official STALL Exam Format & Rules (Telangana RTA)
 - Governing Authority: Transport Department, Government of Telangana (Motor Vehicles Act, 1988 & CMVR 1989)
@@ -134,11 +134,11 @@
 ## 12. Complete 412 Official Telangana RTA LLR Questions & Verified Answers
 
 ### Road Signs (94 Questions)
-- **TS_RS_001**: A  RED TRAFFIC LIGHT MEANS -> **Answer: MUST STOP BEHIND WHITE STOP LINE**
+- **TS_RS_001**: A RED TRAFFIC LIGHT MEANS -> **Answer: MUST STOP BEHIND WHITE STOP LINE**
 - **TS_RS_002**: A FLASHING YELLOW LIGHT INDICATES -> **Answer: SLOW DOWN AND PROCEED WITH CAUTION**
 - **TS_RS_003**: A FLASHING RED LIGHT INDICATES -> **Answer: STOP, OBSERVE AND PROCEED WITH CAUTION**
-- **TS_RS_004**: THE SIGNS MARKED  IN THIS CIRCLE ARE.. -> **Answer: MANDATORY**
-- **TS_RS_005**: THE SIGNS MARKED  IN THIS TRIANGLE ARE.. -> **Answer: CAUTIONARY**
+- **TS_RS_004**: THE SIGNS MARKED IN THIS CIRCLE ARE.. -> **Answer: MANDATORY**
+- **TS_RS_005**: THE SIGNS MARKED IN THIS TRIANGLE ARE.. -> **Answer: CAUTIONARY**
 - **TS_RS_006**: THE SIGNS MARKED IN THIS RECTANGLE ARE.. -> **Answer: INFORMATORY**
 - **TS_RS_007**: WHAT DOES THIS SIGN MEAN? -> **Answer: STOP**
 - **TS_RS_008**: WHAT DOES THIS SIGN MEAN? -> **Answer: GIVE WAY**

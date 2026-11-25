@@ -93,48 +93,33 @@
 }
   </script>
 
-  <link rel="stylesheet" href="../css/styles.css?v=20">
-  <style>
-    .seo-nav-bar { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; }
-    .seo-nav-inner { max-width: 1200px; margin: 0 auto; padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .seo-nav-link { text-decoration: none; font-size: 0.88rem; font-weight: 600; color: #334155; padding: 7px 12px; border-radius: 8px; background: #F8FAFC; border: 1px solid #E2E8F0; transition: all 0.15s ease; }
-    .seo-nav-link:hover { background: #EFF6FF; color: #134074; border-color: #93C5FD; }
-    .seo-nav-link.active { background: #134074; color: #FFFFFF; border-color: #134074; }
-    .seo-main { max-width: 1200px; width: 100%; margin: 24px auto; padding: 0 16px; flex: 1; }
-    .seo-hero { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    .seo-cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
-    .seo-cta-primary { display: inline-flex; align-items: center; gap: 8px; background: #134074; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 10px; font-size: 0.95rem; }
-    .seo-cta-secondary { display: inline-flex; align-items: center; gap: 8px; background: #FFF8E7; color: #92400E; border: 1px solid #FCD34D; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 10px; font-size: 0.95rem; }
-    .seo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-    .seo-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-    .seo-badge { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.03em; }
-    .badge-mandatory { background: #FEE2E2; color: #991B1B; }
-    .badge-cautionary { background: #FEF3C7; color: #92400E; }
-    .badge-informatory { background: #DBEAFE; color: #1E40AF; }
-    .qa-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px; margin-bottom: 14px; }
-    .qa-options { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 6px; }
-    .qa-option { padding: 8px 12px; border-radius: 8px; background: #F8FAFC; border: 1px solid #E2E8F0; font-size: 0.9rem; }
-    .qa-option.correct { background: #ECFDF5; border-color: #6EE7B7; color: #065F46; font-weight: 700; }
-    .toc-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-    .toc-pill { text-decoration: none; background: #FFFFFF; border: 1px solid #CBD5E1; color: #0B2545; padding: 8px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 700; }
-    .seo-footer { max-width: 1200px; width: 100%; margin: 32px auto 20px; padding: 20px 16px; border-top: 1px solid #E2E8F0; color: #64748B; font-size: 0.85rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css?v=22">
 </head>
 <body>
   <header class="app-header">
     <div class="header-container">
       <div class="brand-section">
-        <a href="../" style="text-decoration:none; display:flex; align-items:center; gap:12px;">
-          <div class="gov-emblem" aria-hidden="true">🏛️</div>
+        <a href="../" class="brand-link">
+          <div class="gov-emblem" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="18" r="1.5"/><rect x="7" y="2" width="10" height="20" rx="3"/></svg>
+          </div>
           <div class="brand-titles">
-            <span style="font-size:1.1rem; font-weight:700; color:#FFFFFF; display:block;">Telangana RTA Learner's Licence Practice</span>
+            <span class="brand-title-text">Telangana RTA Learner's Licence Practice</span>
             <span class="subtitle">आधिकारिक STALL कंप्यूटर परीक्षा सिम्युलेटर • 412 प्रश्न हिन्दी ऑडियो के साथ</span>
           </div>
         </a>
       </div>
       <div class="header-actions">
-        <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; text-decoration:none; font-weight:800;">
-          🚦 Launch STALL Simulator
+        <div class="header-lang-links" aria-label="Language versions">
+          <a href="../" class="header-lang-link">EN</a>
+          <a href="../te/" class="header-lang-link">తెలుగు</a>
+          <a href="../hi/" class="header-lang-link active">हिन्दी</a>
+        </div>
+        <a href="../?lang=hi" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
+          Launch STALL Simulator
         </a>
       </div>
     </div>
@@ -142,40 +127,49 @@
 
   <nav class="seo-nav-bar" aria-label="Study Guides Navigation">
     <div class="seo-nav-inner">
-      <a href="../" class="seo-nav-link">🚦 STALL Simulator</a>
-<a href="../road-signs/" class="seo-nav-link">🚸 94 Road Signs</a>
-<a href="../question-bank/" class="seo-nav-link">📚 412 Q&amp;A Bank</a>
-<a href="../rto-guide/" class="seo-nav-link">🏢 RTO Guide</a>
-<a href="../dl-test-guide/" class="seo-nav-link">🚗 DL Track Test</a>
-<a href="../traffic-fines/" class="seo-nav-link">🚨 Fines &amp; Signals</a>
-<a href="../telangana-rto-codes/" class="seo-nav-link">🗺️ TS/TG Codes</a>
-<a href="../cheatsheet/" class="seo-nav-link">⚡ Cheatsheet</a>
-<a href="../te/" class="seo-nav-link">🌐 తెలుగు</a>
-<a href="../hi/" class="seo-nav-link active">🌐 हिन्दी</a>
+      <a href="../" class="seo-nav-link">STALL Simulator</a>
+<a href="../road-signs/" class="seo-nav-link">94 Road Signs</a>
+<a href="../question-bank/" class="seo-nav-link">412 Q&amp;A Bank</a>
+<a href="../rto-guide/" class="seo-nav-link">RTO Guide</a>
+<a href="../dl-test-guide/" class="seo-nav-link">DL Track Test</a>
+<a href="../traffic-fines/" class="seo-nav-link">Fines &amp; Signals</a>
+<a href="../telangana-rto-codes/" class="seo-nav-link">TS/TG Codes</a>
+<a href="../cheatsheet/" class="seo-nav-link">Cheatsheet</a>
+<a href="../te/" class="seo-nav-link">తెలుగు</a>
+<a href="../hi/" class="seo-nav-link active">हिन्दी</a>
     </div>
   </nav>
 
   <main class="seo-main">
+    
+    <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span aria-hidden="true">/</span>
+      <span>हिन्दी गाइड</span>
+    </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.65rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">तेलंगाना RTA लर्नर लाइसेंस (LLR) हिन्दी प्रैक्टिस और मॉक टेस्ट</h1>
-      <p style="color: #475569; font-size: 1rem; line-height: 1.6;">हैदराबाद और तेलंगाना RTA लर्नर लाइसेंस (LLR) कंप्यूटर परीक्षा (STALL) के लिए 412 आधिकारिक प्रश्नों के साथ हिन्दी में मुफ्त मॉक टेस्ट, सड़क संकेत और RTO गाइड।</p>
+      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">तेलंगाना RTA लर्नर लाइसेंस (LLR) हिन्दी प्रैक्टिस और मॉक टेस्ट</h1>
+      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">हैदराबाद और तेलंगाना RTA लर्नर लाइसेंस (LLR) कंप्यूटर परीक्षा (STALL) के लिए 412 आधिकारिक प्रश्नों के साथ हिन्दी में मुफ्त मॉक टेस्ट, सड़क संकेत और RTO गाइड।</p>
+      
       <div class="seo-cta-row">
-        <a href="../?lang=hi" class="seo-cta-primary">🚦 हिन्दी में STALL मॉक टेस्ट शुरू करें</a>
-        <a href="../?lang=hi&tab=practice" class="seo-cta-secondary">📚 सभी 412 प्रश्नों का अभ्यास करें</a>
+        <a href="../?lang=hi" class="seo-cta-primary">हिन्दी में STALL मॉक टेस्ट शुरू करें</a>
+        <a href="../?lang=hi&tab=practice" class="seo-cta-secondary">सभी 412 प्रश्नों का अभ्यास करें</a>
       </div>
     </section>
     
-<div style="margin-bottom:24px;">
-  <a href="../?lang=hi" class="seo-cta-primary" style="font-size:1.05rem;">🚦 हिन्दी में STALL मॉक टेस्ट शुरू करें</a>
-</div>
-
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">⚡ परीक्षा से पहले 10 सुनहरे नियम (Golden Rules)</h2>
-  <ol style="padding:0;"><li class="qa-card" style="list-style:decimal inside;">पास होने के लिए 20 में से 12 (60%) अंक चाहिए। 12 सही होते ही आप तुरंत पास हो जाएंगे!</li><li class="qa-card" style="list-style:decimal inside;">गोला = अनिवार्य आदेश (लाल बॉर्डर = निषेध, नीला = अवश्य करें)। त्रिकोण = चेतावनी। आयत = जानकारी।</li><li class="qa-card" style="list-style:decimal inside;">जेब्रा क्रॉसिंग पर पैदल यात्रियों को हमेशा पहला अधिकार (Right of Way) होता है।</li><li class="qa-card" style="list-style:decimal inside;">ओवरटेकिंग हमेशा दाईं ओर से ही की जानी चाहिए। केवल तभी बाईं ओर से कर सकते हैं जब आगे वाला वाहन दाईं ओर मुड़ने का संकेत दे रहा हो।</li><li class="qa-card" style="list-style:decimal inside;">पहाड़ी ढलानों पर ऊपर चढ़ने वाले वाहनों को नीचे उतरने वाले वाहनों पर प्राथमिकता होती है।</li><li class="qa-card" style="list-style:decimal inside;">आपातकालीन नंबर: पुलिस = 100, एम्बुलेंस = 108, फायर = 101।</li><li class="qa-card" style="list-style:decimal inside;">लर्नर लाइसेंस (LLR) 6 महीने (180 दिन) के लिए वैध होता है। 30 दिन बाद पक्के लाइसेंस के लिए आवेदन कर सकते हैं।</li><li class="qa-card" style="list-style:decimal inside;">सफेद छड़ी लेकर चलने वाला व्यक्ति दृष्टिहीन (नेत्रहीन) होता है।</li><li class="qa-card" style="list-style:decimal inside;">सड़क पर लगातार पीली/सफेद लाइन को ओवरटेक या यू-टर्न के लिए पार नहीं कर सकते।</li><li class="qa-card" style="list-style:decimal inside;">पीली (एम्बर) बत्ती: स्टॉप लाइन से पहले रुकें, जब तक कि अचानक रुकने से दुर्घटना का खतरा न हो।</li></ol>
+  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">परीक्षा से पहले 10 सुनहरे नियम (Golden Rules)</h2>
+  <div class="cheatsheet-rules-grid"><article class="cheatsheet-rule-card"><span class="rule-num-badge">1</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">पास होने के लिए 20 में से 12 (60%) अंक चाहिए। 12 सही होते ही आप तुरंत पास हो जाएंगे!</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">2</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">गोला = अनिवार्य आदेश (लाल बॉर्डर = निषेध, नीला = अवश्य करें)। त्रिकोण = चेतावनी। आयत = जानकारी।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">3</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">जेब्रा क्रॉसिंग पर पैदल यात्रियों को हमेशा पहला अधिकार (Right of Way) होता है।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">4</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">ओवरटेकिंग हमेशा दाईं ओर से ही की जानी चाहिए। केवल तभी बाईं ओर से कर सकते हैं जब आगे वाला वाहन दाईं ओर मुड़ने का संकेत दे रहा हो।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">5</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">पहाड़ी ढलानों पर ऊपर चढ़ने वाले वाहनों को नीचे उतरने वाले वाहनों पर प्राथमिकता होती है।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">6</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">आपातकालीन नंबर: पुलिस = 100, एम्बुलेंस = 108, फायर = 101।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">7</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">लर्नर लाइसेंस (LLR) 6 महीने (180 दिन) के लिए वैध होता है। 30 दिन बाद पक्के लाइसेंस के लिए आवेदन कर सकते हैं।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">8</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">सफेद छड़ी लेकर चलने वाला व्यक्ति दृष्टिहीन (नेत्रहीन) होता है।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">9</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">सड़क पर लगातार पीली/सफेद लाइन को ओवरटेक या यू-टर्न के लिए पार नहीं कर सकते।</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">10</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">पीली (एम्बर) बत्ती: स्टॉप लाइन से पहले रुकें, जब तक कि अचानक रुकने से दुर्घटना का खतरा न हो।</p></article></div>
 </section>
 
+
+<aside class="ad-slot-wrapper ad-format-leaderboard is-hidden no-print" data-ad-slot="seo_in_content" aria-label="Advertisement">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-slot-inner"></div>
+</aside>
+
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">🚸 प्रमुख सड़क संकेत (उदाहरण)</h2>
+  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">प्रमुख सड़क संकेत (उदाहरण)</h2>
   <div class="seo-grid"><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_001.png" alt="सफेद स्टॉप लाइन के पीछे पूरी तरह रुकना आवश्यक है" loading="lazy" style="max-height:90px; margin-bottom:8px;">
   <strong style="display:block; color:#0B2545; font-size:0.92rem;">सफेद स्टॉप लाइन के पीछे पूरी तरह रुकना आवश्यक है</strong>
@@ -216,7 +210,7 @@
 </section>
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">🏢 हैदराबाद आरटीओ परीक्षा केंद्र</h2>
+  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">हैदराबाद आरटीओ परीक्षा केंद्र</h2>
   <div class="seo-grid"><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">TS-09</span>
   <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">आरटीओ सेंट्रल (खैरताबाद)</h3>
@@ -246,27 +240,91 @@
 
 <section>
   <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">FAQ</h2>
-  <details class="qa-card" style="cursor:pointer;">
-  <summary style="font-weight:700; color:#0B2545;">तेलंगाना LLR कंप्यूटर परीक्षा में कितने प्रश्न पूछे जाते हैं?</summary>
-  <p style="margin-top:8px; color:#475569;">कुल 20 बहुविकल्पीय प्रश्न पूछे जाते हैं: 8 सड़क संकेत, 8 यातायात नियम और 4 सामान्य ड्राइविंग सिद्धांत।</p>
-</details><details class="qa-card" style="cursor:pointer;">
-  <summary style="font-weight:700; color:#0B2545;">तेलंगाना LLR परीक्षा में पास होने के लिए कितने अंक चाहिए?</summary>
-  <p style="margin-top:8px; color:#475569;">20 में से कम से कम 12 सही उत्तर (60%) आवश्यक हैं। कोई नेगेटिव मार्किंग नहीं है।</p>
-</details><details class="qa-card" style="cursor:pointer;">
-  <summary style="font-weight:700; color:#0B2545;">प्रत्येक प्रश्न के लिए कितना समय मिलता है?</summary>
-  <p style="margin-top:8px; color:#475569;">प्रत्येक प्रश्न के लिए 30 सेकंड मिलते हैं। जैसे ही 12 उत्तर सही होते हैं, परीक्षा तुरंत PASS दिखाकर समाप्त हो जाती है।</p>
-</details>
+  <div class="footer-faq-grid"><details class="footer-faq-item">
+  <summary>तेलंगाना LLR कंप्यूटर परीक्षा में कितने प्रश्न पूछे जाते हैं?</summary>
+  <p>कुल 20 बहुविकल्पीय प्रश्न पूछे जाते हैं: 8 सड़क संकेत, 8 यातायात नियम और 4 सामान्य ड्राइविंग सिद्धांत।</p>
+</details><details class="footer-faq-item">
+  <summary>तेलंगाना LLR परीक्षा में पास होने के लिए कितने अंक चाहिए?</summary>
+  <p>20 में से कम से कम 12 सही उत्तर (60%) आवश्यक हैं। कोई नेगेटिव मार्किंग नहीं है।</p>
+</details><details class="footer-faq-item">
+  <summary>प्रत्येक प्रश्न के लिए कितना समय मिलता है?</summary>
+  <p>प्रत्येक प्रश्न के लिए 30 सेकंड मिलते हैं। जैसे ही 12 उत्तर सही होते हैं, परीक्षा तुरंत PASS दिखाकर समाप्त हो जाती है।</p>
+</details></div>
 </section>
+
+<aside class="ad-slot-wrapper ad-format-multiplex is-hidden no-print" data-ad-slot="seo_multiplex" aria-label="Advertisement">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-slot-inner"></div>
+</aside>
 
   </main>
 
-  <footer class="seo-footer">
-    <div>
-      <a href="https://llr.sarvacapital.in/" style="color:#134074; font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Telangana RTA LLR Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:#134074;">Sarva Capital</a>
-    </div>
-    <div>
-      <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+  <footer class="app-footer">
+    <nav class="footer-directory-grid" aria-label="Study Resources and Compliance Links">
+      <div>
+        <h3 class="footer-col-title">Practice &amp; Study Tools</h3>
+        <ul class="footer-link-list">
+          <li><a href="../">STALL Mock Test Simulator</a></li>
+          <li><a href="../?tab=practice">Interactive 412 Question Practice</a></li>
+          <li><a href="../?tab=flashcards">Road Sign Flip Flashcards</a></li>
+          <li><a href="../?tab=twins">Tricky Twins Comparisons</a></li>
+          <li><a href="../cheatsheet/">Printable Rapid Cheatsheet</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">RTO Reference Guides</h3>
+        <ul class="footer-link-list">
+          <li><a href="../road-signs/">All 94 Road Signs &amp; Meanings</a></li>
+          <li><a href="../question-bank/">412 Official LLR Q&amp;A Bank</a></li>
+          <li><a href="../rto-guide/">Hyderabad RTO Guide &amp; Fees</a></li>
+          <li><a href="../dl-test-guide/">Permanent DL 8 &amp; H Track Guide</a></li>
+          <li><a href="../traffic-fines/">Traffic Fines &amp; Hand Signals</a></li>
+          <li><a href="../telangana-rto-codes/">All Telangana RTO Codes (01–38)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Regional Languages</h3>
+        <ul class="footer-link-list">
+          <li><a href="../">English LLR Simulator</a></li>
+          <li><a href="../te/" hreflang="te">తెలుగు గైడ్ (Telugu Prep)</a></li>
+          <li><a href="../hi/" hreflang="hi">हिन्दी गाइड (Hindi Prep)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">About &amp; Legal</h3>
+        <ul class="footer-link-list">
+          <li><a href="../about/">About, Disclaimer &amp; Contact</a></li>
+          <li><a href="../privacy-policy/">Privacy &amp; Cookie Policy</a></li>
+          <li><a href="mailto:contact@sarvacapital.in">contact@sarvacapital.in</a></li>
+          <li><a href="https://transport.telangana.gov.in" target="_blank" rel="noopener">Official Telangana Transport ↗</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer-bottom-bar">
+      <div>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+      </div>
+      <div>
+        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+      </div>
     </div>
   </footer>
+
+  <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
+
+  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script>
+    (() => {
+      const topBtn = document.getElementById("btn-back-to-top");
+      if (topBtn) {
+        window.addEventListener("scroll", () => {
+          topBtn.classList.toggle("visible", window.scrollY > 420);
+        }, { passive: true });
+        topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+      }
+    })();
+  </script>
+  
 </body>
 </html>

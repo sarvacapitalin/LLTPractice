@@ -258,48 +258,33 @@
 }
   </script>
 
-  <link rel="stylesheet" href="../css/styles.css?v=20">
-  <style>
-    .seo-nav-bar { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; }
-    .seo-nav-inner { max-width: 1200px; margin: 0 auto; padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .seo-nav-link { text-decoration: none; font-size: 0.88rem; font-weight: 600; color: #334155; padding: 7px 12px; border-radius: 8px; background: #F8FAFC; border: 1px solid #E2E8F0; transition: all 0.15s ease; }
-    .seo-nav-link:hover { background: #EFF6FF; color: #134074; border-color: #93C5FD; }
-    .seo-nav-link.active { background: #134074; color: #FFFFFF; border-color: #134074; }
-    .seo-main { max-width: 1200px; width: 100%; margin: 24px auto; padding: 0 16px; flex: 1; }
-    .seo-hero { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    .seo-cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
-    .seo-cta-primary { display: inline-flex; align-items: center; gap: 8px; background: #134074; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 10px; font-size: 0.95rem; }
-    .seo-cta-secondary { display: inline-flex; align-items: center; gap: 8px; background: #FFF8E7; color: #92400E; border: 1px solid #FCD34D; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 10px; font-size: 0.95rem; }
-    .seo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-    .seo-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-    .seo-badge { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.03em; }
-    .badge-mandatory { background: #FEE2E2; color: #991B1B; }
-    .badge-cautionary { background: #FEF3C7; color: #92400E; }
-    .badge-informatory { background: #DBEAFE; color: #1E40AF; }
-    .qa-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px; margin-bottom: 14px; }
-    .qa-options { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 6px; }
-    .qa-option { padding: 8px 12px; border-radius: 8px; background: #F8FAFC; border: 1px solid #E2E8F0; font-size: 0.9rem; }
-    .qa-option.correct { background: #ECFDF5; border-color: #6EE7B7; color: #065F46; font-weight: 700; }
-    .toc-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-    .toc-pill { text-decoration: none; background: #FFFFFF; border: 1px solid #CBD5E1; color: #0B2545; padding: 8px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 700; }
-    .seo-footer { max-width: 1200px; width: 100%; margin: 32px auto 20px; padding: 20px 16px; border-top: 1px solid #E2E8F0; color: #64748B; font-size: 0.85rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css?v=22">
 </head>
 <body>
   <header class="app-header">
     <div class="header-container">
       <div class="brand-section">
-        <a href="../" style="text-decoration:none; display:flex; align-items:center; gap:12px;">
-          <div class="gov-emblem" aria-hidden="true">🏛️</div>
+        <a href="../" class="brand-link">
+          <div class="gov-emblem" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="18" r="1.5"/><rect x="7" y="2" width="10" height="20" rx="3"/></svg>
+          </div>
           <div class="brand-titles">
-            <span style="font-size:1.1rem; font-weight:700; color:#FFFFFF; display:block;">Telangana RTA Learner's Licence Practice</span>
+            <span class="brand-title-text">Telangana RTA Learner's Licence Practice</span>
             <span class="subtitle">Complete State-Wide District Transport Office Directory for LLR &amp; DL Applicants</span>
           </div>
         </a>
       </div>
       <div class="header-actions">
-        <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; text-decoration:none; font-weight:800;">
-          🚦 Launch STALL Simulator
+        <div class="header-lang-links" aria-label="Language versions">
+          <a href="../" class="header-lang-link active">EN</a>
+          <a href="../te/" class="header-lang-link">తెలుగు</a>
+          <a href="../hi/" class="header-lang-link">हिन्दी</a>
+        </div>
+        <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
+          Launch STALL Simulator
         </a>
       </div>
     </div>
@@ -307,272 +292,365 @@
 
   <nav class="seo-nav-bar" aria-label="Study Guides Navigation">
     <div class="seo-nav-inner">
-      <a href="../" class="seo-nav-link">🚦 STALL Simulator</a>
-<a href="../road-signs/" class="seo-nav-link">🚸 94 Road Signs</a>
-<a href="../question-bank/" class="seo-nav-link">📚 412 Q&amp;A Bank</a>
-<a href="../rto-guide/" class="seo-nav-link">🏢 RTO Guide</a>
-<a href="../dl-test-guide/" class="seo-nav-link">🚗 DL Track Test</a>
-<a href="../traffic-fines/" class="seo-nav-link">🚨 Fines &amp; Signals</a>
-<a href="../telangana-rto-codes/" class="seo-nav-link active">🗺️ TS/TG Codes</a>
-<a href="../cheatsheet/" class="seo-nav-link">⚡ Cheatsheet</a>
-<a href="../te/" class="seo-nav-link">🌐 తెలుగు</a>
-<a href="../hi/" class="seo-nav-link">🌐 हिन्दी</a>
+      <a href="../" class="seo-nav-link">STALL Simulator</a>
+<a href="../road-signs/" class="seo-nav-link">94 Road Signs</a>
+<a href="../question-bank/" class="seo-nav-link">412 Q&amp;A Bank</a>
+<a href="../rto-guide/" class="seo-nav-link">RTO Guide</a>
+<a href="../dl-test-guide/" class="seo-nav-link">DL Track Test</a>
+<a href="../traffic-fines/" class="seo-nav-link">Fines &amp; Signals</a>
+<a href="../telangana-rto-codes/" class="seo-nav-link active">TS/TG Codes</a>
+<a href="../cheatsheet/" class="seo-nav-link">Cheatsheet</a>
+<a href="../te/" class="seo-nav-link">తెలుగు</a>
+<a href="../hi/" class="seo-nav-link">हिन्दी</a>
     </div>
   </nav>
 
   <main class="seo-main">
+    
+    <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span aria-hidden="true">/</span>
+      <span>TS / TG RTO Codes</span>
+    </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.65rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">All Telangana District RTO / RTA Codes (TS &amp; TG 01–38)</h1>
-      <p style="color: #475569; font-size: 1rem; line-height: 1.6;">Complete list of all 38 Telangana Regional Transport Authority (RTA / RTO) district codes from TS/TG-01 Adilabad to TS/TG-38 Narayanpet including Hyderabad, Warangal, Karimnagar, Nizamabad, Khammam &amp; Rangareddy.</p>
+      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">All Telangana District RTO / RTA Codes (TS &amp; TG 01–38)</h1>
+      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Complete list of all 38 Telangana Regional Transport Authority (RTA / RTO) district codes from TS/TG-01 Adilabad to TS/TG-38 Narayanpet including Hyderabad, Warangal, Karimnagar, Nizamabad, Khammam &amp; Rangareddy.</p>
+      
       <div class="seo-cta-row">
-        <a href="../" class="seo-cta-primary">🚦 Take Official 20-Question STALL Mock Test</a>
-        <a href="../?tab=practice" class="seo-cta-secondary">📚 Practice All 412 Questions Interactively</a>
+        <a href="../" class="seo-cta-primary">Take Official 20-Question STALL Mock Test</a>
+        <a href="../?tab=practice" class="seo-cta-secondary">Practice All 412 Questions Interactively</a>
       </div>
     </section>
     
 <section>
-  <h2 style="font-size:1.35rem; color:#0B2545; font-weight:800; margin-bottom:8px;">Complete District-Wise Telangana RTA Office Codes (01 to 38)</h2>
-  <p style="color:#475569; margin-bottom:16px;">Telangana transitioned vehicle registration prefixes from <strong>TS</strong> to <strong>TG</strong>, while keeping the exact same district numerical codes (01–38). All STALL Learner's Licence tests across every Telangana district follow the same 412-question bank and 20-question (12/20 pass) computerized exam format.</p>
-  <div class="seo-grid"><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-01</span>
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+    <div>
+      <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:6px;">Complete District-Wise Telangana RTA Office Codes (01 to 38)</h2>
+      <p style="color:#475569; max-width:68ch;">Telangana transitioned vehicle registration prefixes from <strong>TS</strong> to <strong>TG</strong>, while keeping the exact same district numerical codes (01–38). All STALL Learner's Licence tests follow the same 412-question bank.</p>
+    </div>
+    <input type="text" id="rto-codes-search" placeholder="Search district or code (e.g. Warangal, 07)..." style="padding:9px 14px; border:1px solid #CBD5E1; border-radius:8px; font-size:0.88rem; min-width:250px;">
+  </div>
+  <div class="seo-grid"><article class="seo-card rto-code-card" data-search="01 ts-01 tg-01 adilabad" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-01</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Adilabad</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 01</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-02</span>
+</article><article class="seo-card rto-code-card" data-search="02 ts-02 tg-02 karimnagar" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-02</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Karimnagar</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 02</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-03</span>
+</article><article class="seo-card rto-code-card" data-search="03 ts-03 tg-03 warangal urban (hanumakonda)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-03</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Warangal Urban (Hanumakonda)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 03</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-04</span>
+</article><article class="seo-card rto-code-card" data-search="04 ts-04 tg-04 khammam" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-04</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Khammam</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 04</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-05</span>
+</article><article class="seo-card rto-code-card" data-search="05 ts-05 tg-05 nalgonda" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-05</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Nalgonda</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 05</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-06</span>
+</article><article class="seo-card rto-code-card" data-search="06 ts-06 tg-06 mahbubnagar" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-06</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Mahbubnagar</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 06</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-07</span>
+</article><article class="seo-card rto-code-card" data-search="07 ts-07 tg-07 ranga reddy (kondapur / ibrahimpatnam)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-07</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Ranga Reddy (Kondapur / Ibrahimpatnam)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 07</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-08</span>
+</article><article class="seo-card rto-code-card" data-search="08 ts-08 tg-08 medchal–malkajgiri (uppal / medchal)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-08</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Medchal–Malkajgiri (Uppal / Medchal)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 08</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-09</span>
+</article><article class="seo-card rto-code-card" data-search="09 ts-09 tg-09 hyderabad central (khairatabad)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-09</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Hyderabad Central (Khairatabad)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 09</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-10</span>
+</article><article class="seo-card rto-code-card" data-search="10 ts-10 tg-10 hyderabad north (secunderabad / trimulgherry)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-10</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Hyderabad North (Secunderabad / Trimulgherry)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 10</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-11</span>
+</article><article class="seo-card rto-code-card" data-search="11 ts-11 tg-11 hyderabad east / west (malakpet / mehdipatnam)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-11</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Hyderabad East / West (Malakpet / Mehdipatnam)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 11</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-12</span>
+</article><article class="seo-card rto-code-card" data-search="12 ts-12 tg-12 hyderabad south (chandrayangutta / malakpet)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-12</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Hyderabad South (Chandrayangutta / Malakpet)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 12</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-13</span>
+</article><article class="seo-card rto-code-card" data-search="13 ts-13 tg-13 hyderabad west (tolichowki / chandrayangutta)" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-13</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Hyderabad West (Tolichowki / Chandrayangutta)</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 13</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-14</span>
+</article><article class="seo-card rto-code-card" data-search="14 ts-14 tg-14 reserved for hyderabad" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-14</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Reserved for Hyderabad</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 14</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-15</span>
+</article><article class="seo-card rto-code-card" data-search="15 ts-15 tg-15 sangareddy" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-15</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Sangareddy</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 15</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-16</span>
+</article><article class="seo-card rto-code-card" data-search="16 ts-16 tg-16 nizamabad" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-16</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Nizamabad</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 16</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-17</span>
+</article><article class="seo-card rto-code-card" data-search="17 ts-17 tg-17 kamareddy" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-17</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Kamareddy</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 17</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-18</span>
+</article><article class="seo-card rto-code-card" data-search="18 ts-18 tg-18 nirmal" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-18</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Nirmal</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 18</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-19</span>
+</article><article class="seo-card rto-code-card" data-search="19 ts-19 tg-19 mancherial" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-19</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Mancherial</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 19</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-20</span>
+</article><article class="seo-card rto-code-card" data-search="20 ts-20 tg-20 kumaram bheem asifabad" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-20</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Kumaram Bheem Asifabad</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 20</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-21</span>
+</article><article class="seo-card rto-code-card" data-search="21 ts-21 tg-21 jagtial" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-21</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Jagtial</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 21</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-22</span>
+</article><article class="seo-card rto-code-card" data-search="22 ts-22 tg-22 peddapalli" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-22</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Peddapalli</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 22</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-23</span>
+</article><article class="seo-card rto-code-card" data-search="23 ts-23 tg-23 rajanna sircilla" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-23</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Rajanna Sircilla</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 23</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-24</span>
+</article><article class="seo-card rto-code-card" data-search="24 ts-24 tg-24 warangal rural" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-24</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Warangal Rural</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 24</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-25</span>
+</article><article class="seo-card rto-code-card" data-search="25 ts-25 tg-25 jayashankar bhupalpally" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-25</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Jayashankar Bhupalpally</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 25</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-26</span>
+</article><article class="seo-card rto-code-card" data-search="26 ts-26 tg-26 mahabubabad" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-26</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Mahabubabad</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 26</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-27</span>
+</article><article class="seo-card rto-code-card" data-search="27 ts-27 tg-27 jangaon" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-27</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Jangaon</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 27</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-28</span>
+</article><article class="seo-card rto-code-card" data-search="28 ts-28 tg-28 bhadradri kothagudem" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-28</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Bhadradri Kothagudem</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 28</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-29</span>
+</article><article class="seo-card rto-code-card" data-search="29 ts-29 tg-29 suryapet" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-29</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Suryapet</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 29</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-30</span>
+</article><article class="seo-card rto-code-card" data-search="30 ts-30 tg-30 yadadri bhuvanagiri" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-30</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Yadadri Bhuvanagiri</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 30</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-31</span>
+</article><article class="seo-card rto-code-card" data-search="31 ts-31 tg-31 nagarkurnool" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-31</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Nagarkurnool</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 31</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-32</span>
+</article><article class="seo-card rto-code-card" data-search="32 ts-32 tg-32 wanaparthy" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-32</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Wanaparthy</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 32</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-33</span>
+</article><article class="seo-card rto-code-card" data-search="33 ts-33 tg-33 jogulamba gadwal" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-33</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Jogulamba Gadwal</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 33</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-34</span>
+</article><article class="seo-card rto-code-card" data-search="34 ts-34 tg-34 vikarabad" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-34</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Vikarabad</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 34</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-35</span>
+</article><article class="seo-card rto-code-card" data-search="35 ts-35 tg-35 medak" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-35</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Medak</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 35</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-36</span>
+</article><article class="seo-card rto-code-card" data-search="36 ts-36 tg-36 siddipet" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-36</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Siddipet</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 36</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-37</span>
+</article><article class="seo-card rto-code-card" data-search="37 ts-37 tg-37 mulugu" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-37</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Mulugu</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 37</p>
   </div>
-</article><article class="seo-card" style="display:flex; align-items:center; gap:12px;">
-  <span style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-38</span>
+</article><article class="seo-card rto-code-card" data-search="38 ts-38 tg-38 narayanpet" style="display:flex; align-items:center; gap:12px;">
+  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-38</span>
   <div>
     <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">Narayanpet</h3>
     <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code 38</p>
   </div>
 </article></div>
+  <p id="rto-codes-empty" style="display:none; text-align:center; padding:24px; color:#64748B;">No Telangana district matched your search.</p>
 </section>
+
+<aside class="ad-slot-wrapper ad-format-multiplex is-hidden no-print" data-ad-slot="seo_multiplex" aria-label="Advertisement">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-slot-inner"></div>
+</aside>
 
   </main>
 
-  <footer class="seo-footer">
-    <div>
-      <a href="https://llr.sarvacapital.in/" style="color:#134074; font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Telangana RTA LLR Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:#134074;">Sarva Capital</a>
-    </div>
-    <div>
-      <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+  <footer class="app-footer">
+    <nav class="footer-directory-grid" aria-label="Study Resources and Compliance Links">
+      <div>
+        <h3 class="footer-col-title">Practice &amp; Study Tools</h3>
+        <ul class="footer-link-list">
+          <li><a href="../">STALL Mock Test Simulator</a></li>
+          <li><a href="../?tab=practice">Interactive 412 Question Practice</a></li>
+          <li><a href="../?tab=flashcards">Road Sign Flip Flashcards</a></li>
+          <li><a href="../?tab=twins">Tricky Twins Comparisons</a></li>
+          <li><a href="../cheatsheet/">Printable Rapid Cheatsheet</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">RTO Reference Guides</h3>
+        <ul class="footer-link-list">
+          <li><a href="../road-signs/">All 94 Road Signs &amp; Meanings</a></li>
+          <li><a href="../question-bank/">412 Official LLR Q&amp;A Bank</a></li>
+          <li><a href="../rto-guide/">Hyderabad RTO Guide &amp; Fees</a></li>
+          <li><a href="../dl-test-guide/">Permanent DL 8 &amp; H Track Guide</a></li>
+          <li><a href="../traffic-fines/">Traffic Fines &amp; Hand Signals</a></li>
+          <li><a href="../telangana-rto-codes/">All Telangana RTO Codes (01–38)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Regional Languages</h3>
+        <ul class="footer-link-list">
+          <li><a href="../">English LLR Simulator</a></li>
+          <li><a href="../te/" hreflang="te">తెలుగు గైడ్ (Telugu Prep)</a></li>
+          <li><a href="../hi/" hreflang="hi">हिन्दी गाइड (Hindi Prep)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">About &amp; Legal</h3>
+        <ul class="footer-link-list">
+          <li><a href="../about/">About, Disclaimer &amp; Contact</a></li>
+          <li><a href="../privacy-policy/">Privacy &amp; Cookie Policy</a></li>
+          <li><a href="mailto:contact@sarvacapital.in">contact@sarvacapital.in</a></li>
+          <li><a href="https://transport.telangana.gov.in" target="_blank" rel="noopener">Official Telangana Transport ↗</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer-bottom-bar">
+      <div>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+      </div>
+      <div>
+        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+      </div>
     </div>
   </footer>
+
+  <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
+
+  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script>
+    (() => {
+      const topBtn = document.getElementById("btn-back-to-top");
+      if (topBtn) {
+        window.addEventListener("scroll", () => {
+          topBtn.classList.toggle("visible", window.scrollY > 420);
+        }, { passive: true });
+        topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+      }
+    })();
+  </script>
+  
+  <script>
+    (() => {
+      const inp = document.getElementById("rto-codes-search");
+      const empty = document.getElementById("rto-codes-empty");
+      inp?.addEventListener("input", e => {
+        const q = e.target.value.trim().toLowerCase();
+        let shown = 0;
+        document.querySelectorAll(".rto-code-card").forEach(c => {
+          const ok = !q || (c.getAttribute("data-search") || "").includes(q);
+          c.style.display = ok ? "flex" : "none";
+          if (ok) shown++;
+        });
+        if (empty) empty.style.display = shown === 0 ? "block" : "none";
+      });
+    })();
+  </script>
 </body>
 </html>
