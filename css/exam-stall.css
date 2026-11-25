@@ -845,3 +845,178 @@
     width: 100%;
   }
 }
+
+/* ==========================================
+   DARK MODE OVERRIDES (STALL SIMULATOR)
+   ========================================== */
+:root[data-theme="dark"] .stall-exam-wrapper,
+:root[data-theme="dark"] .option-card,
+:root[data-theme="dark"] .review-card {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .option-card:hover:not(:disabled) {
+  background: var(--surface-subtle);
+  border-color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .option-card.selected {
+  background: rgba(96, 165, 250, 0.16);
+  border-color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .option-card.correct {
+  background: var(--success-bg) !important;
+  border-color: var(--success-green) !important;
+  color: #86EFAC;
+}
+
+:root[data-theme="dark"] .option-card.incorrect {
+  background: var(--danger-bg) !important;
+  border-color: var(--danger-red) !important;
+  color: #FCA5A5;
+}
+
+:root[data-theme="dark"] .stall-footer,
+:root[data-theme="dark"] .review-explanation,
+:root[data-theme="dark"] .exam-explanation-box,
+:root[data-theme="dark"] .review-opt,
+:root[data-theme="dark"] .shortcut-hint {
+  background: var(--surface-subtle);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+:root[data-theme="dark"] .exam-explanation-box {
+  background: var(--success-bg);
+  border-color: var(--success-green);
+}
+
+:root[data-theme="dark"] .exam-explanation-box.wrong {
+  background: var(--danger-bg);
+  border-color: var(--danger-red);
+}
+
+:root[data-theme="dark"] .review-q-status.correct {
+  background: var(--success-bg);
+  color: #86EFAC;
+}
+
+:root[data-theme="dark"] .review-q-status.wrong {
+  background: var(--danger-bg);
+  color: #FCA5A5;
+}
+
+:root[data-theme="dark"] .review-opt-badge {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .exam-explanation-text,
+:root[data-theme="dark"] .speech-read-btn {
+  color: var(--text-secondary);
+}
+
+:root[data-theme="dark"] .exam-explanation-box.correct .exam-explanation-title,
+:root[data-theme="dark"] .review-opt.official-correct {
+  color: #86EFAC;
+}
+
+:root[data-theme="dark"] .exam-explanation-box.wrong .exam-explanation-title,
+:root[data-theme="dark"] .review-opt.user-chosen-wrong {
+  color: #FCA5A5;
+}
+
+:root[data-theme="dark"] .question-number-pill {
+  background: rgba(96, 165, 250, 0.16);
+  color: #93C5FD;
+  border-color: rgba(96, 165, 250, 0.35);
+}
+
+:root[data-theme="dark"] .option-badge {
+  background: var(--surface-subtle);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+:root[data-theme="dark"] .review-opt.official-correct {
+  background: var(--success-bg);
+  border-color: var(--success-green);
+}
+
+:root[data-theme="dark"] .review-opt.user-chosen-wrong {
+  background: var(--danger-bg);
+  border-color: var(--danger-red);
+}
+
+:root[data-theme="dark"] .speech-read-btn:hover {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .speech-read-btn.reading {
+  background: var(--warning-bg);
+  color: var(--warning-amber);
+  border-color: rgba(250, 204, 21, 0.45);
+}
+
+:root[data-theme="dark"] .review-filter-btn {
+  background: var(--surface-subtle);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+:root[data-theme="dark"] .review-filter-btn:hover {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .review-filter-btn.active {
+  background: var(--accent-blue);
+  color: #0B1220;
+  border-color: var(--accent-blue);
+}
+
+/* Keep light backing behind road-sign / scenario PNGs for crisp ink contrast */
+:root[data-theme="dark"] .question-visual-box,
+:root[data-theme="dark"] .review-q-img-wrap {
+  background: #F8FAFC;
+  border-color: var(--border-strong);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .stall-exam-wrapper,
+  :root:not([data-theme="light"]) .option-card,
+  :root:not([data-theme="light"]) .review-card {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+  }
+  :root:not([data-theme="light"]) .option-card:hover:not(:disabled) {
+    background: var(--surface-subtle);
+    border-color: var(--accent-blue);
+  }
+  :root:not([data-theme="light"]) .stall-footer,
+  :root:not([data-theme="light"]) .review-explanation,
+  :root:not([data-theme="light"]) .exam-explanation-box {
+    background: var(--surface-subtle);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+  }
+  :root:not([data-theme="light"]) .exam-explanation-text,
+  :root:not([data-theme="light"]) .speech-read-btn {
+    color: var(--text-secondary);
+  }
+  :root:not([data-theme="light"]) .review-filter-btn {
+    background: var(--surface-subtle);
+    color: var(--text-secondary);
+    border-color: var(--border-color);
+  }
+  :root:not([data-theme="light"]) .question-visual-box,
+  :root:not([data-theme="light"]) .review-q-img-wrap {
+    background: #F8FAFC;
+    border-color: var(--border-strong);
+  }
+}

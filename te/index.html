@@ -96,7 +96,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=22">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem("TS_LLR_THEME") || "system";
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var resolved = pref === "system" ? (dark ? "dark" : "light") : pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.style.colorScheme = resolved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../css/styles.css?v=24">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -119,6 +131,10 @@
           <a href="../te/" class="header-lang-link active">తెలుగు</a>
           <a href="../hi/" class="header-lang-link">हिन्दी</a>
         </div>
+        <button type="button" class="control-btn theme-toggle-btn" id="btn-theme-toggle" title="Theme: Auto (matches system). Click to switch to Light" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Auto</span>
+        </button>
         <a href="../?lang=te" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
           Launch STALL Simulator
         </a>
@@ -149,8 +165,8 @@
       <span>తెలుగు గైడ్</span>
     </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">తెలంగాణ RTA లెర్నర్స్ లైసెన్స్ (LLR) తెలుగు ప్రాక్టీస్ &amp; మాక్ టెస్ట్</h1>
-      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">హైదరాబాద్ మరియు తెలంగాణ RTA లెర్నర్స్ లైసెన్స్ (LLR) కంప్యూటర్ పరీక్ష (STALL) కోసం 412 అధికారిక ప్రశ్నలతో తెలుగులో ఉచిత మాక్ టెస్ట్, రోడ్డు సంకేతాలు మరియు RTO గైడ్.</p>
+      <h1 style="font-size: 1.6rem; color: var(--primary-navy); font-weight: 800; line-height: 1.25; margin-bottom: 10px;">తెలంగాణ RTA లెర్నర్స్ లైసెన్స్ (LLR) తెలుగు ప్రాక్టీస్ &amp; మాక్ టెస్ట్</h1>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">హైదరాబాద్ మరియు తెలంగాణ RTA లెర్నర్స్ లైసెన్స్ (LLR) కంప్యూటర్ పరీక్ష (STALL) కోసం 412 అధికారిక ప్రశ్నలతో తెలుగులో ఉచిత మాక్ టెస్ట్, రోడ్డు సంకేతాలు మరియు RTO గైడ్.</p>
       
       <div class="seo-cta-row">
         <a href="../?lang=te" class="seo-cta-primary">తెలుగులో STALL మాక్ టెస్ట్ ప్రారంభించండి</a>
@@ -159,8 +175,8 @@
     </section>
     
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">పరీక్షకు ముందు 10 ముఖ్య నియమాలు (Golden Rules)</h2>
-  <div class="cheatsheet-rules-grid"><article class="cheatsheet-rule-card"><span class="rule-num-badge">1</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">పాస్ మార్కు 20కి 12 (60%). 12 సరైన సమాధానాలు రాగానే పరీక్ష పాస్ అయిపోతారు!</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">2</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">సర్కిల్ = తప్పనిసరి ఆర్డర్లు (ఎరుపు సరిహద్దు = వద్దు, నీలం = తప్పక చేయాలి). త్రిభుజం = హెచ్చరికలు. దీర్ఘచతురస్రం = సమాచారం.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">3</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">పాదచారులకు జీబ్రా క్రాసింగ్ వద్ద ఎల్లప్పుడూ మొదటి ప్రాధాన్యత (Right of Way) ఉంటుంది.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">4</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">ఓవర్‌టేకింగ్ ఎల్లప్పుడూ కుడి వైపు నుంచే చేయాలి. ముందు వాహనం కుడి వైపు తిరిగే సంకేతం ఇచ్చి రోడ్డు మధ్యలోకి వస్తేనే ఎడమ నుండి ఓవర్‌టేక్ చేయవచ్చు.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">5</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">కొండ ప్రాంతాల్లో పైకి ఎక్కే వాహనాలకు మొదటి ప్రాధాన్యత ఇవ్వాలి (కిందికి దిగే వాహనాలు ఆగాలి).</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">6</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">అత్యవసర ఫోన్ నంబర్లు: పోలీస్ = 100, అంబులెన్స్ = 108, ఫైర్ = 101.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">7</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">లెర్నర్స్ లైసెన్స్ (LLR) కాలపరిమితి 6 నెలలు (180 రోజులు). 30 రోజుల తర్వాత శాశ్వత డ్రైవింగ్ లైసెన్స్ కోసం దరఖాస్తు చేసుకోవచ్చు.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">8</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">చేతిలో తెల్లటి కర్ర పట్టుకుని రోడ్డు దాటే వ్యక్తి అంధుడు (Blind) అని అర్థం.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">9</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">రోడ్డుపై నిరంతర పసుపు/తెల్లటి గీత ఉంటే ఎట్టి పరిస్థితుల్లోనూ ఓవర్‌టేక్ లేదా యూ-టర్న్ చేయకూడదు.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">10</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">పసుపు (ఆంబర్) లైట్: స్టాప్ లైన్ వద్ద ఆగడానికి సిద్ధం కావాలి. అప్పటికే లైన్ దాటి ఉంటేనే సురక్షితంగా వెళ్లాలి.</p></article></div>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">పరీక్షకు ముందు 10 ముఖ్య నియమాలు (Golden Rules)</h2>
+  <div class="cheatsheet-rules-grid"><article class="cheatsheet-rule-card"><span class="rule-num-badge">1</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">పాస్ మార్కు 20కి 12 (60%). 12 సరైన సమాధానాలు రాగానే పరీక్ష పాస్ అయిపోతారు!</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">2</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">సర్కిల్ = తప్పనిసరి ఆర్డర్లు (ఎరుపు సరిహద్దు = వద్దు, నీలం = తప్పక చేయాలి). త్రిభుజం = హెచ్చరికలు. దీర్ఘచతురస్రం = సమాచారం.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">3</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">పాదచారులకు జీబ్రా క్రాసింగ్ వద్ద ఎల్లప్పుడూ మొదటి ప్రాధాన్యత (Right of Way) ఉంటుంది.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">4</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">ఓవర్‌టేకింగ్ ఎల్లప్పుడూ కుడి వైపు నుంచే చేయాలి. ముందు వాహనం కుడి వైపు తిరిగే సంకేతం ఇచ్చి రోడ్డు మధ్యలోకి వస్తేనే ఎడమ నుండి ఓవర్‌టేక్ చేయవచ్చు.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">5</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">కొండ ప్రాంతాల్లో పైకి ఎక్కే వాహనాలకు మొదటి ప్రాధాన్యత ఇవ్వాలి (కిందికి దిగే వాహనాలు ఆగాలి).</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">6</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">అత్యవసర ఫోన్ నంబర్లు: పోలీస్ = 100, అంబులెన్స్ = 108, ఫైర్ = 101.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">7</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">లెర్నర్స్ లైసెన్స్ (LLR) కాలపరిమితి 6 నెలలు (180 రోజులు). 30 రోజుల తర్వాత శాశ్వత డ్రైవింగ్ లైసెన్స్ కోసం దరఖాస్తు చేసుకోవచ్చు.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">8</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">చేతిలో తెల్లటి కర్ర పట్టుకుని రోడ్డు దాటే వ్యక్తి అంధుడు (Blind) అని అర్థం.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">9</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">రోడ్డుపై నిరంతర పసుపు/తెల్లటి గీత ఉంటే ఎట్టి పరిస్థితుల్లోనూ ఓవర్‌టేక్ లేదా యూ-టర్న్ చేయకూడదు.</p></article><article class="cheatsheet-rule-card"><span class="rule-num-badge">10</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">పసుపు (ఆంబర్) లైట్: స్టాప్ లైన్ వద్ద ఆగడానికి సిద్ధం కావాలి. అప్పటికే లైన్ దాటి ఉంటేనే సురక్షితంగా వెళ్లాలి.</p></article></div>
 </section>
 
 
@@ -170,77 +186,77 @@
 </aside>
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">ముఖ్యమైన రోడ్డు సంకేతాలు (నమూనా)</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">ముఖ్యమైన రోడ్డు సంకేతాలు (నమూనా)</h2>
   <div class="seo-grid"><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_001.png" alt="తెల్లటి స్టాప్ లైన్ దాటకుండా ఆగాలి" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">తెల్లటి స్టాప్ లైన్ దాటకుండా ఆగాలి</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">తెల్లటి స్టాప్ లైన్ దాటకుండా ఆగాలి</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_002.png" alt="నెమ్మదిగా చేసి జాగ్రత్తగా ముందుకు సాగాలి" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">నెమ్మదిగా చేసి జాగ్రత్తగా ముందుకు సాగాలి</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">నెమ్మదిగా చేసి జాగ్రత్తగా ముందుకు సాగాలి</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_003.png" alt="ఆగి, ట్రాఫిక్‌ను గమనించి జాగ్రత్తగా వెళ్లాలి" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">ఆగి, ట్రాఫిక్‌ను గమనించి జాగ్రత్తగా వెళ్లాలి</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">ఆగి, ట్రాఫిక్‌ను గమనించి జాగ్రత్తగా వెళ్లాలి</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_004.png" alt="తప్పనిసరి సంకేతాలు (Mandatory)" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">తప్పనిసరి సంకేతాలు (Mandatory)</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">తప్పనిసరి సంకేతాలు (Mandatory)</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_005.png" alt="హెచ్చరిక సంకేతాలు (Cautionary)" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">హెచ్చరిక సంకేతాలు (Cautionary)</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">హెచ్చరిక సంకేతాలు (Cautionary)</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_006.png" alt="సమాచార సంకేతాలు (Informatory)" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">సమాచార సంకేతాలు (Informatory)</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">సమాచార సంకేతాలు (Informatory)</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_007.png" alt="ఆగండి (STOP)" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">ఆగండి (STOP)</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">ఆగండి (STOP)</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_008.png" alt="దారి ఇవ్వండి (GIVE WAY)" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">దారి ఇవ్వండి (GIVE WAY)</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">దారి ఇవ్వండి (GIVE WAY)</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_009.png" alt="BLOW YOUR హారన్ AND డ్రైవ్ చేయండి CONTINUE TO THE END OF THE రోడ్డు" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">BLOW YOUR హారన్ AND డ్రైవ్ చేయండి CONTINUE TO THE END OF THE రోడ్డు</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">BLOW YOUR హారన్ AND డ్రైవ్ చేయండి CONTINUE TO THE END OF THE రోడ్డు</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_010.png" alt="వన్ వే (ఏకముఖ మార్గం)" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">వన్ వే (ఏకముఖ మార్గం)</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">వన్ వే (ఏకముఖ మార్గం)</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_011.png" alt="ప్రవేశం లేదు (NO ENTRY)" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">ప్రవేశం లేదు (NO ENTRY)</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">ప్రవేశం లేదు (NO ENTRY)</strong>
 </article><article class="seo-card" style="text-align:center;">
   <img src="../assets/signs/sign_012.png" alt="వాహనం నిషిద్ధం IN BOTH DIRECTION" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">వాహనం నిషిద్ధం IN BOTH DIRECTION</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">వాహనం నిషిద్ధం IN BOTH DIRECTION</strong>
 </article></div>
 </section>
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">హైదరాబాద్ RTO పరీక్షా కేంద్రాలు</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">హైదరాబాద్ RTO పరీక్షా కేంద్రాలు</h2>
   <div class="seo-grid"><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">TS-09</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">RTO సెంట్రల్ (ఖైరతాబాద్)</h3>
-  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">ఈనాడు ఆఫీస్ ఎదురుగా, సోమాజిగూడ, ఖైరతాబాద్, హైదరాబాద్ - 500082</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700;">RTO సెంట్రల్ (ఖైరతాబాద్)</h3>
+  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">ఈనాడు ఆఫీస్ ఎదురుగా, సోమాజిగూడ, ఖైరతాబాద్, హైదరాబాద్ - 500082</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">TS-10</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">RTO నార్త్ (సికింద్రాబాద్ / తిరుమలగిరి)</h3>
-  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">తిరుమలగిరి క్రాస్ రోడ్స్ సమీపంలో, లాల్ బజార్, సికింద్రాబాద్ - 500015</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700;">RTO నార్త్ (సికింద్రాబాద్ / తిరుమలగిరి)</h3>
+  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">తిరుమలగిరి క్రాస్ రోడ్స్ సమీపంలో, లాల్ బజార్, సికింద్రాబాద్ - 500015</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">TS-07</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">RTO రంగారెడ్డి / సైబరాబాద్ (కొండాపూర్)</h3>
-  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">బొటానికల్ గార్డెన్ సమీపంలో, డ్రైవింగ్ ట్రాక్ ఎదురుగా, కొండాపూర్, హైదరాబాద్ - 500084</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700;">RTO రంగారెడ్డి / సైబరాబాద్ (కొండాపూర్)</h3>
+  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">బొటానికల్ గార్డెన్ సమీపంలో, డ్రైవింగ్ ట్రాక్ ఎదురుగా, కొండాపూర్, హైదరాబాద్ - 500084</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">TS-08</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">RTO ఈస్ట్ / మేడ్చల్ (ఉప్పల్)</h3>
-  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">సర్వే ఆఫ్ ఇండియా సమీపంలో, ఇన్నర్ రింగ్ రోడ్డు, ఉప్పల్, హైదరాబాద్ - 500039</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700;">RTO ఈస్ట్ / మేడ్చల్ (ఉప్పల్)</h3>
+  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">సర్వే ఆఫ్ ఇండియా సమీపంలో, ఇన్నర్ రింగ్ రోడ్డు, ఉప్పల్, హైదరాబాద్ - 500039</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">TS-11</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">RTO వెస్ట్ (టోలిచౌకి / మెహదీపట్నం)</h3>
-  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">రెతిబౌలి క్రాస్ రోడ్స్, మెహదీపట్నం, హైదరాబాద్ - 500028</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700;">RTO వెస్ట్ (టోలిచౌకి / మెహదీపట్నం)</h3>
+  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">రెతిబౌలి క్రాస్ రోడ్స్, మెహదీపట్నం, హైదరాబాద్ - 500028</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">TS-12</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">RTO ఈస్ట్ (మలక్‌పేట్)</h3>
-  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">ఓల్డ్ మలక్‌పేట్, టీవీ టవర్ సమీపంలో, మూసారాంబాగ్‌, హైదరాబాద్ - 500036</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700;">RTO ఈస్ట్ (మలక్‌పేట్)</h3>
+  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">ఓల్డ్ మలక్‌పేట్, టీవీ టవర్ సమీపంలో, మూసారాంబాగ్‌, హైదరాబాద్ - 500036</p>
 </article></div>
 </section>
 
 <section>
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">FAQ</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">FAQ</h2>
   <div class="footer-faq-grid"><details class="footer-faq-item">
   <summary>తెలంగాణ LLR కంప్యూటర్ పరీక్షలో ఎన్ని ప్రశ్నలు ఉంటాయి?</summary>
   <p>మొత్తం 20 మల్టిపుల్ ఛాయిస్ ప్రశ్నలు ఉంటాయి: 8 రోడ్డు సంకేతాలు, 8 ట్రాఫిక్ నియమాలు, 4 జనరల్ డ్రైవింగ్ నియమాలు.</p>
@@ -304,17 +320,18 @@
 
     <div class="footer-bottom-bar">
       <div>
-        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
       </div>
       <div>
-        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+        <a href="../llms.txt" style="color:var(--text-secondary);">llms.txt</a> • <a href="../llms-full.txt" style="color:var(--text-secondary);">llms-full.txt</a> • <a href="../sitemap.xml" style="color:var(--text-secondary);">sitemap.xml</a>
       </div>
     </div>
   </footer>
 
   <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
 
-  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script type="module" src="../js/theme-engine.js?v=24"></script>
+  <script type="module" src="../js/ad-manager.js?v=24"></script>
   <script>
     (() => {
       const topBtn = document.getElementById("btn-back-to-top");

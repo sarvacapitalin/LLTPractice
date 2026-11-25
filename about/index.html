@@ -60,7 +60,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=22">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem("TS_LLR_THEME") || "system";
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var resolved = pref === "system" ? (dark ? "dark" : "light") : pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.style.colorScheme = resolved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../css/styles.css?v=24">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -83,6 +95,10 @@
           <a href="../te/" class="header-lang-link">తెలుగు</a>
           <a href="../hi/" class="header-lang-link">हिन्दी</a>
         </div>
+        <button type="button" class="control-btn theme-toggle-btn" id="btn-theme-toggle" title="Theme: Auto (matches system). Click to switch to Light" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Auto</span>
+        </button>
         <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
           Launch STALL Simulator
         </a>
@@ -113,37 +129,37 @@
       <span>About & Disclaimer</span>
     </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">About, Official Disclaimer &amp; Contact</h1>
-      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">About Telangana RTA LLR Practice by Sarva Capital: free educational mission, official Telangana Transport curriculum attribution, non-affiliation disclaimer, and contact details.</p>
+      <h1 style="font-size: 1.6rem; color: var(--primary-navy); font-weight: 800; line-height: 1.25; margin-bottom: 10px;">About, Official Disclaimer &amp; Contact</h1>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">About Telangana RTA LLR Practice by Sarva Capital: free educational mission, official Telangana Transport curriculum attribution, non-affiliation disclaimer, and contact details.</p>
       
     </section>
     
 <article class="card-surface" style="max-width:860px; margin:0 auto;">
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin-bottom:8px;">1. Mission &amp; Educational Purpose</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:14px;">
-    <strong>Telangana RTA Learner's Licence Practice</strong> (<a href="https://llr.sarvacapital.in/" style="color:#134074; font-weight:600;">llr.sarvacapital.in</a>) is a free civic-education web application built by <strong>Sarva Capital</strong> to help learner drivers across Hyderabad and all 33+ districts of Telangana prepare thoroughly for the computerized <strong>STALL (Screen Test Aid for Learner Licence)</strong> exam and build lifelong road safety habits.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin-bottom:8px;">1. Mission &amp; Educational Purpose</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:14px;">
+    <strong>Telangana RTA Learner's Licence Practice</strong> (<a href="https://llr.sarvacapital.in/" style="color:var(--accent-blue); font-weight:600;">llr.sarvacapital.in</a>) is a free civic-education web application built by <strong>Sarva Capital</strong> to help learner drivers across Hyderabad and all 33+ districts of Telangana prepare thoroughly for the computerized <strong>STALL (Screen Test Aid for Learner Licence)</strong> exam and build lifelong road safety habits.
   </p>
 
-  <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:10px; padding:16px; margin-bottom:18px;">
-    <h2 style="font-size:1.05rem; color:#92400E; font-weight:800; margin-bottom:6px;">2. Non-Government Affiliation Disclaimer</h2>
-    <p style="color:#78350F; line-height:1.6; font-size:0.92rem; margin:0;">
-      <strong>Independent Practice Tool:</strong> This website is NOT an official website of, nor affiliated with, the Government of Telangana Transport Department (RTA) or Parivahan Sarathi. All official Learner's Licence applications, fee payments, slot bookings, and digital LLR downloads must be completed exclusively on the official government portal: <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:#92400E; font-weight:700; text-decoration:underline;">transport.telangana.gov.in</a>.
+  <div style="background:var(--accent-gold-light); border:1px solid var(--accent-gold); border-radius:10px; padding:16px; margin-bottom:18px;">
+    <h2 style="font-size:1.05rem; color:var(--warning-amber); font-weight:800; margin-bottom:6px;">2. Non-Government Affiliation Disclaimer</h2>
+    <p style="color:var(--text-primary); line-height:1.6; font-size:0.92rem; margin:0;">
+      <strong>Independent Practice Tool:</strong> This website is NOT an official website of, nor affiliated with, the Government of Telangana Transport Department (RTA) or Parivahan Sarathi. All official Learner's Licence applications, fee payments, slot bookings, and digital LLR downloads must be completed exclusively on the official government portal: <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:var(--warning-amber); font-weight:700; text-decoration:underline;">transport.telangana.gov.in</a>.
     </p>
   </div>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">3. Official Curriculum &amp; Source Attribution</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:14px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">3. Official Curriculum &amp; Source Attribution</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:14px;">
     The 412 questions (94 Road Signs, 159 Rules of the Road Regulations, and 159 General Driving Principles), fixed option sequence, 8-8-4 category quota, and 30-second countdown logic are derived directly from the publicly published Telangana Transport Department STALL curriculum under the Motor Vehicles Act, 1988.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">4. Terms of Use</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:14px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">4. Terms of Use</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:14px;">
     While we carefully verify all translations, answer keys, RTO office addresses, and Motor Vehicles Act fine schedules, statutory rules and RTO fees may change over time. Always verify current fee schedules and slot guidelines directly on official government notices.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">5. Contact &amp; Feedback</h2>
-  <p style="color:#334155; line-height:1.65;">
-    Found a typo in Telugu/Hindi text, an outdated RTO office detail, or want to share feedback? Reach our team at <a href="mailto:contact@sarvacapital.in" style="color:#134074; font-weight:700;">contact@sarvacapital.in</a>.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">5. Contact &amp; Feedback</h2>
+  <p style="color:var(--text-primary); line-height:1.65;">
+    Found a typo in Telugu/Hindi text, an outdated RTO office detail, or want to share feedback? Reach our team at <a href="mailto:contact@sarvacapital.in" style="color:var(--accent-blue); font-weight:700;">contact@sarvacapital.in</a>.
   </p>
 </article>
 
@@ -193,17 +209,18 @@
 
     <div class="footer-bottom-bar">
       <div>
-        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
       </div>
       <div>
-        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+        <a href="../llms.txt" style="color:var(--text-secondary);">llms.txt</a> • <a href="../llms-full.txt" style="color:var(--text-secondary);">llms-full.txt</a> • <a href="../sitemap.xml" style="color:var(--text-secondary);">sitemap.xml</a>
       </div>
     </div>
   </footer>
 
   <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
 
-  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script type="module" src="../js/theme-engine.js?v=24"></script>
+  <script type="module" src="../js/ad-manager.js?v=24"></script>
   <script>
     (() => {
       const topBtn = document.getElementById("btn-back-to-top");

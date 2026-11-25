@@ -75,7 +75,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=22">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem("TS_LLR_THEME") || "system";
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var resolved = pref === "system" ? (dark ? "dark" : "light") : pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.style.colorScheme = resolved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../css/styles.css?v=24">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -98,6 +110,10 @@
           <a href="../te/" class="header-lang-link">తెలుగు</a>
           <a href="../hi/" class="header-lang-link">हिन्दी</a>
         </div>
+        <button type="button" class="control-btn theme-toggle-btn" id="btn-theme-toggle" title="Theme: Auto (matches system). Click to switch to Light" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Auto</span>
+        </button>
         <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
           Launch STALL Simulator
         </a>
@@ -128,8 +144,8 @@
       <span>Traffic Fines & Hand Signals</span>
     </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Telangana Traffic Fines, E-Challan Penalties &amp; Hand Signals</h1>
-      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Updated Telangana &amp; Hyderabad traffic challan fines (helmet, drunk driving, overspeeding, no licence, seatbelt) under the Motor Vehicles Act plus visual driver and police hand signals.</p>
+      <h1 style="font-size: 1.6rem; color: var(--primary-navy); font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Telangana Traffic Fines, E-Challan Penalties &amp; Hand Signals</h1>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Updated Telangana &amp; Hyderabad traffic challan fines (helmet, drunk driving, overspeeding, no licence, seatbelt) under the Motor Vehicles Act plus visual driver and police hand signals.</p>
       
       <div class="seo-cta-row">
         <a href="../" class="seo-cta-primary">Take Official 20-Question STALL Mock Test</a>
@@ -138,57 +154,57 @@
     </section>
     
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">Telangana Traffic Fines &amp; E-Challan Rules (MV Act)</h2>
-  <p style="color:#475569; margin-bottom:12px;">Statutory penalties under the Motor Vehicles (Amendment) Act and Telangana CCTV / E-Challan enforcement. Digital Driving Licence &amp; RC stored in <strong>DigiLocker</strong> or <strong>mParivahan</strong> are legally valid across Telangana and India.</p>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">Telangana Traffic Fines &amp; E-Challan Rules (MV Act)</h2>
+  <p style="color:var(--text-secondary); margin-bottom:12px;">Statutory penalties under the Motor Vehicles (Amendment) Act and Telangana CCTV / E-Challan enforcement. Digital Driving Licence &amp; RC stored in <strong>DigiLocker</strong> or <strong>mParivahan</strong> are legally valid across Telangana and India.</p>
   <div class="seo-card" style="overflow-x:auto;">
     <table style="width:100%; border-collapse:collapse; text-align:left;">
       <thead>
-        <tr style="background:#F8FAFC;">
+        <tr style="background:var(--surface-subtle);">
           <th style="padding:12px; border-bottom:2px solid #E2E8F0;">Traffic Offence</th>
           <th style="padding:12px; border-bottom:2px solid #E2E8F0;">Penalty / Fine</th>
           <th style="padding:12px; border-bottom:2px solid #E2E8F0;">MV Act Section</th>
         </tr>
       </thead>
       <tbody><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Riding Without Helmet (Rider or Pillion)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹1,000 + 3-month DL suspension</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 194D</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Riding Without Helmet (Rider or Pillion)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹1,000 + 3-month DL suspension</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 194D</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Triple Riding on Two-Wheeler</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹1,000 + 3-month DL suspension</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 194C</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Triple Riding on Two-Wheeler</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹1,000 + 3-month DL suspension</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 194C</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Driving Without Seatbelt</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹1,000</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 194B</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Driving Without Seatbelt</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹1,000</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 194B</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Drunk / Drugged Driving (BAC &gt; 30 mg/100 ml)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹10,000 &amp;/or 6 months jail (Repeat: ₹15,000)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 185</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Drunk / Drugged Driving (BAC &gt; 30 mg/100 ml)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹10,000 &amp;/or 6 months jail (Repeat: ₹15,000)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 185</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Driving Without Valid Driving Licence</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹5,000 (Owner permitting: ₹5,000)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 181 / 180</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Driving Without Valid Driving Licence</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹5,000 (Owner permitting: ₹5,000)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 181 / 180</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Using Handheld Mobile Phone While Driving</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹5,000</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 184</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Using Handheld Mobile Phone While Driving</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹5,000</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 184</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Overspeeding (LMV / Cars)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹1,000 – ₹2,000 (Heavy: ₹2,000 – ₹4,000)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 183</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Overspeeding (LMV / Cars)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹1,000 – ₹2,000 (Heavy: ₹2,000 – ₹4,000)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 183</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Signal Jumping / Dangerous Driving</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹1,000 – ₹5,000</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 184</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Signal Jumping / Dangerous Driving</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹1,000 – ₹5,000</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 184</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Blocking Emergency Vehicle (Ambulance / Fire)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹10,000</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 194E</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Blocking Emergency Vehicle (Ambulance / Fire)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹10,000</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 194E</td>
 </tr><tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">Driving Without Valid Motor Insurance</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">₹2,000 (Repeat: ₹4,000)</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">Section 196</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">Driving Without Valid Motor Insurance</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">₹2,000 (Repeat: ₹4,000)</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">Section 196</td>
 </tr></tbody>
     </table>
   </div>
@@ -201,62 +217,62 @@
 </aside>
 
 <section>
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">Driver Hand Signals, Traffic Police Signals &amp; Road Markings</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">Driver Hand Signals, Traffic Police Signals &amp; Road Markings</h2>
   <div class="seo-grid"><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_083.png" alt="Police Signal: STOP Oncoming Traffic" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Police Signal</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Police Signal: STOP Oncoming Traffic</h3>
-    <p style="font-size:0.84rem; color:#475569;">Right hand raised vertically with palm facing oncoming traffic — vehicles approaching from the front must stop.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Police Signal: STOP Oncoming Traffic</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">Right hand raised vertically with palm facing oncoming traffic — vehicles approaching from the front must stop.</p>
   </div>
 </article><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_084.png" alt="Police Signal: STOP Before Stop Line" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Police Signal</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Police Signal: STOP Before Stop Line</h3>
-    <p style="font-size:0.84rem; color:#475569;">Both arms extended or signaling front &amp; rear traffic to halt behind the white stop line at an uncontrolled junction.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Police Signal: STOP Before Stop Line</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">Both arms extended or signaling front &amp; rear traffic to halt behind the white stop line at an uncontrolled junction.</p>
   </div>
 </article><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_086.png" alt="Driver Turning Left" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Driver Hand Signal</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Driver Turning Left</h3>
-    <p style="font-size:0.84rem; color:#475569;">Right arm extended horizontally outside the vehicle and rotated anti-clockwise to signal a left turn.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Driver Turning Left</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">Right arm extended horizontally outside the vehicle and rotated anti-clockwise to signal a left turn.</p>
   </div>
 </article><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_087.png" alt="Driver Turning Right" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Driver Hand Signal</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Driver Turning Right</h3>
-    <p style="font-size:0.84rem; color:#475569;">Right arm extended horizontally outside the right side with palm facing forward.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Driver Turning Right</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">Right arm extended horizontally outside the right side with palm facing forward.</p>
   </div>
 </article><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_088.png" alt="Driver Intends to STOP" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Driver Hand Signal</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Driver Intends to STOP</h3>
-    <p style="font-size:0.84rem; color:#475569;">Right arm raised vertically upward (bent at elbow at 90 degrees) with palm facing forward.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Driver Intends to STOP</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">Right arm raised vertically upward (bent at elbow at 90 degrees) with palm facing forward.</p>
   </div>
 </article><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_089.png" alt="Driver Slowing Down" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Driver Hand Signal</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Driver Slowing Down</h3>
-    <p style="font-size:0.84rem; color:#475569;">Right arm extended horizontally and moved slowly up and down with palm facing downward.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Driver Slowing Down</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">Right arm extended horizontally and moved slowly up and down with palm facing downward.</p>
   </div>
 </article><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_090.png" alt="Driver Giving Way to Overtake" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Driver Hand Signal</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Driver Giving Way to Overtake</h3>
-    <p style="font-size:0.84rem; color:#475569;">Right arm extended and waved forward from back to front in a semi-circular motion, inviting vehicles behind to overtake safely.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Driver Giving Way to Overtake</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">Right arm extended and waved forward from back to front in a semi-circular motion, inviting vehicles behind to overtake safely.</p>
   </div>
 </article><article class="seo-card" style="display:flex; gap:12px; align-items:center;">
   <img src="../assets/signs/sign_094.png" alt="Double Solid Lines (Strictly No Crossing)" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">Road Marking</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">Double Solid Lines (Strictly No Crossing)</h3>
-    <p style="font-size:0.84rem; color:#475569;">You MUST NOT cross double solid white/yellow lines to overtake or make a U-turn.</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">Double Solid Lines (Strictly No Crossing)</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">You MUST NOT cross double solid white/yellow lines to overtake or make a U-turn.</p>
   </div>
 </article></div>
 </section>
@@ -312,17 +328,18 @@
 
     <div class="footer-bottom-bar">
       <div>
-        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
       </div>
       <div>
-        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+        <a href="../llms.txt" style="color:var(--text-secondary);">llms.txt</a> • <a href="../llms-full.txt" style="color:var(--text-secondary);">llms-full.txt</a> • <a href="../sitemap.xml" style="color:var(--text-secondary);">sitemap.xml</a>
       </div>
     </div>
   </footer>
 
   <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
 
-  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script type="module" src="../js/theme-engine.js?v=24"></script>
+  <script type="module" src="../js/ad-manager.js?v=24"></script>
   <script>
     (() => {
       const topBtn = document.getElementById("btn-back-to-top");

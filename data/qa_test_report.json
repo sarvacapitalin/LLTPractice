@@ -1,7 +1,7 @@
 {
-  "report_id": "QA_RUN_1795625814",
-  "generated_at": "2026-11-25T16:56:54.835923Z",
-  "duration_seconds": 0.039,
+  "report_id": "QA_RUN_1795631178",
+  "generated_at": "2026-11-25T18:26:18.300253Z",
+  "duration_seconds": 0.037,
   "overall_status": "PASSED",
   "summary": {
     "total_suites": 9,
@@ -377,14 +377,14 @@
           "test": "css_file_exists_styles.css",
           "status": "PASSED",
           "details": {
-            "size": 35318
+            "size": 48592
           }
         },
         {
           "test": "css_file_exists_exam-stall.css",
           "status": "PASSED",
           "details": {
-            "size": 15304
+            "size": 20309
           }
         },
         {
@@ -420,7 +420,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 57553
+            "bytes_served": 58475
           }
         },
         {
@@ -454,7 +454,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 57553
+            "bytes_served": 58475
           }
         },
         {
@@ -488,7 +488,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/css",
-            "bytes_served": 35318
+            "bytes_served": 48592
           }
         },
         {
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 87300
+            "bytes_served": 87851
           }
         },
         {

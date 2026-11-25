@@ -14,7 +14,7 @@ import re
 
 BASE_URL = "https://llr.sarvacapital.in"
 TODAY = date.today().isoformat()
-ASSET_VER = "v=22"
+ASSET_VER = "v=24"
 CONTACT_EMAIL = "contact@sarvacapital.in"
 
 
@@ -170,6 +170,18 @@ def render_shell(
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {{
+      try {{
+        var pref = localStorage.getItem("TS_LLR_THEME") || "system";
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var resolved = pref === "system" ? (dark ? "dark" : "light") : pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.style.colorScheme = resolved;
+      }} catch (e) {{}}
+    }})();
+  </script>
   <link rel="stylesheet" href="{rel_root}css/styles.css?{ASSET_VER}">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>
 </head>
@@ -193,6 +205,10 @@ def render_shell(
           <a href="{rel_root}te/" class="header-lang-link{' active' if lang == 'te' else ''}">తెలుగు</a>
           <a href="{rel_root}hi/" class="header-lang-link{' active' if lang == 'hi' else ''}">हिन्दी</a>
         </div>
+        <button type="button" class="control-btn theme-toggle-btn" id="btn-theme-toggle" title="Theme: Auto (matches system). Click to switch to Light" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Auto</span>
+        </button>
         <a href="{rel_root}{'?lang=' + lang if lang in ('te', 'hi') else ''}" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
           Launch STALL Simulator
         </a>
@@ -209,8 +225,8 @@ def render_shell(
   <main class="seo-main">
     {breadcrumb_html}
     <section class="seo-hero">
-      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">{h1}</h1>
-      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">{esc(description)}</p>
+      <h1 style="font-size: 1.6rem; color: var(--primary-navy); font-weight: 800; line-height: 1.25; margin-bottom: 10px;">{h1}</h1>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">{esc(description)}</p>
       {hero_cta_html}
     </section>
     {body_html}
@@ -260,16 +276,17 @@ def render_shell(
 
     <div class="footer-bottom-bar">
       <div>
-        <a href="{BASE_URL}/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+        <a href="{BASE_URL}/" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
       </div>
       <div>
-        <a href="{rel_root}llms.txt" style="color:#475569;">llms.txt</a> • <a href="{rel_root}llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="{rel_root}sitemap.xml" style="color:#475569;">sitemap.xml</a>
+        <a href="{rel_root}llms.txt" style="color:var(--text-secondary);">llms.txt</a> • <a href="{rel_root}llms-full.txt" style="color:var(--text-secondary);">llms-full.txt</a> • <a href="{rel_root}sitemap.xml" style="color:var(--text-secondary);">sitemap.xml</a>
       </div>
     </div>
   </footer>
 
   <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
 
+  <script type="module" src="{rel_root}js/theme-engine.js?{ASSET_VER}"></script>
   <script type="module" src="{rel_root}js/ad-manager.js?{ASSET_VER}"></script>
   <script>
     (() => {{
@@ -316,14 +333,14 @@ def build_road_signs_page(signs):
                 f"""<article class="seo-card rs-filter-card" id="{esc(s['id'])}" data-type="{esc(stype)}" data-search="{esc(search_blob)}">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
     <span class="seo-badge {badge_cls}">{esc(stype)}</span>
-    <span class="tabular-nums" style="font-size:0.78rem; color:#64748B; font-weight:700;">Sign #{s['questionNumber']}</span>
+    <span class="tabular-nums" style="font-size:0.78rem; color:var(--text-muted); font-weight:700;">Sign #{s['questionNumber']}</span>
   </div>
   <div style="text-align:center; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px;">
     <img src="../{esc(s['image'])}" alt="{esc(ans_en)} - Telangana RTA Road Sign" loading="lazy" style="max-height:110px; width:auto; object-fit:contain;">
   </div>
-  <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700; margin-bottom:6px; letter-spacing:0.01em;">{esc(ans_en)}</h3>
-  <p style="font-size:0.84rem; color:#334155; margin-bottom:6px; line-height:1.45;"><strong>తెలుగు:</strong> {esc(ans_te)}<br><strong>हिन्दी:</strong> {esc(ans_hi)}</p>
-  <p style="font-size:0.82rem; color:#475569; line-height:1.45;">{esc(exp_en)}</p>
+  <h3 style="font-size:0.98rem; color:var(--primary-navy); font-weight:700; margin-bottom:6px; letter-spacing:0.01em;">{esc(ans_en)}</h3>
+  <p style="font-size:0.84rem; color:var(--text-primary); margin-bottom:6px; line-height:1.45;"><strong>తెలుగు:</strong> {esc(ans_te)}<br><strong>हिन्दी:</strong> {esc(ans_hi)}</p>
+  <p style="font-size:0.82rem; color:var(--text-secondary); line-height:1.45;">{esc(exp_en)}</p>
 </article>"""
             )
             item_list.append({
@@ -336,8 +353,8 @@ def build_road_signs_page(signs):
 
         sections.append(
             f"""<section id="{stype}" class="rs-section" data-section-type="{esc(stype)}" style="margin-bottom: 32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:4px;">{esc(heading)} ({len(items)})</h2>
-  <p style="color:#475569; font-size:0.92rem; margin-bottom:16px;">{esc(sub)}</p>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:4px;">{esc(heading)} ({len(items)})</h2>
+  <p style="color:var(--text-secondary); font-size:0.92rem; margin-bottom:16px;">{esc(sub)}</p>
   <div class="seo-grid">
     {"".join(cards)}
   </div>
@@ -363,7 +380,7 @@ def build_road_signs_page(signs):
     <span id="rs-match-count" class="spec-pill">{total_cnt} signs</span>
   </div>
 </div>
-<p id="rs-empty-msg" style="display:none; text-align:center; padding:32px; color:#64748B; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:12px;">No road signs matched your filter. Try clearing the search box.</p>
+<p id="rs-empty-msg" style="display:none; text-align:center; padding:32px; color:var(--text-muted); background:var(--card-bg); border:1px solid var(--border-color); border-radius:12px;">No road signs matched your filter. Try clearing the search box.</p>
 """
 
     body_html = (
@@ -475,7 +492,7 @@ def build_question_bank_page(signs, rules, gp):
     <span id="qb-match-count" class="spec-pill">412 Qs</span>
   </div>
 </div>
-<p id="qb-empty-msg" style="display:none; text-align:center; padding:32px; color:#64748B; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:12px;">No questions matched your search filter.</p>
+<p id="qb-empty-msg" style="display:none; text-align:center; padding:32px; color:var(--text-muted); background:var(--card-bg); border:1px solid var(--border-color); border-radius:12px;">No questions matched your search filter.</p>
 """
 
     sections = []
@@ -497,16 +514,16 @@ def build_question_bank_page(signs, rules, gp):
             search_blob = f"{q['id']} {idx} {q_text}".lower()
             cards.append(
                 f"""<article class="qa-card qb-card" id="{esc(q['id'])}" data-cat="{esc(sec_id)}" data-search="{esc(search_blob)}">
-  <div style="font-size:0.78rem; color:#64748B; font-weight:700; margin-bottom:4px;">{esc(q['id'])} • Question #{idx}</div>
-  <h3 class="qb-case-target" data-raw="{esc(q_text)}" style="font-size:1.02rem; color:#0B2545; font-weight:600; line-height:1.48; letter-spacing:0.012em; margin-bottom:8px;">{esc(q_text)}</h3>
+  <div style="font-size:0.78rem; color:var(--text-muted); font-weight:700; margin-bottom:4px;">{esc(q['id'])} • Question #{idx}</div>
+  <h3 class="qb-case-target" data-raw="{esc(q_text)}" style="font-size:1.02rem; color:var(--primary-navy); font-weight:600; line-height:1.48; letter-spacing:0.012em; margin-bottom:8px;">{esc(q_text)}</h3>
   {img_html}
   <ol class="qa-options">{"".join(opts_html)}</ol>
-  <p class="qa-explanation-box" style="font-size:0.86rem; color:#334155; background:#F8FAFC; padding:10px; border-radius:8px; margin-top:8px;"><strong>Explanation:</strong> {esc(exp)}</p>
+  <p class="qa-explanation-box" style="font-size:0.86rem; color:var(--text-primary); background:var(--surface-subtle); padding:10px; border-radius:8px; margin-top:8px;"><strong>Explanation:</strong> {esc(exp)}</p>
 </article>"""
             )
         sections.append(
             f"""<section id="{sec_id}" class="qb-section" data-sec="{esc(sec_id)}" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:14px;">{esc(heading)}</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:14px;">{esc(heading)}</h2>
   {"".join(cards)}
 </section>"""
         )
@@ -626,18 +643,18 @@ def build_rto_guide_page(guide):
     checklist_html = "".join(
         f"""<li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">{esc(c['item']['en'])}</strong>
+    <strong style="color:var(--primary-navy);">{esc(c['item']['en'])}</strong>
     <span class="seo-badge {'badge-mandatory' if c['mandatory'] else 'badge-informatory'}">{'Mandatory' if c['mandatory'] else 'Optional'}</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">{esc(c['desc']['en'])}</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">{esc(c['desc']['en'])}</p>
 </li>"""
         for c in guide["checklist"]
     )
 
     steps_html = "".join(
         f"""<li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step {s['step']}: {esc(s['title']['en'])}</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">{esc(s['detail']['en'])}</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step {s['step']}: {esc(s['title']['en'])}</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">{esc(s['detail']['en'])}</p>
 </li>"""
         for s in guide["steps"]
     )
@@ -645,27 +662,27 @@ def build_rto_guide_page(guide):
     centers_html = "".join(
         f"""<article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">{esc(c['code'])}</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700; margin-bottom:4px;">{esc(c['name']['en'])}</h3>
-  <p style="font-size:0.84rem; color:#134074; font-weight:600; margin-bottom:6px;">Areas: {esc(c['area']['en'])}</p>
-  <p style="font-size:0.84rem; color:#475569; margin-bottom:6px;">{esc(c['address']['en'])}</p>
-  <p style="font-size:0.8rem; color:#047857; font-weight:600;">Hours: {esc(c['hours'])}</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">{esc(c['name']['en'])}</h3>
+  <p style="font-size:0.84rem; color:var(--accent-blue); font-weight:600; margin-bottom:6px;">Areas: {esc(c['area']['en'])}</p>
+  <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:6px;">{esc(c['address']['en'])}</p>
+  <p style="font-size:0.8rem; color:var(--success-green); font-weight:600;">Hours: {esc(c['hours'])}</p>
 </article>"""
         for c in guide["centers"]
     )
 
     fees_html = "".join(
         f"""<tr>
-  <td style="padding:10px; border-bottom:1px solid #E2E8F0; font-weight:600;">{esc(f['category']['en'])}</td>
-  <td style="padding:10px; border-bottom:1px solid #E2E8F0; color:#475569;">{esc(f['breakup']['en'])}</td>
-  <td class="tabular-nums" style="padding:10px; border-bottom:1px solid #E2E8F0; font-weight:800; color:#047857;">{esc(f['amount'])}</td>
+  <td style="padding:10px; border-bottom:1px solid var(--border-color); font-weight:600;">{esc(f['category']['en'])}</td>
+  <td style="padding:10px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">{esc(f['breakup']['en'])}</td>
+  <td class="tabular-nums" style="padding:10px; border-bottom:1px solid var(--border-color); font-weight:800; color:var(--success-green);">{esc(f['amount'])}</td>
 </tr>"""
         for f in guide["feeRules"]["fees"]
     )
 
     tips_html = "".join(
-        f"""<article class="seo-card" style="background:#FFFBEB; border-color:#FDE68A;">
-  <h3 style="font-size:0.98rem; color:#92400E; font-weight:700; margin-bottom:6px;">{esc(tip['title']['en'])}</h3>
-  <p style="font-size:0.88rem; color:#78350F;">{esc(tip['desc']['en'])}</p>
+        f"""<article class="seo-card" style="background:var(--accent-gold-light); border-color:var(--accent-gold);">
+  <h3 style="font-size:0.98rem; color:var(--warning-amber); font-weight:700; margin-bottom:6px;">{esc(tip['title']['en'])}</h3>
+  <p style="font-size:0.88rem; color:var(--text-primary);">{esc(tip['desc']['en'])}</p>
 </article>"""
         for tip in guide["topTips"]
     )
@@ -680,28 +697,28 @@ def build_rto_guide_page(guide):
 </nav>
 
 <section id="sec-docs" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">1. Required Documents Checklist for Telangana LLR Test</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">1. Required Documents Checklist for Telangana LLR Test</h2>
   <ul class="seo-grid" style="padding:0;">{checklist_html}</ul>
 </section>
 
 <section id="sec-steps" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">2. Test-Day 5-Step Walkthrough at Hyderabad RTO</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">2. Test-Day 5-Step Walkthrough at Hyderabad RTO</h2>
   <ol style="padding:0;">{steps_html}</ol>
 </section>
 
 {ad_slot_html("seo_in_content", "leaderboard")}
 
 <section id="sec-centers" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">3. Hyderabad &amp; Telangana RTO Testing Centers Directory</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">3. Hyderabad &amp; Telangana RTO Testing Centers Directory</h2>
   <div class="seo-grid">{centers_html}</div>
 </section>
 
 <section id="sec-fees" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">4. Official LLR Fee Structure, Retest &amp; Validity Rules</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">4. Official LLR Fee Structure, Retest &amp; Validity Rules</h2>
   <div class="seo-card" style="overflow-x:auto;">
     <table style="width:100%; border-collapse:collapse; text-align:left;">
       <thead>
-        <tr style="background:#F8FAFC;">
+        <tr style="background:var(--surface-subtle);">
           <th style="padding:10px; border-bottom:2px solid #E2E8F0;">Vehicle Class</th>
           <th style="padding:10px; border-bottom:2px solid #E2E8F0;">Fee Breakdown</th>
           <th style="padding:10px; border-bottom:2px solid #E2E8F0;">Total Fee</th>
@@ -709,13 +726,13 @@ def build_rto_guide_page(guide):
       </thead>
       <tbody>{fees_html}</tbody>
     </table>
-    <p style="margin-top:12px; font-size:0.9rem; color:#334155;"><strong>Retest Policy:</strong> {esc(guide['feeRules']['retestRule']['en'])}</p>
-    <p style="margin-top:8px; font-size:0.9rem; color:#334155;"><strong>LLR Validity &amp; Permanent DL Rule:</strong> {esc(guide['feeRules']['validityRule']['en'])}</p>
+    <p style="margin-top:12px; font-size:0.9rem; color:var(--text-primary);"><strong>Retest Policy:</strong> {esc(guide['feeRules']['retestRule']['en'])}</p>
+    <p style="margin-top:8px; font-size:0.9rem; color:var(--text-primary);"><strong>LLR Validity &amp; Permanent DL Rule:</strong> {esc(guide['feeRules']['validityRule']['en'])}</p>
   </div>
 </section>
 
 <section id="sec-tips" class="guide-section-anchor">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">5. Top Tips to Pass on Your First Attempt</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">5. Top Tips to Pass on Your First Attempt</h2>
   <div class="seo-grid">{tips_html}</div>
 </section>
 {ad_slot_html("seo_multiplex", "multiplex")}
@@ -765,8 +782,8 @@ def build_cheatsheet_page(cheatsheet, twins, popular):
         f"""<article class="cheatsheet-rule-card">
   <span class="rule-num-badge">{idx}</span>
   <div>
-    <strong style="color:#0B2545; display:block; margin-bottom:4px;">{esc(gr['rule']['en'])}</strong>
-    <p style="font-size:0.85rem; color:#475569; line-height:1.45;"><strong>తెలుగు:</strong> {esc(gr['rule']['te'])}<br><strong>हिन्दी:</strong> {esc(gr['rule']['hi'])}</p>
+    <strong style="color:var(--primary-navy); display:block; margin-bottom:4px;">{esc(gr['rule']['en'])}</strong>
+    <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.45;"><strong>తెలుగు:</strong> {esc(gr['rule']['te'])}<br><strong>हिन्दी:</strong> {esc(gr['rule']['hi'])}</p>
   </div>
 </article>"""
         for idx, gr in enumerate(cheatsheet["goldenRules"], 1)
@@ -775,11 +792,11 @@ def build_cheatsheet_page(cheatsheet, twins, popular):
     hs = popular["handSignals"]
     hs_html = "".join(
         f"""<article class="seo-card" style="display:flex; gap:12px; align-items:center;">
-  <img src="../{esc(item['image'])}" alt="{esc(item['name']['en'])}" loading="lazy" style="width:72px; height:72px; object-fit:contain; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
+  <img src="../{esc(item['image'])}" alt="{esc(item['name']['en'])}" loading="lazy" style="width:72px; height:72px; object-fit:contain; background:var(--surface-subtle); border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">{esc(item['kind'])}</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">{esc(item['name']['en'])}</h3>
-    <p style="font-size:0.82rem; color:#475569;">{esc(item['desc']['en'])}</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">{esc(item['name']['en'])}</h3>
+    <p style="font-size:0.82rem; color:var(--text-secondary);">{esc(item['desc']['en'])}</p>
   </div>
 </article>"""
         for item in hs["items"]
@@ -787,17 +804,17 @@ def build_cheatsheet_page(cheatsheet, twins, popular):
 
     twins_html = "".join(
         f"""<article class="seo-card">
-  <h3 style="font-size:1.05rem; color:#0B2545; font-weight:800; margin-bottom:12px;">{esc(p['title']['en'])}</h3>
+  <h3 style="font-size:1.05rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">{esc(p['title']['en'])}</h3>
   <div class="twins-comparison-grid">
-    <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:10px; border-radius:8px; text-align:center;">
+    <div style="background:var(--surface-subtle); border:1px solid #E2E8F0; padding:10px; border-radius:8px; text-align:center;">
       <img src="../{esc(p['signA']['image'])}" alt="{esc(p['signA']['name']['en'])}" loading="lazy" style="max-height:80px;">
       <strong style="display:block; font-size:0.85rem; margin:6px 0;">{esc(p['signA']['name']['en'])}</strong>
-      <p style="font-size:0.8rem; color:#475569; text-align:left;">{esc(p['signA']['rule']['en'])}</p>
+      <p style="font-size:0.8rem; color:var(--text-secondary); text-align:left;">{esc(p['signA']['rule']['en'])}</p>
     </div>
-    <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:10px; border-radius:8px; text-align:center;">
+    <div style="background:var(--surface-subtle); border:1px solid #E2E8F0; padding:10px; border-radius:8px; text-align:center;">
       <img src="../{esc(p['signB']['image'])}" alt="{esc(p['signB']['name']['en'])}" loading="lazy" style="max-height:80px;">
       <strong style="display:block; font-size:0.85rem; margin:6px 0;">{esc(p['signB']['name']['en'])}</strong>
-      <p style="font-size:0.8rem; color:#475569; text-align:left;">{esc(p['signB']['rule']['en'])}</p>
+      <p style="font-size:0.8rem; color:var(--text-secondary); text-align:left;">{esc(p['signB']['rule']['en'])}</p>
     </div>
   </div>
   <div class="twins-memory-hook"><strong>Memory Hook:</strong> {esc(p['memoryHook']['en'])}</div>
@@ -812,19 +829,19 @@ def build_cheatsheet_page(cheatsheet, twins, popular):
 </div>
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">Top 10 Golden Rules (10-Minute Pre-Exam Revision)</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">Top 10 Golden Rules (10-Minute Pre-Exam Revision)</h2>
   <div class="cheatsheet-rules-grid">{rules_html}</div>
 </section>
 
 {ad_slot_html("seo_in_content", "leaderboard")}
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">{esc(hs['title']['en'])}</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">{esc(hs['title']['en'])}</h2>
   <div class="seo-grid">{hs_html}</div>
 </section>
 
 <section>
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">Tricky Twins: Commonly Confused Road Signs</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">Tricky Twins: Commonly Confused Road Signs</h2>
   <div class="seo-grid" style="grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));">{twins_html}</div>
 </section>
 {ad_slot_html("seo_multiplex", "multiplex")}
@@ -873,8 +890,8 @@ def build_dl_test_guide_page(popular):
 
     slot_html = "".join(
         f"""<li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step {s['step']}: {esc(s['title']['en'])}</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">{esc(s['detail']['en'])}</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step {s['step']}: {esc(s['title']['en'])}</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">{esc(s['detail']['en'])}</p>
 </li>"""
         for s in slot["steps"]
     )
@@ -882,8 +899,8 @@ def build_dl_test_guide_page(popular):
     tracks_html = "".join(
         f"""<article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">{esc(tr['badge'])}</span>
-  <h3 style="font-size:1.05rem; color:#0B2545; font-weight:800; margin-bottom:10px;">{esc(tr['title']['en'])}</h3>
-  <ul style="padding-left:18px; color:#334155; font-size:0.9rem; line-height:1.5;">
+  <h3 style="font-size:1.05rem; color:var(--primary-navy); font-weight:800; margin-bottom:10px;">{esc(tr['title']['en'])}</h3>
+  <ul style="padding-left:18px; color:var(--text-primary); font-size:0.9rem; line-height:1.5;">
     {"".join(f'<li style="margin-bottom:6px;">{esc(pt)}</li>' for pt in tr['points']['en'])}
   </ul>
 </article>"""
@@ -896,22 +913,22 @@ def build_dl_test_guide_page(popular):
 
     body_html = f"""
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">1. {esc(slot['title']['en'])}</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">1. {esc(slot['title']['en'])}</h2>
   <ol style="padding:0;">{slot_html}</ol>
 </section>
 
 {ad_slot_html("seo_in_content", "leaderboard")}
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:8px;">2. {esc(dl['title']['en'])}</h2>
-  <p style="color:#475569; margin-bottom:14px;">{esc(dl['eligibility']['en'])} {esc(dl['automatedTracksNote']['en'])}</p>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:8px;">2. {esc(dl['title']['en'])}</h2>
+  <p style="color:var(--text-secondary); margin-bottom:14px;">{esc(dl['eligibility']['en'])} {esc(dl['automatedTracksNote']['en'])}</p>
   <div class="seo-grid" style="grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));">{tracks_html}</div>
 </section>
 
 <section>
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">3. Documents &amp; Test Vehicle Checklist for DL Track Day</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">3. Documents &amp; Test Vehicle Checklist for DL Track Day</h2>
   <div class="seo-card" style="background:#F0FDF4; border-color:#BBF7D0;">
-    <ul style="padding-left:18px; color:#14532D; font-size:0.94rem; line-height:1.55;">{docs_html}</ul>
+    <ul style="padding-left:18px; color:var(--text-primary); font-size:0.94rem; line-height:1.55;">{docs_html}</ul>
   </div>
 </section>
 {ad_slot_html("seo_multiplex", "multiplex")}
@@ -962,9 +979,9 @@ def build_traffic_fines_page(popular):
 
     rows_html = "".join(
         f"""<tr>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:600; color:#0B2545;">{esc(item['offence']['en'])}</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; font-weight:700; color:#B91C1C;">{esc(item['fine'])}</td>
-  <td style="padding:12px; border-bottom:1px solid #E2E8F0; color:#475569;">{esc(item['section'])}</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:600; color:var(--primary-navy);">{esc(item['offence']['en'])}</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); font-weight:700; color:#B91C1C;">{esc(item['fine'])}</td>
+  <td style="padding:12px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">{esc(item['section'])}</td>
 </tr>"""
         for item in fines["items"]
     )
@@ -974,8 +991,8 @@ def build_traffic_fines_page(popular):
   <img src="../{esc(item['image'])}" alt="{esc(item['name']['en'])}" loading="lazy" style="width:76px; height:76px; object-fit:contain; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:4px; flex-shrink:0;">
   <div>
     <span class="seo-badge badge-informatory" style="margin-bottom:4px;">{esc(item['kind'])}</span>
-    <h3 style="font-size:0.95rem; color:#0B2545; font-weight:700; margin-bottom:4px;">{esc(item['name']['en'])}</h3>
-    <p style="font-size:0.84rem; color:#475569;">{esc(item['desc']['en'])}</p>
+    <h3 style="font-size:0.95rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">{esc(item['name']['en'])}</h3>
+    <p style="font-size:0.84rem; color:var(--text-secondary);">{esc(item['desc']['en'])}</p>
   </div>
 </article>"""
         for item in hs["items"]
@@ -983,12 +1000,12 @@ def build_traffic_fines_page(popular):
 
     body_html = f"""
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">{esc(fines['title']['en'])}</h2>
-  <p style="color:#475569; margin-bottom:12px;">{esc(fines['subtitle']['en'])} Digital Driving Licence &amp; RC stored in <strong>DigiLocker</strong> or <strong>mParivahan</strong> are legally valid across Telangana and India.</p>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">{esc(fines['title']['en'])}</h2>
+  <p style="color:var(--text-secondary); margin-bottom:12px;">{esc(fines['subtitle']['en'])} Digital Driving Licence &amp; RC stored in <strong>DigiLocker</strong> or <strong>mParivahan</strong> are legally valid across Telangana and India.</p>
   <div class="seo-card" style="overflow-x:auto;">
     <table style="width:100%; border-collapse:collapse; text-align:left;">
       <thead>
-        <tr style="background:#F8FAFC;">
+        <tr style="background:var(--surface-subtle);">
           <th style="padding:12px; border-bottom:2px solid #E2E8F0;">Traffic Offence</th>
           <th style="padding:12px; border-bottom:2px solid #E2E8F0;">Penalty / Fine</th>
           <th style="padding:12px; border-bottom:2px solid #E2E8F0;">MV Act Section</th>
@@ -1002,7 +1019,7 @@ def build_traffic_fines_page(popular):
 {ad_slot_html("seo_in_content", "leaderboard")}
 
 <section>
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">{esc(hs['title']['en'])}</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">{esc(hs['title']['en'])}</h2>
   <div class="seo-grid">{hs_html}</div>
 </section>
 {ad_slot_html("seo_multiplex", "multiplex")}
@@ -1050,8 +1067,8 @@ def build_district_rto_codes_page(popular):
         f"""<article class="seo-card rto-code-card" data-search="{esc((d['code'] + ' ts-' + d['code'] + ' tg-' + d['code'] + ' ' + d['district']).lower())}" style="display:flex; align-items:center; gap:12px;">
   <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-{esc(d['code'])}</span>
   <div>
-    <h3 style="font-size:0.98rem; color:#0B2545; font-weight:700;">{esc(d['district'])}</h3>
-    <p style="font-size:0.78rem; color:#64748B;">Telangana RTA Office Code {esc(d['code'])}</p>
+    <h3 style="font-size:0.98rem; color:var(--primary-navy); font-weight:700;">{esc(d['district'])}</h3>
+    <p style="font-size:0.78rem; color:var(--text-muted);">Telangana RTA Office Code {esc(d['code'])}</p>
   </div>
 </article>"""
         for d in popular["districtRtoCodes"]
@@ -1061,13 +1078,13 @@ def build_district_rto_codes_page(popular):
 <section>
   <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
     <div>
-      <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:6px;">Complete District-Wise Telangana RTA Office Codes (01 to 38)</h2>
-      <p style="color:#475569; max-width:68ch;">Telangana transitioned vehicle registration prefixes from <strong>TS</strong> to <strong>TG</strong>, while keeping the exact same district numerical codes (01–38). All STALL Learner's Licence tests follow the same 412-question bank.</p>
+      <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:6px;">Complete District-Wise Telangana RTA Office Codes (01 to 38)</h2>
+      <p style="color:var(--text-secondary); max-width:68ch;">Telangana transitioned vehicle registration prefixes from <strong>TS</strong> to <strong>TG</strong>, while keeping the exact same district numerical codes (01–38). All STALL Learner's Licence tests follow the same 412-question bank.</p>
     </div>
     <input type="text" id="rto-codes-search" placeholder="Search district or code (e.g. Warangal, 07)..." style="padding:9px 14px; border:1px solid #CBD5E1; border-radius:8px; font-size:0.88rem; min-width:250px;">
   </div>
   <div class="seo-grid">{cards}</div>
-  <p id="rto-codes-empty" style="display:none; text-align:center; padding:24px; color:#64748B;">No Telangana district matched your search.</p>
+  <p id="rto-codes-empty" style="display:none; text-align:center; padding:24px; color:var(--text-muted);">No Telangana district matched your search.</p>
 </section>
 {ad_slot_html("seo_multiplex", "multiplex")}
 """
@@ -1139,21 +1156,21 @@ def build_localized_page(lang_code, guide, cheatsheet, signs):
     ]
 
     rules_list = "".join(
-        f'<article class="cheatsheet-rule-card"><span class="rule-num-badge">{idx}</span><p style="font-size:0.94rem; color:#0F172A; line-height:1.5;">{esc(gr["rule"][lang_code])}</p></article>'
+        f'<article class="cheatsheet-rule-card"><span class="rule-num-badge">{idx}</span><p style="font-size:0.94rem; color:var(--text-primary); line-height:1.5;">{esc(gr["rule"][lang_code])}</p></article>'
         for idx, gr in enumerate(cheatsheet["goldenRules"], 1)
     )
     centers_list = "".join(
         f"""<article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:6px;">{esc(c['code'])}</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700;">{esc(c['name'][lang_code])}</h3>
-  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">{esc(c['address'][lang_code])}</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700;">{esc(c['name'][lang_code])}</h3>
+  <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:4px;">{esc(c['address'][lang_code])}</p>
 </article>"""
         for c in guide["centers"]
     )
     sample_signs = "".join(
         f"""<article class="seo-card" style="text-align:center;">
   <img src="../{esc(s['image'])}" alt="{esc(s['options'][lang_code][s['answerIndex']])}" loading="lazy" style="max-height:90px; margin-bottom:8px;">
-  <strong style="display:block; color:#0B2545; font-size:0.92rem;">{esc(clean_text(s['options'][lang_code][s['answerIndex']]))}</strong>
+  <strong style="display:block; color:var(--primary-navy); font-size:0.92rem;">{esc(clean_text(s['options'][lang_code][s['answerIndex']]))}</strong>
 </article>"""
         for s in signs[:12]
     )
@@ -1199,24 +1216,24 @@ def build_localized_page(lang_code, guide, cheatsheet, signs):
 
     body_html = f"""
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">{rules_h2}</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">{rules_h2}</h2>
   <div class="cheatsheet-rules-grid">{rules_list}</div>
 </section>
 
 {ad_slot_html("seo_in_content", "leaderboard")}
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">{signs_h2}</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">{signs_h2}</h2>
   <div class="seo-grid">{sample_signs}</div>
 </section>
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">{centers_h2}</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">{centers_h2}</h2>
   <div class="seo-grid">{centers_list}</div>
 </section>
 
 <section>
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">FAQ</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">FAQ</h2>
   <div class="footer-faq-grid">{faq_html}</div>
 </section>
 {ad_slot_html("seo_multiplex", "multiplex")}
@@ -1267,36 +1284,36 @@ def build_localized_page(lang_code, guide, cheatsheet, signs):
 def build_privacy_policy_page():
     body_html = f"""
 <article class="card-surface" style="max-width:860px; margin:0 auto;">
-  <p style="font-size:0.84rem; color:#64748B; margin-bottom:16px;">Last updated: {TODAY} • Domain: <strong>llr.sarvacapital.in</strong></p>
+  <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:16px;">Last updated: {TODAY} • Domain: <strong>llr.sarvacapital.in</strong></p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">1. Overview &amp; Zero-Account Local Practice</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:12px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">1. Overview &amp; Zero-Account Local Practice</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
     <strong>Telangana RTA Learner's Licence Practice</strong> (operated by Sarva Capital at <code>llr.sarvacapital.in</code>) is a free public educational simulator. We do not require registration, logins, phone numbers, Aadhaar details, or personal profiles to use any practice mode, mock test, or study guide.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">2. Browser Local Storage &amp; Cross-Device QR Sync</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:12px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">2. Browser Local Storage &amp; Cross-Device QR Sync</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
     Your quiz streaks, readiness progress, language preference (English, Telugu, or Hindi), sound settings, and RTO document checklist ticks are stored exclusively inside your own browser's <code>localStorage</code>. None of your study scores are uploaded to any backend database. When you use the optional QR Cross-Device Sync feature, your compact study progress is encoded directly inside the sync URL / JSON export file processed locally in your browser.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">3. Google AdSense &amp; Third-Party Advertising Cookies</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:10px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">3. Google AdSense &amp; Third-Party Advertising Cookies</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:10px;">
     To keep this learning platform 100% free for students and learner drivers across Telangana, we plan to display non-intrusive advertisements served by <strong>Google AdSense</strong> on study and post-exam summary screens (never inside the active 30-second timed mock test).
   </p>
-  <ul style="padding-left:20px; color:#334155; line-height:1.65; margin-bottom:12px;">
+  <ul style="padding-left:20px; color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
     <li style="margin-bottom:6px;">Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites.</li>
     <li style="margin-bottom:6px;">Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to <code>llr.sarvacapital.in</code> and/or other sites on the Internet.</li>
-    <li style="margin-bottom:6px;">Users may opt out of personalized advertising by visiting <a href="https://adssettings.google.com/" target="_blank" rel="noopener" style="color:#134074; font-weight:600;">Google Ads Settings</a> or opt out of third-party vendor cookie use via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener" style="color:#134074; font-weight:600;">aboutads.info</a>.</li>
+    <li style="margin-bottom:6px;">Users may opt out of personalized advertising by visiting <a href="https://adssettings.google.com/" target="_blank" rel="noopener" style="color:var(--accent-blue); font-weight:600;">Google Ads Settings</a> or opt out of third-party vendor cookie use via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener" style="color:var(--accent-blue); font-weight:600;">aboutads.info</a>.</li>
   </ul>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">4. External Official Links</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:12px;">
-    We link to official government portals such as <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:#134074; font-weight:600;">transport.telangana.gov.in</a> for application filing, slot booking, and DigiLocker/mParivahan verification. External sites operate under their own privacy policies.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">4. External Official Links</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
+    We link to official government portals such as <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:var(--accent-blue); font-weight:600;">transport.telangana.gov.in</a> for application filing, slot booking, and DigiLocker/mParivahan verification. External sites operate under their own privacy policies.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">5. Contact Us</h2>
-  <p style="color:#334155; line-height:1.65;">
-    For privacy questions, ad inquiries, or content corrections, please write to <a href="mailto:{CONTACT_EMAIL}" style="color:#134074; font-weight:700;">{CONTACT_EMAIL}</a>.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">5. Contact Us</h2>
+  <p style="color:var(--text-primary); line-height:1.65;">
+    For privacy questions, ad inquiries, or content corrections, please write to <a href="mailto:{CONTACT_EMAIL}" style="color:var(--accent-blue); font-weight:700;">{CONTACT_EMAIL}</a>.
   </p>
 </article>
 """
@@ -1331,31 +1348,31 @@ def build_privacy_policy_page():
 def build_about_page():
     body_html = f"""
 <article class="card-surface" style="max-width:860px; margin:0 auto;">
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin-bottom:8px;">1. Mission &amp; Educational Purpose</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:14px;">
-    <strong>Telangana RTA Learner's Licence Practice</strong> (<a href="{BASE_URL}/" style="color:#134074; font-weight:600;">llr.sarvacapital.in</a>) is a free civic-education web application built by <strong>Sarva Capital</strong> to help learner drivers across Hyderabad and all 33+ districts of Telangana prepare thoroughly for the computerized <strong>STALL (Screen Test Aid for Learner Licence)</strong> exam and build lifelong road safety habits.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin-bottom:8px;">1. Mission &amp; Educational Purpose</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:14px;">
+    <strong>Telangana RTA Learner's Licence Practice</strong> (<a href="{BASE_URL}/" style="color:var(--accent-blue); font-weight:600;">llr.sarvacapital.in</a>) is a free civic-education web application built by <strong>Sarva Capital</strong> to help learner drivers across Hyderabad and all 33+ districts of Telangana prepare thoroughly for the computerized <strong>STALL (Screen Test Aid for Learner Licence)</strong> exam and build lifelong road safety habits.
   </p>
 
-  <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:10px; padding:16px; margin-bottom:18px;">
-    <h2 style="font-size:1.05rem; color:#92400E; font-weight:800; margin-bottom:6px;">2. Non-Government Affiliation Disclaimer</h2>
-    <p style="color:#78350F; line-height:1.6; font-size:0.92rem; margin:0;">
-      <strong>Independent Practice Tool:</strong> This website is NOT an official website of, nor affiliated with, the Government of Telangana Transport Department (RTA) or Parivahan Sarathi. All official Learner's Licence applications, fee payments, slot bookings, and digital LLR downloads must be completed exclusively on the official government portal: <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:#92400E; font-weight:700; text-decoration:underline;">transport.telangana.gov.in</a>.
+  <div style="background:var(--accent-gold-light); border:1px solid var(--accent-gold); border-radius:10px; padding:16px; margin-bottom:18px;">
+    <h2 style="font-size:1.05rem; color:var(--warning-amber); font-weight:800; margin-bottom:6px;">2. Non-Government Affiliation Disclaimer</h2>
+    <p style="color:var(--text-primary); line-height:1.6; font-size:0.92rem; margin:0;">
+      <strong>Independent Practice Tool:</strong> This website is NOT an official website of, nor affiliated with, the Government of Telangana Transport Department (RTA) or Parivahan Sarathi. All official Learner's Licence applications, fee payments, slot bookings, and digital LLR downloads must be completed exclusively on the official government portal: <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:var(--warning-amber); font-weight:700; text-decoration:underline;">transport.telangana.gov.in</a>.
     </p>
   </div>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">3. Official Curriculum &amp; Source Attribution</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:14px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">3. Official Curriculum &amp; Source Attribution</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:14px;">
     The 412 questions (94 Road Signs, 159 Rules of the Road Regulations, and 159 General Driving Principles), fixed option sequence, 8-8-4 category quota, and 30-second countdown logic are derived directly from the publicly published Telangana Transport Department STALL curriculum under the Motor Vehicles Act, 1988.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">4. Terms of Use</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:14px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">4. Terms of Use</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:14px;">
     While we carefully verify all translations, answer keys, RTO office addresses, and Motor Vehicles Act fine schedules, statutory rules and RTO fees may change over time. Always verify current fee schedules and slot guidelines directly on official government notices.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">5. Contact &amp; Feedback</h2>
-  <p style="color:#334155; line-height:1.65;">
-    Found a typo in Telugu/Hindi text, an outdated RTO office detail, or want to share feedback? Reach our team at <a href="mailto:{CONTACT_EMAIL}" style="color:#134074; font-weight:700;">{CONTACT_EMAIL}</a>.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">5. Contact &amp; Feedback</h2>
+  <p style="color:var(--text-primary); line-height:1.65;">
+    Found a typo in Telugu/Hindi text, an outdated RTO office detail, or want to share feedback? Reach our team at <a href="mailto:{CONTACT_EMAIL}" style="color:var(--accent-blue); font-weight:700;">{CONTACT_EMAIL}</a>.
   </p>
 </article>
 """

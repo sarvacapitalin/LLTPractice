@@ -10,6 +10,7 @@ import { flashcards } from "./flashcards-engine.js";
 import { sync } from "./sync-engine.js";
 import { formatDisplayText, cleanPdfText, svgIcon } from "./text-formatter.js";
 import { adManager } from "./ad-manager.js";
+import { initTheme } from "./theme-engine.js";
 
 let allQuestions = [];
 let roadSigns = [];
@@ -36,6 +37,7 @@ function showToast(message) {
 
 // Initialize on DOM load
 window.addEventListener("DOMContentLoaded", async () => {
+  initTheme();
   await initI18n();
   setupLanguageSelector();
   setupSoundToggle();
@@ -979,10 +981,10 @@ function renderExamResultReview(state, lang, examEngine) {
               let suffixTag = "";
               if (optIdx === correctIdx) {
                 optClass = "official-correct";
-                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #166534; font-weight: 700;">${isCorrect ? "✓ Your Choice (Correct)" : "✓ Correct Answer"}</span>`;
+                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: var(--success-green); font-weight: 700;">${isCorrect ? "✓ Your Choice (Correct)" : "✓ Correct Answer"}</span>`;
               } else if (optIdx === userChoice && !isCorrect) {
                 optClass = "user-chosen-wrong";
-                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: #991B1B; font-weight: 700;">✗ Your Choice</span>`;
+                suffixTag = `<span style="margin-left: auto; font-size: 0.78rem; color: var(--danger-red); font-weight: 700;">✗ Your Choice</span>`;
               }
               return `
                 <div class="review-opt ${optClass}">
@@ -1158,7 +1160,7 @@ function renderPracticeCard(q) {
   const isAnswered = lastAns !== null;
   const { index: posIndex, total: posTotal } = practice.getSelectedPosition();
 
-  let statusBadge = `<span style="background: #F1F5F9; color: #475569; padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">UNSEEN</span>`;
+  let statusBadge = `<span style="background: var(--surface-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">UNSEEN</span>`;
   if (qState.status === "mastered") {
     statusBadge = `<span style="background: #DCFCE7; color: #166534; padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">MASTERED (Streak: ${qState.streak})</span>`;
   } else if (qState.status === "probation") {
@@ -1220,7 +1222,7 @@ function renderPracticeCard(q) {
       </label>
     </div>
 
-    <div id="practice-explanation-box" style="display: ${expDisplay}; margin-top: 14px; background: #EFF6FF; border-left: 4px solid var(--secondary-blue); padding: 12px 14px; border-radius: 6px; font-size: 0.9rem; color: #1E293B;">
+    <div id="practice-explanation-box" style="display: ${expDisplay}; margin-top: 14px; background: var(--surface-subtle); border-left: 4px solid var(--accent-blue); padding: 12px 14px; border-radius: 6px; font-size: 0.9rem; color: var(--text-primary);">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;">
         <div style="line-height: 1.5;"><strong>Official Rule:</strong> ${expText}</div>
         <button type="button" id="btn-practice-retry-q" class="btn-secondary-light" style="padding: 4px 10px; font-size: 0.76rem; min-height: 30px; flex-shrink: 0;">Re-try</button>
@@ -1389,7 +1391,7 @@ function initFlashcardsUI() {
         emptyView.style.display = "flex";
         emptyView.innerHTML = `
           <div style="font-size: 2.6rem;">✓</div>
-          <h3 style="font-size: 1.2rem; color: #166534; font-weight: 800; margin: 0;">All Signs in this Category Mastered!</h3>
+          <h3 style="font-size: 1.2rem; color: var(--success-green); font-weight: 800; margin: 0;">All Signs in this Category Mastered!</h3>
           <p style="font-size: 0.9rem; color: #475569; margin: 0; max-width: 36ch;">Select "All 94 Signs" or another category above to keep reviewing.</p>
         `;
       }
@@ -1438,9 +1440,9 @@ function initFlashcardsUI() {
         masteryPill.style.borderColor = "#FCD34D";
       } else {
         masteryPill.textContent = "UNSEEN";
-        masteryPill.style.background = "#F1F5F9";
-        masteryPill.style.color = "#475569";
-        masteryPill.style.borderColor = "#CBD5E1";
+        masteryPill.style.background = "var(--surface-subtle)";
+        masteryPill.style.color = "var(--text-secondary)";
+        masteryPill.style.borderColor = "var(--border-strong)";
       }
     }
 
@@ -1596,7 +1598,7 @@ function renderRtoGuide() {
         : lang === "te" ? "ఐచ్ఛికం" : lang === "hi" ? "वैकल्पिक" : "Optional";
 
       return `
-      <label style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; background: ${isChecked ? "#F0FDF4" : "#FFFFFF"}; border: 1px solid ${isChecked ? "#86EFAC" : "var(--border-color)"}; border-radius: var(--radius-sm); cursor: pointer; transition: all 0.16s ease;">
+      <label style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; background: ${isChecked ? "var(--success-bg)" : "var(--card-bg)"}; border: 1px solid ${isChecked ? "var(--success-green)" : "var(--border-color)"}; border-radius: var(--radius-sm); cursor: pointer; transition: all 0.16s ease;">
         <input type="checkbox" class="rto-check-item" data-id="${item.id}" ${isChecked ? "checked" : ""} style="width: 19px; height: 19px; margin-top: 2px; accent-color: var(--success-green); cursor: pointer;">
         <div style="flex: 1;">
           <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 4px;">
@@ -1635,11 +1637,11 @@ function renderRtoGuide() {
       <div class="seo-card" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <span style="background: var(--primary-navy); color: #F3CA40; font-size: 0.75rem; font-weight: 800; padding: 3px 9px; border-radius: 6px;">${center.code}</span>
+            <span style="background: #0B2545; color: #F3CA40; font-size: 0.75rem; font-weight: 800; padding: 3px 9px; border-radius: 6px;">${center.code}</span>
             <span style="font-size: 0.74rem; color: var(--success-green); font-weight: 700;">${center.hours}</span>
           </div>
           <h4 style="font-size: 0.98rem; color: var(--primary-navy); font-weight: 700; margin-bottom: 4px;">${name}</h4>
-          <p style="font-size: 0.82rem; color: var(--secondary-blue); font-weight: 600; margin-bottom: 6px;">${area}</p>
+          <p style="font-size: 0.82rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 6px;">${area}</p>
           <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.42; margin: 0;">${address}</p>
         </div>
       </div>
@@ -1653,12 +1655,12 @@ function renderRtoGuide() {
       const cat = (f.category && f.category[lang]) || f.category.en || "";
       const breakup = (f.breakup && f.breakup[lang]) || f.breakup.en || "";
       return `
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #FFFFFF; border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
         <div>
           <strong style="display: block; font-size: 0.9rem; color: var(--text-primary);">${cat}</strong>
           <span style="font-size: 0.79rem; color: var(--text-muted);">${breakup}</span>
         </div>
-        <span class="tabular-nums" style="font-size: 1.15rem; font-weight: 800; color: #047857;">${f.amount}</span>
+        <span class="tabular-nums" style="font-size: 1.15rem; font-weight: 800; color: var(--success-green);">${f.amount}</span>
       </div>
     `;
     })
@@ -1672,9 +1674,9 @@ function renderRtoGuide() {
       const tipTitle = (tip.title && tip.title[lang]) || tip.title.en || "";
       const tipDesc = (tip.desc && tip.desc[lang]) || tip.desc.en || "";
       return `
-      <div style="background: var(--accent-gold-light); border: 1px solid #FDE68A; border-radius: var(--radius-md); padding: 14px 16px;">
-        <h4 style="font-size: 0.94rem; color: #92400E; font-weight: 800; margin-bottom: 5px;">${tipTitle}</h4>
-        <p style="font-size: 0.84rem; color: #78350F; line-height: 1.45; margin: 0;">${tipDesc}</p>
+      <div style="background: var(--accent-gold-light); border: 1px solid rgba(250, 204, 21, 0.45); border-radius: var(--radius-md); padding: 14px 16px;">
+        <h4 style="font-size: 0.94rem; color: var(--warning-amber); font-weight: 800; margin-bottom: 5px;">${tipTitle}</h4>
+        <p style="font-size: 0.84rem; color: var(--text-primary); line-height: 1.45; margin: 0;">${tipDesc}</p>
       </div>
     `;
     })
@@ -1722,7 +1724,7 @@ function renderRtoGuide() {
         <h3 style="font-size: 1.12rem; color: var(--primary-navy); font-weight: 800;">
           ${lang === "te" ? "హైదరాబాద్ RTO కార్యాలయాలు & కేంద్రాలు" : lang === "hi" ? "हैदराबाद आरटीओ केंद्र" : "Hyderabad RTO Testing Centers Directory"}
         </h3>
-        <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="font-size: 0.82rem; color: var(--secondary-blue); font-weight: 700;">transport.telangana.gov.in ↗</a>
+        <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="font-size: 0.82rem; color: var(--accent-blue); font-weight: 700;">transport.telangana.gov.in ↗</a>
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px;">${centersHtml}</div>
     </div>
@@ -1740,19 +1742,19 @@ function renderRtoGuide() {
           ${lang === "te" ? "అధికారిక ఫీజుల వివరాలు" : lang === "hi" ? "आधिकारिक शुल्क" : "Official Government Fees"}
         </h3>
         <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;">${feesList}</div>
-        <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45; margin: 0; background: #FFFFFF; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+        <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45; margin: 0; background: var(--card-bg); padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
           <strong>${lang === "te" ? "రీ-టెస్ట్ నిబంధన:" : lang === "hi" ? "पुनः परीक्षा नियम:" : "Retest Policy:"}</strong> ${retestText}
         </p>
       </div>
 
-      <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: var(--radius-md); padding: 18px;">
-        <h3 style="font-size: 1.05rem; color: #166534; font-weight: 800; margin-bottom: 12px;">
+      <div style="background: var(--success-bg); border: 1px solid var(--success-green); border-radius: var(--radius-md); padding: 18px;">
+        <h3 style="font-size: 1.05rem; color: var(--success-green); font-weight: 800; margin-bottom: 12px;">
           ${lang === "te" ? "LLR చెల్లుబాటు & తదుపరి ప్రక్రియ" : lang === "hi" ? "वैधता और स्थायी लाइसेंस" : "LLR Validity & Next Steps"}
         </h3>
-        <div style="font-size: 0.88rem; color: #14532D; line-height: 1.5; margin-bottom: 12px;">${validityText}</div>
-        <div style="background: #FFFFFF; border: 1px solid #86EFAC; border-radius: var(--radius-sm); padding: 12px;">
-          <strong style="display: block; font-size: 0.85rem; color: #166534; margin-bottom: 4px;">30-Day Permanent DL Rule:</strong>
-          <span style="font-size: 0.82rem; color: #15803D;">Practice driving with an 'L' board sticker and an accompanying permanent DL holder. Book your permanent Driving Test track slot anytime between day 31 and day 180.</span>
+        <div style="font-size: 0.88rem; color: var(--text-primary); line-height: 1.5; margin-bottom: 12px;">${validityText}</div>
+        <div style="background: var(--card-bg); border: 1px solid var(--success-green); border-radius: var(--radius-sm); padding: 12px;">
+          <strong style="display: block; font-size: 0.85rem; color: var(--success-green); margin-bottom: 4px;">30-Day Permanent DL Rule:</strong>
+          <span style="font-size: 0.82rem; color: var(--text-secondary);">Practice driving with an 'L' board sticker and an accompanying permanent DL holder. Book your permanent Driving Test track slot anytime between day 31 and day 180.</span>
         </div>
       </div>
     </div>
@@ -1805,8 +1807,8 @@ function renderRtoGuide() {
       const strong = label ? label.querySelector("strong") : null;
       if (strong) strong.style.textDecoration = e.target.checked ? "line-through" : "none";
       if (label) {
-        label.style.background = e.target.checked ? "#F0FDF4" : "#FFFFFF";
-        label.style.borderColor = e.target.checked ? "#86EFAC" : "var(--border-color)";
+        label.style.background = e.target.checked ? "var(--success-bg)" : "var(--card-bg)";
+        label.style.borderColor = e.target.checked ? "var(--success-green)" : "var(--border-color)";
       }
       const nextCount = checklistItems.filter(item => !!current[item.id]).length;
       const pill = document.getElementById("rto-checklist-progress");
@@ -1828,7 +1830,7 @@ function renderPopularGuidesSections(lang) {
     .map(
       s => `
     <div style="background: var(--surface-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 14px;">
-      <strong style="display: block; color: var(--secondary-blue); font-size: 0.94rem; margin-bottom: 4px;">
+      <strong style="display: block; color: var(--accent-blue); font-size: 0.94rem; margin-bottom: 4px;">
         ${s.step}. ${(s.title && s.title[lang]) || s.title.en}
       </strong>
       <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.45; margin: 0;">
@@ -1863,9 +1865,9 @@ function renderPopularGuidesSections(lang) {
     .map(
       item => `
     <tr>
-      <td style="padding: 10px 12px; border-bottom: 1px solid #E2E8F0; font-size: 0.86rem; color: var(--text-primary); font-weight: 600;">${item.offence[lang] || item.offence.en}</td>
-      <td style="padding: 10px 12px; border-bottom: 1px solid #E2E8F0; font-size: 0.86rem; color: #B91C1C; font-weight: 700;">${item.fine}</td>
-      <td style="padding: 10px 12px; border-bottom: 1px solid #E2E8F0; font-size: 0.78rem; color: var(--text-muted);">${item.section}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid var(--border-color); font-size: 0.86rem; color: var(--text-primary); font-weight: 600;">${item.offence[lang] || item.offence.en}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid var(--border-color); font-size: 0.86rem; color: var(--danger-red); font-weight: 700;">${item.fine}</td>
+      <td style="padding: 10px 12px; border-bottom: 1px solid var(--border-color); font-size: 0.78rem; color: var(--text-muted);">${item.section}</td>
     </tr>
   `
     )
@@ -1876,7 +1878,7 @@ function renderPopularGuidesSections(lang) {
       const searchStr = `${d.code} ts-${d.code} tg-${d.code} ${d.district}`.toLowerCase();
       return `
       <div class="rto-district-chip" data-search="${searchStr}" style="display: flex; align-items: center; gap: 10px; background: var(--surface-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 9px 12px;">
-        <span class="tabular-nums" style="background: var(--primary-navy); color: #F3CA40; font-size: 0.74rem; font-weight: 800; padding: 3px 8px; border-radius: 5px; flex-shrink: 0;">TS / TG-${d.code}</span>
+        <span class="tabular-nums" style="background: #0B2545; color: #F3CA40; font-size: 0.74rem; font-weight: 800; padding: 3px 8px; border-radius: 5px; flex-shrink: 0;">TS / TG-${d.code}</span>
         <span style="font-size: 0.84rem; color: var(--text-primary); font-weight: 600;">${d.district}</span>
       </div>
     `;
@@ -1892,28 +1894,28 @@ function renderPopularGuidesSections(lang) {
     <div id="guide-sec-dl" class="guide-section-anchor" style="border-top: 2px solid var(--border-color); padding-top: 26px; margin-bottom: 32px;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
         <h3 style="font-size: 1.12rem; color: var(--primary-navy); font-weight: 800; margin: 0;">${dlTitle}</h3>
-        <a href="dl-test-guide/" style="font-size: 0.82rem; color: var(--secondary-blue); font-weight: 700;">Full DL Track Guide ↗</a>
+        <a href="dl-test-guide/" style="font-size: 0.82rem; color: var(--accent-blue); font-weight: 700;">Full DL Track Guide ↗</a>
       </div>
       <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;">${dlSub} <strong>${dlElig}</strong></p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 14px; margin-bottom: 14px;">${dlTracksHtml}</div>
-      <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: var(--radius-md); padding: 14px;">
-        <strong style="display: block; font-size: 0.9rem; color: #166534; margin-bottom: 6px;">${lang === "te" ? "DL ట్రాక్ టెస్ట్‌కు కావలసిన పత్రాలు" : lang === "hi" ? "DL ट्रैक टेस्ट के लिए आवश्यक दस्तावेज़" : "Documents & Vehicle Needed at DL Track"}</strong>
-        <ul style="padding-left: 18px; font-size: 0.84rem; color: #14532D; margin: 0;">${dlDocsHtml}</ul>
+      <div style="background: var(--success-bg); border: 1px solid var(--success-green); border-radius: var(--radius-md); padding: 14px;">
+        <strong style="display: block; font-size: 0.9rem; color: var(--success-green); margin-bottom: 6px;">${lang === "te" ? "DL ట్రాక్ టెస్ట్‌కు కావలసిన పత్రాలు" : lang === "hi" ? "DL ट्रैक टेस्ट के लिए आवश्यक दस्तावेज़" : "Documents & Vehicle Needed at DL Track"}</strong>
+        <ul style="padding-left: 18px; font-size: 0.84rem; color: var(--text-primary); margin: 0;">${dlDocsHtml}</ul>
       </div>
     </div>
 
     <div id="guide-sec-fines" class="guide-section-anchor" style="border-top: 2px solid var(--border-color); padding-top: 26px; margin-bottom: 32px;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
         <h3 style="font-size: 1.12rem; color: var(--primary-navy); font-weight: 800; margin: 0;">${finesTitle}</h3>
-        <a href="traffic-fines/" style="font-size: 0.82rem; color: var(--secondary-blue); font-weight: 700;">Traffic Fines &amp; Hand Signals Page ↗</a>
+        <a href="traffic-fines/" style="font-size: 0.82rem; color: var(--accent-blue); font-weight: 700;">Traffic Fines &amp; Hand Signals Page ↗</a>
       </div>
       <div style="overflow-x: auto; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
-        <table style="width: 100%; border-collapse: collapse; text-align: left; background: #FFFFFF;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; background: var(--card-bg);">
           <thead>
             <tr style="background: var(--surface-subtle);">
-              <th style="padding: 10px 12px; border-bottom: 2px solid #E2E8F0; font-size: 0.84rem;">Violation</th>
-              <th style="padding: 10px 12px; border-bottom: 2px solid #E2E8F0; font-size: 0.84rem;">Statutory Fine / Penalty</th>
-              <th style="padding: 10px 12px; border-bottom: 2px solid #E2E8F0; font-size: 0.84rem;">MV Act</th>
+              <th style="padding: 10px 12px; border-bottom: 2px solid var(--border-color); font-size: 0.84rem;">Violation</th>
+              <th style="padding: 10px 12px; border-bottom: 2px solid var(--border-color); font-size: 0.84rem;">Statutory Fine / Penalty</th>
+              <th style="padding: 10px 12px; border-bottom: 2px solid var(--border-color); font-size: 0.84rem;">MV Act</th>
             </tr>
           </thead>
           <tbody>${finesRowsHtml}</tbody>

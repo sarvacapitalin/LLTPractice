@@ -89,7 +89,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=22">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem("TS_LLR_THEME") || "system";
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var resolved = pref === "system" ? (dark ? "dark" : "light") : pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.style.colorScheme = resolved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../css/styles.css?v=24">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -112,6 +124,10 @@
           <a href="../te/" class="header-lang-link">తెలుగు</a>
           <a href="../hi/" class="header-lang-link">हिन्दी</a>
         </div>
+        <button type="button" class="control-btn theme-toggle-btn" id="btn-theme-toggle" title="Theme: Auto (matches system). Click to switch to Light" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Auto</span>
+        </button>
         <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
           Launch STALL Simulator
         </a>
@@ -142,8 +158,8 @@
       <span>DL Track Test Guide</span>
     </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Telangana Permanent Driving Licence (DL) Track Test &amp; Slot Booking Guide</h1>
-      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Complete Telangana RTA Permanent Driving Licence guide: Two-Wheeler 8-Track &amp; Car H-Track rules, automated sensor tracks (Kondapur, Uppal, Medchal), slot booking, and DigiLocker LLR download.</p>
+      <h1 style="font-size: 1.6rem; color: var(--primary-navy); font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Telangana Permanent Driving Licence (DL) Track Test &amp; Slot Booking Guide</h1>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Complete Telangana RTA Permanent Driving Licence guide: Two-Wheeler 8-Track &amp; Car H-Track rules, automated sensor tracks (Kondapur, Uppal, Medchal), slot booking, and DigiLocker LLR download.</p>
       
       <div class="seo-cta-row">
         <a href="../" class="seo-cta-primary">Take Official 20-Question STALL Mock Test</a>
@@ -152,16 +168,16 @@
     </section>
     
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">1. Telangana RTA Online Application, Slot Booking &amp; Digital LLR Download</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">1. Telangana RTA Online Application, Slot Booking &amp; Digital LLR Download</h2>
   <ol style="padding:0;"><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 1: Apply Online on Telangana Transport Portal</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">Visit transport.telangana.gov.in -&gt; Online Services -&gt; Driving Licence -&gt; Fresh Learner&#x27;s Licence (LLR). Verify with Aadhaar OTP, choose vehicle classes (MCWG / LMV), and submit Form 2 &amp; self-declaration Form 1.</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 1: Apply Online on Telangana Transport Portal</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">Visit transport.telangana.gov.in -&gt; Online Services -&gt; Driving Licence -&gt; Fresh Learner&#x27;s Licence (LLR). Verify with Aadhaar OTP, choose vehicle classes (MCWG / LMV), and submit Form 2 &amp; self-declaration Form 1.</p>
 </li><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 2: Book Your STALL Test Slot &amp; Pay Fee</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">Select your local RTA office, pick an available green date/time slot, pay ₹200 (1 class) or ₹350 (2 classes) online, and print Form 2 + Slot Booking Slip.</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 2: Book Your STALL Test Slot &amp; Pay Fee</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">Select your local RTA office, pick an available green date/time slot, pay ₹200 (1 class) or ₹350 (2 classes) online, and print Form 2 + Slot Booking Slip.</p>
 </li><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 3: Download Digital LLR &amp; Add to DigiLocker / mParivahan</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">Within ~15 minutes of scoring 12/20, you receive an SMS link to download your signed PDF LLR. Fetch it into DigiLocker or NextGen mParivahan—digital documents are legally valid across India.</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 3: Download Digital LLR &amp; Add to DigiLocker / mParivahan</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">Within ~15 minutes of scoring 12/20, you receive an SMS link to download your signed PDF LLR. Fetch it into DigiLocker or NextGen mParivahan—digital documents are legally valid across India.</p>
 </li></ol>
 </section>
 
@@ -172,27 +188,27 @@
 </aside>
 
 <section style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:8px;">2. Permanent Driving Licence (DL) Track Test Guide (After 30 Days)</h2>
-  <p style="color:#475569; margin-bottom:14px;">You can book your Permanent DL track test slot on transport.telangana.gov.in after completing 30 days from your LLR issue date (valid up to 180 days). Major Hyderabad/Telangana RTA tracks (Kondapur TS-07, Uppal TS-08, Medchal, Nagole, Ibrahimpatnam) use automated RFID sensors &amp; HD cameras to score track accuracy objectively.</p>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:8px;">2. Permanent Driving Licence (DL) Track Test Guide (After 30 Days)</h2>
+  <p style="color:var(--text-secondary); margin-bottom:14px;">You can book your Permanent DL track test slot on transport.telangana.gov.in after completing 30 days from your LLR issue date (valid up to 180 days). Major Hyderabad/Telangana RTA tracks (Kondapur TS-07, Uppal TS-08, Medchal, Nagole, Ibrahimpatnam) use automated RFID sensors &amp; HD cameras to score track accuracy objectively.</p>
   <div class="seo-grid" style="grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));"><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">MCWG / Two-Wheeler</span>
-  <h3 style="font-size:1.05rem; color:#0B2545; font-weight:800; margin-bottom:10px;">Figure &#x27;8&#x27; Track Test (Motorcycle / Scooter)</h3>
-  <ul style="padding-left:18px; color:#334155; font-size:0.9rem; line-height:1.5;">
+  <h3 style="font-size:1.05rem; color:var(--primary-navy); font-weight:800; margin-bottom:10px;">Figure &#x27;8&#x27; Track Test (Motorcycle / Scooter)</h3>
+  <ul style="padding-left:18px; color:var(--text-primary); font-size:0.9rem; line-height:1.5;">
     <li style="margin-bottom:6px;">Wear an ISI-certified strapped helmet before starting.</li><li style="margin-bottom:6px;">Ride smoothly along the figure-8 loop using steady clutch &amp; throttle control.</li><li style="margin-bottom:6px;">Do NOT put either foot down on the ground inside the track.</li><li style="margin-bottom:6px;">Do NOT touch or cross the painted curb/sensor lines.</li><li style="margin-bottom:6px;">Use turn indicators when entering and exiting the track.</li>
   </ul>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">LMV / Four-Wheeler</span>
-  <h3 style="font-size:1.05rem; color:#0B2545; font-weight:800; margin-bottom:10px;">The &#x27;H&#x27; Track &amp; Reversing Test (Car / LMV)</h3>
-  <ul style="padding-left:18px; color:#334155; font-size:0.9rem; line-height:1.5;">
+  <h3 style="font-size:1.05rem; color:var(--primary-navy); font-weight:800; margin-bottom:10px;">The &#x27;H&#x27; Track &amp; Reversing Test (Car / LMV)</h3>
+  <ul style="padding-left:18px; color:var(--text-primary); font-size:0.9rem; line-height:1.5;">
     <li style="margin-bottom:6px;">Adjust seat &amp; side mirrors and fasten your seatbelt before moving.</li><li style="margin-bottom:6px;">Drive forward into the &#x27;H&#x27; bay and reverse cleanly through the narrow lane without hitting poles or boundary lines.</li><li style="margin-bottom:6px;">Use side rear-view mirrors and check blind spots while reversing.</li><li style="margin-bottom:6px;">Avoid stalling the engine or rolling backward on gradients/ramps.</li><li style="margin-bottom:6px;">Signal properly with indicators before every turn or reverse maneuver.</li>
   </ul>
 </article></div>
 </section>
 
 <section>
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">3. Documents &amp; Test Vehicle Checklist for DL Track Day</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">3. Documents &amp; Test Vehicle Checklist for DL Track Day</h2>
   <div class="seo-card" style="background:#F0FDF4; border-color:#BBF7D0;">
-    <ul style="padding-left:18px; color:#14532D; font-size:0.94rem; line-height:1.55;"><li style="margin-bottom:6px;">Original Valid Learner&#x27;s Licence (LLR) — at least 30 days old</li><li style="margin-bottom:6px;">Printed DL Track Test Slot Booking Receipt</li><li style="margin-bottom:6px;">Original Aadhaar Card + 1 photocopy &amp; passport photos</li><li style="margin-bottom:6px;">Test Vehicle with valid RC, Insurance, PUC &amp; visible &#x27;L&#x27; Sticker</li></ul>
+    <ul style="padding-left:18px; color:var(--text-primary); font-size:0.94rem; line-height:1.55;"><li style="margin-bottom:6px;">Original Valid Learner&#x27;s Licence (LLR) — at least 30 days old</li><li style="margin-bottom:6px;">Printed DL Track Test Slot Booking Receipt</li><li style="margin-bottom:6px;">Original Aadhaar Card + 1 photocopy &amp; passport photos</li><li style="margin-bottom:6px;">Test Vehicle with valid RC, Insurance, PUC &amp; visible &#x27;L&#x27; Sticker</li></ul>
   </div>
 </section>
 
@@ -247,17 +263,18 @@
 
     <div class="footer-bottom-bar">
       <div>
-        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
       </div>
       <div>
-        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+        <a href="../llms.txt" style="color:var(--text-secondary);">llms.txt</a> • <a href="../llms-full.txt" style="color:var(--text-secondary);">llms-full.txt</a> • <a href="../sitemap.xml" style="color:var(--text-secondary);">sitemap.xml</a>
       </div>
     </div>
   </footer>
 
   <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
 
-  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script type="module" src="../js/theme-engine.js?v=24"></script>
+  <script type="module" src="../js/ad-manager.js?v=24"></script>
   <script>
     (() => {
       const topBtn = document.getElementById("btn-back-to-top");

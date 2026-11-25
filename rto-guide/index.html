@@ -101,7 +101,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=22">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem("TS_LLR_THEME") || "system";
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var resolved = pref === "system" ? (dark ? "dark" : "light") : pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.style.colorScheme = resolved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../css/styles.css?v=24">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -124,6 +136,10 @@
           <a href="../te/" class="header-lang-link">తెలుగు</a>
           <a href="../hi/" class="header-lang-link">हिन्दी</a>
         </div>
+        <button type="button" class="control-btn theme-toggle-btn" id="btn-theme-toggle" title="Theme: Auto (matches system). Click to switch to Light" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Auto</span>
+        </button>
         <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
           Launch STALL Simulator
         </a>
@@ -154,8 +170,8 @@
       <span>Hyderabad RTO Guide</span>
     </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Hyderabad &amp; Telangana RTA Learner's Licence (LLR) Guide</h1>
-      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Complete test-day guide for Telangana RTA Learner&#x27;s Licence (LLR): Aadhaar &amp; Form 2 checklist, TS-07 to TS-12 Hyderabad RTO addresses, ₹200/₹350 fees, 7-day retest rule, and STALL booth walkthrough.</p>
+      <h1 style="font-size: 1.6rem; color: var(--primary-navy); font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Hyderabad &amp; Telangana RTA Learner's Licence (LLR) Guide</h1>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Complete test-day guide for Telangana RTA Learner&#x27;s Licence (LLR): Aadhaar &amp; Form 2 checklist, TS-07 to TS-12 Hyderabad RTO addresses, ₹200/₹350 fees, 7-day retest rule, and STALL booth walkthrough.</p>
       
       <div class="seo-cta-row">
         <a href="../" class="seo-cta-primary">Take Official 20-Question STALL Mock Test</a>
@@ -172,69 +188,69 @@
 </nav>
 
 <section id="sec-docs" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">1. Required Documents Checklist for Telangana LLR Test</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">1. Required Documents Checklist for Telangana LLR Test</h2>
   <ul class="seo-grid" style="padding:0;"><li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">Application Form Printout (Form 2)</strong>
+    <strong style="color:var(--primary-navy);">Application Form Printout (Form 2)</strong>
     <span class="seo-badge badge-mandatory">Mandatory</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">Printed copy of the online application submitted on transport.telangana.gov.in or Parivahan Sarathi.</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">Printed copy of the online application submitted on transport.telangana.gov.in or Parivahan Sarathi.</p>
 </li><li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">Slot Booking Appointment Slip</strong>
+    <strong style="color:var(--primary-navy);">Slot Booking Appointment Slip</strong>
     <span class="seo-badge badge-mandatory">Mandatory</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">Confirms your designated RTO office (e.g. Khairatabad, Kondapur, Uppal) and time slot.</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">Confirms your designated RTO office (e.g. Khairatabad, Kondapur, Uppal) and time slot.</p>
 </li><li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">Original Aadhaar Card + 1 Photocopy</strong>
+    <strong style="color:var(--primary-navy);">Original Aadhaar Card + 1 Photocopy</strong>
     <span class="seo-badge badge-mandatory">Mandatory</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">Mandatory primary photo ID and address proof required at verification counter.</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">Mandatory primary photo ID and address proof required at verification counter.</p>
 </li><li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">Age &amp; Address Proof (SSC Memo / Passport / Voter ID)</strong>
+    <strong style="color:var(--primary-navy);">Age &amp; Address Proof (SSC Memo / Passport / Voter ID)</strong>
     <span class="seo-badge badge-mandatory">Mandatory</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">Date of birth verification (minimum age 16 for gearless 50cc, 18 for LMV car/motorcycle with gear).</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">Date of birth verification (minimum age 16 for gearless 50cc, 18 for LMV car/motorcycle with gear).</p>
 </li><li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">Online Payment Fee Receipt</strong>
+    <strong style="color:var(--primary-navy);">Online Payment Fee Receipt</strong>
     <span class="seo-badge badge-mandatory">Mandatory</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">Receipt showing test and service fee paid (₹150 test fee + ₹50 service fee per class).</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">Receipt showing test and service fee paid (₹150 test fee + ₹50 service fee per class).</p>
 </li><li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">Medical Certificate (Form 1 / Form 1A)</strong>
+    <strong style="color:var(--primary-navy);">Medical Certificate (Form 1 / Form 1A)</strong>
     <span class="seo-badge badge-informatory">Optional</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">Self-declaration Form 1 is standard. Form 1A signed by a registered doctor is required if applicant is over 40.</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">Self-declaration Form 1 is standard. Form 1A signed by a registered doctor is required if applicant is over 40.</p>
 </li><li class="seo-card" style="list-style:none;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; gap:8px;">
-    <strong style="color:#0B2545;">Passport Size Photographs (2 copies)</strong>
+    <strong style="color:var(--primary-navy);">Passport Size Photographs (2 copies)</strong>
     <span class="seo-badge badge-informatory">Optional</span>
   </div>
-  <p style="font-size:0.88rem; color:#475569;">Keep 2 recent color photographs with white background as backup (biometrics are captured digitally).</p>
+  <p style="font-size:0.88rem; color:var(--text-secondary);">Keep 2 recent color photographs with white background as backup (biometrics are captured digitally).</p>
 </li></ul>
 </section>
 
 <section id="sec-steps" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">2. Test-Day 5-Step Walkthrough at Hyderabad RTO</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">2. Test-Day 5-Step Walkthrough at Hyderabad RTO</h2>
   <ol style="padding:0;"><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 1: Arrival &amp; Queue Token</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">Reach your designated RTO office 15-20 minutes before your slot time. Present your slot booking slip at the entrance reception counter to receive your computerized queue token.</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 1: Arrival &amp; Queue Token</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">Reach your designated RTO office 15-20 minutes before your slot time. Present your slot booking slip at the entrance reception counter to receive your computerized queue token.</p>
 </li><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 2: Document Verification (MVI Counter)</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">Wait for your token number on the digital display. The Motor Vehicle Inspector (MVI) verifies your original Aadhaar card, age proof, and Form 2 printout, then digitally approves your application.</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 2: Document Verification (MVI Counter)</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">Wait for your token number on the digital display. The Motor Vehicle Inspector (MVI) verifies your original Aadhaar card, age proof, and Form 2 printout, then digitally approves your application.</p>
 </li><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 3: Biometric &amp; Digital Photo Capture</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">Proceed to the biometric room. Your live digital photograph, digital stylus signature, and thumbprint will be captured. Note: This live photo will appear on your final driving licence!</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 3: Biometric &amp; Digital Photo Capture</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">Proceed to the biometric room. Your live digital photograph, digital stylus signature, and thumbprint will be captured. Note: This live photo will appear on your final driving licence!</p>
 </li><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 4: STALL Computer Test Booth</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">Enter the air-conditioned STALL test lab. Sit at your assigned terminal. Enter your Application / Token number. Select your preferred test language (English, Telugu, or Hindi). Put on headphones if you wish to hear audio prompts. Answer 20 questions (30 seconds per question).</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 4: STALL Computer Test Booth</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">Enter the air-conditioned STALL test lab. Sit at your assigned terminal. Enter your Application / Token number. Select your preferred test language (English, Telugu, or Hindi). Put on headphones if you wish to hear audio prompts. Answer 20 questions (30 seconds per question).</p>
 </li><li class="qa-card" style="list-style:none;">
-  <strong style="color:#134074; font-size:1.02rem;">Step 5: Instant Result &amp; LLR PDF Download</strong>
-  <p style="margin-top:6px; color:#334155; font-size:0.92rem;">The moment you reach 12 correct answers, the computer screen displays &#x27;CONGRATULATIONS - TEST PASSED&#x27;. An SMS with the official digital LLR download link is sent to your registered mobile within 15 minutes. No physical paper collection needed!</p>
+  <strong style="color:var(--accent-blue); font-size:1.02rem;">Step 5: Instant Result &amp; LLR PDF Download</strong>
+  <p style="margin-top:6px; color:var(--text-primary); font-size:0.92rem;">The moment you reach 12 correct answers, the computer screen displays &#x27;CONGRATULATIONS - TEST PASSED&#x27;. An SMS with the official digital LLR download link is sent to your registered mobile within 15 minutes. No physical paper collection needed!</p>
 </li></ol>
 </section>
 
@@ -245,86 +261,86 @@
 </aside>
 
 <section id="sec-centers" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">3. Hyderabad &amp; Telangana RTO Testing Centers Directory</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">3. Hyderabad &amp; Telangana RTO Testing Centers Directory</h2>
   <div class="seo-grid"><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">TS-09</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700; margin-bottom:4px;">RTO Central (Khairatabad)</h3>
-  <p style="font-size:0.84rem; color:#134074; font-weight:600; margin-bottom:6px;">Areas: Khairatabad, Banjara Hills, Somajiguda, Punjagutta, Hyderabad Central</p>
-  <p style="font-size:0.84rem; color:#475569; margin-bottom:6px;">Opposite Eenadu Office, Somajiguda, Khairatabad, Hyderabad - 500082</p>
-  <p style="font-size:0.8rem; color:#047857; font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">RTO Central (Khairatabad)</h3>
+  <p style="font-size:0.84rem; color:var(--accent-blue); font-weight:600; margin-bottom:6px;">Areas: Khairatabad, Banjara Hills, Somajiguda, Punjagutta, Hyderabad Central</p>
+  <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:6px;">Opposite Eenadu Office, Somajiguda, Khairatabad, Hyderabad - 500082</p>
+  <p style="font-size:0.8rem; color:var(--success-green); font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">TS-10</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700; margin-bottom:4px;">RTO North (Secunderabad / Trimulgherry)</h3>
-  <p style="font-size:0.84rem; color:#134074; font-weight:600; margin-bottom:6px;">Areas: Secunderabad, Marredpally, Trimulgherry, Begumpet, Alwal, Bowenpally</p>
-  <p style="font-size:0.84rem; color:#475569; margin-bottom:6px;">Near Trimulgherry Cross Roads, Lal Bazar, Secunderabad - 500015</p>
-  <p style="font-size:0.8rem; color:#047857; font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">RTO North (Secunderabad / Trimulgherry)</h3>
+  <p style="font-size:0.84rem; color:var(--accent-blue); font-weight:600; margin-bottom:6px;">Areas: Secunderabad, Marredpally, Trimulgherry, Begumpet, Alwal, Bowenpally</p>
+  <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:6px;">Near Trimulgherry Cross Roads, Lal Bazar, Secunderabad - 500015</p>
+  <p style="font-size:0.8rem; color:var(--success-green); font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">TS-07</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700; margin-bottom:4px;">RTO Rangareddy / Cyberabad (Kondapur)</h3>
-  <p style="font-size:0.84rem; color:#134074; font-weight:600; margin-bottom:6px;">Areas: Hitec City, Gachibowli, Madhapur, Kondapur, Kukatpally, Serilingampally</p>
-  <p style="font-size:0.84rem; color:#475569; margin-bottom:6px;">Opp. RTO Driving Track, Near Botanical Garden, Kondapur, Hyderabad - 500084</p>
-  <p style="font-size:0.8rem; color:#047857; font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">RTO Rangareddy / Cyberabad (Kondapur)</h3>
+  <p style="font-size:0.84rem; color:var(--accent-blue); font-weight:600; margin-bottom:6px;">Areas: Hitec City, Gachibowli, Madhapur, Kondapur, Kukatpally, Serilingampally</p>
+  <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:6px;">Opp. RTO Driving Track, Near Botanical Garden, Kondapur, Hyderabad - 500084</p>
+  <p style="font-size:0.8rem; color:var(--success-green); font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">TS-08</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700; margin-bottom:4px;">RTO East / Medchal (Uppal)</h3>
-  <p style="font-size:0.84rem; color:#134074; font-weight:600; margin-bottom:6px;">Areas: Uppal, Boduppal, Habsiguda, Ramanthapur, Tarnaka, Ghatkesar</p>
-  <p style="font-size:0.84rem; color:#475569; margin-bottom:6px;">Near Survey of India, Inner Ring Road, Uppal, Hyderabad - 500039</p>
-  <p style="font-size:0.8rem; color:#047857; font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">RTO East / Medchal (Uppal)</h3>
+  <p style="font-size:0.84rem; color:var(--accent-blue); font-weight:600; margin-bottom:6px;">Areas: Uppal, Boduppal, Habsiguda, Ramanthapur, Tarnaka, Ghatkesar</p>
+  <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:6px;">Near Survey of India, Inner Ring Road, Uppal, Hyderabad - 500039</p>
+  <p style="font-size:0.8rem; color:var(--success-green); font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">TS-11</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700; margin-bottom:4px;">RTO West (Tolichowki / Mehdipatnam)</h3>
-  <p style="font-size:0.84rem; color:#134074; font-weight:600; margin-bottom:6px;">Areas: Mehdipatnam, Tolichowki, Golconda, Attapur, Langar Houz, Gudimalkapur</p>
-  <p style="font-size:0.84rem; color:#475569; margin-bottom:6px;">Rethibowli Cross Roads, Mehdipatnam, Hyderabad - 500028</p>
-  <p style="font-size:0.8rem; color:#047857; font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">RTO West (Tolichowki / Mehdipatnam)</h3>
+  <p style="font-size:0.84rem; color:var(--accent-blue); font-weight:600; margin-bottom:6px;">Areas: Mehdipatnam, Tolichowki, Golconda, Attapur, Langar Houz, Gudimalkapur</p>
+  <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:6px;">Rethibowli Cross Roads, Mehdipatnam, Hyderabad - 500028</p>
+  <p style="font-size:0.8rem; color:var(--success-green); font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
 </article><article class="seo-card">
   <span class="seo-badge badge-informatory" style="margin-bottom:8px;">TS-12</span>
-  <h3 style="font-size:1rem; color:#0B2545; font-weight:700; margin-bottom:4px;">RTO East (Malakpet)</h3>
-  <p style="font-size:0.84rem; color:#134074; font-weight:600; margin-bottom:6px;">Areas: Malakpet, Dilsukhnagar, Kothapet, LB Nagar, Chaitanyapuri, Amberpet</p>
-  <p style="font-size:0.84rem; color:#475569; margin-bottom:6px;">Old Malakpet, Near TV Tower, Moosarambagh, Hyderabad - 500036</p>
-  <p style="font-size:0.8rem; color:#047857; font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
+  <h3 style="font-size:1rem; color:var(--primary-navy); font-weight:700; margin-bottom:4px;">RTO East (Malakpet)</h3>
+  <p style="font-size:0.84rem; color:var(--accent-blue); font-weight:600; margin-bottom:6px;">Areas: Malakpet, Dilsukhnagar, Kothapet, LB Nagar, Chaitanyapuri, Amberpet</p>
+  <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:6px;">Old Malakpet, Near TV Tower, Moosarambagh, Hyderabad - 500036</p>
+  <p style="font-size:0.8rem; color:var(--success-green); font-weight:600;">Hours: 10:00 AM - 02:00 PM (Mon - Sat)</p>
 </article></div>
 </section>
 
 <section id="sec-fees" class="guide-section-anchor" style="margin-bottom:32px;">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">4. Official LLR Fee Structure, Retest &amp; Validity Rules</h2>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">4. Official LLR Fee Structure, Retest &amp; Validity Rules</h2>
   <div class="seo-card" style="overflow-x:auto;">
     <table style="width:100%; border-collapse:collapse; text-align:left;">
       <thead>
-        <tr style="background:#F8FAFC;">
+        <tr style="background:var(--surface-subtle);">
           <th style="padding:10px; border-bottom:2px solid #E2E8F0;">Vehicle Class</th>
           <th style="padding:10px; border-bottom:2px solid #E2E8F0;">Fee Breakdown</th>
           <th style="padding:10px; border-bottom:2px solid #E2E8F0;">Total Fee</th>
         </tr>
       </thead>
       <tbody><tr>
-  <td style="padding:10px; border-bottom:1px solid #E2E8F0; font-weight:600;">One Vehicle Class (e.g., Two-Wheeler MCWG)</td>
-  <td style="padding:10px; border-bottom:1px solid #E2E8F0; color:#475569;">₹150 LLR Test Fee + ₹50 Service Fee</td>
-  <td class="tabular-nums" style="padding:10px; border-bottom:1px solid #E2E8F0; font-weight:800; color:#047857;">₹200</td>
+  <td style="padding:10px; border-bottom:1px solid var(--border-color); font-weight:600;">One Vehicle Class (e.g., Two-Wheeler MCWG)</td>
+  <td style="padding:10px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">₹150 LLR Test Fee + ₹50 Service Fee</td>
+  <td class="tabular-nums" style="padding:10px; border-bottom:1px solid var(--border-color); font-weight:800; color:var(--success-green);">₹200</td>
 </tr><tr>
-  <td style="padding:10px; border-bottom:1px solid #E2E8F0; font-weight:600;">Two Vehicle Classes (Two-Wheeler + Car LMV)</td>
-  <td style="padding:10px; border-bottom:1px solid #E2E8F0; color:#475569;">₹300 Test Fee (₹150 x 2) + ₹50 Service Fee</td>
-  <td class="tabular-nums" style="padding:10px; border-bottom:1px solid #E2E8F0; font-weight:800; color:#047857;">₹350</td>
+  <td style="padding:10px; border-bottom:1px solid var(--border-color); font-weight:600;">Two Vehicle Classes (Two-Wheeler + Car LMV)</td>
+  <td style="padding:10px; border-bottom:1px solid var(--border-color); color:var(--text-secondary);">₹300 Test Fee (₹150 x 2) + ₹50 Service Fee</td>
+  <td class="tabular-nums" style="padding:10px; border-bottom:1px solid var(--border-color); font-weight:800; color:var(--success-green);">₹350</td>
 </tr></tbody>
     </table>
-    <p style="margin-top:12px; font-size:0.9rem; color:#334155;"><strong>Retest Policy:</strong> If you fail the test, you can book a re-test slot after 7 days on transport.telangana.gov.in by paying a re-test fee of ₹150.</p>
-    <p style="margin-top:8px; font-size:0.9rem; color:#334155;"><strong>LLR Validity &amp; Permanent DL Rule:</strong> Your Learner&#x27;s Licence (LLR) is valid for 6 months across India. You are eligible to apply for your permanent Driving Licence (DL) driving track test after completing 30 days from LLR issue date.</p>
+    <p style="margin-top:12px; font-size:0.9rem; color:var(--text-primary);"><strong>Retest Policy:</strong> If you fail the test, you can book a re-test slot after 7 days on transport.telangana.gov.in by paying a re-test fee of ₹150.</p>
+    <p style="margin-top:8px; font-size:0.9rem; color:var(--text-primary);"><strong>LLR Validity &amp; Permanent DL Rule:</strong> Your Learner&#x27;s Licence (LLR) is valid for 6 months across India. You are eligible to apply for your permanent Driving Licence (DL) driving track test after completing 30 days from LLR issue date.</p>
   </div>
 </section>
 
 <section id="sec-tips" class="guide-section-anchor">
-  <h2 style="font-size:1.3rem; color:#0B2545; font-weight:800; margin-bottom:12px;">5. Top Tips to Pass on Your First Attempt</h2>
-  <div class="seo-grid"><article class="seo-card" style="background:#FFFBEB; border-color:#FDE68A;">
-  <h3 style="font-size:0.98rem; color:#92400E; font-weight:700; margin-bottom:6px;">Don&#x27;t Panic at the 30-Second Timer</h3>
-  <p style="font-size:0.88rem; color:#78350F;">30 seconds is plenty of time to read 1 short question and 4 options. Spend 10 seconds carefully reading before clicking.</p>
-</article><article class="seo-card" style="background:#FFFBEB; border-color:#FDE68A;">
-  <h3 style="font-size:0.98rem; color:#92400E; font-weight:700; margin-bottom:6px;">Watch out for Negative Words (&#x27;NOT&#x27;, &#x27;NEVER&#x27;)</h3>
-  <p style="font-size:0.88rem; color:#78350F;">Over 40% of candidate mistakes occur on questions asking &#x27;Where must you NOT park?&#x27; or &#x27;When should you NEVER overtake?&#x27;. Read every word cautiously.</p>
-</article><article class="seo-card" style="background:#FFFBEB; border-color:#FDE68A;">
-  <h3 style="font-size:0.98rem; color:#92400E; font-weight:700; margin-bottom:6px;">Master the Road Sign Shapes</h3>
-  <p style="font-size:0.88rem; color:#78350F;">Circles = Mandatory Orders (Law - Must Obey). Triangles = Cautionary Warnings (Hazards ahead). Rectangles/Blue = Informatory Guidance (Directions, amenities).</p>
-</article><article class="seo-card" style="background:#FFFBEB; border-color:#FDE68A;">
-  <h3 style="font-size:0.98rem; color:#92400E; font-weight:700; margin-bottom:6px;">Aim for 12 Out of 12 Early Finish</h3>
-  <p style="font-size:0.88rem; color:#78350F;">If you get the first 12 questions right, the computer instantly passes you and closes the test. You don&#x27;t even have to face the remaining 8 questions!</p>
+  <h2 style="font-size:1.3rem; color:var(--primary-navy); font-weight:800; margin-bottom:12px;">5. Top Tips to Pass on Your First Attempt</h2>
+  <div class="seo-grid"><article class="seo-card" style="background:var(--accent-gold-light); border-color:var(--accent-gold);">
+  <h3 style="font-size:0.98rem; color:var(--warning-amber); font-weight:700; margin-bottom:6px;">Don&#x27;t Panic at the 30-Second Timer</h3>
+  <p style="font-size:0.88rem; color:var(--text-primary);">30 seconds is plenty of time to read 1 short question and 4 options. Spend 10 seconds carefully reading before clicking.</p>
+</article><article class="seo-card" style="background:var(--accent-gold-light); border-color:var(--accent-gold);">
+  <h3 style="font-size:0.98rem; color:var(--warning-amber); font-weight:700; margin-bottom:6px;">Watch out for Negative Words (&#x27;NOT&#x27;, &#x27;NEVER&#x27;)</h3>
+  <p style="font-size:0.88rem; color:var(--text-primary);">Over 40% of candidate mistakes occur on questions asking &#x27;Where must you NOT park?&#x27; or &#x27;When should you NEVER overtake?&#x27;. Read every word cautiously.</p>
+</article><article class="seo-card" style="background:var(--accent-gold-light); border-color:var(--accent-gold);">
+  <h3 style="font-size:0.98rem; color:var(--warning-amber); font-weight:700; margin-bottom:6px;">Master the Road Sign Shapes</h3>
+  <p style="font-size:0.88rem; color:var(--text-primary);">Circles = Mandatory Orders (Law - Must Obey). Triangles = Cautionary Warnings (Hazards ahead). Rectangles/Blue = Informatory Guidance (Directions, amenities).</p>
+</article><article class="seo-card" style="background:var(--accent-gold-light); border-color:var(--accent-gold);">
+  <h3 style="font-size:0.98rem; color:var(--warning-amber); font-weight:700; margin-bottom:6px;">Aim for 12 Out of 12 Early Finish</h3>
+  <p style="font-size:0.88rem; color:var(--text-primary);">If you get the first 12 questions right, the computer instantly passes you and closes the test. You don&#x27;t even have to face the remaining 8 questions!</p>
 </article></div>
 </section>
 
@@ -379,17 +395,18 @@
 
     <div class="footer-bottom-bar">
       <div>
-        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
       </div>
       <div>
-        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+        <a href="../llms.txt" style="color:var(--text-secondary);">llms.txt</a> • <a href="../llms-full.txt" style="color:var(--text-secondary);">llms-full.txt</a> • <a href="../sitemap.xml" style="color:var(--text-secondary);">sitemap.xml</a>
       </div>
     </div>
   </footer>
 
   <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
 
-  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script type="module" src="../js/theme-engine.js?v=24"></script>
+  <script type="module" src="../js/ad-manager.js?v=24"></script>
   <script>
     (() => {
       const topBtn = document.getElementById("btn-back-to-top");

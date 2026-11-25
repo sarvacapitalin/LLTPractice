@@ -60,7 +60,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=22">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem("TS_LLR_THEME") || "system";
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var resolved = pref === "system" ? (dark ? "dark" : "light") : pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.style.colorScheme = resolved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../css/styles.css?v=24">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -83,6 +95,10 @@
           <a href="../te/" class="header-lang-link">తెలుగు</a>
           <a href="../hi/" class="header-lang-link">हिन्दी</a>
         </div>
+        <button type="button" class="control-btn theme-toggle-btn" id="btn-theme-toggle" title="Theme: Auto (matches system). Click to switch to Light" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Auto</span>
+        </button>
         <a href="../" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
           Launch STALL Simulator
         </a>
@@ -113,42 +129,42 @@
       <span>Privacy Policy</span>
     </nav>
     <section class="seo-hero">
-      <h1 style="font-size: 1.6rem; color: #0B2545; font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Privacy Policy &amp; Cookie Notice</h1>
-      <p style="color: #475569; font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Privacy Policy for llr.sarvacapital.in explaining local browser storage, zero personal data collection, and Google AdSense cookie disclosures.</p>
+      <h1 style="font-size: 1.6rem; color: var(--primary-navy); font-weight: 800; line-height: 1.25; margin-bottom: 10px;">Privacy Policy &amp; Cookie Notice</h1>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6; max-width: 72ch;">Privacy Policy for llr.sarvacapital.in explaining local browser storage, zero personal data collection, and Google AdSense cookie disclosures.</p>
       
     </section>
     
 <article class="card-surface" style="max-width:860px; margin:0 auto;">
-  <p style="font-size:0.84rem; color:#64748B; margin-bottom:16px;">Last updated: 2026-11-25 • Domain: <strong>llr.sarvacapital.in</strong></p>
+  <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:16px;">Last updated: 2026-11-25 • Domain: <strong>llr.sarvacapital.in</strong></p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">1. Overview &amp; Zero-Account Local Practice</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:12px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">1. Overview &amp; Zero-Account Local Practice</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
     <strong>Telangana RTA Learner's Licence Practice</strong> (operated by Sarva Capital at <code>llr.sarvacapital.in</code>) is a free public educational simulator. We do not require registration, logins, phone numbers, Aadhaar details, or personal profiles to use any practice mode, mock test, or study guide.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">2. Browser Local Storage &amp; Cross-Device QR Sync</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:12px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">2. Browser Local Storage &amp; Cross-Device QR Sync</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
     Your quiz streaks, readiness progress, language preference (English, Telugu, or Hindi), sound settings, and RTO document checklist ticks are stored exclusively inside your own browser's <code>localStorage</code>. None of your study scores are uploaded to any backend database. When you use the optional QR Cross-Device Sync feature, your compact study progress is encoded directly inside the sync URL / JSON export file processed locally in your browser.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">3. Google AdSense &amp; Third-Party Advertising Cookies</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:10px;">
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">3. Google AdSense &amp; Third-Party Advertising Cookies</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:10px;">
     To keep this learning platform 100% free for students and learner drivers across Telangana, we plan to display non-intrusive advertisements served by <strong>Google AdSense</strong> on study and post-exam summary screens (never inside the active 30-second timed mock test).
   </p>
-  <ul style="padding-left:20px; color:#334155; line-height:1.65; margin-bottom:12px;">
+  <ul style="padding-left:20px; color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
     <li style="margin-bottom:6px;">Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites.</li>
     <li style="margin-bottom:6px;">Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to <code>llr.sarvacapital.in</code> and/or other sites on the Internet.</li>
-    <li style="margin-bottom:6px;">Users may opt out of personalized advertising by visiting <a href="https://adssettings.google.com/" target="_blank" rel="noopener" style="color:#134074; font-weight:600;">Google Ads Settings</a> or opt out of third-party vendor cookie use via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener" style="color:#134074; font-weight:600;">aboutads.info</a>.</li>
+    <li style="margin-bottom:6px;">Users may opt out of personalized advertising by visiting <a href="https://adssettings.google.com/" target="_blank" rel="noopener" style="color:var(--accent-blue); font-weight:600;">Google Ads Settings</a> or opt out of third-party vendor cookie use via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener" style="color:var(--accent-blue); font-weight:600;">aboutads.info</a>.</li>
   </ul>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">4. External Official Links</h2>
-  <p style="color:#334155; line-height:1.65; margin-bottom:12px;">
-    We link to official government portals such as <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:#134074; font-weight:600;">transport.telangana.gov.in</a> for application filing, slot booking, and DigiLocker/mParivahan verification. External sites operate under their own privacy policies.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">4. External Official Links</h2>
+  <p style="color:var(--text-primary); line-height:1.65; margin-bottom:12px;">
+    We link to official government portals such as <a href="https://transport.telangana.gov.in" target="_blank" rel="noopener" style="color:var(--accent-blue); font-weight:600;">transport.telangana.gov.in</a> for application filing, slot booking, and DigiLocker/mParivahan verification. External sites operate under their own privacy policies.
   </p>
 
-  <h2 style="font-size:1.15rem; color:#0B2545; font-weight:800; margin:18px 0 8px;">5. Contact Us</h2>
-  <p style="color:#334155; line-height:1.65;">
-    For privacy questions, ad inquiries, or content corrections, please write to <a href="mailto:contact@sarvacapital.in" style="color:#134074; font-weight:700;">contact@sarvacapital.in</a>.
+  <h2 style="font-size:1.15rem; color:var(--primary-navy); font-weight:800; margin:18px 0 8px;">5. Contact Us</h2>
+  <p style="color:var(--text-primary); line-height:1.65;">
+    For privacy questions, ad inquiries, or content corrections, please write to <a href="mailto:contact@sarvacapital.in" style="color:var(--accent-blue); font-weight:700;">contact@sarvacapital.in</a>.
   </p>
 </article>
 
@@ -198,17 +214,18 @@
 
     <div class="footer-bottom-bar">
       <div>
-        <a href="https://llr.sarvacapital.in/" style="color:var(--secondary-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
+        <a href="https://llr.sarvacapital.in/" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">llr.sarvacapital.in</a> • Free Educational Resource by <a href="https://sarvacapital.in" target="_blank" rel="noopener" style="color:var(--secondary-blue);">Sarva Capital</a>
       </div>
       <div>
-        <a href="../llms.txt" style="color:#475569;">llms.txt</a> • <a href="../llms-full.txt" style="color:#475569;">llms-full.txt</a> • <a href="../sitemap.xml" style="color:#475569;">sitemap.xml</a>
+        <a href="../llms.txt" style="color:var(--text-secondary);">llms.txt</a> • <a href="../llms-full.txt" style="color:var(--text-secondary);">llms-full.txt</a> • <a href="../sitemap.xml" style="color:var(--text-secondary);">sitemap.xml</a>
       </div>
     </div>
   </footer>
 
   <button type="button" id="btn-back-to-top" class="back-to-top-btn no-print" aria-label="Back to top">↑ Top</button>
 
-  <script type="module" src="../js/ad-manager.js?v=22"></script>
+  <script type="module" src="../js/theme-engine.js?v=24"></script>
+  <script type="module" src="../js/ad-manager.js?v=24"></script>
   <script>
     (() => {
       const topBtn = document.getElementById("btn-back-to-top");

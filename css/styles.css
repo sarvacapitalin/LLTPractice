@@ -1,5 +1,8 @@
 /* css/styles.css - Cohesive Design System, Multilingual Typography & Zero-CLS Ad Architecture */
 :root {
+  color-scheme: light;
+  --header-start: #0B2545;
+  --header-end: #134074;
   --primary-navy: #0B2545;
   --secondary-blue: #134074;
   --accent-blue: #2563EB;
@@ -27,6 +30,66 @@
   --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.07);
   --shadow-lg: 0 10px 28px rgba(15, 23, 42, 0.1);
   --font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Telugu", "Noto Sans Devanagari", "Noto Sans", sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --header-start: #080F1D;
+  --header-end: #13203B;
+  --primary-navy: #F1F5F9;
+  --secondary-blue: #1D4ED8;
+  --accent-blue: #60A5FA;
+  --accent-gold: #FACC15;
+  --accent-gold-light: rgba(250, 204, 21, 0.14);
+  --bg-light: #0B1220;
+  --surface-subtle: #111B2E;
+  --card-bg: #162136;
+  --text-primary: #F1F5F9;
+  --text-secondary: #CBD5E1;
+  --text-muted: #B6C3D5;
+  --border-color: #25334D;
+  --border-strong: #334155;
+  --success-green: #4ADE80;
+  --success-bg: rgba(34, 197, 94, 0.16);
+  --warning-amber: #FBBF24;
+  --warning-bg: rgba(245, 158, 11, 0.16);
+  --danger-red: #F87171;
+  --danger-bg: rgba(239, 68, 68, 0.16);
+  --focus-ring: 0 0 0 3px rgba(96, 165, 250, 0.35);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --header-start: #080F1D;
+    --header-end: #13203B;
+    --primary-navy: #F1F5F9;
+    --secondary-blue: #1D4ED8;
+    --accent-blue: #60A5FA;
+    --accent-gold: #FACC15;
+    --accent-gold-light: rgba(250, 204, 21, 0.14);
+    --bg-light: #0B1220;
+    --surface-subtle: #111B2E;
+    --card-bg: #162136;
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-muted: #B6C3D5;
+    --border-color: #25334D;
+    --border-strong: #334155;
+    --success-green: #4ADE80;
+    --success-bg: rgba(34, 197, 94, 0.16);
+    --warning-amber: #FBBF24;
+    --warning-bg: rgba(245, 158, 11, 0.16);
+    --danger-red: #F87171;
+    --danger-bg: rgba(239, 68, 68, 0.16);
+    --focus-ring: 0 0 0 3px rgba(96, 165, 250, 0.35);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.55);
+  }
 }
 
 * {
@@ -77,7 +140,7 @@ textarea {
    HEADER & NAVIGATION
    ========================================== */
 .app-header {
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
+  background: linear-gradient(135deg, var(--header-start) 0%, var(--header-end) 100%);
   color: #FFFFFF;
   padding: 10px 20px;
   box-shadow: var(--shadow-md);
@@ -117,7 +180,7 @@ textarea {
   height: 40px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.96);
-  color: var(--primary-navy);
+  color: #0B2545;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1144,7 +1207,7 @@ body.exam-focus-mode .exam-hide-on-active {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background: var(--primary-navy);
+  background: var(--secondary-blue);
   color: #FFFFFF;
   font-size: 0.82rem;
   font-weight: 800;
@@ -1418,7 +1481,7 @@ body.qb-quiz-mode .qa-explanation-box {
   right: 18px;
   bottom: 20px;
   z-index: 80;
-  background: var(--primary-navy);
+  background: var(--secondary-blue);
   color: #FFFFFF;
   border: none;
   border-radius: 999px;
@@ -1774,6 +1837,377 @@ body.qb-quiz-mode .qa-explanation-box {
   .section-jump-bar,
   .seo-sticky-tools {
     top: 0;
+  }
+}
+
+/* ==========================================
+   THEME TOGGLE & DARK MODE SURFACE OVERRIDES
+   ========================================== */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.theme-toggle-btn .theme-icon {
+  font-size: 0.92rem;
+  line-height: 1;
+}
+
+:root[data-theme="dark"] .nav-bar,
+:root[data-theme="dark"] .seo-nav-bar,
+:root[data-theme="dark"] .seo-hero,
+:root[data-theme="dark"] .seo-card,
+:root[data-theme="dark"] .qa-card,
+:root[data-theme="dark"] .toc-pill,
+:root[data-theme="dark"] .practice-opt-btn,
+:root[data-theme="dark"] .flashcard-box,
+:root[data-theme="dark"] .flashcard-box.is-flipped,
+:root[data-theme="dark"] .flashcard-front,
+:root[data-theme="dark"] .flashcard-back,
+:root[data-theme="dark"] .search-input-wrap input,
+:root[data-theme="dark"] .footer-about-box,
+:root[data-theme="dark"] .footer-faq-item,
+:root[data-theme="dark"] .footer-directory-grid,
+:root[data-theme="dark"] .app-modal-card,
+:root[data-theme="dark"] .intro-mastery-panel,
+:root[data-theme="dark"] .ui-select option {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .qa-option.correct {
+  background: var(--success-bg);
+  border-color: var(--success-green);
+  color: #86EFAC;
+}
+
+:root[data-theme="dark"] .btn-outline-primary {
+  background: rgba(96, 165, 250, 0.14);
+  border-color: rgba(96, 165, 250, 0.35);
+  color: #93C5FD;
+}
+
+:root[data-theme="dark"] .btn-outline-primary:hover,
+:root[data-theme="dark"] .seo-nav-link:hover,
+:root[data-theme="dark"] .toc-pill:hover {
+  background: var(--surface-subtle);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .tutor-status-pill {
+  background: var(--border-color);
+  color: var(--text-secondary);
+}
+
+:root[data-theme="dark"] .tutor-status-pill.on {
+  background: rgba(96, 165, 250, 0.22);
+  color: #93C5FD;
+}
+
+:root[data-theme="dark"] .ad-preview-badge {
+  background: rgba(96, 165, 250, 0.2);
+  color: #93C5FD;
+}
+
+:root[data-theme="dark"] h1:not(.app-header h1),
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] .section-title,
+:root[data-theme="dark"] .seo-hero h1,
+:root[data-theme="dark"] .seo-section-title,
+:root[data-theme="dark"] .seo-card h3,
+:root[data-theme="dark"] .qa-card h3,
+:root[data-theme="dark"] .footer-about-box h3,
+:root[data-theme="dark"] .footer-faq-item summary,
+:root[data-theme="dark"] .toc-pill,
+:root[data-theme="dark"] .ad-preview-title,
+:root[data-theme="dark"] .tutor-title {
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .seo-sticky-tools,
+:root[data-theme="dark"] .section-jump-bar {
+  background: rgba(22, 33, 54, 0.96);
+  border-color: var(--border-color);
+}
+
+:root[data-theme="dark"] .seo-cta-secondary,
+:root[data-theme="dark"] .twins-memory-hook,
+:root[data-theme="dark"] .mastery-goal-tag {
+  color: #FDE68A;
+  border-color: rgba(250, 204, 21, 0.45);
+}
+
+:root[data-theme="dark"] .mastery-goal-tag.ready {
+  background: var(--success-bg);
+  color: var(--success-green);
+  border-color: var(--success-green);
+}
+
+:root[data-theme="dark"] .practice-opt-btn.is-correct {
+  background: var(--success-bg);
+  border-color: var(--success-green);
+  color: #86EFAC;
+}
+
+:root[data-theme="dark"] .practice-opt-btn.is-wrong {
+  background: var(--danger-bg);
+  border-color: var(--danger-red);
+  color: #FCA5A5;
+}
+
+:root[data-theme="dark"] .practice-opt-num {
+  background: var(--surface-subtle);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+:root[data-theme="dark"] .ad-preview-box {
+  background: var(--surface-subtle);
+  border-color: var(--border-strong);
+}
+
+:root[data-theme="dark"] .btn-secondary-light {
+  background: var(--surface-subtle);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+:root[data-theme="dark"] .btn-secondary-light:hover:not(:disabled) {
+  background: var(--border-color);
+  color: var(--text-primary);
+  border-color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .spec-pill {
+  background: rgba(96, 165, 250, 0.14);
+  color: #93C5FD;
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+:root[data-theme="dark"] .practice-opt-btn:hover:not(:disabled),
+:root[data-theme="dark"] .tutor-toggle-card:hover,
+:root[data-theme="dark"] .toc-pill:hover {
+  background: var(--surface-subtle);
+  border-color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .pill-btn,
+:root[data-theme="dark"] .search-clear-btn,
+:root[data-theme="dark"] .progress-track {
+  background: var(--surface-subtle);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+:root[data-theme="dark"] .pill-btn:hover,
+:root[data-theme="dark"] .search-clear-btn:hover {
+  background: var(--border-color);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .pill-btn.active {
+  background: var(--accent-blue);
+  color: #0B1220;
+  border-color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .nav-tab,
+:root[data-theme="dark"] .seo-nav-link {
+  color: var(--text-secondary);
+}
+
+:root[data-theme="dark"] .nav-tab.active,
+:root[data-theme="dark"] .seo-nav-link.active {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .seo-nav-link.active {
+  background: var(--secondary-blue);
+  color: #FFFFFF;
+}
+
+:root[data-theme="dark"] .nav-tab:hover,
+:root[data-theme="dark"] .seo-breadcrumb a {
+  color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .footer-link-list a {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+:root[data-theme="dark"] .footer-link-list a:hover {
+  color: #93C5FD;
+}
+
+:root[data-theme="dark"] .footer-bottom-bar a,
+:root[data-theme="dark"] .seo-card a:not([class]),
+:root[data-theme="dark"] .qa-card a:not([class]),
+:root[data-theme="dark"] .footer-about-box a:not([class]) {
+  color: var(--accent-blue);
+}
+
+:root[data-theme="dark"] .study-hub-badge {
+  background: rgba(96, 165, 250, 0.16);
+  color: #93C5FD;
+}
+
+:root[data-theme="dark"] .header-lang-link.active {
+  background: var(--accent-blue);
+  color: #0B1220;
+}
+
+:root[data-theme="dark"] .ad-slot-wrapper {
+  background: var(--surface-subtle);
+  border-color: var(--border-color);
+}
+
+/* Keep light backing behind road-sign PNGs and QR codes in dark mode */
+:root[data-theme="dark"] .flashcard-front img,
+:root[data-theme="dark"] .seo-card img,
+:root[data-theme="dark"] .qa-sign-img,
+:root[data-theme="dark"] .practice-q-img,
+:root[data-theme="dark"] .sign-image-box,
+:root[data-theme="dark"] #sync-qr-box {
+  background: #F8FAFC;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .nav-bar,
+  :root:not([data-theme="light"]) .seo-nav-bar,
+  :root:not([data-theme="light"]) .seo-hero,
+  :root:not([data-theme="light"]) .seo-card,
+  :root:not([data-theme="light"]) .qa-card,
+  :root:not([data-theme="light"]) .toc-pill,
+  :root:not([data-theme="light"]) .practice-opt-btn,
+  :root:not([data-theme="light"]) .flashcard-box,
+  :root:not([data-theme="light"]) .flashcard-box.is-flipped,
+  :root:not([data-theme="light"]) .search-input-wrap input,
+  :root:not([data-theme="light"]) .footer-about-box,
+  :root:not([data-theme="light"]) .footer-faq-item,
+  :root:not([data-theme="light"]) .footer-directory-grid,
+  :root:not([data-theme="light"]) .app-modal-card,
+  :root:not([data-theme="light"]) .intro-mastery-panel {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+  }
+  :root:not([data-theme="light"]) .qa-option.correct {
+    background: var(--success-bg);
+    border-color: var(--success-green);
+    color: #86EFAC;
+  }
+  :root:not([data-theme="light"]) .btn-outline-primary {
+    background: rgba(96, 165, 250, 0.14);
+    border-color: rgba(96, 165, 250, 0.35);
+    color: #93C5FD;
+  }
+  :root:not([data-theme="light"]) h1:not(.app-header h1),
+  :root:not([data-theme="light"]) h2,
+  :root:not([data-theme="light"]) h3,
+  :root:not([data-theme="light"]) h4,
+  :root:not([data-theme="light"]) .section-title,
+  :root:not([data-theme="light"]) .seo-hero h1,
+  :root:not([data-theme="light"]) .seo-section-title,
+  :root:not([data-theme="light"]) .seo-card h3,
+  :root:not([data-theme="light"]) .qa-card h3,
+  :root:not([data-theme="light"]) .footer-about-box h3,
+  :root:not([data-theme="light"]) .footer-faq-item summary,
+  :root:not([data-theme="light"]) .toc-pill,
+  :root:not([data-theme="light"]) .ad-preview-title,
+  :root:not([data-theme="light"]) .tutor-title {
+    color: var(--text-primary);
+  }
+  :root:not([data-theme="light"]) .seo-sticky-tools,
+  :root:not([data-theme="light"]) .section-jump-bar {
+    background: rgba(22, 33, 54, 0.96);
+    border-color: var(--border-color);
+  }
+  :root:not([data-theme="light"]) .seo-nav-link.active {
+    background: var(--secondary-blue);
+    color: #FFFFFF;
+  }
+  :root:not([data-theme="light"]) .nav-tab:hover,
+  :root:not([data-theme="light"]) .seo-breadcrumb a {
+    color: var(--accent-blue);
+  }
+  :root:not([data-theme="light"]) .footer-link-list a {
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  :root:not([data-theme="light"]) .footer-link-list a:hover {
+    color: #93C5FD;
+  }
+  :root:not([data-theme="light"]) .footer-bottom-bar a,
+  :root:not([data-theme="light"]) .seo-card a:not([class]),
+  :root:not([data-theme="light"]) .qa-card a:not([class]),
+  :root:not([data-theme="light"]) .footer-about-box a:not([class]) {
+    color: var(--accent-blue);
+  }
+  :root:not([data-theme="light"]) .study-hub-badge {
+    background: rgba(96, 165, 250, 0.16);
+    color: #93C5FD;
+  }
+  :root:not([data-theme="light"]) .seo-cta-secondary,
+  :root:not([data-theme="light"]) .twins-memory-hook,
+  :root:not([data-theme="light"]) .mastery-goal-tag {
+    color: #FDE68A;
+    border-color: rgba(250, 204, 21, 0.45);
+  }
+  :root:not([data-theme="light"]) .nav-tab,
+  :root:not([data-theme="light"]) .seo-nav-link {
+    color: var(--text-secondary);
+  }
+  :root:not([data-theme="light"]) .practice-opt-btn.is-correct {
+    background: var(--success-bg);
+    border-color: var(--success-green);
+    color: #86EFAC;
+  }
+  :root:not([data-theme="light"]) .practice-opt-btn.is-wrong {
+    background: var(--danger-bg);
+    border-color: var(--danger-red);
+    color: #FCA5A5;
+  }
+  :root:not([data-theme="light"]) .practice-opt-num {
+    background: var(--surface-subtle);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+  :root:not([data-theme="light"]) .btn-secondary-light {
+    background: var(--surface-subtle);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+  :root:not([data-theme="light"]) .spec-pill {
+    background: rgba(96, 165, 250, 0.14);
+    color: #93C5FD;
+    border-color: rgba(96, 165, 250, 0.3);
+  }
+  :root:not([data-theme="light"]) .pill-btn,
+  :root:not([data-theme="light"]) .search-clear-btn,
+  :root:not([data-theme="light"]) .progress-track {
+    background: var(--surface-subtle);
+    color: var(--text-secondary);
+    border-color: var(--border-color);
+  }
+  :root:not([data-theme="light"]) .flashcard-front img,
+  :root:not([data-theme="light"]) .seo-card img,
+  :root:not([data-theme="light"]) .qa-sign-img,
+  :root:not([data-theme="light"]) .practice-q-img,
+  :root:not([data-theme="light"]) #sync-qr-box {
+    background: #F8FAFC;
+    border-radius: 10px;
+    padding: 6px;
   }
 }
 
