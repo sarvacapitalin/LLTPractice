@@ -209,7 +209,7 @@ def render_shell(
           <span class="theme-icon" aria-hidden="true">◐</span>
           <span class="theme-label">Auto</span>
         </button>
-        <a href="{rel_root}{'?lang=' + lang if lang in ('te', 'hi') else ''}" class="control-btn" style="background:#F3CA40; color:#0B2545; border-color:#F3CA40; font-weight:800;">
+        <a href="{rel_root}{'?lang=' + lang if lang in ('te', 'hi') else ''}" class="control-btn" style="background:var(--cta-gold-bg); color:var(--cta-gold-text); border-color:var(--cta-gold-bg); font-weight:800;">
           Launch STALL Simulator
         </a>
       </div>
@@ -457,7 +457,7 @@ def build_road_signs_page(signs):
         rel_root="../",
         canonical_path="road-signs/",
         title="All 94 Telangana Road Signs & Meanings • LLR 2026",
-        description="Complete visual directory of all 94 official Telangana RTA Learner's Licence road signs (Mandatory, Cautionary, Informatory) with English, Telugu & Hindi meanings for the STALL exam.",
+        description="Visual directory of all 94 official Telangana RTA road signs (Mandatory, Cautionary, Informatory) with English, Telugu & Hindi meanings for STALL.",
         keywords="Telangana road signs with meaning, Hyderabad RTO traffic signs, mandatory cautionary informatory signs India, Telangana LLR road signs list, traffic symbols Telugu Hindi English",
         h1="All 94 Telangana RTA Road Signs &amp; Official Meanings",
         subtitle="Complete Trilingual Visual Reference for STALL LLR Exam (40% Exam Weightage)",
@@ -626,7 +626,7 @@ def build_question_bank_page(signs, rules, gp):
         rel_root="../",
         canonical_path="question-bank/",
         title="Telangana LLR Question Bank 2026 • 412 Q&As",
-        description="Study all 412 official Telangana RTA Learner's Licence (LLR / STALL) questions and answers across Road Signs (94), Rules of the Road (159), and Driving Principles (159).",
+        description="Study all 412 official Telangana RTA LLR (STALL) questions and answers across Road Signs (94), Rules of the Road (159), and Driving Principles (159).",
         keywords="Telangana LLR question bank 412 questions, Hyderabad RTO LLR questions and answers, STALL exam question bank pdf, Telangana RTA test questions",
         h1="Complete Telangana RTA LLR Question Bank (412 Questions &amp; Answers)",
         subtitle="100% Verified Master Curriculum from Telangana Transport Department",
@@ -765,7 +765,7 @@ def build_rto_guide_page(guide):
         rel_root="../",
         canonical_path="rto-guide/",
         title="Hyderabad & Telangana RTO LLR Guide 2026 • Fees & Centers",
-        description="Complete test-day guide for Telangana RTA Learner's Licence (LLR): Aadhaar & Form 2 checklist, TS-07 to TS-12 Hyderabad RTO addresses, ₹200/₹350 fees, 7-day retest rule, and STALL booth walkthrough.",
+        description="Telangana RTA LLR test-day guide: Aadhaar & Form 2 checklist, TS-07 to TS-12 Hyderabad RTO addresses, ₹200/₹350 fees, 7-day retest, and STALL tips.",
         keywords="Hyderabad RTO LLR documents, Kondapur RTO TS-07 address, Khairatabad RTO TS-09 LLR test, Telangana LLR fees 2026, Uppal Secunderabad RTO timings",
         h1="Hyderabad &amp; Telangana RTA Learner's Licence (LLR) Guide",
         subtitle="Documents Checklist, RTO Center Addresses (TS-07 to TS-12), Fees & Test-Day Steps",
@@ -872,7 +872,7 @@ def build_cheatsheet_page(cheatsheet, twins, popular):
         rel_root="../",
         canonical_path="cheatsheet/",
         title="Telangana LLR Cheatsheet & Hand Signals 2026",
-        description="Printable 10-minute morning-of-the-test revision cheatsheet for Telangana RTA LLR: pass mark, sign shapes, hand signals, emergency numbers, and Tricky Twins comparisons.",
+        description="Printable 10-minute revision cheatsheet for Telangana RTA LLR: pass mark, sign shapes, hand signals, emergency numbers, and Tricky Twins.",
         keywords="Telangana LLR cheatsheet PDF, tricky road signs comparison, driver hand signals India, No Parking vs No Stopping sign, Hyderabad LLR quick tips",
         h1="Telangana LLR Rapid Cheatsheet, Hand Signals &amp; Tricky Twins",
         subtitle="Printable Last-Minute Revision Rules, Hand Signals & Confusing Sign Comparisons",
@@ -961,7 +961,7 @@ def build_dl_test_guide_page(popular):
         rel_root="../",
         canonical_path="dl-test-guide/",
         title="Telangana DL 8-Track & H-Track Test Guide 2026",
-        description="Complete Telangana RTA Permanent Driving Licence guide: Two-Wheeler 8-Track & Car H-Track rules, automated sensor tracks (Kondapur, Uppal, Medchal), slot booking, and DigiLocker LLR download.",
+        description="Telangana RTA Permanent DL guide: Two-Wheeler 8-Track & Car H-Track rules, automated sensor tracks, Parivahan slot booking, and DigiLocker LLR.",
         keywords="Telangana driving licence track test, Hyderabad 8 track bike test, Kondapur H track car test, transport.telangana.gov.in DL slot booking, digital LLR download DigiLocker",
         h1="Telangana Permanent Driving Licence (DL) Track Test &amp; Slot Booking Guide",
         subtitle="Two-Wheeler '8' Track, Car 'H' Track, Automated RTA Tracks & Digital LLR Download",
@@ -1050,7 +1050,7 @@ def build_traffic_fines_page(popular):
         rel_root="../",
         canonical_path="traffic-fines/",
         title="Telangana Traffic Fines 2026 & Hand Signals",
-        description="Updated Telangana & Hyderabad traffic challan fines (helmet, drunk driving, overspeeding, no licence, seatbelt) under the Motor Vehicles Act plus visual driver and police hand signals.",
+        description="Updated Telangana & Hyderabad traffic challan fines (helmet, drunk driving, overspeeding, no licence) under the MV Act plus driver & police hand signals.",
         keywords="Hyderabad traffic fines 2026, Telangana e-challan penalty list, drunk driving fine Hyderabad, helmet fine Telangana, driver hand signals traffic police signals",
         h1="Telangana Traffic Fines, E-Challan Penalties &amp; Hand Signals",
         subtitle="Motor Vehicles Act Penalty Schedule & Visual Police / Driver Hand Signals",
@@ -1065,7 +1065,7 @@ def build_traffic_fines_page(popular):
 def build_district_rto_codes_page(popular):
     cards = "".join(
         f"""<article class="seo-card rto-code-card" data-search="{esc((d['code'] + ' ts-' + d['code'] + ' tg-' + d['code'] + ' ' + d['district']).lower())}" style="display:flex; align-items:center; gap:12px;">
-  <span class="tabular-nums" style="background:#0B2545; color:#F3CA40; font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-{esc(d['code'])}</span>
+  <span class="tabular-nums" style="background:var(--badge-rto-bg); color:var(--badge-rto-text); font-weight:800; font-size:0.82rem; padding:6px 10px; border-radius:6px; flex-shrink:0;">TS / TG-{esc(d['code'])}</span>
   <div>
     <h3 style="font-size:0.98rem; color:var(--primary-navy); font-weight:700;">{esc(d['district'])}</h3>
     <p style="font-size:0.78rem; color:var(--text-muted);">Telangana RTA Office Code {esc(d['code'])}</p>
@@ -1134,7 +1134,7 @@ def build_district_rto_codes_page(popular):
         rel_root="../",
         canonical_path="telangana-rto-codes/",
         title="Telangana RTO District Codes (TS / TG 01–38)",
-        description="Complete list of all 38 Telangana Regional Transport Authority (RTA / RTO) district codes from TS/TG-01 Adilabad to TS/TG-38 Narayanpet including Hyderabad, Warangal, Karimnagar, Nizamabad, Khammam & Rangareddy.",
+        description="Complete directory of all 38 Telangana RTA/RTO district codes from TS/TG-01 Adilabad to TS/TG-38 Narayanpet, including Hyderabad & Rangareddy.",
         keywords="Telangana RTO codes list, TG 01 to TG 38 districts, TS 07 Kondapur TS 09 Khairatabad, Warangal Karimnagar Nizamabad RTA code",
         h1="All Telangana District RTO / RTA Codes (TS &amp; TG 01–38)",
         subtitle="Complete State-Wide District Transport Office Directory for LLR & DL Applicants",
@@ -1177,7 +1177,7 @@ def build_localized_page(lang_code, guide, cheatsheet, signs):
 
     if lang_code == "te":
         title = "తెలంగాణ RTA LLR మాక్ టెస్ట్ 2026 • తెలుగు"
-        desc = "హైదరాబాద్ మరియు తెలంగాణ RTA లెర్నర్స్ లైసెన్స్ (LLR) కంప్యూటర్ పరీక్ష (STALL) కోసం 412 అధికారిక ప్రశ్నలతో తెలుగులో ఉచిత మాక్ టెస్ట్, రోడ్డు సంకేతాలు మరియు RTO గైడ్."
+        desc = "హైదరాబాద్ & తెలంగాణ RTA LLR (STALL) పరీక్ష కోసం 412 అధికారిక ప్రశ్నలతో తెలుగులో ఉచిత మాక్ టెస్ట్, రోడ్డు సంకేతాలు & RTO గైడ్."
         kw = "Telangana LLR mock test Telugu, తెలుగు LLR ప్రాక్టీస్ టెస్ట్, Hyderabad RTO test Telugu, రోడ్డు సంకేతాలు తెలుగు"
         h1 = "తెలంగాణ RTA లెర్నర్స్ లైసెన్స్ (LLR) తెలుగు ప్రాక్టీస్ &amp; మాక్ టెస్ట్"
         sub = "అధికారిక STALL కంప్యూటర్ పరీక్ష సిమ్యులేటర్ • 412 ప్రశ్నలు తెలుగులో ఆడియోతో"
@@ -1391,7 +1391,7 @@ def build_about_page():
         rel_root="../",
         canonical_path="about/",
         title="About, Official Disclaimer & Contact • Telangana RTA LLR Practice",
-        description="About Telangana RTA LLR Practice by Sarva Capital: free educational mission, official Telangana Transport curriculum attribution, non-affiliation disclaimer, and contact details.",
+        description="About Telangana RTA LLR Practice by Sarva Capital: free educational mission, official Telangana Transport syllabus, non-affiliation notice & contact.",
         keywords="About Telangana LLR practice, Sarva Capital LLR disclaimer, contact Telangana LLR simulator",
         h1="About, Official Disclaimer &amp; Contact",
         subtitle="Educational Mission, Source Attribution & Non-Government Affiliation Notice",

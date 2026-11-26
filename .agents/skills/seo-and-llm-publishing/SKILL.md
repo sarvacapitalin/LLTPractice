@@ -12,7 +12,7 @@ description: >-
 ## 1. Authoring Rules for `scripts/build_seo_pages.py`
 - **No double-escaping:** `render_shell()` escapes `title`, `description`, `keywords`, and `subtitle` with `esc()`. Always pass plain `&` in those arguments (never `&amp;`). `h1` is inserted raw, so use `&amp;` only in `h1`.
 - **Title length:** Keep every page `<title>` **≤ 65 characters** (after entity unescaping) to avoid Bing Site Scan `"Title too long"` warnings.
-- **Theme tokens:** Use CSS theme variables (`var(--primary-navy)`, `var(--text-primary)`, `var(--text-secondary)`, `var(--accent-blue)`, `var(--card-bg)`) rather than hardcoded light-mode hexes in `scripts/build_seo_pages.py` (except `#0B2545` on `#F3CA40` yellow CTAs and `#FFFFFF` sign-image backings).
+- **Theme tokens:** Use CSS theme variables (`var(--primary-navy)`, `var(--text-primary)`, `var(--text-secondary)`, `var(--accent-blue)`, `var(--card-bg)`, `var(--cta-gold-bg)`, `var(--cta-gold-text)`, `var(--badge-rto-bg)`, `var(--badge-rto-text)`, `var(--sign-surface)`) rather than hardcoded hex literals in `scripts/build_seo_pages.py`.
 - **Locale & hreflang:** Ensure `og:locale` (`en_IN`, `te_IN`, `hi_IN`) is set, localized pages (`/te/`, `/hi/`) link CTAs with `?lang=te` / `?lang=hi`, and `hreflang` is bidirectional across `/`, `/te/`, `/hi/`, and `sitemap.xml`.
 - **LLM discovery:** Keep `llms.txt` as a structured link directory and regenerate `llms-full.txt` from the JSON datasets.
 

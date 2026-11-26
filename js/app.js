@@ -1637,7 +1637,7 @@ function renderRtoGuide() {
       <div class="seo-card" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-            <span style="background: #0B2545; color: #F3CA40; font-size: 0.75rem; font-weight: 800; padding: 3px 9px; border-radius: 6px;">${center.code}</span>
+            <span style="background: var(--badge-rto-bg); color: var(--badge-rto-text); font-size: 0.75rem; font-weight: 800; padding: 3px 9px; border-radius: 6px;">${center.code}</span>
             <span style="font-size: 0.74rem; color: var(--success-green); font-weight: 700;">${center.hours}</span>
           </div>
           <h4 style="font-size: 0.98rem; color: var(--primary-navy); font-weight: 700; margin-bottom: 4px;">${name}</h4>
@@ -1878,7 +1878,7 @@ function renderPopularGuidesSections(lang) {
       const searchStr = `${d.code} ts-${d.code} tg-${d.code} ${d.district}`.toLowerCase();
       return `
       <div class="rto-district-chip" data-search="${searchStr}" style="display: flex; align-items: center; gap: 10px; background: var(--surface-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 9px 12px;">
-        <span class="tabular-nums" style="background: #0B2545; color: #F3CA40; font-size: 0.74rem; font-weight: 800; padding: 3px 8px; border-radius: 5px; flex-shrink: 0;">TS / TG-${d.code}</span>
+        <span class="tabular-nums" style="background: var(--badge-rto-bg); color: var(--badge-rto-text); font-size: 0.74rem; font-weight: 800; padding: 3px 8px; border-radius: 5px; flex-shrink: 0;">TS / TG-${d.code}</span>
         <span style="font-size: 0.84rem; color: var(--text-primary); font-weight: 600;">${d.district}</span>
       </div>
     `;
