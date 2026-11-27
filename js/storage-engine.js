@@ -153,15 +153,18 @@ export class StorageEngine {
     try {
       const parsed = JSON.parse(jsonString);
       if (parsed && typeof parsed === "object" && parsed.questions && typeof parsed.questions === "object") {
+        const mergedPrefs = Object.assign(
+          { language: "en", soundEnabled: true, autoSpeech: false },
+          (parsed.preferences && typeof parsed.preferences === "object") ? parsed.preferences : {}
+        );
+        // Keep language locked to English while Telugu/Hindi translations are suspended
+        mergedPrefs.language = "en";
         this.state = {
           version: parsed.version || 1,
           lastUpdated: parsed.lastUpdated || new Date().toISOString(),
           questions: parsed.questions || {},
           examHistory: Array.isArray(parsed.examHistory) ? parsed.examHistory : [],
-          preferences: Object.assign(
-            { language: "en", soundEnabled: true, autoSpeech: false },
-            (parsed.preferences && typeof parsed.preferences === "object") ? parsed.preferences : {}
-          )
+          preferences: mergedPrefs
         };
         this.saveState();
         return true;

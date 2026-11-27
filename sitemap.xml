@@ -1,87 +1,531 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://llr.sarvacapital.in/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://llr.sarvacapital.in/" />
-    <xhtml:link rel="alternate" hreflang="te" href="https://llr.sarvacapital.in/te/" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://llr.sarvacapital.in/hi/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://llr.sarvacapital.in/" />
   </url>
   <url>
     <loc>https://llr.sarvacapital.in/road-signs/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_001.png</image:loc>
+      <image:title>RED TRAFFIC LIGHT — MUST STOP BEHIND WHITE STOP LINE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_002.png</image:loc>
+      <image:title>FLASHING YELLOW LIGHT — SLOW DOWN AND PROCEED WITH CAUTION</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_003.png</image:loc>
+      <image:title>FLASHING RED LIGHT — STOP, OBSERVE AND PROCEED WITH CAUTION</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_004.png</image:loc>
+      <image:title>CIRCLE SIGN SHAPE — MANDATORY / REGULATORY ROAD SIGNS</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_005.png</image:loc>
+      <image:title>TRIANGLE SIGN SHAPE — CAUTIONARY / WARNING ROAD SIGNS</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_006.png</image:loc>
+      <image:title>RECTANGLE SIGN SHAPE — INFORMATORY / GUIDE ROAD SIGNS</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_007.png</image:loc>
+      <image:title>STOP</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_008.png</image:loc>
+      <image:title>GIVE WAY</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_009.png</image:loc>
+      <image:title>ONE-WAY STREET RULE — CONTINUE TO THE END OF THE ROAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_010.png</image:loc>
+      <image:title>ONE WAY</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_011.png</image:loc>
+      <image:title>NO ENTRY</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_012.png</image:loc>
+      <image:title>VEHICLE PROHIBITED IN BOTH DIRECTION</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_013.png</image:loc>
+      <image:title>RIGHT TURN PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_014.png</image:loc>
+      <image:title>U-TURN PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_015.png</image:loc>
+      <image:title>ALL MOTOR VEHICLES PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_016.png</image:loc>
+      <image:title>OVERTAKING PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_017.png</image:loc>
+      <image:title>HORN PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_018.png</image:loc>
+      <image:title>PEDESTRIANS PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_019.png</image:loc>
+      <image:title>CYCLES PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_020.png</image:loc>
+      <image:title>TRUCKS PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_021.png</image:loc>
+      <image:title>NO PARKING</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_022.png</image:loc>
+      <image:title>NO STOPPING OR STANDING</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_023.png</image:loc>
+      <image:title>RESTRICTION ENDS SIGN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_024.png</image:loc>
+      <image:title>LENGTH LIMIT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_025.png</image:loc>
+      <image:title>SPEED LIMIT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_026.png</image:loc>
+      <image:title>LOAD LIMIT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_027.png</image:loc>
+      <image:title>HEIGHT LIMIT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_028.png</image:loc>
+      <image:title>WIDTH LIMIT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_029.png</image:loc>
+      <image:title>AXLE LOAD LIMIT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_030.png</image:loc>
+      <image:title>COMPULSORY KEEP LEFT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_031.png</image:loc>
+      <image:title>COMPULSORY AHEAD ONLY</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_032.png</image:loc>
+      <image:title>COMPULSORY TURN RIGHT AHEAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_033.png</image:loc>
+      <image:title>COMPULSORY TURN LEFT AHEAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_034.png</image:loc>
+      <image:title>COMPULSORY TURN LEFT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_035.png</image:loc>
+      <image:title>COMPULSORY TURN RIGHT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_036.png</image:loc>
+      <image:title>COMPULSORY AHEAD OR TURN LEFT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_037.png</image:loc>
+      <image:title>COMPULSORY AHEAD OR TURN RIGHT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_038.png</image:loc>
+      <image:title>COMPULSORY SOUND HORN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_039.png</image:loc>
+      <image:title>COMPULSORY CYCLE TRACK</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_040.png</image:loc>
+      <image:title>CYCLE CROSSING</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_041.png</image:loc>
+      <image:title>RIGHT HAND CURVE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_042.png</image:loc>
+      <image:title>LEFT HAND CURVE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_043.png</image:loc>
+      <image:title>RIGHT HAIR PIN BEND</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_044.png</image:loc>
+      <image:title>LEFT HAIR PIN BEND</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_045.png</image:loc>
+      <image:title>RIGHT REVERSE BEND</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_046.png</image:loc>
+      <image:title>STEEP ASCENT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_047.png</image:loc>
+      <image:title>STEEP DESCENT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_048.png</image:loc>
+      <image:title>NARROW ROAD AHEAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_049.png</image:loc>
+      <image:title>ROAD WIDENS AHEAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_050.png</image:loc>
+      <image:title>NARROW BRIDGE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_051.png</image:loc>
+      <image:title>SLIPPERY ROAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_052.png</image:loc>
+      <image:title>LOOSE GRAVEL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_053.png</image:loc>
+      <image:title>PEDESTRIAN CROSSING</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_054.png</image:loc>
+      <image:title>SCHOOL AHEAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_055.png</image:loc>
+      <image:title>MEN AT WORK</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_056.png</image:loc>
+      <image:title>FALLING ROCKS</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_057.png</image:loc>
+      <image:title>CROSS ROAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_058.png</image:loc>
+      <image:title>GAP IN MEDIAN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_059.png</image:loc>
+      <image:title>ROUND ABOUT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_060.png</image:loc>
+      <image:title>MAJOR ROAD AHEAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_061.png</image:loc>
+      <image:title>DANGEROUS DIP</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_062.png</image:loc>
+      <image:title>HUMP OR ROUGH ROAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_063.png</image:loc>
+      <image:title>BARRIER AHEAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_064.png</image:loc>
+      <image:title>STAGGERED INTERSECTION</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_065.png</image:loc>
+      <image:title>Y-INTERSECTION (SYMMETRIC FORK)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_066.png</image:loc>
+      <image:title>Y-INTERSECTION (RIGHT BRANCH AHEAD)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_067.png</image:loc>
+      <image:title>SIDE ROAD LEFT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_068.png</image:loc>
+      <image:title>FERRY</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_069.png</image:loc>
+      <image:title>CATTLE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_070.png</image:loc>
+      <image:title>UNGUARDED LEVEL CROSSING (50-100 METERS)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_071.png</image:loc>
+      <image:title>UNGUARDED LEVEL CROSSING (200 METERS)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_072.png</image:loc>
+      <image:title>GUARDED LEVEL CROSSING (50-100 METERS)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_073.png</image:loc>
+      <image:title>GUARDED LEVEL CROSSING (200 METERS)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_074.png</image:loc>
+      <image:title>PETROL PUMP</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_075.png</image:loc>
+      <image:title>EATING PLACE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_076.png</image:loc>
+      <image:title>RESTING PLACE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_077.png</image:loc>
+      <image:title>HOSPITAL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_078.png</image:loc>
+      <image:title>FIRST AID POST</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_079.png</image:loc>
+      <image:title>NO THROUGH ROAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_080.png</image:loc>
+      <image:title>NO THROUGH SIDE ROAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_081.png</image:loc>
+      <image:title>PARK THIS SIDE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_082.png</image:loc>
+      <image:title>PARKING FOR SCOOTERS AND MOTOR CYCLES</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_083.png</image:loc>
+      <image:title>POLICE OFFICER SIGNAL (ONCOMING) — STOP</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_084.png</image:loc>
+      <image:title>POLICE OFFICER SIGNAL (JUNCTION) — STOP BEFORE THE STOP LINE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_085.png</image:loc>
+      <image:title>DRIVER HAND SIGNAL (RIGHT TURN) — EXTEND RIGHT PALM OUTWARD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_086.png</image:loc>
+      <image:title>DRIVER HAND SIGNAL — TURN LEFT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_087.png</image:loc>
+      <image:title>DRIVER HAND SIGNAL — TURN RIGHT</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_088.png</image:loc>
+      <image:title>DRIVER HAND SIGNAL — INTENDS TO STOP</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_089.png</image:loc>
+      <image:title>DRIVER HAND SIGNAL — INTENDS TO SLOW DOWN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_090.png</image:loc>
+      <image:title>DRIVER HAND SIGNAL — GIVE WAY TO BE OVERTAKEN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_091.png</image:loc>
+      <image:title>BROKEN WHITE LINE — CAN CHANGE LANE WITH CAUTION</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_092.png</image:loc>
+      <image:title>CONTINUOUS WHITE OR YELLOW LINE — CHANGING OF LANE PROHIBITED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_093.png</image:loc>
+      <image:title>BROKEN + ADJACENT SOLID LINE — OVERTAKE FROM BROKEN LINE SIDE ONLY</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/signs/sign_094.png</image:loc>
+      <image:title>TWO SOLID YELLOW LINES — MUST NOT CROSS TO OVERTAKE OR U-TURN</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://llr.sarvacapital.in/question-bank/</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://llr.sarvacapital.in/question-bank/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <loc>https://llr.sarvacapital.in/question-bank/road-signs/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://llr.sarvacapital.in/question-bank/traffic-rules/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_22.png</image:loc>
+      <image:title>YOU ARE DRIVING A TWO WHEELER ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED VEHICLES YOU SHOULD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_34.png</image:loc>
+      <image:title>WHEN YOU APPROACH AN INTERSECTION, THE GREEN SIGNAL HAS JUST CHANGED INTO AMBER, YOU SHOULD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_36.png</image:loc>
+      <image:title>AS YOU APPROACH THE STOP LINE AT AN INTERSECTION YOU SEE THE LIGHT TURN AMBER. YOU SHOULD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_49.png</image:loc>
+      <image:title>WHEN YOU ARE MOVING OFF FROM BEHIND A PARKED CAR YOU SHOULD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_57.png</image:loc>
+      <image:title>AT A TWO ROAD JUNCTION THERE ARE NO ROAD SIGNS. TWO VEHICLES APPROACH. WHICH HAS PRIORITY?</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_69.png</image:loc>
+      <image:title>WHEN APPROACHING A ROUNDABOUT GIVE WAY TO</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_70.png</image:loc>
+      <image:title>WHICH IS THE BEST REASON FOR NOT FOLLOWING OTHER VEHICLES TOO CLOSELY?</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_107.png</image:loc>
+      <image:title>YOU ARE DRIVING BEHIND A LARGE GOODS VEHICLE. IT SIGNALS LEFT BUT STEERS TO THE RIGHT. YOU SHOULD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_108.png</image:loc>
+      <image:title>WHEN JOINING A MOTORWAY YOU MUST ALWAYS</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_121.png</image:loc>
+      <image:title>YOU STOP FOR PEDESTRIANS WAITING TO CROSS AT A ZEBRA CROSSING. THEY DO NOT START TO CROSS. WHAT SHOULD YOU DO?</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_129.png</image:loc>
+      <image:title>BRAKING HARD AT SPEED ON A SHARP BEND CAN MAKE YOUR VEHICLE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_136.png</image:loc>
+      <image:title>WHAT IS THE MAIN HAZARD A DRIVER SHOULD BE AWARE OF WHEN FOLLOWING A CYCLIST?</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_144.png</image:loc>
+      <image:title>YOU ARE TURNING LEFT AT A JUNCTION. PEDESTRIANS HAVE STARTED TO CROSS THE ROAD. YOU SHOULD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_122.png</image:loc>
+      <image:title>YOU ARE BEHIND THE CYCLIST. WHEN THE TRAFFIC LIGHTS CHANGE, WHAT SHOULD YOU DO?</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_158.png</image:loc>
+      <image:title>YOU MEET AN OBSTRUCTION ON YOUR SIDE OF THE ROAD. YOU SHOULD-</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_156.png</image:loc>
+      <image:title>THE WHITE LINE ALONG THE SIDE OF THE ROAD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://llr.sarvacapital.in/assets/scenarios/rr_172.png</image:loc>
+      <image:title>U TURN IS PROHIBITED ON</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://llr.sarvacapital.in/question-bank/driving-principles/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://llr.sarvacapital.in/online-llr-test/</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://llr.sarvacapital.in/rto-guide/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://llr.sarvacapital.in/dl-test-guide/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://llr.sarvacapital.in/traffic-fines/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://llr.sarvacapital.in/telangana-rto-codes/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://llr.sarvacapital.in/cheatsheet/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://llr.sarvacapital.in/te/</loc>
-    <lastmod>2026-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://llr.sarvacapital.in/" />
-    <xhtml:link rel="alternate" hreflang="te" href="https://llr.sarvacapital.in/te/" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://llr.sarvacapital.in/hi/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://llr.sarvacapital.in/" />
-  </url>
-  <url>
-    <loc>https://llr.sarvacapital.in/hi/</loc>
-    <lastmod>2026-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://llr.sarvacapital.in/" />
-    <xhtml:link rel="alternate" hreflang="te" href="https://llr.sarvacapital.in/te/" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://llr.sarvacapital.in/hi/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://llr.sarvacapital.in/" />
-  </url>
-  <url>
     <loc>https://llr.sarvacapital.in/about/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://llr.sarvacapital.in/privacy-policy/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

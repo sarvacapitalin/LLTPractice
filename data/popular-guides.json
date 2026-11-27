@@ -102,7 +102,7 @@
       ]
     },
     "automatedTracksNote": {
-      "en": "Major Hyderabad/Telangana RTA tracks (Kondapur TS-07, Uppal TS-08, Medchal, Nagole, Ibrahimpatnam) use automated RFID sensors & HD cameras to score track accuracy objectively."
+      "en": "Major Hyderabad/Telangana RTA tracks (Kondapur TS-07/TG-07, Uppal TS-08/TG-08, Medchal, Nagole, Ibrahimpatnam) use automated RFID sensors & HD cameras to score track accuracy objectively. Before booking your Permanent DL slot, complete the mandatory online Road Safety Training module on tgtransport.online/llr/ if prompted."
     }
   },
   "slotAndDownloadGuide": {
@@ -128,12 +128,12 @@
       {
         "step": 2,
         "title": {
-          "en": "Book Your STALL Test Slot & Pay Fee",
+          "en": "Choose Contactless Aadhaar Online Test or RTO Slot",
           "te": "STALL టెస్ట్ స్లాట్ బుక్ చేసి ఫీజు చెల్లించండి",
           "hi": "STALL टेस्ट स्लॉट बुक करें और शुल्क भरें"
         },
         "detail": {
-          "en": "Select your local RTA office, pick an available green date/time slot, pay ₹200 (1 class) or ₹350 (2 classes) online, and print Form 2 + Slot Booking Slip.",
+          "en": "Pay ₹200 (1 class) or ₹350 (2 classes) online. With Aadhaar e-KYC on Parivahan Sarathi (sarathi.parivahan.gov.in), eligible applicants can take the LLR test online from a webcam-equipped PC using AI facial recognition & Safe Exam Browser—or book a physical RTO STALL booth slot (TS/TG-07 to TS/TG-12) and print Form 2 + Slot Slip.",
           "te": "మీ సమీప RTO ఆఫీస్, ఖాళీగా ఉన్న (ఆకుపచ్చ) తేదీ/సమయాన్ని ఎంచుకుని ₹200 లేదా ₹350 ఫీజు చెల్లించి ఫారం 2 మరియు స్లాట్ స్లిప్ ప్రింట్ తీసుకోండి.",
           "hi": "अपना RTA कार्यालय और उपलब्ध हरा स्लॉट चुनें, ₹200 (1 श्रेणी) या ₹350 (2 श्रेणी) का भुगतान करें और फॉर्म 2 व स्लॉट पर्ची प्रिंट करें।"
         }

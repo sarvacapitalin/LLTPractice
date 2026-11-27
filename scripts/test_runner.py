@@ -767,10 +767,10 @@ def run_asset_verification_suite():
             "invalid": invalid_pngs[:5]
         })
 
-    # Verify 20 scenario images
+    # Verify scenario images (removed dead cropped PDF slivers; check active set)
     scenario_files = glob.glob("assets/scenarios/*")
     missing_scenarios = [s for s in scenario_files if os.path.getsize(s) == 0]
-    if len(scenario_files) >= 20 and not missing_scenarios:
+    if len(scenario_files) >= 18 and not missing_scenarios:
         res.record_pass("scenario_images_exist_and_non_zero", {"total_scenarios": len(scenario_files)})
     else:
         res.record_fail("scenario_images_exist_and_non_zero", f"Count: {len(scenario_files)}, Zero-size: {len(missing_scenarios)}")

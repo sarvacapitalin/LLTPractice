@@ -41,12 +41,12 @@ Solves the common pitfall where a candidate passes 3–4 random mock tests while
 
 ---
 
-### 3. 🌐 Complete Trilingual Question Bank (412 Questions)
+### 3. 🌐 Complete Telangana RTA Question Bank (412 Questions)
 Covering 100% of the questions from the official Telangana RTA question bank PDFs:
-- **94 Road Signs**: 42 Mandatory + 38 Cautionary + 14 Informatory signs with high-resolution extracted diagrams (`assets/signs/sign_001.png` to `sign_094.png`).
-- **159 Traffic Rules of the Road**: Including 20 authentic junction/intersection scenario diagrams (`assets/scenarios/`).
+- **94 Road Signs**: 43 Mandatory (including police & driver hand signals) + 37 Cautionary + 14 Informatory signs with extracted diagrams (`assets/signs/sign_001.png` to `sign_094.png`).
+- **159 Traffic Rules of the Road**: Including junction/intersection scenario diagrams (`assets/scenarios/`).
 - **159 General Driving Principles**: Defensive driving, night driving, parking, breakdown procedures, and first aid.
-- **Instant Language Switching**: Toggle between **English**, **తెలుగు (Telugu)**, and **हिन्दी (Hindi)** with one tap at any point during practice or exam.
+- **Language Status (English Active; Telugu/Hindi Temporarily Paused)**: Public UI and SEO pages currently serve verified **English** only while hybrid Telugu/Hindi strings inside the JSON banks undergo translation audit (JSON `te`/`hi` keys remain stored for QA schema parity).
 
 ---
 
@@ -60,7 +60,7 @@ Practice seamlessly across multiple devices:
 ---
 
 ### 5. 📚 High-Impact Study Tools
-- **Topic Practice**: Interactive 412-question browser with filters for Unseen, Missed (Probation), Mastered, and Guessed questions, complete with instant bilingual explanations.
+- **Topic Practice**: Interactive 412-question browser with filters for Unseen, Missed (Probation), Mastered, and Guessed questions, complete with instant explanations.
 - **94-Sign Flip Flashcards**: Interactive cards with sign graphics on the front and official meanings, do's, and don'ts on the back.
 - **Tricky Twins**: Side-by-side comparisons of commonly confused signs (e.g. *No Parking* vs *No Stopping*, *Guarded* vs *Unguarded Level Crossings*, *1-Bar* vs *2-Bar Distance Markers*).
 - **⚡ Rapid Cheatsheet**: Top 10 golden rules to review in 10 minutes right before walking into the RTO testing room.
@@ -173,7 +173,7 @@ LLTPractice/
 | **Time per Question** | 30 seconds countdown (10 minutes total maximum) |
 | **Passing Score** | 12 correct out of 20 (60%) |
 | **Early Stopping** | Test terminates immediately upon reaching 12 correct (PASS) or 9 wrong (FAIL) |
-| **Languages Available** | English, Telugu, Hindi/Urdu |
+| **Languages Active** | English (Telugu & Hindi temporarily paused in UI while translations are audited; official RTO kiosks support English, Telugu, Hindi/Urdu) |
 | **Permitted Mistakes** | Maximum 8 mistakes before test termination |
 
 ---

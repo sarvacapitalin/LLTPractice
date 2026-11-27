@@ -477,7 +477,7 @@
 }
 
 .confirm-next-btn {
-  background: #16A34A;
+  background: #15803D;
   color: #FFFFFF;
   border: none;
   border-radius: var(--radius-sm);
@@ -495,7 +495,7 @@
 }
 
 .confirm-next-btn:hover:not(:disabled) {
-  background: #15803D;
+  background: #166534;
   transform: translateY(-1px);
 }
 
@@ -568,7 +568,7 @@
 }
 
 .share-whatsapp-btn {
-  background: #16A34A;
+  background: #15803D;
   color: #FFFFFF;
   text-decoration: none;
   padding: 11px 18px;
@@ -582,7 +582,7 @@
 }
 
 .share-whatsapp-btn:hover {
-  background: #15803D;
+  background: #166534;
 }
 
 /* Post-Exam Detailed Question Review Section */
@@ -998,21 +998,101 @@
     background: var(--surface-subtle);
     border-color: var(--accent-blue);
   }
+  :root:not([data-theme="light"]) .option-card.selected {
+    background: rgba(96, 165, 250, 0.16);
+    border-color: var(--accent-blue);
+  }
+  :root:not([data-theme="light"]) .option-card.correct {
+    background: var(--success-bg) !important;
+    border-color: var(--success-green) !important;
+    color: #86EFAC;
+  }
+  :root:not([data-theme="light"]) .option-card.incorrect {
+    background: var(--danger-bg) !important;
+    border-color: var(--danger-red) !important;
+    color: #FCA5A5;
+  }
   :root:not([data-theme="light"]) .stall-footer,
   :root:not([data-theme="light"]) .review-explanation,
-  :root:not([data-theme="light"]) .exam-explanation-box {
+  :root:not([data-theme="light"]) .exam-explanation-box,
+  :root:not([data-theme="light"]) .review-opt,
+  :root:not([data-theme="light"]) .shortcut-hint {
     background: var(--surface-subtle);
     border-color: var(--border-color);
     color: var(--text-secondary);
+  }
+  :root:not([data-theme="light"]) .exam-explanation-box {
+    background: var(--success-bg);
+    border-color: var(--success-green);
+  }
+  :root:not([data-theme="light"]) .exam-explanation-box.wrong {
+    background: var(--danger-bg);
+    border-color: var(--danger-red);
+  }
+  :root:not([data-theme="light"]) .review-q-status.correct {
+    background: var(--success-bg);
+    color: #86EFAC;
+  }
+  :root:not([data-theme="light"]) .review-q-status.wrong {
+    background: var(--danger-bg);
+    color: #FCA5A5;
+  }
+  :root:not([data-theme="light"]) .review-opt-badge {
+    background: var(--border-color);
+    color: var(--text-primary);
   }
   :root:not([data-theme="light"]) .exam-explanation-text,
   :root:not([data-theme="light"]) .speech-read-btn {
     color: var(--text-secondary);
   }
+  :root:not([data-theme="light"]) .exam-explanation-box.correct .exam-explanation-title,
+  :root:not([data-theme="light"]) .review-opt.official-correct {
+    color: #86EFAC;
+  }
+  :root:not([data-theme="light"]) .exam-explanation-box.wrong .exam-explanation-title,
+  :root:not([data-theme="light"]) .review-opt.user-chosen-wrong {
+    color: #FCA5A5;
+  }
+  :root:not([data-theme="light"]) .question-number-pill {
+    background: rgba(96, 165, 250, 0.16);
+    color: #93C5FD;
+    border-color: rgba(96, 165, 250, 0.35);
+  }
+  :root:not([data-theme="light"]) .option-badge {
+    background: var(--surface-subtle);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+  :root:not([data-theme="light"]) .review-opt.official-correct {
+    background: var(--success-bg);
+    border-color: var(--success-green);
+  }
+  :root:not([data-theme="light"]) .review-opt.user-chosen-wrong {
+    background: var(--danger-bg);
+    border-color: var(--danger-red);
+  }
+  :root:not([data-theme="light"]) .speech-read-btn:hover {
+    background: var(--border-color);
+    color: var(--text-primary);
+  }
+  :root:not([data-theme="light"]) .speech-read-btn.reading {
+    background: var(--warning-bg);
+    color: var(--warning-amber);
+    border-color: rgba(250, 204, 21, 0.45);
+  }
   :root:not([data-theme="light"]) .review-filter-btn {
     background: var(--surface-subtle);
     color: var(--text-secondary);
     border-color: var(--border-color);
+  }
+  :root:not([data-theme="light"]) .review-filter-btn:hover {
+    background: var(--border-color);
+    color: var(--text-primary);
+  }
+  :root:not([data-theme="light"]) .review-filter-btn.active {
+    background: var(--accent-blue);
+    color: #0B1220;
+    border-color: var(--accent-blue);
   }
   :root:not([data-theme="light"]) .question-visual-box,
   :root:not([data-theme="light"]) .review-q-img-wrap {

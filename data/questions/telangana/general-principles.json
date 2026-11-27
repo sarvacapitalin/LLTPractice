@@ -1495,8 +1495,8 @@
     "options": {
       "en": [
         "FOR 30 DAYS",
-        "TILL PERMANENT LICENCE IS",
-        "ISSUED FOR SIX MONTHS",
+        "TILL PERMANENT LICENCE IS ISSUED",
+        "FOR SIX MONTHS",
         "FOR ONE YEAR"
       ],
       "te": [
@@ -1514,7 +1514,7 @@
     },
     "answerIndex": 2,
     "explanation": {
-      "en": "Certified Driving Principle: ISSUED FOR SIX MONTHS. This standard practice ensures vehicle control and passenger safety.",
+      "en": "Certified Driving Principle: FOR SIX MONTHS. This standard practice ensures vehicle control and passenger safety.",
       "te": "సరైన డ్రైవింగ్ సూత్రం: ISSUED FOR SIX నెలలు. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
       "hi": "सही ड्राइविंग सिद्धांत: ISSUED FOR SIX महीने. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
@@ -4528,7 +4528,7 @@
     "questionNumber": 120,
     "image": null,
     "text": {
-      "en": "ON A FOGGY DAY YOU HAVE TO UNAVOIDABLY PARK YOUR VEHICLE ON THE ROAD. WHAT SHOULD YOU DO? KEEP STONES/BRICKS AROUND YOUR VEHICLE",
+      "en": "ON A FOGGY DAY YOU HAVE TO UNAVOIDABLY PARK YOUR VEHICLE ON THE ROAD. WHAT SHOULD YOU DO?",
       "te": "మీరు ఏమి చేయాలి ?",
       "hi": "आपको क्या करना चाहिए ?"
     },
@@ -5022,33 +5022,33 @@
     "questionNumber": 133,
     "image": null,
     "text": {
-      "en": "STICKERS, POSTERS AND OTHER NON- OFFICIAL ITEMS MAY NOT BE PLACED ON THE WINDSHIELD OF AN AUTOMOBILE BECAUSE:- IT IS UNLAWFUL TO ADVERTISE IN THIS WAY.",
+      "en": "STICKERS, POSTERS AND OTHER NON- OFFICIAL ITEMS MAY NOT BE PLACED ON THE WINDSHIELD OF AN AUTOMOBILE BECAUSE:-",
       "te": "STICKERS, POSTERS AND OTHER NON- OFFICIAL ITEMS MAY NOT BE PLACED ON THE WINDSHIELD OF AN AUTOMOBILE BECAUSE:- IT IS UNLAWFUL TO ADVERTISE IN THIS WAY.",
       "hi": "STICKERS, POSTERS AND OTHER NON- OFFICIAL ITEMS MAY NOT BE PLACED ON THE WINDSHIELD OF AN AUTOMOBILE BECAUSE:- IT IS UNLAWFUL TO ADVERTISE IN THIS WAY."
     },
     "options": {
       "en": [
-        "THEY OBSTRUCT THE DRIVER'S",
-        "VISION.",
+        "IT IS UNLAWFUL TO ADVERTISE IN THIS WAY.",
+        "THEY OBSTRUCT THE DRIVER'S VISION.",
         "OTHER DRIVERS CANNOT SEE YOU.",
         "NONE OF THE ABOVE."
       ],
       "te": [
-        "THEY OBSTRUCT THE డ్రైవర్లు",
-        "VISION.",
-        "OTHER డ్రైవర్లు చేయకూడదు SEE YOU.",
-        "పైవేవీ కావు"
+        "ఈ విధంగా ప్రకటనలు వేయడం చట్టవిరుద్ధం.",
+        "అవి డ్రైవర్ దృష్టిని అడ్డుకుంటాయి.",
+        "ఇతర డ్రైవర్లు మిమ్మల్ని చూడలేరు.",
+        "పైవేవీ కావు."
       ],
       "hi": [
-        "THEY OBSTRUCT THE चालक",
-        "VISION.",
-        "OTHER चालक नहीं कर सकते SEE YOU.",
-        "इनमें से कोई नहीं"
+        "इस तरह विज्ञापन करना गैर-कानूनी है।",
+        "वे चालक की दृष्टि में बाधा डालते हैं।",
+        "अन्य चालक आपको नहीं देख सकते।",
+        "इनमें से कोई नहीं।"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Certified Driving Principle: VISION.. This standard practice ensures vehicle control and passenger safety.",
+      "en": "Certified Driving Principle: THEY OBSTRUCT THE DRIVER'S VISION.. This standard practice ensures vehicle control and passenger safety.",
       "te": "సరైన డ్రైవింగ్ సూత్రం: VISION.. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
       "hi": "सही ड्राइविंग सिद्धांत: VISION.. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
@@ -5630,33 +5630,33 @@
     "questionNumber": 149,
     "image": null,
     "text": {
-      "en": "ZEBRA CROSSING IS MEANT FOR PEDESTRIANS",
-      "te": "ZEBRA దాటడం / క్రాసింగ్ IS MEANT FOR పాదచారులు",
-      "hi": "ZEBRA पार करना (क्रॉसिंग) IS MEANT FOR पैदल यात्री"
+      "en": "ZEBRA CROSSING IS MEANT FOR",
+      "te": "జీబ్రా క్రాసింగ్ దీని కోసం ఉద్దేశించబడింది",
+      "hi": "ज़ेबरा क्रॉसिंग किसके लिए होती है"
     },
     "options": {
       "en": [
+        "PEDESTRIANS",
         "EMERGENCY VEHICLES",
         "SLOW MOVING VEHICLES",
-        "BREAKDOWN VEHICLES",
         "STOPPING THE VEHICLE"
       ],
       "te": [
-        "అత్యవసర సేవా వాహనాలు",
-        "నెమ్మదిగా MOVING వాహనాలు",
-        "BREAKDOWN వాహనాలు",
-        "ఆపడం THE వాహనం"
+        "పాదచారులు",
+        "అత్యవసర వాహనాలు",
+        "నెమ్మదిగా వెళ్లే వాహనాలు",
+        "వాహనాన్ని ఆపడానికి"
       ],
       "hi": [
+        "पैदल यात्री",
         "आपातकालीन वाहन",
-        "धीमा MOVING वाहन",
-        "BREAKDOWN वाहन",
-        "रुकना THE वाहन"
+        "धीमी गति वाले वाहन",
+        "वाहन रोकने के लिए"
       ]
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Certified Driving Principle: EMERGENCY VEHICLES. This standard practice ensures vehicle control and passenger safety.",
+      "en": "Certified Driving Principle: PEDESTRIANS. This standard practice ensures vehicle control and passenger safety.",
       "te": "సరైన డ్రైవింగ్ సూత్రం: అత్యవసర సేవా వాహనాలు. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
       "hi": "सही ड्राइविंग सिद्धांत: आपातकालीन वाहन. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }
@@ -5674,27 +5674,27 @@
     },
     "options": {
       "en": [
-        "IS PERMITTED FOR BUSES IS PROHIBITED FOR ALL TYPES",
-        "OF VEHICLES",
+        "IS PERMITTED FOR BUSES",
+        "IS PROHIBITED FOR ALL TYPES OF VEHICLES",
         "IS PROHIBITED FOR BUSES",
         "IS PERMITTED FOR PASSENGER VEHICLES"
       ],
       "te": [
-        "IS అనుమతించబడింది FOR BUSES IS నిషిద్ధం FOR ALL TYPES",
-        "OF వాహనాలు",
-        "IS నిషిద్ధం FOR BUSES",
-        "IS అనుమతించబడింది FOR PASSENGER వాహనాలు"
+        "బస్సులకు అనుమతి ఉంది",
+        "అన్ని రకాల వాహనాలకు నిషేధించబడింది",
+        "బస్సులకు నిషేధించబడింది",
+        "ప్రయాణికుల వాహనాలకు అనుమతి ఉంది"
       ],
       "hi": [
-        "IS अनुमति है FOR BUSES IS निषेध FOR ALL TYPES",
-        "OF वाहन",
-        "IS निषेध FOR BUSES",
-        "IS अनुमति है FOR PASSENGER वाहन"
+        "बसों के लिए अनुमति है",
+        "सभी प्रकार के वाहनों के लिए निषिद्ध है",
+        "बसों के लिए निषिद्ध है",
+        "यात्री वाहनों के लिए अनुमति है"
       ]
     },
     "answerIndex": 1,
     "explanation": {
-      "en": "Certified Driving Principle: OF VEHICLES. This standard practice ensures vehicle control and passenger safety.",
+      "en": "Certified Driving Principle: IS PROHIBITED FOR ALL TYPES OF VEHICLES. This standard practice ensures vehicle control and passenger safety.",
       "te": "సరైన డ్రైవింగ్ సూత్రం: OF వాహనాలు. ఇది సురక్షితమైన ప్రయాణం మరియు వాహన నియంత్రణను నిర్ధారిస్తుంది.",
       "hi": "सही ड्राइविंग सिद्धांत: OF वाहन. यह सुरक्षित यात्रा और वाहन नियंत्रण सुनिश्चित करता है।"
     }

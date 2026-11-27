@@ -13,15 +13,32 @@
   --card-bg: #FFFFFF;
   --text-primary: #0F172A;
   --text-secondary: #475569;
-  --text-muted: #64748B;
+  --text-muted: #526075;
   --border-color: #E2E8F0;
   --border-strong: #CBD5E1;
   --success-green: #15803D;
   --success-bg: #DCFCE7;
+  --success-border: #86EFAC;
   --warning-amber: #B45309;
   --warning-bg: #FEF3C7;
   --danger-red: #B91C1C;
   --danger-bg: #FEE2E2;
+  --danger-border: #FECACA;
+  --btn-primary-hover-bg: #1E3A8A;
+  --pill-unseen-bg: #E2E8F0;
+  --pill-unseen-border: #CBD5E1;
+  --pill-unseen-text: #1E293B;
+  --pill-probation-bg: #FEF3C7;
+  --pill-probation-border: #F59E0B;
+  --pill-probation-text: #92400E;
+  --pill-mastered-bg: #DCFCE7;
+  --pill-mastered-border: #16A34A;
+  --pill-mastered-text: #166534;
+  --pill-info-bg: #EFF6FF;
+  --pill-info-border: #BFDBFE;
+  --pill-info-text: #1E40AF;
+  --readiness-ready-bg: #22C55E;
+  --readiness-building-bg: #FFD54F;
   --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.28);
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -56,10 +73,25 @@
   --border-strong: #334155;
   --success-green: #4ADE80;
   --success-bg: rgba(34, 197, 94, 0.16);
+  --success-border: rgba(74, 222, 128, 0.45);
   --warning-amber: #FBBF24;
   --warning-bg: rgba(245, 158, 11, 0.16);
   --danger-red: #F87171;
   --danger-bg: rgba(239, 68, 68, 0.16);
+  --danger-border: rgba(248, 113, 113, 0.45);
+  --btn-primary-hover-bg: #1E40AF;
+  --pill-unseen-bg: #1E293B;
+  --pill-unseen-border: #334155;
+  --pill-unseen-text: #E2E8F0;
+  --pill-probation-bg: rgba(245, 158, 11, 0.22);
+  --pill-probation-border: rgba(245, 158, 11, 0.45);
+  --pill-probation-text: #FDE68A;
+  --pill-mastered-bg: rgba(34, 197, 94, 0.2);
+  --pill-mastered-border: rgba(74, 222, 128, 0.45);
+  --pill-mastered-text: #86EFAC;
+  --pill-info-bg: rgba(96, 165, 250, 0.16);
+  --pill-info-border: rgba(96, 165, 250, 0.35);
+  --pill-info-text: #93C5FD;
   --focus-ring: 0 0 0 3px rgba(96, 165, 250, 0.35);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
@@ -86,10 +118,25 @@
     --border-strong: #334155;
     --success-green: #4ADE80;
     --success-bg: rgba(34, 197, 94, 0.16);
+    --success-border: rgba(74, 222, 128, 0.45);
     --warning-amber: #FBBF24;
     --warning-bg: rgba(245, 158, 11, 0.16);
     --danger-red: #F87171;
     --danger-bg: rgba(239, 68, 68, 0.16);
+    --danger-border: rgba(248, 113, 113, 0.45);
+    --btn-primary-hover-bg: #1E40AF;
+    --pill-unseen-bg: #1E293B;
+    --pill-unseen-border: #334155;
+    --pill-unseen-text: #E2E8F0;
+    --pill-probation-bg: rgba(245, 158, 11, 0.22);
+    --pill-probation-border: rgba(245, 158, 11, 0.45);
+    --pill-probation-text: #FDE68A;
+    --pill-mastered-bg: rgba(34, 197, 94, 0.2);
+    --pill-mastered-border: rgba(74, 222, 128, 0.45);
+    --pill-mastered-text: #86EFAC;
+    --pill-info-bg: rgba(96, 165, 250, 0.16);
+    --pill-info-border: rgba(96, 165, 250, 0.35);
+    --pill-info-text: #93C5FD;
     --focus-ring: 0 0 0 3px rgba(96, 165, 250, 0.35);
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
     --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
@@ -308,7 +355,7 @@ textarea {
 }
 
 .lang-select option {
-  background: var(--primary-navy);
+  background: var(--header-start);
   color: #FFFFFF;
 }
 
@@ -326,7 +373,7 @@ textarea {
 }
 
 .ui-select option {
-  background: #FFFFFF;
+  background: var(--card-bg);
   color: var(--text-primary);
 }
 
@@ -354,6 +401,12 @@ textarea {
   color: var(--secondary-blue);
 }
 
+.btn-secondary-light.active {
+  background: var(--pill-info-bg);
+  border-color: var(--accent-blue);
+  color: var(--pill-info-text);
+}
+
 .btn-secondary-light:disabled {
   opacity: 0.48;
   cursor: not-allowed;
@@ -378,7 +431,30 @@ textarea {
 }
 
 .btn-primary-solid:hover:not(:disabled) {
-  background: var(--primary-navy);
+  background: var(--btn-primary-hover-bg);
+}
+
+.btn-danger-solid {
+  background: #B91C1C;
+  border: 1px solid #B91C1C;
+  color: #FFFFFF;
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+  min-height: 40px;
+  text-decoration: none;
+}
+
+.btn-danger-solid:hover:not(:disabled) {
+  background: #991B1B;
+  border-color: #991B1B;
 }
 
 .btn-outline-primary {
@@ -1048,6 +1124,21 @@ body.exam-focus-mode .exam-hide-on-active {
   vertical-align: middle;
 }
 
+.legend-dot.unseen {
+  background: var(--pill-unseen-bg);
+  border: 1px solid var(--pill-unseen-border);
+}
+
+.legend-dot.probation {
+  background: var(--pill-probation-bg);
+  border: 1px solid var(--pill-probation-border);
+}
+
+.legend-dot.mastered {
+  background: var(--pill-mastered-bg);
+  border: 1px solid var(--pill-mastered-border);
+}
+
 .practice-matrix-box {
   display: flex;
   flex-wrap: wrap;
@@ -1067,8 +1158,98 @@ body.exam-focus-mode .exam-hide-on-active {
   font-weight: 700;
   cursor: pointer;
   font-variant-numeric: tabular-nums;
-  border: 1px solid var(--border-strong);
+  background: var(--pill-unseen-bg);
+  color: var(--pill-unseen-text);
+  border: 1px solid var(--pill-unseen-border);
   transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.matrix-chip.is-probation {
+  background: var(--pill-probation-bg);
+  color: var(--pill-probation-text);
+  border-color: var(--pill-probation-border);
+}
+
+.matrix-chip.is-mastered {
+  background: var(--pill-mastered-bg);
+  color: var(--pill-mastered-text);
+  border-color: var(--pill-mastered-border);
+}
+
+.status-badge-pill {
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: var(--surface-subtle);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+}
+
+.status-badge-pill.is-probation {
+  background: var(--pill-probation-bg);
+  color: var(--pill-probation-text);
+  border-color: var(--pill-probation-border);
+}
+
+.status-badge-pill.is-mastered {
+  background: var(--pill-mastered-bg);
+  color: var(--pill-mastered-text);
+  border-color: var(--pill-mastered-border);
+}
+
+.cat-breakdown-pill {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.cat-breakdown-pill.cat-signs {
+  background: var(--pill-probation-bg);
+  color: var(--pill-probation-text);
+  border-color: var(--pill-probation-border);
+}
+
+.cat-breakdown-pill.cat-rules {
+  background: var(--danger-bg);
+  color: var(--danger-red);
+  border-color: var(--danger-border);
+}
+
+.cat-breakdown-pill.cat-principles {
+  background: var(--pill-info-bg);
+  color: var(--pill-info-text);
+  border-color: var(--pill-info-border);
+}
+
+.fc-btn-again {
+  background: var(--danger-bg);
+  color: var(--danger-red);
+  border-color: var(--danger-border);
+}
+
+.fc-btn-know {
+  background: var(--success-bg);
+  color: var(--success-green);
+  border-color: var(--success-border);
+}
+
+.hs-guide-thumb {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  background: var(--sign-surface);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  border: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.footer-brand-link {
+  color: var(--accent-blue);
+  text-decoration: underline;
 }
 
 .matrix-chip.is-selected {
@@ -1348,7 +1529,7 @@ body.exam-focus-mode .exam-hide-on-active {
 }
 
 .seo-cta-primary:hover {
-  background: var(--primary-navy);
+  background: var(--btn-primary-hover-bg);
 }
 
 .seo-cta-secondary {
@@ -1502,6 +1683,139 @@ body.qb-quiz-mode .qa-explanation-box {
 
 .back-to-top-btn.visible {
   display: inline-flex;
+}
+
+/* Reusable SEO Static Page Card & Question-Bank Classes (Reduces HTML size & keeps dark-mode token parity) */
+.seo-section-heading {
+  font-size: 1.3rem;
+  color: var(--primary-navy);
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.seo-section-sub {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+}
+
+.seo-input {
+  padding: 8px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 0.86rem;
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.seo-empty-msg {
+  display: none;
+  text-align: center;
+  padding: 32px;
+  color: var(--text-muted);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.qb-subnav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.qa-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.qa-question-title {
+  font-size: 1.02rem;
+  color: var(--primary-navy);
+  font-weight: 600;
+  line-height: 1.48;
+  letter-spacing: 0.012em;
+  margin-bottom: 8px;
+}
+
+.qa-img-wrap {
+  margin: 10px 0;
+}
+
+.qa-img {
+  max-height: 110px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  padding: 4px;
+  background: var(--sign-surface);
+}
+
+.qa-explanation-box {
+  font-size: 0.86rem;
+  color: var(--text-primary);
+  background: var(--surface-subtle);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-top: 8px;
+  line-height: 1.48;
+}
+
+.rs-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+.rs-card-num {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.rs-img-wrap {
+  text-align: center;
+  background: var(--sign-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.rs-img {
+  max-height: 110px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.rs-card-title {
+  font-size: 0.96rem;
+  color: var(--primary-navy);
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+.rs-card-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.fc-back-thumb {
+  max-width: 78px;
+  max-height: 78px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ==========================================
@@ -1871,14 +2185,13 @@ body.qb-quiz-mode .qa-explanation-box {
 :root[data-theme="dark"] .practice-opt-btn,
 :root[data-theme="dark"] .flashcard-box,
 :root[data-theme="dark"] .flashcard-box.is-flipped,
-:root[data-theme="dark"] .flashcard-front,
-:root[data-theme="dark"] .flashcard-back,
 :root[data-theme="dark"] .search-input-wrap input,
 :root[data-theme="dark"] .footer-about-box,
 :root[data-theme="dark"] .footer-faq-item,
 :root[data-theme="dark"] .footer-directory-grid,
 :root[data-theme="dark"] .app-modal-card,
 :root[data-theme="dark"] .intro-mastery-panel,
+:root[data-theme="dark"] .ui-select,
 :root[data-theme="dark"] .ui-select option {
   background: var(--card-bg);
   border-color: var(--border-color);
@@ -2075,13 +2388,13 @@ body.qb-quiz-mode .qa-explanation-box {
   border-color: var(--border-color);
 }
 
-/* Keep light backing behind road-sign PNGs and QR codes in dark mode */
-:root[data-theme="dark"] .flashcard-front img,
+/* Keep light backing behind road-sign PNGs in dark mode */
+:root[data-theme="dark"] #fc-image,
+:root[data-theme="dark"] #fc-back-thumb,
 :root[data-theme="dark"] .seo-card img,
-:root[data-theme="dark"] .qa-sign-img,
-:root[data-theme="dark"] .practice-q-img,
-:root[data-theme="dark"] .sign-image-box,
-:root[data-theme="dark"] #sync-qr-box {
+:root[data-theme="dark"] .qa-img-wrap,
+:root[data-theme="dark"] .rs-card-img,
+:root[data-theme="dark"] .twins-comparison-grid img {
   background: var(--sign-surface);
   border-radius: 10px;
   padding: 6px;
@@ -2102,7 +2415,9 @@ body.qb-quiz-mode .qa-explanation-box {
   :root:not([data-theme="light"]) .footer-faq-item,
   :root:not([data-theme="light"]) .footer-directory-grid,
   :root:not([data-theme="light"]) .app-modal-card,
-  :root:not([data-theme="light"]) .intro-mastery-panel {
+  :root:not([data-theme="light"]) .intro-mastery-panel,
+  :root:not([data-theme="light"]) .ui-select,
+  :root:not([data-theme="light"]) .ui-select option {
     background: var(--card-bg);
     border-color: var(--border-color);
     color: var(--text-primary);
@@ -2115,6 +2430,24 @@ body.qb-quiz-mode .qa-explanation-box {
   :root:not([data-theme="light"]) .btn-outline-primary {
     background: rgba(96, 165, 250, 0.14);
     border-color: rgba(96, 165, 250, 0.35);
+    color: #93C5FD;
+  }
+  :root:not([data-theme="light"]) .btn-outline-primary:hover,
+  :root:not([data-theme="light"]) .seo-nav-link:hover,
+  :root:not([data-theme="light"]) .toc-pill:hover {
+    background: var(--surface-subtle);
+    color: var(--text-primary);
+  }
+  :root:not([data-theme="light"]) .tutor-status-pill {
+    background: var(--border-color);
+    color: var(--text-secondary);
+  }
+  :root:not([data-theme="light"]) .tutor-status-pill.on {
+    background: rgba(96, 165, 250, 0.22);
+    color: #93C5FD;
+  }
+  :root:not([data-theme="light"]) .ad-preview-badge {
+    background: rgba(96, 165, 250, 0.2);
     color: #93C5FD;
   }
   :root:not([data-theme="light"]) h1:not(.app-header h1),
@@ -2137,6 +2470,83 @@ body.qb-quiz-mode .qa-explanation-box {
   :root:not([data-theme="light"]) .section-jump-bar {
     background: rgba(22, 33, 54, 0.96);
     border-color: var(--border-color);
+  }
+  :root:not([data-theme="light"]) .seo-cta-secondary,
+  :root:not([data-theme="light"]) .twins-memory-hook,
+  :root:not([data-theme="light"]) .mastery-goal-tag {
+    color: #FDE68A;
+    border-color: rgba(250, 204, 21, 0.45);
+  }
+  :root:not([data-theme="light"]) .mastery-goal-tag.ready {
+    background: var(--success-bg);
+    color: var(--success-green);
+    border-color: var(--success-green);
+  }
+  :root:not([data-theme="light"]) .practice-opt-btn.is-correct {
+    background: var(--success-bg);
+    border-color: var(--success-green);
+    color: #86EFAC;
+  }
+  :root:not([data-theme="light"]) .practice-opt-btn.is-wrong {
+    background: var(--danger-bg);
+    border-color: var(--danger-red);
+    color: #FCA5A5;
+  }
+  :root:not([data-theme="light"]) .practice-opt-num {
+    background: var(--surface-subtle);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+  :root:not([data-theme="light"]) .ad-preview-box {
+    background: var(--surface-subtle);
+    border-color: var(--border-strong);
+  }
+  :root:not([data-theme="light"]) .btn-secondary-light {
+    background: var(--surface-subtle);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+  :root:not([data-theme="light"]) .btn-secondary-light:hover:not(:disabled) {
+    background: var(--border-color);
+    color: var(--text-primary);
+    border-color: var(--accent-blue);
+  }
+  :root:not([data-theme="light"]) .spec-pill {
+    background: rgba(96, 165, 250, 0.14);
+    color: #93C5FD;
+    border-color: rgba(96, 165, 250, 0.3);
+  }
+  :root:not([data-theme="light"]) .practice-opt-btn:hover:not(:disabled),
+  :root:not([data-theme="light"]) .tutor-toggle-card:hover,
+  :root:not([data-theme="light"]) .toc-pill:hover {
+    background: var(--surface-subtle);
+    border-color: var(--accent-blue);
+  }
+  :root:not([data-theme="light"]) .pill-btn,
+  :root:not([data-theme="light"]) .search-clear-btn,
+  :root:not([data-theme="light"]) .progress-track {
+    background: var(--surface-subtle);
+    color: var(--text-secondary);
+    border-color: var(--border-color);
+  }
+  :root:not([data-theme="light"]) .pill-btn:hover,
+  :root:not([data-theme="light"]) .search-clear-btn:hover {
+    background: var(--border-color);
+    color: var(--text-primary);
+  }
+  :root:not([data-theme="light"]) .pill-btn.active {
+    background: var(--accent-blue);
+    color: #0B1220;
+    border-color: var(--accent-blue);
+  }
+  :root:not([data-theme="light"]) .nav-tab,
+  :root:not([data-theme="light"]) .seo-nav-link {
+    color: var(--text-secondary);
+  }
+  :root:not([data-theme="light"]) .nav-tab.active,
+  :root:not([data-theme="light"]) .seo-nav-link.active {
+    color: var(--accent-blue);
+    border-bottom-color: var(--accent-blue);
   }
   :root:not([data-theme="light"]) .seo-nav-link.active {
     background: var(--secondary-blue);
@@ -2163,54 +2573,21 @@ body.qb-quiz-mode .qa-explanation-box {
     background: rgba(96, 165, 250, 0.16);
     color: #93C5FD;
   }
-  :root:not([data-theme="light"]) .seo-cta-secondary,
-  :root:not([data-theme="light"]) .twins-memory-hook,
-  :root:not([data-theme="light"]) .mastery-goal-tag {
-    color: #FDE68A;
-    border-color: rgba(250, 204, 21, 0.45);
+  :root:not([data-theme="light"]) .header-lang-link.active {
+    background: var(--accent-blue);
+    color: #0B1220;
   }
-  :root:not([data-theme="light"]) .nav-tab,
-  :root:not([data-theme="light"]) .seo-nav-link {
-    color: var(--text-secondary);
-  }
-  :root:not([data-theme="light"]) .practice-opt-btn.is-correct {
-    background: var(--success-bg);
-    border-color: var(--success-green);
-    color: #86EFAC;
-  }
-  :root:not([data-theme="light"]) .practice-opt-btn.is-wrong {
-    background: var(--danger-bg);
-    border-color: var(--danger-red);
-    color: #FCA5A5;
-  }
-  :root:not([data-theme="light"]) .practice-opt-num {
+  :root:not([data-theme="light"]) .ad-slot-wrapper {
     background: var(--surface-subtle);
-    color: var(--text-primary);
-    border-color: var(--border-strong);
-  }
-  :root:not([data-theme="light"]) .btn-secondary-light {
-    background: var(--surface-subtle);
-    color: var(--text-primary);
-    border-color: var(--border-strong);
-  }
-  :root:not([data-theme="light"]) .spec-pill {
-    background: rgba(96, 165, 250, 0.14);
-    color: #93C5FD;
-    border-color: rgba(96, 165, 250, 0.3);
-  }
-  :root:not([data-theme="light"]) .pill-btn,
-  :root:not([data-theme="light"]) .search-clear-btn,
-  :root:not([data-theme="light"]) .progress-track {
-    background: var(--surface-subtle);
-    color: var(--text-secondary);
     border-color: var(--border-color);
   }
-  :root:not([data-theme="light"]) .flashcard-front img,
+  :root:not([data-theme="light"]) #fc-image,
+  :root:not([data-theme="light"]) #fc-back-thumb,
   :root:not([data-theme="light"]) .seo-card img,
-  :root:not([data-theme="light"]) .qa-sign-img,
-  :root:not([data-theme="light"]) .practice-q-img,
-  :root:not([data-theme="light"]) #sync-qr-box {
-    background: #F8FAFC;
+  :root:not([data-theme="light"]) .qa-img-wrap,
+  :root:not([data-theme="light"]) .rs-card-img,
+  :root:not([data-theme="light"]) .twins-comparison-grid img {
+    background: var(--sign-surface);
     border-radius: 10px;
     padding: 6px;
   }

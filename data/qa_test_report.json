@@ -1,7 +1,7 @@
 {
-  "report_id": "QA_RUN_1795671865",
-  "generated_at": "2026-11-26T05:44:25.730719Z",
-  "duration_seconds": 0.042,
+  "report_id": "QA_RUN_1795766092",
+  "generated_at": "2026-11-27T07:54:52.272732Z",
+  "duration_seconds": 0.038,
   "overall_status": "PASSED",
   "summary": {
     "total_suites": 9,
@@ -110,7 +110,7 @@
           "test": "question_referenced_images_exist",
           "status": "PASSED",
           "details": {
-            "checked_count": 115
+            "checked_count": 113
           }
         },
         {
@@ -370,21 +370,21 @@
           "test": "scenario_images_exist_and_non_zero",
           "status": "PASSED",
           "details": {
-            "total_scenarios": 22
+            "total_scenarios": 19
           }
         },
         {
           "test": "css_file_exists_styles.css",
           "status": "PASSED",
           "details": {
-            "size": 48741
+            "size": 58233
           }
         },
         {
           "test": "css_file_exists_exam-stall.css",
           "status": "PASSED",
           "details": {
-            "size": 20309
+            "size": 23118
           }
         },
         {
@@ -420,7 +420,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 58316
+            "bytes_served": 59027
           }
         },
         {
@@ -454,7 +454,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/html",
-            "bytes_served": 58316
+            "bytes_served": 59027
           }
         },
         {
@@ -488,7 +488,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/css",
-            "bytes_served": 48741
+            "bytes_served": 58233
           }
         },
         {
@@ -497,7 +497,7 @@
           "details": {
             "status_code": 200,
             "content_type": "text/javascript",
-            "bytes_served": 87903
+            "bytes_served": 90784
           }
         },
         {
@@ -506,7 +506,7 @@
           "details": {
             "status_code": 200,
             "content_type": "image/png",
-            "bytes_served": 20431
+            "bytes_served": 8711
           }
         }
       ],

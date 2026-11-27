@@ -1,12 +1,19 @@
-// js/i18n.js - Trilingual Internationalization Manager (English, Telugu & Hindi)
+// js/i18n.js - Internationalization Manager
+// IMPORTANT FOR ALL DEVELOPERS & AI AGENTS:
+// Telugu ("te") and Hindi ("hi") are TEMPORARILY DISABLED because 280/412 questions in
+// data/questions/telangana/*.json contain incomplete/hybrid English+Telugu/Hindi text.
+// DO NOT add "te" or "hi" back to ENABLED_LANGS without EXPLICIT user approval.
+// Keep data/i18n/te.json and data/i18n/hi.json intact for automated QA key-parity checks.
 import { storage } from "./storage-engine.js";
 
 const SUPPORTED_LANGS = ["en", "te", "hi"];
+export const ENABLED_LANGS = ["en"];
+
 let urlLang = null;
 if (typeof window !== "undefined" && window.location) {
   try {
     const paramLang = new URLSearchParams(window.location.search).get("lang");
-    if (SUPPORTED_LANGS.includes(paramLang)) {
+    if (ENABLED_LANGS.includes(paramLang)) {
       urlLang = paramLang;
       storage.setPreference("language", paramLang);
     }
@@ -16,8 +23,9 @@ if (typeof window !== "undefined" && window.location) {
 }
 
 let currentLang = urlLang || storage.getPreference("language", "en");
-if (!SUPPORTED_LANGS.includes(currentLang)) {
+if (!ENABLED_LANGS.includes(currentLang)) {
   currentLang = "en";
+  storage.setPreference("language", "en");
 }
 
 let translations = {
@@ -28,15 +36,9 @@ let translations = {
 
 export async function initI18n() {
   try {
-    const [enRes, teRes, hiRes] = await Promise.all([
-      fetch("data/i18n/en.json").then(r => r.json()).catch(() => ({})),
-      fetch("data/i18n/te.json").then(r => r.json()).catch(() => ({})),
-      fetch("data/i18n/hi.json").then(r => r.json()).catch(() => ({}))
-    ]);
-
+    // Only fetch active language bundle(s) while te/hi are disabled
+    const enRes = await fetch("data/i18n/en.json").then(r => r.json()).catch(() => ({}));
     translations.en = enRes;
-    translations.te = teRes;
-    translations.hi = hiRes;
 
     document.documentElement.lang = currentLang;
     updateDomTranslations();
@@ -46,7 +48,7 @@ export async function initI18n() {
 }
 
 export function setLanguage(lang, { updateUrl = true } = {}) {
-  if (SUPPORTED_LANGS.includes(lang)) {
+  if (ENABLED_LANGS.includes(lang)) {
     currentLang = lang;
     storage.setPreference("language", lang);
     document.documentElement.lang = lang;

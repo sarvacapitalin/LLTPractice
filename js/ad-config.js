@@ -1,4 +1,10 @@
 // js/ad-config.js - Central Google AdSense configuration for llr.sarvacapital.in
+// NOTE FOR ADMINS & AI AGENTS:
+// The AdSense <head> verification snippet MUST stay in index.html & scripts/build_seo_pages.py
+// during site review. Once AdSense approves the site:
+//   1. Flip `enabled` below from `false` to `true`.
+//   2. Replace the placeholder `slotId` strings ("0000000001".."0000000006") with your
+//      approved AdSense ad unit slot IDs (or rely on Auto Ads from the <head> script).
 export const ADSENSE_CONFIG = {
   // Flip enabled to true and insert your verified AdSense slotIds once approved.
   enabled: false,

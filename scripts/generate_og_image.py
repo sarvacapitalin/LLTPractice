@@ -62,7 +62,7 @@ def main():
     # Main Title & Gold Subtitle
     draw.text((80, 126), "Telangana RTA Learner's Licence", font=font_title, fill="#FFFFFF")
     draw.text((80, 192), "LLR Computerized Mock Exam (STALL)", font=font_sub_gold, fill="#F3CA40")
-    draw.text((80, 248), "Authentic Hyderabad & Telangana RTO Practice  |  English  •  Telugu  •  Hindi", font=font_subtitle, fill="#CBD5E1")
+    draw.text((80, 248), "Authentic Hyderabad & Telangana RTO Practice  |  412 Verified Questions", font=font_subtitle, fill="#CBD5E1")
 
     # Three feature cards
     cards = [

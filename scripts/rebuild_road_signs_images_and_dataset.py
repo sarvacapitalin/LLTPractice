@@ -257,6 +257,12 @@ if __name__ == "__main__":
             q["explanation"]["en"] = "Official Road Sign Rule: BARRIER AHEAD."
             q["explanation"]["te"] = "అధికారిక రోడ్డు నిబంధన ప్రకారం సరైన సమాధానం: ముందు చెక్‌పోస్ట్ / బారికేడ్ కలదు."
             q["explanation"]["hi"] = "आधिकारिक सड़क नियम के अनुसार सही उत्तर: आगे बैरियर है।"
+        elif qid == "TS_RS_086":
+            q["explanation"]["en"] = "Official RTA Key: Option 1 ('HE INTENDS TO MOVE TO THE LEFT OR TO TURN LEFT'). Rotating the extended right arm in an anti-clockwise circle (often with the left indicator on) signals a left turn."
+            q["explanation"]["te"] = "అధికారిక RTA సమాధానం: ఎంపిక 1 (ఎడమ వైపునకు వెళ్లడానికి లేదా ఎడమకు తిరగడానికి ఉద్దేశిస్తున్నాడు). కుడి చేతిని యాంటీ-క్లాక్‌వైజ్‌గా తిప్పడం ఎడమ మలుపును సూచిస్తుంది."
+            q["explanation"]["hi"] = "आधिकारिक RTA उत्तर: विकल्प 1 (वह बाईं ओर मुड़ने या जाने का इरादा रखता है)। दाएं हाथ को वामावर्त (एंटी-क्लॉकवाइज) घुमाना बाएं मुड़ने का संकेत है।"
+        elif qid in ("TS_RS_089", "TS_RS_090"):
+            q["signType"] = "mandatory"
 
     with open(ROAD_SIGNS_JSON, "w", encoding="utf-8") as f:
         json.dump(signs_data, f, indent=2, ensure_ascii=False)

@@ -1,6 +1,6 @@
 # LLTPractice — Project Context & Invariants
 
-**What this project is:** A zero-dependency, vanilla HTML/CSS/ES6 static web app hosted on GitHub Pages (`https://llr.sarvacapital.in/`) that helps driving licence applicants in Hyderabad and Telangana pass the **RTA STALL (Screen Test Aid for Learner Licence)** computerized exam in **English, Telugu (`te`), and Hindi (`hi`)**.
+**What this project is:** A zero-dependency, vanilla HTML/CSS/ES6 static web app hosted on GitHub Pages (`https://llr.sarvacapital.in/`) that helps driving licence applicants in Hyderabad and Telangana pass the **RTA STALL (Screen Test Aid for Learner Licence)** computerized exam. (Currently active in **English**; Telugu `te` and Hindi `hi` are temporarily disabled—see Rule 1 below.)
 
 **Core architecture & intent:**
 - **Single source of truth:** Verified question banks (`data/questions/telangana/*.json`), guides (`data/*.json`), and extracted diagrams (`assets/signs/`, `assets/scenarios/`) drive both the interactive SPA (`index.html` + `js/*.js`) and the static SEO/LLM pages (`scripts/build_seo_pages.py`). Always fix data or image bugs at the primary source, never by patching derived views alone.
@@ -11,7 +11,9 @@
 ## 1. Domain & Exam Fidelity (Why: match the real Telangana RTA STALL kiosk)
 - **Randomized option order:** Shuffle multiple-choice options per question by default (`shuffleOptions` defaults to `true` via `shuffleQuestionOptions()` in `js/exam-engine.js`, remapping `answerIndex` cleanly) to match the latest STALL exam format.
 - **Custom & early-stop scoring:** Custom/retry exams (`isCustom === true`) must compute dynamic 60% pass thresholds (`Math.max(1, Math.ceil(totalQs * 0.6))`) and report attempted question counts accurately when exams end early (12 correct = PASS, 9 wrong = FAIL).
-- **Trilingual parity:** Keep `en`, `te`, and `hi` keys synchronized across `data/i18n/*.json` and all question/guide datasets; never hardcode `getCurrentLang()` to `"en"`.
+- **Official ALL-CAPS RTA wording by default:** Keep official Telangana RTA question and option text in ALL CAPS by default across the STALL simulator, Topic Practice, and static question-bank pages so learners see the exact phrasing shown on the real RTO exam screen (leaving `Aa Easy-Read` as an optional user toggle).
+- **Telugu (`te`) & Hindi (`hi`) TEMPORARILY DISABLED (DO NOT RE-ENABLE):** Telugu and Hindi are intentionally disabled in the UI, `js/i18n.js` (`ENABLED_LANGS = ["en"]`), and `scripts/build_seo_pages.py` (`ENABLE_MULTILINGUAL_SEO = False`) because 280/412 questions in `data/questions/telangana/*.json` contain broken hybrid English+Telugu/Hindi strings. **NEVER re-enable `te`/`hi` UI selectors, `hreflang` tags, or localized subpages without explicit user approval.** Keep `te`/`hi` keys intact inside `data/**/*.json` and `data/i18n/*.json` so `scripts/test_runner.py` schema and key-parity tests continue passing.
+- **AdSense verification script in `<head>`:** Keep `<script id="google-adsense-script" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6573213692692289" crossorigin="anonymous"></script>` in `<head>` across `index.html` and `scripts/build_seo_pages.py` even when `ADSENSE_CONFIG.enabled === false` (required for AdSense site review and seamless go-live upon approval).
 
 ## 2. UI, Accessibility & State Resilience (Why: reliable mobile-first & offline-safe UX)
 - **Responsive layout & zoom:** Never add `user-scalable=no` or `maximum-scale` to viewport meta tags. Never hardcode inline 2-column CSS grids (`grid-template-columns: 1fr 1fr`) inside dynamic JS templates; use responsive CSS classes (`.options-grid`, `.twins-comparison-grid`).

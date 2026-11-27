@@ -178,7 +178,7 @@
   ],
   "centers": [
     {
-      "code": "TS-09",
+      "code": "TS-09 / TG-09",
       "name": {
         "en": "RTO Central (Khairatabad)",
         "te": "RTO సెంట్రల్ (ఖైరతాబాద్)",
@@ -197,7 +197,7 @@
       "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
     },
     {
-      "code": "TS-10",
+      "code": "TS-10 / TG-10",
       "name": {
         "en": "RTO North (Secunderabad / Trimulgherry)",
         "te": "RTO నార్త్ (సికింద్రాబాద్ / తిరుమలగిరి)",
@@ -216,7 +216,7 @@
       "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
     },
     {
-      "code": "TS-07",
+      "code": "TS-07 / TG-07",
       "name": {
         "en": "RTO Rangareddy / Cyberabad (Kondapur)",
         "te": "RTO రంగారెడ్డి / సైబరాబాద్ (కొండాపూర్)",
@@ -235,7 +235,7 @@
       "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
     },
     {
-      "code": "TS-08",
+      "code": "TS-08 / TG-08",
       "name": {
         "en": "RTO East / Medchal (Uppal)",
         "te": "RTO ఈస్ట్ / మేడ్చల్ (ఉప్పల్)",
@@ -254,7 +254,7 @@
       "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
     },
     {
-      "code": "TS-11",
+      "code": "TS-11 / TG-11",
       "name": {
         "en": "RTO West (Tolichowki / Mehdipatnam)",
         "te": "RTO వెస్ట్ (టోలిచౌకి / మెహదీపట్నం)",
@@ -273,7 +273,7 @@
       "hours": "10:00 AM - 02:00 PM (Mon - Sat)"
     },
     {
-      "code": "TS-12",
+      "code": "TS-12 / TG-12",
       "name": {
         "en": "RTO East (Malakpet)",
         "te": "RTO ఈస్ట్ (మలక్‌పేట్)",

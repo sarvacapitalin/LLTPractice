@@ -4,13 +4,13 @@
 
 ## 1. Official STALL Exam Format & Rules (Telangana RTA)
 - Governing Authority: Transport Department, Government of Telangana (Motor Vehicles Act, 1988 & CMVR 1989)
-- Exam Format: 20 multiple-choice questions per test
+- Exam Format: 20 multiple-choice questions per test (or contactless Aadhaar e-KYC online test via Parivahan Sarathi)
 - Category Quota: 8 Road Signs (40%) + 8 Rules of the Road (40%) + 4 General Driving Principles (20%)
 - Time Limit: 30 seconds per question (maximum 10 minutes)
 - Passing Mark: 12 correct out of 20 (60%); zero negative marking
 - Early Termination: Test ends immediately as PASSED on reaching 12 correct answers, or FAILED on reaching 9 wrong answers
-- Fixed Option Order: Options 1, 2, 3, 4 are never shuffled (matching STALL physical keypad 1-4)
-- Languages Supported: English, Telugu (తెలుగు), Hindi (हिन्दी)
+- Shuffled Option Order: Answer options 1, 2, 3, 4 are shuffled per question by default to match the latest STALL exam format
+- Simulator Language: English active (official RTA exam also supports English, Telugu, Hindi; Telugu & Hindi simulator modes are temporarily paused during translation audit)
 
 ## 2. Official Fees, Retest & Validity
 - One Vehicle Class (e.g., Two-Wheeler MCWG): ₹200 (₹150 LLR Test Fee + ₹50 Service Fee)
@@ -35,12 +35,12 @@
 5. **Instant Result & LLR PDF Download**: The moment you reach 12 correct answers, the computer screen displays 'CONGRATULATIONS - TEST PASSED'. An SMS with the official digital LLR download link is sent to your registered mobile within 15 minutes. No physical paper collection needed!
 
 ## 5. Hyderabad RTO Testing Centers Directory
-- **TS-09 — RTO Central (Khairatabad)**: Opposite Eenadu Office, Somajiguda, Khairatabad, Hyderabad - 500082 | Areas: Khairatabad, Banjara Hills, Somajiguda, Punjagutta, Hyderabad Central | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
-- **TS-10 — RTO North (Secunderabad / Trimulgherry)**: Near Trimulgherry Cross Roads, Lal Bazar, Secunderabad - 500015 | Areas: Secunderabad, Marredpally, Trimulgherry, Begumpet, Alwal, Bowenpally | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
-- **TS-07 — RTO Rangareddy / Cyberabad (Kondapur)**: Opp. RTO Driving Track, Near Botanical Garden, Kondapur, Hyderabad - 500084 | Areas: Hitec City, Gachibowli, Madhapur, Kondapur, Kukatpally, Serilingampally | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
-- **TS-08 — RTO East / Medchal (Uppal)**: Near Survey of India, Inner Ring Road, Uppal, Hyderabad - 500039 | Areas: Uppal, Boduppal, Habsiguda, Ramanthapur, Tarnaka, Ghatkesar | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
-- **TS-11 — RTO West (Tolichowki / Mehdipatnam)**: Rethibowli Cross Roads, Mehdipatnam, Hyderabad - 500028 | Areas: Mehdipatnam, Tolichowki, Golconda, Attapur, Langar Houz, Gudimalkapur | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
-- **TS-12 — RTO East (Malakpet)**: Old Malakpet, Near TV Tower, Moosarambagh, Hyderabad - 500036 | Areas: Malakpet, Dilsukhnagar, Kothapet, LB Nagar, Chaitanyapuri, Amberpet | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-09 / TG-09 — RTO Central (Khairatabad)**: Opposite Eenadu Office, Somajiguda, Khairatabad, Hyderabad - 500082 | Areas: Khairatabad, Banjara Hills, Somajiguda, Punjagutta, Hyderabad Central | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-10 / TG-10 — RTO North (Secunderabad / Trimulgherry)**: Near Trimulgherry Cross Roads, Lal Bazar, Secunderabad - 500015 | Areas: Secunderabad, Marredpally, Trimulgherry, Begumpet, Alwal, Bowenpally | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-07 / TG-07 — RTO Rangareddy / Cyberabad (Kondapur)**: Opp. RTO Driving Track, Near Botanical Garden, Kondapur, Hyderabad - 500084 | Areas: Hitec City, Gachibowli, Madhapur, Kondapur, Kukatpally, Serilingampally | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-08 / TG-08 — RTO East / Medchal (Uppal)**: Near Survey of India, Inner Ring Road, Uppal, Hyderabad - 500039 | Areas: Uppal, Boduppal, Habsiguda, Ramanthapur, Tarnaka, Ghatkesar | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-11 / TG-11 — RTO West (Tolichowki / Mehdipatnam)**: Rethibowli Cross Roads, Mehdipatnam, Hyderabad - 500028 | Areas: Mehdipatnam, Tolichowki, Golconda, Attapur, Langar Houz, Gudimalkapur | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
+- **TS-12 / TG-12 — RTO East (Malakpet)**: Old Malakpet, Near TV Tower, Moosarambagh, Hyderabad - 500036 | Areas: Malakpet, Dilsukhnagar, Kothapet, LB Nagar, Chaitanyapuri, Amberpet | Hours: 10:00 AM - 02:00 PM (Mon - Sat)
 
 ## 6. All 38 Telangana District RTO Codes (TS / TG 01–38)
 - TS-01 / TG-01: Adilabad
@@ -82,12 +82,12 @@
 - TS-37 / TG-37: Mulugu
 - TS-38 / TG-38: Narayanpet
 
-## 7. Permanent DL Track Test Guide (8-Track & H-Track) & Digital LLR Download
+## 7. Permanent DL Track Test Guide (8-Track & H-Track) & Online Slot Booking
 - Eligibility: You can book your Permanent DL track test slot on transport.telangana.gov.in after completing 30 days from your LLR issue date (valid up to 180 days).
 - **Figure '8' Track Test (Motorcycle / Scooter)**: Wear an ISI-certified strapped helmet before starting. | Ride smoothly along the figure-8 loop using steady clutch & throttle control. | Do NOT put either foot down on the ground inside the track. | Do NOT touch or cross the painted curb/sensor lines. | Use turn indicators when entering and exiting the track.
 - **The 'H' Track & Reversing Test (Car / LMV)**: Adjust seat & side mirrors and fasten your seatbelt before moving. | Drive forward into the 'H' bay and reverse cleanly through the narrow lane without hitting poles or boundary lines. | Use side rear-view mirrors and check blind spots while reversing. | Avoid stalling the engine or rolling backward on gradients/ramps. | Signal properly with indicators before every turn or reverse maneuver.
 - Step 1 (Apply Online on Telangana Transport Portal): Visit transport.telangana.gov.in -> Online Services -> Driving Licence -> Fresh Learner's Licence (LLR). Verify with Aadhaar OTP, choose vehicle classes (MCWG / LMV), and submit Form 2 & self-declaration Form 1.
-- Step 2 (Book Your STALL Test Slot & Pay Fee): Select your local RTA office, pick an available green date/time slot, pay ₹200 (1 class) or ₹350 (2 classes) online, and print Form 2 + Slot Booking Slip.
+- Step 2 (Choose Contactless Aadhaar Online Test or RTO Slot): Pay ₹200 (1 class) or ₹350 (2 classes) online. With Aadhaar e-KYC on Parivahan Sarathi (sarathi.parivahan.gov.in), eligible applicants can take the LLR test online from a webcam-equipped PC using AI facial recognition & Safe Exam Browser—or book a physical RTO STALL booth slot (TS/TG-07 to TS/TG-12) and print Form 2 + Slot Slip.
 - Step 3 (Download Digital LLR & Add to DigiLocker / mParivahan): Within ~15 minutes of scoring 12/20, you receive an SMS link to download your signed PDF LLR. Fetch it into DigiLocker or NextGen mParivahan—digital documents are legally valid across India.
 
 ## 8. Telangana Traffic Fines (Motor Vehicles Amendment Act)
@@ -245,7 +245,7 @@
 - **TS_RR_013**: YOU ARE DRIVING A TWO WHEELER ON THE MOTORWAY IN WINDY CONDITIONS. WHEN PASSING HIGH- SIDED VEHICLES YOU SHOULD -> **Answer: BEAWARE OF SUDDEN BLAST OF WIND.**
 - **TS_RR_014**: YOU ARE DRIVING UPTO AN INTERSECTION WHERE THERE IS NO SIGNAL. PEOPLE ARE CROSSING IN FRONT OF YOUR CAR. YOU SHOULD -> **Answer: STOP AND ALLOW PEDESTRIANS TO CROSS**
 - **TS_RR_015**: YOU WISH TO TAKE A "U" TURN. IF THERE IS A POLICEMAN AT THE INTERSECTION CONTROLLED BY A TRAFFIC LIGHT, YOU SHOULD -> **Answer: WAIT UNTIL THE LIGHT TURNS GREEN BEFORE MAKING THE "U" TURN**
-- **TS_RR_016**: YOU ARE DRIVING ON A TWO-LANE STREET. THE VEHICLE IN FRONT OF YOU IS MOVING VERY SLOWLY, AND THE ROAD AHEAD IS CLEAR FOR OVERTAKING, YOU SHOULD -> **Answer: NEVER OVERTAKE AT ALL.**
+- **TS_RR_016**: YOU ARE DRIVING ON A TWO-LANE STREET. THE VEHICLE IN FRONT OF YOU IS MOVING VERY SLOWLY, AND THE ROAD AHEAD IS CLEAR FOR OVERTAKING, YOU SHOULD -> **Answer: PASS THE VEHICLE FROM RIGHT HAND SIDE**
 - **TS_RR_017**: AS YOU APPROACH AN INTERSECTION, YOU SHOULD CHECK FOR TRAFFIC ON YOUR LEFT AND RIGHT. -> **Answer: AT ALL TIMES BEFORE ENTERING THE INTERSECTION.**
 - **TS_RR_018**: WHILE DRIVING ON THE MOTORWAY YOU HAVE TO SLOW DOWN QUICKLY DUE TO A HAZARD. WHAT SHOULD YOU DO? -> **Answer: SWITCH ON YOUR HAZARD LIGHT**
 - **TS_RR_019**: YOU DRIVE UP TO A CORNER WHERE YOU SEE SOME LOOSE GRAVEL ON THE ROAD. YOU SHOULD -> **Answer: SLOW DOWN**
@@ -277,7 +277,7 @@
 - **TS_RR_045**: WHICH OF THESE PLACES YOU MUST NOT PARK? -> **Answer: ALL OF THE ABOVE**
 - **TS_RR_046**: IN WHICH OF THESE PLACE YOU MUST NOT PARK? -> **Answer: ALL OF THE ABOVE**
 - **TS_RR_047**: WHEN LEAVING YOUR VEHICLE UNATTENDED FOR A FEW MINUTES YOU SHOULD -> **Answer: LOCK IT AND REMOVE THE KEY**
-- **TS_RR_048**: AT A TWO ROAD JUNCTION THERE -> **Answer: VEHICLE APPROACHING FROM THE RIGHT**
+- **TS_RR_048**: AT A TWO ROAD JUNCTION THERE ARE NO ROAD SIGNS. TWO VEHICLES APPROACH. WHICH HAS PRIORITY? -> **Answer: VEHICLE APPROACHING FROM THE RIGHT**
 - **TS_RR_049**: PEDESTRIANS ARE WAITING TO CROSS AT A ZEBRA CROSSING. THEY ARE STANDING ON THE PAVEMENT YOU SHOULD NORMALLY -> **Answer: STOP BEFORE THE STOP LINE, LET THEM CROSS, WAIT PATIENTLY**
 - **TS_RR_050**: YOU MUST NOT REVERSE -> **Answer: ALL OF THE ABOVE**
 - **TS_RR_051**: WHEN YOU ARE NOT SURE THAT IT IS SAFE TO REVERSE YOUR VEHICLE YOU SHOULD -> **Answer: GET OUT AND CHECK RE**
@@ -285,13 +285,13 @@
 - **TS_RR_053**: YOUR ARE SIGNALLING TO TURN RIGHT IN BUSY TRAFFIC. HOW WOULD YOU CONFIRM YOUR INTENTION SAFELY? -> **Answer: GIVE AN ARM SIGNAL**
 - **TS_RR_054**: WHEN TRAFFIC LIGHTS ARE OUT OF ORDER, WHAT PRECAUTION SHOULD YOU TAKE? -> **Answer: STOP, LOOK RIGHT AND LEFT AND PROCEED CAUTIOUSLY.**
 - **TS_RR_055**: THERE IS A POLICE CAR FOLLOWING YOU, THE POLICE OFFICER FLASHES THE HEADLIGHTS AND POINTS TO THE LEFT. WHAT SHOULD YOU DO? -> **Answer: STOP ON THE LEFT**
-- **TS_RR_056**: WHEN APPROACHING A ROUNDABOUT GIVE WAY TO -> **Answer: VEHICLES**
+- **TS_RR_056**: WHEN APPROACHING A ROUNDABOUT GIVE WAY TO -> **Answer: TRAFFIC ON YOUR RIGHT**
 - **TS_RR_057**: YOU ARE REVERSING A CAR INTO A SIDE ROAD. WHILE REVERSING YOU SHOULD MAINLY LOOK -> **Answer: THROUGH THE REAR WINDSCREEN**
 - **TS_RR_058**: TO MOVE OFF SAFELY FROM A PARKED POSITION YOU SHOULD -> **Answer: USE YOUR MIRRORS AND LOOK AROUND FOR A FINAL CHECK**
 - **TS_RR_059**: WHEN APPROACHING ROAD WORKS, YOU SHOULD NOT -> **Answer: START TO OVERTAKE & INCREASE SPEED**
-- **TS_RR_060**: WHICH IS THE BEST REASON FOR NOT FOLLOWING OTHER VEHICLES TOO CLOSELY? -> **Answer: AHEAD AND TO AVOID HITTING VEHICLES IN FRONT, IF THEY STOP SUDDENLY**
+- **TS_RR_060**: WHICH IS THE BEST REASON FOR NOT FOLLOWING OTHER VEHICLES TOO CLOSELY? -> **Answer: TO GET INCREASED ANGLE OF VISION OF TRAFFIC CONDITIONS AHEAD AND TO AVOID HITTING VEHICLES IN FRONT, IF THEY STOP SUDDENLY**
 - **TS_RR_061**: WHEN APPROACHING FROM THE REAR, WHERE TWO LANES OF TRAFFIC HAVE STOPPED AT A SIGNAL, YOU SHOULD? -> **Answer: STOP BEHIND THE LAST VEHICLE IN THE APPROPRIATE LANE**
-- **TS_RR_062**: A PEDESTRIAN IS CROSSING THE STREET AT AN UNMARKED CROSS- WALK, YOU SHOULD -> **Answer: PEDESTRIAN THE "RIGHT OF WAY"**
+- **TS_RR_062**: A PEDESTRIAN IS CROSSING THE STREET AT AN UNMARKED CROSS- WALK, YOU SHOULD -> **Answer: YIELD TO THE PEDESTRIAN THE "RIGHT OF WAY"**
 - **TS_RR_063**: WHILE DRIVING, YOU WISH TO CHANGE FROM ONE LANE TO ANOTHER, YOU SHOULD -> **Answer: CHANGE LANES ONLY WHEN IT IS SAFE TO DO SO BY GIVING THE PROPER TURN SIGNAL**
 - **TS_RR_064**: YOU APPROACH AN INTERSECTION THAT DOES NOT HAVE TRAFFIC LIGHTS, A POLICEMAN OR TRAFFIC SIGNS, YOU SHOULD -> **Answer: SLOW DOWN AND MOVE WITH CAUTION**
 - **TS_RR_065**: WHAT MUST YOU DO IF YOU MISS YOUR EXIT ON A FREEWAY? -> **Answer: CONTINUE UNTIL YOU REACH THE NEXT APPROPRIATE EXIT.**
@@ -344,7 +344,7 @@
 - **TS_RR_112**: WHILE DRIVING A VEHICLE, IF YOU FIND AN ANIMAL RUNNING ACROSS THE ROAD SUDDENLY IN FRONT OF YOU, -> **Answer: YOU SHOULD CHECK TRAFFIC FROM BEHIND, SLOW DOWN OR STOP TO ENABLE THE ANIMAL TO CROSS**
 - **TS_RR_113**: WHILE BRAKING IN RAINY AND WET CONDITIONS, YOU SHOULD -> **Answer: APPLY BRAKES FREQUENTLY**
 - **TS_RR_114**: YOU ARE DRIVING DOWN A STEEP HILL. TO CONTROL THE SPEED OF YOUR VEHICLE YOU MUST -> **Answer: SELECT LOW GEAR AND USE THE BRAKES CAREFULLY**
-- **TS_RR_115**: WHILE DRIVING DOWNHILL.... -> **Answer: DRIVE WITH IGNITION**
+- **TS_RR_115**: WHILE DRIVING DOWNHILL.... -> **Answer: USE SAME GEAR SELECTION AS DRIVING UPHILL**
 - **TS_RR_116**: YOU STOP FOR PEDESTRIANS WAITING TO CROSS AT A ZEBRA CROSSING. THEY DO NOT START TO CROSS. WHAT SHOULD YOU DO? -> **Answer: BE PATIENT AND WAIT.**
 - **TS_RR_117**: YOU SHOULD NEVER ATTEMPT TO OVERTAKE A CYCLIST -> **Answer: JUST BEFORE YOU TURN LEFT**
 - **TS_RR_118**: IT IS VERY WINDY. YOU ARE BEHIND A MOTORCYCLIST WHO IS OVERTAKING A HIGH-SIDED VEHICLE. WHAT SHOULD YOU DO? -> **Answer: KEEP WELL BACK.**
@@ -369,7 +369,7 @@
 - **TS_RR_137**: YOU ARE WAITING AT A T-JUNCTION. A VEHICLE IS COMING FROM THE RIGHT WITH THE LEFT SIGNAL FLASHING. WHAT SHOULD YOU DO? -> **Answer: WAIT UNTIL THE VEHICLE STARTS TO TURN IN**
 - **TS_RR_138**: YOU ENTER A ROAD WHERE THERE ARE ROAD HUMPS. WHAT SHOULD YOU DO? -> **Answer: MAINTAIN A REDUCED SPEED THROUGHOUT**
 - **TS_RR_139**: WHEN APPROACHING A RIGHT- HAND CURVE YOU SHOULD KEEP WELL TO THE LEFT. WHY IS THIS? -> **Answer: TO IMPROVE YOUR VIEW OF THE ROAD**
-- **TS_RR_140**: YOU ARE ON A LONG, DOWNHILL SLOPE. WHAT SHOULD YOU DO TO HELP CONTROL THE SPEED OF YOUR VEHICLE? -> **Answer: GRIP THE HANDBRAKE**
+- **TS_RR_140**: YOU ARE ON A LONG, DOWNHILL SLOPE. WHAT SHOULD YOU DO TO HELP CONTROL THE SPEED OF YOUR VEHICLE? -> **Answer: SELECT A LOWER GEAR**
 - **TS_RR_141**: WHAT SHOULD THE DRIVER OF THE CAR APPROACHING THE CROSSING DO? -> **Answer: SLOW DOWN AND GET READY TO STOP**
 - **TS_RR_142**: YOU ARE BEHIND THE CYCLIST. WHEN THE TRAFFIC LIGHTS CHANGE, WHAT SHOULD YOU DO? -> **Answer: ALLOW THE CYCLIST TIME AND ROOM**
 - **TS_RR_143**: YOU INTEND TO TURN LEFT AT THE TRAFFIC LIGHTS. JUST BEFORE TURNING YOU SHOULD -> **Answer: CHECK FOR BICYCLES ON YOUR LEFT**
@@ -430,7 +430,7 @@
 - **TS_GP_037**: IF YOU HAVE A VALID DRIVING LICENCE FOR A LIGHT MOTOR VEHICLE, WHAT ARE YOU ALLOWED TO DRIVE? -> **Answer: MOTOR CAR ONLY**
 - **TS_GP_038**: IF YOU MEET WITH AN ACCIDENT WHILE DRIVING A VEHICLE, WITHOUT A VALID DRIVING LICENCE, THE INSURANCE COMPANY WILL -> **Answer: NOT COMPENSATE FOR DAMAGES**
 - **TS_GP_039**: WHILE DRIVING ON THE ROAD WITHOUT A VALID DRIVING LICENCE, WHEN CAN YOU FACE A PENAL ACTION? -> **Answer: WHEN CHECKING OFFICER CHECK YOUR VEHICLE**
-- **TS_GP_040**: LEARNERS LICENCE IS VALID -> **Answer: ISSUED FOR SIX MONTHS**
+- **TS_GP_040**: LEARNERS LICENCE IS VALID -> **Answer: FOR SIX MONTHS**
 - **TS_GP_041**: PUCC STANDS FOR -> **Answer: POLLUTION UNDER CONTROL CERTIFICATE**
 - **TS_GP_042**: MINIMUM AGE TO OBTAIN A CAR DRIVING LICENCE IS? -> **Answer: 18 YEARS**
 - **TS_GP_043**: YOUR CAR IS INVOLVED IN AN ACCIDENT HURTING PEOPLE, YOU SHOULD -> **Answer: REPORT TO THE NEAREST POLICE STATION AND TAKE THE PERSONS TO THE HOSPITAL**
@@ -510,7 +510,7 @@
 - **TS_GP_117**: WHILE DRIVING YOU SHOULD ALWAYS KEEP THE FOLLOWING IN MIND- -> **Answer: ALL OF THE ABOVE**
 - **TS_GP_118**: WHEN YOU ARE BEING OVERTAKEN OR PASSED BY ANOTHER VEHICLE. DO NOT -> **Answer: INCREASE YOUR SPEED.**
 - **TS_GP_119**: WHO IS RESPONSIBLE FOR ENSURING THAT THE VEHICLE IS NOT OVERLOADED? -> **Answer: THE DRIVER OF THE VEHICLE.**
-- **TS_GP_120**: ON A FOGGY DAY YOU HAVE TO UNAVOIDABLY PARK YOUR VEHICLE ON THE ROAD. WHAT SHOULD YOU DO? KEEP STONES/BRICKS AROUND YOUR VEHICLE -> **Answer: LEAVE SIDE LIGHTS ON**
+- **TS_GP_120**: ON A FOGGY DAY YOU HAVE TO UNAVOIDABLY PARK YOUR VEHICLE ON THE ROAD. WHAT SHOULD YOU DO? -> **Answer: LEAVE SIDE LIGHTS ON**
 - **TS_GP_121**: YOU SHOULD USE A MOBILE TELEPHONE ONLY WHEN YOU -> **Answer: HAVE STOPPED AT A SAFE PLACE**
 - **TS_GP_122**: TURBULENCE IS CREATED BY LARGE VEHICLES TRAVELLING AT SPEED. THIS IS MOST LIKELY TO BE A DANGER TO -> **Answer: ALL OF THE ABOVE**
 - **TS_GP_123**: YOU ARE DRIVING IN HEAVY RAIN. YOUR STEERING SUDDENLY BECOMES VERY LIGHT. YOU SHOULD -> **Answer: EASE OFF THE ACCELERATOR**
@@ -523,7 +523,7 @@
 - **TS_GP_130**: THERE IS VIBRATION ON YOUR STEERING WHEEL AS YOU DRIVE. WHAT IS THE PROBABLE CAUSE? -> **Answer: UNBALANCED WHEELS.**
 - **TS_GP_131**: WHEN MAY A DRIVER LEND HIS DRIVING LICENCE TO ANOTHER PERSON? -> **Answer: AT NO TIME.**
 - **TS_GP_132**: IF YOUR VEHICLE HITS A PEDESTRIAN YOU SHOULD -> **Answer: HELP THE INJURED PERSON, IDENTIFY YOURSELF AND THEN REPORT TO THE POLICE.**
-- **TS_GP_133**: STICKERS, POSTERS AND OTHER NON- OFFICIAL ITEMS MAY NOT BE PLACED ON THE WINDSHIELD OF AN AUTOMOBILE BECAUSE:- IT IS UNLAWFUL TO ADVERTISE IN THIS WAY. -> **Answer: VISION.**
+- **TS_GP_133**: STICKERS, POSTERS AND OTHER NON- OFFICIAL ITEMS MAY NOT BE PLACED ON THE WINDSHIELD OF AN AUTOMOBILE BECAUSE:- -> **Answer: THEY OBSTRUCT THE DRIVER'S VISION.**
 - **TS_GP_134**: A PERSON HAVING DRIVING LICENCE SUSPENDED OR CANCELLED MAY -> **Answer: NOT DRIVE UNDER ANY CONDITIONS.**
 - **TS_GP_135**: IF A PERSON'S DRIVING LICENCE VALIDITY PERIOD IS OVER, HE CAN APPLY FOR RENEWAL OF MOTOR DRIVING LICENCE WITHIN WITHOUT PENALTY -> **Answer: THIRTY DAYS**
 - **TS_GP_136**: ANY PERSON MAY HOLD -> **Answer: ONLY ONE LICENCE.**
@@ -539,8 +539,8 @@
 - **TS_GP_146**: WHILE STARTING THE VEHICLE WHICH OF THE FOLLOWING THINGS SHOULD BE DONE -> **Answer: ALL OF THE ABOVE.**
 - **TS_GP_147**: THE RIGHT OF WAY SHOULD BE GIVEN TO -> **Answer: EMERGENCY VEHICLES**
 - **TS_GP_148**: FOG LAMPS ARE USED -> **Answer: WHEN THERE IS MIST**
-- **TS_GP_149**: ZEBRA CROSSING IS MEANT FOR PEDESTRIANS -> **Answer: EMERGENCY VEHICLES**
-- **TS_GP_150**: BOARDING AND ALIGHTING WHILE THE VEHICLE IS IN MOTION -> **Answer: OF VEHICLES**
+- **TS_GP_149**: ZEBRA CROSSING IS MEANT FOR -> **Answer: PEDESTRIANS**
+- **TS_GP_150**: BOARDING AND ALIGHTING WHILE THE VEHICLE IS IN MOTION -> **Answer: IS PROHIBITED FOR ALL TYPES OF VEHICLES**
 - **TS_GP_151**: MORE THAN TWO PERSONS ON A TWO WHEELER IS -> **Answer: DENSITY IS LOW**
 - **TS_GP_152**: USING UNREGISTERED VEHICLE IN PUBLIC PLACES IS -> **Answer: ILLEGAL**
 - **TS_GP_153**: DRIVING AT HIGH SPEED -> **Answer: DOES NOT GIVE YOU SUFFICIENT TIME TO REACT TO HAZARDS**

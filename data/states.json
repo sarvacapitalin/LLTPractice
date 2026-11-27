@@ -16,7 +16,8 @@
       "rules_of_road": 8,
       "general_principles": 4
     },
-    "languages": ["en", "te", "hi"],
+    "languages": ["en"],
+    "suspendedLanguages": ["te", "hi"],
     "defaultLanguage": "en"
   },
   "andhra_pradesh": {
@@ -24,6 +25,7 @@
     "name": "Andhra Pradesh (AP RTO)",
     "rtoPrefix": "AP",
     "authority": "Transport Department, Government of Andhra Pradesh",
+    "status": "curriculum_reference_only",
     "totalQuestions": 20,
     "timePerQuestionSeconds": 30,
     "passMarks": 12,
@@ -36,7 +38,8 @@
       "rules_of_road": 8,
       "general_principles": 4
     },
-    "languages": ["en", "te", "hi"],
+    "languages": ["en"],
+    "suspendedLanguages": ["te", "hi"],
     "defaultLanguage": "en"
   }
 }

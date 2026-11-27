@@ -1,5 +1,5 @@
 // js/app.js - Main Application Coordinator
-import { initI18n, setLanguage, getCurrentLang, t } from "./i18n.js";
+import { initI18n, setLanguage, getCurrentLang, t, ENABLED_LANGS } from "./i18n.js";
 import { storage } from "./storage-engine.js";
 import { sounds } from "./sound-effects.js";
 import { speech } from "./speech-engine.js";
@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-const ASSET_VER = "v=23";
+const ASSET_VER = "v=26";
 
 function withAssetVer(url) {
   if (!url) return url;
@@ -185,13 +185,67 @@ const PARAM_TO_TAB = {
 };
 
 const TAB_TITLES = {
-  "tab-exam": "Telangana RTA Learner's Licence Practice • STALL Mock 2026",
+  "tab-exam": "Telangana RTA Learner's Licence Practice • LLR Mock Test 2026",
   "tab-practice": "Topic Practice (412 Qs) • Telangana LLR 2026",
   "tab-flashcards": "Road Sign Flashcards (94) • Telangana LLR 2026",
   "tab-twins": "Tricky Twins Road Signs • Telangana LLR 2026",
   "tab-cheatsheet": "Rapid Cheatsheet & Hand Signals • Telangana LLR",
   "tab-guide": "Hyderabad RTO Guide, DL Track & Fines • LLR 2026"
 };
+
+function syncPracticeUrlParams() {
+  if (typeof window === "undefined" || !window.history || !window.location) return;
+  try {
+    const practiceTab = document.getElementById("tab-practice");
+    if (practiceTab && !practiceTab.classList.contains("active")) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set("tab", "practice");
+    if (practice.activeCategory && practice.activeCategory !== "all") {
+      url.searchParams.set("cat", practice.activeCategory);
+    } else {
+      url.searchParams.delete("cat");
+    }
+    const q = (practice.searchQuery || "").trim();
+    if (q) {
+      url.searchParams.set("q", q);
+    } else {
+      url.searchParams.delete("q");
+    }
+    const nextUrl = url.pathname + (url.searchParams.toString() ? `?${url.searchParams.toString()}` : "");
+    const currentUrl = window.location.pathname + window.location.search;
+    if (nextUrl !== currentUrl) {
+      window.history.replaceState({ tab: "tab-practice", lang: getCurrentLang() }, document.title, nextUrl);
+    }
+  } catch (e) {
+    // Ignore restricted history context
+  }
+}
+
+function applyPracticeParamsFromUrl(params) {
+  const validCats = ["all", "road_signs", "rules_of_road", "general_principles"];
+  const rawCat = (params.get("cat") || "").trim();
+  const nextCat = validCats.includes(rawCat) ? rawCat : "all";
+  if (practice.activeCategory !== nextCat) {
+    practice.setCategory(nextCat);
+  }
+  document.querySelectorAll("[data-practice-cat]").forEach(b => {
+    b.classList.toggle("active", b.getAttribute("data-practice-cat") === nextCat);
+  });
+
+  const rawQuery = (params.get("q") || "").trim();
+  const searchInput = document.getElementById("practice-search-input");
+  const clearBtn = document.getElementById("btn-practice-search-clear");
+  if (searchInput && searchInput.value !== rawQuery) {
+    searchInput.value = rawQuery;
+  }
+  if (clearBtn) {
+    clearBtn.classList.toggle("visible", rawQuery.length > 0);
+  }
+  if (practice.searchQuery !== rawQuery.toLowerCase()) {
+    practice.setSearch(rawQuery);
+  }
+  return { rawCat: validCats.includes(rawCat) ? rawCat : "", rawQuery };
+}
 
 function activateTab(targetId, { pushHistory = true } = {}) {
   const tabs = document.querySelectorAll(".nav-tab");
@@ -246,6 +300,22 @@ function activateTab(targetId, { pushHistory = true } = {}) {
       } else {
         url.searchParams.set("tab", paramVal);
       }
+      if (targetId === "tab-practice") {
+        if (practice.activeCategory && practice.activeCategory !== "all") {
+          url.searchParams.set("cat", practice.activeCategory);
+        } else {
+          url.searchParams.delete("cat");
+        }
+        const q = (practice.searchQuery || "").trim();
+        if (q) {
+          url.searchParams.set("q", q);
+        } else {
+          url.searchParams.delete("q");
+        }
+      } else {
+        url.searchParams.delete("cat");
+        url.searchParams.delete("q");
+      }
       url.hash = "";
       const nextUrl = url.pathname + (url.searchParams.toString() ? `?${url.searchParams.toString()}` : "");
       const currentUrl = window.location.pathname + window.location.search + window.location.hash;
@@ -275,11 +345,14 @@ function setupTabs() {
       const params = new URLSearchParams(window.location.search);
       const stateLang = event.state && event.state.lang;
       const urlLang = params.get("lang") || stateLang;
-      if (urlLang && ["en", "te", "hi"].includes(urlLang) && urlLang !== getCurrentLang()) {
+      if (urlLang && ENABLED_LANGS.includes(urlLang) && urlLang !== getCurrentLang()) {
         setLanguage(urlLang, { updateUrl: false });
       }
       const rawTab = (params.get("tab") || window.location.hash.replace("#", "") || "exam").toLowerCase();
       const targetId = PARAM_TO_TAB[rawTab] || "tab-exam";
+      if (targetId === "tab-practice") {
+        applyPracticeParamsFromUrl(params);
+      }
       activateTab(targetId, { pushHistory: false });
     } catch (e) {
       // Ignore malformed URL on popstate
@@ -307,6 +380,15 @@ function setupTabs() {
     const stats = coverage.getReadinessStats();
     const targetFilter = stats.unseen > 0 ? "unseen" : (stats.probation > 0 ? "probation" : "all");
     const statusFilter = document.getElementById("practice-status-filter");
+    const searchInput = document.getElementById("practice-search-input");
+    const clearBtn = document.getElementById("btn-practice-search-clear");
+    practice.setCategory("all");
+    document.querySelectorAll("[data-practice-cat]").forEach(b => {
+      b.classList.toggle("active", b.getAttribute("data-practice-cat") === "all");
+    });
+    if (searchInput) searchInput.value = "";
+    if (clearBtn) clearBtn.classList.remove("visible");
+    practice.setSearch("");
     if (statusFilter) statusFilter.value = targetFilter;
     practice.setFilter(targetFilter);
     activateTab("tab-practice", { pushHistory: true });
@@ -326,7 +408,7 @@ function updateReadinessMeter() {
   if (badgeVal) badgeVal.textContent = `${stats.readinessPercent}%`;
   if (fill) {
     fill.style.width = `${Math.min(stats.readinessPercent, 100)}%`;
-    fill.style.background = stats.isExamReady ? "#22C55E" : "#FFD54F";
+    fill.style.background = stats.isExamReady ? "var(--readiness-ready-bg)" : "var(--readiness-building-bg)";
   }
 
   // Update Home Intro Category Mastery Panel
@@ -363,8 +445,18 @@ function applyInitialTabFromUrl() {
   try {
     if (typeof window === "undefined" || !window.location) return;
     const url = new URL(window.location.href);
-    const rawTab = (url.searchParams.get("tab") || url.hash.replace("#", "") || "").toLowerCase();
+    const paramLang = url.searchParams.get("lang");
+    if (paramLang && paramLang !== "en") {
+      url.searchParams.delete("lang");
+    }
+
+    const { rawCat, rawQuery } = applyPracticeParamsFromUrl(url.searchParams);
+    const rawTab = (url.searchParams.get("tab") || url.hash.replace("#", "") || (rawQuery || rawCat ? "practice" : "")).toLowerCase();
     const targetId = PARAM_TO_TAB[rawTab];
+    if (targetId && targetId !== "tab-practice") {
+      url.searchParams.delete("cat");
+      url.searchParams.delete("q");
+    }
     if (targetId) {
       activateTab(targetId, { pushHistory: false });
       if (url.hash && !url.searchParams.get("tab")) {
@@ -374,6 +466,9 @@ function applyInitialTabFromUrl() {
         }
         url.hash = "";
       }
+    } else {
+      url.searchParams.delete("cat");
+      url.searchParams.delete("q");
     }
     if (window.history && window.history.replaceState) {
       const normalizedUrl = url.pathname + (url.searchParams.toString() ? `?${url.searchParams.toString()}` : "") + url.hash;
@@ -705,7 +800,7 @@ function initExamUI() {
         if (desc) {
           desc.textContent = state.isCustom
             ? `You need at least ${passMark} correct out of ${totalQs} to clear this retry session.`
-            : t("result_fail_desc", "You need at least 12 correct answers to pass. Review your missed questions below or in Topic Practice.");
+            : t("result_fail_desc", "You need at least 12 correct answers to pass. Review your missed questions in Topic Practice.");
         }
       }
 
@@ -809,7 +904,7 @@ function initExamUI() {
 
       if (freshOptionsContainer) {
         if (!opts || opts.length === 0) {
-          freshOptionsContainer.innerHTML = `<div style="color: #EF4444; padding: 12px; font-weight: 700;">No options available for this question.</div>`;
+          freshOptionsContainer.innerHTML = `<div style="color: var(--danger-red); padding: 12px; font-weight: 700;">No options available for this question.</div>`;
         } else {
           let html = "";
           opts.forEach((optText, idx) => {
@@ -907,13 +1002,13 @@ function renderExamResultReview(state, lang, examEngine) {
     });
 
     catBreakdown.innerHTML = `
-      <span style="background: #FEF3C7; color: #92400E; padding: 4px 10px; border-radius: 6px; border: 1px solid #FDE68A;">
+      <span class="cat-breakdown-pill cat-signs">
         Signs: ${signsC}/${signsT} (${signsT > 0 ? Math.round((signsC / signsT) * 100) : 0}%)
       </span>
-      <span style="background: #FEE2E2; color: #991B1B; padding: 4px 10px; border-radius: 6px; border: 1px solid #FECACA;">
+      <span class="cat-breakdown-pill cat-rules">
         Rules: ${rulesC}/${rulesT} (${rulesT > 0 ? Math.round((rulesC / rulesT) * 100) : 0}%)
       </span>
-      <span style="background: #EFF6FF; color: #1E40AF; padding: 4px 10px; border-radius: 6px; border: 1px solid #BFDBFE;">
+      <span class="cat-breakdown-pill cat-principles">
         Principles: ${gpC}/${gpT} (${gpT > 0 ? Math.round((gpC / gpT) * 100) : 0}%)
       </span>
     `;
@@ -1033,9 +1128,6 @@ function initPracticeUI() {
     const isEasy = storage.getPreference("easyReadPractice", false);
     if (caseToggleBtn) {
       caseToggleBtn.classList.toggle("active", isEasy);
-      caseToggleBtn.style.background = isEasy ? "#EFF6FF" : "";
-      caseToggleBtn.style.borderColor = isEasy ? "#2563EB" : "";
-      caseToggleBtn.style.color = isEasy ? "#134074" : "";
       caseToggleBtn.innerHTML = isEasy
         ? `<span>${t("btn_official_caps", "AA Official Caps")}</span>`
         : `<span>${t("btn_easy_read", "Aa Easy-Read")}</span>`;
@@ -1055,6 +1147,7 @@ function initPracticeUI() {
       document.querySelectorAll("[data-practice-cat]").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       practice.setCategory(btn.getAttribute("data-practice-cat"));
+      syncPracticeUrlParams();
     });
   });
 
@@ -1071,6 +1164,7 @@ function initPracticeUI() {
   searchInput?.addEventListener("input", e => {
     syncClearButton();
     practice.setSearch(e.target.value);
+    syncPracticeUrlParams();
   });
 
   clearBtn?.addEventListener("click", () => {
@@ -1078,6 +1172,7 @@ function initPracticeUI() {
       searchInput.value = "";
       syncClearButton();
       practice.setSearch("");
+      syncPracticeUrlParams();
       searchInput.focus();
     }
   });
@@ -1091,6 +1186,16 @@ function initPracticeUI() {
     renderPracticeMatrix(state.filteredQuestions);
     if (state.reason !== "answer") {
       renderPracticeCard(state.selectedQuestion);
+    } else {
+      const prevBtn = document.getElementById("btn-practice-prev");
+      const nextBtn = document.getElementById("btn-practice-next");
+      const counterEl = document.getElementById("practice-pos-counter");
+      const { index, total, canPrev, canNext } = practice.getSelectedPosition();
+      if (prevBtn) prevBtn.disabled = !canPrev;
+      if (nextBtn) nextBtn.disabled = !canNext;
+      if (counterEl) {
+        counterEl.textContent = index >= 0 ? `${index + 1} of ${total}` : `Answered • ${total} left`;
+      }
     }
   };
 
@@ -1113,22 +1218,15 @@ function renderPracticeMatrix(filteredList) {
     chip.title = `${catPrefix}-${q.questionNumber}: ${q.id} (Status: ${qState.status}, Streak: ${qState.streak})`;
     chip.className = "matrix-chip";
 
-    let bg = "#E2E8F0";
-    let color = "#1E293B";
     if (qState.status === "mastered") {
-      bg = "#DCFCE7";
-      color = "#166534";
+      chip.classList.add("is-mastered");
     } else if (qState.status === "probation") {
-      bg = "#FEF3C7";
-      color = "#92400E";
+      chip.classList.add("is-probation");
     }
 
     if (practice.selectedQuestion && practice.selectedQuestion.id === q.id) {
       chip.classList.add("is-selected");
     }
-
-    chip.style.background = bg;
-    chip.style.color = color;
 
     chip.addEventListener("click", () => {
       practice.selectQuestion(q.id);
@@ -1158,13 +1256,13 @@ function renderPracticeCard(q) {
   const qState = storage.getQuestionState(q.id);
   const lastAns = (practice.lastAnswers && practice.lastAnswers[q.id]) || null;
   const isAnswered = lastAns !== null;
-  const { index: posIndex, total: posTotal } = practice.getSelectedPosition();
+  const { index: posIndex, total: posTotal, canPrev, canNext } = practice.getSelectedPosition();
 
-  let statusBadge = `<span style="background: var(--surface-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">UNSEEN</span>`;
+  let statusBadge = `<span class="status-badge-pill">UNSEEN</span>`;
   if (qState.status === "mastered") {
-    statusBadge = `<span style="background: #DCFCE7; color: #166534; padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">MASTERED (Streak: ${qState.streak})</span>`;
+    statusBadge = `<span class="status-badge-pill is-mastered">MASTERED (Streak: ${qState.streak})</span>`;
   } else if (qState.status === "probation") {
-    statusBadge = `<span style="background: #FEF3C7; color: #92400E; padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">NEEDS PRACTICE (Streak: ${qState.streak})</span>`;
+    statusBadge = `<span class="status-badge-pill is-probation">NEEDS PRACTICE (Streak: ${qState.streak})</span>`;
   }
 
   const catLabel = q.category === "road_signs" ? "Road Signs" : q.category === "rules_of_road" ? "Traffic Rules" : "Driving Principles";
@@ -1231,15 +1329,15 @@ function renderPracticeCard(q) {
 
     <div class="practice-card-nav">
       <div class="practice-nav-buttons">
-        <button type="button" id="btn-practice-prev" class="btn-secondary-light" ${posIndex <= 0 ? "disabled" : ""}>
+        <button type="button" id="btn-practice-prev" class="btn-secondary-light" ${canPrev ? "" : "disabled"}>
           ← <span>${t("btn_prev", "Previous")}</span>
         </button>
-        <button type="button" id="btn-practice-next" class="btn-primary-solid" ${posIndex >= posTotal - 1 ? "disabled" : ""}>
+        <button type="button" id="btn-practice-next" class="btn-primary-solid" ${canNext ? "" : "disabled"}>
           <span>${t("btn_next", "Next")}</span> →
         </button>
       </div>
       <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-        <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-muted);" class="tabular-nums">${posIndex + 1} of ${posTotal}</span>
+        <span id="practice-pos-counter" style="font-size: 0.82rem; font-weight: 700; color: var(--text-muted);" class="tabular-nums">${posIndex >= 0 ? `${posIndex + 1} of ${posTotal}` : `Answered • ${posTotal} left`}</span>
         <button type="button" id="btn-practice-next-unseen" class="btn-outline-primary" style="padding: 7px 12px; font-size: 0.82rem;">
           <span>${t("btn_next_unseen", "Next Unmastered")}</span> ➔
         </button>
@@ -1291,9 +1389,9 @@ function renderPracticeCard(q) {
       const updatedState = storage.getQuestionState(q.id);
       if (statusBadgeWrap) {
         if (updatedState.status === "mastered") {
-          statusBadgeWrap.innerHTML = `<span style="background: #DCFCE7; color: #166534; padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">MASTERED (Streak: ${updatedState.streak})</span>`;
+          statusBadgeWrap.innerHTML = `<span class="status-badge-pill is-mastered">MASTERED (Streak: ${updatedState.streak})</span>`;
         } else if (updatedState.status === "probation") {
-          statusBadgeWrap.innerHTML = `<span style="background: #FEF3C7; color: #92400E; padding: 3px 9px; border-radius: 999px; font-size: 0.74rem; font-weight: 700;">NEEDS PRACTICE (Streak: ${updatedState.streak})</span>`;
+          statusBadgeWrap.innerHTML = `<span class="status-badge-pill is-probation">NEEDS PRACTICE (Streak: ${updatedState.streak})</span>`;
         }
       }
     });
@@ -1392,7 +1490,7 @@ function initFlashcardsUI() {
         emptyView.innerHTML = `
           <div style="font-size: 2.6rem;">✓</div>
           <h3 style="font-size: 1.2rem; color: var(--success-green); font-weight: 800; margin: 0;">All Signs in this Category Mastered!</h3>
-          <p style="font-size: 0.9rem; color: #475569; margin: 0; max-width: 36ch;">Select "All 94 Signs" or another category above to keep reviewing.</p>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0; max-width: 36ch;">Select "All 94 Signs" or another category above to keep reviewing.</p>
         `;
       }
       [btnPrev, btnNext, btnKnow, btnStudy].forEach(b => {
@@ -1430,19 +1528,13 @@ function initFlashcardsUI() {
       const st = storage.getQuestionState(sign.id);
       if (st.status === "mastered") {
         masteryPill.textContent = "MASTERED";
-        masteryPill.style.background = "#DCFCE7";
-        masteryPill.style.color = "#166534";
-        masteryPill.style.borderColor = "#86EFAC";
+        masteryPill.className = "status-badge-pill is-mastered";
       } else if (st.status === "probation") {
         masteryPill.textContent = "REVIEW";
-        masteryPill.style.background = "#FEF3C7";
-        masteryPill.style.color = "#92400E";
-        masteryPill.style.borderColor = "#FCD34D";
+        masteryPill.className = "status-badge-pill is-probation";
       } else {
         masteryPill.textContent = "UNSEEN";
-        masteryPill.style.background = "var(--surface-subtle)";
-        masteryPill.style.color = "var(--text-secondary)";
-        masteryPill.style.borderColor = "var(--border-strong)";
+        masteryPill.className = "status-badge-pill";
       }
     }
 
@@ -1527,7 +1619,7 @@ function renderCheatsheet() {
       .map(
         item => `
       <div style="background: var(--surface-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 12px; display: flex; gap: 12px; align-items: center;">
-        <img src="${withAssetVer(item.image)}" alt="${item.name.en}" style="width: 68px; height: 68px; object-fit: contain; background: #FFFFFF; border-radius: var(--radius-sm); padding: 4px; border: 1px solid var(--border-color); flex-shrink: 0;">
+        <img class="hs-guide-thumb" src="${withAssetVer(item.image)}" alt="${item.name.en}">
         <div>
           <span class="seo-badge badge-informatory" style="margin-bottom: 4px;">${item.kind}</span>
           <strong style="display: block; font-size: 0.9rem; color: var(--primary-navy); margin-bottom: 3px;">${item.name[lang] || item.name.en}</strong>
@@ -1929,7 +2021,7 @@ function renderPopularGuidesSections(lang) {
           <h3 style="font-size: 1.12rem; color: var(--primary-navy); font-weight: 800; margin: 0;">${lang === "te" ? "తెలంగాణ అన్ని జిల్లాల RTO కోడ్‌లు (TS / TG 01–38)" : lang === "hi" ? "तेलंगाना के सभी जिलों के RTO कोड (TS / TG 01–38)" : "All Telangana District RTO Codes (TS / TG 01–38)"}</h3>
           <span style="font-size: 0.8rem; color: var(--text-muted);">Both legacy TS and updated TG prefixes map to the same district RTA offices.</span>
         </div>
-        <input type="text" id="rto-district-search" placeholder="Search district or code (e.g. Warangal, 07)..." style="padding: 8px 12px; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); font-size: 0.85rem; min-width: 240px;">
+        <input type="text" id="rto-district-search" class="seo-input" placeholder="Search district or code (e.g. Warangal, 07)..." style="min-width: 240px;">
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;">${rtoChipsHtml}</div>
       <p id="rto-district-empty" style="display: none; padding: 16px; text-align: center; color: var(--text-muted); font-size: 0.88rem;">No Telangana district matched your search.</p>

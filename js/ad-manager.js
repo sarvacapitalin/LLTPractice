@@ -41,7 +41,10 @@ class AdManager {
 
   _ensureScript() {
     if (this.scriptInjected || !this._hasValidClient()) return;
-    if (document.getElementById(SCRIPT_ID)) {
+    if (
+      document.getElementById(SCRIPT_ID) ||
+      document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')
+    ) {
       this.scriptInjected = true;
       return;
     }

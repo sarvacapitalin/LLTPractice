@@ -3,6 +3,8 @@
 
 User-agent: *
 Allow: /
+# Prevent raw source PDFs from competing with structured HTML study guides in SERPs
+Disallow: /*.pdf$
 
 # Major Search Engine Crawlers
 User-agent: Googlebot

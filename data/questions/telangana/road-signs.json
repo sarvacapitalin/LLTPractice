@@ -154,7 +154,7 @@
   {
     "id": "TS_RS_005",
     "category": "road_signs",
-    "signType": "mandatory",
+    "signType": "cautionary",
     "questionNumber": 5,
     "image": "assets/signs/sign_005.png",
     "text": {
@@ -192,7 +192,7 @@
   {
     "id": "TS_RS_006",
     "category": "road_signs",
-    "signType": "mandatory",
+    "signType": "informatory",
     "questionNumber": 6,
     "image": "assets/signs/sign_006.png",
     "text": {
@@ -230,7 +230,7 @@
   {
     "id": "TS_RS_007",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "mandatory",
     "questionNumber": 7,
     "image": "assets/signs/sign_007.png",
     "text": {
@@ -268,7 +268,7 @@
   {
     "id": "TS_RS_008",
     "category": "road_signs",
-    "signType": "informatory",
+    "signType": "mandatory",
     "questionNumber": 8,
     "image": "assets/signs/sign_008.png",
     "text": {
@@ -1484,7 +1484,7 @@
   {
     "id": "TS_RS_040",
     "category": "road_signs",
-    "signType": "mandatory",
+    "signType": "cautionary",
     "questionNumber": 40,
     "image": "assets/signs/sign_040.png",
     "text": {
@@ -1522,7 +1522,7 @@
   {
     "id": "TS_RS_041",
     "category": "road_signs",
-    "signType": "mandatory",
+    "signType": "cautionary",
     "questionNumber": 41,
     "image": "assets/signs/sign_041.png",
     "text": {
@@ -1560,7 +1560,7 @@
   {
     "id": "TS_RS_042",
     "category": "road_signs",
-    "signType": "mandatory",
+    "signType": "cautionary",
     "questionNumber": 42,
     "image": "assets/signs/sign_042.png",
     "text": {
@@ -2776,7 +2776,7 @@
   {
     "id": "TS_RS_074",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 74,
     "image": "assets/signs/sign_074.png",
     "text": {
@@ -2814,7 +2814,7 @@
   {
     "id": "TS_RS_075",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 75,
     "image": "assets/signs/sign_075.png",
     "text": {
@@ -2852,7 +2852,7 @@
   {
     "id": "TS_RS_076",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 76,
     "image": "assets/signs/sign_076.png",
     "text": {
@@ -2890,7 +2890,7 @@
   {
     "id": "TS_RS_077",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 77,
     "image": "assets/signs/sign_077.png",
     "text": {
@@ -2928,7 +2928,7 @@
   {
     "id": "TS_RS_078",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 78,
     "image": "assets/signs/sign_078.png",
     "text": {
@@ -2966,7 +2966,7 @@
   {
     "id": "TS_RS_079",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 79,
     "image": "assets/signs/sign_079.png",
     "text": {
@@ -3004,7 +3004,7 @@
   {
     "id": "TS_RS_080",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 80,
     "image": "assets/signs/sign_080.png",
     "text": {
@@ -3042,7 +3042,7 @@
   {
     "id": "TS_RS_081",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 81,
     "image": "assets/signs/sign_081.png",
     "text": {
@@ -3080,7 +3080,7 @@
   {
     "id": "TS_RS_082",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "informatory",
     "questionNumber": 82,
     "image": "assets/signs/sign_082.png",
     "text": {
@@ -3118,7 +3118,7 @@
   {
     "id": "TS_RS_083",
     "category": "road_signs",
-    "signType": "cautionary",
+    "signType": "mandatory",
     "questionNumber": 83,
     "image": "assets/signs/sign_083.png",
     "text": {
@@ -3262,9 +3262,9 @@
     },
     "answerIndex": 0,
     "explanation": {
-      "en": "Official RTA Key: Option 1. (⚠️ Exam Tip: In motor vehicle rules, extending the right arm horizontally signals a right turn, but the official computerized RTA question bank marks Option 1 for this test question).",
-      "te": "అధికారిక RTA సమాధానం: ఎంపిక 1. (⚠️ పరీక్ష చిట్కా: మోటారు వాహన నిబంధనల ప్రకారం కుడి చేయి చాచడం కుడి మలుపును సూచిస్తుంది, కానీ కంప్యూటర్ RTA పరీక్షలో ఈ ప్రశ్నకు ఎంపిక 1 సరైన సమాధానంగా నిర్ణయించబడింది).",
-      "hi": "आधिकारिक RTA उत्तर: विकल्प 1. (⚠️ परीक्षा टिप: मोटर वाहन नियमों में दायां हाथ सीधा फैलाना दाएं मुड़ने का संकेत है, लेकिन आधिकारिक RTA परीक्षा में इस प्रश्न का उत्तर विकल्प 1 अंकित है)।"
+      "en": "Official RTA Key: Option 1 ('HE INTENDS TO MOVE TO THE LEFT OR TO TURN LEFT'). Rotating the extended right arm in an anti-clockwise circle (often with the left indicator on) signals a left turn.",
+      "te": "అధికారిక RTA సమాధానం: ఎంపిక 1 (ఎడమ వైపునకు వెళ్లడానికి లేదా ఎడమకు తిరగడానికి ఉద్దేశిస్తున్నాడు). కుడి చేతిని యాంటీ-క్లాక్‌వైజ్‌గా తిప్పడం ఎడమ మలుపును సూచిస్తుంది.",
+      "hi": "आधिकारिक RTA उत्तर: विकल्प 1 (वह बाईं ओर मुड़ने या जाने का इरादा रखता है)। दाएं हाथ को वामावर्त (एंटी-क्लॉकवाइज) घुमाना बाएं मुड़ने का संकेत है।"
     }
   },
   {
@@ -3346,7 +3346,7 @@
   {
     "id": "TS_RS_089",
     "category": "road_signs",
-    "signType": "informatory",
+    "signType": "mandatory",
     "questionNumber": 89,
     "image": "assets/signs/sign_089.png",
     "text": {
@@ -3384,7 +3384,7 @@
   {
     "id": "TS_RS_090",
     "category": "road_signs",
-    "signType": "informatory",
+    "signType": "mandatory",
     "questionNumber": 90,
     "image": "assets/signs/sign_090.png",
     "text": {
